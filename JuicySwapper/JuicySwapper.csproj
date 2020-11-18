@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props" Condition="Exists('..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D8BCAAC-874B-4730-B1DC-A3147345B29B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JuicySwapper</RootNamespace>
+    <AssemblyName>Juicy Swapper</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.1.3</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\build\Juicy Swapper\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\build\Juicy Swapper\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\testingthis_471_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E1E87F14C769D49E7BF4F688BCBB59D03737ECF6</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Juicy Swapper_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>.\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Costura, Version=4.1.0.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Costura.Fody.4.1.0\lib\net40\Costura.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscordRPC">
+      <HintPath>.\DiscordRPC.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAPICodePack-Core.1.1.1\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAPICodePack-Shell.1.1.1\lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\src\vls swapper v4\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main\Classes\InstallLocation.cs" />
+    <Compile Include="Main\Classes\JsonAPI.cs" />
+    <Compile Include="Main\Classes\SwapUtilities.cs" />
+    <Compile Include="Main\GUI\ItemShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\ItemShop.Designer.cs">
+      <DependentUpon>ItemShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\Annoucement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\Annoucement.Designer.cs">
+      <DependentUpon>Annoucement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\Links.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\Links.Designer.cs">
+      <DependentUpon>Links.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\ExceptionMess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\ExceptionMess.Designer.cs">
+      <DependentUpon>ExceptionMess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\CheckIfSwapMesg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\CheckIfSwapMesg.Designer.cs">
+      <DependentUpon>CheckIfSwapMesg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Items\Questions\RamirezOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Items\Questions\RamirezOption.designer.cs">
+      <DependentUpon>RamirezOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Items\Skins\RamirezAA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Items\Skins\RamirezAA.designer.cs">
+      <DependentUpon>RamirezAA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Items\Skins\ReconExpert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Items\Skins\ReconExpert.designer.cs">
+      <DependentUpon>ReconExpert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Items\Skins\headhunter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Items\Skins\headhunter.designer.cs">
+      <DependentUpon>headhunter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Items\Skins\Ramirez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Items\Skins\Ramirez.designer.cs">
+      <DependentUpon>Ramirez.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Items\Skins\SparkleSpecialist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Items\Skins\SparkleSpecialist.designer.cs">
+      <DependentUpon>SparkleSpecialist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Panels\EmotesPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\Panels\EmotesPanel.designer.cs">
+      <DependentUpon>EmotesPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\EmoteWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\EmoteWarning.Designer.cs">
+      <DependentUpon>EmoteWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Classes\Juicy.cs" />
+    <Compile Include="Main\Classes\Researcher.cs" />
+    <Compile Include="Main\GUI\BackupVerify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\BackupVerify.Designer.cs">
+      <DependentUpon>BackupVerify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Loader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Loader.Designer.cs">
+      <DependentUpon>Loader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\BypassWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\BypassWarning.Designer.cs">
+      <DependentUpon>BypassWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\PakError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\PakError.Designer.cs">
+      <DependentUpon>PakError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\DevMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\DevMode.Designer.cs">
+      <DependentUpon>DevMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\FortniteLaunch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\FortniteLaunch.Designer.cs">
+      <DependentUpon>FortniteLaunch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\ResetComplete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\ResetComplete.Designer.cs">
+      <DependentUpon>ResetComplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\ResetConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\ResetConfirm.Designer.cs">
+      <DependentUpon>ResetConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\AdvancedSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\AdvancedSettings.Designer.cs">
+      <DependentUpon>AdvancedSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Panels\MiscPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\Panels\MiscPanel.Designer.cs">
+      <DependentUpon>MiscPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Panels\DashPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\Panels\DashPanel.Designer.cs">
+      <DependentUpon>DashPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Panels\BackblingsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\Panels\BackblingsPanel.Designer.cs">
+      <DependentUpon>BackblingsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Panels\PickaxesPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\Panels\PickaxesPanel.Designer.cs">
+      <DependentUpon>PickaxesPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Panels\SkinsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\Panels\SkinsPanel.Designer.cs">
+      <DependentUpon>SkinsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Classes\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Main\GUI\ItemShop.resx">
+      <DependentUpon>ItemShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Messages\Annoucement.resx">
+      <DependentUpon>Annoucement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Messages\Links.resx">
+      <DependentUpon>Links.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Messages\ExceptionMess.resx">
+      <DependentUpon>ExceptionMess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Messages\CheckIfSwapMesg.resx">
+      <DependentUpon>CheckIfSwapMesg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Items\Questions\RamirezOption.resx">
+      <DependentUpon>RamirezOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Items\Skins\RamirezAA.resx">
+      <DependentUpon>RamirezAA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Items\Skins\ReconExpert.resx">
+      <DependentUpon>ReconExpert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Items\Skins\headhunter.resx">
+      <DependentUpon>headhunter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Items\Skins\Ramirez.resx">
+      <DependentUpon>Ramirez.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Items\Skins\SparkleSpecialist.resx">
+      <DependentUpon>SparkleSpecialist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Panels\EmotesPanel.resx">
+      <DependentUpon>EmotesPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Messages\EmoteWarning.resx">
+      <DependentUpon>EmoteWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\BackupVerify.resx">
+      <DependentUpon>BackupVerify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Loader.resx">
+      <DependentUpon>Loader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Messages\BypassWarning.resx">
+      <DependentUpon>BypassWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Messages\Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Messages\PakError.resx">
+      <DependentUpon>PakError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Messages\DevMode.resx">
+      <DependentUpon>DevMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Messages\FortniteLaunch.resx">
+      <DependentUpon>FortniteLaunch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Messages\ResetComplete.resx">
+      <DependentUpon>ResetComplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Messages\ResetConfirm.resx">
+      <DependentUpon>ResetConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\AdvancedSettings.resx">
+      <DependentUpon>AdvancedSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Panels\MiscPanel.resx">
+      <DependentUpon>MiscPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Panels\DashPanel.resx">
+      <DependentUpon>DashPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Panels\BackblingsPanel.resx">
+      <DependentUpon>BackblingsPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Panels\PickaxesPanel.resx">
+      <DependentUpon>PickaxesPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Panels\SkinsPanel.resx">
+      <DependentUpon>SkinsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Resources\app.config" />
+    <None Include="Resources\packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scenario.wav" />
+    <None Include="Resources\Toosie.wav" />
+    <None Include="Resources\SuperOG.wav" />
+    <None Include="Resources\kaedepfp.bmp" />
+    <None Include="Resources\kaede.png" />
+    <None Include="Resources\testingthis_471_icon.ico" />
+    <Content Include="Resources\test_92j_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Main\Items\Backblings\" />
+    <Folder Include="Main\Items\Emotes\" />
+    <Folder Include="Main\Items\Misc\" />
+    <Folder Include="Main\Items\Pickaxes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.6.2.0\build\Fody.targets" Condition="Exists('..\packages\Fody.6.2.0\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.6.2.0\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.6.2.0\build\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props'))" />
+  </Target>
+</Project>
