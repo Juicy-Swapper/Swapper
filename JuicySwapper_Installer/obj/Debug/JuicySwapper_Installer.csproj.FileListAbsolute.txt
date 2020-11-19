@@ -1,6 +1,0 @@
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper_Installer\obj\Debug\JuicySwapper_Installer.csprojAssemblyReference.cache
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper_Installer\obj\Debug\JuicySwapper_Installer.Main.GUI.Installer.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper_Installer\obj\Debug\JuicySwapper_Installer.Main.GUI.Setup.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper_Installer\obj\Debug\JuicySwapper_Installer.Properties.Resources.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper_Installer\obj\Debug\JuicySwapper_Installer.csproj.GenerateResource.cache
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper_Installer\obj\Debug\JuicySwapper_Installer.csproj.CoreCompileInputs.cache
