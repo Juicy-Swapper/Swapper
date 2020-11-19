@@ -27,7 +27,7 @@
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="offset_skin_body" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">424200000</Value>
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="offset_skin_head" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>

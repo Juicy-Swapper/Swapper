@@ -120,37 +120,27 @@ namespace JuicySwapper.IO
             bool max1 = false;
 
             if (max == 0)
-            {
                 max1 = false;
-            }
+
             else if (max > 1)
-            {
                 max1 = true;
-            }
 
             while (true)
             {
                 if (max1)
                 {
                     if (a.Position == max)
-                    {
                         return result;
-                    }
-
                 }
                 else
                 {
                     if (a.Position == 5000000000)
-                    {
                         return result;
-                    }
                 }
 
                 var latestbyte = a.ReadByte();
                 if (latestbyte == -1)
-                {
                     break;
-                }
 
                 if (latestbyte == c[searchPosition])
                 {
@@ -162,11 +152,8 @@ namespace JuicySwapper.IO
                     }
                 }
                 else
-                {
                     searchPosition = 0;
-                }
             }
-
             return result;
         }
     }

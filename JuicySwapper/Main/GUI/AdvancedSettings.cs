@@ -35,7 +35,6 @@ namespace JuicySwapper.Main.GUI
             if (restart == DialogResult.Yes)
                 Process.Start(Application.ExecutablePath);
             else
-
                Environment.Exit(0);
         }
 

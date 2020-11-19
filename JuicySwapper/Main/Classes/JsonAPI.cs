@@ -4,18 +4,8 @@ namespace JuicySwapper.Classes.Json_Api
 {
     class ContentAPI
     {
-        //What Swapper
-        public class Type
-        {
-            [JsonProperty("swapper")]
-            public Content Swapper { get; set; }
-
-            [JsonProperty("idswapper")]
-            public Content IDswapper { get; set; }
-        }
-
         //Get The Content
-        public class Content
+        public class Type
         {
             [JsonProperty("news")]
             public NewsInfo News { get; set; }
@@ -50,72 +40,33 @@ namespace JuicySwapper.Classes.Json_Api
 
     class OffsetsAPI
     {
-        //What Offsets
+        //Get Offsets
         public class Offsets
         {
-            [JsonProperty("normaloffsets")]
-            public NormalOffsets Normal { get; set; }
-
-            [JsonProperty("cpoffsets")]
-            public CpOffsets CP { get; set; }
-        }
-
-        //Get Offsets
-        public class NormalOffsets
-        {
             [JsonProperty("body")]
-            public string NormalBody { get; set; }
+            public string Body { get; set; }
 
             [JsonProperty("head")]
-            public string NormalHead { get; set; }
+            public string Head { get; set; }
 
             [JsonProperty("pickaxesmesh")]
-            public string NormalPickaxesmesh { get; set; }
-
-            [JsonProperty("pickaxesound")]
-            public string NormalPickaxesound { get; set; }
+            public string Pickaxe { get; set; }
 
             [JsonProperty("backbling")]
-            public string NormalBackbling { get; set; }
+            public string Backbling { get; set; }
 
             [JsonProperty("emotes")]
-            public string NormalEmotes { get; set; }
+            public string Emotes { get; set; }
 
             [JsonProperty("lobby")]
-            public string NormalLobby { get; set; }
-        }
-
-        //Get Offsets
-        public class CpOffsets
-        {
-            [JsonProperty("body")]
-            public string CPBody { get; set; }
-
-            [JsonProperty("head")]
-            public string CPHead { get; set; }
-
-            [JsonProperty("rdm")]
-            public string CPRdm { get; set; }
-
-            [JsonProperty("rdf")]
-            public string CPRdf { get; set; }
+            public string Lobby { get; set; }
         }
     }
 
     class PaksAPI
     {
-        //What paks
-        public class Paks
-        {
-            [JsonProperty("normalpaks")]
-            public NormalPaks Normal { get; set; }
-
-            [JsonProperty("cppaks")]
-            public CpPaks CP { get; set; }
-        }
-
         //Gets paks
-        public class NormalPaks
+        public class Paks
         {
             [JsonProperty("body")]
             public string NormalBody { get; set; }
@@ -137,16 +88,6 @@ namespace JuicySwapper.Classes.Json_Api
 
             [JsonProperty("lobby")]
             public string NormalLobby { get; set; }
-        }
-
-        //Gets paks
-        public class CpPaks
-        {
-            [JsonProperty("body")]
-            public string CPBody { get; set; }
-
-            [JsonProperty("head")]
-            public string CPHead { get; set; }
         }
     }
 

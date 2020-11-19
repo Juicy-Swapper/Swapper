@@ -43,9 +43,7 @@ namespace JuicySwapper.Main.GUI
                     pakPathTextbox.Text = Settings.Default.pakPath;
                 }
                 else
-                {
                     MessageBox.Show("Please select the correct directory!", "Juicy Swapper", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
             }
         }
 

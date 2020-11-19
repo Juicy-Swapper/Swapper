@@ -42,16 +42,16 @@ namespace JuicySwapper.Panels
         public void GetContent()
         {
             //Downloads JSON from Juicy Swapper API.
-            var ContentAPI = new WebClient().DownloadString("http://juicyswapper.xyz/api/json/content.json");
+            var ContentAPI = new WebClient().DownloadString("http://juicyswapper.xyz/api/content.json");
 
             //Deserializes JSON from Juicy Swapper API.
             Type StatusResponse = JsonConvert.DeserializeObject<Type>(ContentAPI);
 
             //Sets Form Items from API Response.
-            newsTitleLabel.Text = StatusResponse.Swapper.News.NewsTitle;
-            newsTextLabel.Text = StatusResponse.Swapper.News.NewsText;
-            newsImagePictureBox.ImageLocation = StatusResponse.Swapper.News.NewsImage;
-            changelogTextLabel.Text = StatusResponse.Swapper.Patchnotes.PatchnotesText;
+            newsTitleLabel.Text = StatusResponse.News.NewsTitle;
+            newsTextLabel.Text = StatusResponse.News.NewsText;
+            newsImagePictureBox.ImageLocation = StatusResponse.News.NewsImage;
+            changelogTextLabel.Text = StatusResponse.Patchnotes.PatchnotesText;
             currentVersionLabel.Text = $"Current Version: v{Application.ProductVersion}";
         }
     }

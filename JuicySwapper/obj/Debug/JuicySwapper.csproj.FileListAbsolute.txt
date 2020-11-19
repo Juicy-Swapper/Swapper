@@ -1,0 +1,48 @@
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\Interop.WMPLib.dll
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.ResolveComReference.cache
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.ItemShop.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Annoucement.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Links.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.ExceptionMess.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.CheckIfSwapMesg.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.RamirezOption.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.RamirezAA.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.ReconExpert.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.headhunter.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Ramirez.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.SparkleSpecialist.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Panels.EmotesPanel.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.EmoteWarning.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.BackupVerify.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Loader.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.BypassWarning.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Update.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.PakError.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.DevMode.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Home.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.FortniteLaunch.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.ResetComplete.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.ResetConfirm.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.AdvancedSettings.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.SettingsMenu.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Panels.MiscPanel.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Panels.DashPanel.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Panels.BackblingsPanel.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Panels.PickaxesPanel.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Panels.SkinsPanel.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Properties.Resources.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\Juicy Swapper.exe.config
+C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\Juicy Swapper.exe.manifest
+C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\Juicy Swapper.application
+C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\Juicy Swapper.exe
+C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\Juicy Swapper.pdb
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.Fody.CopyLocal.cache
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\Juicy Swapper.exe.manifest
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\Juicy Swapper.application
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.CopyComplete
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\Juicy Swapper.exe
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\Juicy Swapper.pdb

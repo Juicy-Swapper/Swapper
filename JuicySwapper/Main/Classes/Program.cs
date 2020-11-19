@@ -56,7 +56,6 @@ namespace JuicySwapper
                 Juicy.GetStatus();
                 Application.Run(new Loader());
             }
-
         }
     }
 }

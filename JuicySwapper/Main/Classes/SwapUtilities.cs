@@ -2,6 +2,7 @@
 using JuicySwapper.Properties;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using static JuicySwapper.Classes.Json_Api.OffsetsAPI;
@@ -14,7 +15,7 @@ namespace JuicySwapper.Main.Classes
 		public string[] GetSwapPath()
 		{
 			string Skin_Body_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.ucas";
-			string Skin_Head_Path = Settings.Default.pakPath + "\\pakchunk10_s3-WindowsClient.pak";
+			string Skin_Head_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.ucas";
 			string Pickaxe_Mesh_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.pak";
 			string Pickaxe_Sound_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.pak";
 			string Backbling_Path = Settings.Default.pakPath + "\\pakchunk10_s3-WindowsClient.pak";
@@ -115,13 +116,17 @@ namespace JuicySwapper.Main.Classes
 			try
 			{
 				//Downloads JSON from Juicy Swapper API.
-				var OffsetsAPI = new WebClient().DownloadString("http://juicyswapper.xyz/api/json/offsets.json");
+				var OffsetsAPI = new WebClient().DownloadString("http://juicyswapper.xyz/api/offsets.json");
 
 				//Deserializes JSON from Juicy Swapper API.
 				Offsets StatusResponse = JsonConvert.DeserializeObject<Offsets>(OffsetsAPI);
 
 				//Sets Form Items from API Response.
-				//Settings.Default.testoff = int.Parse(StatusResponse.Normal.NormalBody); //offset body
+				Settings.Default.offset_skin_body = int.Parse(StatusResponse.Body); //offset body
+				Settings.Default.offset_skin_head = int.Parse(StatusResponse.Head); //offset head
+				Settings.Default.offset_pick_mesh = int.Parse(StatusResponse.Pickaxe); //offset pickaxe
+				Settings.Default.offset_back_mesh = int.Parse(StatusResponse.Backbling); //offset pickaxe
+				Settings.Default.offset_emote_mesh = int.Parse(StatusResponse.Emotes); //offset pickaxe
 				Settings.Default.Save();
 			}
 			catch
@@ -135,25 +140,25 @@ namespace JuicySwapper.Main.Classes
 		}
 
 		//paks || cba to use atm
-		public static void RequestPaks()
-		{
-			try
-			{
-				//Downloads JSON from Juicy Swapper API.
-				var PaksAPI = new WebClient().DownloadString("http://juicyswapper.xyz/api/json/paks.json");
+		/*public static void RequestPaks()
+	      {
+		   try
+		   {
+			   //Downloads JSON from Juicy Swapper API.
+			   var PaksAPI = new WebClient().DownloadString("http://juicyswapper.xyz/api/json/paks.json");
 
-				//Deserializes JSON from Juicy Swapper API.
-				Paks StatusResponse = JsonConvert.DeserializeObject<Paks>(PaksAPI);
+			   //Deserializes JSON from Juicy Swapper API.
+			   Paks StatusResponse = JsonConvert.DeserializeObject<Paks>(PaksAPI);
 
-				//Sets Form Items from API Response.
-				Settings.Default.Save();
-			}
-			catch
-			{
-				Settings.Default.Exp = "Paks";
-				Settings.Default.Save();
-				new ExceptionMess().ShowDialog();
-			}
-		}
+			   //Sets Form Items from API Response.
+			   Settings.Default.Save();
+		   }
+		   catch
+		   {
+			   Settings.Default.Exp = "Paks";
+			   Settings.Default.Save();
+			   new ExceptionMess().ShowDialog();
+		   }
+	   } */
 	}
 }

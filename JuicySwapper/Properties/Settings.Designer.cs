@@ -121,7 +121,7 @@ namespace JuicySwapper.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("424200000")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int offset_skin_body {
             get {
                 return ((int)(this["offset_skin_body"]));

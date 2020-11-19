@@ -23,7 +23,6 @@ namespace JuicySwapper
             Settings.Default.pakPath = Settings.Default.InstallationPath + "\\FortniteGame\\Content\\Paks";
             Settings.Default.Save();
 
-
             Settings.Default.Rpc = "InDashboard";
             Settings.Default.Save();
             InitializeComponent();

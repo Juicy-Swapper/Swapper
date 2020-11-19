@@ -18,7 +18,7 @@ namespace JuicySwapper.Main.GUI
             Juicy.CloseEpicProcesses();
             Juicy.DiscordInvite();
             SwapUtilities.Requestoffsets();
-            SwapUtilities.RequestPaks();
+            //SwapUtilities.RequestPaks();
             Juicy.FindPaks();
             timer1.Start();
         }

@@ -92,8 +92,8 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(420, 75);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Looks like we couldnt get the Resources for our\r\napi too you. If you need help wi" +
-    "th this please \r\njoin our discord by clicking on the \'Discord\' button";
+            this.label2.Text = "Looks like we couldnt get the Resources form our\r\napi too you. If you need help w" +
+    "ith this please \r\njoin our discord by clicking on the \'Discord\' button";
             // 
             // bunifuElipse2
             // 
