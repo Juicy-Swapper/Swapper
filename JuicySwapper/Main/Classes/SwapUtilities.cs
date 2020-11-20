@@ -2,11 +2,9 @@
 using JuicySwapper.Properties;
 using Newtonsoft.Json;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Net;
 using static JuicySwapper.Classes.Json_Api.OffsetsAPI;
-using static JuicySwapper.Classes.Json_Api.PaksAPI;
 
 namespace JuicySwapper.Main.Classes
 {
@@ -56,6 +54,9 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.RamirezAAEnabled
 		};
 
+		public static string SkinSwapped;
+		public static string SkinSwappedFor;
+
 		public bool CheckIfCanSwap(string s)
 		{
 			switch (s)
@@ -64,12 +65,12 @@ namespace JuicySwapper.Main.Classes
 					if (AssaultTrooper.All(a => a) || AssaultTrooper.All(a => !a))
 						return false;
 					else
-						Settings.Default.SkinSwapped = "Assault Trooper";
+						SkinSwapped = "Assault Trooper";
 
 					if (Settings.Default.SparkleSpecialistEnabled)
-						Settings.Default.SkinSwappedFor = "Sparkle Specialist";
+						SkinSwappedFor = "Sparkle Specialist";
 					else if (Settings.Default.headhunterATEnabled)
-						Settings.Default.SkinSwappedFor = "Head Hunter";
+						SkinSwappedFor = "Head Hunter";
 
 					new CheckIfSwapMesg().ShowDialog();
 					break;
@@ -78,9 +79,10 @@ namespace JuicySwapper.Main.Classes
 					if (Dominator.All(a => a) || Dominator.All(a => !a))
 						return false;
 					else
-						Settings.Default.SkinSwapped = "Dominator";
+						SkinSwapped = "Dominator";
+
 					if (Settings.Default.ReconExpertEnabled)
-						Settings.Default.SkinSwappedFor = "Recon Expert";
+						SkinSwappedFor = "Recon Expert";
 
 					new CheckIfSwapMesg().ShowDialog();
 					break;
@@ -89,9 +91,10 @@ namespace JuicySwapper.Main.Classes
 					if (Commando.All(a => a) || Commando.All(a => !a))
 						return false;
 					else
-						Settings.Default.SkinSwapped = "Commando";
+						SkinSwapped = "Commando";
+
 					if (Settings.Default.RamirezEnabled)
-						Settings.Default.SkinSwappedFor = "Ramirez";
+						SkinSwappedFor = "Ramirez";
 
 					new CheckIfSwapMesg().ShowDialog();
 					break;
@@ -100,9 +103,10 @@ namespace JuicySwapper.Main.Classes
 					if (Commando.All(a => a) || Commando.All(a => !a))
 						return false;
 					else
-						Settings.Default.SkinSwapped = "ArcticAssassin";
+
+						SkinSwapped = "ArcticAssassin";
 					if (Settings.Default.RamirezAAEnabled)
-						Settings.Default.SkinSwappedFor = "Ramirez";
+						SkinSwappedFor = "Ramirez";
 
 					new CheckIfSwapMesg().ShowDialog();
 					break;
@@ -110,6 +114,7 @@ namespace JuicySwapper.Main.Classes
 			return true;
 		}
 
+		public static string Exp;
 		//offsets
 		public static void Requestoffsets()
 		{
@@ -131,12 +136,9 @@ namespace JuicySwapper.Main.Classes
 			}
 			catch
 			{
-				Settings.Default.Exp = "Offsets";
-				Settings.Default.Save();
+				Exp = "Offsets";
 				new ExceptionMess().ShowDialog();
 			}
-
-
 		}
 
 		//paks || cba to use atm
@@ -155,8 +157,7 @@ namespace JuicySwapper.Main.Classes
 		   }
 		   catch
 		   {
-			   Settings.Default.Exp = "Paks";
-			   Settings.Default.Save();
+			   Exp = "Paks";
 			   new ExceptionMess().ShowDialog();
 		   }
 	   } */

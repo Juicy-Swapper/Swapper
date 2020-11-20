@@ -19,9 +19,10 @@ namespace JuicySwapper_Updater.Main.GUI
         static int counter;
         public Updater()
         {
+            Juicy.DiscordRPC.Initialize();
+            Juicy.SetRPCAction("", "");
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
-            Juicy.SetDiscordAction("Updater");
             GetFileVer();
         }
 

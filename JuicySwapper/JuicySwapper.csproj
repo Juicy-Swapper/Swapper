@@ -105,12 +105,6 @@
     <Compile Include="Main\Classes\InstallLocation.cs" />
     <Compile Include="Main\Classes\JsonAPI.cs" />
     <Compile Include="Main\Classes\SwapUtilities.cs" />
-    <Compile Include="Main\GUI\ItemShop.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Main\GUI\ItemShop.Designer.cs">
-      <DependentUpon>ItemShop.cs</DependentUpon>
-    </Compile>
     <Compile Include="Main\GUI\Messages\Annoucement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,46 +129,46 @@
     <Compile Include="Main\GUI\Messages\CheckIfSwapMesg.Designer.cs">
       <DependentUpon>CheckIfSwapMesg.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Items\Questions\RamirezOption.cs">
+    <Compile Include="Main\GUI\Items\Questions\RamirezOption.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\Items\Questions\RamirezOption.designer.cs">
+    <Compile Include="Main\GUI\Items\Questions\RamirezOption.designer.cs">
       <DependentUpon>RamirezOption.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Items\Skins\RamirezAA.cs">
+    <Compile Include="Main\GUI\Items\Skins\RamirezAA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\Items\Skins\RamirezAA.designer.cs">
+    <Compile Include="Main\GUI\Items\Skins\RamirezAA.designer.cs">
       <DependentUpon>RamirezAA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Items\Skins\ReconExpert.cs">
+    <Compile Include="Main\GUI\Items\Skins\ReconExpert.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\Items\Skins\ReconExpert.designer.cs">
+    <Compile Include="Main\GUI\Items\Skins\ReconExpert.designer.cs">
       <DependentUpon>ReconExpert.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Items\Skins\headhunter.cs">
+    <Compile Include="Main\GUI\Items\Skins\headhunter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\Items\Skins\headhunter.designer.cs">
+    <Compile Include="Main\GUI\Items\Skins\headhunter.designer.cs">
       <DependentUpon>headhunter.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Items\Skins\Ramirez.cs">
+    <Compile Include="Main\GUI\Items\Skins\Ramirez.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\Items\Skins\Ramirez.designer.cs">
+    <Compile Include="Main\GUI\Items\Skins\Ramirez.designer.cs">
       <DependentUpon>Ramirez.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Items\Skins\SparkleSpecialist.cs">
+    <Compile Include="Main\GUI\Items\Skins\SparkleSpecialist.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\Items\Skins\SparkleSpecialist.designer.cs">
+    <Compile Include="Main\GUI\Items\Skins\SparkleSpecialist.designer.cs">
       <DependentUpon>SparkleSpecialist.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Panels\EmotesPanel.cs">
+    <Compile Include="Main\GUI\Panels\EmotesPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Main\Panels\EmotesPanel.designer.cs">
+    <Compile Include="Main\GUI\Panels\EmotesPanel.designer.cs">
       <DependentUpon>EmotesPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\GUI\Messages\EmoteWarning.cs">
@@ -183,18 +177,18 @@
     <Compile Include="Main\GUI\Messages\EmoteWarning.Designer.cs">
       <DependentUpon>EmoteWarning.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Classes\Juicy.cs" />
+    <Compile Include="Main\Classes\JuicyUtilities.cs" />
     <Compile Include="Main\Classes\Researcher.cs" />
-    <Compile Include="Main\GUI\BackupVerify.cs">
+    <Compile Include="Main\GUI\Messages\BackupVerify.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\GUI\BackupVerify.Designer.cs">
+    <Compile Include="Main\GUI\Messages\BackupVerify.Designer.cs">
       <DependentUpon>BackupVerify.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\GUI\Loader.cs">
+    <Compile Include="Main\GUI\Main\Loader.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\GUI\Loader.Designer.cs">
+    <Compile Include="Main\GUI\Main\Loader.Designer.cs">
       <DependentUpon>Loader.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\GUI\Messages\BypassWarning.cs">
@@ -203,10 +197,10 @@
     <Compile Include="Main\GUI\Messages\BypassWarning.Designer.cs">
       <DependentUpon>BypassWarning.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\GUI\Messages\Update.cs">
+    <Compile Include="Main\GUI\Main\Update.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\GUI\Messages\Update.Designer.cs">
+    <Compile Include="Main\GUI\Main\Update.Designer.cs">
       <DependentUpon>Update.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\GUI\Messages\PakError.cs">
@@ -215,16 +209,16 @@
     <Compile Include="Main\GUI\Messages\PakError.Designer.cs">
       <DependentUpon>PakError.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\GUI\Messages\DevMode.cs">
+    <Compile Include="Main\GUI\Main\DevMode.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\GUI\Messages\DevMode.Designer.cs">
+    <Compile Include="Main\GUI\Main\DevMode.Designer.cs">
       <DependentUpon>DevMode.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\GUI\Home.cs">
+    <Compile Include="Main\GUI\Main\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\GUI\Home.Designer.cs">
+    <Compile Include="Main\GUI\Main\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\GUI\Messages\FortniteLaunch.cs">
@@ -245,53 +239,56 @@
     <Compile Include="Main\GUI\Messages\ResetConfirm.Designer.cs">
       <DependentUpon>ResetConfirm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\GUI\AdvancedSettings.cs">
+    <Compile Include="Main\GUI\Main\AdvancedSettings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\GUI\AdvancedSettings.Designer.cs">
+    <Compile Include="Main\GUI\Main\AdvancedSettings.Designer.cs">
       <DependentUpon>AdvancedSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\GUI\Settings.cs">
+    <Compile Include="Main\GUI\Main\Settings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\GUI\Settings.Designer.cs">
+    <Compile Include="Main\GUI\Main\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Panels\MiscPanel.cs">
+    <Compile Include="Main\GUI\Panels\MiscPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Main\Panels\MiscPanel.Designer.cs">
+    <Compile Include="Main\GUI\Panels\MiscPanel.Designer.cs">
       <DependentUpon>MiscPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Panels\DashPanel.cs">
+    <Compile Include="Main\GUI\Panels\DashPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Main\Panels\DashPanel.Designer.cs">
+    <Compile Include="Main\GUI\Panels\DashPanel.Designer.cs">
       <DependentUpon>DashPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Panels\BackblingsPanel.cs">
+    <Compile Include="Main\GUI\Panels\BackblingsPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Main\Panels\BackblingsPanel.Designer.cs">
+    <Compile Include="Main\GUI\Panels\BackblingsPanel.Designer.cs">
       <DependentUpon>BackblingsPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Panels\PickaxesPanel.cs">
+    <Compile Include="Main\GUI\Panels\PickaxesPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Main\Panels\PickaxesPanel.Designer.cs">
+    <Compile Include="Main\GUI\Panels\PickaxesPanel.Designer.cs">
       <DependentUpon>PickaxesPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Panels\SkinsPanel.cs">
+    <Compile Include="Main\GUI\Panels\SidebarPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Main\Panels\SkinsPanel.Designer.cs">
+    <Compile Include="Main\GUI\Panels\SidebarPanel.Designer.cs">
+      <DependentUpon>SidebarPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Panels\SkinsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Panels\SkinsPanel.Designer.cs">
       <DependentUpon>SkinsPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Main\GUI\ItemShop.resx">
-      <DependentUpon>ItemShop.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Messages\Annoucement.resx">
       <DependentUpon>Annoucement.cs</DependentUpon>
     </EmbeddedResource>
@@ -304,49 +301,49 @@
     <EmbeddedResource Include="Main\GUI\Messages\CheckIfSwapMesg.resx">
       <DependentUpon>CheckIfSwapMesg.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\Items\Questions\RamirezOption.resx">
+    <EmbeddedResource Include="Main\GUI\Items\Questions\RamirezOption.resx">
       <DependentUpon>RamirezOption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\Items\Skins\RamirezAA.resx">
+    <EmbeddedResource Include="Main\GUI\Items\Skins\RamirezAA.resx">
       <DependentUpon>RamirezAA.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\Items\Skins\ReconExpert.resx">
+    <EmbeddedResource Include="Main\GUI\Items\Skins\ReconExpert.resx">
       <DependentUpon>ReconExpert.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\Items\Skins\headhunter.resx">
+    <EmbeddedResource Include="Main\GUI\Items\Skins\headhunter.resx">
       <DependentUpon>headhunter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\Items\Skins\Ramirez.resx">
+    <EmbeddedResource Include="Main\GUI\Items\Skins\Ramirez.resx">
       <DependentUpon>Ramirez.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\Items\Skins\SparkleSpecialist.resx">
+    <EmbeddedResource Include="Main\GUI\Items\Skins\SparkleSpecialist.resx">
       <DependentUpon>SparkleSpecialist.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\Panels\EmotesPanel.resx">
+    <EmbeddedResource Include="Main\GUI\Panels\EmotesPanel.resx">
       <DependentUpon>EmotesPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Messages\EmoteWarning.resx">
       <DependentUpon>EmoteWarning.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\GUI\BackupVerify.resx">
+    <EmbeddedResource Include="Main\GUI\Messages\BackupVerify.resx">
       <DependentUpon>BackupVerify.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\GUI\Loader.resx">
+    <EmbeddedResource Include="Main\GUI\Main\Loader.resx">
       <DependentUpon>Loader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Messages\BypassWarning.resx">
       <DependentUpon>BypassWarning.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\GUI\Messages\Update.resx">
+    <EmbeddedResource Include="Main\GUI\Main\Update.resx">
       <DependentUpon>Update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Messages\PakError.resx">
       <DependentUpon>PakError.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\GUI\Messages\DevMode.resx">
+    <EmbeddedResource Include="Main\GUI\Main\DevMode.resx">
       <DependentUpon>DevMode.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\GUI\Home.resx">
+    <EmbeddedResource Include="Main\GUI\Main\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Messages\FortniteLaunch.resx">
@@ -358,26 +355,29 @@
     <EmbeddedResource Include="Main\GUI\Messages\ResetConfirm.resx">
       <DependentUpon>ResetConfirm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\GUI\AdvancedSettings.resx">
+    <EmbeddedResource Include="Main\GUI\Main\AdvancedSettings.resx">
       <DependentUpon>AdvancedSettings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\GUI\Settings.resx">
+    <EmbeddedResource Include="Main\GUI\Main\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\Panels\MiscPanel.resx">
+    <EmbeddedResource Include="Main\GUI\Panels\MiscPanel.resx">
       <DependentUpon>MiscPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\Panels\DashPanel.resx">
+    <EmbeddedResource Include="Main\GUI\Panels\DashPanel.resx">
       <DependentUpon>DashPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\Panels\BackblingsPanel.resx">
+    <EmbeddedResource Include="Main\GUI\Panels\BackblingsPanel.resx">
       <DependentUpon>BackblingsPanel.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\Panels\PickaxesPanel.resx">
+    <EmbeddedResource Include="Main\GUI\Panels\PickaxesPanel.resx">
       <DependentUpon>PickaxesPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\Panels\SkinsPanel.resx">
+    <EmbeddedResource Include="Main\GUI\Panels\SidebarPanel.resx">
+      <DependentUpon>SidebarPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Panels\SkinsPanel.resx">
       <DependentUpon>SkinsPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -410,6 +410,8 @@
     <None Include="Resources\kaedepfp.bmp" />
     <None Include="Resources\kaede.png" />
     <None Include="Resources\testingthis_471_icon.ico" />
+    <None Include="Resources\kaede %281%29.png" />
+    <None Include="Resources\kaede %282%29.png" />
     <Content Include="Resources\test_92j_icon.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -444,10 +446,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Main\Items\Backblings\" />
-    <Folder Include="Main\Items\Emotes\" />
-    <Folder Include="Main\Items\Misc\" />
-    <Folder Include="Main\Items\Pickaxes\" />
+    <Folder Include="Main\GUI\Items\Backblings\" />
+    <Folder Include="Main\GUI\Items\Emotes\" />
+    <Folder Include="Main\GUI\Items\Misc\" />
+    <Folder Include="Main\GUI\Items\Pickaxes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.6.2.0\build\Fody.targets" Condition="Exists('..\packages\Fody.6.2.0\build\Fody.targets')" />

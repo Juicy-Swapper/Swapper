@@ -1,7 +1,5 @@
-﻿using JuicySwapper.Main.GUI;
+﻿using JuicySwapper.Main.Panels;
 using System;
-using System.Diagnostics;
-using System.Net;
 using System.Windows.Forms;
 
 namespace JuicySwapper.Panels
@@ -18,9 +16,22 @@ namespace JuicySwapper.Panels
                 return _instance;
             }
         }
+
         public EmotesPanel()
         {
             InitializeComponent();
+        }
+
+        private void Sidebar_Paint(object sender, PaintEventArgs e)
+        {
+            if (!Sidebar.Controls.Contains(SidebarPanel.Instance))
+            {
+                Sidebar.Controls.Add(SidebarPanel.Instance);
+                SidebarPanel.Instance.Dock = DockStyle.Fill;
+                SidebarPanel.Instance.BringToFront();
+            }
+            else
+                SidebarPanel.Instance.BringToFront();
         }
 
         private void bunifuFlatButton7_Click(object sender, System.EventArgs e)

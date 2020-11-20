@@ -9,17 +9,16 @@ namespace JuicySwapper.Main.GUI
     public partial class Loader : Form
     {
         public byte holder = 0;
-        public DiscordRpcClient discordRpcClient_0 = new DiscordRpcClient("704324460291031047");
         public Loader()
         {
-            Juicy.discordrpc.Initialize();
-            Juicy.SetDiscordAction("Loading Swapper...");
             InitializeComponent();
-            Juicy.CloseEpicProcesses();
-            Juicy.DiscordInvite();
+            JuicyUtilities.DiscordRPC.Initialize();
+            JuicyUtilities.SetRPCAction("In Dashboard", "");
+            JuicyUtilities.CloseEpicProcesses();
+            //JuicyUtilities.DiscordInvite();
             SwapUtilities.Requestoffsets();
             //SwapUtilities.RequestPaks();
-            Juicy.FindPaks();
+            JuicyUtilities.FindPaks();
             timer1.Start();
         }
 

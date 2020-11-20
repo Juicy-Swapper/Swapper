@@ -37,78 +37,6 @@ namespace JuicySwapper.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool openfortnite {
-            get {
-                return ((bool)(this["openfortnite"]));
-            }
-            set {
-                this["openfortnite"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool opendiscord {
-            get {
-                return ((bool)(this["opendiscord"]));
-            }
-            set {
-                this["opendiscord"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Skins")]
-        public string Rpc {
-            get {
-                return ((string)(this["Rpc"]));
-            }
-            set {
-                this["Rpc"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Exp {
-            get {
-                return ((string)(this["Exp"]));
-            }
-            set {
-                this["Exp"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int testoff {
-            get {
-                return ((int)(this["testoff"]));
-            }
-            set {
-                this["testoff"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string testpak {
-            get {
-                return ((string)(this["testpak"]));
-            }
-            set {
-                this["testpak"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public long current_offset {
             get {
@@ -212,30 +140,6 @@ namespace JuicySwapper.Properties {
             }
             set {
                 this["headhunterATEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string SkinSwapped {
-            get {
-                return ((string)(this["SkinSwapped"]));
-            }
-            set {
-                this["SkinSwapped"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string SkinSwappedFor {
-            get {
-                return ((string)(this["SkinSwappedFor"]));
-            }
-            set {
-                this["SkinSwappedFor"] = value;
             }
         }
         

@@ -128,23 +128,23 @@ namespace JuicySwapper.Main.GUI
 
         private void SettingsMenu_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (Settings.Default.Rpc == "Skins")
-                Juicy.SetDiscordLocation("Skins");
+            if (Home.Rpc == "Skins")
+                JuicyUtilities.SetRPCLocation("Skins", "skinimg");
 
-            else if (Settings.Default.Rpc == "Backblings")
-                Juicy.SetDiscordLocation("Backblings");
+            else if (Home.Rpc == "Backblings")
+                JuicyUtilities.SetRPCLocation("Backblings", "backblingimg");
 
-            else if (Settings.Default.Rpc == "Pickaxes")
-                Juicy.SetDiscordLocation("Pickaxes");
+            else if (Home.Rpc == "Pickaxes")
+                JuicyUtilities.SetRPCLocation("Pickaxes", "pickaxeimg");
 
-            else if (Settings.Default.Rpc == "Emotes")
-                Juicy.SetDiscordLocation("Emotes");
+            else if (Home.Rpc == "Emotes")
+                JuicyUtilities.SetRPCLocation("Emotes", "emoteimg");
 
-            else if (Settings.Default.Rpc == "Miscellaneous")
-                Juicy.SetDiscordLocation("Miscellaneous");
+            else if (Home.Rpc == "Miscellaneous")
+                JuicyUtilities.SetRPCLocation("Miscellaneous", "miscellaneousimg");
 
-            else if (Settings.Default.Rpc == "InDashboard")
-                Juicy.SetDiscordLocation("In Dashboard");
+            else if (Home.Rpc == "InDashboard")
+                JuicyUtilities.SetRPCAction("In Dashboard", "dashimg");
         }
     }
 }

@@ -1,24 +1,22 @@
-﻿using JuicySwapper.Main.GUI;
-using System;
-using System.Diagnostics;
-using System.Net;
+﻿using System;
 using System.Windows.Forms;
 
-namespace JuicySwapper.Panels
+namespace JuicySwapper.Main.Panels
 {
-    public partial class MiscPanel : UserControl
+    public partial class SidebarPanel : UserControl
     {
-        private static MiscPanel _instance;      
-        public static MiscPanel Instance
+        private static SidebarPanel _instance;
+        public static SidebarPanel Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new MiscPanel();
+                    _instance = new SidebarPanel();
                 return _instance;
             }
         }
-        public MiscPanel()
+
+        public SidebarPanel()
         {
             InitializeComponent();
         }

@@ -53,7 +53,7 @@ namespace JuicySwapper
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Juicy.GetStatus();
+                //Juicy.GetStatus();
                 Application.Run(new Loader());
             }
         }

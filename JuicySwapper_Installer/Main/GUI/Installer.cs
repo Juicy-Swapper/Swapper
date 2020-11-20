@@ -12,9 +12,8 @@ namespace JuicySwapper_Installer.Main.GUI
         public Installer()
         {
             InitializeComponent();
-            Juicy.discordrpc.Initialize();
-            Juicy.SetDiscordAction("Installer");
-
+            Juicy.DiscordRPC.Initialize();
+            Juicy.SetRPCAction("", "");
         }
         
 

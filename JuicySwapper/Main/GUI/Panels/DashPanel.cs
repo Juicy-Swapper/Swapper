@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using JuicySwapper.Main.Panels;
+using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
 using System.Net;
@@ -19,9 +20,23 @@ namespace JuicySwapper.Panels
                 return _instance;
             }
         }
+
         public DashPanel()
         {
             InitializeComponent();
+            GetContent();
+        }
+
+        private void Sidebar_Paint(object sender, PaintEventArgs e)
+        {
+            if (!Sidebar.Controls.Contains(SidebarPanel.Instance))
+            {
+                Sidebar.Controls.Add(SidebarPanel.Instance);
+                SidebarPanel.Instance.Dock = DockStyle.Fill;
+                SidebarPanel.Instance.BringToFront();
+            }
+            else
+                SidebarPanel.Instance.BringToFront();
         }
 
         private void bunifuFlatButton7_Click(object sender, System.EventArgs e)
@@ -32,11 +47,6 @@ namespace JuicySwapper.Panels
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://juicyswapper.xyz");
-        }
-
-        private void DashPanel_Load(object sender, EventArgs e)
-        {
-            GetContent();
         }
 
         public void GetContent()

@@ -5,24 +5,6 @@
     <Setting Name="pakPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\Program Files\Epic Games\Fortnite\FortniteGame\Content\Paks</Value>
     </Setting>
-    <Setting Name="openfortnite" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
-    <Setting Name="opendiscord" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
-    </Setting>
-    <Setting Name="Rpc" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Skins</Value>
-    </Setting>
-    <Setting Name="Exp" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="testoff" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
-    </Setting>
-    <Setting Name="testpak" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
     <Setting Name="current_offset" Type="System.Int64" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
@@ -49,12 +31,6 @@
     </Setting>
     <Setting Name="headhunterATEnabled" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
-    </Setting>
-    <Setting Name="SkinSwapped" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="SkinSwappedFor" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="RamirezEnabled" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>

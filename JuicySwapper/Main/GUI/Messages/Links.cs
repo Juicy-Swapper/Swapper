@@ -20,17 +20,17 @@ namespace JuicySwapper.Main.GUI
 
         private void Discord_Click(object sender, EventArgs e)
         {
-            Juicy.DiscordInvite();
+            JuicyUtilities.DiscordInvite();
         }
 
         private void Website_Click(object sender, EventArgs e)
         {
-            Juicy.Website();
+            JuicyUtilities.Website();
         }
 
         private void Twitter_Click(object sender, EventArgs e)
         {
-            Juicy.Twitter();
+            JuicyUtilities.Twitter();
         }
     }
 }

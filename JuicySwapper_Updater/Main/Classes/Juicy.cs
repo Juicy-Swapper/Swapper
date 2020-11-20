@@ -1,35 +1,29 @@
 ﻿using DiscordRPC;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace JuicySwapper_Updater.Main.Classes
 {
     class Juicy
     {
-        public static readonly DiscordRpcClient discordrpc = new DiscordRpcClient("704324460291031047");
-        public static void SetDiscordLocation(string Location)
-        {
-            discordrpc.SetPresence(new RichPresence
-            {
-                Details = $"🧃 • In {Location} Tab",
-                State = "🧃 • juicyswapper.xyz",
-                Assets = new Assets { LargeImageKey = "discordsmall2", LargeImageText = $"🧃 • Version v{Application.ProductVersion}" }
-            });
-        }
+        public static readonly DiscordRpcClient DiscordRPC = new DiscordRpcClient("779410134244786206");
+		public static void SetRPCLocation(string Location, string ImageKey)
+		{
+			DiscordRPC.SetPresence(new RichPresence
+			{
+				Details = "juicyswapper.xyz",
+				Timestamps = Timestamps.Now,
+				Assets = new Assets { LargeImageKey = "mainrpcimg", SmallImageKey = ImageKey, LargeImageText = $"🧃 • Discord https://discord.gg/z6yqBdvBfH", SmallImageText = $"In {Location} Tab" }
+			});
+		}
 
-        public static void SetDiscordAction(string Action)
-        {
-            discordrpc.SetPresence(new RichPresence
-            {
-                Details = $"🧃 • {Action}",
-                State = "🧃 • juicyswapper.xyz",
-                Assets = new Assets { LargeImageKey = "discordsmall2", LargeImageText = $"🧃 • Version v{Application.ProductVersion}" }
-            });
-        }
-
-    }
+		public static void SetRPCAction(string Action, string ImageKey)
+		{
+			DiscordRPC.SetPresence(new RichPresence
+			{
+				Details = "juicyswapper.xyz",
+				Timestamps = Timestamps.Now,
+				Assets = new Assets { LargeImageKey = "mainrpcimg", SmallImageKey = ImageKey, LargeImageText = $"🧃 • Discord https://discord.gg/z6yqBdvBfH", SmallImageText = $"{Action}" }
+			});
+		}
+	}
 }

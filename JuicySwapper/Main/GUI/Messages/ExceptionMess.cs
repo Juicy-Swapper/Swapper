@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Media;
-using System.Threading;
 using System.Windows.Forms;
-using JuicySwapper.Properties;
+using JuicySwapper.Main.Classes;
 
 namespace JuicySwapper.Main.GUI
 {
@@ -14,7 +13,7 @@ namespace JuicySwapper.Main.GUI
             InitializeComponent();
             this.ActiveControl = label1;
             label2.Text = "Looks like we couldnt get the Resources for our\napi too you.If you need help with this please\njoin our discord by clicking on the 'Discord' button";
-            label3.Text = "Help code: " + Settings.Default.Exp;
+            label3.Text = "Help code: " + SwapUtilities.Exp;
         }
 
         private void discordButton_Click(object sender, EventArgs e)
@@ -24,9 +23,6 @@ namespace JuicySwapper.Main.GUI
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            Settings.Default.Exp = "Error";
-            Settings.Default.Save();
-            Thread.Sleep(50);
             Close();
         }
 

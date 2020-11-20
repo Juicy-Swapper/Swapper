@@ -56,7 +56,6 @@ namespace JuicySwapper.Main.GUI
         {
             new FortniteLaunch().ShowDialog();
             Process.Start($"{Settings.Default.InstallationPath}\\FortniteGame\\Binaries\\Win64\\FortniteClient-Win64-Shipping_EAC.exe");
-            Settings.Default.openfortnite = true;
             Environment.Exit(0);
         }
     }

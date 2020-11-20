@@ -6,40 +6,35 @@ using System.Net;
 using System.Windows.Forms;
 using JuicySwapper.Properties;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System.Diagnostics;
 using JuicySwapper.Main.Classes;
 using static JuicySwapper.Classes.Json_Api.SatusAPI;
 using static System.Environment;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
 
 namespace JuicySwapper
 {
-	public class Juicy
+	public class JuicyUtilities
 	{
 		public static InstallLocation LauncherInstalled => GetLauncherInstalled();
-		//
-		//RPC
-		//
-		public static readonly DiscordRpcClient discordrpc = new DiscordRpcClient("760881751849173033");
-		public static void SetDiscordLocation(string Location)
+
+		public static readonly DiscordRpcClient DiscordRPC = new DiscordRpcClient("779400510566039624");
+		public static void SetRPCLocation(string Location, string ImageKey)
 		{
-			discordrpc.SetPresence(new RichPresence
+			DiscordRPC.SetPresence(new RichPresence
 			{
-				Details = $"🧃 • In {Location} Tab",
-				State = "🧃 • juicyswapper.xyz",
-				Assets = new Assets { LargeImageKey = "discordsmall2", LargeImageText = $"🧃 • Version v{Application.ProductVersion}" }
+				Details = "juicyswapper.xyz",
+				Timestamps = Timestamps.Now,
+				Assets = new Assets { LargeImageKey = "mainrpcimg", SmallImageKey = ImageKey, LargeImageText = $"🧃 • Version v{Application.ProductVersion}", SmallImageText = $"In {Location} Tab" }
 			});
 		}
 
-		public static void SetDiscordAction(string Action)
+		public static void SetRPCAction(string Action, string ImageKey)
 		{
-			discordrpc.SetPresence(new RichPresence
+			DiscordRPC.SetPresence(new RichPresence
 			{
-				Details = $"🧃 • {Action}",
-				State = "🧃 • juicyswapper.xyz",
-				Assets = new Assets { LargeImageKey = "discordsmall2", LargeImageText = $"🧃 • Version v{Application.ProductVersion}" }
+				Details = "juicyswapper.xyz",
+				Timestamps = Timestamps.Now,
+				Assets = new Assets { LargeImageKey = "mainrpcimg", SmallImageKey = ImageKey, LargeImageText = $"🧃 • Version v{Application.ProductVersion}", SmallImageText = $"{Action}" }
 			});
 		}
 
