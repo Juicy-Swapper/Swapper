@@ -11,8 +11,8 @@
 ### Links & Support
 
 - **For support and guidance, join [this Discord guild.](https://juicyswapper.xyz/discord)**
-- **My Discord username**: darkblade#0001
-- **My Twitter handle**: @DarkbladeEU
+- **My Discord username**: hina#0001
+- **My Twitter handle**: @0xKaede
 
 ### Credits
 - **Myself**: [@0xKaede on Twitter](https://twitter.com/0xkaede) 
