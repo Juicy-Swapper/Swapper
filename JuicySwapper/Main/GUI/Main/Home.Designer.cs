@@ -35,12 +35,13 @@
             this.Wrapper = new System.Windows.Forms.Panel();
             this.CurvaSidebar = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.SettingsButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ControlBar = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.WrapsButton = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.EmoteButton = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.PickaxeButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.BackblingButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SkinButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.DashButton = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -58,7 +59,6 @@
             this.MoveToEmote = new System.Windows.Forms.Timer(this.components);
             this.MoveToWraps = new System.Windows.Forms.Timer(this.components);
             this.MoveToSettings = new System.Windows.Forms.Timer(this.components);
-            this.SettingsButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Sidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ControlBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
@@ -93,8 +93,8 @@
             this.Sidebar.Controls.Add(this.label1);
             this.Sidebar.Controls.Add(this.bunifuImageButton2);
             this.Sidebar.Controls.Add(this.WrapsButton);
-            this.Sidebar.Controls.Add(this.bunifuFlatButton5);
             this.Sidebar.Controls.Add(this.EmoteButton);
+            this.Sidebar.Controls.Add(this.PickaxeButton);
             this.Sidebar.Controls.Add(this.BackblingButton);
             this.Sidebar.Controls.Add(this.SkinButton);
             this.Sidebar.Controls.Add(this.DashButton);
@@ -111,6 +111,43 @@
             this.Sidebar.Quality = 10;
             this.Sidebar.Size = new System.Drawing.Size(68, 573);
             this.Sidebar.TabIndex = 0;
+            // 
+            // SettingsButton
+            // 
+            this.SettingsButton.Activecolor = System.Drawing.Color.Transparent;
+            this.SettingsButton.BackColor = System.Drawing.Color.Transparent;
+            this.SettingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SettingsButton.BorderRadius = 0;
+            this.SettingsButton.ButtonText = "      SETTINGS";
+            this.SettingsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionSidebar.SetDecoration(this.SettingsButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.SettingsButton, BunifuAnimatorNS.DecorationType.None);
+            this.SettingsButton.DisabledColor = System.Drawing.Color.Transparent;
+            this.SettingsButton.Iconcolor = System.Drawing.Color.Transparent;
+            this.SettingsButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("SettingsButton.Iconimage")));
+            this.SettingsButton.Iconimage_right = null;
+            this.SettingsButton.Iconimage_right_Selected = null;
+            this.SettingsButton.Iconimage_Selected = null;
+            this.SettingsButton.IconMarginLeft = 0;
+            this.SettingsButton.IconMarginRight = 0;
+            this.SettingsButton.IconRightVisible = true;
+            this.SettingsButton.IconRightZoom = 0D;
+            this.SettingsButton.IconVisible = true;
+            this.SettingsButton.IconZoom = 50D;
+            this.SettingsButton.IsTab = false;
+            this.SettingsButton.Location = new System.Drawing.Point(9, 511);
+            this.SettingsButton.Name = "SettingsButton";
+            this.SettingsButton.Normalcolor = System.Drawing.Color.Transparent;
+            this.SettingsButton.OnHovercolor = System.Drawing.Color.Transparent;
+            this.SettingsButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.SettingsButton.selected = false;
+            this.SettingsButton.Size = new System.Drawing.Size(252, 51);
+            this.SettingsButton.TabIndex = 15;
+            this.SettingsButton.Text = "      SETTINGS";
+            this.SettingsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SettingsButton.Textcolor = System.Drawing.Color.White;
+            this.SettingsButton.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SettingsButton.Click += new System.EventHandler(this.displaySettings_Click);
             // 
             // ControlBar
             // 
@@ -191,50 +228,13 @@
             this.WrapsButton.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WrapsButton.Click += new System.EventHandler(this.bunifuFlatButton6_Click);
             // 
-            // bunifuFlatButton5
-            // 
-            this.bunifuFlatButton5.Activecolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton5.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton5.BorderRadius = 0;
-            this.bunifuFlatButton5.ButtonText = "      EMOTES";
-            this.bunifuFlatButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimacionSidebar.SetDecoration(this.bunifuFlatButton5, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.bunifuFlatButton5, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuFlatButton5.DisabledColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton5.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton5.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton5.Iconimage")));
-            this.bunifuFlatButton5.Iconimage_right = null;
-            this.bunifuFlatButton5.Iconimage_right_Selected = null;
-            this.bunifuFlatButton5.Iconimage_Selected = null;
-            this.bunifuFlatButton5.IconMarginLeft = 0;
-            this.bunifuFlatButton5.IconMarginRight = 0;
-            this.bunifuFlatButton5.IconRightVisible = true;
-            this.bunifuFlatButton5.IconRightZoom = 0D;
-            this.bunifuFlatButton5.IconVisible = true;
-            this.bunifuFlatButton5.IconZoom = 50D;
-            this.bunifuFlatButton5.IsTab = false;
-            this.bunifuFlatButton5.Location = new System.Drawing.Point(9, 371);
-            this.bunifuFlatButton5.Name = "bunifuFlatButton5";
-            this.bunifuFlatButton5.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton5.OnHovercolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton5.selected = false;
-            this.bunifuFlatButton5.Size = new System.Drawing.Size(252, 51);
-            this.bunifuFlatButton5.TabIndex = 12;
-            this.bunifuFlatButton5.Text = "      EMOTES";
-            this.bunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton5.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton5.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton5.Click += new System.EventHandler(this.bunifuFlatButton5_Click);
-            // 
             // EmoteButton
             // 
             this.EmoteButton.Activecolor = System.Drawing.Color.Transparent;
             this.EmoteButton.BackColor = System.Drawing.Color.Transparent;
             this.EmoteButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.EmoteButton.BorderRadius = 0;
-            this.EmoteButton.ButtonText = "      PICKAXES";
+            this.EmoteButton.ButtonText = "      EMOTES";
             this.EmoteButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebar.SetDecoration(this.EmoteButton, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.EmoteButton, BunifuAnimatorNS.DecorationType.None);
@@ -251,19 +251,56 @@
             this.EmoteButton.IconVisible = true;
             this.EmoteButton.IconZoom = 50D;
             this.EmoteButton.IsTab = false;
-            this.EmoteButton.Location = new System.Drawing.Point(9, 301);
+            this.EmoteButton.Location = new System.Drawing.Point(9, 371);
             this.EmoteButton.Name = "EmoteButton";
             this.EmoteButton.Normalcolor = System.Drawing.Color.Transparent;
             this.EmoteButton.OnHovercolor = System.Drawing.Color.Transparent;
             this.EmoteButton.OnHoverTextColor = System.Drawing.Color.White;
             this.EmoteButton.selected = false;
             this.EmoteButton.Size = new System.Drawing.Size(252, 51);
-            this.EmoteButton.TabIndex = 11;
-            this.EmoteButton.Text = "      PICKAXES";
+            this.EmoteButton.TabIndex = 12;
+            this.EmoteButton.Text = "      EMOTES";
             this.EmoteButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EmoteButton.Textcolor = System.Drawing.Color.White;
             this.EmoteButton.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmoteButton.Click += new System.EventHandler(this.bunifuFlatButton4_Click);
+            this.EmoteButton.Click += new System.EventHandler(this.bunifuFlatButton5_Click);
+            // 
+            // PickaxeButton
+            // 
+            this.PickaxeButton.Activecolor = System.Drawing.Color.Transparent;
+            this.PickaxeButton.BackColor = System.Drawing.Color.Transparent;
+            this.PickaxeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PickaxeButton.BorderRadius = 0;
+            this.PickaxeButton.ButtonText = "      PICKAXES";
+            this.PickaxeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimacionSidebar.SetDecoration(this.PickaxeButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.PickaxeButton, BunifuAnimatorNS.DecorationType.None);
+            this.PickaxeButton.DisabledColor = System.Drawing.Color.Transparent;
+            this.PickaxeButton.Iconcolor = System.Drawing.Color.Transparent;
+            this.PickaxeButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("PickaxeButton.Iconimage")));
+            this.PickaxeButton.Iconimage_right = null;
+            this.PickaxeButton.Iconimage_right_Selected = null;
+            this.PickaxeButton.Iconimage_Selected = null;
+            this.PickaxeButton.IconMarginLeft = 0;
+            this.PickaxeButton.IconMarginRight = 0;
+            this.PickaxeButton.IconRightVisible = true;
+            this.PickaxeButton.IconRightZoom = 0D;
+            this.PickaxeButton.IconVisible = true;
+            this.PickaxeButton.IconZoom = 50D;
+            this.PickaxeButton.IsTab = false;
+            this.PickaxeButton.Location = new System.Drawing.Point(9, 301);
+            this.PickaxeButton.Name = "PickaxeButton";
+            this.PickaxeButton.Normalcolor = System.Drawing.Color.Transparent;
+            this.PickaxeButton.OnHovercolor = System.Drawing.Color.Transparent;
+            this.PickaxeButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.PickaxeButton.selected = false;
+            this.PickaxeButton.Size = new System.Drawing.Size(252, 51);
+            this.PickaxeButton.TabIndex = 11;
+            this.PickaxeButton.Text = "      PICKAXES";
+            this.PickaxeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PickaxeButton.Textcolor = System.Drawing.Color.White;
+            this.PickaxeButton.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PickaxeButton.Click += new System.EventHandler(this.bunifuFlatButton4_Click);
             // 
             // BackblingButton
             // 
@@ -505,43 +542,6 @@
             this.MoveToSettings.Interval = 1;
             this.MoveToSettings.Tick += new System.EventHandler(this.MoveToSettings_Tick);
             // 
-            // SettingsButton
-            // 
-            this.SettingsButton.Activecolor = System.Drawing.Color.Transparent;
-            this.SettingsButton.BackColor = System.Drawing.Color.Transparent;
-            this.SettingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.SettingsButton.BorderRadius = 0;
-            this.SettingsButton.ButtonText = "      SETTINGS";
-            this.SettingsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimacionSidebar.SetDecoration(this.SettingsButton, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.SettingsButton, BunifuAnimatorNS.DecorationType.None);
-            this.SettingsButton.DisabledColor = System.Drawing.Color.Transparent;
-            this.SettingsButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.SettingsButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("SettingsButton.Iconimage")));
-            this.SettingsButton.Iconimage_right = null;
-            this.SettingsButton.Iconimage_right_Selected = null;
-            this.SettingsButton.Iconimage_Selected = null;
-            this.SettingsButton.IconMarginLeft = 0;
-            this.SettingsButton.IconMarginRight = 0;
-            this.SettingsButton.IconRightVisible = true;
-            this.SettingsButton.IconRightZoom = 0D;
-            this.SettingsButton.IconVisible = true;
-            this.SettingsButton.IconZoom = 50D;
-            this.SettingsButton.IsTab = false;
-            this.SettingsButton.Location = new System.Drawing.Point(9, 511);
-            this.SettingsButton.Name = "SettingsButton";
-            this.SettingsButton.Normalcolor = System.Drawing.Color.Transparent;
-            this.SettingsButton.OnHovercolor = System.Drawing.Color.Transparent;
-            this.SettingsButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.SettingsButton.selected = false;
-            this.SettingsButton.Size = new System.Drawing.Size(252, 51);
-            this.SettingsButton.TabIndex = 15;
-            this.SettingsButton.Text = "      SETTINGS";
-            this.SettingsButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SettingsButton.Textcolor = System.Drawing.Color.White;
-            this.SettingsButton.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SettingsButton.Click += new System.EventHandler(this.displaySettings_Click);
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -577,8 +577,8 @@
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private Bunifu.Framework.UI.BunifuFlatButton WrapsButton;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton5;
         private Bunifu.Framework.UI.BunifuFlatButton EmoteButton;
+        private Bunifu.Framework.UI.BunifuFlatButton PickaxeButton;
         private Bunifu.Framework.UI.BunifuFlatButton BackblingButton;
         private Bunifu.Framework.UI.BunifuFlatButton SkinButton;
         private Bunifu.Framework.UI.BunifuFlatButton DashButton;

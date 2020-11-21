@@ -12,8 +12,8 @@ namespace JuicySwapper.Main.GUI
         {
             InitializeComponent();
             this.ActiveControl = label1;
-            label1.Text = "A skin using " + SwapUtilities.SkinSwapped + " is already converted.";
-            label2.Text = SwapUtilities.SkinSwappedFor + " has been swapped for " + SwapUtilities.SkinSwapped + "\nif this is an error on our end, please reset config in Settings.";
+            label1.Text = $"A skin using {SwapUtilities.SkinSwapped} is already converted.";
+            label2.Text = $"{SwapUtilities.SkinSwappedFor} has been swapped for {SwapUtilities.SkinSwapped}\nif this is an error on our end, please reset config in Settings.";
         }
 
         private void discordButton_Click(object sender, EventArgs e)

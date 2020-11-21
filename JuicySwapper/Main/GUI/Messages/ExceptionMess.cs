@@ -13,7 +13,7 @@ namespace JuicySwapper.Main.GUI
             InitializeComponent();
             this.ActiveControl = label1;
             label2.Text = "Looks like we couldnt get the Resources for our\napi too you.If you need help with this please\njoin our discord by clicking on the 'Discord' button";
-            label3.Text = "Help code: " + SwapUtilities.Exp;
+            label3.Text = $"Help code: {SwapUtilities.Exp}";
         }
 
         private void discordButton_Click(object sender, EventArgs e)

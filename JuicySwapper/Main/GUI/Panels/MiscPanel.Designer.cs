@@ -48,6 +48,7 @@
             // 
             this.Sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
             this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Sidebar.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Sidebar.GradientBottomRight = System.Drawing.Color.Magenta;
@@ -79,6 +80,7 @@
             this.bunifuImageButton5.TabIndex = 23;
             this.bunifuImageButton5.TabStop = false;
             this.bunifuImageButton5.Zoom = 10;
+            this.bunifuImageButton5.Click += new System.EventHandler(this.bunifuImageButton5_Click);
             // 
             // bunifuImageButton6
             // 
@@ -92,6 +94,7 @@
             this.bunifuImageButton6.TabIndex = 22;
             this.bunifuImageButton6.TabStop = false;
             this.bunifuImageButton6.Zoom = 10;
+            this.bunifuImageButton6.Click += new System.EventHandler(this.bunifuImageButton6_Click);
             // 
             // MiscPanel
             // 

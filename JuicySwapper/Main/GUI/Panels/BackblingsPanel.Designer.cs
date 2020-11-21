@@ -48,6 +48,7 @@
             // 
             this.Sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
             this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Sidebar.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Sidebar.GradientBottomRight = System.Drawing.Color.Magenta;
@@ -72,13 +73,14 @@
             this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(113, 19);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(15, 19);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
             this.bunifuImageButton2.Size = new System.Drawing.Size(71, 71);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton2.TabIndex = 1;
             this.bunifuImageButton2.TabStop = false;
             this.bunifuImageButton2.Zoom = 10;
+            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
             // 
             // bunifuImageButton1
             // 

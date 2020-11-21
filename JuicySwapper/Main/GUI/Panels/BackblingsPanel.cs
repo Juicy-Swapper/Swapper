@@ -1,6 +1,7 @@
 ﻿using JuicySwapper.Main.Panels;
 using System;
 using System.Windows.Forms;
+using JuicySwapper.Items.BackBlings;
 
 namespace JuicySwapper.Panels
 {
@@ -37,6 +38,11 @@ namespace JuicySwapper.Panels
         private void bunifuFlatButton7_Click(object sender, System.EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            new BlackShield().ShowDialog();
         }
     }
 }

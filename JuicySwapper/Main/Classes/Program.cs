@@ -15,8 +15,6 @@
 //### Credits
 // -**Myself * *: [@0xKaede on Twitter](https://twitter.com/0xkaede) 
 // -**Tamely * *: [@TamelyFN on Twitter](https://twitter.com/TamelyFN)
-// -**DarkbladeEU * *: [@DarkbladeEU on Twitter](https://twitter.com/DarkbladeEU)
-
 //### Features
 //-Installer
 //   - Updater
@@ -53,7 +51,7 @@ namespace JuicySwapper
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                //Juicy.GetStatus();
+                JuicyUtilities.GetStatus();
                 Application.Run(new Loader());
             }
         }

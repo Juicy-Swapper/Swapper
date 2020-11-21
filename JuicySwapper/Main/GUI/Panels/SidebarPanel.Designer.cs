@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SidebarPanel));
             this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -35,6 +36,11 @@
             this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.LineaSidebar = new Bunifu.Framework.UI.BunifuSeparator();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl4 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl5 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.Sidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -186,6 +192,41 @@
             this.LineaSidebar.Transparency = 255;
             this.LineaSidebar.Vertical = false;
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.bunifuFlatButton1;
+            this.bunifuDragControl1.Vertical = true;
+            // 
+            // bunifuDragControl2
+            // 
+            this.bunifuDragControl2.Fixed = true;
+            this.bunifuDragControl2.Horizontal = true;
+            this.bunifuDragControl2.TargetControl = this.bunifuFlatButton5;
+            this.bunifuDragControl2.Vertical = true;
+            // 
+            // bunifuDragControl3
+            // 
+            this.bunifuDragControl3.Fixed = true;
+            this.bunifuDragControl3.Horizontal = true;
+            this.bunifuDragControl3.TargetControl = this.LineaSidebar;
+            this.bunifuDragControl3.Vertical = true;
+            // 
+            // bunifuDragControl4
+            // 
+            this.bunifuDragControl4.Fixed = true;
+            this.bunifuDragControl4.Horizontal = true;
+            this.bunifuDragControl4.TargetControl = this.pictureBox1;
+            this.bunifuDragControl4.Vertical = true;
+            // 
+            // bunifuDragControl5
+            // 
+            this.bunifuDragControl5.Fixed = true;
+            this.bunifuDragControl5.Horizontal = true;
+            this.bunifuDragControl5.TargetControl = this.Sidebar;
+            this.bunifuDragControl5.Vertical = true;
+            // 
             // SidebarPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,5 +248,10 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuSeparator LineaSidebar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl3;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl4;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl5;
     }
 }

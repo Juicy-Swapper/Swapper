@@ -1,6 +1,7 @@
 ﻿using JuicySwapper.Main.Panels;
 using System;
 using System.Windows.Forms;
+using JuicySwapper.Items.Misc;
 
 namespace JuicySwapper.Panels
 {
@@ -37,6 +38,16 @@ namespace JuicySwapper.Panels
         private void bunifuFlatButton7_Click(object sender, System.EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void bunifuImageButton5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Soon");
+        }
+
+        private void bunifuImageButton6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Soon");
         }
     }
 }

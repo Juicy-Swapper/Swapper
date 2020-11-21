@@ -105,6 +105,18 @@
     <Compile Include="Main\Classes\InstallLocation.cs" />
     <Compile Include="Main\Classes\JsonAPI.cs" />
     <Compile Include="Main\Classes\SwapUtilities.cs" />
+    <Compile Include="Main\GUI\Items\Backblings\BlackShield.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Backblings\BlackShield.designer.cs">
+      <DependentUpon>BlackShield.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Misc\JuicyEAC1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Misc\JuicyEAC1.designer.cs">
+      <DependentUpon>JuicyEAC1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\GUI\Items\Pickaxes\candyaxe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -349,6 +361,12 @@
     </Compile>
     <Compile Include="Main\Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Main\GUI\Items\Backblings\BlackShield.resx">
+      <DependentUpon>BlackShield.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Misc\JuicyEAC1.resx">
+      <DependentUpon>JuicyEAC1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Items\Pickaxes\candyaxe.resx">
       <DependentUpon>candyaxe.cs</DependentUpon>
     </EmbeddedResource>
@@ -536,9 +554,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Main\GUI\Items\Backblings\" />
     <Folder Include="Main\GUI\Items\Emotes\" />
-    <Folder Include="Main\GUI\Items\Misc\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.6.2.0\build\Fody.targets" Condition="Exists('..\packages\Fody.6.2.0\build\Fody.targets')" />

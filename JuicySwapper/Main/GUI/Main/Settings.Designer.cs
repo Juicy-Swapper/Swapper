@@ -50,6 +50,7 @@
             this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse7 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.selectPakPathButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).BeginInit();
             this.SuspendLayout();
@@ -368,6 +369,11 @@
             this.bunifuDragControl2.TargetControl = this.label1;
             this.bunifuDragControl2.Vertical = true;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1;
+            // 
             // SettingsMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -421,5 +427,6 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse6;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse7;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
+        private System.Windows.Forms.Timer timer1;
     }
 }

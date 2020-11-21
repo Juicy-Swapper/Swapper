@@ -89,7 +89,12 @@ namespace JuicySwapper.Main.Classes
 		{
 			Settings.Default.RenegadeEnabled
 		};
-		
+
+		public List<bool> RedShield = new List<bool>()
+		{
+			Settings.Default.BlackShieldEnabled
+		};
+
 		public static string SkinSwapped;
 		public static string SkinSwappedFor;
 
@@ -232,6 +237,20 @@ namespace JuicySwapper.Main.Classes
 
 					new CheckIfSwapMesg().ShowDialog();
 					break;
+
+				case "RedShield":
+					if (RedShield.All(a => a) || RedShield.All(a => !a))
+						return false;
+					else
+						SkinSwapped = "Red Shield";
+
+					if (Settings.Default.BlackShieldEnabled)
+						SkinSwappedFor = "Black Shild";
+
+					new CheckIfSwapMesg().ShowDialog();
+					break;
+
+					
 			}
 			return true;
 		}

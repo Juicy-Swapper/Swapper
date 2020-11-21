@@ -127,6 +127,11 @@ namespace JuicySwapper.Main.GUI
                 num++;
                 text += "Candy Axe," + " ";
             }
+            if (Settings.Default.candyaxeEnabled == true)
+            {
+                num++;
+                text += "Candy Axe," + " ";
+            }
 
             switch (num)
             {

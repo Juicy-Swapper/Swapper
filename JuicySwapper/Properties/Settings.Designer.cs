@@ -310,5 +310,29 @@ namespace JuicySwapper.Properties {
                 this["offset_temp"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool JuicyEAC1Enabled {
+            get {
+                return ((bool)(this["JuicyEAC1Enabled"]));
+            }
+            set {
+                this["JuicyEAC1Enabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BlackShieldEnabled {
+            get {
+                return ((bool)(this["BlackShieldEnabled"]));
+            }
+            set {
+                this["BlackShieldEnabled"] = value;
+            }
+        }
     }
 }

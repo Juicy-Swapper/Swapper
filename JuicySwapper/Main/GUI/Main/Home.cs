@@ -11,6 +11,7 @@ namespace JuicySwapper
     public partial class Home : Form
     {
         public static string Rpc;
+        public static byte hold;
         public DiscordRpcClient discordRpcClient_0 = new DiscordRpcClient("704324460291031047");
 
         public static string GetPaksFolder
@@ -34,7 +35,7 @@ namespace JuicySwapper
             SidebarWrapper.Width = 90;
             LineaSidebar.Width = 52;
             AnimacionSidebar.Show(Sidebar);
-
+            hold = 0;
             Rpc = "InDashboard";
             if (!Wrapper.Controls.Contains(DashPanel.Instance))
             {
@@ -70,6 +71,7 @@ namespace JuicySwapper
         {
             JuicyUtilities.SetRPCLocation("In Dashboard", "dashimg");
             Rpc = "InDashboard";
+            hold = 0;
             MoveToDash.Enabled = true;
             if (!Wrapper.Controls.Contains(DashPanel.Instance))
             {
@@ -85,6 +87,7 @@ namespace JuicySwapper
         {
             JuicyUtilities.SetRPCLocation("Skins", "skinimg");
             Rpc = "Skins";
+            hold = 1;
             MoveToSkin.Enabled = true;
             if (!Wrapper.Controls.Contains(SkinsPanel.Instance))
             {
@@ -100,6 +103,7 @@ namespace JuicySwapper
         {
             JuicyUtilities.SetRPCLocation("Backblings", "backblingimg");
             Rpc = "Backblings";
+            hold = 2;
             MoveToBack.Enabled = true;
             if (!Wrapper.Controls.Contains(BackblingsPanel.Instance))
             {
@@ -115,6 +119,7 @@ namespace JuicySwapper
         {
             JuicyUtilities.SetRPCLocation("Pickaxes", "pickaxeimg");
             Rpc = "Pickaxes";
+            hold = 3;
             MoveToPick.Enabled = true;
             if (!Wrapper.Controls.Contains(PickaxesPanel.Instance))
             {
@@ -131,6 +136,7 @@ namespace JuicySwapper
             new EmoteWarning().ShowDialog();
             JuicyUtilities.SetRPCLocation("Emotes", "emoteimg");
             Rpc = "Emotes";
+            hold = 4;
             MoveToEmote.Enabled = true;
             if (!Wrapper.Controls.Contains(EmotesPanel.Instance))
             {
@@ -146,6 +152,7 @@ namespace JuicySwapper
         {
             JuicyUtilities.SetRPCLocation("Miscellaneous", "miscellaneousimg");
             Rpc = "Miscellaneous";
+            hold = 4;
             MoveToWraps.Enabled = true;
             if (!Wrapper.Controls.Contains(MiscPanel.Instance))
             {
@@ -159,27 +166,8 @@ namespace JuicySwapper
 
         private void displaySettings_Click(object sender, EventArgs e)
         {
-            MoveToSettings.Enabled = true;
             JuicyUtilities.SetRPCLocation("Settings", "settingsimg");
             new SettingsMenu().ShowDialog();
-
-            if (Home.Rpc == "Skins")
-                MoveToSkin.Enabled = true;
-
-            else if (Home.Rpc == "Backblings")
-                MoveToBack.Enabled = true;
-
-            else if (Home.Rpc == "Pickaxes")
-                MoveToPick.Enabled = true;
-
-            else if (Home.Rpc == "Emotes")
-                MoveToEmote.Enabled = true;
-
-            else if (Home.Rpc == "Miscellaneous")
-                MoveToWraps.Enabled = true;
-
-            else if (Home.Rpc == "InDashboard")
-                MoveToDash.Enabled = true;
         }
 
         private void bunifuFlatButton1_Click_1(object sender, EventArgs e)
@@ -190,7 +178,7 @@ namespace JuicySwapper
         {
             SkinButton.Enabled = false;
             BackblingButton.Enabled = false;
-            BackblingButton.Enabled = false;
+            PickaxeButton.Enabled = false;
             EmoteButton.Enabled = false;
             WrapsButton.Enabled = false;
             SettingsButton.Enabled = false;
@@ -204,7 +192,7 @@ namespace JuicySwapper
                 MoveToDash.Enabled = false;
                 SkinButton.Enabled = true;
                 BackblingButton.Enabled = true;
-                BackblingButton.Enabled = true;
+                PickaxeButton.Enabled = true;
                 EmoteButton.Enabled = true;
                 WrapsButton.Enabled = true;
                 SettingsButton.Enabled = true;
@@ -214,7 +202,7 @@ namespace JuicySwapper
         {
             DashButton.Enabled = false;
             BackblingButton.Enabled = false;
-            BackblingButton.Enabled = false;
+            PickaxeButton.Enabled = false;
             EmoteButton.Enabled = false;
             WrapsButton.Enabled = false;
             SettingsButton.Enabled = false;
@@ -232,7 +220,7 @@ namespace JuicySwapper
                 MoveToSkin.Enabled = false;
                 DashButton.Enabled = true;
                 BackblingButton.Enabled = true;
-                BackblingButton.Enabled = true;
+                PickaxeButton.Enabled = true;
                 EmoteButton.Enabled = true;
                 WrapsButton.Enabled = true;
                 SettingsButton.Enabled = true;
@@ -243,7 +231,7 @@ namespace JuicySwapper
         {
             DashButton.Enabled = false;
             SkinButton.Enabled = false;
-            BackblingButton.Enabled = false;
+            PickaxeButton.Enabled = false;
             EmoteButton.Enabled = false;
             WrapsButton.Enabled = false;
             SettingsButton.Enabled = false;
@@ -261,7 +249,7 @@ namespace JuicySwapper
                 MoveToBack.Enabled = false;
                 DashButton.Enabled = true;
                 SkinButton.Enabled = true;
-                BackblingButton.Enabled = true;
+                PickaxeButton.Enabled = true;
                 EmoteButton.Enabled = true;
                 WrapsButton.Enabled = true;
                 SettingsButton.Enabled = true;
@@ -301,7 +289,7 @@ namespace JuicySwapper
         {
             DashButton.Enabled = false;
             BackblingButton.Enabled = false;
-            BackblingButton.Enabled = false;
+            PickaxeButton.Enabled = false;
             SkinButton.Enabled = false;
             WrapsButton.Enabled = false;
             SettingsButton.Enabled = false;
@@ -319,7 +307,7 @@ namespace JuicySwapper
                 MoveToEmote.Enabled = false;
                 DashButton.Enabled = true;
                 BackblingButton.Enabled = true;
-                BackblingButton.Enabled = true;
+                PickaxeButton.Enabled = true;
                 SkinButton.Enabled = true;
                 WrapsButton.Enabled = true;
                 SettingsButton.Enabled = true;
@@ -330,7 +318,7 @@ namespace JuicySwapper
         {
             DashButton.Enabled = false;
             BackblingButton.Enabled = false;
-            BackblingButton.Enabled = false;
+            PickaxeButton.Enabled = false;
             EmoteButton.Enabled = false;
             SkinButton.Enabled = false;
             SettingsButton.Enabled = false;
@@ -348,7 +336,7 @@ namespace JuicySwapper
                 MoveToWraps.Enabled = false;
                 DashButton.Enabled = true;
                 BackblingButton.Enabled = true;
-                BackblingButton.Enabled = true;
+                PickaxeButton.Enabled = true;
                 EmoteButton.Enabled = true;
                 SkinButton.Enabled = true;
                 SettingsButton.Enabled = true;
@@ -359,7 +347,7 @@ namespace JuicySwapper
         {
             DashButton.Enabled = false;
             BackblingButton.Enabled = false;
-            BackblingButton.Enabled = false;
+            PickaxeButton.Enabled = false;
             EmoteButton.Enabled = false;
             WrapsButton.Enabled = false;
             SkinButton.Enabled = false;
@@ -377,7 +365,7 @@ namespace JuicySwapper
                 MoveToSettings.Enabled = false;
                 DashButton.Enabled = true;
                 BackblingButton.Enabled = true;
-                BackblingButton.Enabled = true;
+                PickaxeButton.Enabled = true;
                 EmoteButton.Enabled = true;
                 WrapsButton.Enabled = true;
                 SkinButton.Enabled = true;

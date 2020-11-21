@@ -56,3 +56,5 @@ C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.I
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Spitfire.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.candyaxe.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Renegade.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Misc.JuicyEAC1.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.BlackShield.resources

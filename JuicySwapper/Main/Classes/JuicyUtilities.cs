@@ -91,8 +91,8 @@ namespace JuicySwapper
 			if (StatusResponse.IsOnline == false)
 				new DevMode().ShowDialog();
 
-			//if (StatusResponse.Version != $"{Application.ProductVersion}")
-			//new Update().ShowDialog();
+			if (StatusResponse.Version != $"{Application.ProductVersion}")
+			    new Update().ShowDialog();
 
 			if (StatusResponse.Annoucement == true)
 				new Annoucement().ShowDialog();
