@@ -15,7 +15,7 @@ namespace JuicySwapper.Main.GUI
             JuicyUtilities.DiscordRPC.Initialize();
             JuicyUtilities.SetRPCAction("In Dashboard", "");
             JuicyUtilities.CloseEpicProcesses();
-            //JuicyUtilities.DiscordInvite();
+            JuicyUtilities.DiscordInvite();
             SwapUtilities.Requestoffsets();
             //SwapUtilities.RequestPaks();
             JuicyUtilities.FindPaks();
