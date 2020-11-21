@@ -15,8 +15,7 @@
 - **My Twitter handle**: @DarkbladeEU
 
 ### Credits
-- **Myself**: [@DarkbladeEU on Twitter](https://twitter.com/DarkbladeEU) 
-- **Kaede**: [@0xKaede on Twitter](https://twitter.com/0xkaede) 
+- **Myself**: [@0xKaede on Twitter](https://twitter.com/0xkaede) 
 - **Tamely**: [@TamelyFN on Twitter](https://twitter.com/TamelyFN)
 
 ### Features
