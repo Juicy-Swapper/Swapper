@@ -59,7 +59,7 @@ namespace JuicySwapper.Items.Skins
                     RichTextBoxInfo.Text += "\n[LOG] Body added";
                 }
 
-                bool Swap2 = Researcher.Convert(SwapOffsets[1], SwapPath[1], Glasses, Glasses1, 0, 0, false, false);
+                bool Swap2 = Researcher.Convert(SwapOffsets[0], SwapPath[0], Glasses, Glasses1, 0, 0, false, false);
                 if (Swap2)
                     RichTextBoxInfo.Text += "\n[LOG] Glasses removed";
 
@@ -78,7 +78,7 @@ namespace JuicySwapper.Items.Skins
                     RichTextBoxInfo.Text += "\n[LOG] Body removed";
                 }
 
-                bool Swap2 = Researcher.Revert(SwapOffsets[1], SwapPath[1], Glasses, Glasses1, 0, 0, false, false);
+                bool Swap2 = Researcher.Revert(SwapOffsets[0], SwapPath[0], Glasses, Glasses1, 0, 0, false, false);
                 if (Swap2)
                     RichTextBoxInfo.Text += "\n[LOG] Glasses Added";
 

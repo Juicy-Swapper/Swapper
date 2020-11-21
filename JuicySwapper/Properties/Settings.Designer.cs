@@ -190,5 +190,113 @@ namespace JuicySwapper.Properties {
                 this["headhunterEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BansheeEnabled {
+            get {
+                return ((bool)(this["BansheeEnabled"]));
+            }
+            set {
+                this["BansheeEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BansheeRenEnabled {
+            get {
+                return ((bool)(this["BansheeRenEnabled"]));
+            }
+            set {
+                this["BansheeRenEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BansheeTOEnabled {
+            get {
+                return ((bool)(this["BansheeTOEnabled"]));
+            }
+            set {
+                this["BansheeTOEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool WildcatEnabled {
+            get {
+                return ((bool)(this["WildcatEnabled"]));
+            }
+            set {
+                this["WildcatEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool sunbirdEnabled {
+            get {
+                return ((bool)(this["sunbirdEnabled"]));
+            }
+            set {
+                this["sunbirdEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SpitfireEnabled {
+            get {
+                return ((bool)(this["SpitfireEnabled"]));
+            }
+            set {
+                this["SpitfireEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool HawkEnabled {
+            get {
+                return ((bool)(this["HawkEnabled"]));
+            }
+            set {
+                this["HawkEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool RenegadeEnabled {
+            get {
+                return ((bool)(this["RenegadeEnabled"]));
+            }
+            set {
+                this["RenegadeEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool candyaxeEnabled {
+            get {
+                return ((bool)(this["candyaxeEnabled"]));
+            }
+            set {
+                this["candyaxeEnabled"] = value;
+            }
+        }
     }
 }

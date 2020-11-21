@@ -105,6 +105,66 @@
     <Compile Include="Main\Classes\InstallLocation.cs" />
     <Compile Include="Main\Classes\JsonAPI.cs" />
     <Compile Include="Main\Classes\SwapUtilities.cs" />
+    <Compile Include="Main\GUI\Items\Pickaxes\candyaxe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Pickaxes\candyaxe.designer.cs">
+      <DependentUpon>candyaxe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Questions\BansheeOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Questions\BansheeOption.designer.cs">
+      <DependentUpon>BansheeOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\Hawk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\Hawk.designer.cs">
+      <DependentUpon>Hawk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\Renegade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\Renegade.designer.cs">
+      <DependentUpon>Renegade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\sunbird.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\sunbird.designer.cs">
+      <DependentUpon>sunbird.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\Spitfire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\Spitfire.designer.cs">
+      <DependentUpon>Spitfire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\Wildcat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\Wildcat.designer.cs">
+      <DependentUpon>Wildcat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\BansheeTO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\BansheeTO.designer.cs">
+      <DependentUpon>BansheeTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\BansheeRen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\BansheeRen.designer.cs">
+      <DependentUpon>BansheeRen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\Banshee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\Banshee.designer.cs">
+      <DependentUpon>Banshee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\GUI\Messages\Annoucement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -289,6 +349,36 @@
     </Compile>
     <Compile Include="Main\Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Main\GUI\Items\Pickaxes\candyaxe.resx">
+      <DependentUpon>candyaxe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Questions\BansheeOption.resx">
+      <DependentUpon>BansheeOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Skins\Hawk.resx">
+      <DependentUpon>Hawk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Skins\Renegade.resx">
+      <DependentUpon>Renegade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Skins\sunbird.resx">
+      <DependentUpon>sunbird.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Skins\Spitfire.resx">
+      <DependentUpon>Spitfire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Skins\Wildcat.resx">
+      <DependentUpon>Wildcat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Skins\BansheeTO.resx">
+      <DependentUpon>BansheeTO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Skins\BansheeRen.resx">
+      <DependentUpon>BansheeRen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Skins\Banshee.resx">
+      <DependentUpon>Banshee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Messages\Annoucement.resx">
       <DependentUpon>Annoucement.cs</DependentUpon>
     </EmbeddedResource>
@@ -449,7 +539,6 @@
     <Folder Include="Main\GUI\Items\Backblings\" />
     <Folder Include="Main\GUI\Items\Emotes\" />
     <Folder Include="Main\GUI\Items\Misc\" />
-    <Folder Include="Main\GUI\Items\Pickaxes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.6.2.0\build\Fody.targets" Condition="Exists('..\packages\Fody.6.2.0\build\Fody.targets')" />

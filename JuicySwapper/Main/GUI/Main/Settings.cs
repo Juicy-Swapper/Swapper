@@ -87,6 +87,46 @@ namespace JuicySwapper.Main.GUI
                 num++;
                 text += "Ramirez (Arctic Assassin)," + " ";
             }
+            if (Settings.Default.BansheeRenEnabled == true)
+            {
+                num++;
+                text += "WildCat (Renegade)," + " ";
+            }
+            if (Settings.Default.BansheeEnabled == true)
+            {
+                num++;
+                text += "WildCat (Dominator)," + " ";
+            }
+            if (Settings.Default.BansheeTOEnabled == true)
+            {
+                num++;
+                text += "WildCat (Tactics Officer)," + " ";
+            }
+            if (Settings.Default.WildcatEnabled == true)
+            {
+                num++;
+                text += "Wildcat (Pathfinder)," + " ";
+            }
+            if (Settings.Default.sunbirdEnabled == true)
+            {
+                num++;
+                text += "Shadowbird," + " ";
+            }
+            if (Settings.Default.SpitfireEnabled == true)
+            {
+                num++;
+                text += "Spitfire," + " ";
+            }
+            if (Settings.Default.RenegadeEnabled == true)
+            {
+                num++;
+                text += "Renegade," + " ";
+            }
+            if (Settings.Default.candyaxeEnabled == true)
+            {
+                num++;
+                text += "Candy Axe," + " ";
+            }
 
             switch (num)
             {

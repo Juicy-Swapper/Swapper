@@ -57,5 +57,35 @@ namespace JuicySwapper.Panels
         {
             new RamirezOption().ShowDialog();
         }
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            new Wildcat().ShowDialog();
+        }
+
+        private void bunifuImageButton5_Click(object sender, EventArgs e)
+        {
+            new BansheeOption().ShowDialog();
+        }
+
+        private void bunifuImageButton6_Click(object sender, EventArgs e)
+        {
+            new sunbird().ShowDialog();
+        }
+
+        private void bunifuImageButton7_Click(object sender, EventArgs e)
+        {
+            new Spitfire().ShowDialog();
+        }
+
+        private void bunifuImageButton8_Click(object sender, EventArgs e)
+        {
+            new Hawk().ShowDialog();
+        }
+
+        private void bunifuImageButton9_Click(object sender, EventArgs e)
+        {
+            new Renegade().ShowDialog();
+        }
     }
 }

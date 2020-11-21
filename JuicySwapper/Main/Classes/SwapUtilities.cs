@@ -13,8 +13,8 @@ namespace JuicySwapper.Main.Classes
 		public string[] GetSwapPath()
 		{
 			string Skin_Body_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.ucas";
-			string Skin_Head_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.ucas";
-			string Pickaxe_Mesh_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.pak";
+			string Skin_Head_Path = Settings.Default.pakPath + "\\pakchunk10_s3-WindowsClient.ucas";
+			string Pickaxe_Mesh_Path = Settings.Default.pakPath + "\\pakchunk10_s20-WindowsClient.ucas";
 			string Pickaxe_Sound_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.pak";
 			string Backbling_Path = Settings.Default.pakPath + "\\pakchunk10_s3-WindowsClient.pak";
 			string Emote_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.pak";
@@ -41,7 +41,8 @@ namespace JuicySwapper.Main.Classes
 
 		public List<bool> Dominator = new List<bool>()
 		{
-			Settings.Default.ReconExpertEnabled
+			Settings.Default.ReconExpertEnabled,
+			Settings.Default.BansheeEnabled
 		};
 
 		public List<bool> Commando = new List<bool>()
@@ -54,6 +55,41 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.RamirezAAEnabled
 		};
 
+		public List<bool> Renegade = new List<bool>()
+		{
+			Settings.Default.BansheeRenEnabled
+		};
+
+		public List<bool> TacticsOfficer = new List<bool>()
+		{
+			Settings.Default.BansheeTOEnabled
+		};
+
+		public List<bool> Pathfinder = new List<bool>()
+		{
+			Settings.Default.WildcatEnabled
+		};
+
+		public List<bool> Shadowbird = new List<bool>()
+		{
+			Settings.Default.sunbirdEnabled
+		};
+
+		public List<bool> Scout = new List<bool>()
+		{
+			Settings.Default.SpitfireEnabled
+		};
+
+		public List<bool> Tracker = new List<bool>()
+		{
+			Settings.Default.HawkEnabled
+		};
+
+		public List<bool> Trooper = new List<bool>()
+		{
+			Settings.Default.RenegadeEnabled
+		};
+		
 		public static string SkinSwapped;
 		public static string SkinSwappedFor;
 
@@ -83,6 +119,8 @@ namespace JuicySwapper.Main.Classes
 
 					if (Settings.Default.ReconExpertEnabled)
 						SkinSwappedFor = "Recon Expert";
+					else if (Settings.Default.BansheeEnabled)
+						SkinSwappedFor = "Banshee";
 
 					new CheckIfSwapMesg().ShowDialog();
 					break;
@@ -100,13 +138,97 @@ namespace JuicySwapper.Main.Classes
 					break;
 
 				case "ArcticAssassin":
-					if (Commando.All(a => a) || Commando.All(a => !a))
+					if (ArcticAssassin.All(a => a) || ArcticAssassin.All(a => !a))
 						return false;
 					else
-
 						SkinSwapped = "ArcticAssassin";
+
 					if (Settings.Default.RamirezAAEnabled)
 						SkinSwappedFor = "Ramirez";
+
+					new CheckIfSwapMesg().ShowDialog();
+					break;
+
+				case "Renegade":
+					if (Renegade.All(a => a) || Renegade.All(a => !a))
+						return false;
+					else
+						SkinSwapped = "Renegade";
+
+					if (Settings.Default.BansheeRenEnabled)
+						SkinSwappedFor = "Banshee";
+
+					new CheckIfSwapMesg().ShowDialog();
+					break;
+
+				case "TacticsOfficer":
+					if (TacticsOfficer.All(a => a) || TacticsOfficer.All(a => !a))
+						return false;
+					else
+						SkinSwapped = "TacticsOfficer";
+
+					if (Settings.Default.BansheeTOEnabled)
+						SkinSwappedFor = "Banshee";
+
+					new CheckIfSwapMesg().ShowDialog();
+					break;
+
+				case "Pathfinder":
+					if (Pathfinder.All(a => a) || Pathfinder.All(a => !a))
+						return false;
+					else
+						SkinSwapped = "Pathfinder";
+
+					if (Settings.Default.WildcatEnabled)
+						SkinSwappedFor = "Wildcat";
+
+					new CheckIfSwapMesg().ShowDialog();
+					break;
+
+				case "Shadowbird":
+					if (Shadowbird.All(a => a) || Shadowbird.All(a => !a))
+						return false;
+					else
+						SkinSwapped = "Shadowbird";
+
+					if (Settings.Default.sunbirdEnabled)
+						SkinSwappedFor = "SunBird";
+
+					new CheckIfSwapMesg().ShowDialog();
+					break;
+
+				case "Scout":
+					if (Scout.All(a => a) || Scout.All(a => !a))
+						return false;
+					else
+						SkinSwapped = "Scout";
+
+					if (Settings.Default.SpitfireEnabled)
+						SkinSwappedFor = "Spitfire";
+
+					new CheckIfSwapMesg().ShowDialog();
+					break;
+
+				case "Tracker":
+					if (Tracker.All(a => a) || Tracker.All(a => !a))
+						return false;
+					else
+						SkinSwapped = "Tracker";
+
+					if (Settings.Default.HawkEnabled)
+						SkinSwappedFor = "Hawk";
+
+					new CheckIfSwapMesg().ShowDialog();
+					break;
+
+				case "Trooper":
+					if (Trooper.All(a => a) || Trooper.All(a => !a))
+						return false;
+					else
+						SkinSwapped = "Trooper";
+
+					if (Settings.Default.RenegadeEnabled)
+						SkinSwappedFor = "Renegade";
 
 					new CheckIfSwapMesg().ShowDialog();
 					break;
