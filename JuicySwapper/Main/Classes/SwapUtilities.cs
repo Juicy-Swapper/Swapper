@@ -15,11 +15,10 @@ namespace JuicySwapper.Main.Classes
 			string Skin_Body_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.ucas";
 			string Skin_Head_Path = Settings.Default.pakPath + "\\pakchunk10_s3-WindowsClient.ucas";
 			string Pickaxe_Mesh_Path = Settings.Default.pakPath + "\\pakchunk10_s20-WindowsClient.ucas";
-			string Pickaxe_Sound_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.pak";
-			string Backbling_Path = Settings.Default.pakPath + "\\pakchunk10_s3-WindowsClient.pak";
+			string Backbling_Path = Settings.Default.pakPath + "\\pakchunk10_s1-WindowsClient.ucas";
 			string Emote_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.pak";
 
-			return new string[] { Skin_Body_Path, Skin_Head_Path, Pickaxe_Mesh_Path, Pickaxe_Sound_Path, Backbling_Path, Emote_Path };
+			return new string[] { Skin_Body_Path, Skin_Head_Path, Pickaxe_Mesh_Path, Backbling_Path, Emote_Path };
 		}
 
 		public int[] GetSwapOffset()
@@ -29,8 +28,9 @@ namespace JuicySwapper.Main.Classes
 			int Offset_Pick_Mesh = Settings.Default.offset_pick_mesh;
 			int Offset_Back_Mesh = Settings.Default.offset_back_mesh;
 			int Offset_Emote_Mesh = Settings.Default.offset_emote_mesh;
+			int Offset_Temp_gender = Settings.Default.offset_temp;
 
-			return new int[] { Offset_Skin_Body, Offset_Skin_Head, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh };
+			return new int[] { Offset_Skin_Body, Offset_Skin_Head, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh, Offset_Temp_gender };
 		}
 
 		public List<bool> AssaultTrooper = new List<bool>()

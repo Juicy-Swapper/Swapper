@@ -27,9 +27,9 @@ namespace JuicySwapper.Items.Pickaxes
                 convertButton.Text = "Convert";
         }
 
-        private static byte[] Body = new byte[85] { 47, 71, 97, 109, 101, 47, 87, 101, 97, 112, 111, 110, 115, 47, 70, 79, 82, 84, 95, 77, 101, 108, 101, 101, 47, 80, 105, 99, 107, 97, 120, 101, 95, 49, 53, 47, 84, 101, 120, 116, 117, 114, 101, 115, 47, 84, 95, 95, 76, 105, 103, 104, 116, 115, 104, 111, 119, 50, 76, 67, 97, 110, 100, 121, 67, 97, 110, 101, 47, 77, 97, 116, 101, 114, 105, 97, 108, 115, 47, 77, 95, 115, 116, 101, 114 };
+        private static byte[] Body = new byte[58] { 47, 71, 97, 109, 101, 47, 87, 101, 97, 112, 111, 110, 115, 47, 70, 79, 82, 84, 95, 77, 101, 108, 101, 101, 47, 80, 105, 99, 107, 97, 120, 101, 95, 49, 53, 47, 84, 101, 120, 116, 117, 114, 101, 115, 47, 84, 95, 95, 76, 105, 103, 104, 116, 115, 104, 111, 119, 50 };
 
-        private static byte[] Body1 = new byte[85] { 47, 71, 97, 109, 101, 47, 87, 101, 97, 112, 111, 110, 115, 47, 70, 79, 82, 84, 95, 77, 101, 108, 101, 101, 47, 80, 105, 99, 107, 97, 120, 101, 95, 49, 53, 47, 84, 101, 120, 116, 117, 114, 101, 115, 47, 84, 95, 95, 76, 105, 103, 104, 116, 115, 104, 111, 119, 50, 76, 74, 117, 105, 99, 121, 67, 97, 110, 101, 47, 77, 97, 116, 101, 114, 105, 97, 108, 115, 47, 77, 95, 115, 116, 101, 114 };
+        private static byte[] Body1 = new byte[58] { 47, 71, 97, 109, 101, 47, 87, 101, 97, 112, 111, 110, 115, 47, 70, 79, 82, 84, 95, 77, 101, 108, 101, 101, 47, 80, 105, 99, 107, 97, 120, 101, 95, 49, 53, 47, 84, 101, 120, 116, 117, 114, 101, 115, 47, 84, 95, 95, 76, 105, 103, 104, 74, 117, 105, 99, 121, 50 };
 
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
@@ -47,7 +47,7 @@ namespace JuicySwapper.Items.Pickaxes
                 if (SwapUtilities.CheckIfCanSwap("Trooper"))
                     return;
 
-                bool Swap1 = Researcher.Convert(SwapOffsets[0], SwapPath[0], Body, Body1, 0, 0, false, false);
+                bool Swap1 = Researcher.Convert(SwapOffsets[2], SwapPath[2], Body, Body1, 0, 0, false, false);
                 if (Swap1)
                 {
                     Settings.Default.candyaxeEnabled = true;
@@ -62,7 +62,7 @@ namespace JuicySwapper.Items.Pickaxes
             }
             else
             {
-                bool Swap1 = Researcher.Revert(SwapOffsets[0], SwapPath[0], Body, Body1, 0, 0, false, false);
+                bool Swap1 = Researcher.Revert(SwapOffsets[2], SwapPath[2], Body, Body1, 0, 0, false, false);
                 if (Swap1)
                 {
                     Settings.Default.candyaxeEnabled = false;

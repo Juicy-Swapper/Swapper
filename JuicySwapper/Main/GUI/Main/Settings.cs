@@ -169,7 +169,7 @@ namespace JuicySwapper.Main.GUI
         private void SettingsMenu_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (Home.Rpc == "Skins")
-                JuicyUtilities.SetRPCLocation("Skins", "skinimg");
+                JuicyUtilities.SetRPCLocation("Skins", "skinimg"); 
 
             else if (Home.Rpc == "Backblings")
                 JuicyUtilities.SetRPCLocation("Backblings", "backblingimg");

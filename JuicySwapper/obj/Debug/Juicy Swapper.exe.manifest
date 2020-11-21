@@ -74,17 +74,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3o9SFsVzwTUv+fmlWTRLsDe/r78Uozb+1vCGHXEJIxo=</dsig:DigestValue>
+        <dsig:DigestValue>am/ioO3I97ldfGgIyoTLCQWRBElHsGTXiwdtbcMHpwc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Juicy Swapper.exe.config" size="3700">
+  <file name="Juicy Swapper.exe.config" size="3828">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>7YD2Xu3/+TqI0Tj21kFkwxFk8V+/YLHaHvQG21+5w3U=</dsig:DigestValue>
+      <dsig:DigestValue>5tTeApawp5G/3QfRdToDYGaNVnHwTV8Q2MWTkm3PK2E=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\test_92j_icon.ico" size="18925">

@@ -31,6 +31,10 @@ namespace JuicySwapper.Items.Skins
 
         private static byte[] Body1 = new byte[35] { 83, 107, 105, 110, 115, 47, 66, 82, 95, 48, 53, 47, 77, 97, 116, 101, 114, 105, 97, 108, 69, 68, 95, 67, 109, 109, 97, 110, 100, 111, 95, 66, 82, 48, 53  };
 
+        private static byte[] Invalid = new byte[15] { 67, 83, 112, 101, 99, 105, 97, 108, 105, 122, 115, 47, 72, 83, 70 };
+
+        private static byte[] Invalid1 = new byte[15] { 67, 83, 112, 106, 117, 105, 99, 121, 105, 122, 115, 47, 72, 83, 70 };
+
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
             int[] SwapOffsets = SwapUtilities.GetSwapOffset();
@@ -52,8 +56,12 @@ namespace JuicySwapper.Items.Skins
                 {
                     Settings.Default.SparkleSpecialistEnabled = true;
                     Settings.Default.Save();
-                    RichTextBoxInfo.Text += "\n[LOG] Body added";
+                    RichTextBoxInfo.Text += "\n[LOG] Body 1/2 added";
                 }
+
+                bool Swap2 = Researcher.Convert(SwapOffsets[5], SwapPath[0], Invalid, Invalid1, 0, 0, false, false);
+                if (Swap2)
+                    RichTextBoxInfo.Text += "\n[LOG] Body 2/2 added";
 
                 stopwatch.Stop();
                 double num = (double)stopwatch.Elapsed.Milliseconds;
@@ -67,8 +75,12 @@ namespace JuicySwapper.Items.Skins
                 {
                     Settings.Default.SparkleSpecialistEnabled = false;
                     Settings.Default.Save();
-                    RichTextBoxInfo.Text += "\n[LOG] Body removed";
+                    RichTextBoxInfo.Text += "\n[LOG] Body 1/2 removed";
                 }
+
+                bool Swap2 = Researcher.Revert(SwapOffsets[5], SwapPath[0], Invalid, Invalid1, 0, 0, false, false);
+                if (Swap2)
+                    RichTextBoxInfo.Text += "\n[LOG] Body 2/2 removed";
 
                 stopwatch.Stop();
                 double num = (double)stopwatch.Elapsed.Milliseconds;

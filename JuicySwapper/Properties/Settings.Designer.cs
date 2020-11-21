@@ -298,5 +298,17 @@ namespace JuicySwapper.Properties {
                 this["candyaxeEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("14000000")]
+        public int offset_temp {
+            get {
+                return ((int)(this["offset_temp"]));
+            }
+            set {
+                this["offset_temp"] = value;
+            }
+        }
     }
 }

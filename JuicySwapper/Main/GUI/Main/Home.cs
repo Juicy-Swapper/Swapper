@@ -162,6 +162,24 @@ namespace JuicySwapper
             MoveToSettings.Enabled = true;
             JuicyUtilities.SetRPCLocation("Settings", "settingsimg");
             new SettingsMenu().ShowDialog();
+
+            if (Home.Rpc == "Skins")
+                MoveToSkin.Enabled = true;
+
+            else if (Home.Rpc == "Backblings")
+                MoveToBack.Enabled = true;
+
+            else if (Home.Rpc == "Pickaxes")
+                MoveToPick.Enabled = true;
+
+            else if (Home.Rpc == "Emotes")
+                MoveToEmote.Enabled = true;
+
+            else if (Home.Rpc == "Miscellaneous")
+                MoveToWraps.Enabled = true;
+
+            else if (Home.Rpc == "InDashboard")
+                MoveToDash.Enabled = true;
         }
 
         private void bunifuFlatButton1_Click_1(object sender, EventArgs e)

@@ -1,5 +1,6 @@
 ﻿using JuicySwapper.Main.Panels;
 using System.Windows.Forms;
+using JuicySwapper.Items.Pickaxes;
 
 namespace JuicySwapper.Panels
 {
@@ -39,6 +40,11 @@ namespace JuicySwapper.Panels
             }
             else
                 SidebarPanel.Instance.BringToFront();
+        }
+
+        private void bunifuImageButton1_Click(object sender, System.EventArgs e)
+        {
+            new candyaxe().ShowDialog();
         }
     }
 }
