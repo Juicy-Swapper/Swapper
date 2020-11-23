@@ -169,6 +169,7 @@ namespace JuicySwapper_Installer.Main.GUI
         private void CreateShortcut()
         {
             string InstallFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Juicy Industries\\JuicySwapper.exe";
+            string Working = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Juicy Industries";
             string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
 
             try
@@ -184,6 +185,7 @@ namespace JuicySwapper_Installer.Main.GUI
             IShellLink link = (IShellLink)new ShellLink();       
             link.SetDescription("JuicySwapper - Shortcut");
             link.SetPath(InstallFolder);
+            link.SetWorkingDirectory(Working);
 
             IPersistFile file = (IPersistFile)link;
             file.Save(Path.Combine(desktopPath, "JuicySwapper.lnk"), false);

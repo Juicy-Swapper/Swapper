@@ -65,7 +65,7 @@ namespace JuicySwapper_Updater.Main.GUI
                     var StatusAPI = UpdaterClient.DownloadString("http://juicyswapper.xyz/api/status.json");
                     Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
                     webClient.Proxy = null;
-                    string text = webClient.DownloadString(StatusResponse.version).ToString();                  
+                    string text = StatusResponse.version;                  
                     InformationsLabel.Text = "Newest version: " + text;
                     if (!text.Contains(fv))
                     {

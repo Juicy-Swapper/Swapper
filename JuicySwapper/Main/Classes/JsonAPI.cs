@@ -102,6 +102,9 @@ namespace JuicySwapper.Classes.Json_Api
             [JsonProperty("version")]
             public string Version { get; set; }
 
+            [JsonProperty("updaterlink")]
+            public string updaterlink { get; set; }
+
             [JsonProperty("annoucement")]
             public bool Annoucement { get; set; }
 

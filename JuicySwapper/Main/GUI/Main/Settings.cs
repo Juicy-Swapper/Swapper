@@ -1,9 +1,11 @@
 ﻿using JuicySwapper.Properties;
 using Microsoft.WindowsAPICodePack.Dialogs;
+using Newtonsoft.Json;
 using System;
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
+using static JuicySwapper.Classes.Json_Api.SatusAPI;
 
 namespace JuicySwapper.Main.GUI
 {
@@ -152,12 +154,14 @@ namespace JuicySwapper.Main.GUI
                 try
                 {
                     webClient.Proxy = null;
-                    string text = webClient.DownloadString("https://juicyswapper.xyz/api/version").ToString();
+                    var StatusAPI = new WebClient().DownloadString("https://juicyswapper.xyz/api/status.json");
+                    Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
+                    string text = StatusResponse.Version;
                     if (text != Application.ProductVersion)
-                        MessageBox.Show("You are using an outdated version of Juicy Swapper! " + ("The most recent version of Juicy Swapper is v" + text) + " and you are currently using v" + Application.ProductVersion + ". Please close the swapper and launch 'Juicy Updater.exe'");
+                        MessageBox.Show($"You are using an outdated version of Juicy Swapper! (The most recent version of Juicy Swapper is v{text} and you are currently using v{Application.ProductVersion}.");
 
                     else
-                        MessageBox.Show("You are up to date, and you are currently using v" + Application.ProductVersion + ".");
+                        MessageBox.Show($"You are up to date, and you are currently using v{Application.ProductVersion}.");
                 }
                 catch (Exception)
                 {

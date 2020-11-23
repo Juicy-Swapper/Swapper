@@ -20,17 +20,10 @@ namespace JuicySwapper.Main.GUI
         {
             Process.Start("https://juicyswapper.xyz/discord");
         }
-        public void ExecuteAsAdmin(string fileName)
-        {
-            Process proc = new Process();
-            proc.StartInfo.FileName = fileName;
-            proc.StartInfo.UseShellExecute = true;
-            proc.StartInfo.Verb = "runas";
-            proc.Start();
-        }
+
         private void updateButton_Click(object sender, EventArgs e)
         {
-            ExecuteAsAdmin("Juicy Updater.exe");
+            Process.Start("JuicySwapper_Updater.exe");
             Environment.Exit(0);
         }
 
