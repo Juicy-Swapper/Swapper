@@ -171,6 +171,7 @@
             this.verifyButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.verifyButton.Textcolor = System.Drawing.Color.White;
             this.verifyButton.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.verifyButton.Click += new System.EventHandler(this.verifyButton_Click);
             // 
             // bunifuElipse2
             // 

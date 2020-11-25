@@ -1,9 +1,7 @@
-﻿using Microsoft.WindowsAPICodePack.Dialogs;
+﻿using JuicySwapper.Main.Classes;
 using System;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.IO;
-using System.Net;
 using System.Windows.Forms;
 
 namespace JuicySwapper.Main.GUI
@@ -21,16 +19,10 @@ namespace JuicySwapper.Main.GUI
             Close();
         }
 
-        private void AdvancedSettings_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void backupButton_Click(object sender, EventArgs e)
         {
-            string pathto10s9 = Properties.Settings.Default.pakPath + "\\pakchunk10_s9-WindowsClient.pak";
-            string pathto0 = Properties.Settings.Default.pakPath + "\\pakchunk0-WindowsClient.pak";
-            if (File.Exists(pathto0) && File.Exists(pathto10s9))
+            string[] SwapPath = SwapUtilities.GetSwapPath();
+            if (File.Exists(SwapPath[0]) && File.Exists(SwapPath[1]))
             {
                 backupWorker.RunWorkerAsync();
             }
@@ -40,138 +32,164 @@ namespace JuicySwapper.Main.GUI
             }
         }
 
+        private void verifyButton_Click(object sender, EventArgs e)
+        {
+            string[] BackPath = SwapUtilities.GetBackupPaths();
+            if (File.Exists(BackPath[0]) && File.Exists(BackPath[1]))
+            {
+                backupWorker.RunWorkerAsync();
+            }
+            else
+            {
+                new PakError().ShowDialog();
+            }
+        }
+
+        SwapUtilities SwapUtilities = new SwapUtilities();
+
         private void backupWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            string pathto10s8 = Home.GetPaksFolder + "\\pakchunk10_s8-WindowsClient.pak";
-            string pathto10s9 = Home.GetPaksFolder + "\\pakchunk10_s9-WindowsClient.pak";
-            string pathto10 = Home.GetPaksFolder + "\\pakchunk10-WindowsClient.pak";
-            string pathto0 = Home.GetPaksFolder + "\\pakchunk0-WindowsClient.pak";
+            string[] SwapPath = SwapUtilities.GetSwapPath();
+            string[] BackPath = SwapUtilities.GetBackupPaths();
             try
             {
                 if (Directory.Exists("PakBackup"))
                 {
-                    if (File.Exists("PakBackup/pakchunk10-WindowsClient.pak"))
+                    if (File.Exists(BackPath[0]))
                     {
-                        File.Delete("PakBackup/pakchunk10-WindowsClient.pak");
+                        File.Delete(BackPath[0]);
                     }
-                    if (File.Exists("PakBackup/pakchunk10_s9-WindowsClient.pak"))
+                    if (File.Exists(BackPath[1]))
                     {
-                        File.Delete("PakBackup/pakchunk10_s9-WindowsClient.pak");
+                        File.Delete(BackPath[1]);
                     }
-                    if (File.Exists("PakBackup/pakchunk10_s8-WindowsClient.pak"))
+                    if (File.Exists(BackPath[2]))
                     {
-                        File.Delete("PakBackup/pakchunk10_s8-WindowsClient.pak");
+                        File.Delete(BackPath[2]);
+                    }
+                    if (File.Exists(BackPath[3]))
+                    {
+                        File.Delete(BackPath[3]);
                     }
                     Directory.Delete("PakBackup");
                 }
 
-                richTextBox1.Text += "[" + DateTime.Now + "] Creating Pak Backup folder...\n";
+                richTextBox1.Text += $"[{DateTime.Now}] Creating Pak Backup folder...\n";
 
                 Directory.CreateDirectory("PakBackup");
 
-                richTextBox1.Text += "[" + DateTime.Now + "] Pak Backup folder created!\n";
+                richTextBox1.Text += $"[{DateTime.Now}] Pak Backup folder created!\n";
 
 
-                richTextBox1.Text += "[" + DateTime.Now + "] Copying game files... 1/3\n";
+                richTextBox1.Text += $"[{DateTime.Now}] Copying game files... 1/4\n";
 
-                File.Copy(pathto10, "PakBackup/pakchunk10-WindowsClient.pak");
+                File.Copy(SwapPath[0], BackPath[0]);
 
-                richTextBox1.Text += "[" + DateTime.Now + "] Copied 1/4 game files!\n";
+                richTextBox1.Text += $"[{DateTime.Now}] Copied 1/4 game files!\n";
 
-                richTextBox1.Text += "[" + DateTime.Now + "] Copying game files... 2/3\n";
+                richTextBox1.Text += $"[{DateTime.Now}] Copying game files... 2/4\n";
 
-                File.Copy(pathto10s9, "PakBackup/pakchunk10_s9-WindowsClient.pak");
+                File.Copy(SwapPath[1], BackPath[1]);
 
-                richTextBox1.Text += "[" + DateTime.Now + "] Copied 2/4 game files!\n";
+                richTextBox1.Text += $"[{DateTime.Now}] Copied 2/4 game files!\n";
 
-                richTextBox1.Text += "[" + DateTime.Now + "] Copying game files... 3/3\n";
+                richTextBox1.Text += $"[{DateTime.Now}] Copying game files... 3/4\n";
 
-                File.Copy(pathto10s8, "PakBackup/pakchunk10_s8-WindowsClient.pak");
+                File.Copy(SwapPath[2], BackPath[2]);
 
-                richTextBox1.Text += "[" + DateTime.Now + "] Copied 3/4 game files!\n";
+                richTextBox1.Text += $"[{DateTime.Now}] Copied 3/4 game files!\n";
 
-                File.Copy(pathto0, "PakBackup/pakchunk0-WindowsClient.pak");
+                richTextBox1.Text += $"[{DateTime.Now}] Copying game files... 4/4\n";
 
-                richTextBox1.Text += "[" + DateTime.Now + "] Copied 4/4 game files!\n";
+                File.Copy(SwapPath[3], BackPath[3]);
+
+                richTextBox1.Text += $"[{DateTime.Now}] Copied 3/4 game files!\n";
 
 
-                richTextBox1.Text += "[" + DateTime.Now + "] Successfully created backup of your game files!\n";
+                richTextBox1.Text += $"[{DateTime.Now}] Successfully created backup of your game files!\n";
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("[" + DateTime.Now + "] Error! Please contact the Juicy Swapper support team! \nException:" + ex, "Juicy Swapper - Backup Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                SwapUtilities.Exp = "backup";
+                new ExceptionMess().ShowDialog();
             }
         }
 
         private void verifyWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            string pathto10s9 = Home.GetPaksFolder + "\\pakchunk10_s9-WindowsClient.pak";
-            string pathto10s8 = Home.GetPaksFolder + "\\pakchunk10_s8-WindowsClient.pak";
-            string pathto10 = Home.GetPaksFolder + "\\pakchunk10-WindowsClient.pak";
-            string pathto0 = Home.GetPaksFolder + "\\pakchunk0-WindowsClient.pak";
-            richTextBox1.Text = "[" + DateTime.Now + "] Starting...\n";
+            string[] SwapPath = SwapUtilities.GetSwapPath();
+            string[] BackPath = SwapUtilities.GetBackupPaths();
+            richTextBox1.Text = $"[{DateTime.Now}] Starting...\n";
             try
             {
-                if (File.Exists("PakBackup/pakchunk10-WindowsClient.pak") && File.Exists("PakBackup/pakchunk10_s8-WindowsClient.pak"))
+                if (File.Exists(SwapPath[0]) && File.Exists(SwapPath[1]))
                 {
-                    if (File.Exists(pathto10))
+                    if (File.Exists(SwapPath[0]))
                     {
-                        File.Delete(pathto10);
+                        File.Delete(SwapPath[0]);
                     }
-                    if (File.Exists(pathto10s9))
+                    if (File.Exists(SwapPath[1]))
                     {
-                        File.Delete(pathto10s9);
+                        File.Delete(SwapPath[1]);
                     }
-                    if (File.Exists(pathto10s8))
+                    if (File.Exists(SwapPath[2]))
                     {
-                        File.Delete(pathto10s8);
+                        File.Delete(SwapPath[2]);
                     }
-                    if (File.Exists(pathto0))
+                    if (File.Exists(SwapPath[3]))
                     {
-                        File.Delete(pathto0);
+                        File.Delete(SwapPath[3]);
                     }
 
-                    richTextBox1.Text += "[" + DateTime.Now + "] Pak Backup folder detected!\n";
+                    richTextBox1.Text += $"[{ DateTime.Now}] Pak Backup folder detected!\n";
 
-                    richTextBox1.Text += "[" + DateTime.Now + "] Copying game files... 1/3\n";
+                    richTextBox1.Text += $"[{DateTime.Now}] Creating Pak Backup folder...\n";
 
-                    File.Copy("PakBackup/pakchunk10-WindowsClient.pak", pathto10);
+                    Directory.CreateDirectory("PakBackup");
 
-                    richTextBox1.Text += "[" + DateTime.Now + "] Copied 1/4 game files!\n";
+                    richTextBox1.Text += $"[{DateTime.Now}] Pak Backup folder created!\n";
 
-                    richTextBox1.Text += "[" + DateTime.Now + "] Copying game files... 2/3\n";
 
-                    File.Copy("PakBackup/pakchunk10_s8-WindowsClient.pak", pathto10s8);
+                    richTextBox1.Text += $"[{DateTime.Now}] Copying game files... 1/4\n";
 
-                    richTextBox1.Text += "[" + DateTime.Now + "] Copied 2/4 game files!\n";
+                    File.Copy(BackPath[0], SwapPath[0]);
 
-                    richTextBox1.Text += "[" + DateTime.Now + "] Copying game files... 3/3\n";
+                    richTextBox1.Text += $"[{DateTime.Now}] Copied 1/4 game files!\n";
 
-                    File.Copy("PakBackup/pakchunk10_s9-WindowsClient.pak", pathto10s9);
+                    richTextBox1.Text += $"[{DateTime.Now}] Copying game files... 2/4\n";
 
-                    richTextBox1.Text += "[" + DateTime.Now + "] Copied 3/4 game files!\n";
+                    File.Copy(BackPath[1], SwapPath[1]);
 
-                    File.Copy("PakBackup/pakchunk0-WindowsClient.pak", pathto0);
+                    richTextBox1.Text += $"[{DateTime.Now}] Copied 2/4 game files!\n";
 
-                    richTextBox1.Text += "[" + DateTime.Now + "] Copied 4/4 game files!\n";
+                    richTextBox1.Text += $"[{DateTime.Now}] Copying game files... 3/4\n";
 
-                    richTextBox1.Text += "[" + DateTime.Now + "] Successfully verified your game files!\n";
+                    File.Copy(BackPath[2], SwapPath[2]);
 
-                    File.Delete("PakBackup/pakchunk0-WindowsClient.pak");
-                    File.Delete("PakBackup/pakchunk10-WindowsClient.pak");
-                    File.Delete("PakBackup/pakchunk10_s9-WindowsClient.pak");
-                    File.Delete("PakBackup/pakchunk10_s8-WindowsClient.pak");
+                    richTextBox1.Text += $"[{DateTime.Now}] Copied 3/4 game files!\n";
+
+                    richTextBox1.Text += $"[{DateTime.Now}] Copying game files... 4/4\n";
+
+                    File.Copy(BackPath[3], SwapPath[3]);
+
+                    richTextBox1.Text += $"[{DateTime.Now}] Copied 4/4 game files!\n";
+
+                    File.Delete(BackPath[0]);
+                    File.Delete(BackPath[1]);
+                    File.Delete(BackPath[2]);
+                    File.Delete(BackPath[3]);
 
                     Directory.Delete("PakBackup");
                 }
                 else
                 {
-                    MessageBox.Show("[" + DateTime.Now + "] Pak Backup folder found, but no .pak files exist!", "Juicy Swapper - Verification Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"[{DateTime.Now}] Pak Backup folder found, but no .pak files exist!", "Juicy Swapper - Verification Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("[" + DateTime.Now + "] Error! Please contact the Juicy Swapper support team! \nException:" + ex, "Juicy Swapper - Verification Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                SwapUtilities.Exp = "verify";
+                new ExceptionMess().ShowDialog();
             }
         }
     }

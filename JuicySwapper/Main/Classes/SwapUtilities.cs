@@ -33,6 +33,17 @@ namespace JuicySwapper.Main.Classes
 			return new int[] { Offset_Skin_Body, Offset_Skin_Head, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh, Offset_Temp_gender };
 		}
 
+		public string[] GetBackupPaths()
+		{
+			string Skin_Body_Path = "PakBackup/pakchunk10_s2-WindowsClient.ucas";
+			string Skin_Head_Path = "PakBackup/pakchunk10_s3-WindowsClient.ucas";
+			string Pickaxe_Mesh_Path = "PakBackup/pakchunk10_s20-WindowsClient.ucas";
+			string Backbling_Path = "PakBackup/pakchunk10_s1-WindowsClient.ucas";
+			string Emote_Path = "PakBackup/pakchunk10_s2-WindowsClient.pak";
+
+			return new string[] { Skin_Body_Path, Skin_Head_Path, Pickaxe_Mesh_Path, Backbling_Path, Emote_Path };
+		}
+
 		public List<bool> AssaultTrooper = new List<bool>()
 		{
 			Settings.Default.SparkleSpecialistEnabled,
