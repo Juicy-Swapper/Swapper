@@ -8,7 +8,6 @@ C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\Interop.WMPLib
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.ResolveComReference.cache
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Annoucement.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Links.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.ExceptionMess.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.CheckIfSwapMesg.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.RamirezOption.resources
@@ -18,18 +17,14 @@ C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.I
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Ramirez.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.SparkleSpecialist.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Panels.EmotesPanel.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.EmoteWarning.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.BackupVerify.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Loader.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.BypassWarning.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Update.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.PakError.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.DevMode.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Home.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.FortniteLaunch.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.ResetComplete.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.ResetConfirm.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.AdvancedSettings.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.SettingsMenu.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Panels.MiscPanel.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Panels.DashPanel.resources
@@ -58,3 +53,4 @@ C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.I
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Renegade.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Misc.JuicyEAC1.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.BlackShield.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.BattleShroud.resources

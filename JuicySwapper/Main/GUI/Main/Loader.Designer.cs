@@ -81,7 +81,7 @@
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 7;
+            this.bunifuElipse1.ElipseRadius = 14;
             this.bunifuElipse1.TargetControl = this;
             // 
             // Loader

@@ -36,11 +36,8 @@
             this.selectPakPathButton = new Bunifu.Framework.UI.BunifuImageButton();
             this.closeButton = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.discordButton = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.updateCheckButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.resetConfigButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.convertedItemsButton = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.advancedButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pakPathTextbox = new System.Windows.Forms.TextBox();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -51,6 +48,16 @@
             this.bunifuElipse7 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.restartButton = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.backupButton = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.openPakButton = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.checkPakButton = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuElipse8 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse9 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse10 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse11 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.bunifuElipse12 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.selectPakPathButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).BeginInit();
             this.SuspendLayout();
@@ -73,7 +80,7 @@
             this.Sidebar.Location = new System.Drawing.Point(-3, -7);
             this.Sidebar.Name = "Sidebar";
             this.Sidebar.Quality = 10;
-            this.Sidebar.Size = new System.Drawing.Size(70, 205);
+            this.Sidebar.Size = new System.Drawing.Size(70, 210);
             this.Sidebar.TabIndex = 1;
             // 
             // label1
@@ -81,7 +88,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(78, 11);
+            this.label1.Location = new System.Drawing.Point(73, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 21);
             this.label1.TabIndex = 3;
@@ -92,7 +99,7 @@
             this.selectPakPathButton.BackColor = System.Drawing.Color.Transparent;
             this.selectPakPathButton.Image = ((System.Drawing.Image)(resources.GetObject("selectPakPathButton.Image")));
             this.selectPakPathButton.ImageActive = null;
-            this.selectPakPathButton.Location = new System.Drawing.Point(447, 35);
+            this.selectPakPathButton.Location = new System.Drawing.Point(442, 75);
             this.selectPakPathButton.Name = "selectPakPathButton";
             this.selectPakPathButton.Size = new System.Drawing.Size(40, 34);
             this.selectPakPathButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -122,80 +129,6 @@
             this.bunifuDragControl1.TargetControl = this;
             this.bunifuDragControl1.Vertical = true;
             // 
-            // discordButton
-            // 
-            this.discordButton.Activecolor = System.Drawing.Color.Transparent;
-            this.discordButton.BackColor = System.Drawing.Color.Transparent;
-            this.discordButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("discordButton.BackgroundImage")));
-            this.discordButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.discordButton.BorderRadius = 0;
-            this.discordButton.ButtonText = "External Links";
-            this.discordButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.discordButton.DisabledColor = System.Drawing.Color.White;
-            this.discordButton.ForeColor = System.Drawing.Color.White;
-            this.discordButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.discordButton.Iconimage = null;
-            this.discordButton.Iconimage_right = null;
-            this.discordButton.Iconimage_right_Selected = null;
-            this.discordButton.Iconimage_Selected = null;
-            this.discordButton.IconMarginLeft = 0;
-            this.discordButton.IconMarginRight = 0;
-            this.discordButton.IconRightVisible = true;
-            this.discordButton.IconRightZoom = 0D;
-            this.discordButton.IconVisible = true;
-            this.discordButton.IconZoom = 50D;
-            this.discordButton.IsTab = false;
-            this.discordButton.Location = new System.Drawing.Point(240, 108);
-            this.discordButton.Name = "discordButton";
-            this.discordButton.Normalcolor = System.Drawing.Color.Transparent;
-            this.discordButton.OnHovercolor = System.Drawing.Color.Transparent;
-            this.discordButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.discordButton.selected = false;
-            this.discordButton.Size = new System.Drawing.Size(144, 26);
-            this.discordButton.TabIndex = 9;
-            this.discordButton.Text = "External Links";
-            this.discordButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.discordButton.Textcolor = System.Drawing.Color.White;
-            this.discordButton.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.discordButton.Click += new System.EventHandler(this.discordButton_Click);
-            // 
-            // updateCheckButton
-            // 
-            this.updateCheckButton.Activecolor = System.Drawing.Color.Transparent;
-            this.updateCheckButton.BackColor = System.Drawing.Color.Transparent;
-            this.updateCheckButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("updateCheckButton.BackgroundImage")));
-            this.updateCheckButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.updateCheckButton.BorderRadius = 0;
-            this.updateCheckButton.ButtonText = "Check For Updates";
-            this.updateCheckButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.updateCheckButton.DisabledColor = System.Drawing.Color.White;
-            this.updateCheckButton.ForeColor = System.Drawing.Color.White;
-            this.updateCheckButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.updateCheckButton.Iconimage = null;
-            this.updateCheckButton.Iconimage_right = null;
-            this.updateCheckButton.Iconimage_right_Selected = null;
-            this.updateCheckButton.Iconimage_Selected = null;
-            this.updateCheckButton.IconMarginLeft = 0;
-            this.updateCheckButton.IconMarginRight = 0;
-            this.updateCheckButton.IconRightVisible = true;
-            this.updateCheckButton.IconRightZoom = 0D;
-            this.updateCheckButton.IconVisible = true;
-            this.updateCheckButton.IconZoom = 50D;
-            this.updateCheckButton.IsTab = false;
-            this.updateCheckButton.Location = new System.Drawing.Point(82, 108);
-            this.updateCheckButton.Name = "updateCheckButton";
-            this.updateCheckButton.Normalcolor = System.Drawing.Color.Transparent;
-            this.updateCheckButton.OnHovercolor = System.Drawing.Color.Transparent;
-            this.updateCheckButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.updateCheckButton.selected = false;
-            this.updateCheckButton.Size = new System.Drawing.Size(144, 26);
-            this.updateCheckButton.TabIndex = 16;
-            this.updateCheckButton.Text = "Check For Updates";
-            this.updateCheckButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.updateCheckButton.Textcolor = System.Drawing.Color.White;
-            this.updateCheckButton.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateCheckButton.Click += new System.EventHandler(this.updateCheckButton_Click);
-            // 
             // resetConfigButton
             // 
             this.resetConfigButton.Activecolor = System.Drawing.Color.Transparent;
@@ -219,13 +152,13 @@
             this.resetConfigButton.IconVisible = true;
             this.resetConfigButton.IconZoom = 50D;
             this.resetConfigButton.IsTab = false;
-            this.resetConfigButton.Location = new System.Drawing.Point(82, 76);
+            this.resetConfigButton.Location = new System.Drawing.Point(77, 116);
             this.resetConfigButton.Name = "resetConfigButton";
             this.resetConfigButton.Normalcolor = System.Drawing.Color.Transparent;
             this.resetConfigButton.OnHovercolor = System.Drawing.Color.Transparent;
             this.resetConfigButton.OnHoverTextColor = System.Drawing.Color.White;
             this.resetConfigButton.selected = false;
-            this.resetConfigButton.Size = new System.Drawing.Size(144, 26);
+            this.resetConfigButton.Size = new System.Drawing.Size(124, 26);
             this.resetConfigButton.TabIndex = 17;
             this.resetConfigButton.Text = "Reset Config";
             this.resetConfigButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -256,13 +189,13 @@
             this.convertedItemsButton.IconVisible = true;
             this.convertedItemsButton.IconZoom = 50D;
             this.convertedItemsButton.IsTab = false;
-            this.convertedItemsButton.Location = new System.Drawing.Point(240, 76);
+            this.convertedItemsButton.Location = new System.Drawing.Point(207, 116);
             this.convertedItemsButton.Name = "convertedItemsButton";
             this.convertedItemsButton.Normalcolor = System.Drawing.Color.Transparent;
             this.convertedItemsButton.OnHovercolor = System.Drawing.Color.Transparent;
             this.convertedItemsButton.OnHoverTextColor = System.Drawing.Color.White;
             this.convertedItemsButton.selected = false;
-            this.convertedItemsButton.Size = new System.Drawing.Size(144, 26);
+            this.convertedItemsButton.Size = new System.Drawing.Size(124, 26);
             this.convertedItemsButton.TabIndex = 18;
             this.convertedItemsButton.Text = "Converted Items List";
             this.convertedItemsButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -270,49 +203,12 @@
             this.convertedItemsButton.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.convertedItemsButton.Click += new System.EventHandler(this.convertedItemsButton_Click);
             // 
-            // advancedButton
-            // 
-            this.advancedButton.Activecolor = System.Drawing.Color.Transparent;
-            this.advancedButton.BackColor = System.Drawing.Color.Transparent;
-            this.advancedButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("advancedButton.BackgroundImage")));
-            this.advancedButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.advancedButton.BorderRadius = 0;
-            this.advancedButton.ButtonText = "Advanced Settings";
-            this.advancedButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.advancedButton.DisabledColor = System.Drawing.Color.White;
-            this.advancedButton.ForeColor = System.Drawing.Color.White;
-            this.advancedButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.advancedButton.Iconimage = null;
-            this.advancedButton.Iconimage_right = null;
-            this.advancedButton.Iconimage_right_Selected = null;
-            this.advancedButton.Iconimage_Selected = null;
-            this.advancedButton.IconMarginLeft = 0;
-            this.advancedButton.IconMarginRight = 0;
-            this.advancedButton.IconRightVisible = true;
-            this.advancedButton.IconRightZoom = 0D;
-            this.advancedButton.IconVisible = true;
-            this.advancedButton.IconZoom = 50D;
-            this.advancedButton.IsTab = false;
-            this.advancedButton.Location = new System.Drawing.Point(82, 140);
-            this.advancedButton.Name = "advancedButton";
-            this.advancedButton.Normalcolor = System.Drawing.Color.Transparent;
-            this.advancedButton.OnHovercolor = System.Drawing.Color.Transparent;
-            this.advancedButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.advancedButton.selected = false;
-            this.advancedButton.Size = new System.Drawing.Size(302, 26);
-            this.advancedButton.TabIndex = 19;
-            this.advancedButton.Text = "Advanced Settings";
-            this.advancedButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.advancedButton.Textcolor = System.Drawing.Color.White;
-            this.advancedButton.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.advancedButton.Click += new System.EventHandler(this.advancedButton_Click);
-            // 
             // bunifuSeparator1
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bunifuSeparator1.LineThickness = 4;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(82, 61);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(77, 101);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(364, 10);
             this.bunifuSeparator1.TabIndex = 20;
@@ -326,7 +222,7 @@
             this.pakPathTextbox.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pakPathTextbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pakPathTextbox.ForeColor = System.Drawing.Color.White;
-            this.pakPathTextbox.Location = new System.Drawing.Point(82, 44);
+            this.pakPathTextbox.Location = new System.Drawing.Point(77, 84);
             this.pakPathTextbox.Name = "pakPathTextbox";
             this.pakPathTextbox.ReadOnly = true;
             this.pakPathTextbox.Size = new System.Drawing.Size(364, 16);
@@ -335,17 +231,17 @@
             // bunifuElipse2
             // 
             this.bunifuElipse2.ElipseRadius = 5;
-            this.bunifuElipse2.TargetControl = this.advancedButton;
+            this.bunifuElipse2.TargetControl = this;
             // 
             // bunifuElipse3
             // 
             this.bunifuElipse3.ElipseRadius = 5;
-            this.bunifuElipse3.TargetControl = this.discordButton;
+            this.bunifuElipse3.TargetControl = this;
             // 
             // bunifuElipse4
             // 
             this.bunifuElipse4.ElipseRadius = 5;
-            this.bunifuElipse4.TargetControl = this.updateCheckButton;
+            this.bunifuElipse4.TargetControl = this;
             // 
             // bunifuElipse5
             // 
@@ -374,19 +270,205 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 1;
             // 
+            // restartButton
+            // 
+            this.restartButton.Activecolor = System.Drawing.Color.Transparent;
+            this.restartButton.BackColor = System.Drawing.Color.Transparent;
+            this.restartButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("restartButton.BackgroundImage")));
+            this.restartButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.restartButton.BorderRadius = 0;
+            this.restartButton.ButtonText = "Restart Swapper";
+            this.restartButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.restartButton.DisabledColor = System.Drawing.Color.White;
+            this.restartButton.ForeColor = System.Drawing.Color.White;
+            this.restartButton.Iconcolor = System.Drawing.Color.Transparent;
+            this.restartButton.Iconimage = null;
+            this.restartButton.Iconimage_right = null;
+            this.restartButton.Iconimage_right_Selected = null;
+            this.restartButton.Iconimage_Selected = null;
+            this.restartButton.IconMarginLeft = 0;
+            this.restartButton.IconMarginRight = 0;
+            this.restartButton.IconRightVisible = true;
+            this.restartButton.IconRightZoom = 0D;
+            this.restartButton.IconVisible = true;
+            this.restartButton.IconZoom = 50D;
+            this.restartButton.IsTab = false;
+            this.restartButton.Location = new System.Drawing.Point(207, 149);
+            this.restartButton.Name = "restartButton";
+            this.restartButton.Normalcolor = System.Drawing.Color.Transparent;
+            this.restartButton.OnHovercolor = System.Drawing.Color.Transparent;
+            this.restartButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.restartButton.selected = false;
+            this.restartButton.Size = new System.Drawing.Size(124, 26);
+            this.restartButton.TabIndex = 25;
+            this.restartButton.Text = "Restart Swapper";
+            this.restartButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.restartButton.Textcolor = System.Drawing.Color.White;
+            this.restartButton.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.restartButton.Click += new System.EventHandler(this.restartButton_Click);
+            // 
+            // backupButton
+            // 
+            this.backupButton.Activecolor = System.Drawing.Color.Transparent;
+            this.backupButton.BackColor = System.Drawing.Color.Transparent;
+            this.backupButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backupButton.BackgroundImage")));
+            this.backupButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backupButton.BorderRadius = 0;
+            this.backupButton.ButtonText = "Backup/Verify";
+            this.backupButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backupButton.DisabledColor = System.Drawing.Color.White;
+            this.backupButton.ForeColor = System.Drawing.Color.White;
+            this.backupButton.Iconcolor = System.Drawing.Color.Transparent;
+            this.backupButton.Iconimage = null;
+            this.backupButton.Iconimage_right = null;
+            this.backupButton.Iconimage_right_Selected = null;
+            this.backupButton.Iconimage_Selected = null;
+            this.backupButton.IconMarginLeft = 0;
+            this.backupButton.IconMarginRight = 0;
+            this.backupButton.IconRightVisible = true;
+            this.backupButton.IconRightZoom = 0D;
+            this.backupButton.IconVisible = true;
+            this.backupButton.IconZoom = 50D;
+            this.backupButton.IsTab = false;
+            this.backupButton.Location = new System.Drawing.Point(77, 149);
+            this.backupButton.Name = "backupButton";
+            this.backupButton.Normalcolor = System.Drawing.Color.Transparent;
+            this.backupButton.OnHovercolor = System.Drawing.Color.Transparent;
+            this.backupButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.backupButton.selected = false;
+            this.backupButton.Size = new System.Drawing.Size(124, 26);
+            this.backupButton.TabIndex = 24;
+            this.backupButton.Text = "Backup/Verify";
+            this.backupButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.backupButton.Textcolor = System.Drawing.Color.White;
+            this.backupButton.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backupButton.Click += new System.EventHandler(this.backupButton_Click);
+            // 
+            // openPakButton
+            // 
+            this.openPakButton.Activecolor = System.Drawing.Color.Transparent;
+            this.openPakButton.BackColor = System.Drawing.Color.Transparent;
+            this.openPakButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("openPakButton.BackgroundImage")));
+            this.openPakButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.openPakButton.BorderRadius = 0;
+            this.openPakButton.ButtonText = "Open Pak Directory";
+            this.openPakButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openPakButton.DisabledColor = System.Drawing.Color.White;
+            this.openPakButton.ForeColor = System.Drawing.Color.White;
+            this.openPakButton.Iconcolor = System.Drawing.Color.Transparent;
+            this.openPakButton.Iconimage = null;
+            this.openPakButton.Iconimage_right = null;
+            this.openPakButton.Iconimage_right_Selected = null;
+            this.openPakButton.Iconimage_Selected = null;
+            this.openPakButton.IconMarginLeft = 0;
+            this.openPakButton.IconMarginRight = 0;
+            this.openPakButton.IconRightVisible = true;
+            this.openPakButton.IconRightZoom = 0D;
+            this.openPakButton.IconVisible = true;
+            this.openPakButton.IconZoom = 50D;
+            this.openPakButton.IsTab = false;
+            this.openPakButton.Location = new System.Drawing.Point(339, 149);
+            this.openPakButton.Name = "openPakButton";
+            this.openPakButton.Normalcolor = System.Drawing.Color.Transparent;
+            this.openPakButton.OnHovercolor = System.Drawing.Color.Transparent;
+            this.openPakButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.openPakButton.selected = false;
+            this.openPakButton.Size = new System.Drawing.Size(124, 26);
+            this.openPakButton.TabIndex = 23;
+            this.openPakButton.Text = "Open Pak Directory";
+            this.openPakButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.openPakButton.Textcolor = System.Drawing.Color.White;
+            this.openPakButton.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openPakButton.Click += new System.EventHandler(this.openPakButton_Click);
+            // 
+            // checkPakButton
+            // 
+            this.checkPakButton.Activecolor = System.Drawing.Color.Transparent;
+            this.checkPakButton.BackColor = System.Drawing.Color.Transparent;
+            this.checkPakButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("checkPakButton.BackgroundImage")));
+            this.checkPakButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.checkPakButton.BorderRadius = 0;
+            this.checkPakButton.ButtonText = "Check Pak Directory";
+            this.checkPakButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkPakButton.DisabledColor = System.Drawing.Color.White;
+            this.checkPakButton.ForeColor = System.Drawing.Color.White;
+            this.checkPakButton.Iconcolor = System.Drawing.Color.Transparent;
+            this.checkPakButton.Iconimage = null;
+            this.checkPakButton.Iconimage_right = null;
+            this.checkPakButton.Iconimage_right_Selected = null;
+            this.checkPakButton.Iconimage_Selected = null;
+            this.checkPakButton.IconMarginLeft = 0;
+            this.checkPakButton.IconMarginRight = 0;
+            this.checkPakButton.IconRightVisible = true;
+            this.checkPakButton.IconRightZoom = 0D;
+            this.checkPakButton.IconVisible = true;
+            this.checkPakButton.IconZoom = 50D;
+            this.checkPakButton.IsTab = false;
+            this.checkPakButton.Location = new System.Drawing.Point(339, 117);
+            this.checkPakButton.Name = "checkPakButton";
+            this.checkPakButton.Normalcolor = System.Drawing.Color.Transparent;
+            this.checkPakButton.OnHovercolor = System.Drawing.Color.Transparent;
+            this.checkPakButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.checkPakButton.selected = false;
+            this.checkPakButton.Size = new System.Drawing.Size(124, 26);
+            this.checkPakButton.TabIndex = 22;
+            this.checkPakButton.Text = "Check Pak Directory";
+            this.checkPakButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkPakButton.Textcolor = System.Drawing.Color.White;
+            this.checkPakButton.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkPakButton.Click += new System.EventHandler(this.checkPakButton_Click);
+            // 
+            // bunifuElipse8
+            // 
+            this.bunifuElipse8.ElipseRadius = 5;
+            this.bunifuElipse8.TargetControl = this.checkPakButton;
+            // 
+            // bunifuElipse9
+            // 
+            this.bunifuElipse9.ElipseRadius = 5;
+            this.bunifuElipse9.TargetControl = this.backupButton;
+            // 
+            // bunifuElipse10
+            // 
+            this.bunifuElipse10.ElipseRadius = 5;
+            this.bunifuElipse10.TargetControl = this.restartButton;
+            // 
+            // bunifuElipse11
+            // 
+            this.bunifuElipse11.ElipseRadius = 5;
+            this.bunifuElipse11.TargetControl = this.openPakButton;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(73, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(203, 25);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Juicy Swapper -Settings";
+            // 
+            // bunifuElipse12
+            // 
+            this.bunifuElipse12.ElipseRadius = 2;
+            this.bunifuElipse12.TargetControl = this;
+            // 
             // SettingsMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(22)))), ((int)(((byte)(42)))));
-            this.ClientSize = new System.Drawing.Size(498, 179);
+            this.ClientSize = new System.Drawing.Size(498, 184);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.restartButton);
+            this.Controls.Add(this.backupButton);
+            this.Controls.Add(this.openPakButton);
+            this.Controls.Add(this.checkPakButton);
             this.Controls.Add(this.pakPathTextbox);
             this.Controls.Add(this.bunifuSeparator1);
-            this.Controls.Add(this.advancedButton);
             this.Controls.Add(this.convertedItemsButton);
             this.Controls.Add(this.resetConfigButton);
-            this.Controls.Add(this.updateCheckButton);
-            this.Controls.Add(this.discordButton);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.selectPakPathButton);
             this.Controls.Add(this.label1);
@@ -397,7 +479,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SettingsMenu_FormClosing);
-            this.Load += new System.EventHandler(this.Settings_Load);
             ((System.ComponentModel.ISupportInitialize)(this.selectPakPathButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).EndInit();
             this.ResumeLayout(false);
@@ -413,11 +494,8 @@
         private Bunifu.Framework.UI.BunifuImageButton selectPakPathButton;
         private Bunifu.Framework.UI.BunifuImageButton closeButton;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
-        private Bunifu.Framework.UI.BunifuFlatButton discordButton;
-        private Bunifu.Framework.UI.BunifuFlatButton advancedButton;
         private Bunifu.Framework.UI.BunifuFlatButton convertedItemsButton;
         private Bunifu.Framework.UI.BunifuFlatButton resetConfigButton;
-        private Bunifu.Framework.UI.BunifuFlatButton updateCheckButton;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private System.Windows.Forms.TextBox pakPathTextbox;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
@@ -428,5 +506,15 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse7;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
         private System.Windows.Forms.Timer timer1;
+        private Bunifu.Framework.UI.BunifuFlatButton restartButton;
+        private Bunifu.Framework.UI.BunifuFlatButton backupButton;
+        private Bunifu.Framework.UI.BunifuFlatButton openPakButton;
+        private Bunifu.Framework.UI.BunifuFlatButton checkPakButton;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse8;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse9;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse10;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse11;
+        private System.Windows.Forms.Label label2;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse12;
     }
 }

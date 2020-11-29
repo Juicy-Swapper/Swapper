@@ -47,7 +47,7 @@
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.ElipseRadius = 7;
             this.bunifuElipse1.TargetControl = this;
             // 
             // Sidebar
@@ -118,13 +118,13 @@
             this.statusButton.IconVisible = true;
             this.statusButton.IconZoom = 50D;
             this.statusButton.IsTab = false;
-            this.statusButton.Location = new System.Drawing.Point(392, 149);
+            this.statusButton.Location = new System.Drawing.Point(413, 149);
             this.statusButton.Name = "statusButton";
             this.statusButton.Normalcolor = System.Drawing.Color.Transparent;
             this.statusButton.OnHovercolor = System.Drawing.Color.Transparent;
             this.statusButton.OnHoverTextColor = System.Drawing.Color.White;
             this.statusButton.selected = false;
-            this.statusButton.Size = new System.Drawing.Size(97, 26);
+            this.statusButton.Size = new System.Drawing.Size(76, 26);
             this.statusButton.TabIndex = 20;
             this.statusButton.Text = "Continue";
             this.statusButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -165,13 +165,13 @@
             this.discordButton.IconVisible = true;
             this.discordButton.IconZoom = 50D;
             this.discordButton.IsTab = false;
-            this.discordButton.Location = new System.Drawing.Point(289, 149);
+            this.discordButton.Location = new System.Drawing.Point(331, 149);
             this.discordButton.Name = "discordButton";
             this.discordButton.Normalcolor = System.Drawing.Color.Transparent;
             this.discordButton.OnHovercolor = System.Drawing.Color.Transparent;
             this.discordButton.OnHoverTextColor = System.Drawing.Color.White;
             this.discordButton.selected = false;
-            this.discordButton.Size = new System.Drawing.Size(97, 26);
+            this.discordButton.Size = new System.Drawing.Size(76, 26);
             this.discordButton.TabIndex = 21;
             this.discordButton.Text = "Discord";
             this.discordButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

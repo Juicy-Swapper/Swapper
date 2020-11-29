@@ -77,6 +77,7 @@
       <HintPath>.\DiscordRPC.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
     <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\WindowsAPICodePack-Core.1.1.1\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
     </Reference>
@@ -87,9 +88,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\src\vls swapper v4\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -102,9 +108,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Main\Classes\ByteResearcher.cs" />
     <Compile Include="Main\Classes\InstallLocation.cs" />
     <Compile Include="Main\Classes\JsonAPI.cs" />
     <Compile Include="Main\Classes\SwapUtilities.cs" />
+    <Compile Include="Main\GUI\Items\Backblings\BattleShroud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Backblings\BattleShroud.designer.cs">
+      <DependentUpon>BattleShroud.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\GUI\Items\Backblings\BlackShield.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,12 +196,6 @@
     <Compile Include="Main\GUI\Messages\Annoucement.Designer.cs">
       <DependentUpon>Annoucement.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\GUI\Messages\Links.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Main\GUI\Messages\Links.Designer.cs">
-      <DependentUpon>Links.cs</DependentUpon>
-    </Compile>
     <Compile Include="Main\GUI\Messages\ExceptionMess.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,12 +250,6 @@
     <Compile Include="Main\GUI\Panels\EmotesPanel.designer.cs">
       <DependentUpon>EmotesPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\GUI\Messages\EmoteWarning.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Main\GUI\Messages\EmoteWarning.Designer.cs">
-      <DependentUpon>EmoteWarning.cs</DependentUpon>
-    </Compile>
     <Compile Include="Main\Classes\JuicyUtilities.cs" />
     <Compile Include="Main\Classes\Researcher.cs" />
     <Compile Include="Main\GUI\Messages\BackupVerify.cs">
@@ -262,12 +263,6 @@
     </Compile>
     <Compile Include="Main\GUI\Main\Loader.Designer.cs">
       <DependentUpon>Loader.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Main\GUI\Messages\BypassWarning.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Main\GUI\Messages\BypassWarning.Designer.cs">
-      <DependentUpon>BypassWarning.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\GUI\Main\Update.cs">
       <SubType>Form</SubType>
@@ -293,12 +288,6 @@
     <Compile Include="Main\GUI\Main\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\GUI\Messages\FortniteLaunch.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Main\GUI\Messages\FortniteLaunch.Designer.cs">
-      <DependentUpon>FortniteLaunch.cs</DependentUpon>
-    </Compile>
     <Compile Include="Main\GUI\Messages\ResetComplete.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -310,12 +299,6 @@
     </Compile>
     <Compile Include="Main\GUI\Messages\ResetConfirm.Designer.cs">
       <DependentUpon>ResetConfirm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Main\GUI\Main\AdvancedSettings.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Main\GUI\Main\AdvancedSettings.Designer.cs">
-      <DependentUpon>AdvancedSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\GUI\Main\Settings.cs">
       <SubType>Form</SubType>
@@ -361,6 +344,9 @@
     </Compile>
     <Compile Include="Main\Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Main\GUI\Items\Backblings\BattleShroud.resx">
+      <DependentUpon>BattleShroud.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Items\Backblings\BlackShield.resx">
       <DependentUpon>BlackShield.cs</DependentUpon>
     </EmbeddedResource>
@@ -400,9 +386,6 @@
     <EmbeddedResource Include="Main\GUI\Messages\Annoucement.resx">
       <DependentUpon>Annoucement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\GUI\Messages\Links.resx">
-      <DependentUpon>Links.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Messages\ExceptionMess.resx">
       <DependentUpon>ExceptionMess.cs</DependentUpon>
     </EmbeddedResource>
@@ -430,17 +413,11 @@
     <EmbeddedResource Include="Main\GUI\Panels\EmotesPanel.resx">
       <DependentUpon>EmotesPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\GUI\Messages\EmoteWarning.resx">
-      <DependentUpon>EmoteWarning.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Messages\BackupVerify.resx">
       <DependentUpon>BackupVerify.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Main\Loader.resx">
       <DependentUpon>Loader.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Main\GUI\Messages\BypassWarning.resx">
-      <DependentUpon>BypassWarning.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Main\Update.resx">
       <DependentUpon>Update.cs</DependentUpon>
@@ -454,17 +431,11 @@
     <EmbeddedResource Include="Main\GUI\Main\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\GUI\Messages\FortniteLaunch.resx">
-      <DependentUpon>FortniteLaunch.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Messages\ResetComplete.resx">
       <DependentUpon>ResetComplete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Messages\ResetConfirm.resx">
       <DependentUpon>ResetConfirm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Main\GUI\Main\AdvancedSettings.resx">
-      <DependentUpon>AdvancedSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Main\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>

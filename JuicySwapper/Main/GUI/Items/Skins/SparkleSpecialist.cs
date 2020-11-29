@@ -27,13 +27,11 @@ namespace JuicySwapper.Items.Skins
                 convertButton.Text = "Convert";
         }
 
-        private static byte[] Body = new byte[35] { 83, 107, 105, 110, 115, 47, 84, 86, 95, 49, 57, 47, 77, 97, 116, 101, 114, 105, 97, 108, 69, 68, 95, 67, 109, 109, 97, 110, 100, 111, 95, 84, 86, 49, 57 };
-
-        private static byte[] Body1 = new byte[35] { 83, 107, 105, 110, 115, 47, 66, 82, 95, 48, 53, 47, 77, 97, 116, 101, 114, 105, 97, 108, 69, 68, 95, 67, 109, 109, 97, 110, 100, 111, 95, 66, 82, 48, 53  };
-
-        private static byte[] Invalid = new byte[15] { 67, 83, 112, 101, 99, 105, 97, 108, 105, 122, 115, 47, 72, 83, 70 };
-
-        private static byte[] Invalid1 = new byte[15] { 67, 83, 112, 106, 117, 105, 99, 121, 105, 122, 115, 47, 72, 83, 70 };
+        string Body = "Skins/TV_19/MaterialED_Cmmando_TV19";
+        string Body1 = "Skins/BR_05/MaterialED_Cmmando_BR05";
+        string GenderOffset = "/HID_013ommando_F";
+        string Invalid = "Specializs/HSU";
+        string Invalid1 = "Specializs/HFF";
 
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
@@ -59,7 +57,10 @@ namespace JuicySwapper.Items.Skins
                     RichTextBoxInfo.Text += "\n[LOG] Body 1/2 added";
                 }
 
-                bool Swap2 = Researcher.Convert(SwapOffsets[5], SwapPath[0], Invalid, Invalid1, 0, 0, false, false);
+                Researcher.GetOffset(SwapOffsets[5], SwapPath[0], GenderOffset, false);
+
+                long Offset_current = Settings.Default.current_offset;
+                bool Swap2 = Researcher.Convert(Offset_current, SwapPath[0], Invalid, Invalid1, 0, 0, false, false);
                 if (Swap2)
                     RichTextBoxInfo.Text += "\n[LOG] Body 2/2 added";
 
@@ -78,7 +79,10 @@ namespace JuicySwapper.Items.Skins
                     RichTextBoxInfo.Text += "\n[LOG] Body 1/2 removed";
                 }
 
-                bool Swap2 = Researcher.Revert(SwapOffsets[5], SwapPath[0], Invalid, Invalid1, 0, 0, false, false);
+                Researcher.GetOffset(SwapOffsets[5], SwapPath[0], GenderOffset, false);
+
+                long Offset_current = Settings.Default.current_offset;
+                bool Swap2 = Researcher.Revert(Offset_current, SwapPath[0], Invalid, Invalid1, 0, 0, false, false);
                 if (Swap2)
                     RichTextBoxInfo.Text += "\n[LOG] Body 2/2 removed";
 

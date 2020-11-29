@@ -61,7 +61,7 @@
             this.Sidebar.Location = new System.Drawing.Point(-3, -7);
             this.Sidebar.Name = "Sidebar";
             this.Sidebar.Quality = 10;
-            this.Sidebar.Size = new System.Drawing.Size(70, 231);
+            this.Sidebar.Size = new System.Drawing.Size(70, 249);
             this.Sidebar.TabIndex = 1;
             // 
             // label1
@@ -116,13 +116,13 @@
             this.confirmButton.IconVisible = true;
             this.confirmButton.IconZoom = 50D;
             this.confirmButton.IsTab = false;
-            this.confirmButton.Location = new System.Drawing.Point(359, 167);
+            this.confirmButton.Location = new System.Drawing.Point(380, 185);
             this.confirmButton.Name = "confirmButton";
             this.confirmButton.Normalcolor = System.Drawing.Color.Transparent;
             this.confirmButton.OnHovercolor = System.Drawing.Color.Transparent;
             this.confirmButton.OnHoverTextColor = System.Drawing.Color.White;
             this.confirmButton.selected = false;
-            this.confirmButton.Size = new System.Drawing.Size(97, 26);
+            this.confirmButton.Size = new System.Drawing.Size(76, 26);
             this.confirmButton.TabIndex = 20;
             this.confirmButton.Text = "Confirm";
             this.confirmButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -153,13 +153,13 @@
             this.cancelButton.IconVisible = true;
             this.cancelButton.IconZoom = 50D;
             this.cancelButton.IsTab = false;
-            this.cancelButton.Location = new System.Drawing.Point(256, 167);
+            this.cancelButton.Location = new System.Drawing.Point(298, 185);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Normalcolor = System.Drawing.Color.Transparent;
             this.cancelButton.OnHovercolor = System.Drawing.Color.Transparent;
             this.cancelButton.OnHoverTextColor = System.Drawing.Color.White;
             this.cancelButton.selected = false;
-            this.cancelButton.Size = new System.Drawing.Size(97, 26);
+            this.cancelButton.Size = new System.Drawing.Size(76, 26);
             this.cancelButton.TabIndex = 21;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -196,7 +196,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(22)))), ((int)(((byte)(42)))));
-            this.ClientSize = new System.Drawing.Size(468, 205);
+            this.ClientSize = new System.Drawing.Size(468, 223);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.confirmButton);
             this.Controls.Add(this.label2);

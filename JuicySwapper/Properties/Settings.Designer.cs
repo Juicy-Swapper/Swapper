@@ -334,5 +334,17 @@ namespace JuicySwapper.Properties {
                 this["BlackShieldEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BattleShroudEnabled {
+            get {
+                return ((bool)(this["BattleShroudEnabled"]));
+            }
+            set {
+                this["BattleShroudEnabled"] = value;
+            }
+        }
     }
 }

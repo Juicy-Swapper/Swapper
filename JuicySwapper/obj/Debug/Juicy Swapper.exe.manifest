@@ -67,24 +67,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Juicy Swapper.exe" size="17359784">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Juicy Swapper.exe" size="18639784">
       <assemblyIdentity name="Juicy Swapper" version="1.0.1.5" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QRX9cDSdH8qPeUbasiy6ZvJ6AKKT2h1O13lFwgxRo2Q=</dsig:DigestValue>
+        <dsig:DigestValue>S4l85UMhqEBzpPY/BTbETMoHEMw3ebdtjX1SwkzZYew=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Juicy Swapper.exe.config" size="4090">
+  <file name="Juicy Swapper.exe.config" size="4575">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>oqmIWF8IYeskglvxDb3QNX80yxTjx+O8PBsv6Btp9r4=</dsig:DigestValue>
+      <dsig:DigestValue>tv5NHDjlbrx0Pzxcful1XtZ9SEFxwidLLq4Ic4ZNoaw=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\test_92j_icon.ico" size="18925">

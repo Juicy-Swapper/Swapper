@@ -48,7 +48,7 @@
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.ElipseRadius = 7;
             this.bunifuElipse1.TargetControl = this;
             // 
             // Sidebar
@@ -225,7 +225,6 @@
             this.Name = "BackupVerify";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Backup/Verify";
-            this.Load += new System.EventHandler(this.AdvancedSettings_Load);
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

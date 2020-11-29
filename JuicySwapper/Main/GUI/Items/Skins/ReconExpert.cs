@@ -27,9 +27,11 @@ namespace JuicySwapper.Items.Skins
                 convertButton.Text = "Convert";
         }
 
-        private static byte[] Body = new byte[32] { 108, 83, 107, 105, 110, 115, 47, 66, 82, 95, 49, 51, 47, 77, 97, 116, 101, 114, 105, 97, 108, 69, 68, 66, 111, 100, 121, 95, 66, 82, 49, 51 };
-
-        private static byte[] Body1 = new byte[32] { 108, 83, 107, 105, 110, 115, 47, 84, 86, 95, 49, 52, 47, 77, 97, 116, 101, 114, 105, 97, 108, 69, 68, 66, 111, 100, 121, 95, 84, 86, 49, 52 };
+        string Body = "lSkins/BR_03/MaterialED_Cmmando_BR03";
+        string Body1 = "lSkins/TV_14/MaterialED_Cmmando_TV14";
+        string GenderOffset = "/HID_013ommando_F";
+        string Invalid = "Specializs/HSU";
+        string Invalid1 = "Specializs/HFF";
 
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
@@ -52,8 +54,15 @@ namespace JuicySwapper.Items.Skins
                 {
                     Settings.Default.ReconExpertEnabled = true;
                     Settings.Default.Save();
-                    RichTextBoxInfo.Text += "\n[LOG] Body added";
+                    RichTextBoxInfo.Text += "\n[LOG] Body 1/2 added";
                 }
+
+                Researcher.GetOffset(SwapOffsets[5], SwapPath[0], GenderOffset, false);
+
+                long Offset_current = Settings.Default.current_offset;
+                bool Swap2 = Researcher.Convert(Offset_current, SwapPath[0], Invalid, Invalid1, 0, 0, false, false);
+                if (Swap2)
+                    RichTextBoxInfo.Text += "\n[LOG] Body 2/2 removed";
 
                 stopwatch.Stop();
                 double num = (double)stopwatch.Elapsed.Milliseconds;
@@ -67,8 +76,15 @@ namespace JuicySwapper.Items.Skins
                 {
                     Settings.Default.ReconExpertEnabled = false;
                     Settings.Default.Save();
-                    RichTextBoxInfo.Text += "\n[LOG] Body removed";
+                    RichTextBoxInfo.Text += "\n[LOG] Body 1/2 removed";
                 }
+                
+                Researcher.GetOffset(SwapOffsets[5], SwapPath[0], GenderOffset, false);
+
+                long Offset_current = Settings.Default.current_offset;
+                bool Swap2 = Researcher.Revert(Offset_current, SwapPath[0], Invalid, Invalid1, 0, 0, false, false);
+                if (Swap2)
+                    RichTextBoxInfo.Text += "\n[LOG] Body 2/2 removed";
 
                 stopwatch.Stop();
                 double num = (double)stopwatch.Elapsed.Milliseconds;

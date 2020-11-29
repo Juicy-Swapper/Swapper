@@ -133,7 +133,6 @@ namespace JuicySwapper
 
         private void bunifuFlatButton5_Click(object sender, EventArgs e) //Display EmotesPanel
         {
-            new EmoteWarning().ShowDialog();
             JuicyUtilities.SetRPCLocation("Emotes", "emoteimg");
             Rpc = "Emotes";
             hold = 4;

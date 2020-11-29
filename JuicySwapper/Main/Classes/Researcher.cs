@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -9,68 +10,154 @@ namespace JuicySwapper.IO
 {
     public class Researcher
     {
-        public static bool Convert(long Offset, string Pak, byte[] Convert, byte[] Revert, long max = 0, long additional = 0, bool minus = false, bool messages = false)
+
+        public static bool Convert(long start, string file, string convert, string revert, long max = 0, long additional = 0, bool minus = false, bool messages = false)
         {
-            if (File.Exists(Pak))
+            byte[] a = Encoding.UTF8.GetBytes(convert);
+            byte[] b = Encoding.UTF8.GetBytes(revert);
+            if ((convert.Length - revert.Length) >= 0)
             {
-                Stream s = File.Open(Pak, FileMode.Open, FileAccess.ReadWrite);
-
-                long offset;
-
-                var task = Task.Run(() => Find(s, Offset, Convert, max));
-                if (task.Wait(TimeSpan.FromSeconds(10)))
+                for (int i = 0; i < convert.Length - revert.Length; i++)
                 {
-                    offset = task.Result;
-                    Settings.Default.current_offset = offset;
-                    Settings.Default.Save();
+                    b = c(b, 0);
+                }
+
+                if (File.Exists(file))
+                {
+                    Stream s = File.Open(file, FileMode.Open, FileAccess.ReadWrite);
+
+                    long offset;
+
+                    var task = Task.Run(() => Find(s, start, a, max));
+                    if (task.Wait(TimeSpan.FromSeconds(10)))
+                    {
+                        offset = task.Result;
+                        Settings.Default.current_offset = offset;
+                        Settings.Default.Save();
+                    }
+                    else
+                        offset = 0;
+
+                    s.Close();
+
+                    if (offset == 0)
+                    {
+                        if (messages)
+                            MessageBox.Show("Already converted, or string not found in pak!");
+
+                        return false;
+                    }
+
+                    if (additional != 0 && minus)
+                        offset -= additional;
+
+                    else if (additional != 0 && !minus)
+                        offset += additional;
+
+                    BinaryWriter binaryWriter = new BinaryWriter(File.Open(file, FileMode.Open, FileAccess.ReadWrite));
+                    binaryWriter.BaseStream.Seek(offset, SeekOrigin.Begin);
+                    binaryWriter.Write(b);
+                    binaryWriter.Close();
+
+                    if (messages)
+                        MessageBox.Show("Successfully converted!");
+
+                    return true;
                 }
                 else
-                    offset = 0;
-
-                s.Close();
-
-                if (offset == 0)
                 {
                     if (messages)
-                        MessageBox.Show("Already converted, or byte not found in pak! (Ask for help on discord!)", "- kaede", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("The pak file specified doesn't exist");
 
                     return false;
                 }
-
-                if (additional != 0 && minus)
-                    offset -= additional;
-
-                else if (additional != 0 && !minus)
-                    offset += additional;
-
-                BinaryWriter binaryWriter = new BinaryWriter(File.Open(Pak, FileMode.Open, FileAccess.ReadWrite));
-                binaryWriter.BaseStream.Seek(offset, SeekOrigin.Begin);
-                binaryWriter.Write(Revert);
-                binaryWriter.Close();
-
-                if (messages)
-                    MessageBox.Show("Successfully converted!");
-
-                return true;
             }
             else
             {
                 if (messages)
-                    MessageBox.Show("The pak file specified doesn't exist");
+                    MessageBox.Show("Convert string is lower than revert string");
 
                 return false;
             }
         }
 
-        public static bool Revert(long Offset, string Pak, byte[] Convert, byte[] Revert, long max = 0, long additional = 0, bool minus = false, bool messages = false)
+        public static bool Revert(long start, string file, string convert, string revert, long max = 0, long additional = 0, bool messages = true, bool v = false)
         {
-            if (File.Exists(Pak))
+            byte[] a = Encoding.UTF8.GetBytes(convert);
+            byte[] b = Encoding.UTF8.GetBytes(revert);
+            if ((convert.Length - revert.Length) >= 0)
             {
-                Stream s = File.Open(Pak, FileMode.Open, FileAccess.ReadWrite);
+                for (int i = 0; i < convert.Length - revert.Length; i++)
+                {
+                    b = c(b, 0);
+                }
+
+                if (File.Exists(file))
+                {
+                    Stream s = File.Open(file, FileMode.Open, FileAccess.ReadWrite);
+
+                    long offset;
+
+                    var task = Task.Run(() => Find(s, start, b, max));
+                    if (task.Wait(TimeSpan.FromSeconds(10)))
+                    {
+                        offset = task.Result;
+                        Settings.Default.current_offset = offset;
+                        Settings.Default.Save();
+                    }
+                    else
+                        offset = 0;
+
+                    s.Close();
+
+                    if (offset == 0)
+                    {
+                        if (messages)
+                            MessageBox.Show("Already converted, or string not found in pak!");
+
+                        return false;
+                    }
+
+                    if (additional != 0)
+                        offset += additional;
+
+                    BinaryWriter binaryWriter = new BinaryWriter(File.Open(file, FileMode.Open, FileAccess.ReadWrite));
+                    binaryWriter.BaseStream.Seek(offset, SeekOrigin.Begin);
+                    binaryWriter.Write(a);
+                    binaryWriter.Close();
+
+                    if (messages)
+                        MessageBox.Show("Successfully reverted!");
+
+                    return true;
+                }
+                else
+                {
+                    if (messages)
+                        MessageBox.Show("The pak file specified doesn't exist");
+
+                    return false;
+                }
+            }
+            else
+            {
+                if (messages)
+                    MessageBox.Show("Revert string is lower than Convert string");
+
+                return false;
+            }
+        }
+
+        public static bool GetOffset(long start, string file, string String, bool messages)
+        {
+            byte[] a = Encoding.UTF8.GetBytes(String);
+            if (File.Exists(file))
+            {
+                Stream s = File.Open(file, FileMode.Open, FileAccess.ReadWrite);
 
                 long offset;
 
-                var task = Task.Run(() => Find(s, Offset, Revert, max));
+                var task = Task.Run(() => Find(s, start, a, 0));
                 if (task.Wait(TimeSpan.FromSeconds(10)))
                 {
                     offset = task.Result;
@@ -85,31 +172,34 @@ namespace JuicySwapper.IO
                 if (offset == 0)
                 {
                     if (messages)
-                        MessageBox.Show("Already reverted, or byte not found in pak! (Ask for help on discord!)", "- kaede", MessageBoxButtons.OK, MessageBoxIcon.Error); 
-
+                    {
+                        MessageBox.Show("string not found in pak!");
+                    }
                     return false;
                 }
 
-                if (additional != 0)
-                    offset += additional;
-
-                BinaryWriter binaryWriter = new BinaryWriter(File.Open(Pak, FileMode.Open, FileAccess.ReadWrite));
-                binaryWriter.BaseStream.Seek(offset, SeekOrigin.Begin);
-                binaryWriter.Write(Convert);
-                binaryWriter.Close();
-
                 if (messages)
-                    MessageBox.Show("Successfully reverted!");
-
+                {
+                    MessageBox.Show($"Successfully Found Offsets at {offset}!");
+                }
                 return true;
             }
             else
             {
                 if (messages)
+                {
                     MessageBox.Show("The pak file specified doesn't exist");
-
+                }
                 return false;
             }
+        }
+
+        private static byte[] c(byte[] mahOldByteArray, byte newByte)
+        {
+            var mahByteArray = new List<byte>();
+            mahByteArray.AddRange(mahOldByteArray);
+            mahByteArray.Add(newByte);
+            return mahByteArray.ToArray();
         }
 
         private static long Find(Stream a, long b, byte[] c, long max)

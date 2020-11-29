@@ -44,5 +44,10 @@ namespace JuicySwapper.Panels
         {
             new BlackShield().ShowDialog();
         }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+            new BattleShroud().ShowDialog();
+        }
     }
 }

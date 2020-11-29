@@ -1,11 +1,10 @@
 ﻿using JuicySwapper.Properties;
 using Microsoft.WindowsAPICodePack.Dialogs;
-using Newtonsoft.Json;
 using System;
+using System.Diagnostics;
 using System.IO;
-using System.Net;
+using System.Media;
 using System.Windows.Forms;
-using static JuicySwapper.Classes.Json_Api.SatusAPI;
 
 namespace JuicySwapper.Main.GUI
 {
@@ -15,11 +14,7 @@ namespace JuicySwapper.Main.GUI
         {
             InitializeComponent();
             ActiveControl = label1;
-        }
-
-        private void discordButton_Click(object sender, EventArgs e)
-        {
-            new Links().ShowDialog();
+            pakPathTextbox.Text = Settings.Default.pakPath;
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -47,11 +42,6 @@ namespace JuicySwapper.Main.GUI
                 else
                     MessageBox.Show("Please select the correct directory!", "Juicy Swapper", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void Settings_Load(object sender, EventArgs e)
-        {
-            pakPathTextbox.Text = Settings.Default.pakPath;
         }
 
         private void resetConfigButton_Click(object sender, EventArgs e)
@@ -129,12 +119,16 @@ namespace JuicySwapper.Main.GUI
                 num++;
                 text += "Candy Axe," + " ";
             }
-            if (Settings.Default.candyaxeEnabled == true)
+            if (Settings.Default.BlackShieldEnabled == true)
             {
                 num++;
-                text += "Candy Axe," + " ";
+                text += "Black Shield," + " ";
             }
-
+            if (Settings.Default.BattleShroudEnabled == true)
+            {
+                num++;
+                text += "Battle Shroud," + " ";
+            }
             switch (num)
             {
                 case 0:
@@ -147,32 +141,33 @@ namespace JuicySwapper.Main.GUI
             }
         }
 
-        private void updateCheckButton_Click(object sender, EventArgs e)
+        private void checkPakButton_Click(object sender, EventArgs e)
         {
-            using (WebClient webClient = new WebClient())
-            {
-                try
-                {
-                    webClient.Proxy = null;
-                    var StatusAPI = new WebClient().DownloadString("https://juicyswapper.xyz/api/status.json");
-                    Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
-                    string text = StatusResponse.Version;
-                    if (text != Application.ProductVersion)
-                        MessageBox.Show($"You are using an outdated version of Juicy Swapper! (The most recent version of Juicy Swapper is v{text} and you are currently using v{Application.ProductVersion}.");
+            if (File.Exists(Settings.Default.InstallationPath + $"\\FortniteGame\\Content\\Paks\\global.ucas"))
+                MessageBox.Show("Successfully found ucas.", "Juicy Swapper", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    else
-                        MessageBox.Show($"You are up to date, and you are currently using v{Application.ProductVersion}.");
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("ERROR: SERVER_ERROR");
-                }
-            }
+            else
+                MessageBox.Show("Could not find ucas!", "Juicy Swapper", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private void advancedButton_Click(object sender, EventArgs e)
+        private void backupButton_Click(object sender, EventArgs e)
         {
-            new AdvancedSettings().ShowDialog();
+            new BackupVerify().ShowDialog();
+        }
+
+        private void restartButton_Click(object sender, EventArgs e)
+        {
+            SystemSounds.Beep.Play();
+            DialogResult restart = MessageBox.Show("Are you sure you want to restart?", "Juicy Swapper", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (restart == DialogResult.Yes)
+                Process.Start(Application.ExecutablePath);
+            else
+                Environment.Exit(0);
+        }
+
+        private void openPakButton_Click(object sender, EventArgs e)
+        {
+            Process.Start("explorer.exe", Settings.Default.InstallationPath);
         }
 
         private void SettingsMenu_FormClosing(object sender, FormClosingEventArgs e)

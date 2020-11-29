@@ -31,38 +31,22 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckIfSwapMesg));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.label2 = new System.Windows.Forms.Label();
-            this.closeButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.openSettingsBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.discordButton = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.confirmBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.SuspendLayout();
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.ElipseRadius = 7;
             this.bunifuElipse1.TargetControl = this;
-            // 
-            // Sidebar
-            // 
-            this.Sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
-            this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Sidebar.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Sidebar.GradientBottomRight = System.Drawing.Color.Magenta;
-            this.Sidebar.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Sidebar.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Sidebar.Location = new System.Drawing.Point(-3, -7);
-            this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Quality = 10;
-            this.Sidebar.Size = new System.Drawing.Size(70, 169);
-            this.Sidebar.TabIndex = 1;
             // 
             // label1
             // 
@@ -94,89 +78,89 @@
             this.label2.Text = "[] has been swapped for [],  \r\nif this is an error on our end, please reset confi" +
     "g in Settings.";
             // 
-            // closeButton
-            // 
-            this.closeButton.Activecolor = System.Drawing.Color.Transparent;
-            this.closeButton.BackColor = System.Drawing.Color.Transparent;
-            this.closeButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("closeButton.BackgroundImage")));
-            this.closeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.closeButton.BorderRadius = 0;
-            this.closeButton.ButtonText = "Continue";
-            this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeButton.DisabledColor = System.Drawing.Color.White;
-            this.closeButton.ForeColor = System.Drawing.Color.White;
-            this.closeButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.closeButton.Iconimage = null;
-            this.closeButton.Iconimage_right = null;
-            this.closeButton.Iconimage_right_Selected = null;
-            this.closeButton.Iconimage_Selected = null;
-            this.closeButton.IconMarginLeft = 0;
-            this.closeButton.IconMarginRight = 0;
-            this.closeButton.IconRightVisible = true;
-            this.closeButton.IconRightZoom = 0D;
-            this.closeButton.IconVisible = true;
-            this.closeButton.IconZoom = 50D;
-            this.closeButton.IsTab = false;
-            this.closeButton.Location = new System.Drawing.Point(494, 105);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Normalcolor = System.Drawing.Color.Transparent;
-            this.closeButton.OnHovercolor = System.Drawing.Color.Transparent;
-            this.closeButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.closeButton.selected = false;
-            this.closeButton.Size = new System.Drawing.Size(97, 26);
-            this.closeButton.TabIndex = 20;
-            this.closeButton.Text = "Continue";
-            this.closeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.closeButton.Textcolor = System.Drawing.Color.White;
-            this.closeButton.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
             // bunifuElipse2
             // 
             this.bunifuElipse2.ElipseRadius = 5;
-            this.bunifuElipse2.TargetControl = this.closeButton;
+            this.bunifuElipse2.TargetControl = this.openSettingsBtn;
+            // 
+            // openSettingsBtn
+            // 
+            this.openSettingsBtn.Activecolor = System.Drawing.Color.Transparent;
+            this.openSettingsBtn.BackColor = System.Drawing.Color.Transparent;
+            this.openSettingsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("openSettingsBtn.BackgroundImage")));
+            this.openSettingsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.openSettingsBtn.BorderRadius = 0;
+            this.openSettingsBtn.ButtonText = "Settings";
+            this.openSettingsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.openSettingsBtn.DisabledColor = System.Drawing.Color.White;
+            this.openSettingsBtn.ForeColor = System.Drawing.Color.White;
+            this.openSettingsBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.openSettingsBtn.Iconimage = null;
+            this.openSettingsBtn.Iconimage_right = null;
+            this.openSettingsBtn.Iconimage_right_Selected = null;
+            this.openSettingsBtn.Iconimage_Selected = null;
+            this.openSettingsBtn.IconMarginLeft = 0;
+            this.openSettingsBtn.IconMarginRight = 0;
+            this.openSettingsBtn.IconRightVisible = true;
+            this.openSettingsBtn.IconRightZoom = 0D;
+            this.openSettingsBtn.IconVisible = true;
+            this.openSettingsBtn.IconZoom = 50D;
+            this.openSettingsBtn.IsTab = false;
+            this.openSettingsBtn.Location = new System.Drawing.Point(432, 105);
+            this.openSettingsBtn.Name = "openSettingsBtn";
+            this.openSettingsBtn.Normalcolor = System.Drawing.Color.Transparent;
+            this.openSettingsBtn.OnHovercolor = System.Drawing.Color.Transparent;
+            this.openSettingsBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.openSettingsBtn.selected = false;
+            this.openSettingsBtn.Size = new System.Drawing.Size(76, 26);
+            this.openSettingsBtn.TabIndex = 26;
+            this.openSettingsBtn.Text = "Settings";
+            this.openSettingsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.openSettingsBtn.Textcolor = System.Drawing.Color.White;
+            this.openSettingsBtn.TextFont = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.openSettingsBtn.Click += new System.EventHandler(this.discordButton_Click);
             // 
             // bunifuElipse3
             // 
             this.bunifuElipse3.ElipseRadius = 5;
-            this.bunifuElipse3.TargetControl = this.discordButton;
+            this.bunifuElipse3.TargetControl = this.confirmBtn;
             // 
-            // discordButton
+            // confirmBtn
             // 
-            this.discordButton.Activecolor = System.Drawing.Color.Transparent;
-            this.discordButton.BackColor = System.Drawing.Color.Transparent;
-            this.discordButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("discordButton.BackgroundImage")));
-            this.discordButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.discordButton.BorderRadius = 0;
-            this.discordButton.ButtonText = "Settings";
-            this.discordButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.discordButton.DisabledColor = System.Drawing.Color.White;
-            this.discordButton.ForeColor = System.Drawing.Color.White;
-            this.discordButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.discordButton.Iconimage = null;
-            this.discordButton.Iconimage_right = null;
-            this.discordButton.Iconimage_right_Selected = null;
-            this.discordButton.Iconimage_Selected = null;
-            this.discordButton.IconMarginLeft = 0;
-            this.discordButton.IconMarginRight = 0;
-            this.discordButton.IconRightVisible = true;
-            this.discordButton.IconRightZoom = 0D;
-            this.discordButton.IconVisible = true;
-            this.discordButton.IconZoom = 50D;
-            this.discordButton.IsTab = false;
-            this.discordButton.Location = new System.Drawing.Point(391, 105);
-            this.discordButton.Name = "discordButton";
-            this.discordButton.Normalcolor = System.Drawing.Color.Transparent;
-            this.discordButton.OnHovercolor = System.Drawing.Color.Transparent;
-            this.discordButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.discordButton.selected = false;
-            this.discordButton.Size = new System.Drawing.Size(97, 26);
-            this.discordButton.TabIndex = 21;
-            this.discordButton.Text = "Settings";
-            this.discordButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.discordButton.Textcolor = System.Drawing.Color.White;
-            this.discordButton.TextFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.discordButton.Click += new System.EventHandler(this.discordButton_Click);
+            this.confirmBtn.Activecolor = System.Drawing.Color.Transparent;
+            this.confirmBtn.BackColor = System.Drawing.Color.Transparent;
+            this.confirmBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("confirmBtn.BackgroundImage")));
+            this.confirmBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.confirmBtn.BorderRadius = 0;
+            this.confirmBtn.ButtonText = "Continue";
+            this.confirmBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.confirmBtn.DisabledColor = System.Drawing.Color.White;
+            this.confirmBtn.ForeColor = System.Drawing.Color.White;
+            this.confirmBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.confirmBtn.Iconimage = null;
+            this.confirmBtn.Iconimage_right = null;
+            this.confirmBtn.Iconimage_right_Selected = null;
+            this.confirmBtn.Iconimage_Selected = null;
+            this.confirmBtn.IconMarginLeft = 0;
+            this.confirmBtn.IconMarginRight = 0;
+            this.confirmBtn.IconRightVisible = true;
+            this.confirmBtn.IconRightZoom = 0D;
+            this.confirmBtn.IconVisible = true;
+            this.confirmBtn.IconZoom = 50D;
+            this.confirmBtn.IsTab = false;
+            this.confirmBtn.Location = new System.Drawing.Point(515, 105);
+            this.confirmBtn.Name = "confirmBtn";
+            this.confirmBtn.Normalcolor = System.Drawing.Color.Transparent;
+            this.confirmBtn.OnHovercolor = System.Drawing.Color.Transparent;
+            this.confirmBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.confirmBtn.selected = false;
+            this.confirmBtn.Size = new System.Drawing.Size(76, 26);
+            this.confirmBtn.TabIndex = 25;
+            this.confirmBtn.Text = "Continue";
+            this.confirmBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.confirmBtn.Textcolor = System.Drawing.Color.White;
+            this.confirmBtn.TextFont = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.confirmBtn.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // bunifuDragControl2
             // 
@@ -192,17 +176,33 @@
             this.bunifuDragControl3.TargetControl = this.label2;
             this.bunifuDragControl3.Vertical = true;
             // 
+            // Sidebar
+            // 
+            this.Sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
+            this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Sidebar.GradientBottomLeft = System.Drawing.Color.Maroon;
+            this.Sidebar.GradientBottomRight = System.Drawing.Color.Maroon;
+            this.Sidebar.GradientTopLeft = System.Drawing.Color.DarkOrange;
+            this.Sidebar.GradientTopRight = System.Drawing.Color.Maroon;
+            this.Sidebar.Location = new System.Drawing.Point(-3, -5);
+            this.Sidebar.Name = "Sidebar";
+            this.Sidebar.Quality = 10;
+            this.Sidebar.Size = new System.Drawing.Size(75, 158);
+            this.Sidebar.TabIndex = 23;
+            // 
             // CheckIfSwapMesg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(22)))), ((int)(((byte)(42)))));
             this.ClientSize = new System.Drawing.Size(603, 143);
-            this.Controls.Add(this.discordButton);
-            this.Controls.Add(this.closeButton);
+            this.Controls.Add(this.openSettingsBtn);
+            this.Controls.Add(this.confirmBtn);
+            this.Controls.Add(this.Sidebar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Sidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CheckIfSwapMesg";
@@ -217,15 +217,15 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.Framework.UI.BunifuGradientPanel Sidebar;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuFlatButton closeButton;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
-        private Bunifu.Framework.UI.BunifuFlatButton discordButton;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl3;
+        private Bunifu.Framework.UI.BunifuGradientPanel Sidebar;
+        private Bunifu.Framework.UI.BunifuFlatButton openSettingsBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton confirmBtn;
     }
 }

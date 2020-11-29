@@ -27,9 +27,8 @@ namespace JuicySwapper.Items.BackBlings
                 convertButton.Text = "Convert";
         }
 
-        private static byte[] mats = new byte[30] { 67, 73, 99, 101, 74, 77, 97, 108, 101, 95, 67, 111, 109, 109, 97, 110, 100, 111, 66, 82, 95, 107, 110, 105, 103, 104, 116, 86, 48, 49 };
-
-        private static byte[] mats1 = new byte[30] { 67, 73, 99, 101, 74, 77, 97, 108, 101, 95, 67, 111, 109, 109, 97, 110, 100, 111, 66, 82, 95, 107, 110, 105, 103, 74, 117, 105, 99, 121 };
+        string Mat = "CIceJMale_CommandoBR_knightV01";
+        string Mat1 = "CIceJMale_CommanroBR_knihhtV01";
 
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
@@ -47,7 +46,7 @@ namespace JuicySwapper.Items.BackBlings
                 if (SwapUtilities.CheckIfCanSwap("RedShield"))
                     return;
 
-                bool Swap1 = Researcher.Convert(SwapOffsets[3], SwapPath[3], mats, mats1, 0, 0, false, false);
+                bool Swap1 = Researcher.Convert(SwapOffsets[3], SwapPath[3], Mat, Mat1, 0, 0, false, false);
                 if (Swap1)
                 {
                     Settings.Default.BlackShieldEnabled = true;
@@ -62,7 +61,7 @@ namespace JuicySwapper.Items.BackBlings
             }
             else
             {
-                bool Swap1 = Researcher.Revert(SwapOffsets[3], SwapPath[3], mats, mats1, 0, 0, false, false);
+                bool Swap1 = Researcher.Revert(SwapOffsets[3], SwapPath[3], Mat, Mat1, 0, 0, false, false);
                 if (Swap1)
                 {
                     Settings.Default.BlackShieldEnabled = false;

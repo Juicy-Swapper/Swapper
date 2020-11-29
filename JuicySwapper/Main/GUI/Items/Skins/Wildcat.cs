@@ -27,9 +27,8 @@ namespace JuicySwapper.Items.Skins
                 convertButton.Text = "Convert";
         }
 
-        private static byte[] Body = new byte[36] { 108, 83, 107, 105, 110, 115, 47, 66, 82, 95, 48, 50, 47, 77, 97, 116, 101, 114, 105, 97, 108, 69, 68, 95, 67, 109, 109, 97, 110, 100, 111, 95, 66, 82, 48, 50 };
-
-        private static byte[] Body1 = new byte[36] { 108, 83, 107, 105, 110, 115, 47, 66, 82, 95, 48, 49, 47, 77, 97, 116, 101, 114, 105, 97, 108, 69, 68, 95, 67, 109, 109, 97, 110, 100, 111, 95, 66, 82, 48, 49 };
+        string Body = "lSkins/BR_02/MaterialED_Cmmando_BR02";
+        string Body1 = "lSkins/BR_02/Materia1ED_Cmmando_BR02";
 
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {

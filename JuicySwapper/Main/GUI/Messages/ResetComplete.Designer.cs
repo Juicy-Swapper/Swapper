@@ -116,13 +116,13 @@
             this.confirmButton.IconVisible = true;
             this.confirmButton.IconZoom = 50D;
             this.confirmButton.IsTab = false;
-            this.confirmButton.Location = new System.Drawing.Point(391, 128);
+            this.confirmButton.Location = new System.Drawing.Point(411, 128);
             this.confirmButton.Name = "confirmButton";
             this.confirmButton.Normalcolor = System.Drawing.Color.Transparent;
             this.confirmButton.OnHovercolor = System.Drawing.Color.Transparent;
             this.confirmButton.OnHoverTextColor = System.Drawing.Color.White;
             this.confirmButton.selected = false;
-            this.confirmButton.Size = new System.Drawing.Size(97, 26);
+            this.confirmButton.Size = new System.Drawing.Size(76, 26);
             this.confirmButton.TabIndex = 20;
             this.confirmButton.Text = "OK";
             this.confirmButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

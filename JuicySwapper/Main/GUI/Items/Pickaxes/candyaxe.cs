@@ -27,9 +27,11 @@ namespace JuicySwapper.Items.Pickaxes
                 convertButton.Text = "Convert";
         }
 
-        private static byte[] Body = new byte[58] { 47, 71, 97, 109, 101, 47, 87, 101, 97, 112, 111, 110, 115, 47, 70, 79, 82, 84, 95, 77, 101, 108, 101, 101, 47, 80, 105, 99, 107, 97, 120, 101, 95, 49, 53, 47, 84, 101, 120, 116, 117, 114, 101, 115, 47, 84, 95, 95, 76, 105, 103, 104, 116, 115, 104, 111, 119, 50 };
-
-        private static byte[] Body1 = new byte[58] { 47, 71, 97, 109, 101, 47, 87, 101, 97, 112, 111, 110, 115, 47, 70, 79, 82, 84, 95, 77, 101, 108, 101, 101, 47, 80, 105, 99, 107, 97, 120, 101, 95, 49, 53, 47, 84, 101, 120, 116, 117, 114, 101, 115, 47, 84, 95, 95, 76, 105, 103, 104, 74, 117, 105, 99, 121, 50 };
+        string SwapOffset = "WID_Hrvest_Pickaxe_CandyCane";
+        string Mat = "IMaterias/MI";
+        string Mat1 = "IMateri1s/MI";
+        string FX = "/FX/Pdle_FX";
+        string FX1 = "/FX/P1le_FX";
 
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
@@ -44,16 +46,23 @@ namespace JuicySwapper.Items.Pickaxes
 
             if (convertButton.Text == "Convert")
             {
-                if (SwapUtilities.CheckIfCanSwap("Trooper"))
-                    return;
+                //if (SwapUtilities.CheckIfCanSwap("Minty"))
+                //    return;
 
-                bool Swap1 = Researcher.Convert(SwapOffsets[2], SwapPath[2], Body, Body1, 0, 0, false, false);
+                Researcher.GetOffset(SwapOffsets[2], SwapPath[2], SwapOffset, false);
+
+                long Offset_current = Settings.Default.current_offset;
+                bool Swap1 = Researcher.Convert(Offset_current, SwapPath[2], FX, FX1, 0, 0, false, false);
                 if (Swap1)
                 {
                     Settings.Default.candyaxeEnabled = true;
                     Settings.Default.Save();
-                    RichTextBoxInfo.Text += "\n[LOG] Mats added";
+                    RichTextBoxInfo.Text += "\n[LOG] FX added";
                 }
+
+                bool Swap2 = Researcher.Convert(Offset_current, SwapPath[2], Mat, Mat1, 0, 0, false, false);
+                if (Swap2)
+                    RichTextBoxInfo.Text += "\n[LOG] Mat added";
 
                 stopwatch.Stop();
                 double num = (double)stopwatch.Elapsed.Milliseconds;
@@ -62,13 +71,20 @@ namespace JuicySwapper.Items.Pickaxes
             }
             else
             {
-                bool Swap1 = Researcher.Revert(SwapOffsets[2], SwapPath[2], Body, Body1, 0, 0, false, false);
+                Researcher.GetOffset(SwapOffsets[2], SwapPath[2], SwapOffset, false);
+
+                long Offset_current = Settings.Default.current_offset;
+                bool Swap1 = Researcher.Revert(Offset_current, SwapPath[2], FX, FX1, 0, 0, false, false);
                 if (Swap1)
                 {
                     Settings.Default.candyaxeEnabled = false;
                     Settings.Default.Save();
-                    RichTextBoxInfo.Text += "\n[LOG] Mats removed";
+                    RichTextBoxInfo.Text += "\n[LOG] FX removed";
                 }
+
+                bool Swap2 = Researcher.Revert(Offset_current, SwapPath[2], Mat, Mat1, 0, 0, false, false);
+                if (Swap2)
+                    RichTextBoxInfo.Text += "\n[LOG] Mat added";
 
                 stopwatch.Stop();
                 double num = (double)stopwatch.Elapsed.Milliseconds;

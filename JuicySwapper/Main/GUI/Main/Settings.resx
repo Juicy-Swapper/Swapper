@@ -121,7 +121,34 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="advancedButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="restartButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJAAAAAaCAIAAADXD0JRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAJ9JREFUaEPtwjGLgQEAxvFnstxgMBhuMFgMhhsshhsMCiG9netSR0gSeSVJ8t0f
+        n+Op/6+f/KowqPz8YFD5UWVQ+V5jUPlWZ1D5+smg8qXBoPK5yaDyqcWg8qHNoPL+i0HlXYdB5W2XQeX1
+        N4PKqx6Dyv99BpUXQwaV/yYMKv8WDCr/zBlULhYMKs+WDCpPNwwqj/cMKo+ODCoPSsYclG+MlYQa2K40
+        mQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="backupButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJAAAAAaCAIAAADXD0JRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAJ9JREFUaEPtwjGLgQEAxvFnstxgMBhuMFgMhhsshhsMCiG9netSR0gSeSVJ8t0f
+        n+Op/6+f/KowqPz8YFD5UWVQ+V5jUPlWZ1D5+smg8qXBoPK5yaDyqcWg8qHNoPL+i0HlXYdB5W2XQeX1
+        N4PKqx6Dyv99BpUXQwaV/yYMKv8WDCr/zBlULhYMKs+WDCpPNwwqj/cMKo+ODCoPSsYclG+MlYQa2K40
+        mQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="openPakButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJAAAAAaCAIAAADXD0JRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAJ9JREFUaEPtwjGLgQEAxvFnstxgMBhuMFgMhhsshhsMCiG9netSR0gSeSVJ8t0f
+        n+Op/6+f/KowqPz8YFD5UWVQ+V5jUPlWZ1D5+smg8qXBoPK5yaDyqcWg8qHNoPL+i0HlXYdB5W2XQeX1
+        N4PKqx6Dyv99BpUXQwaV/yYMKv8WDCr/zBlULhYMKs+WDCpPNwwqj/cMKo+ODCoPSsYclG+MlYQa2K40
+        mQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="checkPakButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJAAAAAaCAIAAADXD0JRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAJ9JREFUaEPtwjGLgQEAxvFnstxgMBhuMFgMhhsshhsMCiG9netSR0gSeSVJ8t0f
@@ -140,24 +167,6 @@
 </value>
   </data>
   <data name="resetConfigButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJAAAAAaCAIAAADXD0JRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAJ9JREFUaEPtwjGLgQEAxvFnstxgMBhuMFgMhhsshhsMCiG9netSR0gSeSVJ8t0f
-        n+Op/6+f/KowqPz8YFD5UWVQ+V5jUPlWZ1D5+smg8qXBoPK5yaDyqcWg8qHNoPL+i0HlXYdB5W2XQeX1
-        N4PKqx6Dyv99BpUXQwaV/yYMKv8WDCr/zBlULhYMKs+WDCpPNwwqj/cMKo+ODCoPSsYclG+MlYQa2K40
-        mQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="updateCheckButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJAAAAAaCAIAAADXD0JRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAJ9JREFUaEPtwjGLgQEAxvFnstxgMBhuMFgMhhsshhsMCiG9netSR0gSeSVJ8t0f
-        n+Op/6+f/KowqPz8YFD5UWVQ+V5jUPlWZ1D5+smg8qXBoPK5yaDyqcWg8qHNoPL+i0HlXYdB5W2XQeX1
-        N4PKqx6Dyv99BpUXQwaV/yYMKv8WDCr/zBlULhYMKs+WDCpPNwwqj/cMKo+ODCoPSsYclG+MlYQa2K40
-        mQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="discordButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJAAAAAaCAIAAADXD0JRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAJ9JREFUaEPtwjGLgQEAxvFnstxgMBhuMFgMhhsshhsMCiG9netSR0gSeSVJ8t0f
@@ -735,5 +744,20 @@
   </metadata>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>632, 49</value>
+  </metadata>
+  <metadata name="bunifuElipse8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>719, 49</value>
+  </metadata>
+  <metadata name="bunifuElipse9.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>843, 49</value>
+  </metadata>
+  <metadata name="bunifuElipse10.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>967, 49</value>
+  </metadata>
+  <metadata name="bunifuElipse11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1098, 49</value>
+  </metadata>
+  <metadata name="bunifuElipse12.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1229, 49</value>
   </metadata>
 </root>

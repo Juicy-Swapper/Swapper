@@ -27,17 +27,12 @@ namespace JuicySwapper.Items.Skins
                 convertButton.Text = "Convert";
         }
 
-        private static byte[] Body = new byte[51] { 67, 104, 97, 114, 97, 99, 116, 101, 114, 115, 47, 80, 108, 97, 121, 101, 114, 47, 70, 101, 109, 97, 108, 101, 47, 77, 101, 100, 105, 117, 109, 47, 66, 111, 100, 70, 122, 116, 101, 99, 95, 69, 99, 108, 105, 112, 115, 101, 47, 101, 100 };
-
-        private static byte[] Body1 = new byte[51] { 67, 104, 97, 114, 97, 99, 116, 101, 114, 115, 47, 80, 108, 97, 121, 101, 114, 47, 70, 101, 109, 97, 108, 101, 47, 77, 101, 100, 105, 117, 109, 47, 66, 111, 100, 70, 122, 116, 101, 99, 95, 69, 99, 108, 105, 112, 74, 117, 105, 99, 121 };
-
-        private static byte[] Hat = new byte[43] { 80, 108, 97, 121, 101, 114, 47, 70, 101, 109, 97, 108, 101, 47, 77, 101, 100, 105, 117, 109, 47, 66, 111, 100, 65, 122, 116, 101, 99, 95, 69, 99, 108, 105, 112, 115, 101, 100, 95, 66, 111, 100, 121 };
-
-        private static byte[] Hat1 = new byte[43] { 80, 108, 97, 121, 101, 114, 47, 70, 101, 109, 97, 108, 101, 47, 77, 101, 100, 105, 117, 109, 47, 66, 111, 100, 65, 122, 116, 101, 99, 95, 69, 99, 108, 105, 112, 115, 101, 100, 74, 117, 105, 99, 121 };
-
-        private static byte[] Head = new byte[45] { 80, 108, 97, 121, 101, 114, 47, 70, 101, 109, 97, 108, 101, 47, 77, 101, 100, 105, 117, 109, 47, 66, 111, 100, 65, 122, 116, 101, 99, 95, 69, 99, 108, 105, 112, 115, 101, 100, 95, 70, 97, 99, 65, 99, 99 };
-
-        private static byte[] Head1 = new byte[45] { 80, 108, 97, 121, 101, 114, 47, 70, 101, 109, 97, 108, 101, 47, 77, 101, 100, 105, 117, 109, 47, 66, 111, 100, 65, 122, 116, 101, 99, 95, 69, 99, 108, 105, 112, 115, 101, 100, 95, 70, 74, 117, 105, 99, 121 };
+        string Body = "Characters/Player/Female/Medium/BodFztec_Eclipse/ed";
+        string Body1 = "Characters/Player/Female/Medium/BodFztec_EclipJuicy";
+        string Hat = "Player/Female/Medium/BodAztec_Eclipsed_Body";
+        string Hat1 = "Player/Female/Medium/BodAztec_Eclipsed_iody";
+        string Head = "Player/Female/Medium/BodAztec_Eclipsed_FacAcc";
+        string Head1 = "Player/Female/Medium/B0dAztec_Eclipsed_FacAcc";
 
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
