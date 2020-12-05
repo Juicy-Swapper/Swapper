@@ -11,6 +11,7 @@ namespace JuicySwapper
     public partial class Home : Form
     {
         public static string Rpc;
+        public static string Disabled;
         public static byte hold;
         public DiscordRpcClient discordRpcClient_0 = new DiscordRpcClient("704324460291031047");
 

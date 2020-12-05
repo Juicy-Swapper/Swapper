@@ -113,51 +113,6 @@ namespace JuicySwapper.IO
             }
         }
 
-        public static bool GetOffset(long start, string file, byte[] Byte, bool messages)
-        {
-            if (File.Exists(file))
-            {
-                Stream s = File.Open(file, FileMode.Open, FileAccess.ReadWrite);
-
-                long offset;
-
-                var task = Task.Run(() => Find(s, start, Byte, 0));
-                if (task.Wait(TimeSpan.FromSeconds(10)))
-                {
-                    offset = task.Result;
-                    Settings.Default.current_offset = offset;
-                    Settings.Default.Save();
-                }
-                else
-                    offset = 0;
-
-                s.Close();
-
-                if (offset == 0)
-                {
-                    if (messages)
-                    {
-                        MessageBox.Show("string not found in pak!");
-                    }
-                    return false;
-                }
-
-                if (messages)
-                {
-                    MessageBox.Show($"Successfully Found Offsets at {offset}!");
-                }
-                return true;
-            }
-            else
-            {
-                if (messages)
-                {
-                    MessageBox.Show("The pak file specified doesn't exist");
-                }
-                return false;
-            }
-        }
-
         private static long Find(Stream a, long b, byte[] c, long max)
         {
             int searchPosition = 0;

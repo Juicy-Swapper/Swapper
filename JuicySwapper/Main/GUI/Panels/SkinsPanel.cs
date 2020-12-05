@@ -40,12 +40,16 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            new SparkleSpecialist().ShowDialog();
+            //new SparkleSpecialist().ShowDialog();
+            Home.Disabled = "Sparkle Specialist";
+            new Disabled().ShowDialog();
         }
 
         private void bunifuImageButton23_Click(object sender, EventArgs e)
         {
-            new ReconExpert().ShowDialog();
+            //new ReconExpert().ShowDialog();
+            Home.Disabled = "Recon Expert";
+            new Disabled().ShowDialog();
         }
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)

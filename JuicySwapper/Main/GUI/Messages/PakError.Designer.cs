@@ -35,12 +35,12 @@
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.confirmBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.openDiscordBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.openDiscordBtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.confirmBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -84,40 +84,47 @@
             this.bunifuElipse2.ElipseRadius = 5;
             this.bunifuElipse2.TargetControl = this.confirmBtn;
             // 
+            // confirmBtn
+            // 
+            this.confirmBtn.Activecolor = System.Drawing.Color.Transparent;
+            this.confirmBtn.BackColor = System.Drawing.Color.Transparent;
+            this.confirmBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("confirmBtn.BackgroundImage")));
+            this.confirmBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.confirmBtn.BorderRadius = 0;
+            this.confirmBtn.ButtonText = "Continue";
+            this.confirmBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.confirmBtn.DisabledColor = System.Drawing.Color.White;
+            this.confirmBtn.ForeColor = System.Drawing.Color.White;
+            this.confirmBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.confirmBtn.Iconimage = null;
+            this.confirmBtn.Iconimage_right = null;
+            this.confirmBtn.Iconimage_right_Selected = null;
+            this.confirmBtn.Iconimage_Selected = null;
+            this.confirmBtn.IconMarginLeft = 0;
+            this.confirmBtn.IconMarginRight = 0;
+            this.confirmBtn.IconRightVisible = true;
+            this.confirmBtn.IconRightZoom = 0D;
+            this.confirmBtn.IconVisible = true;
+            this.confirmBtn.IconZoom = 50D;
+            this.confirmBtn.IsTab = false;
+            this.confirmBtn.Location = new System.Drawing.Point(410, 158);
+            this.confirmBtn.Name = "confirmBtn";
+            this.confirmBtn.Normalcolor = System.Drawing.Color.Transparent;
+            this.confirmBtn.OnHovercolor = System.Drawing.Color.Transparent;
+            this.confirmBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.confirmBtn.selected = false;
+            this.confirmBtn.Size = new System.Drawing.Size(76, 26);
+            this.confirmBtn.TabIndex = 23;
+            this.confirmBtn.Text = "Continue";
+            this.confirmBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.confirmBtn.Textcolor = System.Drawing.Color.White;
+            this.confirmBtn.TextFont = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.confirmBtn.Click += new System.EventHandler(this.closeButton_Click);
+            // 
             // bunifuElipse3
             // 
             this.bunifuElipse3.ElipseRadius = 5;
             this.bunifuElipse3.TargetControl = this.openDiscordBtn;
-            // 
-            // bunifuDragControl2
-            // 
-            this.bunifuDragControl2.Fixed = true;
-            this.bunifuDragControl2.Horizontal = true;
-            this.bunifuDragControl2.TargetControl = this.label1;
-            this.bunifuDragControl2.Vertical = true;
-            // 
-            // bunifuDragControl3
-            // 
-            this.bunifuDragControl3.Fixed = true;
-            this.bunifuDragControl3.Horizontal = true;
-            this.bunifuDragControl3.TargetControl = this.label2;
-            this.bunifuDragControl3.Vertical = true;
-            // 
-            // Sidebar
-            // 
-            this.Sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
-            this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Sidebar.GradientBottomLeft = System.Drawing.Color.Maroon;
-            this.Sidebar.GradientBottomRight = System.Drawing.Color.Maroon;
-            this.Sidebar.GradientTopLeft = System.Drawing.Color.DarkOrange;
-            this.Sidebar.GradientTopRight = System.Drawing.Color.Maroon;
-            this.Sidebar.Location = new System.Drawing.Point(-3, -6);
-            this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Quality = 10;
-            this.Sidebar.Size = new System.Drawing.Size(75, 218);
-            this.Sidebar.TabIndex = 22;
             // 
             // openDiscordBtn
             // 
@@ -155,41 +162,35 @@
             this.openDiscordBtn.Textcolor = System.Drawing.Color.White;
             this.openDiscordBtn.TextFont = new System.Drawing.Font("Segoe UI", 8.25F);
             // 
-            // confirmBtn
+            // bunifuDragControl2
             // 
-            this.confirmBtn.Activecolor = System.Drawing.Color.Transparent;
-            this.confirmBtn.BackColor = System.Drawing.Color.Transparent;
-            this.confirmBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("confirmBtn.BackgroundImage")));
-            this.confirmBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.confirmBtn.BorderRadius = 0;
-            this.confirmBtn.ButtonText = "Continue";
-            this.confirmBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.confirmBtn.DisabledColor = System.Drawing.Color.White;
-            this.confirmBtn.ForeColor = System.Drawing.Color.White;
-            this.confirmBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.confirmBtn.Iconimage = null;
-            this.confirmBtn.Iconimage_right = null;
-            this.confirmBtn.Iconimage_right_Selected = null;
-            this.confirmBtn.Iconimage_Selected = null;
-            this.confirmBtn.IconMarginLeft = 0;
-            this.confirmBtn.IconMarginRight = 0;
-            this.confirmBtn.IconRightVisible = true;
-            this.confirmBtn.IconRightZoom = 0D;
-            this.confirmBtn.IconVisible = true;
-            this.confirmBtn.IconZoom = 50D;
-            this.confirmBtn.IsTab = false;
-            this.confirmBtn.Location = new System.Drawing.Point(410, 158);
-            this.confirmBtn.Name = "confirmBtn";
-            this.confirmBtn.Normalcolor = System.Drawing.Color.Transparent;
-            this.confirmBtn.OnHovercolor = System.Drawing.Color.Transparent;
-            this.confirmBtn.OnHoverTextColor = System.Drawing.Color.White;
-            this.confirmBtn.selected = false;
-            this.confirmBtn.Size = new System.Drawing.Size(76, 26);
-            this.confirmBtn.TabIndex = 23;
-            this.confirmBtn.Text = "Continue";
-            this.confirmBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.confirmBtn.Textcolor = System.Drawing.Color.White;
-            this.confirmBtn.TextFont = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.bunifuDragControl2.Fixed = true;
+            this.bunifuDragControl2.Horizontal = true;
+            this.bunifuDragControl2.TargetControl = this.label1;
+            this.bunifuDragControl2.Vertical = true;
+            // 
+            // bunifuDragControl3
+            // 
+            this.bunifuDragControl3.Fixed = true;
+            this.bunifuDragControl3.Horizontal = true;
+            this.bunifuDragControl3.TargetControl = this.label2;
+            this.bunifuDragControl3.Vertical = true;
+            // 
+            // Sidebar
+            // 
+            this.Sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
+            this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Sidebar.GradientBottomLeft = System.Drawing.Color.Maroon;
+            this.Sidebar.GradientBottomRight = System.Drawing.Color.Maroon;
+            this.Sidebar.GradientTopLeft = System.Drawing.Color.DarkOrange;
+            this.Sidebar.GradientTopRight = System.Drawing.Color.Maroon;
+            this.Sidebar.Location = new System.Drawing.Point(-3, -6);
+            this.Sidebar.Name = "Sidebar";
+            this.Sidebar.Quality = 10;
+            this.Sidebar.Size = new System.Drawing.Size(75, 218);
+            this.Sidebar.TabIndex = 22;
             // 
             // PakError
             // 

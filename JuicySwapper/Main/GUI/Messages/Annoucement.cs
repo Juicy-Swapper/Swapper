@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using JuicySwapper.Main.Classes;
+using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
 using System.Media;
@@ -42,7 +43,7 @@ namespace JuicySwapper.Main.GUI
 
         void MessageForm()
         {
-            var StatusAPI = new WebClient().DownloadString("https://juicyswapper.xyz/api/status.json");
+            var StatusAPI = new WebClient().DownloadString($"{Api.HOST}/{Api.Status}");
             Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
             string text = StatusResponse.AnnoucementMessage;
             label2.Text = text;

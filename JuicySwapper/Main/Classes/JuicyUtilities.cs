@@ -85,7 +85,7 @@ namespace JuicySwapper
 		//GetStatus
 		public static void GetStatus()
 		{
-			var StatusAPI = new WebClient().DownloadString("https://juicyswapper.xyz/api/status.json");
+			var StatusAPI = new WebClient().DownloadString($"{Api.HOST}/{Api.Status}");
 			Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
 
 			if (StatusResponse.IsOnline == false)

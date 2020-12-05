@@ -108,6 +108,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Main\Classes\Api.cs" />
     <Compile Include="Main\Classes\ByteResearcher.cs" />
     <Compile Include="Main\Classes\InstallLocation.cs" />
     <Compile Include="Main\Classes\JsonAPI.cs" />
@@ -243,6 +244,12 @@
     </Compile>
     <Compile Include="Main\GUI\Items\Skins\SparkleSpecialist.designer.cs">
       <DependentUpon>SparkleSpecialist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\Disabled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Messages\Disabled.Designer.cs">
+      <DependentUpon>Disabled.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\GUI\Panels\EmotesPanel.cs">
       <SubType>UserControl</SubType>
@@ -409,6 +416,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Items\Skins\SparkleSpecialist.resx">
       <DependentUpon>SparkleSpecialist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Messages\Disabled.resx">
+      <DependentUpon>Disabled.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Panels\EmotesPanel.resx">
       <DependentUpon>EmotesPanel.cs</DependentUpon>

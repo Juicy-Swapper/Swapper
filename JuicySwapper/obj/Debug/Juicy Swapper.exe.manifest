@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Juicy Swapper.exe" size="18639784">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Juicy Swapper.exe" size="18676648">
       <assemblyIdentity name="Juicy Swapper" version="1.0.1.5" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>S4l85UMhqEBzpPY/BTbETMoHEMw3ebdtjX1SwkzZYew=</dsig:DigestValue>
+        <dsig:DigestValue>iT3oCn9Q6YXHbaWC+6GnyboocwNrI6G9nqEbwqhk/Cs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

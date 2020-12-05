@@ -12,9 +12,9 @@ namespace JuicySwapper.Main.Classes
     {
 		public string[] GetSwapPath()
 		{
-			string Skin_Body_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.ucas";
-			string Skin_Head_Path = Settings.Default.pakPath + "\\pakchunk10_s3-WindowsClient.ucas";
-			string Pickaxe_Mesh_Path = Settings.Default.pakPath + "\\pakchunk10_s3-WindowsClient.ucas";
+			string Skin_Body_Path = Settings.Default.pakPath + "\\pakchunk10_s4-WindowsClient.ucas";
+			string Skin_Head_Path = Settings.Default.pakPath + "\\pakchunk10_s5-WindowsClient.ucas";
+			string Pickaxe_Mesh_Path = Settings.Default.pakPath + "\\pakchunk10_s4-WindowsClient.ucas";
 			string Backbling_Path = Settings.Default.pakPath + "\\pakchunk10_s1-WindowsClient.ucas";
 			string Emote_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.pak";
 
@@ -295,7 +295,7 @@ namespace JuicySwapper.Main.Classes
 			try
 			{
 				//Downloads JSON from Juicy Swapper API.
-				var OffsetsAPI = new WebClient().DownloadString("http://juicyswapper.xyz/api/offsets.json");
+				var OffsetsAPI = new WebClient().DownloadString($"{Api.HOST}/{Api.Offsets}");
 
 				//Deserializes JSON from Juicy Swapper API.
 				Offsets StatusResponse = JsonConvert.DeserializeObject<Offsets>(OffsetsAPI);
@@ -321,7 +321,7 @@ namespace JuicySwapper.Main.Classes
 		   try
 		   {
 			   //Downloads JSON from Juicy Swapper API.
-			   var PaksAPI = new WebClient().DownloadString("http://juicyswapper.xyz/api/json/paks.json");
+			   var PaksAPI = new WebClient().DownloadString($"{Api.HOST}/{Api.Paks}");
 
 			   //Deserializes JSON from Juicy Swapper API.
 			   Paks StatusResponse = JsonConvert.DeserializeObject<Paks>(PaksAPI);

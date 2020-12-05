@@ -2,6 +2,7 @@
 using System;
 using System.Windows.Forms;
 using JuicySwapper.Items.BackBlings;
+using JuicySwapper.Main.GUI;
 
 namespace JuicySwapper.Panels
 {
@@ -47,7 +48,9 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
-            new BattleShroud().ShowDialog();
+            //new BattleShroud().ShowDialog();
+            Home.Disabled = "Battle Shroud";
+            new Disabled().ShowDialog();
         }
     }
 }

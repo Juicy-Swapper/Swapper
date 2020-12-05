@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using JuicySwapper.Main.Classes;
+using Newtonsoft.Json;
 using System;
 using System.Diagnostics;
 using System.Media;
@@ -40,7 +41,7 @@ namespace JuicySwapper.Main.GUI
 
         void Message()
         {
-            var StatusAPI = new WebClient().DownloadString("https://juicyswapper.xyz/api/status.json");
+            var StatusAPI = new WebClient().DownloadString($"{Api.HOST}/{Api.Status}");
             Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
 
             string text = $"You are using an older version of Juicy\nSwapper! Please update the swapper by\npressing the 'UPDATE' button, and " +
