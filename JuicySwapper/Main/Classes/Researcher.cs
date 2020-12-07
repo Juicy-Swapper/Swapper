@@ -148,16 +148,30 @@ namespace JuicySwapper.IO
             }
         }
 
-        public static bool GetOffset(long start, string file, string String, bool messages)
+        public static long GetOffset(int Base, string Path, string Search)
         {
-            byte[] a = Encoding.UTF8.GetBytes(String);
+            while (true)
+            {
+                if (FindPosition(Base, Path, Search))
+                {
+                    return Settings.Default.current_offset;
+                }
+                else
+                    Base += Base / 2 / 2;
+            }
+        }
+
+        public static bool FindPosition(long start, string file, string convert, long max = 0)
+        {
+            byte[] a = Encoding.UTF8.GetBytes(convert);
+
             if (File.Exists(file))
             {
                 Stream s = File.Open(file, FileMode.Open, FileAccess.ReadWrite);
 
                 long offset;
 
-                var task = Task.Run(() => Find(s, start, a, 0));
+                var task = Task.Run(() => Find(s, start, a, max));
                 if (task.Wait(TimeSpan.FromSeconds(10)))
                 {
                     offset = task.Result;
@@ -165,31 +179,20 @@ namespace JuicySwapper.IO
                     Settings.Default.Save();
                 }
                 else
+                {
                     offset = 0;
+                }
 
                 s.Close();
 
                 if (offset == 0)
                 {
-                    if (messages)
-                    {
-                        MessageBox.Show("string not found in pak!");
-                    }
                     return false;
-                }
-
-                if (messages)
-                {
-                    MessageBox.Show($"Successfully Found Offsets at {offset}!");
                 }
                 return true;
             }
             else
             {
-                if (messages)
-                {
-                    MessageBox.Show("The pak file specified doesn't exist");
-                }
                 return false;
             }
         }

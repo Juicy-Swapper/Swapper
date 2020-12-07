@@ -131,6 +131,24 @@
     <Compile Include="Main\GUI\Items\Misc\JuicyEAC1.designer.cs">
       <DependentUpon>JuicyEAC1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\GUI\Items\Pickaxes\TatAxe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Pickaxes\TatAxe.designer.cs">
+      <DependentUpon>TatAxe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Pickaxes\SkullySplitter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Pickaxes\SkullySplitter.designer.cs">
+      <DependentUpon>SkullySplitter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Pickaxes\IronBeak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Pickaxes\IronBeak.designer.cs">
+      <DependentUpon>IronBeak.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\GUI\Items\Pickaxes\candyaxe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +172,12 @@
     </Compile>
     <Compile Include="Main\GUI\Items\Skins\Renegade.designer.cs">
       <DependentUpon>Renegade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\Dazzle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\Dazzle.designer.cs">
+      <DependentUpon>Dazzle.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\GUI\Items\Skins\sunbird.cs">
       <SubType>Form</SubType>
@@ -360,6 +384,15 @@
     <EmbeddedResource Include="Main\GUI\Items\Misc\JuicyEAC1.resx">
       <DependentUpon>JuicyEAC1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Pickaxes\TatAxe.resx">
+      <DependentUpon>TatAxe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Pickaxes\SkullySplitter.resx">
+      <DependentUpon>SkullySplitter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Pickaxes\IronBeak.resx">
+      <DependentUpon>IronBeak.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Items\Pickaxes\candyaxe.resx">
       <DependentUpon>candyaxe.cs</DependentUpon>
     </EmbeddedResource>
@@ -371,6 +404,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Items\Skins\Renegade.resx">
       <DependentUpon>Renegade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Skins\Dazzle.resx">
+      <DependentUpon>Dazzle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Items\Skins\sunbird.resx">
       <DependentUpon>sunbird.cs</DependentUpon>

@@ -301,7 +301,7 @@ namespace JuicySwapper.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("14000000")]
+        [global::System.Configuration.DefaultSettingValueAttribute("11000000")]
         public int offset_temp {
             get {
                 return ((int)(this["offset_temp"]));
@@ -344,6 +344,54 @@ namespace JuicySwapper.Properties {
             }
             set {
                 this["BattleShroudEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool DazzleEnabled {
+            get {
+                return ((bool)(this["DazzleEnabled"]));
+            }
+            set {
+                this["DazzleEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool IronBeakEnabled {
+            get {
+                return ((bool)(this["IronBeakEnabled"]));
+            }
+            set {
+                this["IronBeakEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SkullySplitterEnabled {
+            get {
+                return ((bool)(this["SkullySplitterEnabled"]));
+            }
+            set {
+                this["SkullySplitterEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool TatAxeEnabled {
+            get {
+                return ((bool)(this["TatAxeEnabled"]));
+            }
+            set {
+                this["TatAxeEnabled"] = value;
             }
         }
     }

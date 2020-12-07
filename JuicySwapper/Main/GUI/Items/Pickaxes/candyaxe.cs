@@ -49,7 +49,7 @@ namespace JuicySwapper.Items.Pickaxes
                 //if (SwapUtilities.CheckIfCanSwap("Minty"))
                 //    return;
 
-                Researcher.GetOffset(SwapOffsets[2], SwapPath[2], SwapOffset, false);
+                Researcher.GetOffset(0, SwapPath[2], SwapOffset);
 
                 long Offset_current = Settings.Default.current_offset;
                 bool Swap1 = Researcher.Convert(Offset_current, SwapPath[2], FX, FX1, 0, 0, false, false);
@@ -71,7 +71,7 @@ namespace JuicySwapper.Items.Pickaxes
             }
             else
             {
-                Researcher.GetOffset(SwapOffsets[2], SwapPath[2], SwapOffset, false);
+                Researcher.GetOffset(0, SwapPath[2], SwapOffset);
 
                 long Offset_current = Settings.Default.current_offset;
                 bool Swap1 = Researcher.Revert(Offset_current, SwapPath[2], FX, FX1, 0, 0, false, false);

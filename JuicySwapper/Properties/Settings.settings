@@ -72,7 +72,7 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="offset_temp" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">14000000</Value>
+      <Value Profile="(Default)">11000000</Value>
     </Setting>
     <Setting Name="JuicyEAC1Enabled" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
@@ -81,6 +81,18 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="BattleShroudEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DazzleEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="IronBeakEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SkullySplitterEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TatAxeEnabled" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>

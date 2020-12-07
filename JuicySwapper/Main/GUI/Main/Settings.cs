@@ -129,6 +129,26 @@ namespace JuicySwapper.Main.GUI
                 num++;
                 text += "Battle Shroud," + " ";
             }
+            if (Settings.Default.DazzleEnabled == true)
+            {
+                num++;
+                text += "Dazzle," + " ";
+            }
+            if (Settings.Default.IronBeakEnabled == true)
+            {
+                num++;
+                text += "Iron Beak," + " ";
+            }
+            if (Settings.Default.SkullySplitterEnabled == true)
+            {
+                num++;
+                text += "Skully Splitter," + " ";
+            }
+            if (Settings.Default.TatAxeEnabled == true)
+            {
+                num++;
+                text += "Tat Axe," + " ";
+            }
             switch (num)
             {
                 case 0:

@@ -57,7 +57,7 @@ namespace JuicySwapper.Items.Skins
                     RichTextBoxInfo.Text += "\n[LOG] Body 1/2 added";
                 }
 
-                Researcher.GetOffset(SwapOffsets[5], SwapPath[0], GenderOffset, false);
+                Researcher.GetOffset(0, SwapPath[0], GenderOffset);
 
                 long Offset_current = Settings.Default.current_offset;
                 bool Swap2 = Researcher.Convert(Offset_current, SwapPath[0], Invalid, Invalid1, 0, 0, false, false);
@@ -79,7 +79,7 @@ namespace JuicySwapper.Items.Skins
                     RichTextBoxInfo.Text += "\n[LOG] Body 1/2 removed";
                 }
 
-                Researcher.GetOffset(SwapOffsets[5], SwapPath[0], GenderOffset, false);
+                Researcher.GetOffset(0, SwapPath[0], GenderOffset);
 
                 long Offset_current = Settings.Default.current_offset;
                 bool Swap2 = Researcher.Revert(Offset_current, SwapPath[0], Invalid, Invalid1, 0, 0, false, false);
