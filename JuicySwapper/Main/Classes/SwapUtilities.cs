@@ -35,8 +35,8 @@ namespace JuicySwapper.Main.Classes
 
 		public int[] GetSwapOffsetTemp()
 		{
-			int TempBackCapMat = 20000000;
-			int TempBackfx = 87000000;
+			int TempBackCapMat = 15000000;
+			int TempBackfx = 39000000;
 			int Offset_Pick_Mesh = 10000000;
 			int Offset_Back_Mesh = Settings.Default.offset_back_mesh;
 			int Offset_Emote_Mesh = Settings.Default.offset_emote_mesh;
@@ -46,8 +46,8 @@ namespace JuicySwapper.Main.Classes
 
 		public string[] GetSwapPathTemp()
 		{
-			string TempBackCapMat = Settings.Default.pakPath + "\\pakchunk10_s8-WindowsClient.ucas";
-			string TempBackfx = Settings.Default.pakPath + "\\pakchunk10_s12-WindowsClient.ucas";
+			string TempBackCapMat = Settings.Default.pakPath + "\\pakchunk10_s10-WindowsClient.ucas";
+			string TempBackfx = Settings.Default.pakPath + "\\pakchunk10_s13-WindowsClient.ucas";
 			string Pickaxe_Mesh_Path = Settings.Default.pakPath + "\\pakchunk10_s3-WindowsClient.ucas";
 			string Backbling_Path = Settings.Default.pakPath + "\\pakchunk10_s1-WindowsClient.ucas";
 			string Emote_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.pak";
@@ -57,9 +57,9 @@ namespace JuicySwapper.Main.Classes
 
 		public string[] GetBackupPaths()
 		{
-			string Skin_Body_Path = "PakBackup/pakchunk10_s2-WindowsClient.ucas";
-			string Skin_Head_Path = "PakBackup/pakchunk10_s3-WindowsClient.ucas";
-			string Pickaxe_Mesh_Path = "PakBackup/pakchunk10_s20-WindowsClient.ucas";
+			string Skin_Body_Path = "PakBackup/pakchunk10_s4-WindowsClient.ucas";
+			string Skin_Head_Path = "PakBackup/pakchunk10_s5-WindowsClient.ucas";
+			string Pickaxe_Mesh_Path = "PakBackup/pakchunk10_s4-WindowsClient.ucas";
 			string Backbling_Path = "PakBackup/pakchunk10_s1-WindowsClient.ucas";
 			string Emote_Path = "PakBackup/pakchunk10_s2-WindowsClient.pak";
 

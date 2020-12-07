@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Resources\testingthis_471_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Juicy Swapper" version="1.0.1.6" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Juicy Swapper" version="1.0.1.7" language="neutral" processorArchitecture="msil" />
     <commandLine file="Juicy Swapper.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Juicy Swapper.exe" size="19498408">
-      <assemblyIdentity name="Juicy Swapper" version="1.0.1.6" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Juicy Swapper.exe" size="20886440">
+      <assemblyIdentity name="Juicy Swapper" version="1.0.1.7" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cNxbzONbsRmYk1wuMkhBpt3hC23uVJ7enMpEKgtfkmg=</dsig:DigestValue>
+        <dsig:DigestValue>NX9EhpMxDnkusEHbWdrB4XtyORt7Cf6fb8+OWSoz2Kw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

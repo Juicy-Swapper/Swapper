@@ -48,9 +48,7 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
-            //new BattleShroud().ShowDialog();
-            Home.Disabled = "Battle Shroud";
-            new Disabled().ShowDialog();
+            new BattleShroud().ShowDialog();
         }
     }
 }
