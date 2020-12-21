@@ -51,7 +51,7 @@ namespace JuicySwapper
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                JuicyUtilities.GetStatus();
+                //JuicyUtilities.GetStatus();
                 Application.Run(new Loader());
             }
         }

@@ -47,10 +47,10 @@ namespace JuicySwapper.Items.Pickaxes
                 //if (SwapUtilities.CheckIfCanSwap("Minty"))
                 //    return;
 
-                Researcher.GetOffset(0, SwapPath[2], SwapOffset);
+                //Researcher.GetOffset(0, SwapPath[2], SwapOffset);
 
-                long Offset_current = Settings.Default.current_offset;
-                bool Swap1 = Researcher.Convert(Offset_current, SwapPath[2], Mat, Mat1, 0, 0, false, false);
+                //long Offset_current = Settings.Default.current_offset;
+                bool Swap1 = Researcher.Convert(29000000, SwapPath[2], Mat, Mat1, 0, 0, false, false);
                 if (Swap1)
                 {
                     Settings.Default.SkullySplitterEnabled = true;
@@ -65,10 +65,10 @@ namespace JuicySwapper.Items.Pickaxes
             }
             else
             {
-                Researcher.GetOffset(0, SwapPath[2], SwapOffset);
+                //Researcher.GetOffset(0, SwapPath[2], SwapOffset);
 
-                long Offset_current = Settings.Default.current_offset;
-                bool Swap1 = Researcher.Revert(Offset_current, SwapPath[2], Mat1, Mat1, 0, 0, false, false);
+                //long Offset_current = Settings.Default.current_offset;
+                bool Swap1 = Researcher.Revert(29000000, SwapPath[2], Mat, Mat1, 0, 0, false, false);
                 if (Swap1)
                 {
                     Settings.Default.SkullySplitterEnabled = false;
