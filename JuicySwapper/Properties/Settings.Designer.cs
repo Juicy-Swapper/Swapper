@@ -394,5 +394,17 @@ namespace JuicySwapper.Properties {
                 this["TatAxeEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool IronCageEnabled {
+            get {
+                return ((bool)(this["IronCageEnabled"]));
+            }
+            set {
+                this["IronCageEnabled"] = value;
+            }
+        }
     }
 }

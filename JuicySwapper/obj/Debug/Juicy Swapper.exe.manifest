@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Resources\testingthis_471_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Juicy Swapper" version="1.0.1.7" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Juicy Swapper" version="1.0.1.8" language="neutral" processorArchitecture="msil" />
     <commandLine file="Juicy Swapper.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -67,24 +67,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Juicy Swapper.exe" size="20886440">
-      <assemblyIdentity name="Juicy Swapper" version="1.0.1.7" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Juicy Swapper.exe" size="21122472">
+      <assemblyIdentity name="Juicy Swapper" version="1.0.1.8" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>DXXcF1vCocMGnKdRj/fSS+5SMskCdBUV1dT5y34gcOE=</dsig:DigestValue>
+        <dsig:DigestValue>FOE15Qd2IGmhMs8GGHLmOgwzXll/Mp/tnhRJp7pySuE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Juicy Swapper.exe.config" size="5093">
+  <file name="Juicy Swapper.exe.config" size="5222">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>72UQbDvU2p5uYJkhrsyPGeRNbFXAep0BhghUgl/DzIk=</dsig:DigestValue>
+      <dsig:DigestValue>p3LXuHxoOhip8MA32Z2VKxLt/ZdhqvIppaGVlSdcTe4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\test_92j_icon.ico" size="18925">

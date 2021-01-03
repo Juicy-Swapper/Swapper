@@ -149,6 +149,11 @@ namespace JuicySwapper.Main.GUI
                 num++;
                 text += "Tat Axe," + " ";
             }
+            if (Settings.Default.IronCageEnabled == true)
+            {
+                num++;
+                text += "Iron Cage," + " ";
+            }
             switch (num)
             {
                 case 0:

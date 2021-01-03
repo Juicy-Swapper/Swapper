@@ -14,7 +14,7 @@ namespace JuicySwapper.Main.Classes
 		{
 			string Skin_Body_Path = Settings.Default.pakPath + "\\pakchunk10_s4-WindowsClient.ucas";
 			string Skin_Head_Path = Settings.Default.pakPath + "\\pakchunk10_s5-WindowsClient.ucas";
-			string Pickaxe_Mesh_Path = Settings.Default.pakPath + "\\pakchunk10_s4-WindowsClient";
+			string Pickaxe_Mesh_Path = Settings.Default.pakPath + "\\pakchunk10_s4-WindowsClient.ucas";
 			string Backbling_Path = Settings.Default.pakPath + "\\pakchunk10_s1-WindowsClient.ucas";
 			string Emote_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.pak";
 

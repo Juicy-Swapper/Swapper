@@ -50,5 +50,10 @@ namespace JuicySwapper.Panels
         {
             new BattleShroud().ShowDialog();
         }
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            new IronCage().ShowDialog();
+        }
     }
 }

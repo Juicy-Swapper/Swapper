@@ -85,11 +85,21 @@ namespace JuicySwapper
 		//GetStatus
 		public static void GetStatus()
 		{
+			try
+			{
+				new WebClient().DownloadString(Api.HOST);
+			}
+			catch
+			{
+				SwapUtilities.Exp = "Api FAILED";
+				new ExceptionMess().ShowDialog();
+			}
+
 			var StatusAPI = new WebClient().DownloadString($"{Api.HOST}/{Api.Status}");
 			Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
 
 			if (StatusResponse.IsOnline == false)
-				new DevMode().ShowDialog();
+				new OfflineMode().ShowDialog();
 
 			if (StatusResponse.Version != $"{Application.ProductVersion}")
 			    new Update().ShowDialog();

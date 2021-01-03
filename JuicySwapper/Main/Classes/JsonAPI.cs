@@ -99,6 +99,9 @@ namespace JuicySwapper.Classes.Json_Api
             [JsonProperty("isOnline")]
             public bool IsOnline { get; set; }
 
+            [JsonProperty("offlineMessage")]
+            public string OfflineMessage { get; set; }
+
             [JsonProperty("version")]
             public string Version { get; set; }
 
