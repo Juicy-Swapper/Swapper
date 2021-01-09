@@ -29,7 +29,7 @@ namespace JuicySwapper.Items.Skins
 
         string Body = "lSkins/BR_03/MaterialED_Cmmando_BR03";
         string Body1 = "lSkins/TV_14/MaterialED_Cmmando_TV14";
-        string GenderOffset = "/HID_013ommando_F";
+        string GenderOffset = "/Heroes/HID_015ommando_F";
         string Invalid = "Specializs/HSU";
         string Invalid1 = "Specializs/HFF";
 

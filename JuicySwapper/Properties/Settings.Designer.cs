@@ -12,7 +12,7 @@ namespace JuicySwapper.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.7.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -404,6 +404,54 @@ namespace JuicySwapper.Properties {
             }
             set {
                 this["IronCageEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool RenegadeRaiderEnabled {
+            get {
+                return ((bool)(this["RenegadeRaiderEnabled"]));
+            }
+            set {
+                this["RenegadeRaiderEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SurvivalSpecialistEnabled {
+            get {
+                return ((bool)(this["SurvivalSpecialistEnabled"]));
+            }
+            set {
+                this["SurvivalSpecialistEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool GingerbreadRaiderEnabled {
+            get {
+                return ((bool)(this["GingerbreadRaiderEnabled"]));
+            }
+            set {
+                this["GingerbreadRaiderEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool FateEnabled {
+            get {
+                return ((bool)(this["FateEnabled"]));
+            }
+            set {
+                this["FateEnabled"] = value;
             }
         }
     }

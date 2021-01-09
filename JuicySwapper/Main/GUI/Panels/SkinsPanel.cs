@@ -1,5 +1,6 @@
 ﻿using JuicySwapper.Items.Skins;
 using JuicySwapper.Main.GUI;
+using JuicySwapper.Main.GUI.Items.Skins;
 using JuicySwapper.Main.Panels;
 using System;
 using System.Diagnostics;
@@ -91,6 +92,26 @@ namespace JuicySwapper.Panels
         private void bunifuImageButton10_Click(object sender, EventArgs e)
         {
             new Dazzle().ShowDialog();
+        }
+
+        private void bunifuImageButton11_Click(object sender, EventArgs e)
+        {
+            new RenegadeRaider().ShowDialog();
+        }
+
+        private void bunifuImageButton15_Click(object sender, EventArgs e)
+        {
+            new SurvivalSpecialist().ShowDialog();
+        }
+
+        private void bunifuImageButton14_Click(object sender, EventArgs e)
+        {
+            new GingerbreadRaider().ShowDialog();
+        }
+
+        private void bunifuImageButton16_Click(object sender, EventArgs e)
+        {
+            new Fate().ShowDialog();
         }
     }
 }

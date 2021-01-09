@@ -371,5 +371,10 @@ namespace JuicySwapper
                 SkinButton.Enabled = true;
             }
         }
+
+        private void Wrapper_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -33,7 +33,7 @@ namespace JuicySwapper.Items.Skins
         string Hair1 = "kPlayerBodiesSoldier_01s/BR_00/Ma1erialED_Cmmando_Hair_kae";
         string GenderOffset = "/Heroes/HID_106ommando_F_Taxi";
         string Invalid = "ASpecializs/HS_";
-        string Invalid1 = "ASpeciali1s/k6_";
+        string Invalid1 = "ASpeciali1s/H6_";
 
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {

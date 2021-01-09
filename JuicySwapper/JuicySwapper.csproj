@@ -54,18 +54,6 @@
   <PropertyGroup>
     <ApplicationIcon>Resources\testingthis_471_icon.ico</ApplicationIcon>
   </PropertyGroup>
-  <PropertyGroup>
-    <ManifestCertificateThumbprint>E1E87F14C769D49E7BF4F688BCBB59D03737ECF6</ManifestCertificateThumbprint>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ManifestKeyFile>Juicy Swapper_TemporaryKey.pfx</ManifestKeyFile>
-  </PropertyGroup>
-  <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignManifests>true</SignManifests>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>.\Bunifu_UI_v1.5.3.dll</HintPath>
@@ -167,6 +155,18 @@
     <Compile Include="Main\GUI\Items\Questions\BansheeOption.designer.cs">
       <DependentUpon>BansheeOption.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\GUI\Items\Skins\Fate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\Fate.Designer.cs">
+      <DependentUpon>Fate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\GingerbreadRaider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\GingerbreadRaider.Designer.cs">
+      <DependentUpon>GingerbreadRaider.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\GUI\Items\Skins\Hawk.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +185,12 @@
     <Compile Include="Main\GUI\Items\Skins\Dazzle.designer.cs">
       <DependentUpon>Dazzle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\GUI\Items\Skins\RenegadeRaider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\RenegadeRaider.Designer.cs">
+      <DependentUpon>RenegadeRaider.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\GUI\Items\Skins\sunbird.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,12 @@
     </Compile>
     <Compile Include="Main\GUI\Items\Skins\Spitfire.designer.cs">
       <DependentUpon>Spitfire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\SurvivalSpecialist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Items\Skins\SurvivalSpecialist.Designer.cs">
+      <DependentUpon>SurvivalSpecialist.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\GUI\Items\Skins\Wildcat.cs">
       <SubType>Form</SubType>
@@ -408,6 +420,12 @@
     <EmbeddedResource Include="Main\GUI\Items\Questions\BansheeOption.resx">
       <DependentUpon>BansheeOption.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Skins\Fate.resx">
+      <DependentUpon>Fate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Skins\GingerbreadRaider.resx">
+      <DependentUpon>GingerbreadRaider.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Items\Skins\Hawk.resx">
       <DependentUpon>Hawk.cs</DependentUpon>
     </EmbeddedResource>
@@ -417,11 +435,17 @@
     <EmbeddedResource Include="Main\GUI\Items\Skins\Dazzle.resx">
       <DependentUpon>Dazzle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Skins\RenegadeRaider.resx">
+      <DependentUpon>RenegadeRaider.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Items\Skins\sunbird.resx">
       <DependentUpon>sunbird.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Items\Skins\Spitfire.resx">
       <DependentUpon>Spitfire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Items\Skins\SurvivalSpecialist.resx">
+      <DependentUpon>SurvivalSpecialist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Items\Skins\Wildcat.resx">
       <DependentUpon>Wildcat.cs</DependentUpon>

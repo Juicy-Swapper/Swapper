@@ -60,3 +60,65 @@ C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.I
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.TatAxe.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.IronCage.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.OfflineMode.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.csprojAssemblyReference.cache
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\Juicy Swapper.exe
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\Juicy Swapper.pdb
+C:\Users\joshu\Desktop\Projects\Swapper-main\build\Juicy Swapper\Juicy Swapper.exe.config
+C:\Users\joshu\Desktop\Projects\Swapper-main\build\Juicy Swapper\Juicy Swapper.exe
+C:\Users\joshu\Desktop\Projects\Swapper-main\build\Juicy Swapper\Juicy Swapper.pdb
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\Interop.WMPLib.dll
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.csproj.ResolveComReference.cache
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.BattleShroud.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.IronCage.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.BlackShield.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Misc.JuicyEAC1.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.TatAxe.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.SkullySplitter.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.IronBeak.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.candyaxe.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.BansheeOption.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Hawk.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Renegade.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Dazzle.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.sunbird.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Spitfire.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Wildcat.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.BansheeTO.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.BansheeRen.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Banshee.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.OfflineMode.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Annoucement.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.ExceptionMess.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.CheckIfSwapMesg.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.RamirezOption.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.RamirezAA.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.ReconExpert.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.headhunter.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Ramirez.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.SparkleSpecialist.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Disabled.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Panels.EmotesPanel.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.BackupVerify.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Loader.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Update.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.PakError.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Home.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.ResetComplete.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.ResetConfirm.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.SettingsMenu.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Panels.MiscPanel.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Panels.DashPanel.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Panels.BackblingsPanel.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Panels.PickaxesPanel.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.Panels.SidebarPanel.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Panels.SkinsPanel.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Properties.Resources.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.csproj.GenerateResource.cache
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.csproj.CoreCompileInputs.cache
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.csproj.Fody.CopyLocal.cache
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.csproj.CopyComplete
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.Fate.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.GingerbreadRaider.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.RenegadeRaider.resources
+C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.SurvivalSpecialist.resources

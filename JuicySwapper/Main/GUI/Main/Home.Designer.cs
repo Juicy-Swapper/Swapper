@@ -76,6 +76,7 @@
             this.Wrapper.Name = "Wrapper";
             this.Wrapper.Size = new System.Drawing.Size(931, 609);
             this.Wrapper.TabIndex = 2;
+            this.Wrapper.Paint += new System.Windows.Forms.PaintEventHandler(this.Wrapper_Paint);
             // 
             // CurvaSidebar
             // 
