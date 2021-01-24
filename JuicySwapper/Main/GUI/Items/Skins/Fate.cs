@@ -38,9 +38,10 @@ namespace JuicySwapper.Main.GUI.Items.Skins
         string HPos = "CP_Hat_F_Commando_Davinci";
         string HMat = "/Material";
         string HMat1 = "/Mat1rial";
-        string GPos = "/Heroes/HID_479ommando_F_";
-        string Gender = "DSpecializs/HS_e";
-        string Gender1 = "DSpecializs/HF_e";
+
+        string GPos = "/Game/Athena/Heroes/Meshes/Bodies/CP_Body_Commando_F_Davinci";
+        string Gender = "Parts/Female/Medium/Head";
+        string Gender1 = "Parts/Female/Medium/He1d";
 
         private void convertButton_Click(object sender, EventArgs e)
         {
@@ -85,7 +86,7 @@ namespace JuicySwapper.Main.GUI.Items.Skins
                     RichTextBoxInfo.Text += "\n[LOG] Body 1/2 added";
                 }
 
-                Researcher.GetOffset(0, SwapPath[0], GPos);
+                Researcher.GetOffset(SwapOffsets[5], SwapPath[0], GPos);
 
                 long Offset_current = Settings.Default.current_offset;
                 bool Swap2 = Researcher.Convert(Offset_current, SwapPath[0], Gender, Gender1, 0, 0, false, false);
@@ -115,7 +116,7 @@ namespace JuicySwapper.Main.GUI.Items.Skins
                     RichTextBoxInfo.Text += "\n[LOG] Body 1/2 removed";
                 }
 
-                Researcher.GetOffset(0, SwapPath[0], GPos);
+                Researcher.GetOffset(SwapOffsets[5], SwapPath[0], GPos);
 
                 long Offset_current = Settings.Default.current_offset;
                 bool Swap2 = Researcher.Revert(Offset_current, SwapPath[0], Gender, Gender1, 0, 0, false, false);

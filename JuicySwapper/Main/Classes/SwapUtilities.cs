@@ -28,7 +28,7 @@ namespace JuicySwapper.Main.Classes
 			int Offset_Pick_Mesh = Settings.Default.offset_pick_mesh;
 			int Offset_Back_Mesh = Settings.Default.offset_back_mesh;
 			int Offset_Emote_Mesh = Settings.Default.offset_emote_mesh;
-			int Offset_Temp_gender = Settings.Default.offset_temp;
+			int Offset_Temp_gender = 146504298;
 
 			return new int[] { Offset_Skin_Body, Offset_Skin_Head, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh, Offset_Temp_gender };
 		}
@@ -38,7 +38,7 @@ namespace JuicySwapper.Main.Classes
 			int TempBackCapMat = 20000000;
 			int TempBackfx = 2500000;
 			int Offset_Pick_Mesh = 10000000;
-			int Offset_Back_Mesh = Settings.Default.offset_back_mesh;
+			int Offset_Back_Mesh = 146504298;
 			int Offset_Emote_Mesh = Settings.Default.offset_emote_mesh;
 
 			return new int[] { TempBackCapMat, TempBackfx, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh };

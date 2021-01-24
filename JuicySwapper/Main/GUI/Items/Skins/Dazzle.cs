@@ -31,9 +31,10 @@ namespace JuicySwapper.Items.Skins
         string Body1 = "Skins/BR_31/MaterialED_CmmandoBR031";
         string Hair = "kPlayerBodiesSoldier_01s/BR_51/MaterialED_Cmmando_Hair_051";
         string Hair1 = "kPlayerBodiesSoldier_01s/BR_00/Ma1erialED_Cmmando_Hair_kae";
-        string GenderOffset = "/Heroes/HID_106ommando_F_Taxi";
-        string Invalid = "ASpecializs/HS_";
-        string Invalid1 = "ASpeciali1s/H6_";
+
+        string GenderOffset = "/Game/Athena/Heroes/Meshes/Bodies/CP_106_Body_F_Taxi";
+        string Invalid = "Parts/Female/Medium/Head";
+        string Invalid1 = "Parts/Female/Medium/He1d";
 
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
@@ -59,7 +60,8 @@ namespace JuicySwapper.Items.Skins
                     RichTextBoxInfo.Text += "\n[LOG] Body 1/2 added";
                 }
 
-                Researcher.GetOffset(0, SwapPath[0], GenderOffset);
+
+                Researcher.GetOffset(SwapOffsets[6], SwapPath[0], GenderOffset);
 
                 long Offset_current = Settings.Default.current_offset;
                 bool Swap2 = Researcher.Convert(Offset_current, SwapPath[0], Invalid, Invalid1, 0, 0, false, false);

@@ -113,6 +113,49 @@ namespace JuicySwapper.IO
             }
         }
 
+        public static long GetOffset(int Base, string Path, byte[] Search)
+        {
+            while (true)
+            {
+                if (FindPosition(Base, Path, Search))
+                {
+                    return Settings.Default.current_offset;
+                }
+                else
+                    Base += Base / 2 / 2;
+            }
+        }
+
+        public static bool FindPosition(long start, string file, byte[] convert, long max = 0)
+        {
+            if (File.Exists(file))
+            {
+                Stream s = File.Open(file, FileMode.Open, FileAccess.ReadWrite);
+
+                long offset;
+
+                var task = Task.Run(() => Find(s, start, convert, max));
+                if (task.Wait(TimeSpan.FromSeconds(10)))
+                {
+                    offset = task.Result;
+                    Settings.Default.current_offset = offset;
+                    Settings.Default.Save();
+                }
+                else
+                    offset = 0;
+
+                s.Close();
+
+                if (offset == 0)
+                {
+                    return false;
+                }
+                return true;
+            }
+            else
+                return false;
+        }
+
         private static long Find(Stream a, long b, byte[] c, long max)
         {
             int searchPosition = 0;

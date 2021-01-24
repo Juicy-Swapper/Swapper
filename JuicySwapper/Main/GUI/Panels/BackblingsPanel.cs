@@ -43,17 +43,23 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
-            new BlackShield().ShowDialog();
+            Home.Disabled = "Black Shield";
+            new Disabled().ShowDialog();
+            // new BlackShield().ShowDialog();
         }
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
-            new BattleShroud().ShowDialog();
+            Home.Disabled = "Battle Shroud";
+            new Disabled().ShowDialog();
+            // new BattleShroud().ShowDialog();
         }
 
         private void bunifuImageButton4_Click(object sender, EventArgs e)
         {
-            new IronCage().ShowDialog();
+            Home.Disabled = "Iron Cage";
+            new Disabled().ShowDialog();
+            // new IronCage().ShowDialog();
         }
     }
 }

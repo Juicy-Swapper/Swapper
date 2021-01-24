@@ -179,9 +179,7 @@ namespace JuicySwapper.IO
                     Settings.Default.Save();
                 }
                 else
-                {
                     offset = 0;
-                }
 
                 s.Close();
 
@@ -192,9 +190,7 @@ namespace JuicySwapper.IO
                 return true;
             }
             else
-            {
                 return false;
-            }
         }
 
         private static byte[] c(byte[] mahOldByteArray, byte newByte)
