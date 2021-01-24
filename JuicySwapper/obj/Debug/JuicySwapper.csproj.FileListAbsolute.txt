@@ -1,6 +1,4 @@
 C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\Juicy Swapper.exe.config
-C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\Juicy Swapper.exe.manifest
-C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\Juicy Swapper.application
 C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\Juicy Swapper.exe
 C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\Juicy Swapper.pdb
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csprojAssemblyReference.cache
@@ -35,8 +33,6 @@ C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.P
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.GenerateResource.cache
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.Fody.CopyLocal.cache
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\Juicy Swapper.exe.manifest
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\Juicy Swapper.application
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.CopyComplete
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\Juicy Swapper.exe
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\Juicy Swapper.pdb
@@ -122,3 +118,7 @@ C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug
 C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.GingerbreadRaider.resources
 C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.RenegadeRaider.resources
 C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.SurvivalSpecialist.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.Fate.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.GingerbreadRaider.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.RenegadeRaider.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.SurvivalSpecialist.resources

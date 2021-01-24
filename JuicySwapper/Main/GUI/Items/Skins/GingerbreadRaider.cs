@@ -68,8 +68,8 @@ namespace JuicySwapper.Main.GUI.Items.Skins
 
             if (convertButton.Text == "Convert")
             {
-                if (SwapUtilities.CheckIfCanSwap("AssaultTrooper"))
-                    return;
+                //if (SwapUtilities.CheckIfCanSwap("AssaultTrooper"))
+                //    return;
 
                 bool Swap1 = Researcher.Convert(SwapOffsets[0], SwapPath[0], Body, Body1, 0, 0, false, false);
                 if (Swap1)

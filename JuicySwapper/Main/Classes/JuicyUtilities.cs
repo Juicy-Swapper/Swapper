@@ -76,12 +76,6 @@ namespace JuicySwapper
 			Process.Start("http://juicyswapper.xyz/discord");
 		}
 
-		//twitter
-		public static void Twitter() { Process.Start("http://juicyswapper.xyz/twitter"); }
-
-		//Website
-		public static void Website() { Process.Start("http://juicyswapper.xyz"); }
-
 		//GetStatus
 		public static void GetStatus()
 		{

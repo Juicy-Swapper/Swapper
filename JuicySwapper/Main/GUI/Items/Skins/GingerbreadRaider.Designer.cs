@@ -97,7 +97,7 @@ namespace JuicySwapper.Main.GUI.Items.Skins
             // 
             this.bunifuDragControl1.Fixed = true;
             this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = null;
+            this.bunifuDragControl1.TargetControl = this;
             this.bunifuDragControl1.Vertical = true;
             // 
             // RichTextBoxInfo
@@ -197,6 +197,7 @@ namespace JuicySwapper.Main.GUI.Items.Skins
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.convertButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GingerbreadRaider";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GingerbreadRaider";

@@ -69,7 +69,9 @@ namespace JuicySwapper.Main.Classes
 		public List<bool> AssaultTrooper = new List<bool>()
 		{
 			Settings.Default.SparkleSpecialistEnabled,
-			Settings.Default.headhunterATEnabled
+			Settings.Default.headhunterATEnabled,
+			Settings.Default.RenegadeRaiderEnabled,
+			Settings.Default.SurvivalSpecialistEnabled
 		};
 
 		public List<bool> Dominator = new List<bool>()
