@@ -11,7 +11,7 @@
 ### Links & Support
 
 - **For support and guidance, join [this Discord guild.](https://juicyswapper.xyz/discord)**
-- **My Discord username**: hina#0001
+- **My Discord username**: kaede#2005
 - **My Twitter handle**: @0xKaede
 
 ### Credits
