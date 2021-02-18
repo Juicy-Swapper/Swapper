@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="pakPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Program Files\Epic Games\Fortnite\FortniteGame\Content\Paks</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="current_offset" Type="System.Int64" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -109,6 +109,15 @@
     </Setting>
     <Setting Name="FateEnabled" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="MusicAct" Type="System.String" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AccVerify" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Free</Value>
+    </Setting>
+    <Setting Name="Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

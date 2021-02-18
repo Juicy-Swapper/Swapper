@@ -5,9 +5,6 @@ C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.c
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\Interop.WMPLib.dll
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.ResolveComReference.cache
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Annoucement.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.ExceptionMess.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.CheckIfSwapMesg.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.RamirezOption.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.RamirezAA.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.ReconExpert.resources
@@ -18,9 +15,7 @@ C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.P
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.BackupVerify.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Loader.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Update.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.PakError.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Home.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.ResetComplete.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.ResetConfirm.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.SettingsMenu.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Panels.MiscPanel.resources
@@ -49,7 +44,6 @@ C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.I
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Misc.JuicyEAC1.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.BlackShield.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.BattleShroud.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Disabled.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Dazzle.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.IronBeak.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.SkullySplitter.resources
@@ -118,7 +112,13 @@ C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug
 C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.GingerbreadRaider.resources
 C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.RenegadeRaider.resources
 C:\Users\joshu\Desktop\Projects\Swapper-main\Swapper-main\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.SurvivalSpecialist.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.Fate.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.GingerbreadRaider.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.RenegadeRaider.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Items.Skins.SurvivalSpecialist.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Message.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.SurvivalSpecialist.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.RenegadeRaider.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.GingerbreadRaider.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Fate.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Login.resources
+C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\mongocrypt.dll
+C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\snappy32.dll
+C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\snappy64.dll
+C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\libzstd.dll

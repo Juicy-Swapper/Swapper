@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Windows.Forms;
 using static JuicySwapper.Classes.Json_Api.OffsetsAPI;
 
 namespace JuicySwapper.Main.Classes
@@ -28,7 +29,7 @@ namespace JuicySwapper.Main.Classes
 			int Offset_Pick_Mesh = Settings.Default.offset_pick_mesh;
 			int Offset_Back_Mesh = Settings.Default.offset_back_mesh;
 			int Offset_Emote_Mesh = Settings.Default.offset_emote_mesh;
-			int Offset_Temp_gender = 146504298;
+			int Offset_Temp_gender = 134101198;
 
 			return new int[] { Offset_Skin_Body, Offset_Skin_Head, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh, Offset_Temp_gender };
 		}
@@ -80,58 +81,55 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.BansheeEnabled
 		};
 
-		public List<bool> Commando = new List<bool>()
-		{
-			Settings.Default.RamirezEnabled
-		};
+		//public List<bool> Commando = new List<bool>()
+		//{
+		//	Settings.Default.RamirezEnabled
+		//};
 
-		public List<bool> ArcticAssassin = new List<bool>()
-		{
-			Settings.Default.RamirezAAEnabled
-		};
+		//public List<bool> ArcticAssassin = new List<bool>()
+		//{
+		//	Settings.Default.RamirezAAEnabled
+		//};
 
-		public List<bool> Renegade = new List<bool>()
-		{
-			Settings.Default.BansheeRenEnabled
-		};
+		//public List<bool> Renegade = new List<bool>()
+		//{
+		//	Settings.Default.BansheeRenEnabled
+		//};
 
-		public List<bool> TacticsOfficer = new List<bool>()
-		{
-			Settings.Default.BansheeTOEnabled
-		};
+		//public List<bool> TacticsOfficer = new List<bool>()
+		//{
+		//	Settings.Default.BansheeTOEnabled
+		//};
 
-		public List<bool> Pathfinder = new List<bool>()
-		{
-			Settings.Default.WildcatEnabled
-		};
+		//public List<bool> Pathfinder = new List<bool>()
+		//{
+		//	Settings.Default.WildcatEnabled
+		//};
 
-		public List<bool> Shadowbird = new List<bool>()
-		{
-			Settings.Default.sunbirdEnabled
-		};
+		//public List<bool> Shadowbird = new List<bool>()
+		//{
+		//	Settings.Default.sunbirdEnabled
+		//};
 
-		public List<bool> Scout = new List<bool>()
-		{
-			Settings.Default.SpitfireEnabled
-		};
+		//public List<bool> Scout = new List<bool>()
+		//{
+		//	Settings.Default.SpitfireEnabled
+		//};
 
-		public List<bool> Tracker = new List<bool>()
-		{
-			Settings.Default.HawkEnabled
-		};
+		//public List<bool> Tracker = new List<bool>()
+		//{
+		//	Settings.Default.HawkEnabled
+		//};
 
-		public List<bool> Trooper = new List<bool>()
-		{
-			Settings.Default.RenegadeEnabled
-		};
+		//public List<bool> Trooper = new List<bool>()
+		//{
+		//	Settings.Default.RenegadeEnabled
+		//};
 
-		public List<bool> RedShield = new List<bool>()
-		{
-			Settings.Default.BlackShieldEnabled
-		};
-
-		public static string SkinSwapped;
-		public static string SkinSwappedFor;
+		//public List<bool> RedShield = new List<bool>()
+		//{
+		//	Settings.Default.BlackShieldEnabled
+		//};
 
 		public bool CheckIfCanSwap(string s)
 		{
@@ -141,156 +139,19 @@ namespace JuicySwapper.Main.Classes
 					if (AssaultTrooper.All(a => a) || AssaultTrooper.All(a => !a))
 						return false;
 					else
-						SkinSwapped = "Assault Trooper";
-
-					if (Settings.Default.SparkleSpecialistEnabled)
-						SkinSwappedFor = "Sparkle Specialist";
-					else if (Settings.Default.headhunterATEnabled)
-						SkinSwappedFor = "Head Hunter";
-
-					new CheckIfSwapMesg().ShowDialog();
+						MessageBox.Show("A skin using Dominator is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
 
 				case "Dominator":
 					if (Dominator.All(a => a) || Dominator.All(a => !a))
 						return false;
 					else
-						SkinSwapped = "Dominator";
-
-					if (Settings.Default.ReconExpertEnabled)
-						SkinSwappedFor = "Recon Expert";
-					else if (Settings.Default.BansheeEnabled)
-						SkinSwappedFor = "Banshee";
-
-					new CheckIfSwapMesg().ShowDialog();
+						MessageBox.Show("A skin using Dominator is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
-
-				case "Commando":
-					if (Commando.All(a => a) || Commando.All(a => !a))
-						return false;
-					else
-						SkinSwapped = "Commando";
-
-					if (Settings.Default.RamirezEnabled)
-						SkinSwappedFor = "Ramirez";
-
-					new CheckIfSwapMesg().ShowDialog();
-					break;
-
-				case "ArcticAssassin":
-					if (ArcticAssassin.All(a => a) || ArcticAssassin.All(a => !a))
-						return false;
-					else
-						SkinSwapped = "ArcticAssassin";
-
-					if (Settings.Default.RamirezAAEnabled)
-						SkinSwappedFor = "Ramirez";
-
-					new CheckIfSwapMesg().ShowDialog();
-					break;
-
-				case "Renegade":
-					if (Renegade.All(a => a) || Renegade.All(a => !a))
-						return false;
-					else
-						SkinSwapped = "Renegade";
-
-					if (Settings.Default.BansheeRenEnabled)
-						SkinSwappedFor = "Banshee";
-
-					new CheckIfSwapMesg().ShowDialog();
-					break;
-
-				case "TacticsOfficer":
-					if (TacticsOfficer.All(a => a) || TacticsOfficer.All(a => !a))
-						return false;
-					else
-						SkinSwapped = "TacticsOfficer";
-
-					if (Settings.Default.BansheeTOEnabled)
-						SkinSwappedFor = "Banshee";
-
-					new CheckIfSwapMesg().ShowDialog();
-					break;
-
-				case "Pathfinder":
-					if (Pathfinder.All(a => a) || Pathfinder.All(a => !a))
-						return false;
-					else
-						SkinSwapped = "Pathfinder";
-
-					if (Settings.Default.WildcatEnabled)
-						SkinSwappedFor = "Wildcat";
-
-					new CheckIfSwapMesg().ShowDialog();
-					break;
-
-				case "Shadowbird":
-					if (Shadowbird.All(a => a) || Shadowbird.All(a => !a))
-						return false;
-					else
-						SkinSwapped = "Shadowbird";
-
-					if (Settings.Default.sunbirdEnabled)
-						SkinSwappedFor = "SunBird";
-
-					new CheckIfSwapMesg().ShowDialog();
-					break;
-
-				case "Scout":
-					if (Scout.All(a => a) || Scout.All(a => !a))
-						return false;
-					else
-						SkinSwapped = "Scout";
-
-					if (Settings.Default.SpitfireEnabled)
-						SkinSwappedFor = "Spitfire";
-
-					new CheckIfSwapMesg().ShowDialog();
-					break;
-
-				case "Tracker":
-					if (Tracker.All(a => a) || Tracker.All(a => !a))
-						return false;
-					else
-						SkinSwapped = "Tracker";
-
-					if (Settings.Default.HawkEnabled)
-						SkinSwappedFor = "Hawk";
-
-					new CheckIfSwapMesg().ShowDialog();
-					break;
-
-				case "Trooper":
-					if (Trooper.All(a => a) || Trooper.All(a => !a))
-						return false;
-					else
-						SkinSwapped = "Trooper";
-
-					if (Settings.Default.RenegadeEnabled)
-						SkinSwappedFor = "Renegade";
-
-					new CheckIfSwapMesg().ShowDialog();
-					break;
-
-				case "RedShield":
-					if (RedShield.All(a => a) || RedShield.All(a => !a))
-						return false;
-					else
-						SkinSwapped = "Red Shield";
-
-					if (Settings.Default.BlackShieldEnabled)
-						SkinSwappedFor = "Black Shild";
-
-					new CheckIfSwapMesg().ShowDialog();
-					break;
-
-					
 			}
 			return true;
 		}
 
-		public static string Exp;
 		//offsets
 		public static void Requestoffsets()
 		{
@@ -312,8 +173,8 @@ namespace JuicySwapper.Main.Classes
 			}
 			catch
 			{
-				Exp = "Offsets";
-				new ExceptionMess().ShowDialog();
+				Message Exception = new Message(Resources.Exception);
+				Exception.ShowDialog();
 			}
 		}
 

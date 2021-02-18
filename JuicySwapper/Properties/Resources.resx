@@ -118,19 +118,70 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Account_created" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Account created.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ActivMusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ActivMusic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConvertBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DesacMusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DesacMusic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exception" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Exception.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="freelogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\freelogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Guestlogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Guestlogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HWIDfound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HWIDfound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HWIDincorect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HWIDincorect1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hwidreset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hwidreset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Juicy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\testingthis_471_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kaede" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kaede (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="paidlogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paidlogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Scenario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Scenario.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pakfileerror" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pakfileerror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SuperOG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SuperOG.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Passwordincorect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Passwordincorect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Toosie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Toosie.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="passwordinvalid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\passwordinvalid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReliefMusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReliefMusic.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ResetComplete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ResetComplete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RevertBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\revertBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Userfound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Userfound1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="userinvalid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\userinvalid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Usernotfound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Usernotfound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
