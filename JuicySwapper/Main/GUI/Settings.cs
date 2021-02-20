@@ -128,6 +128,11 @@ namespace JuicySwapper.Main.GUI
                 num++;
                 text += "Iron Cage," + " ";
             }
+            if (Settings.Default.EliteAgentEnabled == true)
+            {
+                num++;
+                text += "E;ite Agent," + " ";
+            }
             switch (num)
             {
                 case 0:
@@ -200,7 +205,7 @@ namespace JuicySwapper.Main.GUI
 
         private void MusicSwitch_Click(object sender, EventArgs e)
         {
-            Music MusicController = new Music();
+            JuicyUtilities MusicController = new JuicyUtilities();
             if (Settings.Default.MusicAct != "True")
             {
                 MusicController.MusicControl("True");

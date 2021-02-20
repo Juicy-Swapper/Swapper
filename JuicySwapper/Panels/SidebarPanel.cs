@@ -1,4 +1,6 @@
-﻿using System;
+﻿using JuicySwapper.Api;
+using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace JuicySwapper.Main.Panels
@@ -28,7 +30,7 @@ namespace JuicySwapper.Main.Panels
 
         private void DiscordInviteBtn_Click(object sender, EventArgs e)
         {
-            JuicyUtilities.DiscordInvite();
+            Process.Start($"{API.HOST}/{API.Discord}");
         }
     }
 }

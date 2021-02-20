@@ -73,6 +73,7 @@ namespace JuicySwapper.Main.Classes
         public string username { get; set; }
         public string password { get; set; }
         public string HWID { get; set; }
+        public string CreatedAt { get; set; }
         public bool paid { get; set; }
         public bool boost { get; set; }
     }

@@ -32,17 +32,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsMenu));
             this.ResetConfigBtn = new System.Windows.Forms.PictureBox();
             this.ConvertitemsBtn = new System.Windows.Forms.PictureBox();
-            this.MusicSwitch = new System.Windows.Forms.PictureBox();
             this.Backupverifybtn = new System.Windows.Forms.PictureBox();
             this.CloseBtn = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.CurvaSidebar = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.MusicSwitch = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ResetConfigBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConvertitemsBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MusicSwitch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Backupverifybtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MusicSwitch)).BeginInit();
             this.SuspendLayout();
             // 
             // ResetConfigBtn
@@ -66,18 +66,6 @@
             this.ConvertitemsBtn.TabIndex = 7;
             this.ConvertitemsBtn.TabStop = false;
             this.ConvertitemsBtn.Click += new System.EventHandler(this.ConvertitemsBtn_Click);
-            // 
-            // MusicSwitch
-            // 
-            this.MusicSwitch.BackColor = System.Drawing.Color.Transparent;
-            this.MusicSwitch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MusicSwitch.Image = ((System.Drawing.Image)(resources.GetObject("MusicSwitch.Image")));
-            this.MusicSwitch.Location = new System.Drawing.Point(8, 132);
-            this.MusicSwitch.Name = "MusicSwitch";
-            this.MusicSwitch.Size = new System.Drawing.Size(157, 24);
-            this.MusicSwitch.TabIndex = 8;
-            this.MusicSwitch.TabStop = false;
-            this.MusicSwitch.Click += new System.EventHandler(this.MusicSwitch_Click);
             // 
             // Backupverifybtn
             // 
@@ -124,6 +112,18 @@
             this.bunifuDragControl1.TargetControl = this;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // MusicSwitch
+            // 
+            this.MusicSwitch.BackColor = System.Drawing.Color.Transparent;
+            this.MusicSwitch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MusicSwitch.Image = ((System.Drawing.Image)(resources.GetObject("MusicSwitch.Image")));
+            this.MusicSwitch.Location = new System.Drawing.Point(7, 131);
+            this.MusicSwitch.Name = "MusicSwitch";
+            this.MusicSwitch.Size = new System.Drawing.Size(157, 24);
+            this.MusicSwitch.TabIndex = 8;
+            this.MusicSwitch.TabStop = false;
+            this.MusicSwitch.Click += new System.EventHandler(this.MusicSwitch_Click);
+            // 
             // SettingsMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,9 +145,9 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SettingsMenu_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.ResetConfigBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConvertitemsBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MusicSwitch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Backupverifybtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MusicSwitch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,11 +157,11 @@
 
         private System.Windows.Forms.PictureBox ResetConfigBtn;
         private System.Windows.Forms.PictureBox ConvertitemsBtn;
-        private System.Windows.Forms.PictureBox MusicSwitch;
         private System.Windows.Forms.PictureBox Backupverifybtn;
         private System.Windows.Forms.PictureBox CloseBtn;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuElipse CurvaSidebar;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private System.Windows.Forms.PictureBox MusicSwitch;
     }
 }

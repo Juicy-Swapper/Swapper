@@ -7,14 +7,16 @@ using System.Windows.Forms;
 using JuicySwapper.Properties;
 using Newtonsoft.Json;
 using System.Diagnostics;
-using JuicySwapper.Main.Classes;
-using static JuicySwapper.Classes.Json_Api.SatusAPI;
+using JuicySwapper.Api;
+using static JuicySwapper.Api.SatusAPI;
 using static System.Environment;
 using System.Text;
 using System.Threading.Tasks;
 using System.Management;
 using System.Security.Cryptography;
-using System.Linq;
+using System.Media;
+using System.Threading;
+using System.ComponentModel;
 
 namespace JuicySwapper
 {
@@ -75,18 +77,13 @@ namespace JuicySwapper
 			}
 		}
 
-		//discordinvite
-		public static void DiscordInvite()
-		{
-			Process.Start("http://juicyswapper.xyz/discord");
-		}
-
+		static WebClient ProgramClient = new WebClient();
 		//GetStatus
 		public static void GetStatus()
 		{
 			try
 			{
-				new WebClient().DownloadString(Api.HOST);
+				new WebClient().DownloadString(API.HOST);
 			}
 			catch
 			{
@@ -94,17 +91,32 @@ namespace JuicySwapper
 				Exception.ShowDialog();
 			}
 
-			var StatusAPI = new WebClient().DownloadString($"{Api.HOST}/{Api.Status}");
+			var StatusAPI = new WebClient().DownloadString($"{API.HOST}/{API.Status}");
 			Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
 
 			if (StatusResponse.IsOnline == false)
 				new OfflineMode().ShowDialog();
 
 			if (StatusResponse.Version != $"{Application.ProductVersion}")
-			    new Update().ShowDialog();
+            {
+				if (File.Exists("JuicySwapper_Updater.exe"))
+                {
+					File.Delete("JuicySwapper_Updater.exe");
+				}
+				ProgramClient.Proxy = null;
+				ProgramClient.DownloadFileAsync(new Uri(StatusResponse.updaterlink), "JuicySwapper_Updater.exe");
+				while (ProgramClient.IsBusy)
+					Thread.Sleep(1000);
+				if (File.Exists("JuicySwapper_Updater.exe"))
+				{
+					Process.Start("JuicySwapper_Updater.exe");
+					Environment.Exit(0);
+				}
+				else
+					MessageBox.Show("Updater did not downloaded!");
+			}
 		}
 
-		//HWID.GET_HARDWAREID
 		public static string GET_HARDWAREID => ReturnHardwareID().Result;
 		private static async Task<string> ReturnHardwareID()
 		{
@@ -113,7 +125,6 @@ namespace JuicySwapper
 
 			Task task = Task.Run(() =>
 			{
-
 				ManagementObjectSearcher bios = new ManagementObjectSearcher("SELECT * FROM Win32_bios");
 				ManagementObjectCollection bios_Collection = bios.Get();
 				foreach (ManagementObject obj in bios_Collection)
@@ -178,6 +189,16 @@ namespace JuicySwapper
 				}
 			}
 			return cipherText;
+		}
+
+		public void MusicControl(string Activated)
+		{
+			Stream str = Resources.ReliefMusic;
+			SoundPlayer snd = new SoundPlayer(str);
+			if (Activated == "True")
+				snd.PlayLooping();
+			else
+				snd.Stop();
 		}
 	}
 

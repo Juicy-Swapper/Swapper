@@ -1,11 +1,12 @@
-﻿using JuicySwapper.Main.GUI;
+﻿using JuicySwapper.Api;
+using JuicySwapper.Main.GUI;
 using JuicySwapper.Properties;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Windows.Forms;
-using static JuicySwapper.Classes.Json_Api.OffsetsAPI;
+using static JuicySwapper.Api.OffsetsAPI;
 
 namespace JuicySwapper.Main.Classes
 {
@@ -13,11 +14,11 @@ namespace JuicySwapper.Main.Classes
     {
 		public string[] GetSwapPath()
 		{
-			string Skin_Body_Path = Settings.Default.pakPath + "\\pakchunk10_s4-WindowsClient.ucas";
-			string Skin_Head_Path = Settings.Default.pakPath + "\\pakchunk10_s5-WindowsClient.ucas";
-			string Pickaxe_Mesh_Path = Settings.Default.pakPath + "\\pakchunk10_s4-WindowsClient.ucas";
-			string Backbling_Path = Settings.Default.pakPath + "\\pakchunk10_s1-WindowsClient.ucas";
-			string Emote_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.pak";
+			string Skin_Body_Path = $"{Settings.Default.pakPath}\\pakchunk10_s4-WindowsClient.ucas";
+			string Skin_Head_Path = $"{Settings.Default.pakPath}\\pakchunk10_s5-WindowsClient.ucas";
+			string Pickaxe_Mesh_Path = $"{Settings.Default.pakPath}\\pakchunk10_s4-WindowsClient.ucas";
+			string Backbling_Path = $"{Settings.Default.pakPath}\\pakchunk10_s1-WindowsClient.ucas";
+			string Emote_Path = $"{Settings.Default.pakPath}\\pakchunk10_s2-WindowsClient.pak";
 
 			return new string[] { Skin_Body_Path, Skin_Head_Path, Pickaxe_Mesh_Path, Backbling_Path, Emote_Path };
 		}
@@ -47,11 +48,11 @@ namespace JuicySwapper.Main.Classes
 
 		public string[] GetSwapPathTemp()
 		{
-			string TempBackCapMat = Settings.Default.pakPath + "\\pakchunk10_s10-WindowsClient.ucas";
-			string TempBackfx = Settings.Default.pakPath + "\\pakchunk10_s14-WindowsClient.ucas";
-			string Pickaxe_Mesh_Path = Settings.Default.pakPath + "\\pakchunk10_s3-WindowsClient.ucas";
-			string Backbling_Path = Settings.Default.pakPath + "\\pakchunk10_s1-WindowsClient.ucas";
-			string Emote_Path = Settings.Default.pakPath + "\\pakchunk10_s2-WindowsClient.pak";
+			string TempBackCapMat = $"{Settings.Default.pakPath}\\pakchunk10_s10-WindowsClient.ucas";
+			string TempBackfx = $"{Settings.Default.pakPath}\\pakchunk10_s14-WindowsClient.ucas";
+			string Pickaxe_Mesh_Path = $"{Settings.Default.pakPath}\\pakchunk10_s3-WindowsClient.ucas";
+			string Backbling_Path = $"{Settings.Default.pakPath}\\pakchunk10_s1-WindowsClient.ucas";
+			string Emote_Path = $"{Settings.Default.pakPath}\\pakchunk10_s2-WindowsClient.pak";
 
 			return new string[] { TempBackCapMat, TempBackfx, Pickaxe_Mesh_Path, Backbling_Path, Emote_Path };
 		}
@@ -79,6 +80,12 @@ namespace JuicySwapper.Main.Classes
 		{
 			Settings.Default.ReconExpertEnabled,
 			Settings.Default.BansheeEnabled
+		};
+
+		public List<bool> Whiplash = new List<bool>()
+		{
+			Settings.Default.DazzleEnabled,
+			Settings.Default.EliteAgentEnabled
 		};
 
 		//public List<bool> Commando = new List<bool>()
@@ -148,6 +155,13 @@ namespace JuicySwapper.Main.Classes
 					else
 						MessageBox.Show("A skin using Dominator is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
+
+				case "Whiplash":
+					if (Dominator.All(a => a) || Dominator.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A skin using Whiplash is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
 			}
 			return true;
 		}
@@ -158,7 +172,7 @@ namespace JuicySwapper.Main.Classes
 			try
 			{
 				//Downloads JSON from Juicy Swapper API.
-				var OffsetsAPI = new WebClient().DownloadString($"{Api.HOST}/{Api.Offsets}");
+				var OffsetsAPI = new WebClient().DownloadString($"{API.HOST}/{API.Offsets}");
 
 				//Deserializes JSON from Juicy Swapper API.
 				Offsets StatusResponse = JsonConvert.DeserializeObject<Offsets>(OffsetsAPI);

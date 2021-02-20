@@ -1,11 +1,8 @@
-﻿using JuicySwapper.Main.Classes;
-using Newtonsoft.Json;
+﻿using JuicySwapper.Api;
 using System;
 using System.Diagnostics;
 using System.Media;
-using System.Net;
 using System.Windows.Forms;
-using static JuicySwapper.Classes.Json_Api.SatusAPI;
 
 namespace JuicySwapper.Main.GUI
 {
@@ -29,7 +26,7 @@ namespace JuicySwapper.Main.GUI
 
         private void DiscordBtn_Click(object sender, EventArgs e)
         {
-            Process.Start("https://juicyswapper.xyz/discord");
+            Process.Start($"{API.HOST}/{API.Discord}");
         }
 
         private void Close_Click(object sender, EventArgs e)

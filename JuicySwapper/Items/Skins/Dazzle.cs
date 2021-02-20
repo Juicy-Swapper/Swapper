@@ -40,8 +40,8 @@ namespace JuicySwapper.Items.Skins
 
         private void ConvertBytes_DoWork(object sender, DoWorkEventArgs e)
         {
-            //if (SwapUtilities.CheckIfCanSwap("Whiplash"))
-            //    return;
+            if (SwapUtilities.CheckIfCanSwap("Whiplash"))
+                return;
 
             ActionButton.Enabled = false;
 

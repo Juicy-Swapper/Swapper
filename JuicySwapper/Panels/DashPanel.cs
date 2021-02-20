@@ -4,8 +4,8 @@ using System;
 using System.Diagnostics;
 using System.Net;
 using System.Windows.Forms;
-using JuicySwapper.Main.Classes;
-using Type = JuicySwapper.Classes.Json_Api.ContentAPI.Type;
+using Type = JuicySwapper.Api.ContentAPI.Type;
+using JuicySwapper.Api;
 
 namespace JuicySwapper.Panels
 {
@@ -53,7 +53,7 @@ namespace JuicySwapper.Panels
         public void GetContent()
         {
             //Downloads JSON from Juicy Swapper API.
-            var ContentAPI = new WebClient().DownloadString($"{Api.HOST}/{Api.Content}");
+            var ContentAPI = new WebClient().DownloadString($"{API.HOST}/{API.Content}");
 
             //Deserializes JSON from Juicy Swapper API.
             Type StatusResponse = JsonConvert.DeserializeObject<Type>(ContentAPI);

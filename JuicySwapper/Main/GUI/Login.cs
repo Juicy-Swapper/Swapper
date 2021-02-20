@@ -15,7 +15,7 @@ namespace JuicySwapper.Main.GUI
             InitializeComponent();
             if (Settings.Default.MusicAct == "True")
             {
-                Music MusicController = new Music();
+                JuicyUtilities MusicController = new JuicyUtilities();
                 MusicController.MusicControl("True");
             }
         }
@@ -36,6 +36,8 @@ namespace JuicySwapper.Main.GUI
         private void SignUp_Click(object sender, EventArgs e)
         {
             string hwid = JuicyUtilities.GET_HARDWAREID;
+
+            string time = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
 
             MongoCRUD db = new MongoCRUD("JuicySwapper");
 
@@ -89,6 +91,7 @@ namespace JuicySwapper.Main.GUI
             {
                 username = Username.Text,
                 password = JuicyUtilities.Encrypt(password.Text),
+                CreatedAt = time,
                 paid = false,
                 boost = false,
                 HWID = hwid

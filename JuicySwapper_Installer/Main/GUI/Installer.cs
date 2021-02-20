@@ -1,6 +1,7 @@
 ﻿using DiscordRPC;
 using JuicySwapper_Installer.Main.Classes;
 using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace JuicySwapper_Installer.Main.GUI
@@ -16,7 +17,6 @@ namespace JuicySwapper_Installer.Main.GUI
             Juicy.SetRPCAction("", "");
         }
         
-
         private void InstallButton_Click(object sender, EventArgs e)
         {
             Hide();
@@ -28,6 +28,11 @@ namespace JuicySwapper_Installer.Main.GUI
         private void ExitButton_Click(object sender, System.EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void Discordinvite_Click(object sender, EventArgs e)
+        {
+            Process.Start($"juicyswapper.xyz/discord");
         }
     }
 }

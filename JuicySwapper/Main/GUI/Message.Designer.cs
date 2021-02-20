@@ -33,7 +33,7 @@
             this.CloseBtn = new System.Windows.Forms.PictureBox();
             this.ClosingTimer = new System.Windows.Forms.Timer(this.components);
             this.RoundForm = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,10 +58,12 @@
             this.RoundForm.ElipseRadius = 5;
             this.RoundForm.TargetControl = this;
             // 
-            // bunifuElipse1
+            // bunifuDragControl1
             // 
-            this.bunifuElipse1.ElipseRadius = 7;
-            this.bunifuElipse1.TargetControl = this;
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this;
+            this.bunifuDragControl1.Vertical = true;
             // 
             // Message
             // 
@@ -87,6 +89,6 @@
         private System.Windows.Forms.PictureBox CloseBtn;
         private System.Windows.Forms.Timer ClosingTimer;
         private Bunifu.Framework.UI.BunifuElipse RoundForm;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

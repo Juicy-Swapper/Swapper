@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JuicySwapper.Api;
+using System;
 using System.Diagnostics;
 using System.Windows.Forms;
 
@@ -18,7 +19,7 @@ namespace JuicySwapper.Main.GUI
 
         private void Backupverifybtn_Click(object sender, EventArgs e)
         {
-            JuicyUtilities.DiscordInvite();
+            Process.Start($"{API.HOST}/{API.Discord}");
         }
     }
 }

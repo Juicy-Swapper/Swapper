@@ -1,6 +1,3 @@
-C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\Juicy Swapper.exe.config
-C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\Juicy Swapper.exe
-C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\Juicy Swapper.pdb
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csprojAssemblyReference.cache
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\Interop.WMPLib.dll
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\AxInterop.WMPLib.dll
@@ -29,8 +26,6 @@ C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.c
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.Fody.CopyLocal.cache
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.CopyComplete
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\Juicy Swapper.exe
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\Juicy Swapper.pdb
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.BansheeOption.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.BansheeRen.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Banshee.resources
@@ -122,3 +117,9 @@ C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\mongocrypt.dll
 C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\snappy32.dll
 C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\snappy64.dll
 C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\libzstd.dll
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.EliteAgent.resources
+C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\JuicySwapper.exe.config
+C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\JuicySwapper.exe
+C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\JuicySwapper.pdb
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.exe
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.pdb
