@@ -1,4 +1,5 @@
 ﻿using JuicySwapper.Items.Skins;
+using JuicySwapper.Properties;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using System;
 using System.Diagnostics;
@@ -27,6 +28,13 @@ namespace JuicySwapper.Main.GUI
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            if (Settings.Default.AccVerify == "Guest")
+            {
+                Message a = new Message(Resources.Juicynoacc);
+                a.ShowDialog();
+                return;
+            }
+
             new RamirezAA().ShowDialog();
         }
     }

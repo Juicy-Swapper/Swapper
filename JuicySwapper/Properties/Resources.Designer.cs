@@ -183,6 +183,16 @@ namespace JuicySwapper.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Juicynoacc {
+            get {
+                object obj = ResourceManager.GetObject("Juicynoacc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap paidlogin {
             get {
                 object obj = ResourceManager.GetObject("paidlogin", resourceCulture);

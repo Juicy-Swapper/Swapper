@@ -659,6 +659,7 @@
     <None Include="Resources\passwordinvalid.png" />
     <None Include="Resources\Account created.png" />
     <None Include="Resources\hwidreset.png" />
+    <None Include="Resources\Juicynoacc.png" />
     <Content Include="Resources\test_92j_icon.ico" />
   </ItemGroup>
   <ItemGroup>

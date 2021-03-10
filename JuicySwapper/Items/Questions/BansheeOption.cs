@@ -1,4 +1,5 @@
 ﻿using JuicySwapper.Items.Skins;
+using JuicySwapper.Properties;
 using System;
 using System.Windows.Forms;
 
@@ -24,12 +25,26 @@ namespace JuicySwapper.Main.GUI
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            if (Settings.Default.AccVerify == "Guest")
+            {
+                Message a = new Message(Resources.Juicynoacc);
+                a.ShowDialog();
+                return;
+            }
+
             new BansheeRen().ShowDialog();
             Close();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            if (Settings.Default.AccVerify == "Guest")
+            {
+                Message a = new Message(Resources.Juicynoacc);
+                a.ShowDialog();
+                return;
+            }
+
             new BansheeTO().ShowDialog();
             Close();
         }

@@ -1,6 +1,7 @@
 ﻿using JuicySwapper.Main.Panels;
 using System.Windows.Forms;
 using JuicySwapper.Items.Pickaxes;
+using JuicySwapper.Properties;
 
 namespace JuicySwapper.Panels
 {
@@ -44,6 +45,13 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton1_Click(object sender, System.EventArgs e)
         {
+            if (Settings.Default.AccVerify == "Guest")
+            {
+                Message a = new Message(Resources.Juicynoacc);
+                a.ShowDialog();
+                return;
+            }
+
             new candyaxe().ShowDialog();
         }
 

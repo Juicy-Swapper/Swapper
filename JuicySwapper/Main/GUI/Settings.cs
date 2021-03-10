@@ -25,6 +25,13 @@ namespace JuicySwapper.Main.GUI
 
         private void ConvertitemsBtn_Click(object sender, EventArgs e)
         {
+            if(Settings.Default.AccVerify == "Guest")
+            {
+                Message a = new Message(Resources.Juicynoacc);
+                a.ShowDialog();
+                return;
+            }
+
             int num = 0;
             string text = "";
 
@@ -200,6 +207,13 @@ namespace JuicySwapper.Main.GUI
 
         private void Backupverifybtn_Click(object sender, EventArgs e)
         {
+            if (Settings.Default.AccVerify == "Guest")
+            {
+                Message a = new Message(Resources.Juicynoacc);
+                a.ShowDialog();
+                return;
+            }
+
             new BackupVerify().ShowDialog();
         }
 

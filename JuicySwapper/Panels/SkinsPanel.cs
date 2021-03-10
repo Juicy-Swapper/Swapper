@@ -6,6 +6,7 @@ using System;
 using System.Diagnostics;
 using System.Net;
 using System.Windows.Forms;
+using JuicySwapper.Properties;
 
 namespace JuicySwapper.Panels
 {
@@ -41,6 +42,13 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
+            if (Settings.Default.AccVerify == "Guest")
+            {
+                Message a = new Message(Resources.Juicynoacc);
+                a.ShowDialog();
+                return;
+            }
+
             new SparkleSpecialist().ShowDialog();
         }
 
@@ -96,6 +104,13 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton11_Click(object sender, EventArgs e)
         {
+            if (Settings.Default.AccVerify == "Guest")
+            {
+                Message a = new Message(Resources.Juicynoacc);
+                a.ShowDialog();
+                return;
+            }
+
             new RenegadeRaider().ShowDialog();
         }
 
@@ -111,7 +126,26 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton16_Click(object sender, EventArgs e)
         {
+            if (Settings.Default.AccVerify == "Guest")
+            {
+                Message a = new Message(Resources.Juicynoacc);
+                a.ShowDialog();
+                return;
+            }
+
             new Fate().ShowDialog();
+        }
+
+        private void bunifuImageButton12_Click(object sender, EventArgs e)
+        {
+            if (Settings.Default.AccVerify == "Guest")
+            {
+                Message a = new Message(Resources.Juicynoacc);
+                a.ShowDialog();
+                return;
+            }
+
+            new EliteAgent().ShowDialog();
         }
     }
 }
