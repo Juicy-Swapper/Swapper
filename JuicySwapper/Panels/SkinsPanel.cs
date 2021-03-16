@@ -12,7 +12,7 @@ namespace JuicySwapper.Panels
 {
     public partial class SkinsPanel : UserControl
     {
-        private static SkinsPanel _instance;      
+        private static SkinsPanel _instance;
         public static SkinsPanel Instance
         {
             get
@@ -146,6 +146,11 @@ namespace JuicySwapper.Panels
             }
 
             new EliteAgent().ShowDialog();
+        }
+
+        private void bunifuImageButton13_Click(object sender, EventArgs e)
+        {
+            new Blazetorenegade().ShowDialog();
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using JuicySwapper.Api;
-using JuicySwapper.Main.GUI;
+using JuicySwapper.Main.Classes;
 using JuicySwapper.Properties;
 using Newtonsoft.Json;
 using System.Collections.Generic;
@@ -10,17 +10,33 @@ using static JuicySwapper.Api.OffsetsAPI;
 
 namespace JuicySwapper.Main.Classes
 {
-    class SwapUtilities
+    public class SwapUtilities
     {
+		
 		public string[] GetSwapPath()
 		{
-			string Skin_Body_Path = $"{Settings.Default.pakPath}\\pakchunk10_s4-WindowsClient.ucas";
-			string Skin_Head_Path = $"{Settings.Default.pakPath}\\pakchunk10_s5-WindowsClient.ucas";
-			string Pickaxe_Mesh_Path = $"{Settings.Default.pakPath}\\pakchunk10_s4-WindowsClient.ucas";
-			string Backbling_Path = $"{Settings.Default.pakPath}\\pakchunk10_s1-WindowsClient.ucas";
-			string Emote_Path = $"{Settings.Default.pakPath}\\pakchunk10_s2-WindowsClient.pak";
+			var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
+
+			string Skin_Body_Path = $"{Pathtopaks}\\pakchunk10_s4-WindowsClient.ucas";
+			string Skin_Head_Path = $"{Pathtopaks}\\pakchunk10_s5-WindowsClient.ucas";
+			string Pickaxe_Mesh_Path = $"{Pathtopaks}\\pakchunk10_s4-WindowsClient.ucas";
+			string Backbling_Path = $"{Pathtopaks}\\pakchunk10_s1-WindowsClient.ucas";
+			string Emote_Path = $"{Pathtopaks}\\pakchunk10_s2-WindowsClient.pak";
 
 			return new string[] { Skin_Body_Path, Skin_Head_Path, Pickaxe_Mesh_Path, Backbling_Path, Emote_Path };
+		}
+
+		public string[] GetUcas()
+        {
+			var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
+
+			string a = $"{Pathtopaks}\\pakchunk10_s1-WindowsClient.ucas";
+			string b = $"{Pathtopaks}\\pakchunk10_s2-WindowsClient.ucas";
+			string c = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
+			string d = $"{Pathtopaks}\\pakchunk10_s4-WindowsClient.ucas";
+			string e = $"{Pathtopaks}\\pakchunk10_s5-WindowsClient.pak";
+
+			return new string[] { a, b, c, d, e };
 		}
 
 		public int[] GetSwapOffset()
@@ -33,6 +49,14 @@ namespace JuicySwapper.Main.Classes
 			int Offset_Temp_gender = 134101198;
 
 			return new int[] { Offset_Skin_Body, Offset_Skin_Head, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh, Offset_Temp_gender };
+		}
+
+		public string[] GetEACPath()
+        {
+			var PathtoEAC = $"{Settings.Default.InstallationPath}\\FortniteGame\\Binaries\\Win64\\EasyAntiCheat\\Launcher";
+			string One = $"{PathtoEAC}\\SplashScreen.png";
+
+			return new string[] { One };
 		}
 
 		public int[] GetSwapOffsetTemp()
@@ -48,11 +72,12 @@ namespace JuicySwapper.Main.Classes
 
 		public string[] GetSwapPathTemp()
 		{
-			string TempBackCapMat = $"{Settings.Default.pakPath}\\pakchunk10_s10-WindowsClient.ucas";
-			string TempBackfx = $"{Settings.Default.pakPath}\\pakchunk10_s14-WindowsClient.ucas";
-			string Pickaxe_Mesh_Path = $"{Settings.Default.pakPath}\\pakchunk10_s3-WindowsClient.ucas";
-			string Backbling_Path = $"{Settings.Default.pakPath}\\pakchunk10_s1-WindowsClient.ucas";
-			string Emote_Path = $"{Settings.Default.pakPath}\\pakchunk10_s2-WindowsClient.pak";
+			var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
+			string TempBackCapMat = $"{Pathtopaks}\\pakchunk10_s10-WindowsClient.ucas";
+			string TempBackfx = $"{Pathtopaks}\\pakchunk10_s14-WindowsClient.ucas";
+			string Pickaxe_Mesh_Path = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
+			string Backbling_Path = $"{Pathtopaks}\\pakchunk10_s1-WindowsClient.ucas";
+			string Emote_Path = $"{Pathtopaks}\\pakchunk10_s2-WindowsClient.pak";
 
 			return new string[] { TempBackCapMat, TempBackfx, Pickaxe_Mesh_Path, Backbling_Path, Emote_Path };
 		}

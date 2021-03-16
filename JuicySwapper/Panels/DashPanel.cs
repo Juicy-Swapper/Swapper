@@ -40,16 +40,6 @@ namespace JuicySwapper.Panels
                 SidebarPanel.Instance.BringToFront();
         }
 
-        private void bunifuFlatButton7_Click(object sender, System.EventArgs e)
-        {
-            Environment.Exit(0);
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("https://juicyswapper.xyz");
-        }
-
         public void GetContent()
         {
             //Downloads JSON from Juicy Swapper API.

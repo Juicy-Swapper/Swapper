@@ -16,8 +16,6 @@ namespace JuicySwapper.Main.GUI
             JuicyUtilities.SetRPCAction("In Dashboard", "");
             JuicyUtilities.CloseEpicProcesses();
             SwapUtilities.Requestoffsets();
-            //SwapUtilities.RequestPaks();
-            JuicyUtilities.FindPaks();
             timer1.Start();
         }
 

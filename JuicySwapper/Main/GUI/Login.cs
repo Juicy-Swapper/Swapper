@@ -7,17 +7,54 @@ namespace JuicySwapper.Main.GUI
 {
     public partial class Login : Form
     {
-        bool _try;
-        bool _hwidtry;
+        bool _try, _hwidtry;
 
+        [Obsolete]
         public Login()
         {
             InitializeComponent();
+
+            Username.Text = Settings.Default.username;
+            password.Text = Settings.Default.Password;
+
+            if (string.IsNullOrEmpty(Username.Text))
+                Username.Text = "Enter a username...";
+
+            if (string.IsNullOrEmpty(password.Text))
+                password.Text = "Enter a password...";
+
+            if (password.Text != "Enter a password...")
+                password.isPassword = true;
+
             if (Settings.Default.MusicAct == "True")
             {
                 JuicyUtilities MusicController = new JuicyUtilities();
                 MusicController.MusicControl("True");
             }
+        }
+
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Settings.Default.username = Username.Text;
+            Settings.Default.Password = password.Text;
+            Settings.Default.Save();
+        }
+
+        private void username_Enter(object sender, EventArgs e)
+        {
+            if (Username.Text != "Enter a username...")
+                return;
+
+            Username.ResetText();
+        }
+
+        private void password_Enter(object sender, EventArgs e)
+        {
+            password.isPassword = true;
+            if (password.Text != "Enter a password...")
+                return;
+            password.ResetText();
         }
 
         private void LoginGest_Click(object sender, EventArgs e)
@@ -101,20 +138,14 @@ namespace JuicySwapper.Main.GUI
             Account_created.ShowDialog();
         }
 
-        private void username_Enter(object sender, EventArgs e)
-        {
-            Username.ResetText();
-        }
-
-        private void password_Enter(object sender, EventArgs e)
-        {
-            password.ResetText();
-            password.isPassword = true;
-        }
-
         private void ExitSwapper_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Login_FormClosing(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
         }
 
         //todo

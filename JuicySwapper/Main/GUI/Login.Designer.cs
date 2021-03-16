@@ -26,6 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
+        [System.Obsolete]
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -38,6 +39,7 @@
             this.ExitSwapper = new System.Windows.Forms.PictureBox();
             this.CurvaSidebar = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.LoginFree)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PaidLogin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NitroLogin)).BeginInit();
@@ -146,6 +148,10 @@
             this.bunifuDragControl1.TargetControl = this;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -164,6 +170,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.LoginFree)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PaidLogin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NitroLogin)).EndInit();
@@ -182,5 +189,6 @@
         private System.Windows.Forms.PictureBox ExitSwapper;
         private Bunifu.Framework.UI.BunifuElipse CurvaSidebar;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -249,6 +249,29 @@ namespace JuicySwapper.IO
 
     public class ByteResearcher
     {
+        public static bool Replace(int offset, string pak, string search, byte[] Replace, int arg)
+        {
+            byte[] a = Encoding.UTF8.GetBytes(search);
+            if (File.Exists(pak))
+            {
+                GetOffset(offset, pak, a);
+
+                long Offset_current = Settings.Default.current_offset - arg;
+
+                MessageBox.Show("" + Offset_current);
+                BinaryWriter binaryWriter = new BinaryWriter(File.Open(pak, FileMode.Open, FileAccess.ReadWrite));
+                binaryWriter.BaseStream.Seek(offset, SeekOrigin.Begin);
+                binaryWriter.Write(Replace);
+                binaryWriter.Close();
+
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public static bool Convert(long Offset, string Pak, byte[] Convert, byte[] Revert, long max = 0, long additional = 0, bool minus = false, bool messages = false)
         {
             if (File.Exists(Pak))

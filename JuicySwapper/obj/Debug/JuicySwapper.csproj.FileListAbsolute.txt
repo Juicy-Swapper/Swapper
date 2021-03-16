@@ -36,7 +36,6 @@ C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.I
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Spitfire.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.candyaxe.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Renegade.resources
-C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Misc.JuicyEAC1.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.BlackShield.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.BattleShroud.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Dazzle.resources
@@ -123,3 +122,4 @@ C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\JuicySwapper.exe
 C:\Users\User\Desktop\Juicy\github\build\Juicy Swapper\JuicySwapper.pdb
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.exe
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.pdb
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Blazetorenegade.resources

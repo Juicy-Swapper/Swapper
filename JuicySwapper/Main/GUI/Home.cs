@@ -1,10 +1,10 @@
-﻿using DiscordRPC;
-using JuicySwapper.Main.Classes;
+﻿using JuicySwapper.Main.Classes;
 using JuicySwapper.Main.GUI;
 using JuicySwapper.Panels;
 using JuicySwapper.Properties;
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace JuicySwapper
@@ -12,16 +12,12 @@ namespace JuicySwapper
     public partial class Home : Form
     {
         public static string Rpc;
-        public DiscordRpcClient discordRpcClient_0 = new DiscordRpcClient("704324460291031047");
-
-        public static string GetPaksFolder
-        {
-            get { return Settings.Default.pakPath; }
-        }
 
         public Home()
         {
             InitializeComponent();
+
+            Settings.Default.InstallationPath = EpicGames.GetEpicInstallLocations().FirstOrDefault(x => x.AppName == "Fortnite")?.InstallLocation;
 
             Settings.Default.pakPath = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
             Settings.Default.Save();

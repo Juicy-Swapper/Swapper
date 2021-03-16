@@ -33,14 +33,6 @@ namespace JuicySwapper.Panels
         public PickaxesPanel()
         {
             InitializeComponent();
-            if (!Sidebar.Controls.Contains(SidebarPanel.Instance))
-            {
-                Sidebar.Controls.Add(SidebarPanel.Instance);
-                SidebarPanel.Instance.Dock = DockStyle.Fill;
-                SidebarPanel.Instance.BringToFront();
-            }
-            else
-                SidebarPanel.Instance.BringToFront();
         }
 
         private void bunifuImageButton1_Click(object sender, System.EventArgs e)

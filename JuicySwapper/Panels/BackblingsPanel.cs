@@ -20,10 +20,7 @@ namespace JuicySwapper.Panels
             }
         }
 
-        public BackblingsPanel()
-        {
-            InitializeComponent();
-        }
+        public BackblingsPanel() => InitializeComponent();
 
         private void Sidebar_Paint(object sender, PaintEventArgs e)
         {
@@ -35,11 +32,6 @@ namespace JuicySwapper.Panels
             }
             else
                 SidebarPanel.Instance.BringToFront();
-        }
-
-        private void bunifuFlatButton7_Click(object sender, System.EventArgs e)
-        {
-            Environment.Exit(0);
         }
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)

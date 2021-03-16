@@ -16,14 +16,12 @@ using System.Management;
 using System.Security.Cryptography;
 using System.Media;
 using System.Threading;
-using System.ComponentModel;
+using System.Collections.Generic;
 
 namespace JuicySwapper
 {
 	public class JuicyUtilities
 	{
-		public static InstallLocation LauncherInstalled => GetLauncherInstalled();
-
 		public static readonly DiscordRpcClient DiscordRPC = new DiscordRpcClient("779400510566039624");
 		public static void SetRPCLocation(string Location, string ImageKey)
 		{
@@ -45,26 +43,6 @@ namespace JuicySwapper
 			});
 		}
 
-		public static void FindPaks()
-		{
-			foreach (InstallLocation.Installation installation in LauncherInstalled.InstallationList)
-			{
-				if (installation.AppName == "Fortnite")
-					Settings.Default.InstallationPath = installation.InstallLocation; Settings.Default.Save();
-			}
-		}
-
-		static InstallLocation GetLauncherInstalled()
-		{
-			var path = Path.Combine(GetFolderPath(SpecialFolder.CommonApplicationData),
-				"Epic\\UnrealEngineLauncher\\LauncherInstalled.dat");
-
-			if (!File.Exists(path))
-				return new InstallLocation();
-			else
-				return JsonConvert.DeserializeObject<InstallLocation>(File.ReadAllText(path));
-		}
-
 		//killfortnite
 		public static void CloseEpicProcesses()
 		{
@@ -77,10 +55,11 @@ namespace JuicySwapper
 			}
 		}
 
-		static WebClient ProgramClient = new WebClient();
 		//GetStatus
 		public static void GetStatus()
 		{
+			WebClient ProgramClient = new WebClient();
+
 			try
 			{
 				new WebClient().DownloadString(API.HOST);
@@ -168,6 +147,42 @@ namespace JuicySwapper
 			return clearText;
 		}
 
+		public static bool DownloadConvert(string file, string link, bool messages)
+        {
+			WebClient Download = new WebClient();
+
+			if (!File.Exists(file))
+            {
+				if (messages)
+					MessageBox.Show("The pak file specified doesn't exist");
+
+				return false;
+			}
+            else
+            {
+				Download.DownloadFile(link, file);
+				return true;
+			}
+		}
+
+		public static bool DownloadRevert(string file, bool messages)
+		{
+			WebClient Download = new WebClient();
+
+			if (!File.Exists(file))
+			{
+				if (messages)
+					MessageBox.Show("The pak file specified doesn't exist");
+
+				return false;
+			}
+			else
+			{
+				Download.DownloadFile($"{API.HOST}/{API.Images}/splashscreen.png", file);
+				return true;
+			}
+		}
+
 		public static string Decrypt(string cipherText)
 		{
 			string EncryptionKey = "abc123";
@@ -201,22 +216,32 @@ namespace JuicySwapper
 				snd.Stop();
 		}
 	}
+}
 
-	public class InstallLocation
+static class EpicGames
+{
+	public static List<Installation> GetEpicInstallLocations()
+	{
+		var path = Path.Combine(GetFolderPath(SpecialFolder.CommonApplicationData), "Epic\\UnrealEngineLauncher\\LauncherInstalled.dat");
+
+		if (!Directory.Exists(Path.GetDirectoryName(path)) || !File.Exists(path))
+			return null;
+
+		return JsonConvert.DeserializeObject<EpicInstallLocations>(File.ReadAllText(path)).InstallationList;
+	}
+
+	public class EpicInstallLocations
 	{
 		[JsonProperty("InstallationList")]
-		public Installation[] InstallationList { get; set; }
+		public List<Installation> InstallationList { get; set; }
+	}
 
-		public class Installation
-		{
-			[JsonProperty("InstallLocation")]
-			public string InstallLocation { get; set; }
+	public class Installation
+	{
+		[JsonProperty("InstallLocation")]
+		public string InstallLocation { get; set; }
 
-			[JsonProperty("AppName")]
-			public string AppName { get; set; }
-
-			[JsonProperty("AppVersion")]
-			public string AppVersion { get; set; }
-		}
+		[JsonProperty("AppName")]
+		public string AppName { get; set; }
 	}
 }

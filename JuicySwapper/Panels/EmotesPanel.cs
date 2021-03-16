@@ -34,9 +34,6 @@ namespace JuicySwapper.Panels
                 SidebarPanel.Instance.BringToFront();
         }
 
-        private void bunifuFlatButton7_Click(object sender, System.EventArgs e)
-        {
-            Environment.Exit(0);
-        }
+        private void bunifuFlatButton7_Click() => Environment.Exit(0);
     }
 }

@@ -1,13 +1,12 @@
 ﻿using JuicySwapper.Main.Panels;
 using System;
 using System.Windows.Forms;
-using JuicySwapper.Items.Misc;
 
 namespace JuicySwapper.Panels
 {
     public partial class MiscPanel : UserControl
     {
-        private static MiscPanel _instance;      
+        private static MiscPanel _instance;
         public static MiscPanel Instance
         {
             get
