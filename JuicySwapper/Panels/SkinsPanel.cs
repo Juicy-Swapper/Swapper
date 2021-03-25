@@ -150,7 +150,56 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton13_Click(object sender, EventArgs e)
         {
-            new Blazetorenegade().ShowDialog();
+            new RenegadeOption().ShowDialog();
+        }
+
+        private void bunifuImageButton11_Click_1(object sender, EventArgs e)
+        {
+            if (Settings.Default.AccVerify == "Guest")
+            {
+                Message a = new Message(Resources.Juicynoacc);
+                a.ShowDialog();
+                return;
+            }
+
+            new GhoulOG().ShowDialog();
+        }
+
+        private void bunifuImageButton17_Click(object sender, EventArgs e)
+        {
+            if (Settings.Default.AccVerify == "Guest")
+            {
+                Message a = new Message(Resources.Juicynoacc);
+                a.ShowDialog();
+                return;
+            }
+
+            new RedReindeer().ShowDialog();
+        }
+
+        private void SkinsPanel_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton20_Click(object sender, EventArgs e)
+        {
+            new WildcatBlue().ShowDialog();
+        }
+
+        private void bunifuImageButton19_Click(object sender, EventArgs e)
+        {
+            new Siren().ShowDialog();
+        }
+
+        private void bunifuImageButton21_Click(object sender, EventArgs e)
+        {
+            new Travisscooter().ShowDialog();
+        }
+
+        private void bunifuImageButton18_Click(object sender, EventArgs e)
+        {
+            new RenegadeCOption().ShowDialog();
         }
     }
 }

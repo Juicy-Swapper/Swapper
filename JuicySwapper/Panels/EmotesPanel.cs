@@ -1,4 +1,5 @@
-﻿using JuicySwapper.Main.Panels;
+﻿using JuicySwapper.Items.Emotes;
+using JuicySwapper.Main.Panels;
 using System;
 using System.Windows.Forms;
 
@@ -35,5 +36,10 @@ namespace JuicySwapper.Panels
         }
 
         private void bunifuFlatButton7_Click() => Environment.Exit(0);
+
+        private void bunifuImageButton13_Click(object sender, EventArgs e)
+        {
+            new Freemix().ShowDialog();
+        }
     }
 }

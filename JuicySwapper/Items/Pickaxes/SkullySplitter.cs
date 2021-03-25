@@ -57,10 +57,6 @@ namespace JuicySwapper.Items.Pickaxes
                 LogBox.Text += "\n[LOG] Mat added";
             }
 
-            bool Swap2 = Researcher.Convert(Offset_current, SwapPath[2], Mat, Mat1, 0, 0, false, false);
-            if (Swap2)
-                LogBox.Text += "\n[LOG] Mat added";
-
             ActionButton.Image = Resources.RevertBtn;
             LogBox.Text += "\nConverted!";
         }

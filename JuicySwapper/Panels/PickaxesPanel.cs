@@ -61,5 +61,15 @@ namespace JuicySwapper.Panels
         {
             new TatAxe().ShowDialog();
         }
+
+        private void bunifuImageButton5_Click(object sender, System.EventArgs e)
+        {
+            new FNCS().ShowDialog();
+        }
+
+        private void bunifuImageButton6_Click(object sender, System.EventArgs e)
+        {
+            new Studded().ShowDialog();
+        }
     }
 }

@@ -1,9 +1,9 @@
 ﻿using JuicySwapper.Main.Panels;
 using System;
 using System.Windows.Forms;
-using JuicySwapper.Items.BackBlings;
 using JuicySwapper.Main.GUI;
 using JuicySwapper.Properties;
+using JuicySwapper.Items.BackBlings;
 
 namespace JuicySwapper.Panels
 {
@@ -34,25 +34,14 @@ namespace JuicySwapper.Panels
                 SidebarPanel.Instance.BringToFront();
         }
 
-        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        private void bunifuImageButton13_Click(object sender, EventArgs e)
         {
-            Message Disabled = new Message(Resources.disabled);
-            Disabled.ShowDialog();
-            // new BlackShield().ShowDialog();
+            new SixString().ShowDialog();
         }
 
-        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            Message Disabled = new Message(Resources.disabled);
-            Disabled.ShowDialog();
-            // new BattleShroud().ShowDialog();
-        }
-
-        private void bunifuImageButton4_Click(object sender, EventArgs e)
-        {
-            Message Disabled = new Message(Resources.disabled);
-            Disabled.ShowDialog();
-            // new IronCage().ShowDialog();
+            new Insignia().ShowDialog();
         }
     }
 }
