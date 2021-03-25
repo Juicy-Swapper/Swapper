@@ -17,26 +17,13 @@ namespace JuicySwapper.Main.Classes
 		{
 			var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
 
-			string Skin_Body_Path = $"{Pathtopaks}\\pakchunk10_s4-WindowsClient.ucas";
-			string Skin_Head_Path = $"{Pathtopaks}\\pakchunk10_s5-WindowsClient.ucas";
-			string Pickaxe_Mesh_Path = $"{Pathtopaks}\\pakchunk10_s4-WindowsClient.ucas";
-			string Backbling_Path = $"{Pathtopaks}\\pakchunk10_s1-WindowsClient.ucas";
-			string Emote_Path = $"{Pathtopaks}\\pakchunk10_s2-WindowsClient.pak";
+			string Skin_Body_Path = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
+			string Skin_Head_Path = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
+			string Pickaxe_Mesh_Path = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
+			string Backbling_Path = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
+			string Emote_Path = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
 
 			return new string[] { Skin_Body_Path, Skin_Head_Path, Pickaxe_Mesh_Path, Backbling_Path, Emote_Path };
-		}
-
-		public string[] GetUcas()
-        {
-			var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
-
-			string a = $"{Pathtopaks}\\pakchunk10_s1-WindowsClient.ucas";
-			string b = $"{Pathtopaks}\\pakchunk10_s2-WindowsClient.ucas";
-			string c = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
-			string d = $"{Pathtopaks}\\pakchunk10_s4-WindowsClient.ucas";
-			string e = $"{Pathtopaks}\\pakchunk10_s5-WindowsClient.pak";
-
-			return new string[] { a, b, c, d, e };
 		}
 
 		public int[] GetSwapOffset()
@@ -59,34 +46,11 @@ namespace JuicySwapper.Main.Classes
 			return new string[] { One };
 		}
 
-		public int[] GetSwapOffsetTemp()
-		{
-			int TempBackCapMat = 20000000;
-			int TempBackfx = 2500000;
-			int Offset_Pick_Mesh = 10000000;
-			int Offset_Back_Mesh = 146504298;
-			int Offset_Emote_Mesh = Settings.Default.offset_emote_mesh;
-
-			return new int[] { TempBackCapMat, TempBackfx, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh };
-		}
-
-		public string[] GetSwapPathTemp()
-		{
-			var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
-			string TempBackCapMat = $"{Pathtopaks}\\pakchunk10_s10-WindowsClient.ucas";
-			string TempBackfx = $"{Pathtopaks}\\pakchunk10_s14-WindowsClient.ucas";
-			string Pickaxe_Mesh_Path = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
-			string Backbling_Path = $"{Pathtopaks}\\pakchunk10_s1-WindowsClient.ucas";
-			string Emote_Path = $"{Pathtopaks}\\pakchunk10_s2-WindowsClient.pak";
-
-			return new string[] { TempBackCapMat, TempBackfx, Pickaxe_Mesh_Path, Backbling_Path, Emote_Path };
-		}
-
 		public string[] GetBackupPaths()
 		{
-			string Skin_Body_Path = "PakBackup/pakchunk10_s4-WindowsClient.ucas";
-			string Skin_Head_Path = "PakBackup/pakchunk10_s5-WindowsClient.ucas";
-			string Pickaxe_Mesh_Path = "PakBackup/pakchunk10_s4-WindowsClient.ucas";
+			string Skin_Body_Path = "PakBackup/pakchunk10_s3-WindowsClient.ucas";
+			string Skin_Head_Path = "PakBackup/pakchunk10_s3-WindowsClient.ucas";
+			string Pickaxe_Mesh_Path = "PakBackup/pakchunk10_s3-WindowsClient.ucas";
 			string Backbling_Path = "PakBackup/pakchunk10_s1-WindowsClient.ucas";
 			string Emote_Path = "PakBackup/pakchunk10_s2-WindowsClient.pak";
 
@@ -113,55 +77,41 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.EliteAgentEnabled
 		};
 
-		//public List<bool> Commando = new List<bool>()
-		//{
-		//	Settings.Default.RamirezEnabled
-		//};
+		public List<bool> NiteLite = new List<bool>()
+		{
+			Settings.Default.GhoulOGEnabled,
+			Settings.Default.RednoseEnabled
+		};
 
-		//public List<bool> ArcticAssassin = new List<bool>()
-		//{
-		//	Settings.Default.RamirezAAEnabled
-		//};
+		public List<bool> Blaze = new List<bool>()
+		{
+			Settings.Default.BrenegadeEnabled,
+			Settings.Default.BrenegadeCEnabled
+		};
 
-		//public List<bool> Renegade = new List<bool>()
-		//{
-		//	Settings.Default.BansheeRenEnabled
-		//};
+		public List<bool> Redline = new List<bool>()
+		{
+			Settings.Default.RrenegadeEnabled,
+			Settings.Default.RrenegadeCEnabled
+		};
 
-		//public List<bool> TacticsOfficer = new List<bool>()
-		//{
-		//	Settings.Default.BansheeTOEnabled
-		//};
+		public List<bool> GingerReneade = new List<bool>()
+		{
+			Settings.Default.RrenegadeEnabled,
+			Settings.Default.GrenegadeCEnabled
+		};
 
-		//public List<bool> Pathfinder = new List<bool>()
-		//{
-		//	Settings.Default.WildcatEnabled
-		//};
+		public List<bool> Diva = new List<bool>()
+		{
+			Settings.Default.SirenEnabled,
+			Settings.Default.TravisEnabled
+		};
 
-		//public List<bool> Shadowbird = new List<bool>()
-		//{
-		//	Settings.Default.sunbirdEnabled
-		//};
-
-		//public List<bool> Scout = new List<bool>()
-		//{
-		//	Settings.Default.SpitfireEnabled
-		//};
-
-		//public List<bool> Tracker = new List<bool>()
-		//{
-		//	Settings.Default.HawkEnabled
-		//};
-
-		//public List<bool> Trooper = new List<bool>()
-		//{
-		//	Settings.Default.RenegadeEnabled
-		//};
-
-		//public List<bool> RedShield = new List<bool>()
-		//{
-		//	Settings.Default.BlackShieldEnabled
-		//};
+		public List<bool> DivaB = new List<bool>()
+		{
+			Settings.Default.SixStringEnabled,
+			Settings.Default.InsigniaEnabled
+		};
 
 		public bool CheckIfCanSwap(string s)
 		{
@@ -187,6 +137,49 @@ namespace JuicySwapper.Main.Classes
 					else
 						MessageBox.Show("A skin using Whiplash is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
+
+				case "Nitelite":
+					if (NiteLite.All(a => a) || NiteLite.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A skin using Nitelite is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
+
+				case "Blaze":
+					if (Blaze.All(a => a) || Blaze.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A skin using Blaze is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
+
+				case "Redline":
+					if (Redline.All(a => a) || Redline.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A skin using Redline is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
+
+				case "GingerReneade":
+					if (GingerReneade.All(a => a) || GingerReneade.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A skin using GingerReneade is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
+
+				case "Diva":
+					if (Diva.All(a => a) || Diva.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A skin using Diamond Diva is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break; 
+
+				case "DivaB":
+					if (GingerReneade.All(a => a) || GingerReneade.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A skin using Diamond Diva back pack is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
+
 			}
 			return true;
 		}

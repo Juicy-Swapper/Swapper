@@ -219,6 +219,8 @@ namespace JuicySwapper.Main.GUI
                 Settings.Default.AccVerify = "Free";
 
             Settings.Default.Name = Username.Text;
+            Settings.Default.username = Username.Text;
+            Settings.Default.Password = password.Text;
             Settings.Default.Save();
 
             Hide();

@@ -190,6 +190,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Items\Backblings\SixString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Backblings\SixString.designer.cs">
+      <DependentUpon>SixString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Emotes\Freemix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Emotes\Freemix.designer.cs">
+      <DependentUpon>Freemix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Backblings\Insignia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Backblings\Insignia.designer.cs">
+      <DependentUpon>Insignia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Pickaxes\Studded.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Pickaxes\Studded.designer.cs">
+      <DependentUpon>Studded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Pickaxes\FNCS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Pickaxes\FNCS.designer.cs">
+      <DependentUpon>FNCS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Pickaxes\TatAxe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +237,78 @@
     </Compile>
     <Compile Include="Items\Pickaxes\IronBeak.designer.cs">
       <DependentUpon>IronBeak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Questions\RenegadeCOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Questions\RenegadeCOption.designer.cs">
+      <DependentUpon>RenegadeCOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Questions\RenegadeOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Questions\RenegadeOption.designer.cs">
+      <DependentUpon>RenegadeOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\BlazetorenegadeCheckered.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\BlazetorenegadeCheckered.designer.cs">
+      <DependentUpon>BlazetorenegadeCheckered.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\GingRenegadeChecker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\GingRenegadeChecker.designer.cs">
+      <DependentUpon>GingRenegadeChecker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\GingRenegade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\GingRenegade.designer.cs">
+      <DependentUpon>GingRenegade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\Redlinetorenegaderaidercheckered.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Redlinetorenegaderaidercheckered.designer.cs">
+      <DependentUpon>Redlinetorenegaderaidercheckered.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\Travisscooter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Travisscooter.designer.cs">
+      <DependentUpon>Travisscooter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\Siren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Siren.designer.cs">
+      <DependentUpon>Siren.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\WildcatBlue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\WildcatBlue.designer.cs">
+      <DependentUpon>WildcatBlue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\Redlinetorenegaderaider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Redlinetorenegaderaider.designer.cs">
+      <DependentUpon>Redlinetorenegaderaider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\RedReindeer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\RedReindeer.designer.cs">
+      <DependentUpon>RedReindeer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\GhoulOG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\GhoulOG.designer.cs">
+      <DependentUpon>GhoulOG.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Skins\Blazetorenegade.cs">
       <SubType>Form</SubType>
@@ -331,24 +433,6 @@
     <Compile Include="Main\Classes\Api.cs" />
     <Compile Include="Main\Classes\Mongodb.cs" />
     <Compile Include="Main\Classes\SwapUtilities.cs" />
-    <Compile Include="Items\Backblings\BattleShroud.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Backblings\BattleShroud.designer.cs">
-      <DependentUpon>BattleShroud.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Backblings\IronCage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Backblings\IronCage.designer.cs">
-      <DependentUpon>IronCage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Backblings\BlackShield.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Backblings\BlackShield.designer.cs">
-      <DependentUpon>BlackShield.cs</DependentUpon>
-    </Compile>
     <Compile Include="Items\Questions\BansheeOption.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -467,14 +551,20 @@
     </Compile>
     <Compile Include="Main\Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Items\Backblings\BattleShroud.resx">
-      <DependentUpon>BattleShroud.cs</DependentUpon>
+    <EmbeddedResource Include="Items\Backblings\SixString.resx">
+      <DependentUpon>SixString.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Items\Backblings\IronCage.resx">
-      <DependentUpon>IronCage.cs</DependentUpon>
+    <EmbeddedResource Include="Items\Emotes\Freemix.resx">
+      <DependentUpon>Freemix.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Items\Backblings\BlackShield.resx">
-      <DependentUpon>BlackShield.cs</DependentUpon>
+    <EmbeddedResource Include="Items\Backblings\Insignia.resx">
+      <DependentUpon>Insignia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Pickaxes\Studded.resx">
+      <DependentUpon>Studded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Pickaxes\FNCS.resx">
+      <DependentUpon>FNCS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Pickaxes\TatAxe.resx">
       <DependentUpon>TatAxe.cs</DependentUpon>
@@ -485,8 +575,44 @@
     <EmbeddedResource Include="Items\Pickaxes\IronBeak.resx">
       <DependentUpon>IronBeak.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Items\Questions\RenegadeCOption.resx">
+      <DependentUpon>RenegadeCOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Questions\RenegadeOption.resx">
+      <DependentUpon>RenegadeOption.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\Questions\BansheeOption.resx">
       <DependentUpon>BansheeOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\BlazetorenegadeCheckered.resx">
+      <DependentUpon>BlazetorenegadeCheckered.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\GingRenegadeChecker.resx">
+      <DependentUpon>GingRenegadeChecker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\GingRenegade.resx">
+      <DependentUpon>GingRenegade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Redlinetorenegaderaidercheckered.resx">
+      <DependentUpon>Redlinetorenegaderaidercheckered.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Travisscooter.resx">
+      <DependentUpon>Travisscooter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Siren.resx">
+      <DependentUpon>Siren.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\WildcatBlue.resx">
+      <DependentUpon>WildcatBlue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Redlinetorenegaderaider.resx">
+      <DependentUpon>Redlinetorenegaderaider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\RedReindeer.resx">
+      <DependentUpon>RedReindeer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\GhoulOG.resx">
+      <DependentUpon>GhoulOG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\Blazetorenegade.resx">
       <DependentUpon>Blazetorenegade.cs</DependentUpon>
@@ -662,6 +788,7 @@
     <None Include="Resources\Juicynoacc.png" />
     <None Include="Resources\SplashScreen2.png" />
     <None Include="Resources\SplashScreen.png" />
+    <None Include="Resources\emote.png" />
     <Content Include="Resources\test_92j_icon.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -696,7 +823,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Items\Emotes\" />
     <Folder Include="Items\Misc\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

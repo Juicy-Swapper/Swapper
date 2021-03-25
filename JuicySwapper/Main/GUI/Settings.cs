@@ -1,10 +1,5 @@
-﻿using JuicySwapper.Main.Classes;
-using JuicySwapper.Properties;
-using Microsoft.WindowsAPICodePack.Dialogs;
+﻿using JuicySwapper.Properties;
 using System;
-using System.Diagnostics;
-using System.IO;
-using System.Media;
 using System.Windows.Forms;
 
 namespace JuicySwapper.Main.GUI
@@ -139,6 +134,76 @@ namespace JuicySwapper.Main.GUI
             {
                 num++;
                 text += "E;ite Agent," + " ";
+            }
+            if (Settings.Default.BrenegadeEnabled == true)
+            {
+                num++;
+                text += "Renegade Riader (BLAZE)," + " ";
+            }
+            if (Settings.Default.GhoulOGEnabled == true)
+            {
+                num++;
+                text += "Pink ghoul," + " ";
+            }
+            if (Settings.Default.RrenegadeEnabled == true)
+            {
+                num++;
+                text += "Renegade Raider (REDLINE)," + " ";
+            }
+            if (Settings.Default.GrenegadeEnabled == true)
+            {
+                num++;
+                text += "Renegade Raider (GINGERBREAD)," + " ";
+            }
+            if (Settings.Default.WildcatBlueEnabled == true)
+            {
+                num++;
+                text += "Wild Cat," + " ";
+            }
+            if (Settings.Default.SirenEnabled == true)
+            {
+                num++;
+                text += "Siren," + " ";
+            }
+            if (Settings.Default.TravisEnabled == true)
+            {
+                num++;
+                text += "Travis," + " ";
+            }
+            if (Settings.Default.BrenegadeCEnabled == true)
+            {
+                num++;
+                text += "Renegade Raider (Checkered(BLAZE))," + " ";
+            }
+            if (Settings.Default.RrenegadeCEnabled == true)
+            {
+                num++;
+                text += "Renegade Raider (Checkered(REDLINE))," + " ";
+            }
+            if (Settings.Default.FNCSEnabled == true)
+            {
+                num++;
+                text += "FNCS," + " ";
+            }
+            if (Settings.Default.GrenegadeCEnabled == true)
+            {
+                num++;
+                text += "Renegade Raider (Checkered(GINGERBREAD))," + " ";
+            }
+            if (Settings.Default.FreemixEnabled == true)
+            {
+                num++;
+                text += "Free Mix," + " ";
+            }
+            if (Settings.Default.SixStringEnabled == true)
+            {
+                num++;
+                text += "Six String," + " ";
+            }
+            if (Settings.Default.InsigniaEnabled == true)
+            {
+                num++;
+                text += "Insignia," + " ";
             }
             switch (num)
             {

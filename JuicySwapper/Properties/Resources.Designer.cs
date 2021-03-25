@@ -113,6 +113,16 @@ namespace JuicySwapper.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap emote {
+            get {
+                object obj = ResourceManager.GetObject("emote", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Exception {
             get {
                 object obj = ResourceManager.GetObject("Exception", resourceCulture);

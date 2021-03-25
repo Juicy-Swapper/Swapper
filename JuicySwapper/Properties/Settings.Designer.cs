@@ -526,5 +526,197 @@ namespace JuicySwapper.Properties {
                 this["Password"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BrenegadeEnabled {
+            get {
+                return ((bool)(this["BrenegadeEnabled"]));
+            }
+            set {
+                this["BrenegadeEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool GhoulOGEnabled {
+            get {
+                return ((bool)(this["GhoulOGEnabled"]));
+            }
+            set {
+                this["GhoulOGEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool RednoseEnabled {
+            get {
+                return ((bool)(this["RednoseEnabled"]));
+            }
+            set {
+                this["RednoseEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool RrenegadeEnabled {
+            get {
+                return ((bool)(this["RrenegadeEnabled"]));
+            }
+            set {
+                this["RrenegadeEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool GrenegadeEnabled {
+            get {
+                return ((bool)(this["GrenegadeEnabled"]));
+            }
+            set {
+                this["GrenegadeEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool WildcatBlueEnabled {
+            get {
+                return ((bool)(this["WildcatBlueEnabled"]));
+            }
+            set {
+                this["WildcatBlueEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SirenEnabled {
+            get {
+                return ((bool)(this["SirenEnabled"]));
+            }
+            set {
+                this["SirenEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool TravisEnabled {
+            get {
+                return ((bool)(this["TravisEnabled"]));
+            }
+            set {
+                this["TravisEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BrenegadeCEnabled {
+            get {
+                return ((bool)(this["BrenegadeCEnabled"]));
+            }
+            set {
+                this["BrenegadeCEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool RrenegadeCEnabled {
+            get {
+                return ((bool)(this["RrenegadeCEnabled"]));
+            }
+            set {
+                this["RrenegadeCEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool FNCSEnabled {
+            get {
+                return ((bool)(this["FNCSEnabled"]));
+            }
+            set {
+                this["FNCSEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool GrenegadeCEnabled {
+            get {
+                return ((bool)(this["GrenegadeCEnabled"]));
+            }
+            set {
+                this["GrenegadeCEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool FreemixEnabled {
+            get {
+                return ((bool)(this["FreemixEnabled"]));
+            }
+            set {
+                this["FreemixEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SixStringEnabled {
+            get {
+                return ((bool)(this["SixStringEnabled"]));
+            }
+            set {
+                this["SixStringEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool InsigniaEnabled {
+            get {
+                return ((bool)(this["InsigniaEnabled"]));
+            }
+            set {
+                this["InsigniaEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool StuddedEnabled {
+            get {
+                return ((bool)(this["StuddedEnabled"]));
+            }
+            set {
+                this["StuddedEnabled"] = value;
+            }
+        }
     }
 }
