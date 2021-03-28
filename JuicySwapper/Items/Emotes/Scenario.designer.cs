@@ -80,6 +80,7 @@
             this.SkinImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SkinImage.TabIndex = 5;
             this.SkinImage.TabStop = false;
+            this.SkinImage.Click += new System.EventHandler(this.SkinImage_Click);
             // 
             // LogBox
             // 
@@ -92,6 +93,7 @@
             this.LogBox.Size = new System.Drawing.Size(181, 147);
             this.LogBox.TabIndex = 4;
             this.LogBox.Text = "";
+            this.LogBox.TextChanged += new System.EventHandler(this.LogBox_TextChanged);
             // 
             // RoundForm
             // 

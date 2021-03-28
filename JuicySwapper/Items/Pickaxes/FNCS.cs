@@ -120,5 +120,10 @@ namespace JuicySwapper.Items.Pickaxes
             ActionButton.Enabled = true;
             Close();
         }
+
+        private void SkinImage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
