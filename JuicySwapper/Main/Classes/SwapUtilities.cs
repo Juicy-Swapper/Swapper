@@ -114,7 +114,7 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.InsigniaEnabled
 		};
 
-		public List<bool> Scenario = new List<bool>()
+		public List<bool> BoogieDown = new List<bool>()
 		{
 			Settings.Default.ScenarioEnabled,
 			Settings.Default.FlossEnabled
@@ -187,23 +187,11 @@ namespace JuicySwapper.Main.Classes
 					else
 						MessageBox.Show("A Backbling using Diamond Diva back pack is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
-				case "Scenario":
-					if (Scenario.All(a => a) || Scenario.All(a => !a))
+				case "BoogieDown":
+					if (BoogieDown.All(a => a) || BoogieDown.All(a => !a))
 						return false;
 					else
 						MessageBox.Show("A Emote using Boogie Down is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
-					break;
-				case "Starwand":
-					if (Scenario.All(a => a) || Scenario.All(a => !a))
-						return false;
-					else
-						MessageBox.Show("A Pickaxe using Shooting Starstaff is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
-					break;
-				case "6-Carat Cutter":
-					if (Scenario.All(a => a) || Scenario.All(a => !a))
-						return false;
-					else
-						MessageBox.Show("A Pickaxe using 6-Carat Cutter is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
 			}
 			return true;

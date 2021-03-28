@@ -28,11 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StarwandOption));
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.CloseButton = new System.Windows.Forms.PictureBox();
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuDragControl4 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl5 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl6 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButton)).BeginInit();
@@ -82,6 +87,32 @@
             this.CloseButton.TabStop = false;
             this.CloseButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 7;
+            this.bunifuElipse2.TargetControl = this;
+            // 
+            // bunifuDragControl4
+            // 
+            this.bunifuDragControl4.Fixed = true;
+            this.bunifuDragControl4.Horizontal = true;
+            this.bunifuDragControl4.TargetControl = this.pictureBox1;
+            this.bunifuDragControl4.Vertical = true;
+            // 
+            // bunifuDragControl5
+            // 
+            this.bunifuDragControl5.Fixed = true;
+            this.bunifuDragControl5.Horizontal = true;
+            this.bunifuDragControl5.TargetControl = this.pictureBox2;
+            this.bunifuDragControl5.Vertical = true;
+            // 
+            // bunifuDragControl6
+            // 
+            this.bunifuDragControl6.Fixed = true;
+            this.bunifuDragControl6.Horizontal = true;
+            this.bunifuDragControl6.TargetControl = this;
+            this.bunifuDragControl6.Vertical = true;
+            // 
             // StarwandOption
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -116,5 +147,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox CloseButton;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl4;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl5;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl6;
     }
 }

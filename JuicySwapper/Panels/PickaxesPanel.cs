@@ -74,7 +74,7 @@ namespace JuicySwapper.Panels
         }
 
         private void bunifuImageButton9_Click(object sender, System.EventArgs e)
-        {
+        {//
             new StarwandOption().ShowDialog();
         }
 

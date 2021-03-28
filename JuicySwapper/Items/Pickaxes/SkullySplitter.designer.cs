@@ -41,6 +41,7 @@
             this.CloseTimer = new System.Windows.Forms.Timer(this.components);
             this.ConvertBytes = new System.ComponentModel.BackgroundWorker();
             this.RevertBytes = new System.ComponentModel.BackgroundWorker();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.CloseButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ActionButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkinImage)).BeginInit();
@@ -129,6 +130,11 @@
             this.RevertBytes.DoWork += new System.ComponentModel.DoWorkEventHandler(this.RevertBytes_DoWork);
             this.RevertBytes.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.RevertBytes_RunWorkerCompleted);
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // SkullySplitter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,5 +171,6 @@
         private System.Windows.Forms.Timer CloseTimer;
         private System.ComponentModel.BackgroundWorker ConvertBytes;
         private System.ComponentModel.BackgroundWorker RevertBytes;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }
