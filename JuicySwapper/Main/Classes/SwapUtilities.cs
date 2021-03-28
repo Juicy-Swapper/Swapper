@@ -120,7 +120,25 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.FlossEnabled
 		};
 
-		
+		public List<bool> Neon = new List<bool>()
+		{
+			Settings.Default.LoserfruitEnabled,
+			Settings.Default.WildcatBlueEnabled
+		};
+
+		public List<bool> RockAxe = new List<bool>()
+		{
+			Settings.Default.StarwandEnabled,
+			Settings.Default.StuddedEnabled,
+			Settings.Default.GuandaoEnabled
+		};
+
+		public List<bool> CaratCutter = new List<bool>()
+		{
+			Settings.Default.StarwandRSEnabled,
+			Settings.Default.AxecaliburEnabled
+		};
+
 		public bool CheckIfCanSwap(string s)
 		{
 			switch (s)
@@ -187,11 +205,33 @@ namespace JuicySwapper.Main.Classes
 					else
 						MessageBox.Show("A Backbling using Diamond Diva back pack is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
+
 				case "BoogieDown":
 					if (BoogieDown.All(a => a) || BoogieDown.All(a => !a))
 						return false;
 					else
 						MessageBox.Show("A Emote using Boogie Down is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
+
+				case "Neon":
+					if (Neon.All(a => a) || Neon.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A Skin using Neon Versa is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
+
+				case "RockAxe":
+					if (RockAxe.All(a => a) || RockAxe.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A Pickaxe using RockAxe is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
+
+				case "6CaratCutter":
+					if (CaratCutter.All(a => a) || CaratCutter.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A Pickaxe using 6-Carat Cutter is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
 			}
 			return true;

@@ -34,7 +34,7 @@ namespace JuicySwapper.Items.Pickaxes
 
         private void ConvertBytes_DoWork(object sender, DoWorkEventArgs e)
         {
-           if (SwapUtilities.CheckIfCanSwap("6-Carat Cutter"))
+           if (SwapUtilities.CheckIfCanSwap("6CaratCutter"))
                 return;
 
             ActionButton.Enabled = false;
