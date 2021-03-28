@@ -10,7 +10,7 @@ namespace JuicySwapper.Api
         public static string Offsets = "api/offsets.json";
         public static string Discord = "discord";
         public static string Images = "api/images/";
-        public static string Paks = "";
+        public static string Paks = "api/paks.json";
     }
 
     class ContentAPI
@@ -65,6 +65,9 @@ namespace JuicySwapper.Api
             [JsonProperty("emotes")]
             public string Emotes { get; set; }
 
+            [JsonProperty("blaze")]
+            public string Blaze { get; set; }
+
             [JsonProperty("lobby")]
             public string Lobby { get; set; }
         }
@@ -75,25 +78,22 @@ namespace JuicySwapper.Api
         public class Paks
         {
             [JsonProperty("body")]
-            public string NormalBody { get; set; }
+            public string Body { get; set; }
 
             [JsonProperty("head")]
-            public string NormalHead { get; set; }
+            public string Head { get; set; }
 
             [JsonProperty("pickaxesmesh")]
-            public string NormalPickaxesmesh { get; set; }
-
-            [JsonProperty("pickaxesound")]
-            public string NormalPickaxesound { get; set; }
+            public string Pickaxe { get; set; }
 
             [JsonProperty("backbling")]
-            public string NormalBackbling { get; set; }
+            public string Backbling { get; set; }
 
             [JsonProperty("emotes")]
-            public string NormalEmotes { get; set; }
+            public string Emotes { get; set; }
 
             [JsonProperty("lobby")]
-            public string NormalLobby { get; set; }
+            public string Lobby { get; set; }
         }
     }
 

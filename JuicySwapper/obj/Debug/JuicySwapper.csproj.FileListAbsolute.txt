@@ -137,3 +137,7 @@ C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.I
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.SixString.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.Insignia.resources
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.Studded.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Emotes.Floss.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Emotes.Scenario.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Emotes.TakeTL.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Emotes.Chicken.resources

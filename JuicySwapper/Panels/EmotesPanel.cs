@@ -35,11 +35,24 @@ namespace JuicySwapper.Panels
                 SidebarPanel.Instance.BringToFront();
         }
 
-        private void bunifuFlatButton7_Click() => Environment.Exit(0);
-
         private void bunifuImageButton13_Click(object sender, EventArgs e)
         {
             new Freemix().ShowDialog();
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            new Chicken().ShowDialog();
+        }
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            new TakeTL().ShowDialog();
+        }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+            new Floss().ShowDialog();
         }
     }
 }

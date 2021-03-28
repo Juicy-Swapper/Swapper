@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Windows.Forms;
 using static JuicySwapper.Api.OffsetsAPI;
+using static JuicySwapper.Api.PaksAPI;
 
 namespace JuicySwapper.Main.Classes
 {
@@ -17,11 +18,11 @@ namespace JuicySwapper.Main.Classes
 		{
 			var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
 
-			string Skin_Body_Path = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
-			string Skin_Head_Path = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
-			string Pickaxe_Mesh_Path = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
-			string Backbling_Path = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
-			string Emote_Path = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
+			string Skin_Body_Path = $"{Pathtopaks}\\{Settings.Default.pak_skin_body}";
+			string Skin_Head_Path = $"{Pathtopaks}\\{Settings.Default.pak_skin_head}";
+			string Pickaxe_Mesh_Path = $"{Pathtopaks}\\{Settings.Default.pak_pick_mesh}";
+			string Backbling_Path = $"{Pathtopaks}\\{Settings.Default.pak_back_mesh}";
+			string Emote_Path = $"{Pathtopaks}\\{Settings.Default.pak_emote_mesh}";
 
 			return new string[] { Skin_Body_Path, Skin_Head_Path, Pickaxe_Mesh_Path, Backbling_Path, Emote_Path };
 		}
@@ -33,9 +34,9 @@ namespace JuicySwapper.Main.Classes
 			int Offset_Pick_Mesh = Settings.Default.offset_pick_mesh;
 			int Offset_Back_Mesh = Settings.Default.offset_back_mesh;
 			int Offset_Emote_Mesh = Settings.Default.offset_emote_mesh;
-			int Offset_Temp_gender = 134101198;
+			int Offset_Blaze_Mesh = Settings.Default.offsetBlaze;
 
-			return new int[] { Offset_Skin_Body, Offset_Skin_Head, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh, Offset_Temp_gender };
+			return new int[] { Offset_Skin_Body, Offset_Skin_Head, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh, Offset_Blaze_Mesh };
 		}
 
 		public string[] GetEACPath()
@@ -113,6 +114,13 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.InsigniaEnabled
 		};
 
+		public List<bool> Scenario = new List<bool>()
+		{
+			Settings.Default.ScenarioEnabled,
+			Settings.Default.FlossEnabled
+		};
+
+		
 		public bool CheckIfCanSwap(string s)
 		{
 			switch (s)
@@ -174,10 +182,16 @@ namespace JuicySwapper.Main.Classes
 					break; 
 
 				case "DivaB":
-					if (GingerReneade.All(a => a) || GingerReneade.All(a => !a))
+					if (DivaB.All(a => a) || DivaB.All(a => !a))
 						return false;
 					else
-						MessageBox.Show("A skin using Diamond Diva back pack is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+						MessageBox.Show("A Backbling using Diamond Diva back pack is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
+				case "Scenario":
+					if (Scenario.All(a => a) || Scenario.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A Emote using Scenario is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
 
 			}
@@ -201,6 +215,7 @@ namespace JuicySwapper.Main.Classes
 				Settings.Default.offset_pick_mesh = int.Parse(StatusResponse.Pickaxe); //offset pickaxe
 				Settings.Default.offset_back_mesh = int.Parse(StatusResponse.Backbling); //offset pickaxe
 				Settings.Default.offset_emote_mesh = int.Parse(StatusResponse.Emotes); //offset pickaxe
+				Settings.Default.offsetBlaze = int.Parse(StatusResponse.Blaze); //offset pickaxe
 				Settings.Default.Save();
 			}
 			catch
@@ -211,24 +226,29 @@ namespace JuicySwapper.Main.Classes
 		}
 
 		//paks || cba to use atm
-		/*public static void RequestPaks()
-	      {
+		public static void RequestPaks()
+	    {
 		   try
 		   {
 			   //Downloads JSON from Juicy Swapper API.
-			   var PaksAPI = new WebClient().DownloadString($"{Api.HOST}/{Api.Paks}");
+			   var PaksAPI = new WebClient().DownloadString($"{API.HOST}/{API.Paks}");
 
 			   //Deserializes JSON from Juicy Swapper API.
 			   Paks StatusResponse = JsonConvert.DeserializeObject<Paks>(PaksAPI);
 
-			   //Sets Form Items from API Response.
-			   Settings.Default.Save();
+				//Sets Form Items from API Response.
+				Settings.Default.pak_skin_body = (StatusResponse.Body); //pak body
+				Settings.Default.pak_skin_head = (StatusResponse.Head); //pak head
+				Settings.Default.pak_pick_mesh = (StatusResponse.Pickaxe); //pak pickaxe
+				Settings.Default.pak_back_mesh = (StatusResponse.Backbling); //pak pickaxe
+				Settings.Default.pak_emote_mesh = (StatusResponse.Emotes); //pak pickaxe
+				Settings.Default.Save();
 		   }
 		   catch
 		   {
-			   Exp = "Paks";
-			   new ExceptionMess().ShowDialog();
-		   }
-	   } */
+				Message Exception = new Message(Resources.Exception);
+				Exception.ShowDialog();
+			}
+	   }
 	}
 }

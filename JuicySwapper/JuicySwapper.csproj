@@ -196,6 +196,30 @@
     <Compile Include="Items\Backblings\SixString.designer.cs">
       <DependentUpon>SixString.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Emotes\TakeTL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Emotes\TakeTL.designer.cs">
+      <DependentUpon>TakeTL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Emotes\Chicken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Emotes\Chicken.designer.cs">
+      <DependentUpon>Chicken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Emotes\Floss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Emotes\Floss.designer.cs">
+      <DependentUpon>Floss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Emotes\Scenario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Emotes\Scenario.designer.cs">
+      <DependentUpon>Scenario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Emotes\Freemix.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -553,6 +577,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Items\Backblings\SixString.resx">
       <DependentUpon>SixString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Emotes\TakeTL.resx">
+      <DependentUpon>TakeTL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Emotes\Chicken.resx">
+      <DependentUpon>Chicken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Emotes\Floss.resx">
+      <DependentUpon>Floss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Emotes\Scenario.resx">
+      <DependentUpon>Scenario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Emotes\Freemix.resx">
       <DependentUpon>Freemix.cs</DependentUpon>

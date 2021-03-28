@@ -718,5 +718,125 @@ namespace JuicySwapper.Properties {
                 this["StuddedEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ScenarioEnabled {
+            get {
+                return ((bool)(this["ScenarioEnabled"]));
+            }
+            set {
+                this["ScenarioEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool FlossEnabled {
+            get {
+                return ((bool)(this["FlossEnabled"]));
+            }
+            set {
+                this["FlossEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int offsetBlaze {
+            get {
+                return ((int)(this["offsetBlaze"]));
+            }
+            set {
+                this["offsetBlaze"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string pak_skin_body {
+            get {
+                return ((string)(this["pak_skin_body"]));
+            }
+            set {
+                this["pak_skin_body"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string pak_skin_head {
+            get {
+                return ((string)(this["pak_skin_head"]));
+            }
+            set {
+                this["pak_skin_head"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string pak_pick_mesh {
+            get {
+                return ((string)(this["pak_pick_mesh"]));
+            }
+            set {
+                this["pak_pick_mesh"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string pak_back_mesh {
+            get {
+                return ((string)(this["pak_back_mesh"]));
+            }
+            set {
+                this["pak_back_mesh"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string pak_emote_mesh {
+            get {
+                return ((string)(this["pak_emote_mesh"]));
+            }
+            set {
+                this["pak_emote_mesh"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool TAKEtLEnabled {
+            get {
+                return ((bool)(this["TAKEtLEnabled"]));
+            }
+            set {
+                this["TAKEtLEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ChickenEnabled {
+            get {
+                return ((bool)(this["ChickenEnabled"]));
+            }
+            set {
+                this["ChickenEnabled"] = value;
+            }
+        }
     }
 }
