@@ -838,5 +838,125 @@ namespace JuicySwapper.Properties {
                 this["ChickenEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BlackShieldDSEnabled {
+            get {
+                return ((bool)(this["BlackShieldDSEnabled"]));
+            }
+            set {
+                this["BlackShieldDSEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BlackShieldFSEnabled {
+            get {
+                return ((bool)(this["BlackShieldFSEnabled"]));
+            }
+            set {
+                this["BlackShieldFSEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool RaidersRevengeEnabled {
+            get {
+                return ((bool)(this["RaidersRevengeEnabled"]));
+            }
+            set {
+                this["RaidersRevengeEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool StarwandEnabled {
+            get {
+                return ((bool)(this["StarwandEnabled"]));
+            }
+            set {
+                this["StarwandEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool StarwandRSEnabled {
+            get {
+                return ((bool)(this["StarwandRSEnabled"]));
+            }
+            set {
+                this["StarwandRSEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool GuandaoEnabled {
+            get {
+                return ((bool)(this["GuandaoEnabled"]));
+            }
+            set {
+                this["GuandaoEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool LoserfruitEnabled {
+            get {
+                return ((bool)(this["LoserfruitEnabled"]));
+            }
+            set {
+                this["LoserfruitEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AxecaliburEnabled {
+            get {
+                return ((bool)(this["AxecaliburEnabled"]));
+            }
+            set {
+                this["AxecaliburEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool HarleyHitterEnabled {
+            get {
+                return ((bool)(this["HarleyHitterEnabled"]));
+            }
+            set {
+                this["HarleyHitterEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool JitterbugEnabled {
+            get {
+                return ((bool)(this["JitterbugEnabled"]));
+            }
+            set {
+                this["JitterbugEnabled"] = value;
+            }
+        }
     }
 }

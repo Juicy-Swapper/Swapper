@@ -43,5 +43,10 @@ namespace JuicySwapper.Panels
         {
             new Insignia().ShowDialog();
         }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            new BlackShieldOption().ShowDialog();
+        }
     }
 }

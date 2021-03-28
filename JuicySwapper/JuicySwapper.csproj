@@ -205,11 +205,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Items\Backblings\BlackShield.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Backblings\BlackShield.designer.cs">
+      <DependentUpon>BlackShield.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Backblings\SixString.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Items\Backblings\SixString.designer.cs">
       <DependentUpon>SixString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Backblings\Jitterbug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Backblings\Jitterbug.designer.cs">
+      <DependentUpon>Jitterbug.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Emotes\TakeTL.cs">
       <SubType>Form</SubType>
@@ -247,6 +259,54 @@
     <Compile Include="Items\Backblings\Insignia.designer.cs">
       <DependentUpon>Insignia.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Backblings\BlackShieldDS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Backblings\BlackShieldDS.designer.cs">
+      <DependentUpon>BlackShieldDS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Backblings\BlackShieldFS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Backblings\BlackShieldFS.designer.cs">
+      <DependentUpon>BlackShieldFS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Pickaxes\Axecalibur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Pickaxes\Axecalibur.designer.cs">
+      <DependentUpon>Axecalibur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Pickaxes\HarleyHitter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Pickaxes\HarleyHitter.designer.cs">
+      <DependentUpon>HarleyHitter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Pickaxes\Guandao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Pickaxes\Guandao.designer.cs">
+      <DependentUpon>Guandao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Pickaxes\RaidersRevenge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Pickaxes\RaidersRevenge.designer.cs">
+      <DependentUpon>RaidersRevenge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Pickaxes\Starwand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Pickaxes\Starwand.designer.cs">
+      <DependentUpon>Starwand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Pickaxes\StarwandRS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Pickaxes\StarwandRS.designer.cs">
+      <DependentUpon>StarwandRS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Pickaxes\Studded.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,6 +337,12 @@
     <Compile Include="Items\Pickaxes\IronBeak.designer.cs">
       <DependentUpon>IronBeak.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Questions\BlackShieldOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Questions\BlackShieldOption.designer.cs">
+      <DependentUpon>BlackShieldOption.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Questions\RenegadeCOption.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -289,11 +355,23 @@
     <Compile Include="Items\Questions\RenegadeOption.designer.cs">
       <DependentUpon>RenegadeOption.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Questions\StarwandOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Questions\StarwandOption.designer.cs">
+      <DependentUpon>StarwandOption.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Skins\BlazetorenegadeCheckered.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Items\Skins\BlazetorenegadeCheckered.designer.cs">
       <DependentUpon>BlazetorenegadeCheckered.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\Loserfruit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Loserfruit.designer.cs">
+      <DependentUpon>Loserfruit.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Skins\GingRenegadeChecker.cs">
       <SubType>Form</SubType>
@@ -590,8 +668,14 @@
     </Compile>
     <Compile Include="Main\Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Items\Backblings\BlackShield.resx">
+      <DependentUpon>BlackShield.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\Backblings\SixString.resx">
       <DependentUpon>SixString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Backblings\Jitterbug.resx">
+      <DependentUpon>Jitterbug.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Emotes\TakeTL.resx">
       <DependentUpon>TakeTL.cs</DependentUpon>
@@ -611,6 +695,30 @@
     <EmbeddedResource Include="Items\Backblings\Insignia.resx">
       <DependentUpon>Insignia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Items\Backblings\BlackShieldDS.resx">
+      <DependentUpon>BlackShieldDS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Backblings\BlackShieldFS.resx">
+      <DependentUpon>BlackShieldFS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Pickaxes\Axecalibur.resx">
+      <DependentUpon>Axecalibur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Pickaxes\HarleyHitter.resx">
+      <DependentUpon>HarleyHitter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Pickaxes\Guandao.resx">
+      <DependentUpon>Guandao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Pickaxes\RaidersRevenge.resx">
+      <DependentUpon>RaidersRevenge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Pickaxes\Starwand.resx">
+      <DependentUpon>Starwand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Pickaxes\StarwandRS.resx">
+      <DependentUpon>StarwandRS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\Pickaxes\Studded.resx">
       <DependentUpon>Studded.cs</DependentUpon>
     </EmbeddedResource>
@@ -626,6 +734,9 @@
     <EmbeddedResource Include="Items\Pickaxes\IronBeak.resx">
       <DependentUpon>IronBeak.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Items\Questions\BlackShieldOption.resx">
+      <DependentUpon>BlackShieldOption.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\Questions\RenegadeCOption.resx">
       <DependentUpon>RenegadeCOption.cs</DependentUpon>
     </EmbeddedResource>
@@ -635,8 +746,14 @@
     <EmbeddedResource Include="Items\Questions\BansheeOption.resx">
       <DependentUpon>BansheeOption.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Items\Questions\StarwandOption.resx">
+      <DependentUpon>StarwandOption.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\BlazetorenegadeCheckered.resx">
       <DependentUpon>BlazetorenegadeCheckered.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Loserfruit.resx">
+      <DependentUpon>Loserfruit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\GingRenegadeChecker.resx">
       <DependentUpon>GingRenegadeChecker.cs</DependentUpon>

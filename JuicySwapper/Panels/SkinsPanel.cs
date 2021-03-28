@@ -1,6 +1,5 @@
 ﻿using JuicySwapper.Items.Skins;
 using JuicySwapper.Main.GUI;
-using JuicySwapper.Items.Skins;
 using JuicySwapper.Main.Panels;
 using System;
 using System.Diagnostics;
@@ -200,6 +199,11 @@ namespace JuicySwapper.Panels
         private void bunifuImageButton18_Click(object sender, EventArgs e)
         {
             new RenegadeCOption().ShowDialog();
+        }
+
+        private void bunifuImageButton22_Click(object sender, EventArgs e)
+        {
+            new Loserfruit().ShowDialog();
         }
     }
 }

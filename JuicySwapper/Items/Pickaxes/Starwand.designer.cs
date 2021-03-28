@@ -90,6 +90,7 @@
             this.LogBox.Size = new System.Drawing.Size(181, 147);
             this.LogBox.TabIndex = 4;
             this.LogBox.Text = "";
+            this.LogBox.TextChanged += new System.EventHandler(this.LogBox_TextChanged);
             // 
             // CloseTimer
             // 

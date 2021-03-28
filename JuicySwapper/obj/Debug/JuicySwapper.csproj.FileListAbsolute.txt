@@ -1,7 +1,14 @@
-C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csprojAssemblyReference.cache
+C:\Users\liike\Documents\GitHub\build\Juicy Swapper\snappy32.dll
+C:\Users\liike\Documents\GitHub\build\Juicy Swapper\snappy64.dll
+C:\Users\liike\Documents\GitHub\build\Juicy Swapper\libzstd.dll
+C:\Users\liike\Documents\GitHub\build\Juicy Swapper\mongocrypt.dll
+C:\Users\liike\Documents\GitHub\build\Juicy Swapper\JuicySwapper.exe.config
+C:\Users\liike\Documents\GitHub\build\Juicy Swapper\JuicySwapper.exe
+C:\Users\liike\Documents\GitHub\build\Juicy Swapper\JuicySwapper.pdb
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\Interop.WMPLib.dll
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.ResolveComReference.cache
+C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.BlackShield.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.SixString.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Emotes.TakeTL.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Emotes.Chicken.resources
@@ -9,15 +16,26 @@ C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Item
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Emotes.Scenario.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Emotes.Freemix.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.Insignia.resources
+C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.BlackShieldDS.resources
+C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.BackBlings.BlackShieldFS.resources
+C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.HarleyHitter.resources
+C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.Axecalibur.resources
+C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.Guandao.resources
+C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.RaidersRevenge.resources
+C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.Starwand.resources
+C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.StarwandRS.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.Studded.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.FNCS.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.TatAxe.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.SkullySplitter.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.IronBeak.resources
+C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.BlackShieldOption.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.RenegadeCOption.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.RenegadeOption.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.BansheeOption.resources
+C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.StarwandOption.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.BlazetorenegadeCheckered.resources
+C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Loserfruit.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.GingRenegadeChecker.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.GingRenegade.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Redlinetorenegaderaidercheckered.resources
@@ -68,14 +86,8 @@ C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Pane
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Properties.Resources.resources
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.GenerateResource.cache
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.CoreCompileInputs.cache
-C:\Users\liike\Documents\GitHub\build\Juicy Swapper\snappy32.dll
-C:\Users\liike\Documents\GitHub\build\Juicy Swapper\snappy64.dll
-C:\Users\liike\Documents\GitHub\build\Juicy Swapper\libzstd.dll
-C:\Users\liike\Documents\GitHub\build\Juicy Swapper\mongocrypt.dll
-C:\Users\liike\Documents\GitHub\build\Juicy Swapper\JuicySwapper.exe.config
-C:\Users\liike\Documents\GitHub\build\Juicy Swapper\JuicySwapper.exe
-C:\Users\liike\Documents\GitHub\build\Juicy Swapper\JuicySwapper.pdb
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.Fody.CopyLocal.cache
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.CopyComplete
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.exe
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.pdb
+C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Emotes.Jitterbug.resources

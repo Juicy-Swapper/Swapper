@@ -1,4 +1,5 @@
 ﻿using JuicySwapper.Main.Panels;
+using JuicySwapper.Main.GUI;
 using System.Windows.Forms;
 using JuicySwapper.Items.Pickaxes;
 using JuicySwapper.Properties;
@@ -70,6 +71,31 @@ namespace JuicySwapper.Panels
         private void bunifuImageButton6_Click(object sender, System.EventArgs e)
         {
             new Studded().ShowDialog();
+        }
+
+        private void bunifuImageButton9_Click(object sender, System.EventArgs e)
+        {
+            new StarwandOption().ShowDialog();
+        }
+
+        private void bunifuImageButton7_Click(object sender, System.EventArgs e)
+        {
+            new RaidersRevenge().ShowDialog();
+        }
+
+        private void bunifuImageButton8_Click(object sender, System.EventArgs e)
+        {
+            new Guandao().ShowDialog();
+        }
+
+        private void bunifuImageButton10_Click(object sender, System.EventArgs e)
+        {
+            new Axecalibur().ShowDialog();
+        }
+
+        private void bunifuImageButton11_Click(object sender, System.EventArgs e)
+        {
+       
         }
     }
 }

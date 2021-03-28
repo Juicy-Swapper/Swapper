@@ -191,9 +191,20 @@ namespace JuicySwapper.Main.Classes
 					if (Scenario.All(a => a) || Scenario.All(a => !a))
 						return false;
 					else
-						MessageBox.Show("A Emote using Scenario is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+						MessageBox.Show("A Emote using Boogie Down is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
-
+				case "Starwand":
+					if (Scenario.All(a => a) || Scenario.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A Pickaxe using Shooting Starstaff is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
+				case "6-Carat Cutter":
+					if (Scenario.All(a => a) || Scenario.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A Pickaxe using 6-Carat Cutter is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
 			}
 			return true;
 		}

@@ -54,5 +54,15 @@ namespace JuicySwapper.Panels
         {
             new Floss().ShowDialog();
         }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            new Scenario().ShowDialog();
+        }
+
+        private void bunifuImageButton5_Click(object sender, EventArgs e)
+        {
+            new Jitterbug().ShowDialog();
+        }
     }
 }
