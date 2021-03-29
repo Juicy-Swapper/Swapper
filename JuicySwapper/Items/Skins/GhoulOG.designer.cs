@@ -80,6 +80,7 @@
             this.SkinImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SkinImage.TabIndex = 5;
             this.SkinImage.TabStop = false;
+            this.SkinImage.Click += new System.EventHandler(this.SkinImage_Click);
             // 
             // LogBox
             // 

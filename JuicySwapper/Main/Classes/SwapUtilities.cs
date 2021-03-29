@@ -81,7 +81,8 @@ namespace JuicySwapper.Main.Classes
 		public List<bool> NiteLite = new List<bool>()
 		{
 			Settings.Default.GhoulOGEnabled,
-			Settings.Default.RednoseEnabled
+			Settings.Default.RednoseEnabled,
+			Settings.Default.GalaxyEnabled
 		};
 
 		public List<bool> Blaze = new List<bool>()

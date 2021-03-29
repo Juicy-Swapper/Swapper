@@ -215,5 +215,15 @@ namespace JuicySwapper.Panels
         {
             new ReconSpecialist().ShowDialog();
         }
+
+        private void bunifuImageButton26_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void bunifuImageButton26_Click_1(object sender, EventArgs e)
+        {
+            new Galaxy().ShowDialog();
+        }
     }
 }

@@ -1018,5 +1018,17 @@ namespace JuicySwapper.Properties {
                 this["ReconSpecialistEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool GalaxyEnabled {
+            get {
+                return ((bool)(this["GalaxyEnabled"]));
+            }
+            set {
+                this["GalaxyEnabled"] = value;
+            }
+        }
     }
 }
