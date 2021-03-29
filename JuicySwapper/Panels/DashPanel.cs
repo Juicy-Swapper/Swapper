@@ -6,6 +6,7 @@ using System.Net;
 using System.Windows.Forms;
 using Type = JuicySwapper.Api.ContentAPI.Type;
 using JuicySwapper.Api;
+using JuicySwapper.Properties;
 
 namespace JuicySwapper.Panels
 {
@@ -42,18 +43,26 @@ namespace JuicySwapper.Panels
 
         public void GetContent()
         {
-            //Downloads JSON from Juicy Swapper API.
-            var ContentAPI = new WebClient().DownloadString($"{API.HOST}/{API.Content}");
+            try
+            {
+                //Downloads JSON from Juicy Swapper API.
+                var ContentAPI = new WebClient().DownloadString($"{API.HOST}/{API.Content}");
 
-            //Deserializes JSON from Juicy Swapper API.
-            Type StatusResponse = JsonConvert.DeserializeObject<Type>(ContentAPI);
+                //Deserializes JSON from Juicy Swapper API.
+                Type StatusResponse = JsonConvert.DeserializeObject<Type>(ContentAPI);
 
-            //Sets Form Items from API Response.
-            newsTitleLabel.Text = StatusResponse.News.NewsTitle;
-            newsTextLabel.Text = StatusResponse.News.NewsText;
-            newsImagePictureBox.ImageLocation = StatusResponse.News.NewsImage;
-            changelogTextLabel.Text = StatusResponse.Patchnotes.PatchnotesText;
-            currentVersionLabel.Text = $"Current Version: v{Application.ProductVersion}";
+                //Sets Form Items from API Response.
+                newsTitleLabel.Text = StatusResponse.News.NewsTitle;
+                newsTextLabel.Text = StatusResponse.News.NewsText;
+                newsImagePictureBox.ImageLocation = StatusResponse.News.NewsImage;
+                changelogTextLabel.Text = StatusResponse.Patchnotes.PatchnotesText;
+                currentVersionLabel.Text = $"Current Version: v{Application.ProductVersion}";
+            }
+            catch
+            {
+                Message Exception = new Message(Resources.Exception);
+                Exception.ShowDialog();
+            }
         }
     }
 }

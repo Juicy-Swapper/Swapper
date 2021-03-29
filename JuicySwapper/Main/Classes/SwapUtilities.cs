@@ -13,7 +13,6 @@ namespace JuicySwapper.Main.Classes
 {
     public class SwapUtilities
     {
-		
 		public string[] GetSwapPath()
 		{
 			var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
@@ -253,7 +252,6 @@ namespace JuicySwapper.Main.Classes
 			return true;
 		}
 
-		//offsets
 		public static void Requestoffsets()
 		{
 			try
@@ -280,7 +278,6 @@ namespace JuicySwapper.Main.Classes
 			}
 		}
 
-		//paks || cba to use atm
 		public static void RequestPaks()
 	    {
 		   try
@@ -303,7 +300,7 @@ namespace JuicySwapper.Main.Classes
 		   {
 				Message Exception = new Message(Resources.Exception);
 				Exception.ShowDialog();
-			}
-	   }
+		   }
+	    }
 	}
 }
