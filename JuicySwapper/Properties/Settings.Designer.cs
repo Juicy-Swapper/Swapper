@@ -1042,5 +1042,29 @@ namespace JuicySwapper.Properties {
                 this["OctaneEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SavageEnabled {
+            get {
+                return ((bool)(this["SavageEnabled"]));
+            }
+            set {
+                this["SavageEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SaySoEnabled {
+            get {
+                return ((bool)(this["SaySoEnabled"]));
+            }
+            set {
+                this["SaySoEnabled"] = value;
+            }
+        }
     }
 }

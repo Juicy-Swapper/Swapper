@@ -223,6 +223,18 @@
     <Compile Include="Items\Backblings\SixString.designer.cs">
       <DependentUpon>SixString.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Emotes\SaySo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Emotes\SaySo.designer.cs">
+      <DependentUpon>SaySo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Emotes\Savage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Emotes\Savage.designer.cs">
+      <DependentUpon>Savage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Emotes\Octane.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -730,6 +742,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Backblings\SixString.resx">
       <DependentUpon>SixString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Emotes\SaySo.resx">
+      <DependentUpon>SaySo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Emotes\Savage.resx">
+      <DependentUpon>Savage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Emotes\Octane.resx">
       <DependentUpon>Octane.cs</DependentUpon>

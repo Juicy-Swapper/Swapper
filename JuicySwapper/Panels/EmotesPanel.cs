@@ -70,5 +70,15 @@ namespace JuicySwapper.Panels
         {
             new Octane().ShowDialog();
         }
+
+        private void bunifuImageButton7_Click(object sender, EventArgs e)
+        {
+            new Savage().ShowDialog();
+        }
+
+        private void bunifuImageButton6_Click(object sender, EventArgs e)
+        {
+            new SaySo().ShowDialog();
+        }
     }
 }

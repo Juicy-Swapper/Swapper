@@ -143,6 +143,12 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.AxecaliburEnabled
 		};
 
+		public List<bool> SideHustle = new List<bool>()
+		{
+			Settings.Default.SavageEnabled,
+			Settings.Default.FreemixEnabled
+	};
+
 		public bool CheckIfCanSwap(string s)
 		{
 			switch (s)
@@ -236,6 +242,12 @@ namespace JuicySwapper.Main.Classes
 						return false;
 					else
 						MessageBox.Show("A Pickaxe using 6-Carat Cutter is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
+				case "SideHustle":
+					if (SideHustle.All(a => a) || SideHustle.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A Emote using Side Hustle is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
 			}
 			return true;
