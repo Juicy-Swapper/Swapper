@@ -45,7 +45,7 @@ namespace JuicySwapper
                 Sidebar.Width = 68;
                 SidebarWrapper.Width = 90;
                 LineaSidebar.Width = 52;
-                AnimacionSidebar.Show(Sidebar);
+                AnimationSidebarReturn.Show(Sidebar);
             }
             else
             {
@@ -53,7 +53,7 @@ namespace JuicySwapper
                 Sidebar.Width = 270;
                 SidebarWrapper.Width = 300;
                 LineaSidebar.Width = 252;
-                AnimacionSidebarBack.Show(Sidebar);
+                AnimacionSidebarFirst.Show(Sidebar);
             }
         }
 

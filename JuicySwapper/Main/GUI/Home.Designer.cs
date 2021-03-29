@@ -30,8 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             this.CurvaSidebar = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.SettingsButton = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -59,6 +61,8 @@
             this.MoveToEmote = new System.Windows.Forms.Timer(this.components);
             this.MoveToWraps = new System.Windows.Forms.Timer(this.components);
             this.MoveToSettings = new System.Windows.Forms.Timer(this.components);
+            this.AnimacionSidebarFirst = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.AnimationSidebarReturn = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Sidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ControlBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
@@ -72,7 +76,8 @@
             // 
             // Sidebar
             // 
-            this.Sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
             this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Sidebar.Controls.Add(this.SettingsButton);
@@ -87,8 +92,10 @@
             this.Sidebar.Controls.Add(this.DashButton);
             this.Sidebar.Controls.Add(this.LineaSidebar);
             this.Sidebar.Controls.Add(this.label2);
-            this.AnimacionSidebarBack.SetDecoration(this.Sidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarReturn.SetDecoration(this.Sidebar, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.Sidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.Sidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarFirst.SetDecoration(this.Sidebar, BunifuAnimatorNS.DecorationType.None);
             this.Sidebar.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Sidebar.GradientBottomRight = System.Drawing.Color.Magenta;
             this.Sidebar.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -107,8 +114,10 @@
             this.SettingsButton.BorderRadius = 0;
             this.SettingsButton.ButtonText = "      SETTINGS";
             this.SettingsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimacionSidebar.SetDecoration(this.SettingsButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarFirst.SetDecoration(this.SettingsButton, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.SettingsButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.SettingsButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarReturn.SetDecoration(this.SettingsButton, BunifuAnimatorNS.DecorationType.None);
             this.SettingsButton.DisabledColor = System.Drawing.Color.Transparent;
             this.SettingsButton.Iconcolor = System.Drawing.Color.Transparent;
             this.SettingsButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("SettingsButton.Iconimage")));
@@ -139,6 +148,8 @@
             // ControlBar
             // 
             this.ControlBar.BackColor = System.Drawing.Color.Transparent;
+            this.AnimacionSidebarFirst.SetDecoration(this.ControlBar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarReturn.SetDecoration(this.ControlBar, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.ControlBar, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.ControlBar, BunifuAnimatorNS.DecorationType.None);
             this.ControlBar.Image = ((System.Drawing.Image)(resources.GetObject("ControlBar.Image")));
@@ -152,8 +163,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.AnimacionSidebarFirst.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarReturn.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(64, 36);
@@ -165,8 +178,10 @@
             // bunifuImageButton2
             // 
             this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSidebarReturn.SetDecoration(this.bunifuImageButton2, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.bunifuImageButton2, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.bunifuImageButton2, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarFirst.SetDecoration(this.bunifuImageButton2, BunifuAnimatorNS.DecorationType.None);
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
             this.bunifuImageButton2.Location = new System.Drawing.Point(13, 13);
@@ -186,8 +201,10 @@
             this.WrapsButton.BorderRadius = 0;
             this.WrapsButton.ButtonText = "      MISC";
             this.WrapsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimacionSidebar.SetDecoration(this.WrapsButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarFirst.SetDecoration(this.WrapsButton, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.WrapsButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.WrapsButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarReturn.SetDecoration(this.WrapsButton, BunifuAnimatorNS.DecorationType.None);
             this.WrapsButton.DisabledColor = System.Drawing.Color.Transparent;
             this.WrapsButton.Iconcolor = System.Drawing.Color.Transparent;
             this.WrapsButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("WrapsButton.Iconimage")));
@@ -223,8 +240,10 @@
             this.EmoteButton.BorderRadius = 0;
             this.EmoteButton.ButtonText = "      EMOTES";
             this.EmoteButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimacionSidebar.SetDecoration(this.EmoteButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarFirst.SetDecoration(this.EmoteButton, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.EmoteButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.EmoteButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarReturn.SetDecoration(this.EmoteButton, BunifuAnimatorNS.DecorationType.None);
             this.EmoteButton.DisabledColor = System.Drawing.Color.Transparent;
             this.EmoteButton.Iconcolor = System.Drawing.Color.Transparent;
             this.EmoteButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("EmoteButton.Iconimage")));
@@ -260,8 +279,10 @@
             this.PickaxeButton.BorderRadius = 0;
             this.PickaxeButton.ButtonText = "      PICKAXES";
             this.PickaxeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimacionSidebar.SetDecoration(this.PickaxeButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarFirst.SetDecoration(this.PickaxeButton, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.PickaxeButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.PickaxeButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarReturn.SetDecoration(this.PickaxeButton, BunifuAnimatorNS.DecorationType.None);
             this.PickaxeButton.DisabledColor = System.Drawing.Color.Transparent;
             this.PickaxeButton.Iconcolor = System.Drawing.Color.Transparent;
             this.PickaxeButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("PickaxeButton.Iconimage")));
@@ -297,8 +318,10 @@
             this.BackblingButton.BorderRadius = 0;
             this.BackblingButton.ButtonText = "      BACKBLINGS";
             this.BackblingButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimacionSidebar.SetDecoration(this.BackblingButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarFirst.SetDecoration(this.BackblingButton, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.BackblingButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.BackblingButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarReturn.SetDecoration(this.BackblingButton, BunifuAnimatorNS.DecorationType.None);
             this.BackblingButton.DisabledColor = System.Drawing.Color.Transparent;
             this.BackblingButton.Iconcolor = System.Drawing.Color.Transparent;
             this.BackblingButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("BackblingButton.Iconimage")));
@@ -334,8 +357,10 @@
             this.SkinButton.BorderRadius = 0;
             this.SkinButton.ButtonText = "      SKINS";
             this.SkinButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimacionSidebar.SetDecoration(this.SkinButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarFirst.SetDecoration(this.SkinButton, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.SkinButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.SkinButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarReturn.SetDecoration(this.SkinButton, BunifuAnimatorNS.DecorationType.None);
             this.SkinButton.DisabledColor = System.Drawing.Color.Transparent;
             this.SkinButton.Iconcolor = System.Drawing.Color.Transparent;
             this.SkinButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("SkinButton.Iconimage")));
@@ -371,8 +396,10 @@
             this.DashButton.BorderRadius = 0;
             this.DashButton.ButtonText = "      DASHBOARD";
             this.DashButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimacionSidebar.SetDecoration(this.DashButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarFirst.SetDecoration(this.DashButton, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.DashButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.DashButton, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarReturn.SetDecoration(this.DashButton, BunifuAnimatorNS.DecorationType.None);
             this.DashButton.DisabledColor = System.Drawing.Color.Transparent;
             this.DashButton.Iconcolor = System.Drawing.Color.Transparent;
             this.DashButton.Iconimage = ((System.Drawing.Image)(resources.GetObject("DashButton.Iconimage")));
@@ -403,8 +430,10 @@
             // LineaSidebar
             // 
             this.LineaSidebar.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSidebarReturn.SetDecoration(this.LineaSidebar, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.LineaSidebar, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.LineaSidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarFirst.SetDecoration(this.LineaSidebar, BunifuAnimatorNS.DecorationType.None);
             this.LineaSidebar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.LineaSidebar.LineThickness = 1;
             this.LineaSidebar.Location = new System.Drawing.Point(7, 68);
@@ -418,8 +447,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.AnimacionSidebarFirst.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarReturn.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(63, 13);
@@ -432,29 +463,31 @@
             // 
             this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.AnimacionSidebar.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.AnimacionSidebar.DefaultAnimation = animation1;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 1F;
+            this.AnimacionSidebar.DefaultAnimation = animation3;
             // 
             // SidebarWrapper
             // 
             this.SidebarWrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(52)))));
             this.SidebarWrapper.Controls.Add(this.Sidebar);
-            this.AnimacionSidebarBack.SetDecoration(this.SidebarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarReturn.SetDecoration(this.SidebarWrapper, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.SidebarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.SidebarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarFirst.SetDecoration(this.SidebarWrapper, BunifuAnimatorNS.DecorationType.None);
             this.SidebarWrapper.Dock = System.Windows.Forms.DockStyle.Left;
             this.SidebarWrapper.Location = new System.Drawing.Point(0, 0);
             this.SidebarWrapper.Name = "SidebarWrapper";
@@ -465,8 +498,10 @@
             // 
             this.Wrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(52)))));
             this.Wrapper.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.AnimacionSidebarBack.SetDecoration(this.Wrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarReturn.SetDecoration(this.Wrapper, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.Wrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarBack.SetDecoration(this.Wrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarFirst.SetDecoration(this.Wrapper, BunifuAnimatorNS.DecorationType.None);
             this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Wrapper.Location = new System.Drawing.Point(90, 0);
             this.Wrapper.Name = "Wrapper";
@@ -542,6 +577,48 @@
             this.MoveToSettings.Interval = 1;
             this.MoveToSettings.Tick += new System.EventHandler(this.MoveToSettings_Tick);
             // 
+            // AnimacionSidebarFirst
+            // 
+            this.AnimacionSidebarFirst.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
+            this.AnimacionSidebarFirst.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.AnimacionSidebarFirst.DefaultAnimation = animation1;
+            // 
+            // AnimationSidebarReturn
+            // 
+            this.AnimationSidebarReturn.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
+            this.AnimationSidebarReturn.Cursor = null;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 1F;
+            this.AnimationSidebarReturn.DefaultAnimation = animation4;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -552,6 +629,8 @@
             this.Controls.Add(this.SidebarWrapper);
             this.AnimacionSidebarBack.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarReturn.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebarFirst.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Home";
@@ -594,6 +673,8 @@
         private Bunifu.Framework.UI.BunifuFlatButton DashButton;
         private Bunifu.Framework.UI.BunifuSeparator LineaSidebar;
         private System.Windows.Forms.Label label2;
+        private BunifuAnimatorNS.BunifuTransition AnimacionSidebarFirst;
+        private BunifuAnimatorNS.BunifuTransition AnimationSidebarReturn;
     }
 }
 
