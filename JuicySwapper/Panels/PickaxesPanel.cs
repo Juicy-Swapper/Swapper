@@ -95,7 +95,7 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton11_Click(object sender, System.EventArgs e)
         {
-       
+            new HarleyHitter().ShowDialog();
         }
     }
 }

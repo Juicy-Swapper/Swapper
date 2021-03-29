@@ -93,7 +93,9 @@ namespace JuicySwapper.Main.Classes
 		public List<bool> Redline = new List<bool>()
 		{
 			Settings.Default.RrenegadeEnabled,
-			Settings.Default.RrenegadeCEnabled
+			Settings.Default.RrenegadeCEnabled,
+			Settings.Default.AerialAssaultTrooperEnabled,
+			Settings.Default.ReconSpecialistEnabled
 		};
 
 		public List<bool> GingerReneade = new List<bool>()
@@ -105,7 +107,8 @@ namespace JuicySwapper.Main.Classes
 		public List<bool> Diva = new List<bool>()
 		{
 			Settings.Default.SirenEnabled,
-			Settings.Default.TravisEnabled
+			Settings.Default.TravisEnabled,
+			Settings.Default.WildcatRSEnabled
 		};
 
 		public List<bool> DivaB = new List<bool>()
@@ -217,7 +220,7 @@ namespace JuicySwapper.Main.Classes
 					if (Neon.All(a => a) || Neon.All(a => !a))
 						return false;
 					else
-						MessageBox.Show("A Skin using Neon Versa is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+						MessageBox.Show("A Skin using Neo Versa is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
 
 				case "RockAxe":

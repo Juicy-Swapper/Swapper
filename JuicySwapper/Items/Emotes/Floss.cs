@@ -35,7 +35,7 @@ namespace JuicySwapper.Items.Emotes
         
         private void ConvertBytes_DoWork(object sender, DoWorkEventArgs e)
         {
-            if (SwapUtilities.CheckIfCanSwap("Scenario"))
+            if (SwapUtilities.CheckIfCanSwap("BoogieDown"))
                 return;
 
             ActionButton.Enabled = false;

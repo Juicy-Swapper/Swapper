@@ -183,7 +183,7 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton20_Click(object sender, EventArgs e)
         {
-            new WildcatBlue().ShowDialog();
+            new WildcatOption().ShowDialog();
         }
 
         private void bunifuImageButton19_Click(object sender, EventArgs e)
@@ -204,6 +204,16 @@ namespace JuicySwapper.Panels
         private void bunifuImageButton22_Click(object sender, EventArgs e)
         {
             new Loserfruit().ShowDialog();
+        }
+
+        private void bunifuImageButton24_Click(object sender, EventArgs e)
+        {
+            new AerialAssaultTrooper().ShowDialog();
+        }
+
+        private void bunifuImageButton25_Click(object sender, EventArgs e)
+        {
+            new ReconSpecialist().ShowDialog();
         }
     }
 }

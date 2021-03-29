@@ -35,6 +35,9 @@
             this.ActionButton = new System.Windows.Forms.PictureBox();
             this.SkinImage = new System.Windows.Forms.PictureBox();
             this.LogBox = new System.Windows.Forms.RichTextBox();
+            this.RoundForm = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.DragControl = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.DragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.CloseTimer = new System.Windows.Forms.Timer(this.components);
             this.ConvertBytes = new System.ComponentModel.BackgroundWorker();
             this.RevertBytes = new System.ComponentModel.BackgroundWorker();
@@ -91,6 +94,25 @@
             this.LogBox.TabIndex = 4;
             this.LogBox.Text = "";
             // 
+            // RoundForm
+            // 
+            this.RoundForm.ElipseRadius = 5;
+            this.RoundForm.TargetControl = this;
+            // 
+            // DragControl
+            // 
+            this.DragControl.Fixed = true;
+            this.DragControl.Horizontal = true;
+            this.DragControl.TargetControl = this.SkinImage;
+            this.DragControl.Vertical = true;
+            // 
+            // DragControl1
+            // 
+            this.DragControl1.Fixed = true;
+            this.DragControl1.Horizontal = true;
+            this.DragControl1.TargetControl = this;
+            this.DragControl1.Vertical = true;
+            // 
             // CloseTimer
             // 
             this.CloseTimer.Interval = 3000;
@@ -124,7 +146,6 @@
             this.Name = "HarleyHitter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PlaceHolder";
-            this.Load += new System.EventHandler(this.Axecalibur_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CloseButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ActionButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkinImage)).EndInit();

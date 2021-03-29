@@ -958,5 +958,65 @@ namespace JuicySwapper.Properties {
                 this["JitterbugEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AerialAssaultTrooperEnabled {
+            get {
+                return ((bool)(this["AerialAssaultTrooperEnabled"]));
+            }
+            set {
+                this["AerialAssaultTrooperEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool FlossArmWaveEnabled {
+            get {
+                return ((bool)(this["FlossArmWaveEnabled"]));
+            }
+            set {
+                this["FlossArmWaveEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool WildcatRSEnabled {
+            get {
+                return ((bool)(this["WildcatRSEnabled"]));
+            }
+            set {
+                this["WildcatRSEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SpectralSpineEnabled {
+            get {
+                return ((bool)(this["SpectralSpineEnabled"]));
+            }
+            set {
+                this["SpectralSpineEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ReconSpecialistEnabled {
+            get {
+                return ((bool)(this["ReconSpecialistEnabled"]));
+            }
+            set {
+                this["ReconSpecialistEnabled"] = value;
+            }
+        }
     }
 }

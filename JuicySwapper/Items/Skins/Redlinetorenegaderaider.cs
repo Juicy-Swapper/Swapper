@@ -144,5 +144,10 @@ namespace JuicySwapper.Items.Skins
             ActionButton.Enabled = true;
             Close();
         }
+
+        private void SkinImage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -161,9 +161,6 @@
         private System.Windows.Forms.PictureBox ActionButton;
         private System.Windows.Forms.PictureBox SkinImage;
         private System.Windows.Forms.RichTextBox LogBox;
-        private Bunifu.Framework.UI.BunifuElipse RoundForm;
-        private Bunifu.Framework.UI.BunifuDragControl DragControl;
-        private Bunifu.Framework.UI.BunifuDragControl DragControl1;
         private System.Windows.Forms.Timer CloseTimer;
         private System.ComponentModel.BackgroundWorker ConvertBytes;
         private System.ComponentModel.BackgroundWorker RevertBytes;

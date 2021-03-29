@@ -38,6 +38,9 @@
             this.CloseTimer = new System.Windows.Forms.Timer(this.components);
             this.ConvertBytes = new System.ComponentModel.BackgroundWorker();
             this.RevertBytes = new System.ComponentModel.BackgroundWorker();
+            this.bunifuDragControl5 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl4 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.CloseButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ActionButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkinImage)).BeginInit();
@@ -108,6 +111,25 @@
             this.RevertBytes.DoWork += new System.ComponentModel.DoWorkEventHandler(this.RevertBytes_DoWork);
             this.RevertBytes.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.RevertBytes_RunWorkerCompleted);
             // 
+            // bunifuDragControl5
+            // 
+            this.bunifuDragControl5.Fixed = true;
+            this.bunifuDragControl5.Horizontal = true;
+            this.bunifuDragControl5.TargetControl = this.SkinImage;
+            this.bunifuDragControl5.Vertical = true;
+            // 
+            // bunifuDragControl4
+            // 
+            this.bunifuDragControl4.Fixed = true;
+            this.bunifuDragControl4.Horizontal = true;
+            this.bunifuDragControl4.TargetControl = this;
+            this.bunifuDragControl4.Vertical = true;
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 7;
+            this.bunifuElipse2.TargetControl = this;
+            // 
             // FNCS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,11 +160,11 @@
         private System.Windows.Forms.PictureBox ActionButton;
         private System.Windows.Forms.PictureBox SkinImage;
         private System.Windows.Forms.RichTextBox LogBox;
-        private Bunifu.Framework.UI.BunifuElipse RoundForm;
-        private Bunifu.Framework.UI.BunifuDragControl DragControl;
-        private Bunifu.Framework.UI.BunifuDragControl DragControl1;
         private System.Windows.Forms.Timer CloseTimer;
         private System.ComponentModel.BackgroundWorker ConvertBytes;
         private System.ComponentModel.BackgroundWorker RevertBytes;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl5;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl4;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
     }
 }

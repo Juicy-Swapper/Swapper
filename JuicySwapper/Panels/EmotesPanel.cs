@@ -1,5 +1,6 @@
 ﻿using JuicySwapper.Items.Emotes;
 using JuicySwapper.Main.Panels;
+using JuicySwapper.Main.GUI;
 using System;
 using System.Windows.Forms;
 
@@ -52,7 +53,7 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
-            new Floss().ShowDialog();
+            new FlossOption().ShowDialog();
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -62,7 +63,7 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton5_Click(object sender, EventArgs e)
         {
-            //new Jitterbug().ShowDialog();
+            new Jitterbug().ShowDialog();
         }
     }
 }

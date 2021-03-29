@@ -61,8 +61,104 @@
     <Reference Include="BouncyCastle.Crypto, Version=1.8.10.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
       <HintPath>..\packages\Portable.BouncyCastle.1.8.10\lib\net40\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
-    <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>.\Bunifu_UI_v1.5.3.dll</HintPath>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuColorTransition, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuColorTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGauge, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGroupBox, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuGroupBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPanel, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRating, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuRating.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSeparator, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuSeparator.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShadowPanel, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShapes, Version=4.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuShapes.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSnackbar, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuSnackbar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToggleSwitch, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuToggleSwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToolTip, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuUserControl, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.Deprecated, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.5.0.1\lib\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
     </Reference>
     <Reference Include="Costura, Version=4.1.0.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
       <HintPath>..\packages\Costura.Fody.4.1.0\lib\net40\Costura.dll</HintPath>
@@ -86,7 +182,7 @@
       <HintPath>..\packages\DnsClient.1.4.0\lib\net471\DnsClient.dll</HintPath>
     </Reference>
     <Reference Include="ekajsdhfdjkashfdsajk73289723984732894327oaskidhfdkajs48392107743982473289weikofh">
-      <HintPath>.\ekajsdhfdjkashfdsajk73289723984732894327oaskidhfdkajs48392107743982473289weikofh.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\ekajsdhfdjkashfdsajk73289723984732894327oaskidhfdkajs48392107743982473289weikofh.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -205,6 +301,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Items\Backblings\SpectralSpine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Backblings\SpectralSpine.designer.cs">
+      <DependentUpon>SpectralSpine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Backblings\BlackShield.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +318,18 @@
     </Compile>
     <Compile Include="Items\Backblings\SixString.designer.cs">
       <DependentUpon>SixString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Emotes\FlossArmWave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Emotes\FlossArmWave.designer.cs">
+      <DependentUpon>FlossArmWave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Emotes\Jitterbug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Emotes\Jitterbug.designer.cs">
+      <DependentUpon>Jitterbug.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Emotes\TakeTL.cs">
       <SubType>Form</SubType>
@@ -271,17 +385,23 @@
     <Compile Include="Items\Pickaxes\Axecalibur.designer.cs">
       <DependentUpon>Axecalibur.cs</DependentUpon>
     </Compile>
-    <Compile Include="Items\Pickaxes\HarleyHitter.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Pickaxes\HarleyHitter.designer.cs">
-      <DependentUpon>HarleyHitter.cs</DependentUpon>
-    </Compile>
     <Compile Include="Items\Pickaxes\Guandao.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Items\Pickaxes\Guandao.designer.cs">
       <DependentUpon>Guandao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Pickaxes\FNCS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Pickaxes\FNCS.designer.cs">
+      <DependentUpon>FNCS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Pickaxes\StarwandRS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Pickaxes\StarwandRS.designer.cs">
+      <DependentUpon>StarwandRS.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Pickaxes\RaidersRevenge.cs">
       <SubType>Form</SubType>
@@ -295,23 +415,17 @@
     <Compile Include="Items\Pickaxes\Starwand.designer.cs">
       <DependentUpon>Starwand.cs</DependentUpon>
     </Compile>
-    <Compile Include="Items\Pickaxes\StarwandRS.cs">
+    <Compile Include="Items\Pickaxes\HarleyHitter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Items\Pickaxes\StarwandRS.designer.cs">
-      <DependentUpon>StarwandRS.cs</DependentUpon>
+    <Compile Include="Items\Pickaxes\HarleyHitter.designer.cs">
+      <DependentUpon>HarleyHitter.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Pickaxes\Studded.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Items\Pickaxes\Studded.designer.cs">
       <DependentUpon>Studded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Pickaxes\FNCS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Pickaxes\FNCS.designer.cs">
-      <DependentUpon>FNCS.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Pickaxes\TatAxe.cs">
       <SubType>Form</SubType>
@@ -349,17 +463,53 @@
     <Compile Include="Items\Questions\RenegadeOption.designer.cs">
       <DependentUpon>RenegadeOption.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Questions\FlossOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Questions\FlossOption.designer.cs">
+      <DependentUpon>FlossOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Questions\WildcatOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Questions\WildcatOption.designer.cs">
+      <DependentUpon>WildcatOption.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Questions\StarwandOption.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Items\Questions\StarwandOption.designer.cs">
       <DependentUpon>StarwandOption.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Skins\AerialAssaultTrooper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\AerialAssaultTrooper.designer.cs">
+      <DependentUpon>AerialAssaultTrooper.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Skins\BlazetorenegadeCheckered.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Items\Skins\BlazetorenegadeCheckered.designer.cs">
       <DependentUpon>BlazetorenegadeCheckered.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\ReconSpecialist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\ReconSpecialist.designer.cs">
+      <DependentUpon>ReconSpecialist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\SkinsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\SkinsPanel.Designer.cs">
+      <DependentUpon>SkinsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\WildcatRS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\WildcatRS.designer.cs">
+      <DependentUpon>WildcatRS.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Skins\Loserfruit.cs">
       <SubType>Form</SubType>
@@ -654,19 +804,22 @@
     <Compile Include="Panels\SidebarPanel.Designer.cs">
       <DependentUpon>SidebarPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Panels\SkinsPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Panels\SkinsPanel.Designer.cs">
-      <DependentUpon>SkinsPanel.cs</DependentUpon>
-    </Compile>
     <Compile Include="Main\Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Items\Backblings\SpectralSpine.resx">
+      <DependentUpon>SpectralSpine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\Backblings\BlackShield.resx">
       <DependentUpon>BlackShield.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Backblings\SixString.resx">
       <DependentUpon>SixString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Emotes\FlossArmWave.resx">
+      <DependentUpon>FlossArmWave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Emotes\Jitterbug.resx">
+      <DependentUpon>Jitterbug.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Emotes\TakeTL.resx">
       <DependentUpon>TakeTL.cs</DependentUpon>
@@ -695,11 +848,14 @@
     <EmbeddedResource Include="Items\Pickaxes\Axecalibur.resx">
       <DependentUpon>Axecalibur.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Items\Pickaxes\HarleyHitter.resx">
-      <DependentUpon>HarleyHitter.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Items\Pickaxes\Guandao.resx">
       <DependentUpon>Guandao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Pickaxes\FNCS.resx">
+      <DependentUpon>FNCS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Pickaxes\StarwandRS.resx">
+      <DependentUpon>StarwandRS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Pickaxes\RaidersRevenge.resx">
       <DependentUpon>RaidersRevenge.cs</DependentUpon>
@@ -707,14 +863,11 @@
     <EmbeddedResource Include="Items\Pickaxes\Starwand.resx">
       <DependentUpon>Starwand.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Items\Pickaxes\StarwandRS.resx">
-      <DependentUpon>StarwandRS.cs</DependentUpon>
+    <EmbeddedResource Include="Items\Pickaxes\HarleyHitter.resx">
+      <DependentUpon>HarleyHitter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Pickaxes\Studded.resx">
       <DependentUpon>Studded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Pickaxes\FNCS.resx">
-      <DependentUpon>FNCS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Pickaxes\TatAxe.resx">
       <DependentUpon>TatAxe.cs</DependentUpon>
@@ -737,11 +890,29 @@
     <EmbeddedResource Include="Items\Questions\BansheeOption.resx">
       <DependentUpon>BansheeOption.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Items\Questions\FlossOption.resx">
+      <DependentUpon>FlossOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Questions\WildcatOption.resx">
+      <DependentUpon>WildcatOption.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\Questions\StarwandOption.resx">
       <DependentUpon>StarwandOption.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\AerialAssaultTrooper.resx">
+      <DependentUpon>AerialAssaultTrooper.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\BlazetorenegadeCheckered.resx">
       <DependentUpon>BlazetorenegadeCheckered.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\ReconSpecialist.resx">
+      <DependentUpon>ReconSpecialist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\SkinsPanel.resx">
+      <DependentUpon>SkinsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\WildcatRS.resx">
+      <DependentUpon>WildcatRS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\Loserfruit.resx">
       <DependentUpon>Loserfruit.cs</DependentUpon>
@@ -884,9 +1055,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\SidebarPanel.resx">
       <DependentUpon>SidebarPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Panels\SkinsPanel.resx">
-      <DependentUpon>SkinsPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
