@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SkinsPanel));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuImageButton26 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton25 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -58,7 +59,6 @@
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton23 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton24)).BeginInit();
@@ -91,6 +91,23 @@
             // 
             this.bunifuElipse1.ElipseRadius = 7;
             this.bunifuElipse1.TargetControl = this.Sidebar;
+            // 
+            // Sidebar
+            // 
+            this.Sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
+            this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Sidebar.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Sidebar.GradientBottomRight = System.Drawing.Color.Magenta;
+            this.Sidebar.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Sidebar.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Sidebar.Location = new System.Drawing.Point(725, 19);
+            this.Sidebar.Name = "Sidebar";
+            this.Sidebar.Quality = 10;
+            this.Sidebar.Size = new System.Drawing.Size(195, 573);
+            this.Sidebar.TabIndex = 27;
+            this.Sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.Sidebar_Paint);
             // 
             // bunifuDragControl1
             // 
@@ -462,23 +479,6 @@
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
-            // Sidebar
-            // 
-            this.Sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
-            this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Sidebar.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Sidebar.GradientBottomRight = System.Drawing.Color.Magenta;
-            this.Sidebar.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Sidebar.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Sidebar.Location = new System.Drawing.Point(725, 19);
-            this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Quality = 10;
-            this.Sidebar.Size = new System.Drawing.Size(195, 573);
-            this.Sidebar.TabIndex = 27;
-            this.Sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.Sidebar_Paint);
             // 
             // SkinsPanel
             // 

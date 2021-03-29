@@ -65,5 +65,10 @@ namespace JuicySwapper.Panels
         {
             new Jitterbug().ShowDialog();
         }
+
+        private void bunifuImageButton8_Click(object sender, EventArgs e)
+        {
+            new Octane().ShowDialog();
+        }
     }
 }

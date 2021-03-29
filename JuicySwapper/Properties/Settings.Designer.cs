@@ -1030,5 +1030,17 @@ namespace JuicySwapper.Properties {
                 this["GalaxyEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool OctaneEnabled {
+            get {
+                return ((bool)(this["OctaneEnabled"]));
+            }
+            set {
+                this["OctaneEnabled"] = value;
+            }
+        }
     }
 }
