@@ -1,5 +1,7 @@
 ﻿using JuicySwapper.Properties;
+using Microsoft.WindowsAPICodePack.Dialogs;
 using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace JuicySwapper.Main.GUI
@@ -217,7 +219,7 @@ namespace JuicySwapper.Main.GUI
             }
         }
 
-        /*private void selectPakPathButton_Click(object sender, EventArgs e)
+        private void selectPakPathButton_Click(object sender, EventArgs e)
         {
             var dialog = new CommonOpenFileDialog
             {
@@ -237,7 +239,7 @@ namespace JuicySwapper.Main.GUI
                 else
                     MessageBox.Show("Please select the correct directory!", "Juicy Swapper", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }*/
+        }
 
         private void SettingsMenu_FormClosing(object sender, FormClosingEventArgs e)
         {

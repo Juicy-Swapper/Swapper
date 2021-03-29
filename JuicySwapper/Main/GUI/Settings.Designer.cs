@@ -38,11 +38,13 @@
             this.CurvaSidebar = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.MusicSwitch = new System.Windows.Forms.PictureBox();
+            this.selectPakPathButton = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ResetConfigBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConvertitemsBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Backupverifybtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MusicSwitch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectPakPathButton)).BeginInit();
             this.SuspendLayout();
             // 
             // ResetConfigBtn
@@ -124,6 +126,17 @@
             this.MusicSwitch.TabStop = false;
             this.MusicSwitch.Click += new System.EventHandler(this.MusicSwitch_Click);
             // 
+            // selectPakPathButton
+            // 
+            this.selectPakPathButton.BackColor = System.Drawing.Color.Transparent;
+            this.selectPakPathButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.selectPakPathButton.Location = new System.Drawing.Point(7, 59);
+            this.selectPakPathButton.Name = "selectPakPathButton";
+            this.selectPakPathButton.Size = new System.Drawing.Size(35, 28);
+            this.selectPakPathButton.TabIndex = 12;
+            this.selectPakPathButton.TabStop = false;
+            this.selectPakPathButton.Click += new System.EventHandler(this.selectPakPathButton_Click);
+            // 
             // SettingsMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,6 +144,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(22)))), ((int)(((byte)(42)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(412, 168);
+            this.Controls.Add(this.selectPakPathButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CloseBtn);
             this.Controls.Add(this.Backupverifybtn);
@@ -148,6 +162,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Backupverifybtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MusicSwitch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectPakPathButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,5 +178,6 @@
         private Bunifu.Framework.UI.BunifuElipse CurvaSidebar;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.PictureBox MusicSwitch;
+        private System.Windows.Forms.PictureBox selectPakPathButton;
     }
 }
