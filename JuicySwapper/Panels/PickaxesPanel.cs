@@ -70,7 +70,8 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton6_Click(object sender, System.EventArgs e)
         {
-            new Studded().ShowDialog();
+            //new Studded().ShowDialog();
+            new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton9_Click(object sender, System.EventArgs e)
@@ -80,12 +81,14 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton7_Click(object sender, System.EventArgs e)
         {
-            new RaidersRevenge().ShowDialog();
+            //new RaidersRevenge().ShowDialog();
+            new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton8_Click(object sender, System.EventArgs e)
         {
-            new Guandao().ShowDialog();
+            new Message(Resources.disabled).ShowDialog();
+            //new Guandao().ShowDialog();
         }
 
         private void bunifuImageButton10_Click(object sender, System.EventArgs e)

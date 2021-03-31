@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using JuicySwapper.Main.Classes;
+using System.IO;
 
 namespace JuicySwapper.Main.GUI
 {

@@ -61,11 +61,11 @@ namespace JuicySwapper.Items.Skins
                 LogBox.Text += "\n[LOG] Body added";
             }
 
-            bool Swap2 = HexResearcher.Convert(SwapOffsets[1], SwapPath[0], Head, Head1, 0, 0, false, false);
+            bool Swap2 = HexResearcher.Convert(SwapOffsets[1], SwapPath[1], Head, Head1, 0, 0, false, false);
             if (Swap2)
                 LogBox.Text += "\n[LOG] Head added";
 
-            bool Swap3 = HexResearcher.Convert(SwapOffsets[1], SwapPath[0], Hat, Hat1, 0, 0, false, false);
+            bool Swap3 = HexResearcher.Convert(SwapOffsets[1], SwapPath[1], Hat, Hat1, 0, 0, false, false);
             if (Swap3)
                 LogBox.Text += "\n[LOG] Hat added";
 
@@ -91,11 +91,11 @@ namespace JuicySwapper.Items.Skins
                 LogBox.Text += "\n[LOG] Body removed";
             }
 
-            bool Swap2 = HexResearcher.Revert(SwapOffsets[1], SwapPath[0], Head, Head1, 0, 0, false, false);
+            bool Swap2 = HexResearcher.Revert(SwapOffsets[1], SwapPath[1], Head, Head1, 0, 0, false, false);
             if (Swap2)
                 LogBox.Text += "\n[LOG] Head removed";
 
-            bool Swap3 = HexResearcher.Revert(SwapOffsets[1], SwapPath[0], Hat, Hat1, 0, 0, false, false);
+            bool Swap3 = HexResearcher.Revert(SwapOffsets[1], SwapPath[1], Hat, Hat1, 0, 0, false, false);
             if (Swap3)
                 LogBox.Text += "\n[LOG] Hat removed";
 

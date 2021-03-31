@@ -17,7 +17,7 @@ namespace JuicySwapper.Main.Classes
 		{
 			var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
 
-			string Skin_Body_Path = $"{Pathtopaks}\\{Settings.Default.pak_skin_body}";
+			string Skin_Body_Path = $"{Pathtopaks}\\{Settings.Default.pak_skin_body}"; 
 			string Skin_Head_Path = $"{Pathtopaks}\\{Settings.Default.pak_skin_head}";
 			string Pickaxe_Mesh_Path = $"{Pathtopaks}\\{Settings.Default.pak_pick_mesh}";
 			string Backbling_Path = $"{Pathtopaks}\\{Settings.Default.pak_back_mesh}";
@@ -150,7 +150,7 @@ namespace JuicySwapper.Main.Classes
 		{
 			Settings.Default.SavageEnabled,
 			Settings.Default.FreemixEnabled
-	};
+	    };
 
 		public bool CheckIfCanSwap(string s)
 		{

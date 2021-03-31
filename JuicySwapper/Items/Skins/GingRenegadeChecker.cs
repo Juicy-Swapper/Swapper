@@ -44,13 +44,14 @@ namespace JuicySwapper.Items.Skins
 
             ActionButton.Enabled = false;
 
-            int[] SwapOffsets = SwapUtilities.GetSwapOffset();
-            string[] SwapPath = SwapUtilities.GetSwapPath();
+            var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
+            int SwapOffsets = 190000000;
+            string SwapPath = $"{Pathtopaks}\\pakchunk10_s17-WindowsClient.ucas";
 
             LogBox.Clear();
             LogBox.Text += "[LOG] Starting...";
 
-            bool Swap1 = HexResearcher.Convert(SwapOffsets[1], SwapPath[0], Body, Body1, 0, 0, false, false);
+            bool Swap1 = HexResearcher.Convert(SwapOffsets, SwapPath, Body, Body1, 0, 0, false, false);
             if (Swap1)
             {
                 Settings.Default.GrenegadeCEnabled = true;
@@ -58,7 +59,7 @@ namespace JuicySwapper.Items.Skins
                 LogBox.Text += "\n[LOG] Body added";
             }
 
-            bool Swap2 = HexResearcher.Convert(SwapOffsets[1], SwapPath[0], Hat, Hat1, 0, 0, false, false);
+            bool Swap2 = HexResearcher.Convert(SwapOffsets, SwapPath, Hat, Hat1, 0, 0, false, false);
             if (Swap2)
                 LogBox.Text += "\n[LOG] Hat added";
 
@@ -70,13 +71,14 @@ namespace JuicySwapper.Items.Skins
         {
             ActionButton.Enabled = false;
 
-            int[] SwapOffsets = SwapUtilities.GetSwapOffset();
-            string[] SwapPath = SwapUtilities.GetSwapPath();
+            var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
+            int SwapOffsets = 190000000;
+            string SwapPath = $"{Pathtopaks}\\pakchunk10_s17-WindowsClient.ucas";
 
             LogBox.Clear();
             LogBox.Text += "[LOG] Starting...";
 
-            bool Swap1 = HexResearcher.Revert(SwapOffsets[1], SwapPath[0], Body, Body1, 0, 0, false, false);
+            bool Swap1 = HexResearcher.Revert(SwapOffsets, SwapPath, Body, Body1, 0, 0, false, false);
             if (Swap1)
             {
                 Settings.Default.GrenegadeCEnabled = false;
@@ -84,7 +86,7 @@ namespace JuicySwapper.Items.Skins
                 LogBox.Text += "\n[LOG] Body removed";
             }
 
-            bool Swap2 = HexResearcher.Revert(SwapOffsets[1], SwapPath[0], Hat, Hat1, 0, 0, false, false);
+            bool Swap2 = HexResearcher.Revert(SwapOffsets, SwapPath, Hat, Hat1, 0, 0, false, false);
             if (Swap2)
                 LogBox.Text += "\n[LOG] Hat removed";
 
