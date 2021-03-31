@@ -35,8 +35,8 @@ namespace JuicySwapper.Items.BackBlings
 
         private void ConvertBytes_DoWork(object sender, DoWorkEventArgs e)
         {
-            if (SwapUtilities.CheckIfCanSwap("DivaB"))
-                return;
+            //if (SwapUtilities.CheckIfCanSwap("DivaB"))
+            //    return;
 
             ActionButton.Enabled = false;
 

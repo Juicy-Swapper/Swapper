@@ -207,6 +207,101 @@ namespace JuicySwapper.Main.GUI
                 num++;
                 text += "Insignia," + " ";
             }
+            if (Settings.Default.LoserfruitEnabled == true)
+            {
+                num++;
+                text += "Loser fruit," + " ";
+            }
+            if (Settings.Default.StarwandEnabled == true || Settings.Default.StarwandRSEnabled == true)
+            {
+                num++;
+                text += "Star wand," + " ";
+            }
+            if (Settings.Default.RaidersRevengeEnabled == true)
+            {
+                num++;
+                text += "Raiders Revenge," + " ";
+            }
+            if (Settings.Default.GuandaoEnabled == true)
+            {
+                num++;
+                text += "Guandao," + " ";
+            }
+            if (Settings.Default.AxecaliburEnabled == true)
+            {
+                num++;
+                text += "Axe calibur," + " ";
+            }
+            if (Settings.Default.ChickenEnabled == true)
+            {
+                num++;
+                text += "Chicken," + " ";
+            }
+            if (Settings.Default.TAKEtLEnabled == true)
+            {
+                num++;
+                text += "Take The L," + " ";
+            }
+            if (Settings.Default.FlossEnabled == true || Settings.Default.FlossArmWaveEnabled)
+            {
+                num++;
+                text += "Loserfruit," + " ";
+            }
+            if (Settings.Default.ScenarioEnabled == true)
+            {
+                num++;
+                text += "Scenario," + " ";
+            }
+            if (Settings.Default.BlackShieldEnabled == true || Settings.Default.BlackShieldDSEnabled == true || Settings.Default.BlackShieldFSEnabled == true)
+            {
+                num++;
+                text += "BlackShield," + " ";
+            }
+            if (Settings.Default.ReconSpecialistEnabled == true)
+            {
+                num++;
+                text += "Recon Specialist," + " ";
+            }
+            if (Settings.Default.GalaxyEnabled == true)
+            {
+                num++;
+                text += "Galaxy," + " ";
+            }
+            if (Settings.Default.SpectralSpineEnabled == true)
+            {
+                num++;
+                text += " Spectral Spine," + " ";
+            }
+            if (Settings.Default.WildcatBlueEnabled == true)
+            {
+                num++;
+                text += "WildCat," + " ";
+            }
+            if (Settings.Default.AerialAssaultTrooperEnabled == true)
+            {
+                num++;
+                text += "Aerial Assault Trooper," + " ";
+            }
+            if (Settings.Default.HarleyHitterEnabled == true)
+            {
+                num++;
+                text += "Harley Hitter," + " ";
+            }
+            if (Settings.Default.OctaneEnabled == true)
+            {
+                num++;
+                text += "lil Octane," + " ";
+            }
+            if (Settings.Default.SaySoEnabled == true)
+            {
+                num++;
+                text += " Say So," + " ";
+            }
+            if (Settings.Default.SavageEnabled == true)
+            {
+                num++;
+                text += "Savage," + " ";
+            }
             switch (num)
             {
                 case 0:
