@@ -22,8 +22,10 @@ namespace JuicySwapper.Main.Classes
 			string Pickaxe_Mesh_Path = $"{Pathtopaks}\\{Settings.Default.pak_pick_mesh}";
 			string Backbling_Path = $"{Pathtopaks}\\{Settings.Default.pak_back_mesh}";
 			string Emote_Path = $"{Pathtopaks}\\{Settings.Default.pak_emote_mesh}";
+			string Jen_Temp = $"{Pathtopaks}\\pakchunk10_s17-WindowsClient.ucas";
+			string Pickaxe_Mesh_Path_2 = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
 
-			return new string[] { Skin_Body_Path, Skin_Head_Path, Pickaxe_Mesh_Path, Backbling_Path, Emote_Path };
+			return new string[] { Skin_Body_Path, Skin_Head_Path, Pickaxe_Mesh_Path, Backbling_Path, Emote_Path, Jen_Temp, Pickaxe_Mesh_Path_2 };
 		}
 
 		public int[] GetSwapOffset()
@@ -34,8 +36,10 @@ namespace JuicySwapper.Main.Classes
 			int Offset_Back_Mesh = Settings.Default.offset_back_mesh;
 			int Offset_Emote_Mesh = Settings.Default.offset_emote_mesh;
 			int Offset_Blaze_Mesh = Settings.Default.offsetBlaze;
+			int Jen_Temp = 120000000;
+			int Pickaxe_Mesh_Path_2 = 1;
 
-			return new int[] { Offset_Skin_Body, Offset_Skin_Head, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh, Offset_Blaze_Mesh };
+			return new int[] { Offset_Skin_Body, Offset_Skin_Head, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh, Offset_Blaze_Mesh, Jen_Temp, Pickaxe_Mesh_Path_2 };
 		}
 
 		public string[] GetEACPath()
