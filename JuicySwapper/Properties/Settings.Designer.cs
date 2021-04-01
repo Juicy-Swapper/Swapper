@@ -1066,5 +1066,17 @@ namespace JuicySwapper.Properties {
                 this["SaySoEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool MegumiEnabled {
+            get {
+                return ((bool)(this["MegumiEnabled"]));
+            }
+            set {
+                this["MegumiEnabled"] = value;
+            }
+        }
     }
 }

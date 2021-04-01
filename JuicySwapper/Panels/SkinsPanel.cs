@@ -111,5 +111,11 @@ namespace JuicySwapper.Panels
         {
             new Galaxy().ShowDialog();
         }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+           // new Megumi().ShowDialog();
+            new Message(Resources.disabled).ShowDialog();
+        }
     }
 }

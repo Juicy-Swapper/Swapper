@@ -46,7 +46,7 @@ namespace JuicySwapper.Items.Emotes
             LogBox.Clear();
             LogBox.Text += "[LOG] Starting...";
 
-            bool Swap1 = HexResearcher.Convert(SwapOffsets[4], SwapPath[4], Emote, Emote1, 0, 0, false, false);
+            bool Swap1 = HexResearcher.Convert(SwapOffsets[7], SwapPath[7], Emote, Emote1, 0, 0, false, false);
             if (Swap1)
             {
                 Settings.Default.OctaneEnabled = true;
@@ -68,7 +68,7 @@ namespace JuicySwapper.Items.Emotes
             LogBox.Clear();
             LogBox.Text += "[LOG] Starting...";
 
-            bool Swap1 = HexResearcher.Revert(SwapOffsets[4], SwapPath[4], Emote, Emote1, 0, 0, false, false);
+            bool Swap1 = HexResearcher.Revert(SwapOffsets[7], SwapPath[7], Emote, Emote1, 0, 0, false, false);
             if (Swap1)
             {
                 Settings.Default.OctaneEnabled = false;
