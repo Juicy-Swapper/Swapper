@@ -427,18 +427,6 @@
     <Compile Include="Items\Skins\Megumi.designer.cs">
       <DependentUpon>Megumi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Items\Skins\ReconSpecialist.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\ReconSpecialist.designer.cs">
-      <DependentUpon>ReconSpecialist.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Panels\SkinsPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Panels\SkinsPanel.Designer.cs">
-      <DependentUpon>SkinsPanel.cs</DependentUpon>
-    </Compile>
     <Compile Include="Items\Skins\WildcatRS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -511,129 +499,9 @@
     <Compile Include="Items\Skins\Blazetorenegade.designer.cs">
       <DependentUpon>Blazetorenegade.cs</DependentUpon>
     </Compile>
-    <Compile Include="Items\Skins\EliteAgent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\EliteAgent.designer.cs">
-      <DependentUpon>EliteAgent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\Banshee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\Banshee.designer.cs">
-      <DependentUpon>Banshee.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\Wildcat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\Wildcat.designer.cs">
-      <DependentUpon>Wildcat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\SurvivalSpecialist.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\SurvivalSpecialist.designer.cs">
-      <DependentUpon>SurvivalSpecialist.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\sunbird.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\sunbird.designer.cs">
-      <DependentUpon>sunbird.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\Spitfire.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\Spitfire.designer.cs">
-      <DependentUpon>Spitfire.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\SparkleSpecialist.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\SparkleSpecialist.designer.cs">
-      <DependentUpon>SparkleSpecialist.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\RenegadeRaider.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\RenegadeRaider.designer.cs">
-      <DependentUpon>RenegadeRaider.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\Renegade.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\Renegade.designer.cs">
-      <DependentUpon>Renegade.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\ReconExpert.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\ReconExpert.designer.cs">
-      <DependentUpon>ReconExpert.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\RamirezAA.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\RamirezAA.designer.cs">
-      <DependentUpon>RamirezAA.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\Ramirez.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\Ramirez.designer.cs">
-      <DependentUpon>Ramirez.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\headhunter.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\headhunter.designer.cs">
-      <DependentUpon>headhunter.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\Hawk.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\Hawk.designer.cs">
-      <DependentUpon>Hawk.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\GingerbreadRaider.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\GingerbreadRaider.designer.cs">
-      <DependentUpon>GingerbreadRaider.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\Fate.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\Fate.designer.cs">
-      <DependentUpon>Fate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\Dazzle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\Dazzle.designer.cs">
-      <DependentUpon>Dazzle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\BansheeTO.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\BansheeTO.designer.cs">
-      <DependentUpon>BansheeTO.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\BansheeRen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\BansheeRen.designer.cs">
-      <DependentUpon>BansheeRen.cs</DependentUpon>
-    </Compile>
     <Compile Include="Main\Classes\Api.cs" />
     <Compile Include="Main\Classes\Mongodb.cs" />
     <Compile Include="Main\Classes\SwapUtilities.cs" />
-    <Compile Include="Items\Questions\BansheeOption.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Questions\BansheeOption.designer.cs">
-      <DependentUpon>BansheeOption.cs</DependentUpon>
-    </Compile>
     <Compile Include="Items\Pickaxes\candyaxe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -657,12 +525,6 @@
     </Compile>
     <Compile Include="Main\GUI\OfflineMode.designer.cs">
       <DependentUpon>OfflineMode.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Questions\RamirezOption.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Questions\RamirezOption.designer.cs">
-      <DependentUpon>RamirezOption.cs</DependentUpon>
     </Compile>
     <Compile Include="Panels\EmotesPanel.cs">
       <SubType>UserControl</SubType>
@@ -739,6 +601,12 @@
       <DependentUpon>SidebarPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\Classes\Program.cs" />
+    <Compile Include="Panels\SkinsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\SkinsPanel.designer.cs">
+      <DependentUpon>SkinsPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Items\Backblings\SpectralSpine.resx">
       <DependentUpon>SpectralSpine.cs</DependentUpon>
@@ -830,9 +698,6 @@
     <EmbeddedResource Include="Items\Questions\RenegadeOption.resx">
       <DependentUpon>RenegadeOption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Items\Questions\BansheeOption.resx">
-      <DependentUpon>BansheeOption.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Items\Questions\FlossOption.resx">
       <DependentUpon>FlossOption.cs</DependentUpon>
     </EmbeddedResource>
@@ -853,12 +718,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\Megumi.resx">
       <DependentUpon>Megumi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\ReconSpecialist.resx">
-      <DependentUpon>ReconSpecialist.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Panels\SkinsPanel.resx">
-      <DependentUpon>SkinsPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\WildcatRS.resx">
       <DependentUpon>WildcatRS.cs</DependentUpon>
@@ -896,63 +755,6 @@
     <EmbeddedResource Include="Items\Skins\Blazetorenegade.resx">
       <DependentUpon>Blazetorenegade.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\EliteAgent.resx">
-      <DependentUpon>EliteAgent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\Banshee.resx">
-      <DependentUpon>Banshee.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\Wildcat.resx">
-      <DependentUpon>Wildcat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\SurvivalSpecialist.resx">
-      <DependentUpon>SurvivalSpecialist.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\sunbird.resx">
-      <DependentUpon>sunbird.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\Spitfire.resx">
-      <DependentUpon>Spitfire.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\SparkleSpecialist.resx">
-      <DependentUpon>SparkleSpecialist.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\RenegadeRaider.resx">
-      <DependentUpon>RenegadeRaider.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\Renegade.resx">
-      <DependentUpon>Renegade.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\ReconExpert.resx">
-      <DependentUpon>ReconExpert.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\RamirezAA.resx">
-      <DependentUpon>RamirezAA.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\Ramirez.resx">
-      <DependentUpon>Ramirez.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\headhunter.resx">
-      <DependentUpon>headhunter.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\Hawk.resx">
-      <DependentUpon>Hawk.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\GingerbreadRaider.resx">
-      <DependentUpon>GingerbreadRaider.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\Fate.resx">
-      <DependentUpon>Fate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\Dazzle.resx">
-      <DependentUpon>Dazzle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\BansheeTO.resx">
-      <DependentUpon>BansheeTO.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\BansheeRen.resx">
-      <DependentUpon>BansheeRen.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Items\Pickaxes\candyaxe.resx">
       <DependentUpon>candyaxe.cs</DependentUpon>
     </EmbeddedResource>
@@ -964,9 +766,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\OfflineMode.resx">
       <DependentUpon>OfflineMode.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Questions\RamirezOption.resx">
-      <DependentUpon>RamirezOption.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\EmotesPanel.resx">
       <DependentUpon>EmotesPanel.cs</DependentUpon>
@@ -1004,6 +803,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\SidebarPanel.resx">
       <DependentUpon>SidebarPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\SkinsPanel.resx">
+      <DependentUpon>SkinsPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -35,34 +35,6 @@ namespace JuicySwapper.Panels
         {
             InitializeComponent();
         }
-
-        private void bunifuImageButton1_Click(object sender, System.EventArgs e)
-        {
-            if (Settings.Default.AccVerify == "Guest")
-            {
-                Message a = new Message(Resources.Juicynoacc);
-                a.ShowDialog();
-                return;
-            }
-
-            new candyaxe().ShowDialog();
-        }
-
-        private void bunifuImageButton2_Click(object sender, System.EventArgs e)
-        {
-            new IronBeak().ShowDialog();
-        }
-
-        private void bunifuImageButton3_Click(object sender, System.EventArgs e)
-        {
-            new SkullySplitter().ShowDialog();
-        }
-
-        private void bunifuImageButton4_Click(object sender, System.EventArgs e)
-        {
-            new TatAxe().ShowDialog();
-        }
-
         private void bunifuImageButton5_Click(object sender, System.EventArgs e)
         {
             new FNCS().ShowDialog();

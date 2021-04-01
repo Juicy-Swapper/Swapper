@@ -42,7 +42,7 @@
             this.bunifuImageButton18 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton17 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton11 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton13 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.Renegade = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton25)).BeginInit();
@@ -53,7 +53,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Renegade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,7 +112,6 @@
             this.bunifuImageButton25.TabIndex = 56;
             this.bunifuImageButton25.TabStop = false;
             this.bunifuImageButton25.Zoom = 10;
-            this.bunifuImageButton25.Click += new System.EventHandler(this.bunifuImageButton25_Click);
             // 
             // bunifuImageButton24
             // 
@@ -182,7 +181,6 @@
             this.bunifuImageButton18.TabIndex = 50;
             this.bunifuImageButton18.TabStop = false;
             this.bunifuImageButton18.Zoom = 10;
-            this.bunifuImageButton18.Click += new System.EventHandler(this.bunifuImageButton18_Click);
             // 
             // bunifuImageButton17
             // 
@@ -212,19 +210,19 @@
             this.bunifuImageButton11.Zoom = 10;
             this.bunifuImageButton11.Click += new System.EventHandler(this.bunifuImageButton11_Click_1);
             // 
-            // bunifuImageButton13
+            // Renegade
             // 
-            this.bunifuImageButton13.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton13.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton13.Image")));
-            this.bunifuImageButton13.ImageActive = null;
-            this.bunifuImageButton13.Location = new System.Drawing.Point(15, 19);
-            this.bunifuImageButton13.Name = "bunifuImageButton13";
-            this.bunifuImageButton13.Size = new System.Drawing.Size(71, 71);
-            this.bunifuImageButton13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton13.TabIndex = 47;
-            this.bunifuImageButton13.TabStop = false;
-            this.bunifuImageButton13.Zoom = 10;
-            this.bunifuImageButton13.Click += new System.EventHandler(this.bunifuImageButton13_Click);
+            this.Renegade.BackColor = System.Drawing.Color.Transparent;
+            this.Renegade.Image = ((System.Drawing.Image)(resources.GetObject("Renegade.Image")));
+            this.Renegade.ImageActive = null;
+            this.Renegade.Location = new System.Drawing.Point(15, 19);
+            this.Renegade.Name = "Renegade";
+            this.Renegade.Size = new System.Drawing.Size(71, 71);
+            this.Renegade.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Renegade.TabIndex = 47;
+            this.Renegade.TabStop = false;
+            this.Renegade.Zoom = 10;
+            this.Renegade.Click += new System.EventHandler(this.bunifuImageButton13_Click);
             // 
             // bunifuImageButton1
             // 
@@ -255,7 +253,7 @@
             this.Controls.Add(this.bunifuImageButton18);
             this.Controls.Add(this.bunifuImageButton17);
             this.Controls.Add(this.bunifuImageButton11);
-            this.Controls.Add(this.bunifuImageButton13);
+            this.Controls.Add(this.Renegade);
             this.Controls.Add(this.Sidebar);
             this.Name = "SkinsPanel";
             this.Size = new System.Drawing.Size(937, 609);
@@ -269,7 +267,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Renegade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
@@ -279,7 +277,7 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuGradientPanel Sidebar;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton13;
+        private Bunifu.Framework.UI.BunifuImageButton Renegade;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton11;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton17;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton18;

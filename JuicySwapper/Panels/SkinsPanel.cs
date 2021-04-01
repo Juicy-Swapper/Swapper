@@ -103,10 +103,6 @@ namespace JuicySwapper.Panels
             new AerialAssaultTrooper().ShowDialog();
         }
 
-        private void bunifuImageButton25_Click(object sender, EventArgs e)
-        {
-            new ReconSpecialist().ShowDialog();
-        }
         private void bunifuImageButton26_Click_1(object sender, EventArgs e)
         {
             new Galaxy().ShowDialog();
