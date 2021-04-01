@@ -46,7 +46,7 @@ namespace JuicySwapper.Items.Skins
 
             var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
             int SwapOffsets = 190000000;
-            string SwapPath = $"{Pathtopaks}\\pakchunk10_s17-WindowsClient.ucas";
+            string SwapPath = $"{Pathtopaks}\\pakchunk10_s22-WindowsClient.ucas";
 
             LogBox.Clear();
             LogBox.Text += "[LOG] Starting...";
@@ -73,7 +73,7 @@ namespace JuicySwapper.Items.Skins
 
             var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
             int SwapOffsets = 190000000;
-            string SwapPath = $"{Pathtopaks}\\pakchunk10_s17-WindowsClient.ucas";
+            string SwapPath = $"{Pathtopaks}\\pakchunk10_s22-WindowsClient.ucas";
 
             LogBox.Clear();
             LogBox.Text += "[LOG] Starting...";
@@ -134,6 +134,11 @@ namespace JuicySwapper.Items.Skins
             CloseTimer.Enabled = false;
             ActionButton.Enabled = true;
             Close();
+        }
+
+        private void SkinImage_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
