@@ -2,6 +2,7 @@
 using Microsoft.WindowsAPICodePack.Dialogs;
 using System;
 using System.IO;
+using System.Text;
 using System.Windows.Forms;
 
 namespace JuicySwapper.Main.GUI
@@ -17,7 +18,9 @@ namespace JuicySwapper.Main.GUI
             else
                 MusicSwitch.Image = Resources.ActivMusic;
 
-            label1.Text = Settings.Default.pakPath;
+            var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
+
+            label1.Text = Pathtopaks;
         }
 
         private void ConvertitemsBtn_Click(object sender, EventArgs e)
@@ -324,12 +327,14 @@ namespace JuicySwapper.Main.GUI
             };
             if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
             {
-                if (File.Exists($"{dialog.FileName}\\pakchunk10-WindowsClient.pak"))
+                if (File.Exists($"{dialog.FileName}\\{Settings.Default.pak_skin_body}"))
                 {
-                    label1.Text = dialog.FileName;
-                    Settings.Default.pakPath = label1.Text;
+                    StringBuilder stringBuilder = new StringBuilder(Settings.Default.pakPath, 1000);
+                    stringBuilder.Replace("\\FortniteGame\\Content\\Paks", "");
+                    Settings.Default.InstallationPath = stringBuilder.ToString();
                     Settings.Default.Save();
-                    label1.Text = Settings.Default.pakPath;
+                    var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
+                    label1.Text = Pathtopaks;
                 }
                 else
                     MessageBox.Show("Please select the correct directory!", "Juicy Swapper", MessageBoxButtons.OK, MessageBoxIcon.Error);
