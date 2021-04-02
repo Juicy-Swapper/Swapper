@@ -156,7 +156,6 @@ namespace JuicySwapper.Main.Classes
 
 		public List<bool> EAC = new List<bool>()
 		{
-			Settings.Default.SasukeEACEnabled,
 			Settings.Default.JuicyEAC1Enabled
 		};
 
