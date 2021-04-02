@@ -147,7 +147,7 @@ namespace JuicySwapper.Items.Skins
 
         private void SkinImage_Click(object sender, EventArgs e)
         {
-
+             
         }
     }
 }

@@ -35,6 +35,33 @@ namespace JuicySwapper.Panels
         {
             InitializeComponent();
         }
+
+        private void bunifuImageButton1_Click(object sender, System.EventArgs e)
+        {
+            if (Settings.Default.AccVerify == "Guest")
+            {
+                Message a = new Message(Resources.Juicynoacc);
+                a.ShowDialog();
+                return;
+            }
+
+        }
+
+        private void bunifuImageButton2_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton3_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton4_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
         private void bunifuImageButton5_Click(object sender, System.EventArgs e)
         {
             new FNCS().ShowDialog();
@@ -42,25 +69,22 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton6_Click(object sender, System.EventArgs e)
         {
-            //new Studded().ShowDialog();
-            new Message(Resources.disabled).ShowDialog();
+            new Studded().ShowDialog();
         }
 
         private void bunifuImageButton9_Click(object sender, System.EventArgs e)
-        {//
-            new StarwandOption().ShowDialog();
+        {
+            new StarwandRS().ShowDialog();
         }
 
         private void bunifuImageButton7_Click(object sender, System.EventArgs e)
         {
-            //new RaidersRevenge().ShowDialog();
-            new Message(Resources.disabled).ShowDialog();
+            new RaidersRevenge().ShowDialog();
         }
 
         private void bunifuImageButton8_Click(object sender, System.EventArgs e)
         {
-            new Message(Resources.disabled).ShowDialog();
-            //new Guandao().ShowDialog();
+           new Guandao().ShowDialog();
         }
 
         private void bunifuImageButton10_Click(object sender, System.EventArgs e)
