@@ -39,11 +39,10 @@ namespace JuicySwapper.Items.Skins
         string Hat = "8C 0A 00 03 EE 88 03 EC 00 00 00 00 00 00 00 00 00 02 C2 20 00 80 CA 08 40 00 00 00 A9 05 F0 05 08 01 F8 06 20 07 B0 07 D8 04 50 2F 47 61 6D 65 2F 43 68 61 72 61 63 74 65 72 73 50 61 72 74 73 2F 46 61 63 41 63 63 65 73 6F 72 69 65 73 2F 43 50 5F 46 5F 4D 45 44 5F 48 69 67 68 74 6F 77 65 72 48 6F 6E 65 79 64 65 77 5F 53 77 6F 6C 65 00 74 50 6C 79 65 72 2F 46 65 6D 6C 65 2F 4D 65 64 69 75 6D 2F 42 6F 64 54 5F 2F 4D 65 73 68 65 73 43 43 50 4D 44 5F 00 92 2E 5F 43 00 7F A6 2E 86 5F 41 6E 69 6D 42 50 00 B6 2E 5F 43 00 13 2F 53 63 72 69 70 74 2F 43 6F 72 65 55 4F 62 6A 63 74 00 14 46 74 6E 69 74 65 00 0E 41 64 64 69 74 69 6F 6E 61 6C 44 61 74 61 00 09 43 6C 61 73 73 00 0F 62 41 74 74 61 63 68 54 6F 53 6F 63 6B 65 74 00 0C 42 6F 6F 6C 50 72 6F 70 65 72 74 79 00 0C 42 79 74 65 11 54 79 70 65 00 05 20 17 43 75 73 74 6F 6D 13 00 20 44 65 66 61 75 74 5F 5F 1C 11 45 47 65 6E 64 65 72 00 19 3A 3A 00 13 19 3A 3A 00 0F 50 65 72 6D 69 74 74 64 00 04 4E 6E 65 00 0E 07 50 61 63 6B 67 65 00 15 4D 6F 64 69 66 69 65 72 42 6C 75 65 70 72 69 6E 74 00 0C 53 6B 65 6C 65 74 61 6C 00 12 53 6F 66 74 4F 64 C1 05 2F B6 A5 EB 80 BB B6 E3 ED AE 6D D9 50 98 40 9E 9D 0D 94 77 B4 02 7C A0 16 C0 36 51 81 C4 17 0C 74 1A 18 30 5F 40 68 01 0A E9 37 13 7B DE 81 28 84 AE 9B A7 8F 7B 19 52 10 8A 4F 34 DB 0D 04 17 86 CC 9F D3 F2 1C 6C B6 14 0A 6C 57 87 4A 28 10 9C 02 0B CE 39 F1 5A FC 02 DD 56 A9 52 46 BB DE 72 84 89 5C 9A 9C B3 EE 28 C6 A7 41 C8 CC 73 AC 51 26 83 EA A3 4B DB AD 2B 3A 82 6E B6 DB 6B 4B F8 BC CC 99 D3 B0 90 9C 57 6E 1C 4A 94 58 A1 74 99 E8 86 03 41 76 C6 E1 E0 75 7E 10 87 5F 20 A7 90 03 3D EA 51 7A 64 D4 6B D6 C3 94 98 52 6B B9 38 10 C4 AC 41 57 93 F5 2D 88 9C CF B1 66 E1 96 F4 4B 43 32 EF 64 58 79 F1 D0 49 02 33 24 9A C2 2D 35 A6 5B 0F 37 75 2F AE 24 92 59 19 CC 80 FA 86 1E 80 92 B9 C6 D6 BE BB F3 B7 F1 2D 34 2A 83 8D 36 E9 0F ED 56 31 73 EB 4F 19 FC 82 6E 06 CC C5 25 56 69 31 65 68 7E A2 42 63 10 83 7A 73 75 F0 DA 76 DF 00 10 47 18 69 40 56 99 65 CF 69 E3 22 58 A5 6D 55 F8 70 CA 08 12 00 11 01 01 FF FF FF FF FF FF FF FF DC 2D 10 73 C6 B5 FA 36 76 E1 9B 0B 04 00 01 07 03 06 00 02 01 02 85 02 01 04 04 03 01 02 05 02 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 8E C8 95 96 92 92 92 92 92 99 41 87 87 53 87 8A 8D 87 87 87 87 87 7D 90 8A 8F 87 26 50 A1 71 8F 30 34 C1 39 82 01 79 E0 7C F0 F0 F0 F8 F8 78 F0 60 81 01 79 F8 C8 81 01 87 82 01 79 F8 F8 87 87 8E 44 91 25 87 87 24 87 87 87 87 87 4F 69 36 79 F0 A0 CF 20 28 79 20 8F 7B C8 79 70 22 30 87 79 90 32 5A 48 79 A0 22 32 8F 8C 34 48 8D A4 87 87 87 26 6F 48 22 00 30 32 99 99 39 40 87 C1 40 40 39 B9 39 40 40 40 40 87 5A 59 59 79 7B 87 7F 42 00 30 00 0B 00 52 00 4F 00 4C 00 4D 00 8B 00 21 00 9F 00 76 00 1C 00 94 00 2C 00 15 01 81 00 A8 00 A8 00 88 00 2E 00 15 00 DC 00 45 00 0E 00 27 04 47 00 22 04 D0 00 8D 00 19 00 5B 00 37 00 22 00 40 00 01 01 1A 00 13 00 E3 01 1B 00 DA 00 15 00 80 00 40 00 85 01 2F 01 36 02 42 00 E1 05 08 00 36 01 08 00 10 00 48 00 10 00 76 01 48 00 08 00 28 00 88 00 10 00 88 00 A3 07 80 00 08 00 9C 00 23 00 3B 00 00 00 00 19 24 24 2B EA 8C 0A 00 03 EE 88 03 EC 00 00 00 00";
         string Hat1 = "8C 06 00 03 E5 88 03 E3 00 00 00 00 00 00 00 00 00 02 DB 20 00 80 CA 08 40 00 00 00 A9 05 F0 05 08 01 F8 06 20 07 B0 07 D8 04 50 2F 47 61 6D 65 2F 43 68 61 72 61 63 74 65 72 73 50 74 73 2F 46 61 63 65 41 63 63 65 73 73 6F 72 69 65 73 2F 43 50 5F 46 5F 4D 45 44 5F 48 69 67 68 74 6F 77 65 72 48 6F 6E 65 79 64 65 77 5F 53 77 6F 6C 65 00 74 50 6C 61 79 2F 46 65 6D 61 6C 65 2F 4D 65 64 69 75 6D 2F 42 6F 64 53 61 69 6C 6F 72 5F 53 71 75 61 64 5F 52 65 62 65 6C 2F 4D 61 74 65 72 69 61 6C 73 2F 43 43 50 4D 46 45 00 92 2E 5F 43 7F 65 73 68 65 73 2F 5F A6 2E 86 5F 41 6E 69 6D 42 50 B6 13 2F 53 63 72 69 70 74 2F 43 6F 72 65 55 4F 62 6A 65 63 74 00 14 46 74 6E 69 74 65 00 0E 41 64 64 69 74 69 6F 6E 61 6C 44 61 74 61 00 09 43 6C 61 73 73 00 0F 62 41 74 74 61 63 68 54 6F 53 6F 63 6B 65 74 00 0C 42 6F 6F 6C 50 72 6F 70 65 72 74 79 00 0C 42 79 74 65 11 54 79 70 65 00 05 20 17 43 75 73 74 6F 6D 13 00 20 44 65 66 61 75 6C 74 5F 5F 1C 11 45 47 65 6E 64 65 72 00 19 3A 3A 00 13 19 3A 3A 00 0F 50 65 72 6D 69 74 74 65 64 00 04 4E 6F 6E 65 00 0E 07 50 61 63 6B 61 67 65 00 15 4D 6F 64 69 66 69 65 72 42 6C 75 65 70 72 69 6E 74 00 0C 53 6B 65 6C 65 74 61 6C 4D 65 73 68 00 12 53 6F 66 74 64 C1 00 05 2F B6 A5 EB 80 BB B6 E3 ED AE 6D D9 50 98 40 9E 9D 0D 94 77 B4 02 7C A0 16 C0 36 51 81 C4 17 0C 74 1A 18 30 5F 40 68 01 0A E9 37 13 7B DE 81 28 84 AE 9B A7 8F 7B 19 52 10 8A 4F 34 DB 0D 04 17 86 CC 9F D3 F2 1C 6C B6 14 0A 6C 57 87 4A 28 10 9C 02 0B CE 39 F1 5A FC 02 DD 56 A9 52 46 BB DE 72 84 89 5C 9A 9C B3 EE 28 C6 A7 41 C8 CC 73 AC 51 26 83 EA A3 4B DB AD 2B 3A 82 6E B6 DB 6B 4B F8 BC CC 99 D3 B0 90 9C 57 6E 1C 4A 94 58 A1 74 99 E8 86 03 41 76 C6 E1 E0 75 7E 10 87 5F 20 A7 90 03 3D EA 51 7A 64 D4 6B D6 C3 94 98 52 6B B9 38 10 C4 AC 41 57 93 F5 2D 88 9C CF B1 66 E1 96 F4 4B 43 32 EF 64 58 79 F1 D0 49 02 33 24 9A C2 2D 35 A6 5B 0F 37 75 2F AE 24 92 59 19 CC 80 FA 86 1E 80 92 B9 C6 D6 BE BB F3 B7 F1 2D 34 2A 83 8D 36 E9 0F ED 56 31 73 EB 4F 19 FC 82 6E 06 CC C5 25 56 69 31 65 68 7E A2 42 63 10 83 7A 73 75 F0 DA 76 DF 00 10 47 18 69 40 56 99 65 CF 69 E3 22 58 A5 6D 55 F8 70 CA 08 12 11 01 01 FF FF FF FF FF FF FF FF 00 DC 2D 10 FF 73 C6 B5 FA 36 76 E1 9B 0B 00 04 00 00 07 03 06 02 01 02 85 02 01 04 04 03 01 02 05 02 01 00 00 00 00 00 00 00 00 00 00 00 68 5C 03 03 02 02 02 02 02 05 D9 E3 81 FF 43 CB D0 D7 CC D6 E5 FD C1 38 3E A4 FD D7 D4 38 D5 DC C8 FD FD 90 FD E7 80 FD FC D4 CC 38 DB 01 CB CB DF ED D3 FD 1F C8 CC F5 C8 DB 38 D9 38 CC CA D0 FF D2 E6 C8 CC C5 38 CA D2 D3 DC 0B F7 D8 06 D3 D5 05 05 D5 D8 1B 58 D4 96 15 D5 94 D9 D8 58 D7 45 E5 55 E5 D8 1F 94 67 E2 00 00 42 08 03 0A 07 04 0A 09 04 00 0E 01 0C 17 18 10 05 00 09 0A 00 0E 00 1F 08 1A 0D 04 0F 06 2F 0F 2A 13 05 01 1B 0F 0A 08 09 04 0B 26 03 07 02 0D 0F 0B 1D 17 0A 19 1E 31 08 00 0F 00 00 08 08 08 00 04 3B 00 00 24 02 03 0E 32 00 01 0F 1E 51 00 36 03 62 1C 62 04 69 10 13 02 0F 27 03 10 04 08 05 00 0E 07 22 FF 05 06 00 0A 24 41 08 42 82 5C 56 D0 3D 89 19 B2 60 82 70 24 00 71 D2 00 23 05 03 C4 1C ED 80 0F 8F 51 44 A0 A8 77 02 6D 83 40";
 
-
         private void ConvertBytes_DoWork(object sender, DoWorkEventArgs e)
         {
-            if (SwapUtilities.CheckIfCanSwap(""))
-                return;
+            //if (SwapUtilities.CheckIfCanSwap(""))
+            //    return;
 
             ActionButton.Enabled = false;
 
@@ -53,7 +52,7 @@ namespace JuicySwapper.Items.Skins
             LogBox.Clear();
             LogBox.Text += "[LOG] Starting...";
 
-            bool Swap1 = HexResearcher.Convert(SwapOffsets[8], SwapPath[8], Body, Body1, 0, 0, false, false);
+            bool Swap1 = HexResearcher.Convert(SwapOffsets[6], SwapPath[5], Body, Body1, 0, 0, false, false);
             if (Swap1)
             {
                 Settings.Default.MegumiEnabled = true;
@@ -61,11 +60,11 @@ namespace JuicySwapper.Items.Skins
                 LogBox.Text += "\n[LOG] Body added";
             }
 
-            bool Swap2 = HexResearcher.Convert(SwapOffsets[8], SwapPath[8], Head, Head1, 0, 0, false, false);
+            bool Swap2 = HexResearcher.Convert(SwapOffsets[6], SwapPath[5], Head, Head1, 0, 0, false, false);
             if (Swap2)
                 LogBox.Text += "\n[LOG] Head added";
 
-            bool Swap3 = HexResearcher.Convert(SwapOffsets[8], SwapPath[8], Hat, Hat1, 0, 0, false, false);
+            bool Swap3 = HexResearcher.Convert(SwapOffsets[6], SwapPath[5], Hat, Hat1, 0, 0, false, false);
             if (Swap3)
                 LogBox.Text += "\n[LOG] Hat added";
 
@@ -83,7 +82,7 @@ namespace JuicySwapper.Items.Skins
             LogBox.Clear();
             LogBox.Text += "[LOG] Starting...";
 
-            bool Swap1 = HexResearcher.Revert(SwapOffsets[8], SwapPath[7], Body, Body1, 0, 0, false, false);
+            bool Swap1 = HexResearcher.Revert(SwapOffsets[6], SwapPath[5], Body, Body1, 0, 0, false, false);
             if (Swap1)
             {
                 Settings.Default.MegumiEnabled = false;
@@ -91,11 +90,11 @@ namespace JuicySwapper.Items.Skins
                 LogBox.Text += "\n[LOG] Body removed";
             }
 
-            bool Swap2 = HexResearcher.Revert(SwapOffsets[8], SwapPath[8], Head, Head1, 0, 0, false, false);
+            bool Swap2 = HexResearcher.Revert(SwapOffsets[6], SwapPath[5], Head, Head1, 0, 0, false, false);
             if (Swap2)
                 LogBox.Text += "\n[LOG] Head removed";
 
-            bool Swap3 = HexResearcher.Revert(SwapOffsets[8], SwapPath[8], Hat, Hat1, 0, 0, false, false);
+            bool Swap3 = HexResearcher.Revert(SwapOffsets[6], SwapPath[5], Hat, Hat1, 0, 0, false, false);
             if (Swap3)
                 LogBox.Text += "\n[LOG] Hat removed";
 
