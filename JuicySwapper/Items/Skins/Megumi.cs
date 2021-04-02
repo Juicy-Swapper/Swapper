@@ -42,8 +42,8 @@ namespace JuicySwapper.Items.Skins
 
         private void ConvertBytes_DoWork(object sender, DoWorkEventArgs e)
         {
-            if (SwapUtilities.CheckIfCanSwap(""))
-                return;
+            //if (SwapUtilities.CheckIfCanSwap(""))
+            //    return;
 
             ActionButton.Enabled = false;
 
@@ -113,13 +113,10 @@ namespace JuicySwapper.Items.Skins
                 FortnitePathExp.ShowDialog();
                 return;
             }
-            else
-                RevertBytes.RunWorkerAsync();
             if (enabled)
                 RevertBytes.RunWorkerAsync();
             else
                 ConvertBytes.RunWorkerAsync();
-
         }
 
         private void ConvertBytes_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)

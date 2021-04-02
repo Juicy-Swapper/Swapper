@@ -147,37 +147,31 @@ namespace JuicySwapper
 			return clearText;
 		}
 
-		public static bool DownloadConvert(string file, string link, bool messages)
+		public static bool DownloadConvert(string FileName)
         {
 			WebClient Download = new WebClient();
+			string file = $"{Settings.Default.InstallationPath}\\Binaries\\Win64\\EasyAntiCheat\\Launcher\\SplashScreen.png";
 
 			if (!File.Exists(file))
-            {
-				if (messages)
-					MessageBox.Show("The pak file specified doesn't exist");
-
 				return false;
-			}
-            else
+			else
             {
-				Download.DownloadFile(link, file);
+				File.Delete(file);
+				Download.DownloadFile($"{API.HOST}/{API.Images}/{FileName}.png", file);
 				return true;
 			}
 		}
 
-		public static bool DownloadRevert(string file, bool messages)
+		public static bool DownloadRevert()
 		{
 			WebClient Download = new WebClient();
+			string file = $"{Settings.Default.InstallationPath}\\Binaries\\Win64\\EasyAntiCheat\\Launcher\\SplashScreen.png";
 
 			if (!File.Exists(file))
-			{
-				if (messages)
-					MessageBox.Show("The pak file specified doesn't exist");
-
 				return false;
-			}
 			else
 			{
+				File.Delete(file);
 				Download.DownloadFile($"{API.HOST}/{API.Images}/splashscreen.png", file);
 				return true;
 			}
