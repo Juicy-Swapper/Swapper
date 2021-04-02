@@ -110,8 +110,18 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-           // new Megumi().ShowDialog();
-            new Message(Resources.disabled).ShowDialog();
+            new Megumi().ShowDialog();
+           // new Message(Resources.disabled).ShowDialog();
+        }
+
+        private void bunifuImageButton25_Click(object sender, EventArgs e)
+        {
+            new ReconSpecialist().ShowDialog(); 
+        }
+
+        private void bunifuImageButton18_Click_1(object sender, EventArgs e)
+        {
+            new RenegadeCOption().ShowDialog();
         }
     }
 }

@@ -37,11 +37,11 @@ namespace JuicySwapper.Main.Classes
 			int Offset_Back_Mesh = Settings.Default.offset_back_mesh;
 			int Offset_Emote_Mesh = Settings.Default.offset_emote_mesh;
 			int Offset_Blaze_Mesh = Settings.Default.offsetBlaze;
-			int Jen_Temp = 1;
+			int Jen_Temp = 130000000;
 			int Pickaxe_Mesh_Path_2 = 1;
 			int Emote_Path_2 = 1;
 
-			return new int[] { Offset_Skin_Body, Offset_Skin_Head, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh, Offset_Blaze_Mesh, Jen_Temp, Pickaxe_Mesh_Path_2, Emote_Path_2 };
+			return new int[] { Offset_Skin_Body, Offset_Skin_Head, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh, Offset_Blaze_Mesh, Jen_Temp, Pickaxe_Mesh_Path_2, Emote_Path_2};
 		}
 
 		public string[] GetEACPath()
