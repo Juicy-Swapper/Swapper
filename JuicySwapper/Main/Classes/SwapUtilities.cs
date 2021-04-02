@@ -132,7 +132,9 @@ namespace JuicySwapper.Main.Classes
 		public List<bool> Neon = new List<bool>()
 		{
 			Settings.Default.LoserfruitEnabled,
-			Settings.Default.WildcatBlueEnabled
+			Settings.Default.WildcatBlueEnabled,
+			Settings.Default.MeggEnabled,
+			Settings.Default.IsabelleEnabled
 		};
 
 		public List<bool> RockAxe = new List<bool>()
@@ -153,11 +155,26 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.SavageEnabled,
 			Settings.Default.FreemixEnabled
 	    };
+		public List<bool> Jennifer = new List<bool>()
+		{
+			Settings.Default.YukiEnabled,
+			Settings.Default.ChigusaEnabled,
+			Settings.Default.MegumiEnabled
+		};
+		public List<bool> BlowingBubbles = new List<bool>()
+		{
+			Settings.Default.ChickenEnabled,
+			Settings.Default.LeaveTheDoorOpenEnabled
+		};
+
 
 		public List<bool> EAC = new List<bool>()
 		{
 			Settings.Default.JuicyEAC1Enabled
 		};
+
+
+	
 
 		public bool CheckIfCanSwap(string s)
 		{
@@ -260,11 +277,18 @@ namespace JuicySwapper.Main.Classes
 						MessageBox.Show("A Emote using Side Hustle is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
 
-				case "EAC":
-					if (EAC.All(a => a) || EAC.All(a => !a))
+				case "Jennifer":
+					if (Jennifer.All(a => a) || Jennifer.All(a => !a))
 						return false;
 					else
-						MessageBox.Show("A Splash Screen is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+						MessageBox.Show("A Skin using Jennifer Walters is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
+				case "BlowingBubbles":
+					if (BlowingBubbles.All(a => a) || BlowingBubbles.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A Emote using Blowing Bubbles is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+
 					break;
 			}
 			return true;

@@ -53,5 +53,10 @@ namespace JuicySwapper.Panels
         {
             new SpectralSpine().ShowDialog();
         }
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            new RainbowClover().ShowDialog();
+        }
     }
 }

@@ -1090,5 +1090,65 @@ namespace JuicySwapper.Properties {
                 this["YukiEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ChigusaEnabled {
+            get {
+                return ((bool)(this["ChigusaEnabled"]));
+            }
+            set {
+                this["ChigusaEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool MeggEnabled {
+            get {
+                return ((bool)(this["MeggEnabled"]));
+            }
+            set {
+                this["MeggEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool IsabelleEnabled {
+            get {
+                return ((bool)(this["IsabelleEnabled"]));
+            }
+            set {
+                this["IsabelleEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool LeaveTheDoorOpenEnabled {
+            get {
+                return ((bool)(this["LeaveTheDoorOpenEnabled"]));
+            }
+            set {
+                this["LeaveTheDoorOpenEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool RainbowCloverEnabled {
+            get {
+                return ((bool)(this["RainbowCloverEnabled"]));
+            }
+            set {
+                this["RainbowCloverEnabled"] = value;
+            }
+        }
     }
 }
