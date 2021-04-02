@@ -154,6 +154,12 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.FreemixEnabled
 	    };
 
+		public List<bool> EAC = new List<bool>()
+		{
+			Settings.Default.SasukeEACEnabled,
+			Settings.Default.JuicyEAC1Enabled
+		};
+
 		public bool CheckIfCanSwap(string s)
 		{
 			switch (s)
@@ -253,6 +259,13 @@ namespace JuicySwapper.Main.Classes
 						return false;
 					else
 						MessageBox.Show("A Emote using Side Hustle is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
+
+				case "EAC":
+					if (EAC.All(a => a) || EAC.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A Splash Screen is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
 			}
 			return true;

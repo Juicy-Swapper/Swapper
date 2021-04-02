@@ -150,10 +150,12 @@ namespace JuicySwapper
 		public static bool DownloadConvert(string FileName)
         {
 			WebClient Download = new WebClient();
-			string file = $"{Settings.Default.InstallationPath}\\Binaries\\Win64\\EasyAntiCheat\\Launcher\\SplashScreen.png";
+			string file = $"{Settings.Default.InstallationPath}\\FortniteGame\\Binaries\\Win64\\EasyAntiCheat\\Launcher\\SplashScreen.png";
 
 			if (!File.Exists(file))
+            {
 				return false;
+			}
 			else
             {
 				File.Delete(file);
@@ -165,10 +167,12 @@ namespace JuicySwapper
 		public static bool DownloadRevert()
 		{
 			WebClient Download = new WebClient();
-			string file = $"{Settings.Default.InstallationPath}\\Binaries\\Win64\\EasyAntiCheat\\Launcher\\SplashScreen.png";
+			string file = $"{Settings.Default.InstallationPath}\\FortniteGame\\Binaries\\Win64\\EasyAntiCheat\\Launcher\\SplashScreen.png";
 
 			if (!File.Exists(file))
+            {
 				return false;
+			}
 			else
 			{
 				File.Delete(file);

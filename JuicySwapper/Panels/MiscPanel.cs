@@ -1,6 +1,7 @@
 ﻿using JuicySwapper.Main.Panels;
 using System;
 using System.Windows.Forms;
+using JuicySwapper.Items.Misc;
 
 namespace JuicySwapper.Panels
 {
@@ -41,12 +42,17 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton5_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Soon");
+            new Juicy1EAC().ShowDialog();
         }
 
         private void bunifuImageButton6_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Soon");
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            new Sasuke().ShowDialog();
         }
     }
 }

@@ -9,7 +9,7 @@ namespace JuicySwapper.Api
         public static string Status = "api/status.json";
         public static string Offsets = "api/offsets.json";
         public static string Discord = "discord";
-        public static string Images = "api/images/";
+        public static string Images = "api/images";
         public static string Paks = "api/paks.json";
     }
 
