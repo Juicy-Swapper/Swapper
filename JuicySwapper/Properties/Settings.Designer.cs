@@ -1078,5 +1078,17 @@ namespace JuicySwapper.Properties {
                 this["MegumiEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool YukiEnabled {
+            get {
+                return ((bool)(this["YukiEnabled"]));
+            }
+            set {
+                this["YukiEnabled"] = value;
+            }
+        }
     }
 }

@@ -168,3 +168,4 @@ C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.c
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.CopyComplete
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.exe
 C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper\obj\Debug\JuicySwapper.pdb
+C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Yuki.resources

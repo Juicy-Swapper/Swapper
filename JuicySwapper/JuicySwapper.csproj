@@ -421,6 +421,12 @@
     <Compile Include="Items\Skins\BlazetorenegadeCheckered.designer.cs">
       <DependentUpon>BlazetorenegadeCheckered.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Skins\Yuki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Yuki.designer.cs">
+      <DependentUpon>Yuki.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Skins\ReconSpecialist.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -721,6 +727,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\BlazetorenegadeCheckered.resx">
       <DependentUpon>BlazetorenegadeCheckered.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Yuki.resx">
+      <DependentUpon>Yuki.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\ReconSpecialist.resx">
       <DependentUpon>ReconSpecialist.cs</DependentUpon>

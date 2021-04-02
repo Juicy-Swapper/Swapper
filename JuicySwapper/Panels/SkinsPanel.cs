@@ -123,5 +123,10 @@ namespace JuicySwapper.Panels
         {
             new RenegadeCOption().ShowDialog();
         }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            new Yuki().ShowDialog();
+        }
     }
 }
