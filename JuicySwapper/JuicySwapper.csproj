@@ -205,6 +205,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Items\Backblings\RainbowClower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Backblings\RainbowClower.designer.cs">
+      <DependentUpon>RainbowClower.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Backblings\SpectralSpine.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +228,12 @@
     </Compile>
     <Compile Include="Items\Backblings\SixString.designer.cs">
       <DependentUpon>SixString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Emotes\LeaveTheDoorOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Emotes\LeaveTheDoorOpen.designer.cs">
+      <DependentUpon>LeaveTheDoorOpen.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Emotes\SaySo.cs">
       <SubType>Form</SubType>
@@ -403,6 +415,12 @@
     <Compile Include="Items\Questions\StarwandOption.designer.cs">
       <DependentUpon>StarwandOption.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Skins\Yuki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Yuki.designer.cs">
+      <DependentUpon>Yuki.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Skins\Galaxy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -421,11 +439,29 @@
     <Compile Include="Items\Skins\BlazetorenegadeCheckered.designer.cs">
       <DependentUpon>BlazetorenegadeCheckered.cs</DependentUpon>
     </Compile>
-    <Compile Include="Items\Skins\Yuki.cs">
+    <Compile Include="Items\Skins\Chigusa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Items\Skins\Yuki.designer.cs">
-      <DependentUpon>Yuki.cs</DependentUpon>
+    <Compile Include="Items\Skins\Chigusa.designer.cs">
+      <DependentUpon>Chigusa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\Isabelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Isabelle.designer.cs">
+      <DependentUpon>Isabelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\Megg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Megg.designer.cs">
+      <DependentUpon>Megg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\SparkleSpecialist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\SparkleSpecialist.designer.cs">
+      <DependentUpon>SparkleSpecialist.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Skins\ReconSpecialist.cs">
       <SubType>Form</SubType>
@@ -620,6 +656,9 @@
       <DependentUpon>SkinsPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Items\Backblings\RainbowClower.resx">
+      <DependentUpon>RainbowClower.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\Backblings\SpectralSpine.resx">
       <DependentUpon>SpectralSpine.cs</DependentUpon>
     </EmbeddedResource>
@@ -628,6 +667,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Backblings\SixString.resx">
       <DependentUpon>SixString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Emotes\LeaveTheDoorOpen.resx">
+      <DependentUpon>LeaveTheDoorOpen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Emotes\SaySo.resx">
       <DependentUpon>SaySo.cs</DependentUpon>
@@ -719,6 +761,9 @@
     <EmbeddedResource Include="Items\Questions\StarwandOption.resx">
       <DependentUpon>StarwandOption.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Yuki.resx">
+      <DependentUpon>Yuki.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\Galaxy.resx">
       <DependentUpon>Galaxy.cs</DependentUpon>
     </EmbeddedResource>
@@ -728,8 +773,17 @@
     <EmbeddedResource Include="Items\Skins\BlazetorenegadeCheckered.resx">
       <DependentUpon>BlazetorenegadeCheckered.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\Yuki.resx">
-      <DependentUpon>Yuki.cs</DependentUpon>
+    <EmbeddedResource Include="Items\Skins\Chigusa.resx">
+      <DependentUpon>Chigusa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Isabelle.resx">
+      <DependentUpon>Isabelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Megg.resx">
+      <DependentUpon>Megg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\SparkleSpecialist.resx">
+      <DependentUpon>SparkleSpecialist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\ReconSpecialist.resx">
       <DependentUpon>ReconSpecialist.cs</DependentUpon>

@@ -35,8 +35,8 @@ namespace JuicySwapper.Items.Emotes
 
         private void ConvertBytes_DoWork(object sender, DoWorkEventArgs e)
         {
-            //if (SwapUtilities.CheckIfCanSwap("Blow"))
-            //    return;
+            if (SwapUtilities.CheckIfCanSwap("BlowingBubbles"))
+                return;
 
             ActionButton.Enabled = false;
 
@@ -124,6 +124,11 @@ namespace JuicySwapper.Items.Emotes
             CloseTimer.Enabled = false;
             ActionButton.Enabled = true;
             Close();
+        }
+
+        private void SkinImage_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

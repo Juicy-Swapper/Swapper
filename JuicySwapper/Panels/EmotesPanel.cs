@@ -80,5 +80,10 @@ namespace JuicySwapper.Panels
         {
             new SaySo().ShowDialog();
         }
+
+        private void bunifuImageButton9_Click(object sender, EventArgs e)
+        {
+            new LeaveTheDoorOpen().ShowDialog();
+        }
     }
 }
