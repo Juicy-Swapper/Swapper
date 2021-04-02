@@ -149,5 +149,10 @@ namespace JuicySwapper.Panels
         {
             new Isabelle().ShowDialog();
         }
+
+        private void bunifuImageButton8_Click(object sender, EventArgs e)
+        {
+            new Chigusa().ShowDialog();
+        }
     }
 }
