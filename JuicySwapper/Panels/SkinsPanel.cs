@@ -154,5 +154,10 @@ namespace JuicySwapper.Panels
         {
             new Chigusa().ShowDialog();
         }
+
+        private void bunifuImageButton2_Click_1(object sender, EventArgs e)
+        {
+            new WildcatBlueOption().ShowDialog();
+        }
     }
 }

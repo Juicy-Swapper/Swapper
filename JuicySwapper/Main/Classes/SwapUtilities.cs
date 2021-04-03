@@ -93,7 +93,9 @@ namespace JuicySwapper.Main.Classes
 		public List<bool> Blaze = new List<bool>()
 		{
 			Settings.Default.BrenegadeEnabled,
-			Settings.Default.BrenegadeCEnabled
+			Settings.Default.BrenegadeCEnabled,
+			Settings.Default.WildcatBlazeEnabled,
+			Settings.Default.WildcatBlueBlazeEnabled
 		};
 
 		public List<bool> Redline = new List<bool>()
@@ -134,7 +136,8 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.LoserfruitEnabled,
 			Settings.Default.WildcatBlueEnabled,
 			Settings.Default.MeggEnabled,
-			Settings.Default.IsabelleEnabled
+			Settings.Default.IsabelleEnabled,
+			Settings.Default.WildcatNeoEnabled
 		};
 
 		public List<bool> RockAxe = new List<bool>()

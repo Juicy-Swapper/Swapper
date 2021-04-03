@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace JuicySwapper.Main.GUI
 {
-    public partial class WildcatOption : Form
+    public partial class WildcatBlueOption : Form
     {
-        public WildcatOption()
+        public WildcatBlueOption()
         {
             InitializeComponent();
         }
@@ -24,22 +24,10 @@ namespace JuicySwapper.Main.GUI
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            new WildcatRS().ShowDialog();
+            new WildcatBlueBlaze().ShowDialog();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            if (Settings.Default.AccVerify == "Guest")
-            {
-                Message a = new Message(Resources.Juicynoacc);
-                a.ShowDialog();
-                return;
-            }
-
-            new WildcatBlaze().ShowDialog();
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
         {
             if (Settings.Default.AccVerify == "Guest")
             {

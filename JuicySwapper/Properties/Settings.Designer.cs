@@ -1150,5 +1150,41 @@ namespace JuicySwapper.Properties {
                 this["RainbowCloverEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool WildcatBlazeEnabled {
+            get {
+                return ((bool)(this["WildcatBlazeEnabled"]));
+            }
+            set {
+                this["WildcatBlazeEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool WildcatBlueBlazeEnabled {
+            get {
+                return ((bool)(this["WildcatBlueBlazeEnabled"]));
+            }
+            set {
+                this["WildcatBlueBlazeEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool WildcatNeoEnabled {
+            get {
+                return ((bool)(this["WildcatNeoEnabled"]));
+            }
+            set {
+                this["WildcatNeoEnabled"] = value;
+            }
+        }
     }
 }

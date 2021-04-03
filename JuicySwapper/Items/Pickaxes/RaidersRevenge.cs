@@ -46,7 +46,7 @@ namespace JuicySwapper.Items.Pickaxes
             LogBox.Clear();
             LogBox.Text += "[LOG] Starting...";
 
-            bool Swap1 = HexResearcher.Convert(SwapOffsets[6], SwapPath[6], Pickaxe, Pickaxe1, 0, 0, false, false);
+            bool Swap1 = HexResearcher.Convert(SwapOffsets[7], SwapPath[6], Pickaxe, Pickaxe1, 0, 0, false, false);
             if (Swap1)
             {
                 Settings.Default.RaidersRevengeEnabled = true;
@@ -68,7 +68,7 @@ namespace JuicySwapper.Items.Pickaxes
             LogBox.Clear();
             LogBox.Text += "[LOG] Starting...";
 
-            bool Swap1 = HexResearcher.Revert(SwapOffsets[6], SwapPath[6], Pickaxe, Pickaxe1, 0, 0, false, false);
+            bool Swap1 = HexResearcher.Revert(SwapOffsets[7], SwapPath[6], Pickaxe, Pickaxe1, 0, 0, false, false);
             if (Swap1)
             {
                 Settings.Default.RaidersRevengeEnabled = false;

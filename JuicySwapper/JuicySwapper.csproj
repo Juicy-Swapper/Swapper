@@ -403,6 +403,12 @@
     <Compile Include="Items\Questions\FlossOption.designer.cs">
       <DependentUpon>FlossOption.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Questions\WildcatBlueOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Questions\WildcatBlueOption.designer.cs">
+      <DependentUpon>WildcatBlueOption.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Questions\WildcatOption.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -414,6 +420,30 @@
     </Compile>
     <Compile Include="Items\Questions\StarwandOption.designer.cs">
       <DependentUpon>StarwandOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\WildcatNeo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\WildcatNeo.designer.cs">
+      <DependentUpon>WildcatNeo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\WildcatBlueBlaze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\WildcatBlueBlaze.designer.cs">
+      <DependentUpon>WildcatBlueBlaze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\WildcatBlaze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\WildcatBlaze.designer.cs">
+      <DependentUpon>WildcatBlaze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\WildcatRS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\WildcatRS.designer.cs">
+      <DependentUpon>WildcatRS.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Skins\Yuki.cs">
       <SubType>Form</SubType>
@@ -474,12 +504,6 @@
     </Compile>
     <Compile Include="Items\Skins\Megumi.designer.cs">
       <DependentUpon>Megumi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\WildcatRS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\WildcatRS.designer.cs">
-      <DependentUpon>WildcatRS.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Skins\Loserfruit.cs">
       <SubType>Form</SubType>
@@ -755,11 +779,26 @@
     <EmbeddedResource Include="Items\Questions\FlossOption.resx">
       <DependentUpon>FlossOption.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Items\Questions\WildcatBlueOption.resx">
+      <DependentUpon>WildcatBlueOption.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\Questions\WildcatOption.resx">
       <DependentUpon>WildcatOption.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Questions\StarwandOption.resx">
       <DependentUpon>StarwandOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\WildcatNeo.resx">
+      <DependentUpon>WildcatNeo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\WildcatBlueBlaze.resx">
+      <DependentUpon>WildcatBlueBlaze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\WildcatBlaze.resx">
+      <DependentUpon>WildcatBlaze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\WildcatRS.resx">
+      <DependentUpon>WildcatRS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\Yuki.resx">
       <DependentUpon>Yuki.cs</DependentUpon>
@@ -790,9 +829,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\Megumi.resx">
       <DependentUpon>Megumi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\WildcatRS.resx">
-      <DependentUpon>WildcatRS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\Loserfruit.resx">
       <DependentUpon>Loserfruit.cs</DependentUpon>
