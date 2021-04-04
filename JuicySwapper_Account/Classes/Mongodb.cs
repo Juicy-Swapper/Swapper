@@ -15,11 +15,10 @@ namespace JuicySwapper_Account.Classes
         {
             public static IMongoDatabase db;
 
-
-            public MongoCRUD(string jashd8372194236742398jkasdfhgdasku)
+            public MongoCRUD()
             {
                 var client = new MongoClient(ekajsdhfdjkashfdsajk73289723984732894327oaskidhfdkajs48392107743982473289weikofh.iuksadhkjdas8931792832ioedhfjiklsd90832580923hidfwsw.dsukfg7839264sapiudasop730891478329047iodsfjilfsd09832732098398274uidsfhfkjs);
-                db = client.GetDatabase(jashd8372194236742398jkasdfhgdasku);
+                db = client.GetDatabase("JuicySwapper");
             }
 
             public void InsertRecord<T>(string table, T record)

@@ -24,6 +24,14 @@ namespace JuicySwapper.Main.Classes
             collection.InsertOne(record);
         }
 
+        public long Accounts<T>(string table)
+        {
+            var filter = Builders<UserModel>.Filter.Eq("paid", false);
+            var Count = db.GetCollection<UserModel>(table).CountDocuments(filter);
+
+            return Count;
+        }
+
         public static List<T> LoadRecords<T>(string table)
         {
             var collection = db.GetCollection<T>(table);

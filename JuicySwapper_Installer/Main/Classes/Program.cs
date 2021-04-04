@@ -12,6 +12,7 @@ namespace JuicySwapper_Installer.Main.Classes
         [STAThread]
         static void Main()
         {
+            if
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Installer());

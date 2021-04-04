@@ -96,5 +96,10 @@ namespace JuicySwapper.Panels
         {
             new HarleyHitter().ShowDialog();
         }
+
+        private void bunifuImageButton1_Click_1(object sender, System.EventArgs e)
+        {
+            new GalaxyAxe().ShowDialog();
+        }
     }
 }

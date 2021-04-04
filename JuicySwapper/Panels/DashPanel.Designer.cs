@@ -33,6 +33,7 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.JuicyAccountNum = new System.Windows.Forms.Label();
             this.newsTitleLabel = new System.Windows.Forms.Label();
             this.labelDashboard = new System.Windows.Forms.Label();
             this.currentVersionLabel = new System.Windows.Forms.Label();
@@ -84,6 +85,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.JuicyAccountNum);
             this.bunifuGradientPanel1.Controls.Add(this.newsTitleLabel);
             this.bunifuGradientPanel1.Controls.Add(this.labelDashboard);
             this.bunifuGradientPanel1.Controls.Add(this.currentVersionLabel);
@@ -102,15 +104,27 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(704, 573);
             this.bunifuGradientPanel1.TabIndex = 17;
             // 
+            // JuicyAccountNum
+            // 
+            this.JuicyAccountNum.AutoSize = true;
+            this.JuicyAccountNum.BackColor = System.Drawing.Color.Transparent;
+            this.JuicyAccountNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JuicyAccountNum.ForeColor = System.Drawing.Color.White;
+            this.JuicyAccountNum.Location = new System.Drawing.Point(10, 499);
+            this.JuicyAccountNum.Name = "JuicyAccountNum";
+            this.JuicyAccountNum.Size = new System.Drawing.Size(185, 25);
+            this.JuicyAccountNum.TabIndex = 35;
+            this.JuicyAccountNum.Text = "Juicy Accounts: ";
+            // 
             // newsTitleLabel
             // 
             this.newsTitleLabel.AutoSize = true;
             this.newsTitleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.newsTitleLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newsTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newsTitleLabel.ForeColor = System.Drawing.Color.White;
             this.newsTitleLabel.Location = new System.Drawing.Point(11, 282);
             this.newsTitleLabel.Name = "newsTitleLabel";
-            this.newsTitleLabel.Size = new System.Drawing.Size(86, 21);
+            this.newsTitleLabel.Size = new System.Drawing.Size(91, 20);
             this.newsTitleLabel.TabIndex = 34;
             this.newsTitleLabel.Text = "News Title";
             // 
@@ -118,11 +132,11 @@
             // 
             this.labelDashboard.AutoSize = true;
             this.labelDashboard.BackColor = System.Drawing.Color.Transparent;
-            this.labelDashboard.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDashboard.ForeColor = System.Drawing.Color.White;
             this.labelDashboard.Location = new System.Drawing.Point(8, 9);
             this.labelDashboard.Name = "labelDashboard";
-            this.labelDashboard.Size = new System.Drawing.Size(149, 37);
+            this.labelDashboard.Size = new System.Drawing.Size(156, 31);
             this.labelDashboard.TabIndex = 32;
             this.labelDashboard.Text = "Dashboard";
             // 
@@ -130,11 +144,11 @@
             // 
             this.currentVersionLabel.AutoSize = true;
             this.currentVersionLabel.BackColor = System.Drawing.Color.Transparent;
-            this.currentVersionLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentVersionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentVersionLabel.ForeColor = System.Drawing.Color.White;
             this.currentVersionLabel.Location = new System.Drawing.Point(10, 533);
             this.currentVersionLabel.Name = "currentVersionLabel";
-            this.currentVersionLabel.Size = new System.Drawing.Size(173, 30);
+            this.currentVersionLabel.Size = new System.Drawing.Size(191, 25);
             this.currentVersionLabel.TabIndex = 31;
             this.currentVersionLabel.Text = "Current Version: ";
             // 
@@ -151,11 +165,11 @@
             // 
             this.newsTextLabel.AutoSize = true;
             this.newsTextLabel.BackColor = System.Drawing.Color.Transparent;
-            this.newsTextLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newsTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newsTextLabel.ForeColor = System.Drawing.Color.White;
             this.newsTextLabel.Location = new System.Drawing.Point(11, 305);
             this.newsTextLabel.Name = "newsTextLabel";
-            this.newsTextLabel.Size = new System.Drawing.Size(80, 21);
+            this.newsTextLabel.Size = new System.Drawing.Size(82, 20);
             this.newsTextLabel.TabIndex = 29;
             this.newsTextLabel.Text = "News Text";
             // 
@@ -163,12 +177,12 @@
             // 
             this.newsHeaderText.AutoSize = true;
             this.newsHeaderText.BackColor = System.Drawing.Color.Transparent;
-            this.newsHeaderText.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))));
+            this.newsHeaderText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newsHeaderText.ForeColor = System.Drawing.Color.White;
             this.newsHeaderText.Location = new System.Drawing.Point(9, 60);
             this.newsHeaderText.Name = "newsHeaderText";
-            this.newsHeaderText.Size = new System.Drawing.Size(74, 32);
+            this.newsHeaderText.Size = new System.Drawing.Size(79, 29);
             this.newsHeaderText.TabIndex = 28;
             this.newsHeaderText.Text = "News";
             // 
@@ -176,11 +190,11 @@
             // 
             this.changelogTextLabel.AutoSize = true;
             this.changelogTextLabel.BackColor = System.Drawing.Color.Transparent;
-            this.changelogTextLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changelogTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changelogTextLabel.ForeColor = System.Drawing.Color.White;
             this.changelogTextLabel.Location = new System.Drawing.Point(351, 99);
             this.changelogTextLabel.Name = "changelogTextLabel";
-            this.changelogTextLabel.Size = new System.Drawing.Size(118, 21);
+            this.changelogTextLabel.Size = new System.Drawing.Size(120, 20);
             this.changelogTextLabel.TabIndex = 27;
             this.changelogTextLabel.Text = "Changelog Text";
             // 
@@ -188,12 +202,12 @@
             // 
             this.changelogHeaderText.AutoSize = true;
             this.changelogHeaderText.BackColor = System.Drawing.Color.Transparent;
-            this.changelogHeaderText.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))));
+            this.changelogHeaderText.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changelogHeaderText.ForeColor = System.Drawing.Color.White;
             this.changelogHeaderText.Location = new System.Drawing.Point(349, 60);
             this.changelogHeaderText.Name = "changelogHeaderText";
-            this.changelogHeaderText.Size = new System.Drawing.Size(132, 32);
+            this.changelogHeaderText.Size = new System.Drawing.Size(140, 29);
             this.changelogHeaderText.TabIndex = 26;
             this.changelogHeaderText.Text = "Changelog";
             // 
@@ -311,5 +325,6 @@
         private System.Windows.Forms.Label changelogHeaderText;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl9;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl10;
+        private System.Windows.Forms.Label JuicyAccountNum;
     }
 }

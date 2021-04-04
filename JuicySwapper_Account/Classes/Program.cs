@@ -4,19 +4,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MongoDB.Driver;
 using static JuicySwapper_Account.Classes.JuicyUtilities;
 using static JuicySwapper_Account.Classes.Mongodb;
+using System.Threading;
 
 namespace JuicySwapper_Account
 {
     class Program
     {
+        public static MongoCRUD db = new MongoCRUD();
+
         static void Main(string[] args)
         {
+            Thread.Sleep(5000);
+            Console.WriteLine("sds");
             try
             {
                 ColorConsole.WriteEmbeddedColorLine($"[{DateTime.Now:H:mm:ss} - [DarkYellow]JuicySwapper[/DarkYellow] - info] Getting infomation from our database.");
-                MongoCRUD db = new MongoCRUD("JuicySwapper");
+
                 string hwid = JuicyUtilities.GET_HARDWAREID;
                 var onerec = db.LoadRecordByHwid<UserModel>("Juicy", hwid);
 

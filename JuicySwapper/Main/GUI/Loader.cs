@@ -10,6 +10,7 @@ namespace JuicySwapper.Main.GUI
     public partial class Loader : Form
     {
         public byte holder = 0;
+        public static long Num; 
         public Loader()
         {
             InitializeComponent();
@@ -18,6 +19,7 @@ namespace JuicySwapper.Main.GUI
             JuicyUtilities.CloseEpicProcesses();
             SwapUtilities.Requestoffsets();
             SwapUtilities.RequestPaks();
+            backgroundWorker1.RunWorkerAsync();
             timer1.Start();
         }
 
@@ -38,6 +40,15 @@ namespace JuicySwapper.Main.GUI
                 Open.Closed += (s, args) => Close();
                 Open.Show();
             };
+        }
+
+        private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        {
+            MongoCRUD db = new MongoCRUD("JuicySwapper");
+
+            db.Accounts<UserModel>("Juicy");
+
+            Num = db.Accounts<UserModel>("Juicy");
         }
     }
 }

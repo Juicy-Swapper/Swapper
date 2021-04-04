@@ -1,0 +1,5 @@
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper_Updater\obj\Debug\JuicySwapper_Updater.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper_Updater\obj\Debug\JuicySwapper_Updater.Main.GUI.Updater.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper_Updater\obj\Debug\JuicySwapper_Updater.Properties.Resources.resources
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper_Updater\obj\Debug\JuicySwapper_Updater.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Juicy\github\Swapper\JuicySwapper_Updater\obj\Debug\JuicySwapper_Updater.csproj.CoreCompileInputs.cache

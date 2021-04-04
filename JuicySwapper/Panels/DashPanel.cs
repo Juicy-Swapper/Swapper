@@ -7,6 +7,8 @@ using System.Windows.Forms;
 using Type = JuicySwapper.Api.ContentAPI.Type;
 using JuicySwapper.Api;
 using JuicySwapper.Properties;
+using JuicySwapper.Main.Classes;
+using JuicySwapper.Main.GUI;
 
 namespace JuicySwapper.Panels
 {
@@ -26,6 +28,7 @@ namespace JuicySwapper.Panels
         public DashPanel()
         {
             InitializeComponent();
+            JuicyAccountNum.Text = $"Juicy Accounts: {Loader.Num}";
             GetContent();
         }
 
