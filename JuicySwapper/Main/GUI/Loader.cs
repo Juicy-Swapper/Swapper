@@ -13,9 +13,9 @@ namespace JuicySwapper.Main.GUI
         public static long Num; 
         public Loader()
         {
+            JuicyUtilities.SetRPCSTAT2($"Loading - 0%");
             InitializeComponent();
             JuicyUtilities.DiscordRPC.Initialize();
-            JuicyUtilities.SetRPCAction("In Dashboard", "");
             JuicyUtilities.CloseEpicProcesses();
             SwapUtilities.Requestoffsets();
             SwapUtilities.RequestPaks();
@@ -32,6 +32,7 @@ namespace JuicySwapper.Main.GUI
             string strg = adv[i];
             label1.Text = "Getting data from Juicy's API" + strg;
             label2.Text = holder + "%";
+            JuicyUtilities.SetRPCSTAT2($"Loading - {holder}%");
             if (holder == 100)
             {
                 timer1.Enabled = false;

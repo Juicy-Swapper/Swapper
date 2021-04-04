@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LDCkSY4TqujxiBe+oJfdsbdp8yJsrDZdAsYl2WmX26LD9CmXLWHoXpcDFveGPpXHCdWj04M2e9PNEW3CBTo+9A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\User\\Desktop\\Juicy\\github\\Swapper-v2\\Swapper\\JuicySwapper_OffsetFinder\\JuicySwapper_OffsetFinder.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

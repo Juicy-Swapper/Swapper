@@ -149,7 +149,8 @@ namespace JuicySwapper
 
         private void displaySettings_Click(object sender, EventArgs e)
         {
-            JuicyUtilities.SetRPCLocation("Settings", "settingsimg");
+            JuicyUtilities.SetRPCSTAT($"Browsing Setting Page");
+            //JuicyUtilities.SetRPCLocation("Settings", "settingsimg");
             new SettingsMenu().ShowDialog();
         }
 

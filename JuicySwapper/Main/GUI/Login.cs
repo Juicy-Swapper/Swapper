@@ -12,6 +12,7 @@ namespace JuicySwapper.Main.GUI
         [Obsolete]
         public Login()
         {
+            JuicyUtilities.SetRPCSTAT($"Browsing Login Page");
             InitializeComponent();
 
             Username.Text = Settings.Default.username;

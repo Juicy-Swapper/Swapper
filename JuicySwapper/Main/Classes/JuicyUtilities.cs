@@ -28,6 +28,7 @@ namespace JuicySwapper
 			DiscordRPC.SetPresence(new RichPresence
 			{
 				Details = "juicyswapper.xyz",
+				State = "Browsing Home Page",
 				Timestamps = Timestamps.Now,
 				Assets = new Assets { LargeImageKey = "mainrpcimg", SmallImageKey = ImageKey, LargeImageText = $"🧃 • Version v{Application.ProductVersion}", SmallImageText = $"In {Location} Tab" }
 			});
@@ -38,8 +39,30 @@ namespace JuicySwapper
 			DiscordRPC.SetPresence(new RichPresence
 			{
 				Details = "juicyswapper.xyz",
+				State = "Browsing Home Page",
 				Timestamps = Timestamps.Now,
 				Assets = new Assets { LargeImageKey = "mainrpcimg", SmallImageKey = ImageKey, LargeImageText = $"🧃 • Version v{Application.ProductVersion}", SmallImageText = $"{Action}" }
+			});
+		}
+
+		public static void SetRPCSTAT(string STAT)
+		{
+			DiscordRPC.SetPresence(new RichPresence
+			{
+				Details = "juicyswapper.xyz",
+				State = STAT,
+				Timestamps = Timestamps.Now,
+				Assets = new Assets { LargeImageKey = "mainrpcimg", LargeImageText = $"🧃 • Version v{Application.ProductVersion}", }
+			}); 
+		}
+
+		public static void SetRPCSTAT2(string STAT)
+		{
+			DiscordRPC.SetPresence(new RichPresence
+			{
+				Details = "juicyswapper.xyz",
+				State = STAT,
+				Assets = new Assets { LargeImageKey = "mainrpcimg", LargeImageText = $"🧃 • Version v{Application.ProductVersion}", }
 			});
 		}
 
