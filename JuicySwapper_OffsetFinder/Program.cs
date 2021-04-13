@@ -15,7 +15,7 @@ namespace JuicySwapper_OffsetFinder
     {
         static void Main(string[] args)
         {
-            var pakPath = "C:\\Program Files\\Epic Games\\Fortnite";
+            var pakPath = "C:\\Games\\Fortnite";
             var Pathtopaks = $"{pakPath}\\FortniteGame\\Content\\Paks";
 
             string Skin_Body_Path = $"{Pathtopaks}\\pakchunk10_s4-WindowsClient.ucas";
