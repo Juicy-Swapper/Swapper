@@ -5,7 +5,6 @@ C:\Users\liike\Documents\GitHub\build\Juicy Swapper\mongocrypt.dll
 C:\Users\liike\Documents\GitHub\build\Juicy Swapper\JuicySwapper.exe.config
 C:\Users\liike\Documents\GitHub\build\Juicy Swapper\JuicySwapper.exe
 C:\Users\liike\Documents\GitHub\build\Juicy Swapper\JuicySwapper.pdb
-C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csprojAssemblyReference.cache
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\Interop.WMPLib.dll
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.ResolveComReference.cache
