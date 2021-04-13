@@ -107,6 +107,12 @@ namespace JuicySwapper.Api
             [JsonProperty("offlineMessage")]
             public string OfflineMessage { get; set; }
 
+            [JsonProperty("database")]
+            public string Database { get; set; }
+
+            [JsonProperty("Encryption.dll")]
+            public string Encryption { get; set; }
+
             [JsonProperty("version")]
             public string Version { get; set; }
 

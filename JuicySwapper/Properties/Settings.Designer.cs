@@ -1186,5 +1186,29 @@ namespace JuicySwapper.Properties {
                 this["WildcatNeoEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("8UHjPgXZzXCGkhxV2QCnooyJexUzvJrO")]
+        public string key {
+            get {
+                return ((string)(this["key"]));
+            }
+            set {
+                this["key"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string databaseurl {
+            get {
+                return ((string)(this["databaseurl"]));
+            }
+            set {
+                this["databaseurl"] = value;
+            }
+        }
     }
 }

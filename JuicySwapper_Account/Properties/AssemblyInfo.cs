@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("JuicySwapper_Account")]
-[assembly: AssemblyDescription("JuicySwapper_Account")]
+[assembly: AssemblyDescription("Gets info about your juicy account on ur hwid")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("JuicySwapper_Account")]
+[assembly: AssemblyCompany("JuicySwapper")]
 [assembly: AssemblyProduct("JuicySwapper_Account")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("720ecae9-aea8-4ebf-b0ff-c7a3cde15a05")]
+[assembly: Guid("08dd7c1a-b43a-4c9d-8cbd-4569a7ca8e0d")]
 
 // Version information for an assembly consists of the following four values:
 //

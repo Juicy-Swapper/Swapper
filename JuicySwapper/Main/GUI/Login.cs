@@ -60,6 +60,7 @@ namespace JuicySwapper.Main.GUI
 
         private void LoginGest_Click(object sender, EventArgs e)
         {
+
             Settings.Default.AccVerify = "Guest";
             Settings.Default.Name = "Guest";
             Settings.Default.Save();
@@ -128,7 +129,7 @@ namespace JuicySwapper.Main.GUI
             db.InsertRecord("Juicy", new UserModel
             {
                 username = Username.Text,
-                password = JuicyUtilities.Encrypt(password.Text),
+                password = JuicySwapper_Encryption.Auth.Accounts.Encrypt(password.Text),
                 CreatedAt = time,
                 paid = false,
                 boost = false,
@@ -188,7 +189,7 @@ namespace JuicySwapper.Main.GUI
             }
 
             var onerec = db.LoadRecordByUsername<UserModel>("Juicy", Username.Text);
-            if (onerec.password != JuicyUtilities.Encrypt(password.Text))
+            if (JuicySwapper_Encryption.Auth.Accounts.Decrypt(onerec.password) != password.Text)
             {
                 Message Passwordincorect = new Message(Resources.Passwordincorect);
                 Passwordincorect.ShowDialog();

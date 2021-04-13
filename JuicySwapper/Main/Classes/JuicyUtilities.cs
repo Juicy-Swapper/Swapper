@@ -96,6 +96,9 @@ namespace JuicySwapper
 			var StatusAPI = new WebClient().DownloadString($"{API.HOST}/{API.Status}");
 			Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
 
+			Settings.Default.databaseurl = StatusResponse.Database;
+			Settings.Default.Save();
+
 			if (StatusResponse.IsOnline == false)
 				new OfflineMode().ShowDialog();
 
@@ -146,28 +149,6 @@ namespace JuicySwapper
 			Task.WaitAny(task);
 			bytes = Encoding.UTF8.GetBytes(sb.ToString());
 			return await Task.FromResult(Convert.ToBase64String(bytes).Substring(12));
-		}
-
-		public static string Encrypt(string clearText)
-		{
-			string EncryptionKey = "abc123";
-			byte[] clearBytes = Encoding.Unicode.GetBytes(clearText);
-			using (Aes encryptor = Aes.Create())
-			{
-				Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(EncryptionKey, new byte[] { 0x49, 0x76, 0x61, 0x6e, 0x20, 0x4d, 0x65, 0x64, 0x76, 0x65, 0x64, 0x65, 0x76 });
-				encryptor.Key = pdb.GetBytes(32);
-				encryptor.IV = pdb.GetBytes(16);
-				using (MemoryStream ms = new MemoryStream())
-				{
-					using (CryptoStream cs = new CryptoStream(ms, encryptor.CreateEncryptor(), CryptoStreamMode.Write))
-					{
-						cs.Write(clearBytes, 0, clearBytes.Length);
-						cs.Close();
-					}
-					clearText = Convert.ToBase64String(ms.ToArray());
-				}
-			}
-			return clearText;
 		}
 
 		public static bool DownloadConvert(string FileName)

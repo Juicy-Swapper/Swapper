@@ -4,6 +4,7 @@ using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using JuicySwapper.Properties;
 
 namespace JuicySwapper.Main.Classes
 {
@@ -11,11 +12,12 @@ namespace JuicySwapper.Main.Classes
     {
         public static IMongoDatabase db;
         
-
-        public MongoCRUD(string jashd8372194236742398jkasdfhgdasku)
+        public MongoCRUD(string A)
         {
-            var client = new MongoClient(ekajsdhfdjkashfdsajk73289723984732894327oaskidhfdkajs48392107743982473289weikofh.iuksadhkjdas8931792832ioedhfjiklsd90832580923hidfwsw.dsukfg7839264sapiudasop730891478329047iodsfjilfsd09832732098398274uidsfhfkjs);
-            db = client.GetDatabase(jashd8372194236742398jkasdfhgdasku);
+            var URL = JuicySwapper_Encryption.Auth.DataBase.dbURL;
+
+            var client = new MongoClient(JuicySwapper_Encryption.Auth.DataBase.Decrypt(URL, "AdhUOWwOgFSNaNqD7QBuoYCJ3Y8hr91P"));
+            db = client.GetDatabase(A);
         }
 
         public void InsertRecord<T>(string table, T record)
