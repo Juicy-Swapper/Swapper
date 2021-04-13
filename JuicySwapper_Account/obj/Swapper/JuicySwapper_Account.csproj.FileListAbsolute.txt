@@ -1,0 +1,9 @@
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_Account\bin\Swapper\JuicySwapper_Account.exe.config
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_Account\bin\Swapper\JuicySwapper_Account.exe
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_Account\obj\Swapper\JuicySwapper_Account.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_Account\obj\Swapper\JuicySwapper_Account.Main.resources
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_Account\obj\Swapper\JuicySwapper_Account.Properties.Resources.resources
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_Account\obj\Swapper\JuicySwapper_Account.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_Account\obj\Swapper\JuicySwapper_Account.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_Account\obj\Swapper\JuicySwapper_Account.csproj.Fody.CopyLocal.cache
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_Account\obj\Swapper\JuicySwapper_Account.exe

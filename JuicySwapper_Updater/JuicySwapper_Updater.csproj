@@ -38,6 +38,12 @@
   <PropertyGroup>
     <ApplicationIcon>Resources\testingthis_471_icon.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'kaede|AnyCPU'">
+    <OutputPath>bin\kaede\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Swapper|AnyCPU'">
+    <OutputPath>bin\Swapper\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\..\..\src\New folder (2)\Bunifu_UI_v1.5.3.dll</HintPath>

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -14,6 +15,7 @@ namespace JuicySwapper_Encryption
 {
     public class Scan
     {
+
         public static bool Check(string key)
         {
             Process[] processes = Process.GetProcesses();

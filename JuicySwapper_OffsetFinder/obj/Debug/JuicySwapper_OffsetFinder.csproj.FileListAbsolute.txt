@@ -1,0 +1,9 @@
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_OffsetFinder\bin\Debug\JuicySwapper_OffsetFinder.exe.config
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_OffsetFinder\bin\Debug\JuicySwapper_OffsetFinder.exe
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_OffsetFinder\bin\Debug\JuicySwapper_OffsetFinder.pdb
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_OffsetFinder\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_OffsetFinder\obj\Debug\JuicySwapper_OffsetFinder.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_OffsetFinder\obj\Debug\JuicySwapper_OffsetFinder.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_OffsetFinder\obj\Debug\JuicySwapper_OffsetFinder.csproj.CopyComplete
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_OffsetFinder\obj\Debug\JuicySwapper_OffsetFinder.exe
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper_OffsetFinder\obj\Debug\JuicySwapper_OffsetFinder.pdb
