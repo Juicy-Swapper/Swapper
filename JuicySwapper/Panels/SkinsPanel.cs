@@ -159,5 +159,15 @@ namespace JuicySwapper.Panels
         {
             new WildcatBlueOption().ShowDialog();
         }
+
+        private void bunifuImageButton9_Click(object sender, EventArgs e)
+        {
+            new HarleyQuinnRebirth().ShowDialog();
+        }
+
+        private void bunifuImageButton10_Click(object sender, EventArgs e)
+        {
+            new Aloy().ShowDialog();
+        }
     }
 }

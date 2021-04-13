@@ -96,8 +96,6 @@ namespace JuicySwapper
 			var StatusAPI = new WebClient().DownloadString($"{API.HOST}/{API.Status}");
 			Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
 
-			Settings.Default.databaseurl = StatusResponse.Database;
-			Settings.Default.Save();
 
 			if (StatusResponse.IsOnline == false)
 				new OfflineMode().ShowDialog();

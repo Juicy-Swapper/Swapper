@@ -100,5 +100,10 @@ namespace JuicySwapper.Panels
         private void bunifuImageButton1_Click_1(object sender, System.EventArgs e)
         {
         }
+
+        private void bunifuImageButton2_Click_1(object sender, System.EventArgs e)
+        {
+            new AloySpear().ShowDialog();
+        }
     }
 }

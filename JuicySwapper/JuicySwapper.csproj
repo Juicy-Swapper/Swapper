@@ -85,9 +85,8 @@
     <Reference Include="DnsClient, Version=1.4.0.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
       <HintPath>..\packages\DnsClient.1.4.0\lib\net471\DnsClient.dll</HintPath>
     </Reference>
-    <Reference Include="JuicySwapper_Encryption, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\JuicySwapper_Encryption\bin\Debug\JuicySwapper_Encryption.dll</HintPath>
+    <Reference Include="JuicySwapper_Encryption">
+      <HintPath>.\JuicySwapper_Encryption.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -314,6 +313,12 @@
     <Compile Include="Items\Backblings\BlackShieldFS.designer.cs">
       <DependentUpon>BlackShieldFS.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Pickaxes\AloySpear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Pickaxes\AloySpear.designer.cs">
+      <DependentUpon>AloySpear.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Pickaxes\Axecalibur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -421,6 +426,18 @@
     </Compile>
     <Compile Include="Items\Questions\StarwandOption.designer.cs">
       <DependentUpon>StarwandOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\Aloy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Aloy.designer.cs">
+      <DependentUpon>Aloy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\HarleyQuinnRebirth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\HarleyQuinnRebirth.designer.cs">
+      <DependentUpon>HarleyQuinnRebirth.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Skins\WildcatNeo.cs">
       <SubType>Form</SubType>
@@ -735,6 +752,9 @@
     <EmbeddedResource Include="Items\Backblings\BlackShieldFS.resx">
       <DependentUpon>BlackShieldFS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Items\Pickaxes\AloySpear.resx">
+      <DependentUpon>AloySpear.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\Pickaxes\Axecalibur.resx">
       <DependentUpon>Axecalibur.cs</DependentUpon>
     </EmbeddedResource>
@@ -788,6 +808,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Questions\StarwandOption.resx">
       <DependentUpon>StarwandOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Aloy.resx">
+      <DependentUpon>Aloy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\HarleyQuinnRebirth.resx">
+      <DependentUpon>HarleyQuinnRebirth.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\WildcatNeo.resx">
       <DependentUpon>WildcatNeo.cs</DependentUpon>

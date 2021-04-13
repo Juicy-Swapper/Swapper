@@ -137,7 +137,8 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.WildcatBlueEnabled,
 			Settings.Default.MeggEnabled,
 			Settings.Default.IsabelleEnabled,
-			Settings.Default.WildcatNeoEnabled
+			Settings.Default.WildcatNeoEnabled,
+			Settings.Default.AloyEnabled
 		};
 
 		public List<bool> RockAxe = new List<bool>()
@@ -150,7 +151,8 @@ namespace JuicySwapper.Main.Classes
 		public List<bool> CaratCutter = new List<bool>()
 		{
 			Settings.Default.StarwandRSEnabled,
-			Settings.Default.AxecaliburEnabled
+			Settings.Default.AxecaliburEnabled,
+			Settings.Default.AloySpearEnabled
 		};
 
 		public List<bool> SideHustle = new List<bool>()
@@ -162,7 +164,8 @@ namespace JuicySwapper.Main.Classes
 		{
 			Settings.Default.YukiEnabled,
 			Settings.Default.ChigusaEnabled,
-			Settings.Default.MegumiEnabled
+			Settings.Default.MegumiEnabled,
+			Settings.Default.HarleyQuinnRebirthEnabled
 		};
 		public List<bool> BlowingBubbles = new List<bool>()
 		{

@@ -1189,25 +1189,37 @@ namespace JuicySwapper.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("8UHjPgXZzXCGkhxV2QCnooyJexUzvJrO")]
-        public string key {
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool HarleyQuinnRebirthEnabled {
             get {
-                return ((string)(this["key"]));
+                return ((bool)(this["HarleyQuinnRebirthEnabled"]));
             }
             set {
-                this["key"] = value;
+                this["HarleyQuinnRebirthEnabled"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string databaseurl {
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AloyEnabled {
             get {
-                return ((string)(this["databaseurl"]));
+                return ((bool)(this["AloyEnabled"]));
             }
             set {
-                this["databaseurl"] = value;
+                this["AloyEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AloySpearEnabled {
+            get {
+                return ((bool)(this["AloySpearEnabled"]));
+            }
+            set {
+                this["AloySpearEnabled"] = value;
             }
         }
     }

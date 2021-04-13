@@ -293,11 +293,14 @@
     <Setting Name="WildcatNeoEnabled" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="key" Type="System.String" Scope="User">
-      <Value Profile="(Default)">8UHjPgXZzXCGkhxV2QCnooyJexUzvJrO</Value>
+    <Setting Name="HarleyQuinnRebirthEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="databaseurl" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+    <Setting Name="AloyEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AloySpearEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
 </SettingsFile>

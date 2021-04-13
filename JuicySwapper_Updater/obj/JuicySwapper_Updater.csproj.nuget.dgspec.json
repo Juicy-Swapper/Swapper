@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\liike\\Documents\\GitHub\\Swapper\\JuicySwapper_Updater\\JuicySwapper_Updater.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\liike\\Documents\\GitHub\\Swapper\\JuicySwapper_Updater\\JuicySwapper_Updater.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\liike\\Documents\\GitHub\\Swapper\\JuicySwapper_Updater\\JuicySwapper_Updater.csproj",
+        "projectName": "JuicySwapper_Updater",
+        "projectPath": "C:\\Users\\liike\\Documents\\GitHub\\Swapper\\JuicySwapper_Updater\\JuicySwapper_Updater.csproj",
+        "packagesPath": "C:\\Users\\liike\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\liike\\Documents\\GitHub\\Swapper\\JuicySwapper_Updater\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\liike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
