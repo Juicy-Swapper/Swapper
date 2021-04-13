@@ -35,12 +35,12 @@
             this.ActionButton = new System.Windows.Forms.PictureBox();
             this.SkinImage = new System.Windows.Forms.PictureBox();
             this.LogBox = new System.Windows.Forms.RichTextBox();
+            this.RoundForm = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.DragControl = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.DragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.CloseTimer = new System.Windows.Forms.Timer(this.components);
             this.ConvertBytes = new System.ComponentModel.BackgroundWorker();
             this.RevertBytes = new System.ComponentModel.BackgroundWorker();
-            this.bunifuDragControl5 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.bunifuDragControl4 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.CloseButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ActionButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkinImage)).BeginInit();
@@ -94,6 +94,25 @@
             this.LogBox.TabIndex = 4;
             this.LogBox.Text = "";
             // 
+            // RoundForm
+            // 
+            this.RoundForm.ElipseRadius = 5;
+            this.RoundForm.TargetControl = this;
+            // 
+            // DragControl
+            // 
+            this.DragControl.Fixed = true;
+            this.DragControl.Horizontal = true;
+            this.DragControl.TargetControl = this.SkinImage;
+            this.DragControl.Vertical = true;
+            // 
+            // DragControl1
+            // 
+            this.DragControl1.Fixed = true;
+            this.DragControl1.Horizontal = true;
+            this.DragControl1.TargetControl = this;
+            this.DragControl1.Vertical = true;
+            // 
             // CloseTimer
             // 
             this.CloseTimer.Interval = 3000;
@@ -110,25 +129,6 @@
             this.RevertBytes.WorkerSupportsCancellation = true;
             this.RevertBytes.DoWork += new System.ComponentModel.DoWorkEventHandler(this.RevertBytes_DoWork);
             this.RevertBytes.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.RevertBytes_RunWorkerCompleted);
-            // 
-            // bunifuDragControl5
-            // 
-            this.bunifuDragControl5.Fixed = true;
-            this.bunifuDragControl5.Horizontal = true;
-            this.bunifuDragControl5.TargetControl = this.SkinImage;
-            this.bunifuDragControl5.Vertical = true;
-            // 
-            // bunifuDragControl4
-            // 
-            this.bunifuDragControl4.Fixed = true;
-            this.bunifuDragControl4.Horizontal = true;
-            this.bunifuDragControl4.TargetControl = this;
-            this.bunifuDragControl4.Vertical = true;
-            // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 7;
-            this.bunifuElipse2.TargetControl = this;
             // 
             // Guandao
             // 
@@ -160,11 +160,11 @@
         private System.Windows.Forms.PictureBox ActionButton;
         private System.Windows.Forms.PictureBox SkinImage;
         private System.Windows.Forms.RichTextBox LogBox;
+        private Bunifu.Framework.UI.BunifuElipse RoundForm;
+        private Bunifu.Framework.UI.BunifuDragControl DragControl;
+        private Bunifu.Framework.UI.BunifuDragControl DragControl1;
         private System.Windows.Forms.Timer CloseTimer;
         private System.ComponentModel.BackgroundWorker ConvertBytes;
         private System.ComponentModel.BackgroundWorker RevertBytes;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl5;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl4;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
     }
 }

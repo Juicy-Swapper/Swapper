@@ -194,5 +194,10 @@ namespace JuicySwapper.Main.GUI
                 FortnitePathExp.ShowDialog();
             }
         }
+
+        private void BackupVerify_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

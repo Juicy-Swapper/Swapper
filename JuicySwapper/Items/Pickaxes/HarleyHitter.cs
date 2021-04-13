@@ -35,8 +35,8 @@ namespace JuicySwapper.Items.Pickaxes
         
         private void ConvertBytes_DoWork(object sender, DoWorkEventArgs e)
         {
-            if (SwapUtilities.CheckIfCanSwap("RockAxe"))
-                return;
+            //if (SwapUtilities.CheckIfCanSwap("RockAxe"))
+            //    return;
 
             ActionButton.Enabled = false;
 

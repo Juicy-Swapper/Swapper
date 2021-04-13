@@ -319,17 +319,17 @@
     <Compile Include="Items\Pickaxes\Axecalibur.designer.cs">
       <DependentUpon>Axecalibur.cs</DependentUpon>
     </Compile>
-    <Compile Include="Items\Pickaxes\Guandao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Pickaxes\Guandao.designer.cs">
-      <DependentUpon>Guandao.cs</DependentUpon>
-    </Compile>
     <Compile Include="Items\Pickaxes\FNCS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Items\Pickaxes\FNCS.designer.cs">
       <DependentUpon>FNCS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Pickaxes\Guandao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Pickaxes\Guandao.designer.cs">
+      <DependentUpon>Guandao.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Pickaxes\StarwandRS.cs">
       <SubType>Form</SubType>
@@ -737,11 +737,11 @@
     <EmbeddedResource Include="Items\Pickaxes\Axecalibur.resx">
       <DependentUpon>Axecalibur.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Items\Pickaxes\Guandao.resx">
-      <DependentUpon>Guandao.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Items\Pickaxes\FNCS.resx">
       <DependentUpon>FNCS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Pickaxes\Guandao.resx">
+      <DependentUpon>Guandao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Pickaxes\StarwandRS.resx">
       <DependentUpon>StarwandRS.cs</DependentUpon>

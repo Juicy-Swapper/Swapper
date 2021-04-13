@@ -122,6 +122,7 @@
             this.Name = "BackupVerify";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Backup/Verify";
+            this.Load += new System.EventHandler(this.BackupVerify_Load);
             ((System.ComponentModel.ISupportInitialize)(this.VerifyBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BackUpBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
