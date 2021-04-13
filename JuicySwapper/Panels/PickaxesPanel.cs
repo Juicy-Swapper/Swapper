@@ -99,6 +99,7 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton1_Click_1(object sender, System.EventArgs e)
         {
+            new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton2_Click_1(object sender, System.EventArgs e)
