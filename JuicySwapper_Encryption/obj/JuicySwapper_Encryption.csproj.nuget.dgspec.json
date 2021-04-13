@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\liike\\Documents\\GitHub\\Swapper\\JuicySwapper_Encryption\\JuicySwapper_Encryption.csproj": {}
+    "C:\\Users\\User\\Desktop\\Juicy\\github\\Swapper-v2\\Swapper\\JuicySwapper_Encryption\\JuicySwapper_Encryption.csproj": {}
   },
   "projects": {
-    "C:\\Users\\liike\\Documents\\GitHub\\Swapper\\JuicySwapper_Encryption\\JuicySwapper_Encryption.csproj": {
+    "C:\\Users\\User\\Desktop\\Juicy\\github\\Swapper-v2\\Swapper\\JuicySwapper_Encryption\\JuicySwapper_Encryption.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\liike\\Documents\\GitHub\\Swapper\\JuicySwapper_Encryption\\JuicySwapper_Encryption.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Juicy\\github\\Swapper-v2\\Swapper\\JuicySwapper_Encryption\\JuicySwapper_Encryption.csproj",
         "projectName": "JuicySwapper_Encryption",
-        "projectPath": "C:\\Users\\liike\\Documents\\GitHub\\Swapper\\JuicySwapper_Encryption\\JuicySwapper_Encryption.csproj",
-        "packagesPath": "C:\\Users\\liike\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\liike\\Documents\\GitHub\\Swapper\\JuicySwapper_Encryption\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\Juicy\\github\\Swapper-v2\\Swapper\\JuicySwapper_Encryption\\JuicySwapper_Encryption.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Juicy\\github\\Swapper-v2\\Swapper\\JuicySwapper_Encryption\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Users\\liike\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -23,7 +23,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.emzi0767.com/api/v3/index.json": {}
         },
         "frameworks": {
           "net472": {

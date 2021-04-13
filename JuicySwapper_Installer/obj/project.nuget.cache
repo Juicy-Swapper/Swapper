@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7rc9Cn8I0ZaDWyAETO27Lshjf7ZSa1TIanegvzofqlzMcU6/K55G2EwC50X2lJBhDDgYoGTZlx2i4MGG870sTw==",
+  "dgSpecHash": "xadHJRHG0KoquthFfqeIYYN4LL+XfGtAhjK+VU3RWjHfNFQf11ppX9OcKjwabR+HKeOWI7HXSJZzRRY2TMcHSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\liike\\Documents\\GitHub\\Swapper\\JuicySwapper_Installer\\JuicySwapper_Installer.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\Juicy\\github\\Swapper-v2\\Swapper\\JuicySwapper_Installer\\JuicySwapper_Installer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\liike\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

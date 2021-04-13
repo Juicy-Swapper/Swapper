@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ywYI49XLinBigaZaYHCUZo/FKyPchBnvKsHGJdsPA+NygXz59WGzHQs2RBT+1/5f9o9/P+8lV2mF1frTN4n2hA==",
+  "dgSpecHash": "LDCkSY4TqujxiBe+oJfdsbdp8yJsrDZdAsYl2WmX26LD9CmXLWHoXpcDFveGPpXHCdWj04M2e9PNEW3CBTo+9A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\liike\\Documents\\GitHub\\Swapper\\JuicySwapper_OffsetFinder\\JuicySwapper_OffsetFinder.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\Juicy\\github\\Swapper-v2\\Swapper\\JuicySwapper_OffsetFinder\\JuicySwapper_OffsetFinder.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\liike\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512"
   ],
   "logs": []
 }
