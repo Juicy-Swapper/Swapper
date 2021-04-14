@@ -95,7 +95,8 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.BrenegadeEnabled,
 			Settings.Default.BrenegadeCEnabled,
 			Settings.Default.WildcatBlazeEnabled,
-			Settings.Default.WildcatBlueBlazeEnabled
+			Settings.Default.WildcatBlueBlazeEnabled,
+			Settings.Default.GrimeyBlazeEnabled
 		};
 
 		public List<bool> Redline = new List<bool>()
@@ -139,11 +140,8 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.IsabelleEnabled,
 			Settings.Default.WildcatNeoEnabled,
 			Settings.Default.AloyEnabled,
-<<<<<<< Updated upstream
+	        Settings.Default.AloyStyleEnabled
 
-=======
-			Settings.Default.AloyStyleEnabled
->>>>>>> Stashed changes
 		};
 
 		public List<bool> RockAxe = new List<bool>()
@@ -179,8 +177,8 @@ namespace JuicySwapper.Main.Classes
 		};
 		public List<bool> TonyStark = new List<bool>()
 		{
-			Settings.Default.ChickenEnabled,
-			Settings.Default.LeaveTheDoorOpenEnabled
+			Settings.Default.GrimeyEnabled,
+			Settings.Default.EcoEnabled
 		};
 
 		public List<bool> EAC = new List<bool>()

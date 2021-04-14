@@ -398,6 +398,12 @@
     <Compile Include="Items\Questions\BlackShieldOption.designer.cs">
       <DependentUpon>BlackShieldOption.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Questions\GrimeyOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Questions\GrimeyOption.designer.cs">
+      <DependentUpon>GrimeyOption.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Questions\RenegadeCOption.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -433,6 +439,12 @@
     </Compile>
     <Compile Include="Items\Questions\StarwandOption.designer.cs">
       <DependentUpon>StarwandOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\GrimeyBlaze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\GrimeyBlaze.designer.cs">
+      <DependentUpon>GrimeyBlaze.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Skins\PrincessFish.cs">
       <SubType>Form</SubType>
@@ -840,6 +852,9 @@
     <EmbeddedResource Include="Items\Questions\BlackShieldOption.resx">
       <DependentUpon>BlackShieldOption.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Items\Questions\GrimeyOption.resx">
+      <DependentUpon>GrimeyOption.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\Questions\RenegadeCOption.resx">
       <DependentUpon>RenegadeCOption.cs</DependentUpon>
     </EmbeddedResource>
@@ -857,6 +872,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Questions\StarwandOption.resx">
       <DependentUpon>StarwandOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\GrimeyBlaze.resx">
+      <DependentUpon>GrimeyBlaze.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\PrincessFish.resx">
       <DependentUpon>PrincessFish.cs</DependentUpon>

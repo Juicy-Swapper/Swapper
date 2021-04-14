@@ -192,7 +192,7 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton16_Click(object sender, EventArgs e)
         {
-            new Grimey().ShowDialog();
+            new GrimeyOption().ShowDialog();
         }
     }
 }
