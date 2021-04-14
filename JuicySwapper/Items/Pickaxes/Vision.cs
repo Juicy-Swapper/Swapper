@@ -13,7 +13,7 @@ namespace JuicySwapper.Items.Pickaxes
 {
     public partial class Vision : Form
     {
-        bool enabled = Settings.Default.VisionEnabled;
+        bool enabled = Settings.Default.whaterver;
         SwapUtilities SwapUtilities = new SwapUtilities();
         string placeholder = "Vision";
 
@@ -49,7 +49,7 @@ namespace JuicySwapper.Items.Pickaxes
             bool Swap1 = HexResearcher.Convert(SwapOffsets[2], SwapPath[2], Pickaxe, Pickaxe1, 0, 0, false, false);
             if (Swap1)
             {
-                Settings.Default.VisionEnabled = true;
+                Settings.Default.whaterver = true;
                 Settings.Default.Save();
                 LogBox.Text += "\n[LOG] Mesh added";
             }
@@ -71,7 +71,7 @@ namespace JuicySwapper.Items.Pickaxes
             bool Swap1 = HexResearcher.Revert(SwapOffsets[2], SwapPath[2], Pickaxe, Pickaxe1, 0, 0, false, false);
             if (Swap1)
             {
-                Settings.Default.VisionEnabled = false;
+                Settings.Default.whaterver = false;
                 Settings.Default.Save();
                 LogBox.Text += "\n[LOG] Mesh removed";
             }

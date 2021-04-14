@@ -170,7 +170,7 @@ namespace JuicySwapper.Main.Classes
 
 		public List<bool> FrozenAxe = new List<bool>()
 		{
-			Settings.Default.VisionEnabled
+			Settings.Default.whaterver
 		};
 
 		public List<bool> EAC = new List<bool>()
