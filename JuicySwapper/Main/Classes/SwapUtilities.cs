@@ -52,26 +52,6 @@ namespace JuicySwapper.Main.Classes
 			return new string[] { One };
 		}
 
-		public List<bool> AssaultTrooper = new List<bool>()
-		{
-			Settings.Default.SparkleSpecialistEnabled,
-			Settings.Default.headhunterATEnabled,
-			Settings.Default.RenegadeRaiderEnabled,
-			Settings.Default.SurvivalSpecialistEnabled
-		};
-
-		public List<bool> Dominator = new List<bool>()
-		{
-			Settings.Default.ReconExpertEnabled,
-			Settings.Default.BansheeEnabled
-		};
-
-		public List<bool> Whiplash = new List<bool>()
-		{
-			Settings.Default.DazzleEnabled,
-			Settings.Default.EliteAgentEnabled
-		};
-
 		public List<bool> NiteLite = new List<bool>()
 		{
 			Settings.Default.GhoulOGEnabled,
@@ -170,7 +150,7 @@ namespace JuicySwapper.Main.Classes
 
 		public List<bool> FrozenAxe = new List<bool>()
 		{
-			Settings.Default.whaterver
+			Settings.Default.VisionEnabled
 		};
 
 		public List<bool> EAC = new List<bool>()
@@ -185,27 +165,6 @@ namespace JuicySwapper.Main.Classes
 		{
 			switch (s)
 			{
-				case "AssaultTrooper":
-					if (AssaultTrooper.All(a => a) || AssaultTrooper.All(a => !a))
-						return false;
-					else
-						MessageBox.Show("A skin using Dominator is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
-					break;
-
-				case "Dominator":
-					if (Dominator.All(a => a) || Dominator.All(a => !a))
-						return false;
-					else
-						MessageBox.Show("A skin using Dominator is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
-					break;
-
-				case "Whiplash":
-					if (Dominator.All(a => a) || Dominator.All(a => !a))
-						return false;
-					else
-						MessageBox.Show("A skin using Whiplash is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
-					break;
-
 				case "Nitelite":
 					if (NiteLite.All(a => a) || NiteLite.All(a => !a))
 						return false;

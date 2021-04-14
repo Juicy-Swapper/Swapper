@@ -109,198 +109,6 @@ namespace JuicySwapper.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool SparkleSpecialistEnabled {
-            get {
-                return ((bool)(this["SparkleSpecialistEnabled"]));
-            }
-            set {
-                this["SparkleSpecialistEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool ReconExpertEnabled {
-            get {
-                return ((bool)(this["ReconExpertEnabled"]));
-            }
-            set {
-                this["ReconExpertEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool headhunterATEnabled {
-            get {
-                return ((bool)(this["headhunterATEnabled"]));
-            }
-            set {
-                this["headhunterATEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool RamirezEnabled {
-            get {
-                return ((bool)(this["RamirezEnabled"]));
-            }
-            set {
-                this["RamirezEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool RamirezAAEnabled {
-            get {
-                return ((bool)(this["RamirezAAEnabled"]));
-            }
-            set {
-                this["RamirezAAEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string InstallationPath {
-            get {
-                return ((string)(this["InstallationPath"]));
-            }
-            set {
-                this["InstallationPath"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool headhunterEnabled {
-            get {
-                return ((bool)(this["headhunterEnabled"]));
-            }
-            set {
-                this["headhunterEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool BansheeEnabled {
-            get {
-                return ((bool)(this["BansheeEnabled"]));
-            }
-            set {
-                this["BansheeEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool BansheeRenEnabled {
-            get {
-                return ((bool)(this["BansheeRenEnabled"]));
-            }
-            set {
-                this["BansheeRenEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool BansheeTOEnabled {
-            get {
-                return ((bool)(this["BansheeTOEnabled"]));
-            }
-            set {
-                this["BansheeTOEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool WildcatEnabled {
-            get {
-                return ((bool)(this["WildcatEnabled"]));
-            }
-            set {
-                this["WildcatEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool sunbirdEnabled {
-            get {
-                return ((bool)(this["sunbirdEnabled"]));
-            }
-            set {
-                this["sunbirdEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool SpitfireEnabled {
-            get {
-                return ((bool)(this["SpitfireEnabled"]));
-            }
-            set {
-                this["SpitfireEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool HawkEnabled {
-            get {
-                return ((bool)(this["HawkEnabled"]));
-            }
-            set {
-                this["HawkEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool RenegadeEnabled {
-            get {
-                return ((bool)(this["RenegadeEnabled"]));
-            }
-            set {
-                this["RenegadeEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool candyaxeEnabled {
-            get {
-                return ((bool)(this["candyaxeEnabled"]));
-            }
-            set {
-                this["candyaxeEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("11000000")]
         public int offset_temp {
             get {
@@ -332,126 +140,6 @@ namespace JuicySwapper.Properties {
             }
             set {
                 this["BlackShieldEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool BattleShroudEnabled {
-            get {
-                return ((bool)(this["BattleShroudEnabled"]));
-            }
-            set {
-                this["BattleShroudEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool DazzleEnabled {
-            get {
-                return ((bool)(this["DazzleEnabled"]));
-            }
-            set {
-                this["DazzleEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool IronBeakEnabled {
-            get {
-                return ((bool)(this["IronBeakEnabled"]));
-            }
-            set {
-                this["IronBeakEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool SkullySplitterEnabled {
-            get {
-                return ((bool)(this["SkullySplitterEnabled"]));
-            }
-            set {
-                this["SkullySplitterEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool TatAxeEnabled {
-            get {
-                return ((bool)(this["TatAxeEnabled"]));
-            }
-            set {
-                this["TatAxeEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool IronCageEnabled {
-            get {
-                return ((bool)(this["IronCageEnabled"]));
-            }
-            set {
-                this["IronCageEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool RenegadeRaiderEnabled {
-            get {
-                return ((bool)(this["RenegadeRaiderEnabled"]));
-            }
-            set {
-                this["RenegadeRaiderEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool SurvivalSpecialistEnabled {
-            get {
-                return ((bool)(this["SurvivalSpecialistEnabled"]));
-            }
-            set {
-                this["SurvivalSpecialistEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool GingerbreadRaiderEnabled {
-            get {
-                return ((bool)(this["GingerbreadRaiderEnabled"]));
-            }
-            set {
-                this["GingerbreadRaiderEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool FateEnabled {
-            get {
-                return ((bool)(this["FateEnabled"]));
-            }
-            set {
-                this["FateEnabled"] = value;
             }
         }
         
@@ -1268,6 +956,54 @@ namespace JuicySwapper.Properties {
             }
             set {
                 this["PrincessFishEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string InstallationPath {
+            get {
+                return ((string)(this["InstallationPath"]));
+            }
+            set {
+                this["InstallationPath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool VisionEnabled {
+            get {
+                return ((bool)(this["VisionEnabled"]));
+            }
+            set {
+                this["VisionEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ACDCEnabled {
+            get {
+                return ((bool)(this["ACDCEnabled"]));
+            }
+            set {
+                this["ACDCEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SparkleSpecialistEnabled {
+            get {
+                return ((bool)(this["SparkleSpecialistEnabled"]));
+            }
+            set {
+                this["SparkleSpecialistEnabled"] = value;
             }
         }
     }

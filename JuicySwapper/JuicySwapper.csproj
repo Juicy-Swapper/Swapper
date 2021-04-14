@@ -386,24 +386,6 @@
     <Compile Include="Items\Pickaxes\Studded.designer.cs">
       <DependentUpon>Studded.cs</DependentUpon>
     </Compile>
-    <Compile Include="Items\Pickaxes\TatAxe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Pickaxes\TatAxe.designer.cs">
-      <DependentUpon>TatAxe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Pickaxes\SkullySplitter.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Pickaxes\SkullySplitter.designer.cs">
-      <DependentUpon>SkullySplitter.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Pickaxes\IronBeak.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Pickaxes\IronBeak.designer.cs">
-      <DependentUpon>IronBeak.cs</DependentUpon>
-    </Compile>
     <Compile Include="Items\Questions\BlackShieldOption.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -653,12 +635,6 @@
     <Compile Include="Main\Classes\Api.cs" />
     <Compile Include="Main\Classes\Mongodb.cs" />
     <Compile Include="Main\Classes\SwapUtilities.cs" />
-    <Compile Include="Items\Pickaxes\candyaxe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Pickaxes\candyaxe.designer.cs">
-      <DependentUpon>candyaxe.cs</DependentUpon>
-    </Compile>
     <Compile Include="Main\GUI\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -858,15 +834,6 @@
     <EmbeddedResource Include="Items\Pickaxes\Studded.resx">
       <DependentUpon>Studded.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Items\Pickaxes\TatAxe.resx">
-      <DependentUpon>TatAxe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Pickaxes\SkullySplitter.resx">
-      <DependentUpon>SkullySplitter.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Pickaxes\IronBeak.resx">
-      <DependentUpon>IronBeak.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Items\Questions\BlackShieldOption.resx">
       <DependentUpon>BlackShieldOption.cs</DependentUpon>
     </EmbeddedResource>
@@ -989,9 +956,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\Blazetorenegade.resx">
       <DependentUpon>Blazetorenegade.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Pickaxes\candyaxe.resx">
-      <DependentUpon>candyaxe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -35,111 +35,13 @@ namespace JuicySwapper.Main.GUI
             int num = 0;
             string text = "";
 
-            if (Settings.Default.SparkleSpecialistEnabled == true)
-            {
-                num++;
-                text += "Sparkle Specialist," + " ";
-            }
-            if (Settings.Default.headhunterEnabled == true)
-            {
-                num++;
-                text += "Head Hunter (Assault Trooper)," + " ";
-            }
-            if (Settings.Default.ReconExpertEnabled == true)
-            {
-                num++;
-                text += "Recon Expert," + " ";
-            }
-            if (Settings.Default.RamirezEnabled == true)
-            {
-                num++;
-                text += "Ramirez (Commando)," + " ";
-            }
-            if (Settings.Default.RamirezAAEnabled == true)
-            {
-                num++;
-                text += "Ramirez (Arctic Assassin)," + " ";
-            }
-            if (Settings.Default.BansheeRenEnabled == true)
-            {
-                num++;
-                text += "WildCat (Renegade)," + " ";
-            }
-            if (Settings.Default.BansheeEnabled == true)
-            {
-                num++;
-                text += "WildCat (Dominator)," + " ";
-            }
-            if (Settings.Default.BansheeTOEnabled == true)
-            {
-                num++;
-                text += "WildCat (Tactics Officer)," + " ";
-            }
-            if (Settings.Default.WildcatEnabled == true)
-            {
-                num++;
-                text += "Wildcat (Pathfinder)," + " ";
-            }
-            if (Settings.Default.sunbirdEnabled == true)
-            {
-                num++;
-                text += "Shadowbird," + " ";
-            }
-            if (Settings.Default.SpitfireEnabled == true)
-            {
-                num++;
-                text += "Spitfire," + " ";
-            }
-            if (Settings.Default.RenegadeEnabled == true)
-            {
-                num++;
-                text += "Renegade," + " ";
-            }
-            if (Settings.Default.candyaxeEnabled == true)
-            {
-                num++;
-                text += "Candy Axe," + " ";
-            }
+
             if (Settings.Default.BlackShieldEnabled == true)
             {
                 num++;
                 text += "Black Shield," + " ";
             }
-            if (Settings.Default.BattleShroudEnabled == true)
-            {
-                num++;
-                text += "Battle Shroud," + " ";
-            }
-            if (Settings.Default.DazzleEnabled == true)
-            {
-                num++;
-                text += "Dazzle," + " ";
-            }
-            if (Settings.Default.IronBeakEnabled == true)
-            {
-                num++;
-                text += "Iron Beak," + " ";
-            }
-            if (Settings.Default.SkullySplitterEnabled == true)
-            {
-                num++;
-                text += "Skully Splitter," + " ";
-            }
-            if (Settings.Default.TatAxeEnabled == true)
-            {
-                num++;
-                text += "Tat Axe," + " ";
-            }
-            if (Settings.Default.IronCageEnabled == true)
-            {
-                num++;
-                text += "Iron Cage," + " ";
-            }
-            if (Settings.Default.EliteAgentEnabled == true)
-            {
-                num++;
-                text += "E;ite Agent," + " ";
-            }
+
             if (Settings.Default.BrenegadeEnabled == true)
             {
                 num++;
