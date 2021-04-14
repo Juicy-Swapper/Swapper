@@ -1222,5 +1222,53 @@ namespace JuicySwapper.Properties {
                 this["AloySpearEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AloyStyleEnabled {
+            get {
+                return ((bool)(this["AloyStyleEnabled"]));
+            }
+            set {
+                this["AloyStyleEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool EcoEnabled {
+            get {
+                return ((bool)(this["EcoEnabled"]));
+            }
+            set {
+                this["EcoEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool GrimeyEnabled {
+            get {
+                return ((bool)(this["GrimeyEnabled"]));
+            }
+            set {
+                this["GrimeyEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool PrincessFishEnabled {
+            get {
+                return ((bool)(this["PrincessFishEnabled"]));
+            }
+            set {
+                this["PrincessFishEnabled"] = value;
+            }
+        }
     }
 }

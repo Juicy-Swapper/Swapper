@@ -139,7 +139,11 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.IsabelleEnabled,
 			Settings.Default.WildcatNeoEnabled,
 			Settings.Default.AloyEnabled,
+<<<<<<< Updated upstream
 
+=======
+			Settings.Default.AloyStyleEnabled
+>>>>>>> Stashed changes
 		};
 
 		public List<bool> RockAxe = new List<bool>()

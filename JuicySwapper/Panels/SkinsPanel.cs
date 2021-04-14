@@ -169,5 +169,30 @@ namespace JuicySwapper.Panels
         {
             new Aloy().ShowDialog();
         }
+
+        private void bunifuImageButton12_Click(object sender, EventArgs e)
+        {
+            new AloyStyle().ShowDialog();
+        }
+
+        private void bunifuImageButton13_Click_1(object sender, EventArgs e)
+        {
+            new Eco().ShowDialog();
+        }
+
+        private void bunifuImageButton14_Click(object sender, EventArgs e)
+        {
+            new PrincessFish().ShowDialog();
+        }
+
+        private void bunifuImageButton15_Click(object sender, EventArgs e)
+        {
+            new Aspen().ShowDialog();
+        }
+
+        private void bunifuImageButton16_Click(object sender, EventArgs e)
+        {
+            new Grimey().ShowDialog();
+        }
     }
 }

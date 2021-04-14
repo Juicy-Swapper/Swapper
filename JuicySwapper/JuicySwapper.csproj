@@ -434,6 +434,36 @@
     <Compile Include="Items\Questions\StarwandOption.designer.cs">
       <DependentUpon>StarwandOption.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Skins\PrincessFish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\PrincessFish.designer.cs">
+      <DependentUpon>PrincessFish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\Aspen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Aspen.designer.cs">
+      <DependentUpon>Aspen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\Grimey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Grimey.designer.cs">
+      <DependentUpon>Grimey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\Eco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Eco.designer.cs">
+      <DependentUpon>Eco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\AloyStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\AloyStyle.designer.cs">
+      <DependentUpon>AloyStyle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Skins\Aloy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -827,6 +857,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Questions\StarwandOption.resx">
       <DependentUpon>StarwandOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\PrincessFish.resx">
+      <DependentUpon>PrincessFish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Aspen.resx">
+      <DependentUpon>Aspen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Grimey.resx">
+      <DependentUpon>Grimey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Eco.resx">
+      <DependentUpon>Eco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\AloyStyle.resx">
+      <DependentUpon>AloyStyle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\Aloy.resx">
       <DependentUpon>Aloy.cs</DependentUpon>
