@@ -84,20 +84,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\liike\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Juicy\\github\\Swapper-v2\\Swapper\\JuicySwapper_OffsetFinder\\JuicySwapper_OffsetFinder.csproj",
+      "projectUniqueName": "C:\\Users\\liike\\Documents\\GitHub\\Swapper\\JuicySwapper_OffsetFinder\\JuicySwapper_OffsetFinder.csproj",
       "projectName": "JuicySwapper_OffsetFinder",
-      "projectPath": "C:\\Users\\User\\Desktop\\Juicy\\github\\Swapper-v2\\Swapper\\JuicySwapper_OffsetFinder\\JuicySwapper_OffsetFinder.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Juicy\\github\\Swapper-v2\\Swapper\\JuicySwapper_OffsetFinder\\obj\\",
+      "projectPath": "C:\\Users\\liike\\Documents\\GitHub\\Swapper\\JuicySwapper_OffsetFinder\\JuicySwapper_OffsetFinder.csproj",
+      "packagesPath": "C:\\Users\\liike\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\liike\\Documents\\GitHub\\Swapper\\JuicySwapper_OffsetFinder\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\liike\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -105,8 +105,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.emzi0767.com/api/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net472": {

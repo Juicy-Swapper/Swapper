@@ -198,3 +198,5 @@ C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper\obj\Debug\Jui
 C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.HarleyQuinnRebirth.resources
 C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Signup.resources
 C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper\obj\Debug\JuicySwapper.AccountInfo.resources
+C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.AccountInfo.resources
+C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Signup.resources

@@ -138,7 +138,8 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.MeggEnabled,
 			Settings.Default.IsabelleEnabled,
 			Settings.Default.WildcatNeoEnabled,
-			Settings.Default.AloyEnabled
+			Settings.Default.AloyEnabled,
+
 		};
 
 		public List<bool> RockAxe = new List<bool>()
@@ -159,7 +160,7 @@ namespace JuicySwapper.Main.Classes
 		{
 			Settings.Default.SavageEnabled,
 			Settings.Default.FreemixEnabled
-	    };
+		};
 		public List<bool> Jennifer = new List<bool>()
 		{
 			Settings.Default.YukiEnabled,
@@ -172,7 +173,11 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.ChickenEnabled,
 			Settings.Default.LeaveTheDoorOpenEnabled
 		};
-
+		public List<bool> TonyStark = new List<bool>()
+		{
+			Settings.Default.ChickenEnabled,
+			Settings.Default.LeaveTheDoorOpenEnabled
+		};
 
 		public List<bool> EAC = new List<bool>()
 		{
@@ -294,6 +299,13 @@ namespace JuicySwapper.Main.Classes
 						return false;
 					else
 						MessageBox.Show("A Emote using Blowing Bubbles is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+
+					break;
+				case "TonyStark":
+					if (TonyStark.All(a => a) || TonyStark.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A Skin using TonyStark is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 
 					break;
 			}
