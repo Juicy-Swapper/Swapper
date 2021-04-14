@@ -1,5 +1,5 @@
 ﻿
-namespace JuicySwapper_Launcher
+namespace JuicyIndustries_Launcher
 {
     partial class Main
     {
@@ -378,9 +378,9 @@ namespace JuicySwapper_Launcher
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(63, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 23);
+            this.label2.Size = new System.Drawing.Size(121, 23);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Juicy Swapper";
+            this.label2.Text = "Juicy Launcher";
             // 
             // CurvaSidebar
             // 

@@ -1,5 +1,5 @@
 ﻿
-namespace JuicySwapper_Launcher
+namespace JuicyIndustries_Launcher
 {
     partial class SignUP
     {

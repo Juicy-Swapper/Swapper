@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using JuicySwapper.Main.Classes;
 using System.IO;
+using JuicySwapper.Properties;
 
 namespace JuicySwapper.Main.GUI
 {
@@ -37,6 +38,13 @@ namespace JuicySwapper.Main.GUI
             {
                 timer1.Enabled = false;
                 Hide();
+
+                if (Settings.Default.MusicAct == "True")
+                {
+                    JuicyUtilities MusicController = new JuicyUtilities();
+                    MusicController.MusicControl("True");
+                }
+
                 var Open = new Login();
                 Open.Closed += (s, args) => Close();
                 Open.Show();

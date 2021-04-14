@@ -11,6 +11,7 @@ namespace JuicySwapper.Main.GUI
     {
         public BackupVerify()
         {
+            CheckForIllegalCrossThreadCalls = false;
             InitializeComponent();
         }
 
@@ -19,12 +20,34 @@ namespace JuicySwapper.Main.GUI
             Close();
         }
 
-        SwapUtilities SwapUtilities = new SwapUtilities();
+        public string[] GetSwapPath()
+        {
+            var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
+
+            string a = $"{Pathtopaks}\\pakchunk10_s4-WindowsClient.ucas";
+            string b = $"{Pathtopaks}\\pakchunk10_s5-WindowsClient.ucas";
+            string c = $"{Pathtopaks}\\pakchunk10_s17-WindowsClient.ucas";
+            string d = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
+            string e = $"{Pathtopaks}\\pakchunk10_s22-WindowsClient.ucas";
+
+            return new string[] { a, b, c, d, e };
+        }
+
+        public string[] GetBackupPaths()
+        {
+            string a = "PakBackup/pakchunk10_s4-WindowsClient.ucas";
+            string b = "PakBackup/pakchunk10_s5-WindowsClient.ucas";
+            string c = "PakBackup/pakchunk10_s17-WindowsClient.ucas";
+            string d = "PakBackup/pakchunk10_s3-WindowsClient.ucas";
+            string e = "PakBackup/pakchunk10_s22-WindowsClient.ucas";
+
+            return new string[] { a, b, c, d, e };
+        }
 
         private void backupWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            string[] SwapPath = SwapUtilities.GetSwapPath();
-            string[] BackPath = SwapUtilities.GetBackupPaths();
+            string[] SwapPath = GetSwapPath();
+            string[] BackPath = GetBackupPaths();
             try
             {
                 if (Directory.Exists("PakBackup"))
@@ -45,6 +68,10 @@ namespace JuicySwapper.Main.GUI
                     {
                         File.Delete(BackPath[3]);
                     }
+                    if (File.Exists(BackPath[4]))
+                    {
+                        File.Delete(BackPath[4]);
+                    }
                     Directory.Delete("PakBackup");
                 }
 
@@ -59,40 +86,43 @@ namespace JuicySwapper.Main.GUI
 
                 File.Copy(SwapPath[0], BackPath[0]);
 
-                richTextBox1.Text += $"[{DateTime.Now}] Copied 1/4 game files!\n";
+                richTextBox1.Text += $"[{DateTime.Now}] Copied 1/5 game files!\n";
 
                 richTextBox1.Text += $"[{DateTime.Now}] Copying game files... 2/4\n";
 
                 File.Copy(SwapPath[1], BackPath[1]);
 
-                richTextBox1.Text += $"[{DateTime.Now}] Copied 2/4 game files!\n";
+                richTextBox1.Text += $"[{DateTime.Now}] Copied 2/5 game files!\n";
 
                 richTextBox1.Text += $"[{DateTime.Now}] Copying game files... 3/4\n";
 
                 File.Copy(SwapPath[2], BackPath[2]);
 
-                richTextBox1.Text += $"[{DateTime.Now}] Copied 3/4 game files!\n";
+                richTextBox1.Text += $"[{DateTime.Now}] Copied 3/5 game files!\n";
 
                 richTextBox1.Text += $"[{DateTime.Now}] Copying game files... 4/4\n";
 
                 File.Copy(SwapPath[3], BackPath[3]);
 
-                richTextBox1.Text += $"[{DateTime.Now}] Copied 3/4 game files!\n";
+                richTextBox1.Text += $"[{DateTime.Now}] Copied 4/5 game files!\n";
+
+                File.Copy(SwapPath[4], BackPath[4]);
+
+                richTextBox1.Text += $"[{DateTime.Now}] Copied 5/5 game files!\n";
 
 
                 richTextBox1.Text += $"[{DateTime.Now}] Successfully created backup of your game files!\n";
             }
-            catch (Exception)
+            catch (Exception EX)
             {
-                Message Exception = new Message(Resources.Exception);
-                Exception.ShowDialog();
+                richTextBox1.Text += $"[{DateTime.Now}] Error! Please contact the Juicy Swapper support team!";
             }
         }
 
         private void verifyWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            string[] SwapPath = SwapUtilities.GetSwapPath();
-            string[] BackPath = SwapUtilities.GetBackupPaths();
+            string[] SwapPath = GetSwapPath();
+            string[] BackPath = GetBackupPaths();
             richTextBox1.Text = $"[{DateTime.Now}] Starting...\n";
             try
             {
@@ -114,6 +144,10 @@ namespace JuicySwapper.Main.GUI
                     {
                         File.Delete(SwapPath[3]);
                     }
+                    if (File.Exists(SwapPath[4]))
+                    {
+                        File.Delete(SwapPath[4]);
+                    }
 
                     richTextBox1.Text += $"[{ DateTime.Now}] Pak Backup folder detected!\n";
 
@@ -128,38 +162,46 @@ namespace JuicySwapper.Main.GUI
 
                     File.Copy(BackPath[0], SwapPath[0]);
 
-                    richTextBox1.Text += $"[{DateTime.Now}] Copied 1/4 game files!\n";
+                    richTextBox1.Text += $"[{DateTime.Now}] Copied 1/5 game files!\n";
 
                     richTextBox1.Text += $"[{DateTime.Now}] Copying game files... 2/4\n";
 
                     File.Copy(BackPath[1], SwapPath[1]);
 
-                    richTextBox1.Text += $"[{DateTime.Now}] Copied 2/4 game files!\n";
+                    richTextBox1.Text += $"[{DateTime.Now}] Copied 2/5 game files!\n";
 
                     richTextBox1.Text += $"[{DateTime.Now}] Copying game files... 3/4\n";
 
                     File.Copy(BackPath[2], SwapPath[2]);
 
-                    richTextBox1.Text += $"[{DateTime.Now}] Copied 3/4 game files!\n";
+                    richTextBox1.Text += $"[{DateTime.Now}] Copied 3/5 game files!\n";
 
                     richTextBox1.Text += $"[{DateTime.Now}] Copying game files... 4/4\n";
 
                     File.Copy(BackPath[3], SwapPath[3]);
 
-                    richTextBox1.Text += $"[{DateTime.Now}] Copied 4/4 game files!\n";
+                    richTextBox1.Text += $"[{DateTime.Now}] Copied 4/5 game files!\n";
+
+                    File.Copy(BackPath[4], SwapPath[4]);
+
+                    richTextBox1.Text += $"[{DateTime.Now}] Copied 5/5 game files!\n";
+
+                    richTextBox1.Text += $"[{DateTime.Now}] Successfully verified your game files!\n";
 
                     File.Delete(BackPath[0]);
                     File.Delete(BackPath[1]);
                     File.Delete(BackPath[2]);
                     File.Delete(BackPath[3]);
+                    File.Delete(BackPath[4]);
 
                     Directory.Delete("PakBackup");
                 }
                 else
                 {
-                    MessageBox.Show($"[{DateTime.Now}] Pak Backup folder found, but no .pak files exist!", "Juicy Swapper - Verification Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"[{DateTime.Now}] Pak Backup folder found, but no .UCAS files exist!", "Juicy Swapper - Verification Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+
             catch (Exception)
             {
                 Message Exception = new Message(Resources.Exception);
@@ -169,7 +211,7 @@ namespace JuicySwapper.Main.GUI
 
         private void VerifyBtn_Click(object sender, EventArgs e)
         {
-            string[] BackPath = SwapUtilities.GetBackupPaths();
+            string[] BackPath = GetBackupPaths();
             if (File.Exists(BackPath[0]) && File.Exists(BackPath[1]))
             {
                 verifyWorker.RunWorkerAsync();
@@ -183,7 +225,7 @@ namespace JuicySwapper.Main.GUI
 
         private void BackUpBtn_Click(object sender, EventArgs e)
         {
-            string[] SwapPath = SwapUtilities.GetSwapPath();
+            string[] SwapPath = GetSwapPath();
             if (File.Exists(SwapPath[0]) && File.Exists(SwapPath[1]))
             {
                 backupWorker.RunWorkerAsync();

@@ -91,8 +91,9 @@
     <Reference Include="DnsClient, Version=1.4.0.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
       <HintPath>..\packages\DnsClient.1.4.0\lib\net471\DnsClient.dll</HintPath>
     </Reference>
-    <Reference Include="JuicySwapper_Encryption">
-      <HintPath>.\JuicySwapper_Encryption.dll</HintPath>
+    <Reference Include="JuicySwapper_Encryption, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\build\Juicy Swapper\JuicySwapper_Encryption.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -610,6 +611,12 @@
     <Compile Include="Main\GUI\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\GUI\AccountInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\AccountInfo.designer.cs">
+      <DependentUpon>AccountInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\GUI\Message.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -621,6 +628,12 @@
     </Compile>
     <Compile Include="Main\GUI\OfflineMode.designer.cs">
       <DependentUpon>OfflineMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
     <Compile Include="Panels\EmotesPanel.cs">
       <SubType>UserControl</SubType>
@@ -902,11 +915,17 @@
     <EmbeddedResource Include="Main\GUI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\AccountInfo.resx">
+      <DependentUpon>AccountInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Message.resx">
       <DependentUpon>Message.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\OfflineMode.resx">
       <DependentUpon>OfflineMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\EmotesPanel.resx">
       <DependentUpon>EmotesPanel.cs</DependentUpon>

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace JuicySwapper_Launcher
+namespace JuicyIndustries_Launcher
 {
     public partial class Login : Form
     {

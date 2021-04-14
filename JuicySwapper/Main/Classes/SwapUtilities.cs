@@ -54,10 +54,10 @@ namespace JuicySwapper.Main.Classes
 
 		public string[] GetBackupPaths()
 		{
-			string Skin_Body_Path = "PakBackup/pakchunk10_s3-WindowsClient.ucas";
-			string Skin_Head_Path = "PakBackup/pakchunk10_s3-WindowsClient.ucas";
-			string Pickaxe_Mesh_Path = "PakBackup/pakchunk10_s3-WindowsClient.ucas";
-			string Backbling_Path = "PakBackup/pakchunk10_s1-WindowsClient.ucas";
+			string Skin_Body_Path = "PakBackup/pakchunk10_s4-WindowsClient.ucas";
+			string Skin_Head_Path = "PakBackup/pakchunk10_s5-WindowsClient.ucas";
+			string Pickaxe_Mesh_Path = "PakBackup/pakchunk10_s17-WindowsClient.ucas";
+			string Backbling_Path = "PakBackup/pakchunk10_s22-WindowsClient.ucas";
 			string Emote_Path = "PakBackup/pakchunk10_s2-WindowsClient.pak";
 
 			return new string[] { Skin_Body_Path, Skin_Head_Path, Pickaxe_Mesh_Path, Backbling_Path, Emote_Path };

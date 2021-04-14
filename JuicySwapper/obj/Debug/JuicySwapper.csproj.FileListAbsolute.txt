@@ -193,3 +193,8 @@ C:\Users\liike\Documents\GitHub\build\Juicy Swapper\JuicySwapper.pdb
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.Fody.CopyLocal.cache
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.csproj.CopyComplete
 C:\Users\liike\Documents\GitHub\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.AloySpear.resources
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Pickaxes.AloySpear.resources
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.Aloy.resources
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Items.Skins.HarleyQuinnRebirth.resources
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper\obj\Debug\JuicySwapper.Main.GUI.Signup.resources
+C:\Users\User\Desktop\Juicy\github\Swapper-v2\Swapper\JuicySwapper\obj\Debug\JuicySwapper.AccountInfo.resources

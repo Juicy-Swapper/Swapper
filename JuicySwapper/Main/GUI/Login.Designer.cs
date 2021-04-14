@@ -35,14 +35,14 @@
             this.password = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.LoginFree = new System.Windows.Forms.PictureBox();
             this.PaidLogin = new System.Windows.Forms.PictureBox();
-            this.NitroLogin = new System.Windows.Forms.PictureBox();
+            this.ForgotInfo = new System.Windows.Forms.PictureBox();
             this.ExitSwapper = new System.Windows.Forms.PictureBox();
             this.CurvaSidebar = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.LoginFree)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PaidLogin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NitroLogin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForgotInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExitSwapper)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,7 +101,7 @@
             this.LoginFree.Size = new System.Drawing.Size(155, 22);
             this.LoginFree.TabIndex = 10;
             this.LoginFree.TabStop = false;
-            this.LoginFree.Click += new System.EventHandler(this.LoginGest_Click);
+            this.LoginFree.Click += new System.EventHandler(this.Login_Click);
             // 
             // PaidLogin
             // 
@@ -112,18 +112,18 @@
             this.PaidLogin.Size = new System.Drawing.Size(155, 22);
             this.PaidLogin.TabIndex = 11;
             this.PaidLogin.TabStop = false;
-            this.PaidLogin.Click += new System.EventHandler(this.PaidLogin_Click);
+            this.PaidLogin.Click += new System.EventHandler(this.Signup_Click);
             // 
-            // NitroLogin
+            // ForgotInfo
             // 
-            this.NitroLogin.BackColor = System.Drawing.Color.Transparent;
-            this.NitroLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.NitroLogin.Location = new System.Drawing.Point(650, 331);
-            this.NitroLogin.Name = "NitroLogin";
-            this.NitroLogin.Size = new System.Drawing.Size(155, 22);
-            this.NitroLogin.TabIndex = 12;
-            this.NitroLogin.TabStop = false;
-            this.NitroLogin.Click += new System.EventHandler(this.SignUp_Click);
+            this.ForgotInfo.BackColor = System.Drawing.Color.Transparent;
+            this.ForgotInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ForgotInfo.Location = new System.Drawing.Point(650, 331);
+            this.ForgotInfo.Name = "ForgotInfo";
+            this.ForgotInfo.Size = new System.Drawing.Size(155, 22);
+            this.ForgotInfo.TabIndex = 12;
+            this.ForgotInfo.TabStop = false;
+            this.ForgotInfo.Click += new System.EventHandler(this.ForgotInfo_Click);
             // 
             // ExitSwapper
             // 
@@ -148,10 +148,6 @@
             this.bunifuDragControl1.TargetControl = this;
             this.bunifuDragControl1.Vertical = true;
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -160,7 +156,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(966, 530);
             this.Controls.Add(this.ExitSwapper);
-            this.Controls.Add(this.NitroLogin);
+            this.Controls.Add(this.ForgotInfo);
             this.Controls.Add(this.PaidLogin);
             this.Controls.Add(this.LoginFree);
             this.Controls.Add(this.password);
@@ -170,10 +166,9 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.LoginFree)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PaidLogin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NitroLogin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForgotInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExitSwapper)).EndInit();
             this.ResumeLayout(false);
 
@@ -185,7 +180,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox password;
         private System.Windows.Forms.PictureBox LoginFree;
         private System.Windows.Forms.PictureBox PaidLogin;
-        private System.Windows.Forms.PictureBox NitroLogin;
+        private System.Windows.Forms.PictureBox ForgotInfo;
         private System.Windows.Forms.PictureBox ExitSwapper;
         private Bunifu.Framework.UI.BunifuElipse CurvaSidebar;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
