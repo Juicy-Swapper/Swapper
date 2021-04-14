@@ -320,6 +320,18 @@
     <Compile Include="Items\Backblings\BlackShieldFS.designer.cs">
       <DependentUpon>BlackShieldFS.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Pickaxes\ACDC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Pickaxes\ACDC.designer.cs">
+      <DependentUpon>ACDC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Pickaxes\Vision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Pickaxes\Vision.designer.cs">
+      <DependentUpon>Vision.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Pickaxes\AloySpear.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -812,6 +824,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Backblings\BlackShieldFS.resx">
       <DependentUpon>BlackShieldFS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Pickaxes\ACDC.resx">
+      <DependentUpon>ACDC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Pickaxes\Vision.resx">
+      <DependentUpon>Vision.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Pickaxes\AloySpear.resx">
       <DependentUpon>AloySpear.cs</DependentUpon>
