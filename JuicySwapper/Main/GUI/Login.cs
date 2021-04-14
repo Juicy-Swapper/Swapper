@@ -113,23 +113,17 @@ namespace JuicySwapper.Main.GUI
             else
                 Settings.Default.AccVerify = "Free";
 
-            Settings.Default.Name = Username.Text;
+            
+
+            Settings.Default.Name = onerec.username;
             Settings.Default.username = Username.Text;
             Settings.Default.Password = password.Text;
             Settings.Default.Save();
 
             Hide();
             var Home = new Home();
-            if (User)
-            {
-                Message paidlogin = new Message(Resources.paidlogin);
-                paidlogin.ShowDialog();
-            }
-            else
-            {
-                Message FreeLogin = new Message(Resources.freelogin);
-                FreeLogin.ShowDialog();
-            }
+            Message paidlogin = new Message(Resources.Juicylogin);
+            paidlogin.ShowDialog();
             Home.Closed += (s, args) => Close();
             Home.Show();
         }
