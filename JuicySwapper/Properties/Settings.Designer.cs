@@ -1270,5 +1270,29 @@ namespace JuicySwapper.Properties {
                 this["PrincessFishEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool VisionEnabled {
+            get {
+                return ((bool)(this["VisionEnabled"]));
+            }
+            set {
+                this["VisionEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ACDCEnabled {
+            get {
+                return ((bool)(this["ACDCEnabled"]));
+            }
+            set {
+                this["ACDCEnabled"] = value;
+            }
+        }
     }
 }

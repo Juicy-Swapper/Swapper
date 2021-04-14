@@ -160,7 +160,7 @@ namespace JuicySwapper.Main.GUI
                 num++;
                 text += "Renegade Raider (GINGERBREAD)," + " ";
             }
-            if (Settings.Default.WildcatBlueEnabled == true)
+            if (Settings.Default.WildcatBlueEnabled == true || Settings.Default.WildcatBlazeEnabled == true || Settings.Default.WildcatBlueBlazeEnabled || Settings.Default.WildcatNeoEnabled)
             {
                 num++;
                 text += "Wild Cat," + " ";
@@ -275,11 +275,6 @@ namespace JuicySwapper.Main.GUI
                 num++;
                 text += " Spectral Spine," + " ";
             }
-            if (Settings.Default.WildcatBlueEnabled == true)
-            {
-                num++;
-                text += "WildCat," + " ";
-            }
             if (Settings.Default.AerialAssaultTrooperEnabled == true)
             {
                 num++;
@@ -300,11 +295,78 @@ namespace JuicySwapper.Main.GUI
                 num++;
                 text += " Say So," + " ";
             }
+            if (Settings.Default.MegumiEnabled == true)
+            {
+                num++;
+                text += "Megumi," + " ";
+            }
+            if (Settings.Default.YukiEnabled == true)
+            {
+                num++;
+                text += "Yuki," + " ";
+            }
+            if (Settings.Default.ChigusaEnabled == true)
+            {
+                num++;
+                text += "Chigusa," + " ";
+            }
+            if (Settings.Default.MeggEnabled == true)
+            {
+                num++;
+                text += "Megg," + " ";
+            }
+            if (Settings.Default.IsabelleEnabled == true)
+            {
+                num++;
+                text += "Isabelle," + " ";
+            }
+            if (Settings.Default.LeaveTheDoorOpenEnabled == true)
+            {
+                num++;
+                text += "Leave The Door Open," + " ";
+            }
+            if (Settings.Default.RainbowCloverEnabled == true)
+            {
+                num++;
+                text += "Rainbow Clover," + " ";
+            }
+            if (Settings.Default.HarleyQuinnRebirthEnabled == true)
+            {
+                num++;
+                text += "Harley Quinn Rebirth," + " ";
+            }
+            if (Settings.Default.AloyEnabled == true || Settings.Default.AloyStyleEnabled)
+            {
+                num++;
+                text += "Aloy," + " ";
+            }
+            if (Settings.Default.AloySpearEnabled == true)
+            {
+                num++;
+                text += "AloySpear," + " ";
+            }
+            if (Settings.Default.EcoEnabled == true)
+            {
+                num++;
+                text += "Eco," + " ";
+            }
+            if (Settings.Default.GrimeyEnabled == true)
+            {
+                num++;
+                text += "Grimey," + " ";
+            }
+            if (Settings.Default.PrincessFishEnabled == true)
+            {
+                num++;
+                text += "Princess Fish," + " ";
+            }
             if (Settings.Default.SavageEnabled == true)
             {
                 num++;
                 text += "Savage," + " ";
+
             }
+
             switch (num)
             {
                 case 0:

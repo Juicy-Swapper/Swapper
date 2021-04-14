@@ -38,12 +38,6 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton1_Click(object sender, System.EventArgs e)
         {
-            if (Settings.Default.AccVerify == "Guest")
-            {
-                Message a = new Message(Resources.Juicynoacc);
-                a.ShowDialog();
-                return;
-            }
 
         }
 
@@ -105,6 +99,16 @@ namespace JuicySwapper.Panels
         private void bunifuImageButton2_Click_1(object sender, System.EventArgs e)
         {
             new AloySpear().ShowDialog();
+        }
+
+        private void bunifuImageButton21_Click(object sender, System.EventArgs e)
+        {
+            new Vision().ShowDialog();
+        }
+
+        private void bunifuImageButton3_Click_1(object sender, System.EventArgs e)
+        {
+            new ACDC().ShowDialog();
         }
     }
 }

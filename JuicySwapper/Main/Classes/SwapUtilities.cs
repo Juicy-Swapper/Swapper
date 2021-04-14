@@ -52,17 +52,6 @@ namespace JuicySwapper.Main.Classes
 			return new string[] { One };
 		}
 
-		public string[] GetBackupPaths()
-		{
-			string Skin_Body_Path = "PakBackup/pakchunk10_s4-WindowsClient.ucas";
-			string Skin_Head_Path = "PakBackup/pakchunk10_s5-WindowsClient.ucas";
-			string Pickaxe_Mesh_Path = "PakBackup/pakchunk10_s17-WindowsClient.ucas";
-			string Backbling_Path = "PakBackup/pakchunk10_s22-WindowsClient.ucas";
-			string Emote_Path = "PakBackup/pakchunk10_s2-WindowsClient.pak";
-
-			return new string[] { Skin_Body_Path, Skin_Head_Path, Pickaxe_Mesh_Path, Backbling_Path, Emote_Path };
-		}
-
 		public List<bool> AssaultTrooper = new List<bool>()
 		{
 			Settings.Default.SparkleSpecialistEnabled,
@@ -139,11 +128,7 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.IsabelleEnabled,
 			Settings.Default.WildcatNeoEnabled,
 			Settings.Default.AloyEnabled,
-<<<<<<< Updated upstream
-
-=======
 			Settings.Default.AloyStyleEnabled
->>>>>>> Stashed changes
 		};
 
 		public List<bool> RockAxe = new List<bool>()
@@ -181,6 +166,11 @@ namespace JuicySwapper.Main.Classes
 		{
 			Settings.Default.ChickenEnabled,
 			Settings.Default.LeaveTheDoorOpenEnabled
+		};
+
+		public List<bool> FrozenAxe = new List<bool>()
+		{
+			Settings.Default.VisionEnabled
 		};
 
 		public List<bool> EAC = new List<bool>()
@@ -310,6 +300,14 @@ namespace JuicySwapper.Main.Classes
 						return false;
 					else
 						MessageBox.Show("A Skin using TonyStark is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+
+					break;
+
+				case "FrozenAxe":
+					if (FrozenAxe.All(a => a) || FrozenAxe.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A Skin using Frozen Axe is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 
 					break;
 			}
