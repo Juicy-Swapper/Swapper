@@ -1,5 +1,6 @@
 ﻿using JuicySwapper.Main.GUI;
 using DiscordRPC;
+using DiscordRPC.Message;
 using System;
 using System.IO;
 using System.Net;
@@ -25,43 +26,51 @@ namespace JuicySwapper
 		public static readonly DiscordRpcClient DiscordRPC = new DiscordRpcClient("779400510566039624");
 		public static void SetRPCLocation(string Location, string ImageKey)
 		{
+			DiscordRPC.RegisterUriScheme();
 			DiscordRPC.SetPresence(new RichPresence
 			{
 				Details = "juicyswapper.xyz",
 				State = "Browsing Home Page",
 				Timestamps = Timestamps.Now,
+				Buttons = new DiscordRPC.Button[] { new DiscordRPC.Button() { Label = "Discord", Url = "http://juicyswapper.xyz/discord" } },
 				Assets = new Assets { LargeImageKey = "mainrpcimg", SmallImageKey = ImageKey, LargeImageText = $"🧃 • Version v{Application.ProductVersion}", SmallImageText = $"In {Location} Tab" }
 			});
 		}
 
 		public static void SetRPCAction(string Action, string ImageKey)
 		{
+			DiscordRPC.RegisterUriScheme();
 			DiscordRPC.SetPresence(new RichPresence
 			{
 				Details = "juicyswapper.xyz",
 				State = "Browsing Home Page",
 				Timestamps = Timestamps.Now,
+				Buttons = new DiscordRPC.Button[] { new DiscordRPC.Button() { Label = "Discord", Url = "http://juicyswapper.xyz/discord" } },
 				Assets = new Assets { LargeImageKey = "mainrpcimg", SmallImageKey = ImageKey, LargeImageText = $"🧃 • Version v{Application.ProductVersion}", SmallImageText = $"{Action}" }
 			});
 		}
 
 		public static void SetRPCSTAT(string STAT)
 		{
+			DiscordRPC.RegisterUriScheme();
 			DiscordRPC.SetPresence(new RichPresence
 			{
 				Details = "juicyswapper.xyz",
 				State = STAT,
 				Timestamps = Timestamps.Now,
+				Buttons = new DiscordRPC.Button[] { new DiscordRPC.Button() { Label = "Discord", Url = "http://juicyswapper.xyz/discord" } },
 				Assets = new Assets { LargeImageKey = "mainrpcimg", LargeImageText = $"🧃 • Version v{Application.ProductVersion}", }
-			}); 
+			});; 
 		}
 
 		public static void SetRPCSTAT2(string STAT)
 		{
+			DiscordRPC.RegisterUriScheme();
 			DiscordRPC.SetPresence(new RichPresence
 			{
 				Details = "juicyswapper.xyz",
 				State = STAT,
+				Buttons = new DiscordRPC.Button[] { new DiscordRPC.Button() { Label = "Discord", Url = "http://juicyswapper.xyz/discord" } },
 				Assets = new Assets { LargeImageKey = "mainrpcimg", LargeImageText = $"🧃 • Version v{Application.ProductVersion}", }
 			});
 		}
