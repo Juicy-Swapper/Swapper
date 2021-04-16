@@ -13,9 +13,9 @@ namespace JuicySwapper.Items.Skins
 {
     public partial class GrimeyBlaze : Form
     {
-        bool enabled = Settings.Default.BrenegadeEnabled;
+        bool enabled = Settings.Default.GrimeyBlazeEnabled;
         SwapUtilities SwapUtilities = new SwapUtilities();
-        string placeholder = "Renegade Raider";
+        string placeholder = "Grimey";
 
         public GrimeyBlaze()
         {
@@ -55,7 +55,7 @@ namespace JuicySwapper.Items.Skins
             bool Swap1 = HexResearcher.Convert(SwapOffsets[5], SwapPath[0], Body, Body1, 0, 0, false, false);
             if (Swap1)
             {
-                Settings.Default.BrenegadeEnabled = true;
+                Settings.Default.GrimeyBlazeEnabled = true;
                 Settings.Default.Save();
                 LogBox.Text += "\n[LOG] Body added";
             }
@@ -85,7 +85,7 @@ namespace JuicySwapper.Items.Skins
             bool Swap1 = HexResearcher.Revert(SwapOffsets[5], SwapPath[0], Body, Body1, 0, 0, false, false);
             if (Swap1)
             {
-                Settings.Default.BrenegadeEnabled = false;
+                Settings.Default.GrimeyBlazeEnabled = false;
                 Settings.Default.Save();
                 LogBox.Text += "\n[LOG] Body removed";
             }

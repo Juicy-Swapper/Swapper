@@ -1006,5 +1006,29 @@ namespace JuicySwapper.Properties {
                 this["SparkleSpecialistEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool GrimeyBlazeEnabled {
+            get {
+                return ((bool)(this["GrimeyBlazeEnabled"]));
+            }
+            set {
+                this["GrimeyBlazeEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ChunLiEnabled {
+            get {
+                return ((bool)(this["ChunLiEnabled"]));
+            }
+            set {
+                this["ChunLiEnabled"] = value;
+            }
+        }
     }
 }
