@@ -190,7 +190,7 @@ namespace JuicySwapper.Main.GUI
             if (Settings.Default.OctaneEnabled == true)
             {
                 num++;
-                text += "lil Octane," + " ";
+                text += "Lil' Octane," + " ";
             }
             if (Settings.Default.SaySoEnabled == true)
             {
@@ -245,14 +245,14 @@ namespace JuicySwapper.Main.GUI
             if (Settings.Default.AloySpearEnabled == true)
             {
                 num++;
-                text += "AloySpear," + " ";
+                text += "Aloy's Spear," + " ";
             }
             if (Settings.Default.EcoEnabled == true)
             {
                 num++;
                 text += "Eco," + " ";
             }
-            if (Settings.Default.GrimeyEnabled == true)
+            if (Settings.Default.GrimeyEnabled == true || Settings.Default.GrimeyBlazeEnabled)
             {
                 num++;
                 text += "Grimey," + " ";
@@ -260,7 +260,7 @@ namespace JuicySwapper.Main.GUI
             if (Settings.Default.PrincessFishEnabled == true)
             {
                 num++;
-                text += "Princess Fish," + " ";
+                text += "Princess Felicity Fish," + " ";
             }
             if (Settings.Default.SavageEnabled == true)
             {
@@ -268,6 +268,13 @@ namespace JuicySwapper.Main.GUI
                 text += "Savage," + " ";
 
             }
+            if (Settings.Default.ChunLiEnabled == true)
+            {
+                num++;
+                text += "Chun-Li," + " ";
+
+            }
+
 
             switch (num)
             {

@@ -64,7 +64,8 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.BrenegadeEnabled,
 			Settings.Default.BrenegadeCEnabled,
 			Settings.Default.WildcatBlazeEnabled,
-			Settings.Default.WildcatBlueBlazeEnabled
+			Settings.Default.WildcatBlueBlazeEnabled,
+			Settings.Default.GrimeyBlazeEnabled
 		};
 
 		public List<bool> Redline = new List<bool>()
