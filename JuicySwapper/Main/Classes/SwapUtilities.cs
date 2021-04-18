@@ -56,7 +56,8 @@ namespace JuicySwapper.Main.Classes
 		{
 			Settings.Default.GhoulOGEnabled,
 			Settings.Default.RednoseEnabled,
-			Settings.Default.GalaxyEnabled
+			Settings.Default.GalaxyEnabled,
+			Settings.Default.TechLlamaEnabled
 		};
 
 		public List<bool> Blaze = new List<bool>()
@@ -86,7 +87,9 @@ namespace JuicySwapper.Main.Classes
 		{
 			Settings.Default.SirenEnabled,
 			Settings.Default.TravisEnabled,
-			Settings.Default.WildcatRSEnabled
+			Settings.Default.WildcatRSEnabled,
+			Settings.Default.ScourgeEnabled,
+			Settings.Default.ChaosAgentEnabled
 		};
 
 		public List<bool> DivaB = new List<bool>()
@@ -129,14 +132,20 @@ namespace JuicySwapper.Main.Classes
 		public List<bool> SideHustle = new List<bool>()
 		{
 			Settings.Default.SavageEnabled,
-			Settings.Default.FreemixEnabled
+			Settings.Default.FreemixEnabled,
+			Settings.Default.HitItEnabled
 		};
 		public List<bool> Jennifer = new List<bool>()
 		{
 			Settings.Default.YukiEnabled,
 			Settings.Default.ChigusaEnabled,
 			Settings.Default.MegumiEnabled,
-			Settings.Default.HarleyQuinnRebirthEnabled
+			Settings.Default.HarleyQuinnRebirthEnabled,
+			Settings.Default.EchoEnabled,
+			Settings.Default.PrincessFishEnabled,
+			Settings.Default.ChunLiEnabled,
+			Settings.Default.VictoriaSaintEnabled,
+			Settings.Default.TropicalZoeyEnabled
 		};
 		public List<bool> BlowingBubbles = new List<bool>()
 		{
@@ -151,16 +160,28 @@ namespace JuicySwapper.Main.Classes
 
 		public List<bool> FrozenAxe = new List<bool>()
 		{
-			Settings.Default.VisionEnabled
+			Settings.Default.VisionEnabled,
+			Settings.Default.GalaxyAxeEnabled
+		};
+		public List<bool> Turk = new List<bool>()
+		{
+			Settings.Default.IkonikEnabled
 		};
 
 		public List<bool> EAC = new List<bool>()
 		{
 			Settings.Default.JuicyEAC1Enabled
 		};
+		public List<bool> Jennifer2 = new List<bool>()
+		{
+			Settings.Default.FocusEnabled,
+			Settings.Default.HarleyQuinnEnabled,
+			Settings.Default.HushEnabled,
+			Settings.Default.ManicEnabled
+		};
 
 
-	
+
 
 		public bool CheckIfCanSwap(string s)
 		{
@@ -246,7 +267,7 @@ namespace JuicySwapper.Main.Classes
 					if (Jennifer.All(a => a) || Jennifer.All(a => !a))
 						return false;
 					else
-						MessageBox.Show("A Skin using Jennifer Walters is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+						MessageBox.Show("A Skin using Jennifer Walters (She Hulk) is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
 				case "BlowingBubbles":
 					if (BlowingBubbles.All(a => a) || BlowingBubbles.All(a => !a))
@@ -267,9 +288,23 @@ namespace JuicySwapper.Main.Classes
 					if (FrozenAxe.All(a => a) || FrozenAxe.All(a => !a))
 						return false;
 					else
-						MessageBox.Show("A Skin using Frozen Axe is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+						MessageBox.Show("A Pickaxe using Frozen Axe is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 
 					break;
+				case "Turk":
+					if (Turk.All(a => a) || Turk.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A Skin using Turk vs Riptide is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+
+					break;
+				case "Jennifer2":
+					if (Jennifer2.All(a => a) || Jennifer2.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A Skin using Jennifer Walters is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
+
 			}
 			return true;
 		}

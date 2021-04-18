@@ -166,6 +166,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LoginFree)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PaidLogin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForgotInfo)).EndInit();

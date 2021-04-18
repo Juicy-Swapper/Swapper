@@ -140,6 +140,11 @@ namespace JuicySwapper.Main.GUI
             
         }
 
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void Signup_Click(object sender, EventArgs e)
         {
             Hide();

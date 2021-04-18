@@ -32,6 +32,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SkinsPanel));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuImageButton38 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton36 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton35 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton32 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton29 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton27 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton22 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton34 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton33 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton30 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton28 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton15 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton16 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton14 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -58,7 +69,17 @@
             this.bunifuImageButton11 = new Bunifu.Framework.UI.BunifuImageButton();
             this.Renegade = new Bunifu.Framework.UI.BunifuImageButton();
             this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuImageButton22 = new Bunifu.Framework.UI.BunifuImageButton();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton14)).BeginInit();
@@ -84,7 +105,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Renegade)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton22)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -98,6 +118,160 @@
             this.bunifuDragControl1.Horizontal = true;
             this.bunifuDragControl1.TargetControl = this;
             this.bunifuDragControl1.Vertical = true;
+            // 
+            // bunifuImageButton38
+            // 
+            this.bunifuImageButton38.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton38.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton38.Image")));
+            this.bunifuImageButton38.ImageActive = null;
+            this.bunifuImageButton38.Location = new System.Drawing.Point(561, 291);
+            this.bunifuImageButton38.Name = "bunifuImageButton38";
+            this.bunifuImageButton38.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton38.TabIndex = 92;
+            this.bunifuImageButton38.TabStop = false;
+            this.bunifuImageButton38.Zoom = 10;
+            this.bunifuImageButton38.Click += new System.EventHandler(this.bunifuImageButton38_Click);
+            // 
+            // bunifuImageButton36
+            // 
+            this.bunifuImageButton36.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton36.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton36.Image")));
+            this.bunifuImageButton36.ImageActive = null;
+            this.bunifuImageButton36.Location = new System.Drawing.Point(106, 381);
+            this.bunifuImageButton36.Name = "bunifuImageButton36";
+            this.bunifuImageButton36.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton36.TabIndex = 90;
+            this.bunifuImageButton36.TabStop = false;
+            this.bunifuImageButton36.Zoom = 10;
+            this.bunifuImageButton36.Click += new System.EventHandler(this.bunifuImageButton36_Click);
+            // 
+            // bunifuImageButton35
+            // 
+            this.bunifuImageButton35.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton35.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton35.Image")));
+            this.bunifuImageButton35.ImageActive = null;
+            this.bunifuImageButton35.Location = new System.Drawing.Point(15, 468);
+            this.bunifuImageButton35.Name = "bunifuImageButton35";
+            this.bunifuImageButton35.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton35.TabIndex = 89;
+            this.bunifuImageButton35.TabStop = false;
+            this.bunifuImageButton35.Zoom = 10;
+            this.bunifuImageButton35.Click += new System.EventHandler(this.bunifuImageButton35_Click);
+            // 
+            // bunifuImageButton32
+            // 
+            this.bunifuImageButton32.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton32.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton32.Image")));
+            this.bunifuImageButton32.ImageActive = null;
+            this.bunifuImageButton32.Location = new System.Drawing.Point(470, 381);
+            this.bunifuImageButton32.Name = "bunifuImageButton32";
+            this.bunifuImageButton32.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton32.TabIndex = 88;
+            this.bunifuImageButton32.TabStop = false;
+            this.bunifuImageButton32.Zoom = 10;
+            this.bunifuImageButton32.Click += new System.EventHandler(this.bunifuImageButton32_Click);
+            // 
+            // bunifuImageButton29
+            // 
+            this.bunifuImageButton29.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton29.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton29.Image")));
+            this.bunifuImageButton29.ImageActive = null;
+            this.bunifuImageButton29.Location = new System.Drawing.Point(561, 381);
+            this.bunifuImageButton29.Name = "bunifuImageButton29";
+            this.bunifuImageButton29.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton29.TabIndex = 87;
+            this.bunifuImageButton29.TabStop = false;
+            this.bunifuImageButton29.Zoom = 10;
+            this.bunifuImageButton29.Click += new System.EventHandler(this.bunifuImageButton29_Click_1);
+            // 
+            // bunifuImageButton27
+            // 
+            this.bunifuImageButton27.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton27.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton27.Image")));
+            this.bunifuImageButton27.ImageActive = null;
+            this.bunifuImageButton27.Location = new System.Drawing.Point(379, 381);
+            this.bunifuImageButton27.Name = "bunifuImageButton27";
+            this.bunifuImageButton27.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton27.TabIndex = 86;
+            this.bunifuImageButton27.TabStop = false;
+            this.bunifuImageButton27.Zoom = 10;
+            this.bunifuImageButton27.Click += new System.EventHandler(this.bunifuImageButton27_Click_1);
+            // 
+            // bunifuImageButton22
+            // 
+            this.bunifuImageButton22.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton22.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton22.Image")));
+            this.bunifuImageButton22.ImageActive = null;
+            this.bunifuImageButton22.Location = new System.Drawing.Point(197, 381);
+            this.bunifuImageButton22.Name = "bunifuImageButton22";
+            this.bunifuImageButton22.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton22.TabIndex = 85;
+            this.bunifuImageButton22.TabStop = false;
+            this.bunifuImageButton22.Zoom = 10;
+            this.bunifuImageButton22.Click += new System.EventHandler(this.bunifuImageButton22_Click);
+            // 
+            // bunifuImageButton34
+            // 
+            this.bunifuImageButton34.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton34.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton34.Image")));
+            this.bunifuImageButton34.ImageActive = null;
+            this.bunifuImageButton34.Location = new System.Drawing.Point(15, 381);
+            this.bunifuImageButton34.Name = "bunifuImageButton34";
+            this.bunifuImageButton34.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton34.TabIndex = 84;
+            this.bunifuImageButton34.TabStop = false;
+            this.bunifuImageButton34.Zoom = 10;
+            this.bunifuImageButton34.Click += new System.EventHandler(this.bunifuImageButton34_Click);
+            // 
+            // bunifuImageButton33
+            // 
+            this.bunifuImageButton33.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton33.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton33.Image")));
+            this.bunifuImageButton33.ImageActive = null;
+            this.bunifuImageButton33.Location = new System.Drawing.Point(288, 381);
+            this.bunifuImageButton33.Name = "bunifuImageButton33";
+            this.bunifuImageButton33.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton33.TabIndex = 83;
+            this.bunifuImageButton33.TabStop = false;
+            this.bunifuImageButton33.Zoom = 10;
+            this.bunifuImageButton33.Click += new System.EventHandler(this.bunifuImageButton33_Click);
+            // 
+            // bunifuImageButton30
+            // 
+            this.bunifuImageButton30.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton30.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton30.Image")));
+            this.bunifuImageButton30.ImageActive = null;
+            this.bunifuImageButton30.Location = new System.Drawing.Point(470, 291);
+            this.bunifuImageButton30.Name = "bunifuImageButton30";
+            this.bunifuImageButton30.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton30.TabIndex = 80;
+            this.bunifuImageButton30.TabStop = false;
+            this.bunifuImageButton30.Zoom = 10;
+            this.bunifuImageButton30.Click += new System.EventHandler(this.bunifuImageButton30_Click);
+            // 
+            // bunifuImageButton28
+            // 
+            this.bunifuImageButton28.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton28.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton28.Image")));
+            this.bunifuImageButton28.ImageActive = null;
+            this.bunifuImageButton28.Location = new System.Drawing.Point(379, 291);
+            this.bunifuImageButton28.Name = "bunifuImageButton28";
+            this.bunifuImageButton28.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton28.TabIndex = 78;
+            this.bunifuImageButton28.TabStop = false;
+            this.bunifuImageButton28.Zoom = 10;
+            this.bunifuImageButton28.Click += new System.EventHandler(this.bunifuImageButton28_Click);
             // 
             // bunifuImageButton15
             // 
@@ -466,25 +640,22 @@
             this.Sidebar.TabIndex = 27;
             this.Sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.Sidebar_Paint);
             // 
-            // bunifuImageButton22
-            // 
-            this.bunifuImageButton22.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton22.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton22.Image")));
-            this.bunifuImageButton22.ImageActive = null;
-            this.bunifuImageButton22.Location = new System.Drawing.Point(379, 291);
-            this.bunifuImageButton22.Name = "bunifuImageButton22";
-            this.bunifuImageButton22.Size = new System.Drawing.Size(71, 71);
-            this.bunifuImageButton22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton22.TabIndex = 75;
-            this.bunifuImageButton22.TabStop = false;
-            this.bunifuImageButton22.Zoom = 10;
-            // 
             // SkinsPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(52)))));
+            this.Controls.Add(this.bunifuImageButton38);
+            this.Controls.Add(this.bunifuImageButton36);
+            this.Controls.Add(this.bunifuImageButton35);
+            this.Controls.Add(this.bunifuImageButton32);
+            this.Controls.Add(this.bunifuImageButton29);
+            this.Controls.Add(this.bunifuImageButton27);
             this.Controls.Add(this.bunifuImageButton22);
+            this.Controls.Add(this.bunifuImageButton34);
+            this.Controls.Add(this.bunifuImageButton33);
+            this.Controls.Add(this.bunifuImageButton30);
+            this.Controls.Add(this.bunifuImageButton28);
             this.Controls.Add(this.bunifuImageButton15);
             this.Controls.Add(this.bunifuImageButton16);
             this.Controls.Add(this.bunifuImageButton14);
@@ -514,6 +685,17 @@
             this.Name = "SkinsPanel";
             this.Size = new System.Drawing.Size(937, 609);
             this.Load += new System.EventHandler(this.SkinsPanel_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton14)).EndInit();
@@ -539,7 +721,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Renegade)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton22)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -573,6 +754,16 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton13;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton12;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton15;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton30;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton28;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton33;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton34;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton22;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton38;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton36;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton35;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton32;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton29;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton27;
     }
 }

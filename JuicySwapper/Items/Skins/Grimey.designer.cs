@@ -41,18 +41,22 @@
             this.CloseTimer = new System.Windows.Forms.Timer(this.components);
             this.ConvertBytes = new System.ComponentModel.BackgroundWorker();
             this.RevertBytes = new System.ComponentModel.BackgroundWorker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.CloseButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ActionButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkinImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // CloseButton
             // 
             this.CloseButton.BackColor = System.Drawing.Color.Transparent;
             this.CloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CloseButton.Image = ((System.Drawing.Image)(resources.GetObject("CloseButton.Image")));
             this.CloseButton.Location = new System.Drawing.Point(337, 3);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(18, 18);
+            this.CloseButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CloseButton.TabIndex = 7;
             this.CloseButton.TabStop = false;
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click_1);
@@ -130,6 +134,16 @@
             this.RevertBytes.DoWork += new System.ComponentModel.DoWorkEventHandler(this.RevertBytes_DoWork);
             this.RevertBytes.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.RevertBytes_RunWorkerCompleted);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Location = new System.Drawing.Point(337, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(18, 18);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // Grimey
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -137,18 +151,19 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(22)))), ((int)(((byte)(42)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(360, 210);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.ActionButton);
             this.Controls.Add(this.SkinImage);
             this.Controls.Add(this.LogBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Grimey";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PlaceHolder";
             ((System.ComponentModel.ISupportInitialize)(this.CloseButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ActionButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkinImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,5 +181,6 @@
         private System.Windows.Forms.Timer CloseTimer;
         private System.ComponentModel.BackgroundWorker ConvertBytes;
         private System.ComponentModel.BackgroundWorker RevertBytes;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

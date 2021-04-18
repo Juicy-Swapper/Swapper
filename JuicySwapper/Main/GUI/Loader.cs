@@ -59,5 +59,10 @@ namespace JuicySwapper.Main.GUI
 
             Num = db.Accounts<UserModel>("Juicy");
         }
+
+        private void Loader_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

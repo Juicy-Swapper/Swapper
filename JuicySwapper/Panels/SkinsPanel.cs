@@ -187,7 +187,7 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton15_Click(object sender, EventArgs e)
         {
-            new Aspen().ShowDialog();
+            
         }
 
         private void bunifuImageButton16_Click(object sender, EventArgs e)
@@ -198,6 +198,86 @@ namespace JuicySwapper.Panels
         private void bunifuImageButton15_Click_1(object sender, EventArgs e)
         {
             new ChunLi().ShowDialog();
+        }
+
+        private void bunifuImageButton30_Click(object sender, EventArgs e)
+        {
+            new Ikonik().ShowDialog();
+        }
+
+        private void bunifuImageButton27_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void bunifuImageButton31_Click(object sender, EventArgs e)
+        {
+            new Rue().ShowDialog();
+        }
+
+        private void bunifuImageButton29_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void bunifuImageButton28_Click(object sender, EventArgs e)
+        {
+            new Echo().ShowDialog();
+        }
+
+        private void bunifuImageButton23_Click(object sender, EventArgs e)
+        {
+            new Surfwitch().ShowDialog();
+        }
+
+        private void bunifuImageButton33_Click(object sender, EventArgs e)
+        {
+            new Focus().ShowDialog();
+        }
+
+        private void bunifuImageButton34_Click(object sender, EventArgs e)
+        {
+            new VictoriaSaint().ShowDialog();
+        }
+
+        private void bunifuImageButton38_Click(object sender, EventArgs e)
+        {
+            new Scourge().ShowDialog();
+        }
+
+        private void bunifuImageButton36_Click(object sender, EventArgs e)
+        {
+            new ChaosAgent().ShowDialog();
+        }
+
+        private void bunifuImageButton22_Click(object sender, EventArgs e)
+        {
+            new AthleisureAssassin().ShowDialog();
+        }
+
+        private void bunifuImageButton27_Click_1(object sender, EventArgs e)
+        {
+            new TropicalZoey().ShowDialog();
+        }
+
+        private void bunifuImageButton32_Click(object sender, EventArgs e)
+        {
+            new TechLlama().ShowDialog();
+        }
+
+        private void bunifuImageButton29_Click_1(object sender, EventArgs e)
+        {
+            new HarleyQuinn().ShowDialog();
+        }
+
+        private void bunifuImageButton35_Click(object sender, EventArgs e)
+        {
+            new Hush().ShowDialog();
+        }
+
+        private void bunifuImageButton37_Click(object sender, EventArgs e)
+        {
+            new Manic().ShowDialog();
         }
     }
 }

@@ -274,6 +274,117 @@ namespace JuicySwapper.Main.GUI
                 text += "Chun-Li," + " ";
 
             }
+            if (Settings.Default.IkonikEnabled == true)
+            {
+                num++;
+                text += "Ikonik," + " ";
+
+            }
+            if (Settings.Default.RueEnabled == true)
+            {
+                num++;
+                text += "Rue," + " ";
+
+            }
+            if (Settings.Default.EchoEnabled == true)
+            {
+                num++;
+                text += "Echo," + " ";
+
+            }
+            if (Settings.Default.FocusEnabled == true)
+            {
+                num++;
+                text += "Focus," + " ";
+
+            }
+            if (Settings.Default.LaceEnabled == true)
+            {
+                num++;
+                text += "Lace," + " ";
+
+            }
+            if (Settings.Default.ScourgeEnabled == true)
+            {
+                num++;
+                text += "Lace," + " ";
+
+            }
+            if (Settings.Default.ChaosAgentEnabled == true)
+            {
+                num++;
+                text += "Chaos Agent," + " ";
+
+            }
+            if (Settings.Default.AthleisureAssassinEnabled == true)
+            {
+                num++;
+                text += "Athleisure Assassin," + " ";
+
+            }
+            if (Settings.Default.TropicalZoeyEnabled == true)
+            {
+                num++;
+                text += "Tropical Punch Zoey," + " ";
+
+            }
+            if (Settings.Default.VictoriaSaintEnabled == true)
+            {
+                num++;
+                text += "Victoria Saint," + " ";
+
+            }
+            if (Settings.Default.TechLlamaEnabled == true)
+            {
+                num++;
+                text += "Brilliant Bomber," + " ";
+
+            }
+            if (Settings.Default.HushEnabled == true)
+            {
+                num++;
+                text += "Hush," + " ";
+
+            }
+            if (Settings.Default.HarleyQuinnEnabled == true)
+            {
+                num++;
+                text += "Harley Quinn," + " ";
+
+            }
+            if (Settings.Default.ManicEnabled == true)
+            {
+                num++;
+                text += "Manic," + " ";
+
+            }
+            if (Settings.Default.ReysQuarterstaffEnabled == true)
+            {
+                num++;
+                text += "Rey's Quarterstaff," + " ";
+
+            }
+            if (Settings.Default.CandyAxeEnabled == true)
+            {
+                num++;
+                text += "Candy Axe," + " ";
+
+            }
+            if (Settings.Default.GalaxyAxeEnabled == true)
+            {
+                num++;
+                text += "Stellar Axe," + " ";
+
+            }
+            if (Settings.Default.HitItEnabled == true)
+            {
+                num++;
+                text += "Hit It," + " ";
+
+            }
+
+
+
 
 
             switch (num)

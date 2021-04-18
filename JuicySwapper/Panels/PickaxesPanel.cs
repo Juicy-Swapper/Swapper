@@ -93,7 +93,7 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton1_Click_1(object sender, System.EventArgs e)
         {
-            new Message(Resources.disabled).ShowDialog();
+            new GalaxyAxe().ShowDialog();
         }
 
         private void bunifuImageButton2_Click_1(object sender, System.EventArgs e)
@@ -109,6 +109,16 @@ namespace JuicySwapper.Panels
         private void bunifuImageButton3_Click_1(object sender, System.EventArgs e)
         {
             new ACDC().ShowDialog();
+        }
+
+        private void bunifuImageButton12_Click(object sender, System.EventArgs e)
+        {
+            new ReysQuarterstaff().ShowDialog();
+        }
+
+        private void bunifuImageButton4_Click_1(object sender, System.EventArgs e)
+        {
+            new CandyAxe().ShowDialog();
         }
     }
 }

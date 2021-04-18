@@ -91,6 +91,7 @@
             this.Name = "Updater";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "JuicySwapper - Updater";
+            this.Load += new System.EventHandler(this.Updater_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

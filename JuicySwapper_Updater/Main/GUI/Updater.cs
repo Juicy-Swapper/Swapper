@@ -138,5 +138,10 @@ namespace JuicySwapper_Updater.Main.GUI
             InformationsLabel.Text = "Update completed. Launching JuicySwapper!";
             ProgressBar.Value = 100;
         }
+
+        private void Updater_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
