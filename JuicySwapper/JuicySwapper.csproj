@@ -91,6 +91,9 @@
     <Reference Include="DnsClient, Version=1.4.0.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
       <HintPath>..\packages\DnsClient.1.4.0\lib\net471\DnsClient.dll</HintPath>
     </Reference>
+    <Reference Include="ekajsdhfdjkashfdsajk73289723984732894327oaskidhfdkajs48392107743982473289weikofh">
+      <HintPath>.\ekajsdhfdjkashfdsajk73289723984732894327oaskidhfdkajs48392107743982473289weikofh.dll</HintPath>
+    </Reference>
     <Reference Include="JuicySwapper_Encryption, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>.\JuicySwapper_Encryption.dll</HintPath>
@@ -230,11 +233,17 @@
     <Compile Include="Items\Backblings\BlackShield.designer.cs">
       <DependentUpon>BlackShield.cs</DependentUpon>
     </Compile>
-    <Compile Include="Items\Backblings\SixString.cs">
+    <Compile Include="Items\Emotes\CatComic.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Items\Backblings\SixString.designer.cs">
-      <DependentUpon>SixString.cs</DependentUpon>
+    <Compile Include="Items\Emotes\CatComic.designer.cs">
+      <DependentUpon>CatComic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Emotes\PullUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Emotes\PullUp.designer.cs">
+      <DependentUpon>PullUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Emotes\HitIt.cs">
       <SubType>Form</SubType>
@@ -326,12 +335,6 @@
     <Compile Include="Items\Backblings\BlackShieldFS.designer.cs">
       <DependentUpon>BlackShieldFS.cs</DependentUpon>
     </Compile>
-    <Compile Include="Items\Pickaxes\ACDC.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Pickaxes\ACDC.designer.cs">
-      <DependentUpon>ACDC.cs</DependentUpon>
-    </Compile>
     <Compile Include="Items\Pickaxes\CandyAxe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -392,12 +395,6 @@
     <Compile Include="Items\Pickaxes\RaidersRevenge.designer.cs">
       <DependentUpon>RaidersRevenge.cs</DependentUpon>
     </Compile>
-    <Compile Include="Items\Pickaxes\Starwand.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Pickaxes\Starwand.designer.cs">
-      <DependentUpon>Starwand.cs</DependentUpon>
-    </Compile>
     <Compile Include="Items\Pickaxes\HarleyHitter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -415,12 +412,6 @@
     </Compile>
     <Compile Include="Items\Questions\BlackShieldOption.designer.cs">
       <DependentUpon>BlackShieldOption.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Questions\GrimeyOption.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Questions\GrimeyOption.designer.cs">
-      <DependentUpon>GrimeyOption.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Questions\RenegadeCOption.cs">
       <SubType>Form</SubType>
@@ -458,11 +449,11 @@
     <Compile Include="Items\Questions\StarwandOption.designer.cs">
       <DependentUpon>StarwandOption.cs</DependentUpon>
     </Compile>
-    <Compile Include="Items\Skins\Manic.cs">
+    <Compile Include="Items\Skins\WildcatNeo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Items\Skins\Manic.designer.cs">
-      <DependentUpon>Manic.cs</DependentUpon>
+    <Compile Include="Items\Skins\WildcatNeo.designer.cs">
+      <DependentUpon>WildcatNeo.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Skins\Hush.cs">
       <SubType>Form</SubType>
@@ -512,29 +503,11 @@
     <Compile Include="Items\Skins\Echo.designer.cs">
       <DependentUpon>Echo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Items\Skins\Rue.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\Rue.designer.cs">
-      <DependentUpon>Rue.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\Ikonik.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\Ikonik.designer.cs">
-      <DependentUpon>Ikonik.cs</DependentUpon>
-    </Compile>
     <Compile Include="Items\Skins\ChunLi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Items\Skins\ChunLi.designer.cs">
       <DependentUpon>ChunLi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\GrimeyBlaze.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\GrimeyBlaze.designer.cs">
-      <DependentUpon>GrimeyBlaze.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Skins\PrincessFish.cs">
       <SubType>Form</SubType>
@@ -577,18 +550,6 @@
     </Compile>
     <Compile Include="Items\Skins\ChaosAgent.designer.cs">
       <DependentUpon>ChaosAgent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\Surfwitch.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\Surfwitch.designer.cs">
-      <DependentUpon>Surfwitch.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Skins\WildcatNeo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Skins\WildcatNeo.designer.cs">
-      <DependentUpon>WildcatNeo.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Skins\WildcatBlueBlaze.cs">
       <SubType>Form</SubType>
@@ -864,8 +825,11 @@
     <EmbeddedResource Include="Items\Backblings\BlackShield.resx">
       <DependentUpon>BlackShield.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Items\Backblings\SixString.resx">
-      <DependentUpon>SixString.cs</DependentUpon>
+    <EmbeddedResource Include="Items\Emotes\CatComic.resx">
+      <DependentUpon>CatComic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Emotes\PullUp.resx">
+      <DependentUpon>PullUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Emotes\HitIt.resx">
       <DependentUpon>HitIt.cs</DependentUpon>
@@ -912,9 +876,6 @@
     <EmbeddedResource Include="Items\Backblings\BlackShieldFS.resx">
       <DependentUpon>BlackShieldFS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Items\Pickaxes\ACDC.resx">
-      <DependentUpon>ACDC.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Items\Pickaxes\CandyAxe.resx">
       <DependentUpon>CandyAxe.cs</DependentUpon>
     </EmbeddedResource>
@@ -945,9 +906,6 @@
     <EmbeddedResource Include="Items\Pickaxes\RaidersRevenge.resx">
       <DependentUpon>RaidersRevenge.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Items\Pickaxes\Starwand.resx">
-      <DependentUpon>Starwand.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Items\Pickaxes\HarleyHitter.resx">
       <DependentUpon>HarleyHitter.cs</DependentUpon>
     </EmbeddedResource>
@@ -956,9 +914,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Questions\BlackShieldOption.resx">
       <DependentUpon>BlackShieldOption.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Questions\GrimeyOption.resx">
-      <DependentUpon>GrimeyOption.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Questions\RenegadeCOption.resx">
       <DependentUpon>RenegadeCOption.cs</DependentUpon>
@@ -978,8 +933,8 @@
     <EmbeddedResource Include="Items\Questions\StarwandOption.resx">
       <DependentUpon>StarwandOption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\Manic.resx">
-      <DependentUpon>Manic.cs</DependentUpon>
+    <EmbeddedResource Include="Items\Skins\WildcatNeo.resx">
+      <DependentUpon>WildcatNeo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\Hush.resx">
       <DependentUpon>Hush.cs</DependentUpon>
@@ -1005,20 +960,11 @@
     <EmbeddedResource Include="Items\Skins\Echo.resx">
       <DependentUpon>Echo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\Rue.resx">
-      <DependentUpon>Rue.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\Ikonik.resx">
-      <DependentUpon>Ikonik.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\ChunLi.resx">
       <DependentUpon>ChunLi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\Grimey.resx">
       <DependentUpon>Grimey.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\GrimeyBlaze.resx">
-      <DependentUpon>GrimeyBlaze.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\PrincessFish.resx">
       <DependentUpon>PrincessFish.cs</DependentUpon>
@@ -1037,12 +983,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\ChaosAgent.resx">
       <DependentUpon>ChaosAgent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\Surfwitch.resx">
-      <DependentUpon>Surfwitch.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Skins\WildcatNeo.resx">
-      <DependentUpon>WildcatNeo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\WildcatBlueBlaze.resx">
       <DependentUpon>WildcatBlueBlaze.cs</DependentUpon>

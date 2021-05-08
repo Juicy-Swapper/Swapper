@@ -64,6 +64,7 @@ namespace JuicySwapper.Main.GUI
                 return;
             }
 
+
             try
             {
                 _try = false;
@@ -126,6 +127,8 @@ namespace JuicySwapper.Main.GUI
             paidlogin.ShowDialog();
             Home.Closed += (s, args) => Close();
             Home.Show();
+
+
         }
 
         private void ExitSwapper_Click(object sender, EventArgs e)

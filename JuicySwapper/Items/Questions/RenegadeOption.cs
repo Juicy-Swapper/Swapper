@@ -20,6 +20,7 @@ namespace JuicySwapper.Main.GUI
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             new Redlinetorenegaderaider().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
             Close();
         }
 

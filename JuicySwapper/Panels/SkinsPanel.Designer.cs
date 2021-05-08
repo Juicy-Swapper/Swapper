@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SkinsPanel));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuImageButton38 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton36 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -41,7 +42,6 @@
             this.bunifuImageButton22 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton34 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton33 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton30 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton28 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton15 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton16 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -55,7 +55,6 @@
             this.bunifuImageButton7 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton6 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton5 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton26 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -68,7 +67,6 @@
             this.bunifuImageButton17 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton11 = new Bunifu.Framework.UI.BunifuImageButton();
             this.Renegade = new Bunifu.Framework.UI.BunifuImageButton();
-            this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton35)).BeginInit();
@@ -78,7 +76,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton16)).BeginInit();
@@ -92,7 +89,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton26)).BeginInit();
@@ -111,6 +107,23 @@
             // 
             this.bunifuElipse1.ElipseRadius = 7;
             this.bunifuElipse1.TargetControl = this.Sidebar;
+            // 
+            // Sidebar
+            // 
+            this.Sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
+            this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Sidebar.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Sidebar.GradientBottomRight = System.Drawing.Color.Magenta;
+            this.Sidebar.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Sidebar.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Sidebar.Location = new System.Drawing.Point(725, 19);
+            this.Sidebar.Name = "Sidebar";
+            this.Sidebar.Quality = 10;
+            this.Sidebar.Size = new System.Drawing.Size(195, 573);
+            this.Sidebar.TabIndex = 27;
+            this.Sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.Sidebar_Paint);
             // 
             // bunifuDragControl1
             // 
@@ -152,7 +165,7 @@
             this.bunifuImageButton35.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton35.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton35.Image")));
             this.bunifuImageButton35.ImageActive = null;
-            this.bunifuImageButton35.Location = new System.Drawing.Point(15, 468);
+            this.bunifuImageButton35.Location = new System.Drawing.Point(106, 201);
             this.bunifuImageButton35.Name = "bunifuImageButton35";
             this.bunifuImageButton35.Size = new System.Drawing.Size(71, 71);
             this.bunifuImageButton35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -180,7 +193,7 @@
             this.bunifuImageButton29.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton29.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton29.Image")));
             this.bunifuImageButton29.ImageActive = null;
-            this.bunifuImageButton29.Location = new System.Drawing.Point(561, 381);
+            this.bunifuImageButton29.Location = new System.Drawing.Point(470, 291);
             this.bunifuImageButton29.Name = "bunifuImageButton29";
             this.bunifuImageButton29.Size = new System.Drawing.Size(71, 71);
             this.bunifuImageButton29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -244,20 +257,6 @@
             this.bunifuImageButton33.TabStop = false;
             this.bunifuImageButton33.Zoom = 10;
             this.bunifuImageButton33.Click += new System.EventHandler(this.bunifuImageButton33_Click);
-            // 
-            // bunifuImageButton30
-            // 
-            this.bunifuImageButton30.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton30.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton30.Image")));
-            this.bunifuImageButton30.ImageActive = null;
-            this.bunifuImageButton30.Location = new System.Drawing.Point(470, 291);
-            this.bunifuImageButton30.Name = "bunifuImageButton30";
-            this.bunifuImageButton30.Size = new System.Drawing.Size(71, 71);
-            this.bunifuImageButton30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton30.TabIndex = 80;
-            this.bunifuImageButton30.TabStop = false;
-            this.bunifuImageButton30.Zoom = 10;
-            this.bunifuImageButton30.Click += new System.EventHandler(this.bunifuImageButton30_Click);
             // 
             // bunifuImageButton28
             // 
@@ -441,20 +440,6 @@
             this.bunifuImageButton5.Zoom = 10;
             this.bunifuImageButton5.Click += new System.EventHandler(this.bunifuImageButton5_Click);
             // 
-            // bunifuImageButton4
-            // 
-            this.bunifuImageButton4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
-            this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(106, 201);
-            this.bunifuImageButton4.Name = "bunifuImageButton4";
-            this.bunifuImageButton4.Size = new System.Drawing.Size(71, 71);
-            this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton4.TabIndex = 61;
-            this.bunifuImageButton4.TabStop = false;
-            this.bunifuImageButton4.Zoom = 10;
-            this.bunifuImageButton4.Click += new System.EventHandler(this.bunifuImageButton4_Click);
-            // 
             // bunifuImageButton3
             // 
             this.bunifuImageButton3.BackColor = System.Drawing.Color.Transparent;
@@ -623,23 +608,6 @@
             this.Renegade.Zoom = 10;
             this.Renegade.Click += new System.EventHandler(this.bunifuImageButton13_Click);
             // 
-            // Sidebar
-            // 
-            this.Sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
-            this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Sidebar.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Sidebar.GradientBottomRight = System.Drawing.Color.Magenta;
-            this.Sidebar.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Sidebar.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Sidebar.Location = new System.Drawing.Point(725, 19);
-            this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Quality = 10;
-            this.Sidebar.Size = new System.Drawing.Size(195, 573);
-            this.Sidebar.TabIndex = 27;
-            this.Sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.Sidebar_Paint);
-            // 
             // SkinsPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -654,7 +622,6 @@
             this.Controls.Add(this.bunifuImageButton22);
             this.Controls.Add(this.bunifuImageButton34);
             this.Controls.Add(this.bunifuImageButton33);
-            this.Controls.Add(this.bunifuImageButton30);
             this.Controls.Add(this.bunifuImageButton28);
             this.Controls.Add(this.bunifuImageButton15);
             this.Controls.Add(this.bunifuImageButton16);
@@ -668,7 +635,6 @@
             this.Controls.Add(this.bunifuImageButton7);
             this.Controls.Add(this.bunifuImageButton6);
             this.Controls.Add(this.bunifuImageButton5);
-            this.Controls.Add(this.bunifuImageButton4);
             this.Controls.Add(this.bunifuImageButton3);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.bunifuImageButton26);
@@ -694,7 +660,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton16)).EndInit();
@@ -708,7 +673,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton26)).EndInit();
@@ -741,7 +705,6 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton26;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton4;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton5;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton6;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton7;
@@ -754,7 +717,6 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton13;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton12;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton15;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton30;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton28;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton33;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton34;

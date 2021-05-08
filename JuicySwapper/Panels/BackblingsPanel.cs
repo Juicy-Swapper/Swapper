@@ -34,29 +34,29 @@ namespace JuicySwapper.Panels
                 SidebarPanel.Instance.BringToFront();
         }
 
-        private void bunifuImageButton13_Click(object sender, EventArgs e)
-        {
-            new SixString().ShowDialog();
-        }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             new Insignia().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
             new BlackShieldOption().ShowDialog();
+           // new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
             new SpectralSpine().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton4_Click(object sender, EventArgs e)
         {
             new RainbowClover().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
         }
     }
 }

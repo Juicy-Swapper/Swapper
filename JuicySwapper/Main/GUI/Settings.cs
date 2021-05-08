@@ -382,6 +382,36 @@ namespace JuicySwapper.Main.GUI
                 text += "Hit It," + " ";
 
             }
+            if (Settings.Default.EliteAgentEnabled == true)
+            {
+                num++;
+                text += "Elite Agent," + " ";
+
+            }
+            if (Settings.Default.TigeressEnabled == true)
+            {
+                num++;
+                text += "Tigeress," + " ";
+
+            }
+            if (Settings.Default.PullUpEnabled == true)
+            {
+                num++;
+                text += "Pull Up," + " ";
+
+            }
+            if (Settings.Default.CatComicEnabled == true)
+            {
+                num++;
+                text += "Squash & Stretch," + " ";
+
+            }
+
+
+            
+
+
+
 
 
 

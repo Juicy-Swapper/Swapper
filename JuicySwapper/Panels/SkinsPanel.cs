@@ -66,6 +66,7 @@ namespace JuicySwapper.Panels
             }
 
             new RedReindeer().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
         }
 
         private void SkinsPanel_Load(object sender, EventArgs e)
@@ -86,6 +87,7 @@ namespace JuicySwapper.Panels
         private void bunifuImageButton21_Click(object sender, EventArgs e)
         {
             new Travisscooter().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton18_Click(object sender, EventArgs e)
@@ -100,18 +102,20 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton26_Click_1(object sender, EventArgs e)
         {
-            new Galaxy().ShowDialog();
+           new Galaxy().ShowDialog();
+           // new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             new Megumi().ShowDialog();
-           // new Message(Resources.disabled).ShowDialog();
+           //new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton25_Click(object sender, EventArgs e)
         {
-            new ReconSpecialist().ShowDialog(); 
+             new ReconSpecialist().ShowDialog(); 
+            //new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton18_Click_1(object sender, EventArgs e)
@@ -122,162 +126,145 @@ namespace JuicySwapper.Panels
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
             new Chigusa().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
-            //new Yuki().ShowDialog();
-            new Message(Resources.disabled).ShowDialog();
+            new Yuki().ShowDialog();
+           // new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton5_Click(object sender, EventArgs e)
         {
             new Loserfruit().ShowDialog();
-        }
-
-        private void bunifuImageButton4_Click(object sender, EventArgs e)
-        {
-            new Megg().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton6_Click(object sender, EventArgs e)
         {
             new SparkleSpecialist().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton7_Click(object sender, EventArgs e)
         {
-            new Isabelle().ShowDialog();
+           new Isabelle().ShowDialog();
+           // new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton8_Click(object sender, EventArgs e)
         {
             new Chigusa().ShowDialog();
+           // new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton2_Click_1(object sender, EventArgs e)
         {
             new WildcatBlueOption().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton9_Click(object sender, EventArgs e)
         {
-            new HarleyQuinnRebirth().ShowDialog();
+           new HarleyQuinnRebirth().ShowDialog();
+           // new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton10_Click(object sender, EventArgs e)
         {
             new Aloy().ShowDialog();
+         //   new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton12_Click(object sender, EventArgs e)
         {
             new AloyStyle().ShowDialog();
+           // new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton13_Click_1(object sender, EventArgs e)
         {
             new Eco().ShowDialog();
+           // new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton14_Click(object sender, EventArgs e)
         {
             new PrincessFish().ShowDialog();
-        }
-
-        private void bunifuImageButton15_Click(object sender, EventArgs e)
-        {
-            
+           // new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton16_Click(object sender, EventArgs e)
         {
-            new GrimeyOption().ShowDialog();
+            new Grimey().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton15_Click_1(object sender, EventArgs e)
         {
-            new ChunLi().ShowDialog();
-        }
-
-        private void bunifuImageButton30_Click(object sender, EventArgs e)
-        {
-            new Ikonik().ShowDialog();
-        }
-
-        private void bunifuImageButton27_Click(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void bunifuImageButton31_Click(object sender, EventArgs e)
-        {
-            new Rue().ShowDialog();
-        }
-
-        private void bunifuImageButton29_Click(object sender, EventArgs e)
-        {
-          
+          new ChunLi().ShowDialog();
+          //  new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton28_Click(object sender, EventArgs e)
         {
             new Echo().ShowDialog();
-        }
-
-        private void bunifuImageButton23_Click(object sender, EventArgs e)
-        {
-            new Surfwitch().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton33_Click(object sender, EventArgs e)
         {
-            new Focus().ShowDialog();
+            //new Focus().ShowDialog();
+            new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton34_Click(object sender, EventArgs e)
         {
             new VictoriaSaint().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton38_Click(object sender, EventArgs e)
         {
-            new Scourge().ShowDialog();
+            //new Scourge().ShowDialog();
+            new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton36_Click(object sender, EventArgs e)
         {
-            new ChaosAgent().ShowDialog();
+            //new ChaosAgent().ShowDialog();
+            new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton22_Click(object sender, EventArgs e)
         {
-            new AthleisureAssassin().ShowDialog();
+            //new AthleisureAssassin().ShowDialog();
+            new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton27_Click_1(object sender, EventArgs e)
         {
             new TropicalZoey().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton32_Click(object sender, EventArgs e)
         {
             new TechLlama().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton29_Click_1(object sender, EventArgs e)
         {
-            new HarleyQuinn().ShowDialog();
+            //new HarleyQuinn().ShowDialog();
+            new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton35_Click(object sender, EventArgs e)
         {
-            new Hush().ShowDialog();
-        }
-
-        private void bunifuImageButton37_Click(object sender, EventArgs e)
-        {
-            new Manic().ShowDialog();
+            //new Hush().ShowDialog();
+            new Message(Resources.disabled).ShowDialog();
         }
     }
 }

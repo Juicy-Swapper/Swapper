@@ -1270,5 +1270,53 @@ namespace JuicySwapper.Properties {
                 this["HitItEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool MintyEnabled {
+            get {
+                return ((bool)(this["MintyEnabled"]));
+            }
+            set {
+                this["MintyEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool TigeressEnabled {
+            get {
+                return ((bool)(this["TigeressEnabled"]));
+            }
+            set {
+                this["TigeressEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool PullUpEnabled {
+            get {
+                return ((bool)(this["PullUpEnabled"]));
+            }
+            set {
+                this["PullUpEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool CatComicEnabled {
+            get {
+                return ((bool)(this["CatComicEnabled"]));
+            }
+            set {
+                this["CatComicEnabled"] = value;
+            }
+        }
     }
 }

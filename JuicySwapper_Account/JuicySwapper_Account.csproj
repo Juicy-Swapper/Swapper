@@ -43,10 +43,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\Swapper\JuicySwapper\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\JuicySwapper\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="ekajsdhfdjkashfdsajk73289723984732894327oaskidhfdkajs48392107743982473289weikofh">
-      <HintPath>..\..\..\..\JuicyDataHolder\bin\Debug\ekajsdhfdjkashfdsajk73289723984732894327oaskidhfdkajs48392107743982473289weikofh.dll</HintPath>
+      <HintPath>..\JuicySwapper\ekajsdhfdjkashfdsajk73289723984732894327oaskidhfdkajs48392107743982473289weikofh.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

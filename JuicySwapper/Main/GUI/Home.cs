@@ -356,5 +356,9 @@ namespace JuicySwapper
             }
         }
 
+        private void Wrapper_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

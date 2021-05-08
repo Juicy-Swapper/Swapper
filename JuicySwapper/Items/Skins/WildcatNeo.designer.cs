@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WildcatBlue));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Loserfruit));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.CloseButton = new System.Windows.Forms.PictureBox();
             this.ActionButton = new System.Windows.Forms.PictureBox();
@@ -130,7 +130,7 @@
             this.RevertBytes.DoWork += new System.ComponentModel.DoWorkEventHandler(this.RevertBytes_DoWork);
             this.RevertBytes.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.RevertBytes_RunWorkerCompleted);
             // 
-            // WildcatBlue
+            // Loserfruit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -143,7 +143,7 @@
             this.Controls.Add(this.LogBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "WildcatBlue";
+            this.Name = "Loserfruit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PlaceHolder";
             ((System.ComponentModel.ISupportInitialize)(this.CloseButton)).EndInit();

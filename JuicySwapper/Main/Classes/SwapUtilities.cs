@@ -40,8 +40,9 @@ namespace JuicySwapper.Main.Classes
 			int Jen_Temp = 130000000;
 			int Pickaxe_Mesh_Path_2 = 1;
 			int Emote_Path_2 = 1;
-
-			return new int[] { Offset_Skin_Body, Offset_Skin_Head, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh, Offset_Blaze_Mesh, Jen_Temp, Pickaxe_Mesh_Path_2, Emote_Path_2};
+			int NeoVersa_Mesh = 130000000;
+			
+			return new int[] { Offset_Skin_Body, Offset_Skin_Head, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh, Offset_Blaze_Mesh, Jen_Temp, Pickaxe_Mesh_Path_2, Emote_Path_2, NeoVersa_Mesh };
 		}
 
 		public string[] GetEACPath()
@@ -150,7 +151,9 @@ namespace JuicySwapper.Main.Classes
 		public List<bool> BlowingBubbles = new List<bool>()
 		{
 			Settings.Default.ChickenEnabled,
-			Settings.Default.LeaveTheDoorOpenEnabled
+			Settings.Default.LeaveTheDoorOpenEnabled,
+			Settings.Default.PullUpEnabled,
+			Settings.Default.CatComicEnabled
 		};
 		public List<bool> TonyStark = new List<bool>()
 		{
@@ -177,7 +180,8 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.FocusEnabled,
 			Settings.Default.HarleyQuinnEnabled,
 			Settings.Default.HushEnabled,
-			Settings.Default.ManicEnabled
+			Settings.Default.ManicEnabled,
+			Settings.Default.TigeressEnabled
 		};
 
 

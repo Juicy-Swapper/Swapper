@@ -48,7 +48,8 @@ namespace JuicySwapper.Main.GUI
                 return;
             }
 
-            new WildcatBlue().ShowDialog();
+            new WildcatNeo().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
         }
     }
 }
