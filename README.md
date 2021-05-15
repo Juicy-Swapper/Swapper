@@ -16,6 +16,7 @@
 
 ### Credits
 - **Myself**: [@0xKaede on Twitter](https://twitter.com/0xkaede) 
+- **Zylox**: [@ZyloxMods on Twitter](https://twitter.com/ZyloxMods) 
 - **Tamely**: [@TamelyFN on Twitter](https://twitter.com/TamelyFN)
 
 ### Features
