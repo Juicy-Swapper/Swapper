@@ -114,5 +114,20 @@ namespace JuicySwapper.Panels
         {
             new CatComic().ShowDialog();
         }
+
+        private void bunifuImageButton15_Click(object sender, EventArgs e)
+        {
+            new Bicycle().ShowDialog();
+        }
+
+        private void bunifuImageButton14_Click(object sender, EventArgs e)
+        {
+            new WakeUp().ShowDialog();
+        }
+
+        private void bunifuImageButton16_Click(object sender, EventArgs e)
+        {
+            new BasketBall().ShowDialog();
+        }
     }
 }

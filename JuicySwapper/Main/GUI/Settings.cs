@@ -62,7 +62,7 @@ namespace JuicySwapper.Main.GUI
                 num++;
                 text += "Renegade Raider (GINGERBREAD)," + " ";
             }
-            if (Settings.Default.WildcatBlueEnabled == true || Settings.Default.WildcatBlazeEnabled == true || Settings.Default.WildcatBlueBlazeEnabled || Settings.Default.WildcatNeoEnabled)
+            if (Settings.Default.WildcatBlueEnabled == true || Settings.Default.WildcatBlazeEnabled == true || Settings.Default.WildcatBlueBlazeEnabled || Settings.Default.WildcatNeoEnabled || Settings.Default.WildcatBlueSREnabled)
             {
                 num++;
                 text += "Wild Cat," + " ";
@@ -406,9 +406,101 @@ namespace JuicySwapper.Main.GUI
                 text += "Squash & Stretch," + " ";
 
             }
+            if (Settings.Default.CatwomenEnabled == true)
+            {
+                num++;
+                text += "Catwoman Zero," + " ";
+
+            }
+            if (Settings.Default.StoneViperEnabled == true)
+            {
+                num++;
+                text += "Lyra," + " ";
+
+            }
+            if (Settings.Default.WakeUpEnabled == true)
+            {
+                num++;
+                text += "Wake Up," + " ";
+
+            }
+            if (Settings.Default.WakeUpEnabled == true)
+            {
+                num++;
+                text += "Wake Up," + " ";
+
+            }
+            if (Settings.Default.BicycleEnabled == true)
+            {
+                num++;
+                text += "Hang Loose Celebration," + " ";
+
+            }
+            if (Settings.Default.ClipEnabled == true)
+            {
+                num++;
+                text += "Clip," + " ";
+
+            }
+            if (Settings.Default.MariusEnabled == true)
+            {
+                num++;
+                text += "Marius," + " ";
+
+            }
+            if (Settings.Default.BasketBallEnabled == true)
+            {
+                num++;
+                text += "Dribblin'," + " ";
+
+            }
+            if (Settings.Default.DizzieEnabled == true)
+            {
+                num++;
+                text += "Dizzie'," + " ";
+
+            }
+            if (Settings.Default.SpartanAssassinEnabled == true)
+            {
+                num++;
+                text += "Spartan Assassin'," + " ";
+
+            }
+            if (Settings.Default.TheChampionEnabled == true)
+            {
+                num++;
+                text += "The Champion'," + " ";
+
+            }
+            if (Settings.Default.LokBotEnabled == true)
+            {
+                num++;
+                text += "Lok-Bot'," + " ";
+
+            }
 
 
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1318,5 +1318,161 @@ namespace JuicySwapper.Properties {
                 this["CatComicEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool CatwomenEnabled {
+            get {
+                return ((bool)(this["CatwomenEnabled"]));
+            }
+            set {
+                this["CatwomenEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool StoneViperEnabled {
+            get {
+                return ((bool)(this["StoneViperEnabled"]));
+            }
+            set {
+                this["StoneViperEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool WakeUpEnabled {
+            get {
+                return ((bool)(this["WakeUpEnabled"]));
+            }
+            set {
+                this["WakeUpEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BicycleEnabled {
+            get {
+                return ((bool)(this["BicycleEnabled"]));
+            }
+            set {
+                this["BicycleEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ClipEnabled {
+            get {
+                return ((bool)(this["ClipEnabled"]));
+            }
+            set {
+                this["ClipEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool MariusEnabled {
+            get {
+                return ((bool)(this["MariusEnabled"]));
+            }
+            set {
+                this["MariusEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BasketBallEnabled {
+            get {
+                return ((bool)(this["BasketBallEnabled"]));
+            }
+            set {
+                this["BasketBallEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool GalaxyGirlEnabled {
+            get {
+                return ((bool)(this["GalaxyGirlEnabled"]));
+            }
+            set {
+                this["GalaxyGirlEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool WildcatBlueSREnabled {
+            get {
+                return ((bool)(this["WildcatBlueSREnabled"]));
+            }
+            set {
+                this["WildcatBlueSREnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool DizzieEnabled {
+            get {
+                return ((bool)(this["DizzieEnabled"]));
+            }
+            set {
+                this["DizzieEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SpartanAssassinEnabled {
+            get {
+                return ((bool)(this["SpartanAssassinEnabled"]));
+            }
+            set {
+                this["SpartanAssassinEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool TheChampionEnabled {
+            get {
+                return ((bool)(this["TheChampionEnabled"]));
+            }
+            set {
+                this["TheChampionEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool LokBotEnabled {
+            get {
+                return ((bool)(this["LokBotEnabled"]));
+            }
+            set {
+                this["LokBotEnabled"] = value;
+            }
+        }
     }
 }

@@ -266,5 +266,52 @@ namespace JuicySwapper.Panels
             //new Hush().ShowDialog();
             new Message(Resources.disabled).ShowDialog();
         }
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            new Catwomen().ShowDialog();
+        }
+
+        private void bunifuImageButton23_Click(object sender, EventArgs e)
+        {
+            new StoneViper().ShowDialog();
+        }
+
+        private void bunifuImageButton37_Click(object sender, EventArgs e)
+        {
+            new Clip().ShowDialog();
+        }
+
+        private void bunifuImageButton30_Click(object sender, EventArgs e)
+        {
+            new Marius().ShowDialog();
+        }
+
+        private void bunifuImageButton30_Click_1(object sender, EventArgs e)
+        {
+            new GalaxyGirl().ShowDialog();
+        }
+
+        private void bunifuImageButton39_Click(object sender, EventArgs e)
+        {
+            new Dizzie().ShowDialog();
+        }
+
+        private void bunifuImageButton31_Click(object sender, EventArgs e)
+        {
+            //new SpartanAssassin().ShowDialog();
+            new Message(Resources.disabled).ShowDialog();
+        }
+
+        private void bunifuImageButton40_Click(object sender, EventArgs e)
+        {
+            new TheChampion().ShowDialog();
+           
+        }
+
+        private void bunifuImageButton41_Click(object sender, EventArgs e)
+        {
+            new LokBot().ShowDialog();
+        }
     }
 }

@@ -76,8 +76,8 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton7_Click(object sender, System.EventArgs e)
         {
-           new RaidersRevenge().ShowDialog();
-           // new Message(Resources.disabled).ShowDialog();
+           //new RaidersRevenge().ShowDialog();
+            new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton8_Click(object sender, System.EventArgs e)

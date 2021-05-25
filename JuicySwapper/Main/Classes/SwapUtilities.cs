@@ -58,7 +58,8 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.GhoulOGEnabled,
 			Settings.Default.RednoseEnabled,
 			Settings.Default.GalaxyEnabled,
-			Settings.Default.TechLlamaEnabled
+			Settings.Default.TechLlamaEnabled,
+			Settings.Default.GalaxyGirlEnabled
 		};
 
 		public List<bool> Blaze = new List<bool>()
@@ -67,7 +68,8 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.BrenegadeCEnabled,
 			Settings.Default.WildcatBlazeEnabled,
 			Settings.Default.WildcatBlueBlazeEnabled,
-			Settings.Default.GrimeyBlazeEnabled
+			Settings.Default.GrimeyBlazeEnabled,
+			Settings.Default.CatwomenEnabled
 		};
 
 		public List<bool> Redline = new List<bool>()
@@ -134,7 +136,8 @@ namespace JuicySwapper.Main.Classes
 		{
 			Settings.Default.SavageEnabled,
 			Settings.Default.FreemixEnabled,
-			Settings.Default.HitItEnabled
+			Settings.Default.HitItEnabled,
+			Settings.Default.BicycleEnabled
 		};
 		public List<bool> Jennifer = new List<bool>()
 		{
@@ -153,7 +156,8 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.ChickenEnabled,
 			Settings.Default.LeaveTheDoorOpenEnabled,
 			Settings.Default.PullUpEnabled,
-			Settings.Default.CatComicEnabled
+			Settings.Default.CatComicEnabled,
+			Settings.Default.WakeUpEnabled
 		};
 		public List<bool> TonyStark = new List<bool>()
 		{
@@ -181,8 +185,28 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.HarleyQuinnEnabled,
 			Settings.Default.HushEnabled,
 			Settings.Default.ManicEnabled,
-			Settings.Default.TigeressEnabled
+			Settings.Default.TigeressEnabled,
+			Settings.Default.StoneViperEnabled,
+			Settings.Default.ClipEnabled,
+			Settings.Default.MariusEnabled,
+			Settings.Default.DizzieEnabled
 		};
+		public List<bool> TippyTap = new List<bool>()
+		{
+			Settings.Default.BasketBallEnabled
+
+		};
+		public List<bool> ShadowRuby = new List<bool>()
+		{
+			Settings.Default.SpartanAssassinEnabled,
+			Settings.Default.WildcatBlueSREnabled,
+			Settings.Default.TheChampionEnabled,
+			Settings.Default.LokBotEnabled
+
+		};
+
+		
+
 
 
 
@@ -307,6 +331,12 @@ namespace JuicySwapper.Main.Classes
 						return false;
 					else
 						MessageBox.Show("A Skin using Jennifer Walters is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
+					break;
+				case "ShadowRuby":
+					if (ShadowRuby.All(a => a) || ShadowRuby.All(a => !a))
+						return false;
+					else
+						MessageBox.Show("A Skin using Ruby Shadows is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
 
 			}

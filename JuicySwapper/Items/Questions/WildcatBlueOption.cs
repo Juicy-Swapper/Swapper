@@ -38,5 +38,10 @@ namespace JuicySwapper.Main.GUI
 
             new WildcatBlue().ShowDialog();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            new WildcatBlueSR().ShowDialog();
+        }
     }
 }

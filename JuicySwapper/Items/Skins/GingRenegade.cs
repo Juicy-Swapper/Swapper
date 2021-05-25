@@ -45,7 +45,7 @@ namespace JuicySwapper.Items.Skins
 
             ActionButton.Enabled = false;
             var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
-            int SwapOffsets = 254000000;
+            int SwapOffsets = 240000000;
             string SwapPath = $"{Pathtopaks}\\pakchunk10_s22-WindowsClient.ucas";
 
             LogBox.Clear();
@@ -64,7 +64,7 @@ namespace JuicySwapper.Items.Skins
                 LogBox.Text += "\n[LOG] Hat added";
 
             ActionButton.Image = Resources.RevertBtn;
-            LogBox.Text += "\nConverted!";
+            LogBox.Text += "\n[LOG] Converted!";
         }
 
         private void RevertBytes_DoWork(object sender, DoWorkEventArgs e)
@@ -72,7 +72,7 @@ namespace JuicySwapper.Items.Skins
             ActionButton.Enabled = false;
 
             var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
-            int SwapOffsets = 254000000;
+            int SwapOffsets = 240000000;
             string SwapPath = $"{Pathtopaks}\\pakchunk10_s22-WindowsClient.ucas";
 
             LogBox.Clear();
@@ -91,7 +91,7 @@ namespace JuicySwapper.Items.Skins
                 LogBox.Text += "\n[LOG] Hat removed";
 
             ActionButton.Image = Resources.ConvertBtn;
-            LogBox.Text += "\nReverted!";
+            LogBox.Text += "\n[LOG] Reverted!";
         }
 
         private void ActionButton_Click(object sender, EventArgs e)

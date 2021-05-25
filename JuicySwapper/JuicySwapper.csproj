@@ -233,11 +233,29 @@
     <Compile Include="Items\Backblings\BlackShield.designer.cs">
       <DependentUpon>BlackShield.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Emotes\BasketBall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Emotes\BasketBall.designer.cs">
+      <DependentUpon>BasketBall.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Emotes\CatComic.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Items\Emotes\CatComic.designer.cs">
       <DependentUpon>CatComic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Emotes\Bicycle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Emotes\Bicycle.designer.cs">
+      <DependentUpon>Bicycle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Emotes\WakeUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Emotes\WakeUp.designer.cs">
+      <DependentUpon>WakeUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Emotes\PullUp.cs">
       <SubType>Form</SubType>
@@ -448,6 +466,66 @@
     </Compile>
     <Compile Include="Items\Questions\StarwandOption.designer.cs">
       <DependentUpon>StarwandOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\Dizzie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Dizzie.designer.cs">
+      <DependentUpon>Dizzie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\LokBot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\LokBot.designer.cs">
+      <DependentUpon>LokBot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\TheChampion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\TheChampion.designer.cs">
+      <DependentUpon>TheChampion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\SpartanAssassin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\SpartanAssassin.designer.cs">
+      <DependentUpon>SpartanAssassin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\WildcatBlueSR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\WildcatBlueSR.designer.cs">
+      <DependentUpon>WildcatBlueSR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\GalaxyGirl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\GalaxyGirl.designer.cs">
+      <DependentUpon>GalaxyGirl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\Marius.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Marius.designer.cs">
+      <DependentUpon>Marius.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\Clip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Clip.designer.cs">
+      <DependentUpon>Clip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\Catwomen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Catwomen.designer.cs">
+      <DependentUpon>Catwomen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\StoneViper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\StoneViper.designer.cs">
+      <DependentUpon>StoneViper.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Skins\WildcatNeo.cs">
       <SubType>Form</SubType>
@@ -825,8 +903,17 @@
     <EmbeddedResource Include="Items\Backblings\BlackShield.resx">
       <DependentUpon>BlackShield.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Items\Emotes\BasketBall.resx">
+      <DependentUpon>BasketBall.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\Emotes\CatComic.resx">
       <DependentUpon>CatComic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Emotes\Bicycle.resx">
+      <DependentUpon>Bicycle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Emotes\WakeUp.resx">
+      <DependentUpon>WakeUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Emotes\PullUp.resx">
       <DependentUpon>PullUp.cs</DependentUpon>
@@ -932,6 +1019,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Questions\StarwandOption.resx">
       <DependentUpon>StarwandOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Dizzie.resx">
+      <DependentUpon>Dizzie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\LokBot.resx">
+      <DependentUpon>LokBot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\TheChampion.resx">
+      <DependentUpon>TheChampion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\SpartanAssassin.resx">
+      <DependentUpon>SpartanAssassin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\WildcatBlueSR.resx">
+      <DependentUpon>WildcatBlueSR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\GalaxyGirl.resx">
+      <DependentUpon>GalaxyGirl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Marius.resx">
+      <DependentUpon>Marius.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Clip.resx">
+      <DependentUpon>Clip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Catwomen.resx">
+      <DependentUpon>Catwomen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\StoneViper.resx">
+      <DependentUpon>StoneViper.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\WildcatNeo.resx">
       <DependentUpon>WildcatNeo.cs</DependentUpon>

@@ -59,7 +59,7 @@
             this.Username.LineIdleColor = System.Drawing.Color.White;
             this.Username.LineMouseHoverColor = System.Drawing.Color.White;
             this.Username.LineThickness = 2;
-            this.Username.Location = new System.Drawing.Point(581, 194);
+            this.Username.Location = new System.Drawing.Point(580, 194);
             this.Username.Margin = new System.Windows.Forms.Padding(4);
             this.Username.Name = "Username";
             this.Username.Size = new System.Drawing.Size(232, 33);

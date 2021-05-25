@@ -70,7 +70,7 @@ namespace JuicySwapper.Items.Skins
                 LogBox.Text += "\n[LOG] Hat added";
 
             ActionButton.Image = Resources.RevertBtn;
-            LogBox.Text += "\nConverted!";
+            LogBox.Text += "\n[LOG] Converted!";
         }
 
         private void RevertBytes_DoWork(object sender, DoWorkEventArgs e)
@@ -100,7 +100,7 @@ namespace JuicySwapper.Items.Skins
                 LogBox.Text += "\n[LOG] Hat removed";
 
             ActionButton.Image = Resources.ConvertBtn;
-            LogBox.Text += "\nReverted!";
+            LogBox.Text += "\n[LOG] Reverted!";
         }
 
         private void ActionButton_Click(object sender, EventArgs e)
