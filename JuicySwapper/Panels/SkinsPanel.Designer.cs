@@ -84,7 +84,6 @@
             this.Controls.Add(this.Sidebar);
             this.Name = "SkinsPanel";
             this.Size = new System.Drawing.Size(937, 609);
-            this.Load += new System.EventHandler(this.SkinsPanel_Load);
             this.ResumeLayout(false);
 
         }
