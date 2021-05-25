@@ -25,6 +25,15 @@ namespace JuicySwapper.Panels
         public SkinsPanel()
         {
             InitializeComponent();
+
+            if (!Wrapper.Controls.Contains(SkinScroll.Instance))
+            {
+                Wrapper.Controls.Add(SkinScroll.Instance);
+                SkinScroll.Instance.Dock = DockStyle.Fill;
+                SkinScroll.Instance.BringToFront();
+            }
+            else
+                SkinScroll.Instance.BringToFront();
         }
 
         private void Sidebar_Paint(object sender, PaintEventArgs e)

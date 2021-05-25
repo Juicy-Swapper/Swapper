@@ -11,6 +11,7 @@ namespace JuicySwapper.Api
         public static string Discord = "discord";
         public static string Images = "api/images";
         public static string Paks = "api/paks.json";
+        public static string FortniteApiNews = "https://fortnite-api.com/v2/news";
     }
 
     class ContentAPI

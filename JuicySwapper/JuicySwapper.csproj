@@ -887,6 +887,12 @@
       <DependentUpon>SidebarPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\Classes\Program.cs" />
+    <Compile Include="Panels\SkinScroll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\SkinScroll.designer.cs">
+      <DependentUpon>SkinScroll.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panels\SkinsPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1227,6 +1233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\SidebarPanel.resx">
       <DependentUpon>SidebarPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\SkinScroll.resx">
+      <DependentUpon>SkinScroll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panels\SkinsPanel.resx">
       <DependentUpon>SkinsPanel.cs</DependentUpon>

@@ -496,6 +496,7 @@
             // 
             // Wrapper
             // 
+            this.Wrapper.AutoScroll = true;
             this.Wrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(52)))));
             this.Wrapper.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.AnimationSidebarReturn.SetDecoration(this.Wrapper, BunifuAnimatorNS.DecorationType.None);

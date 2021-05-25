@@ -2,6 +2,8 @@
 using JuicySwapper_Installer.Main.Classes;
 using System;
 using System.Diagnostics;
+using JuicySwapper_Installer.Properties;
+using System.IO;
 using System.Windows.Forms;
 
 namespace JuicySwapper_Installer.Main.GUI
@@ -9,9 +11,19 @@ namespace JuicySwapper_Installer.Main.GUI
     public partial class Installer : Form
     {
         public DiscordRpcClient discordRpcClient_0 = new DiscordRpcClient("704324460291031047");
+        string AppdataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         public static DiscordRpcClient rpcClient;
+        bool juicy = true;
         public Installer()
         {
+            if(File.Exists($"{AppdataFolder}\\Juicy Industries\\JuicySwapper.exe"))
+            {
+                BackgroundImage = Resources.Uninstaller;
+                juicy = false;
+            }
+            else
+                BackgroundImage = Resources.installer;
+
             InitializeComponent();
             Juicy.DiscordRPC.Initialize();
             Juicy.SetRPCAction("", "");
