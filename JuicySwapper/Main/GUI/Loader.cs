@@ -5,6 +5,11 @@ using System.Windows.Forms;
 using JuicySwapper.Main.Classes;
 using System.IO;
 using JuicySwapper.Properties;
+using System.Net;
+using Newtonsoft.Json;
+using static JuicySwapper.Api.SatusAPI;
+using System.Threading;
+using JuicySwapper.Api;
 
 namespace JuicySwapper.Main.GUI
 {
@@ -58,6 +63,26 @@ namespace JuicySwapper.Main.GUI
             db.Accounts<UserModel>("Juicy");
 
             Num = db.Accounts<UserModel>("Juicy");
+
+            if (!File.Exists("JuicySwapper_Encryption.dll"))
+                Encryption();
+        }
+
+        public static void Encryption()
+        {
+            var StatusAPI = new WebClient().DownloadString($"{API.HOST}/{API.Status}");
+            Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
+
+            WebClient ProgramClient = new WebClient();
+
+            ProgramClient.Proxy = null;
+            ProgramClient.DownloadFileAsync(new Uri(StatusResponse.Encryption), "JuicySwapper_Encryption.dll");
+
+            while (ProgramClient.IsBusy)
+                Thread.Sleep(1000);
+
+            if (!File.Exists("JuicySwapper_Encryption.dll"))
+                MessageBox.Show("Encryption did not downloaded!");
         }
 
         private void Loader_Load(object sender, EventArgs e)
