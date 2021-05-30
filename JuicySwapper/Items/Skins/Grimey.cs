@@ -150,5 +150,12 @@ namespace JuicySwapper.Items.Skins
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            CloseTimer.Enabled = false;
+            ActionButton.Enabled = true;
+            Close();
+        }
     }
 }

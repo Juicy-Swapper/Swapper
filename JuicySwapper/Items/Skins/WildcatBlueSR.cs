@@ -52,7 +52,7 @@ namespace JuicySwapper.Items.Skins
             LogBox.Clear();
             LogBox.Text += "[LOG] Starting...";
 
-            bool Swap1 = HexResearcher.Convert(244000000, SwapPath[7], Body, Body1, 0, 0, false, false);
+            bool Swap1 = HexResearcher.Convert(SwapOffsets[9], SwapPath[7], Body, Body1, 0, 0, false, false);
             if (Swap1)
             {
                 Settings.Default.WildcatBlueSREnabled = true;
@@ -60,11 +60,11 @@ namespace JuicySwapper.Items.Skins
                 LogBox.Text += "\n[LOG] Body added";
             }
 
-            bool Swap2 = HexResearcher.Convert(244000000, SwapPath[7], Head, Head1, 0, 0, false, false);
+            bool Swap2 = HexResearcher.Convert(SwapOffsets[9], SwapPath[7], Head, Head1, 0, 0, false, false);
             if (Swap2)
                 LogBox.Text += "\n[LOG] Head added";
 
-            bool Swap3 = HexResearcher.Convert(244000000, SwapPath[7], Hat, Hat1, 0, 0, false, false);
+            bool Swap3 = HexResearcher.Convert(SwapOffsets[9], SwapPath[7], Hat, Hat1, 0, 0, false, false);
             if (Swap3)
                 LogBox.Text += "\n[LOG] Hat added";
 
@@ -82,7 +82,7 @@ namespace JuicySwapper.Items.Skins
             LogBox.Clear();
             LogBox.Text += "[LOG] Starting...";
 
-            bool Swap1 = HexResearcher.Revert(244000000, SwapPath[7], Body, Body1, 0, 0, false, false);
+            bool Swap1 = HexResearcher.Revert(SwapOffsets[9], SwapPath[7], Body, Body1, 0, 0, false, false);
             if (Swap1)
             {
                 Settings.Default.WildcatBlueSREnabled = false;
@@ -90,11 +90,11 @@ namespace JuicySwapper.Items.Skins
                 LogBox.Text += "\n[LOG] Body removed";
             }
 
-            bool Swap2 = HexResearcher.Revert(244000000, SwapPath[7], Head, Head1, 0, 0, false, false);
+            bool Swap2 = HexResearcher.Revert(SwapOffsets[9], SwapPath[7], Head, Head1, 0, 0, false, false);
             if (Swap2)
                 LogBox.Text += "\n[LOG] Head removed";
 
-            bool Swap3 = HexResearcher.Revert(244000000, SwapPath[7], Hat, Hat1, 0, 0, false, false);
+            bool Swap3 = HexResearcher.Revert(SwapOffsets[9], SwapPath[7], Hat, Hat1, 0, 0, false, false);
             if (Swap3)
                 LogBox.Text += "\n[LOG] Hat removed";
 

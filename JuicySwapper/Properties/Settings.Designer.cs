@@ -1474,5 +1474,101 @@ namespace JuicySwapper.Properties {
                 this["LokBotEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SocksEnabled {
+            get {
+                return ((bool)(this["SocksEnabled"]));
+            }
+            set {
+                this["SocksEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SpaceCuddleWhiteEnabled {
+            get {
+                return ((bool)(this["SpaceCuddleWhiteEnabled"]));
+            }
+            set {
+                this["SpaceCuddleWhiteEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SpaceCuddleBlueEnabled {
+            get {
+                return ((bool)(this["SpaceCuddleBlueEnabled"]));
+            }
+            set {
+                this["SpaceCuddleBlueEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SpaceCuddleEnabled {
+            get {
+                return ((bool)(this["SpaceCuddleEnabled"]));
+            }
+            set {
+                this["SpaceCuddleEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool KelsierEnabled {
+            get {
+                return ((bool)(this["KelsierEnabled"]));
+            }
+            set {
+                this["KelsierEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool DeathStrokeEnabled {
+            get {
+                return ((bool)(this["DeathStrokeEnabled"]));
+            }
+            set {
+                this["DeathStrokeEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SpireImmortalEnabled {
+            get {
+                return ((bool)(this["SpireImmortalEnabled"]));
+            }
+            set {
+                this["SpireImmortalEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string pak_s17 {
+            get {
+                return ((string)(this["pak_s17"]));
+            }
+            set {
+                this["pak_s17"] = value;
+            }
+        }
     }
 }

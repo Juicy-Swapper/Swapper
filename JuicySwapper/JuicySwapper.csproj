@@ -233,6 +233,12 @@
     <Compile Include="Items\Backblings\BlackShield.designer.cs">
       <DependentUpon>BlackShield.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Emotes\Socks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Emotes\Socks.designer.cs">
+      <DependentUpon>Socks.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Emotes\BasketBall.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -473,11 +479,47 @@
     <Compile Include="Items\Skins\Dizzie.designer.cs">
       <DependentUpon>Dizzie.cs</DependentUpon>
     </Compile>
+    <Compile Include="Items\Skins\DeathStroke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\DeathStroke.designer.cs">
+      <DependentUpon>DeathStroke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\SpireImmortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\SpireImmortal.designer.cs">
+      <DependentUpon>SpireImmortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\Kelsier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\Kelsier.designer.cs">
+      <DependentUpon>Kelsier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Skins\LokBot.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Items\Skins\LokBot.designer.cs">
       <DependentUpon>LokBot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\SpaceCuddleWhite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\SpaceCuddleWhite.designer.cs">
+      <DependentUpon>SpaceCuddleWhite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\SpaceCuddleBlue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\SpaceCuddleBlue.designer.cs">
+      <DependentUpon>SpaceCuddleBlue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Skins\SpaceCuddle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Skins\SpaceCuddle.designer.cs">
+      <DependentUpon>SpaceCuddle.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Skins\TheChampion.cs">
       <SubType>Form</SubType>
@@ -909,6 +951,9 @@
     <EmbeddedResource Include="Items\Backblings\BlackShield.resx">
       <DependentUpon>BlackShield.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Items\Emotes\Socks.resx">
+      <DependentUpon>Socks.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\Emotes\BasketBall.resx">
       <DependentUpon>BasketBall.cs</DependentUpon>
     </EmbeddedResource>
@@ -1029,8 +1074,26 @@
     <EmbeddedResource Include="Items\Skins\Dizzie.resx">
       <DependentUpon>Dizzie.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\DeathStroke.resx">
+      <DependentUpon>DeathStroke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\SpireImmortal.resx">
+      <DependentUpon>SpireImmortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\Kelsier.resx">
+      <DependentUpon>Kelsier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\LokBot.resx">
       <DependentUpon>LokBot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\SpaceCuddleWhite.resx">
+      <DependentUpon>SpaceCuddleWhite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\SpaceCuddleBlue.resx">
+      <DependentUpon>SpaceCuddleBlue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Skins\SpaceCuddle.resx">
+      <DependentUpon>SpaceCuddle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Skins\TheChampion.resx">
       <DependentUpon>TheChampion.cs</DependentUpon>

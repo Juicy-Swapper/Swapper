@@ -1,6 +1,7 @@
 ﻿using JuicySwapper.Main.Classes;
 using JuicySwapper.Properties;
 using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace JuicySwapper.Main.GUI
@@ -47,6 +48,9 @@ namespace JuicySwapper.Main.GUI
         [Obsolete]
         private void Login_Click(object sender, EventArgs e)
         {
+            
+
+
             MongoCRUD db = new MongoCRUD("JuicySwapper");
             string hwid = JuicyUtilities.GET_HARDWAREID;
 
@@ -63,6 +67,7 @@ namespace JuicySwapper.Main.GUI
                 Passwordinvalid.ShowDialog();
                 return;
             }
+
 
 
             try
@@ -127,7 +132,6 @@ namespace JuicySwapper.Main.GUI
             paidlogin.ShowDialog();
             Home.Closed += (s, args) => Close();
             Home.Show();
-
 
         }
 

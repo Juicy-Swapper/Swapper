@@ -129,5 +129,10 @@ namespace JuicySwapper.Panels
         {
             new BasketBall().ShowDialog();
         }
+
+        private void bunifuImageButton17_Click(object sender, EventArgs e)
+        {
+            new Socks().ShowDialog();
+        }
     }
 }
