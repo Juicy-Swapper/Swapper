@@ -73,7 +73,7 @@
             // 
             this.Backupverifybtn.BackColor = System.Drawing.Color.Transparent;
             this.Backupverifybtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Backupverifybtn.Location = new System.Drawing.Point(249, 132);
+            this.Backupverifybtn.Location = new System.Drawing.Point(247, 132);
             this.Backupverifybtn.Name = "Backupverifybtn";
             this.Backupverifybtn.Size = new System.Drawing.Size(155, 22);
             this.Backupverifybtn.TabIndex = 9;

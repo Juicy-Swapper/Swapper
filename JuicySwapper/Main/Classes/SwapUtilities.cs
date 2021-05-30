@@ -22,11 +22,11 @@ namespace JuicySwapper.Main.Classes
 			string Pickaxe_Mesh_Path = $"{Pathtopaks}\\{Settings.Default.pak_pick_mesh}";
 			string Backbling_Path = $"{Pathtopaks}\\{Settings.Default.pak_back_mesh}";
 			string Emote_Path = $"{Pathtopaks}\\{Settings.Default.pak_emote_mesh}";
-			string Jen_Temp = $"{Pathtopaks}\\pakchunk10_s17-WindowsClient.ucas";
-			string Pickaxe_Mesh_Path_2 = $"{Pathtopaks}\\pakchunk10_s3-WindowsClient.ucas";
-			string Emote_Path_2 = $"{Pathtopaks}\\pakchunk10_s22-WindowsClient.ucas";
+			string pak_s17 = $"{Pathtopaks}\\pakchunk100_s17-WindowsClient.ucas";
+			string Pickaxe_Mesh_Path_2 = $"{Pathtopaks}\\pakchunk100_s3-WindowsClient.ucas";
+			string pak_s22 = $"{Pathtopaks}\\pakchunk100_s22-WindowsClient.ucas";
 
-			return new string[] { Skin_Body_Path, Skin_Head_Path, Pickaxe_Mesh_Path, Backbling_Path, Emote_Path, Jen_Temp, Pickaxe_Mesh_Path_2, Emote_Path_2 };
+			return new string[] { Skin_Body_Path, Skin_Head_Path, Pickaxe_Mesh_Path, Backbling_Path, Emote_Path, pak_s17, Pickaxe_Mesh_Path_2, pak_s22 };
 		}
 
 		public int[] GetSwapOffset()
@@ -40,9 +40,9 @@ namespace JuicySwapper.Main.Classes
 			int Jen_Temp = 130000000;
 			int Pickaxe_Mesh_Path_2 = 1;
 			int Emote_Path_2 = 1;
-			int NeoVersa_Mesh = 130000000;
-			
-			return new int[] { Offset_Skin_Body, Offset_Skin_Head, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh, Offset_Blaze_Mesh, Jen_Temp, Pickaxe_Mesh_Path_2, Emote_Path_2, NeoVersa_Mesh };
+			int ShadowRuby = 244000000;
+
+			return new int[] { Offset_Skin_Body, Offset_Skin_Head, Offset_Pick_Mesh, Offset_Back_Mesh, Offset_Emote_Mesh, Offset_Blaze_Mesh, Jen_Temp, Pickaxe_Mesh_Path_2, Emote_Path_2, ShadowRuby };
 		}
 
 		public string[] GetEACPath()
@@ -137,7 +137,8 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.SavageEnabled,
 			Settings.Default.FreemixEnabled,
 			Settings.Default.HitItEnabled,
-			Settings.Default.BicycleEnabled
+			Settings.Default.BicycleEnabled,
+			Settings.Default.SocksEnabled
 		};
 		public List<bool> Jennifer = new List<bool>()
 		{
@@ -161,8 +162,11 @@ namespace JuicySwapper.Main.Classes
 		};
 		public List<bool> TonyStark = new List<bool>()
 		{
-			Settings.Default.ChickenEnabled,
-			Settings.Default.LeaveTheDoorOpenEnabled
+			Settings.Default.GrimeyEnabled,
+			Settings.Default.EcoEnabled,
+			Settings.Default.KelsierEnabled,
+			Settings.Default.DeathStrokeEnabled,
+			Settings.Default.SpireImmortalEnabled
 		};
 
 		public List<bool> FrozenAxe = new List<bool>()
@@ -201,7 +205,10 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.SpartanAssassinEnabled,
 			Settings.Default.WildcatBlueSREnabled,
 			Settings.Default.TheChampionEnabled,
-			Settings.Default.LokBotEnabled
+			Settings.Default.LokBotEnabled,
+			Settings.Default.SpaceCuddleEnabled,
+			Settings.Default.SpaceCuddleBlueEnabled,
+			Settings.Default.SpaceCuddleWhiteEnabled
 
 		};
 
@@ -385,7 +392,6 @@ namespace JuicySwapper.Main.Classes
 				Settings.Default.pak_pick_mesh = (StatusResponse.Pickaxe); //pak pickaxe
 				Settings.Default.pak_back_mesh = (StatusResponse.Backbling); //pak pickaxe
 				Settings.Default.pak_emote_mesh = (StatusResponse.Emotes); //pak pickaxe
-				Settings.Default.Save();
 		   }
 		   catch
 		   {

@@ -1,6 +1,7 @@
 ﻿using JuicySwapper.Properties;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using System;
+using System.Configuration;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
@@ -478,6 +479,44 @@ namespace JuicySwapper.Main.GUI
                 text += "Lok-Bot'," + " ";
 
             }
+            if (Settings.Default.SocksEnabled == true)
+            {
+                num++;
+                text += "Socks'," + " ";
+
+            }
+            if (Settings.Default.SpaceCuddleEnabled == true || Settings.Default.SpaceCuddleBlueEnabled || Settings.Default.SpaceCuddleWhiteEnabled)
+            {
+                num++;
+                text += "Mecha Cuddle Master'," + " ";
+
+            }
+            if (Settings.Default.KelsierEnabled == true)
+            {
+                num++;
+                text += "Kelsier'," + " ";
+
+            }
+            if (Settings.Default.DeathStrokeEnabled == true)
+            {
+                num++;
+                text += "Deathstroke Zero'," + " ";
+
+            }
+            if (Settings.Default.SpireImmortalEnabled == true)
+            {
+                num++;
+                text += "Spire Immortal'," + " ";
+
+            }
+            
+
+
+
+
+
+
+
 
 
 
@@ -578,15 +617,71 @@ namespace JuicySwapper.Main.GUI
 
         private void Backupverifybtn_Click(object sender, EventArgs e)
         {
-            if (Settings.Default.AccVerify == "Guest")
-            {
-                Message a = new Message(Resources.Juicynoacc);
-                a.ShowDialog();
-                return;
-            }
 
-            new BackupVerify().ShowDialog();
-        }
+            String pakPath = Settings.Default.pakPath;
+
+            //ucas
+            File.Delete(pakPath + "\\pakchunk100_s3-WindowsClient.ucas");
+
+            File.Delete(pakPath + "\\pakchunk100_s4-WindowsClient.ucas");
+
+            File.Delete(pakPath + "\\pakchunk100_s5-WindowsClient.ucas");
+
+            File.Delete(pakPath + "\\pakchunk100_s17-WindowsClient.ucas");
+
+            File.Delete(pakPath + "\\pakchunk100_s22-WindowsClient.ucas");
+
+            //utoc
+            File.Delete(pakPath + "\\pakchunk100_s3-WindowsClient.utoc");
+
+            File.Delete(pakPath + "\\pakchunk100_s4-WindowsClient.utoc");
+
+            File.Delete(pakPath + "\\pakchunk100_s5-WindowsClient.utoc");
+
+            File.Delete(pakPath + "\\pakchunk100_s17-WindowsClient.utoc");
+
+            File.Delete(pakPath + "\\pakchunk100_s22-WindowsClient.utoc");
+
+            //pak
+            File.Delete(pakPath + "\\pakchunk100_s3-WindowsClient.pak");
+
+            File.Delete(pakPath + "\\pakchunk100_s4-WindowsClient.pak");
+
+            File.Delete(pakPath + "\\pakchunk100_s5-WindowsClient.pak");
+
+            File.Delete(pakPath + "\\pakchunk100_s17-WindowsClient.pak");
+
+            File.Delete(pakPath + "\\pakchunk100_s22-WindowsClient.pak");
+
+            //sig
+            File.Delete(pakPath + "\\pakchunk100_s3-WindowsClient.sig");
+
+            File.Delete(pakPath + "\\pakchunk100_s4-WindowsClient.sig");
+
+            File.Delete(pakPath + "\\pakchunk100_s5-WindowsClient.sig");
+
+            File.Delete(pakPath + "\\pakchunk100_s17-WindowsClient.sig");
+
+            File.Delete(pakPath + "\\pakchunk100_s22-WindowsClient.sig");
+
+            foreach (SettingsProperty currentProperty in Settings.Default.Properties)
+            {
+                if (currentProperty.PropertyType == typeof(bool))
+                    Settings.Default[currentProperty.Name] = false;
+
+                Settings.Default.Save();
+            }
+            Close();
+
+            DialogResult dialog = MessageBox.Show("Succesfull reverted all items.\nThis will restart the Swapper!", "Succesfull reverted all items.\nThis will restart the Swapper!", MessageBoxButtons.OK);
+                if (dialog == DialogResult.OK)
+                {
+                    Application.Restart();
+                }
+
+
+                //new BackupVerify().ShowDialog();
+            }
 
         private void MusicSwitch_Click(object sender, EventArgs e)
         {

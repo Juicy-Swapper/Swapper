@@ -287,8 +287,8 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton31_Click(object sender, EventArgs e)
         {
-            //new SpartanAssassin().ShowDialog();
-            new Message(Resources.disabled).ShowDialog();
+            new SpartanAssassin().ShowDialog();
+            //new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton40_Click(object sender, EventArgs e)
@@ -300,6 +300,36 @@ namespace JuicySwapper.Panels
         private void bunifuImageButton41_Click(object sender, EventArgs e)
         {
             new LokBot().ShowDialog();
+        }
+
+        private void bunifuImageButton42_Click(object sender, EventArgs e)
+        {
+            new SpaceCuddle().ShowDialog();
+        }
+
+        private void bunifuImageButton43_Click(object sender, EventArgs e)
+        {
+            new SpaceCuddleBlue().ShowDialog();
+        }
+
+        private void bunifuImageButton44_Click(object sender, EventArgs e)
+        {
+            new SpaceCuddleWhite().ShowDialog();
+        }
+
+        private void bunifuImageButton45_Click(object sender, EventArgs e)
+        {
+            new Kelsier().ShowDialog();
+        }
+
+        private void bunifuImageButton46_Click(object sender, EventArgs e)
+        {
+            new DeathStroke().ShowDialog();
+        }
+
+        private void bunifuImageButton47_Click(object sender, EventArgs e)
+        {
+            new SpireImmortal().ShowDialog();
         }
     }
 }
