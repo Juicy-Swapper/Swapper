@@ -84,9 +84,27 @@ namespace JuicySwapper_Installer.Main.GUI
 
             Downloader.RunWorkerAsync();
         }
+
+        public static void Encryption()
+        {
+            string InstallFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Juicy Industries";
+
+            var StatusAPI = new WebClient().DownloadString("http://juicyswapper.xyz/api/status.json");
+            Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
+
+            WebClient ProgramClient = new WebClient();
+
+            ProgramClient.Proxy = null;
+            ProgramClient.DownloadFileAsync(new Uri(StatusResponse.Encryption), InstallFolder + "\\JuicySwapper_Encryption.dll");
+
+            while (ProgramClient.IsBusy)
+                Thread.Sleep(1000);
+
+            if (!File.Exists("JuicySwapper_Encryption.dll"))
+                MessageBox.Show("Encryption did not downloaded!");
+        }
         private void Downloader_DoWork(object sender, DoWorkEventArgs e)
         {
-            
             string InstallFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Juicy Industries";
             try
             {
@@ -103,6 +121,7 @@ namespace JuicySwapper_Installer.Main.GUI
                     Thread.Sleep(3000);                   
                     ProgressBar.Value = 0;
                     CreateShortcut();
+                    Encryption();
                     DownloaderUpdater.RunWorkerAsync();
                     Process.Start(InstallFolder + "\\JuicySwapper.exe");
                     Thread.Sleep(2000);

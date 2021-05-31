@@ -11,7 +11,6 @@ namespace JuicySwapper.IO
 {
     public class Researcher
     {
-
         public static bool Convert(long start, string file, string convert, string revert, long max = 0, long additional = 0, bool minus = false, bool messages = false)
         {
             byte[] a = Encoding.UTF8.GetBytes(convert);
@@ -43,10 +42,7 @@ namespace JuicySwapper.IO
 
                     if (offset == 0)
                     {
-                        if (messages)
-                            MessageBox.Show("Already converted, or string not found in pak!");
-
-                        return false;
+                        MessageBox.Show("Already converted, or string not found in pak! Please contact a member of stff");
                     }
 
                     if (additional != 0 && minus)
@@ -113,8 +109,7 @@ namespace JuicySwapper.IO
 
                     if (offset == 0)
                     {
-                        if (messages)
-                            MessageBox.Show("Already converted, or string not found in pak!");
+                        MessageBox.Show("Already converted, or string not found in pak! Please contact a member of stff");
 
                         return false;
                     }
@@ -270,7 +265,7 @@ namespace JuicySwapper.IO
 
             return data;
         }
-
+        
         public static bool Convert(long start, string file, string convert, string revert, long max = 0, long additional = 0, bool minus = false, bool messages = false)
         {
             byte[] a = ConvertHexStringToByteArray(convert);
@@ -393,16 +388,24 @@ namespace JuicySwapper.IO
 
             while (true)
             {
-                if (max1)
+                try
                 {
-                    if (a.Position == max)
-                        return result;
+                    if (max1)
+                    {
+                        if (a.Position == max)
+                            return result;
+                    }
+                    else
+                    {
+                        if (a.Position == 5000000000)
+                            return result;
+                    }
                 }
-                else
+                catch
                 {
-                    if (a.Position == 5000000000)
-                        return result;
+                    MessageBox.Show("asdasd");
                 }
+                
 
                 var latestbyte = a.ReadByte();
                 if (latestbyte == -1)

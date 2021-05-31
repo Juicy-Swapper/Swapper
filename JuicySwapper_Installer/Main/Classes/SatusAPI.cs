@@ -11,6 +11,9 @@ namespace JuicySwapper_Installer.Main.Classes
 
             [JsonProperty("updaterlink")]
             public string updaterlink { get; set; }
+
+            [JsonProperty("Encryption.dll")]
+            public string Encryption { get; set; }
         }
 
     }

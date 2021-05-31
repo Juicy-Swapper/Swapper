@@ -1,5 +1,6 @@
 ﻿using JuicySwapper.Api;
 using JuicySwapper.Main.GUI;
+using JuicySwapper.Properties;
 using Newtonsoft.Json;
 using System;
 using System.IO;
@@ -17,7 +18,7 @@ namespace JuicySwapper
         /// Punto de entrada principal para la aplicación.
         /// </summary>
         [STAThread]
-        static async System.Threading.Tasks.Task Main(string[] args)
+        static void Main(string[] args)
         {
             if (Path.GetFileName(Path.GetDirectoryName(Environment.CurrentDirectory)) == "Temp")
             {
@@ -28,8 +29,14 @@ namespace JuicySwapper
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             JuicyUtilities.GetStatus();
-
             Application.Run(new Loader());
+        }
+
+        static void GUID()
+        {
+            Guid g = Guid.NewGuid();
+            MessageBox.Show(g.ToString());
+            Clipboard.SetText(g.ToString());
         }
     }
 }

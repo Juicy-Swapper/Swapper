@@ -13,17 +13,8 @@ namespace JuicySwapper_Installer.Main.GUI
         public DiscordRpcClient discordRpcClient_0 = new DiscordRpcClient("704324460291031047");
         string AppdataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         public static DiscordRpcClient rpcClient;
-        bool juicy = true;
         public Installer()
         {
-            if(File.Exists($"{AppdataFolder}\\Juicy Industries\\JuicySwapper.exe"))
-            {
-                BackgroundImage = Resources.Uninstaller;
-                juicy = false;
-            }
-            else
-                BackgroundImage = Resources.installer;
-
             InitializeComponent();
             Juicy.DiscordRPC.Initialize();
             Juicy.SetRPCAction("", "");

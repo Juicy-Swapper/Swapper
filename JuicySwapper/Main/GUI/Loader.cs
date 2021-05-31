@@ -58,14 +58,15 @@ namespace JuicySwapper.Main.GUI
 
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
+
+            if (!File.Exists("JuicySwapper_Encryption.dll"))
+                Encryption();
+
             MongoCRUD db = new MongoCRUD("JuicySwapper");
 
             db.Accounts<UserModel>("Juicy");
 
             Num = db.Accounts<UserModel>("Juicy");
-
-            if (!File.Exists("JuicySwapper_Encryption.dll"))
-                Encryption();
         }
 
         public static void Encryption()
