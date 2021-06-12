@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuicySwapper_Encryption", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuicySwapper", "JuicySwapper\JuicySwapper.csproj", "{4D8BCAAC-874B-4730-B1DC-A3147345B29B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuicySwapper_Default", "JuicySwapper_Default\JuicySwapper_Default.csproj", "{A7684919-DD21-42BB-B564-27A4089BA59A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuicySwapper_Launcher", "JuicySwapper_Launcher\JuicySwapper_Launcher.csproj", "{4191D7A6-C17C-476B-A7CC-F4953273F15E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,6 +88,26 @@ Global
 		{4D8BCAAC-874B-4730-B1DC-A3147345B29B}.Swapper [Prod]|Any CPU.Build.0 = Swapper|Any CPU
 		{4D8BCAAC-874B-4730-B1DC-A3147345B29B}.Swapper|Any CPU.ActiveCfg = Swapper|Any CPU
 		{4D8BCAAC-874B-4730-B1DC-A3147345B29B}.Swapper|Any CPU.Build.0 = Swapper|Any CPU
+		{A7684919-DD21-42BB-B564-27A4089BA59A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7684919-DD21-42BB-B564-27A4089BA59A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7684919-DD21-42BB-B564-27A4089BA59A}.kaede|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7684919-DD21-42BB-B564-27A4089BA59A}.kaede|Any CPU.Build.0 = Debug|Any CPU
+		{A7684919-DD21-42BB-B564-27A4089BA59A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7684919-DD21-42BB-B564-27A4089BA59A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7684919-DD21-42BB-B564-27A4089BA59A}.Swapper [Prod]|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7684919-DD21-42BB-B564-27A4089BA59A}.Swapper [Prod]|Any CPU.Build.0 = Debug|Any CPU
+		{A7684919-DD21-42BB-B564-27A4089BA59A}.Swapper|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7684919-DD21-42BB-B564-27A4089BA59A}.Swapper|Any CPU.Build.0 = Debug|Any CPU
+		{4191D7A6-C17C-476B-A7CC-F4953273F15E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4191D7A6-C17C-476B-A7CC-F4953273F15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4191D7A6-C17C-476B-A7CC-F4953273F15E}.kaede|Any CPU.ActiveCfg = Debug|Any CPU
+		{4191D7A6-C17C-476B-A7CC-F4953273F15E}.kaede|Any CPU.Build.0 = Debug|Any CPU
+		{4191D7A6-C17C-476B-A7CC-F4953273F15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4191D7A6-C17C-476B-A7CC-F4953273F15E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4191D7A6-C17C-476B-A7CC-F4953273F15E}.Swapper [Prod]|Any CPU.ActiveCfg = Debug|Any CPU
+		{4191D7A6-C17C-476B-A7CC-F4953273F15E}.Swapper [Prod]|Any CPU.Build.0 = Debug|Any CPU
+		{4191D7A6-C17C-476B-A7CC-F4953273F15E}.Swapper|Any CPU.ActiveCfg = Debug|Any CPU
+		{4191D7A6-C17C-476B-A7CC-F4953273F15E}.Swapper|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

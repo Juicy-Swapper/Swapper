@@ -15,16 +15,17 @@ namespace JuicySwapper_Encryption
 {
     public class Scan
     {
+        //Use uppercase letters
+        public static string[] windownames = { "DNSPY", "ILSPY", "DOTPEEK", "FIDDLER", "JUSTDECOMPILE" };
+        /// <summary>
+        /// Kills a programs just as C# Decompilers and Net Debuggers
+        /// </summary>
+        public static void KillSuspicious() => 
+            Process.GetProcesses().Where(x => windownames.Any(x.MainWindowTitle.ToUpper().Contains)).All(a => { a.Kill(); return true; });
 
         public static bool Check(string key)
         {
-            Process[] processes = Process.GetProcesses();
-
-            foreach (Process process in processes)
-            {
-                if (process.ProcessName.Contains("Fiddler"))
-                    process.Kill();
-            }
+            KillSuspicious();
 
             if (File.Exists("JuicySwapper.exe"))
             {

@@ -106,7 +106,7 @@ namespace JuicySwapper
 			Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
 
 
-			if (StatusResponse.IsOnline == false)
+			if (!StatusResponse.IsOnline == false)
 				new OfflineMode().ShowDialog();
 
 			if (StatusResponse.Version != $"{Application.ProductVersion}")

@@ -112,9 +112,8 @@
             this.JuicyAccountNum.ForeColor = System.Drawing.Color.White;
             this.JuicyAccountNum.Location = new System.Drawing.Point(10, 499);
             this.JuicyAccountNum.Name = "JuicyAccountNum";
-            this.JuicyAccountNum.Size = new System.Drawing.Size(185, 25);
+            this.JuicyAccountNum.Size = new System.Drawing.Size(0, 25);
             this.JuicyAccountNum.TabIndex = 35;
-            this.JuicyAccountNum.Text = "Juicy Accounts: ";
             // 
             // newsTitleLabel
             // 

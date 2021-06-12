@@ -13,7 +13,22 @@ namespace JuicySwapper.Main.GUI
         [Obsolete]
         public Login()
         {
-            JuicyUtilities.SetRPCSTAT($"Browsing Login Page");
+            //JuicyUtilities.SetRPCSTAT($"Browsing Login Page");
+
+            string[] args = Settings.Default.LauncherArgs.Split(' ');
+
+            Settings.Default.Name = args[1];
+            Settings.Default.Save();
+
+            Hide();
+            var Home = new Home();
+            Message paidlogin = new Message(Resources.Juicylogin);
+            paidlogin.ShowDialog();
+            Home.Closed += (s, arg) => Close();
+            Home.Show();
+
+            return; //Return as we dont need login/signup anymore as of launcher
+
             InitializeComponent();
 
             Username.Text = Settings.Default.username;
@@ -48,8 +63,6 @@ namespace JuicySwapper.Main.GUI
         [Obsolete]
         private void Login_Click(object sender, EventArgs e)
         {
-            
-
 
             MongoCRUD db = new MongoCRUD("JuicySwapper");
             string hwid = JuicyUtilities.GET_HARDWAREID;

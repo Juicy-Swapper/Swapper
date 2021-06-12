@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using JuicySwapper.Properties;
+using System.Windows.Forms;
 
 namespace JuicySwapper.Main.Classes
 {
@@ -15,7 +16,8 @@ namespace JuicySwapper.Main.Classes
         public MongoCRUD(string A)
         {
             var URL = JuicySwapper_Encryption.Auth.DataBase.dbURL;
-
+            MessageBox.Show(JuicySwapper_Encryption.Auth.DataBase.Decrypt(URL, "AdhUOWwOgFSNaNqD7QBuoYCJ3Y8hr91P"));
+            
             var client = new MongoClient(JuicySwapper_Encryption.Auth.DataBase.Decrypt(URL, "AdhUOWwOgFSNaNqD7QBuoYCJ3Y8hr91P"));
             db = client.GetDatabase(A);
         }
@@ -26,9 +28,9 @@ namespace JuicySwapper.Main.Classes
             collection.InsertOne(record);
         }
 
-        public long Accounts<T>(string table)
+        public long Accounts<T>(string table, bool temp)
         {
-            var filter = Builders<UserModel>.Filter.Eq("paid", false);
+            var filter = Builders<UserModel>.Filter.Eq("paid", temp);
             var Count = db.GetCollection<UserModel>(table).CountDocuments(filter);
 
             return Count;

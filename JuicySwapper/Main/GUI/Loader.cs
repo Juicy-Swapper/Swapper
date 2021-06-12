@@ -19,6 +19,7 @@ namespace JuicySwapper.Main.GUI
         public static long Num; 
         public Loader()
         {
+            
             JuicyUtilities.SetRPCSTAT2($"Loading - 0%");
             InitializeComponent();
             JuicyUtilities.DiscordRPC.Initialize();
@@ -31,6 +32,7 @@ namespace JuicySwapper.Main.GUI
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+
             holder += 4;
             var adv = new List<string> { ".", "..", "..." };
             Random random = new Random();
@@ -50,7 +52,7 @@ namespace JuicySwapper.Main.GUI
                     MusicController.MusicControl("True");
                 }
 
-                var Open = new Login();
+                var Open = new Login(); ;
                 Open.Closed += (s, args) => Close();
                 Open.Show();
             };
@@ -58,15 +60,20 @@ namespace JuicySwapper.Main.GUI
 
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
+            //removed accounts as of some person deleted the whole thing
 
             if (!File.Exists("JuicySwapper_Encryption.dll"))
                 Encryption();
 
-            MongoCRUD db = new MongoCRUD("JuicySwapper");
+            //MongoCRUD db = new MongoCRUD("JuicySwapper");
 
-            db.Accounts<UserModel>("Juicy");
+            //db.Accounts<UserModel>("Juicy", true); //
 
-            Num = db.Accounts<UserModel>("Juicy");
+            //long temp = db.Accounts<UserModel>("Juicy", false);
+
+            //long temp1 = db.Accounts<UserModel>("Juicy", true);
+
+            //Num = temp + temp1;
         }
 
         public static void Encryption()

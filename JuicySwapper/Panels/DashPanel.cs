@@ -28,7 +28,8 @@ namespace JuicySwapper.Panels
         public DashPanel()
         {
             InitializeComponent();
-            JuicyAccountNum.Text = $"Juicy Accounts: {Loader.Num}";
+            
+            //JuicyAccountNum.Text = $"Juicy Accounts: {Loader.Num}";
             GetContent();
         }
 

@@ -96,7 +96,7 @@
     </Reference>
     <Reference Include="JuicySwapper_Encryption, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>.\JuicySwapper_Encryption.dll</HintPath>
+      <HintPath>..\JuicySwapper_Encryption\bin\Debug\JuicySwapper_Encryption.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -1365,6 +1365,8 @@
     <Content Include="Core\Compression\Snappy\lib\win\snappy32.dll" />
     <Content Include="Core\Compression\Snappy\lib\win\snappy64.dll" />
     <Content Include="Core\Compression\Zstandard\lib\win\libzstd.dll" />
+    <Content Include="JuicySwapper_Encryption.dll" />
+    <Content Include="JuicySwapper_Encryption.vmp.dll" />
     <Content Include="mongocrypt.dll" />
     <None Include="Resources\Juicylogin.png" />
     <Content Include="Resources\test_92j_icon.ico" />
