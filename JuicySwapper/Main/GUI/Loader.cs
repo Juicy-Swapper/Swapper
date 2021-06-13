@@ -52,9 +52,17 @@ namespace JuicySwapper.Main.GUI
                     MusicController.MusicControl("True");
                 }
 
-                var Open = new Login(); ;
-                Open.Closed += (s, args) => Close();
-                Open.Show();
+                string[] args = Settings.Default.LauncherArgs.Split(' ');
+
+                Settings.Default.Name = args[1];
+                Settings.Default.Save();
+
+                Hide();
+                var Home = new Home();
+                Message paidlogin = new Message(Resources.Juicylogin);
+                paidlogin.ShowDialog();
+                Home.Closed += (s, arg) => Close();
+                Home.Show();
             };
         }
 

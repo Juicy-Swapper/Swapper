@@ -27,26 +27,46 @@ namespace JuicySwapper
                 Environment.Exit(0);
             }
 
-            try
+            bool Debug = true; //true bypass //false release
+
+            if (Debug)
             {
-                if (!args[0].Contains("OppyxPn89INV4HVH5z1x"))
+                //owners bypass
+                args = "BYPASS ADMIN ADMIN".Split(' ');
+
+                Settings.Default.LauncherArgs = String.Join(" ", args);
+                Settings.Default.Save();
+
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                JuicyUtilities.GetStatus();
+                Application.Run(new Loader());
+
+            }
+            else
+            {
+                try
                 {
-                    MessageBox.Show("Wrong Args Please launch from the juicy launcher");
+                    if (!args[0].Contains("OppyxPn89INV4HVH5z1x"))
+                    {
+                        MessageBox.Show("Wrong Args Please launch from the juicy launcher");
+                        return;
+                    }
+
+                    Settings.Default.LauncherArgs = String.Join(" ", args);
+                    Settings.Default.Save();
+
+                    Application.EnableVisualStyles();
+                    Application.SetCompatibleTextRenderingDefault(false);
+                    JuicyUtilities.GetStatus();
+                    Application.Run(new Loader());
+                }
+                catch
+                {
+                    MessageBox.Show("No args Found");
                     return;
                 }
-            }
-            catch
-            {
-                MessageBox.Show("No args Found");
-                return;
-            }
-
-            Settings.Default.LauncherArgs = args.ToString();
-
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            JuicyUtilities.GetStatus();
-            Application.Run(new Loader());
+            } 
         }
 
         static void GUID()
