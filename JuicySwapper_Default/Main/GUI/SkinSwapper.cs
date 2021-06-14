@@ -1,6 +1,5 @@
 ﻿using JuicySwapper_Default.IO;
 using JuicySwapper_Default.Properties;
-using JuicySwapper_Launcher.Main;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -61,7 +60,7 @@ namespace JuicySwapper_Default.Main.GUI
 
                     try
                     {
-                        vars.Swap2 = Cosmetics.Swap2;
+                        vars.Swap2 = parsed.Utilities.InvalidBoy2;
                         vars.InvalidBoy = parsed.Utilities.InvalidBoy;
                         vars.InvalidBoypak = "//" + parsed.Utilities.InvalidBoypak;
                         vars.InvalidBoyoffsets = long.Parse(parsed.Utilities.InvalidBoyoffsets.ToString());
@@ -72,8 +71,8 @@ namespace JuicySwapper_Default.Main.GUI
 
                     try
                     {
-                        vars.Swap3 = Cosmetics.Swap3;
-                        vars.InvalidGirl = parsed.Utilities.InvalidGirl;
+                        vars.Swap3 = parsed.Utilities.InvalidBoy;
+                        vars.InvalidGirl = parsed.Utilities.InvalidBoy;
                         vars.InvalidGirlpak = "//" + parsed.Utilities.InvalidGirlpak;
                         vars.InvalidGirloffsets = long.Parse(parsed.Utilities.InvalidGirloffsets.ToString());
                     }
@@ -104,10 +103,8 @@ namespace JuicySwapper_Default.Main.GUI
 
         private void Convert(object sender, EventArgs e)
         {
-            var pakfolder = $"{Configuration}\\FortniteGame\\Content\\Paks";
-            pakfolder = "C:\\Program Files\\Epic Games\\Fortnite\\FortniteGame\\Content\\Paks";
+            var pakfolder = $"{Settings.Default.pakPath}";
 
-            MessageBox.Show($"{pakfolder}\\{vars.BdynHeadFile}");
             LogBox.Clear();
             LogBox.Text += "[LOG] Starting...";
 
@@ -138,8 +135,7 @@ namespace JuicySwapper_Default.Main.GUI
             LogBox.Clear();
             LogBox.Text += "[LOG] Starting...";
 
-            var pakfolder = $"{Configuration}\\FortniteGame\\Content\\Paks";
-            pakfolder = "C:\\Program Files\\Epic Games\\Fortnite\\FortniteGame\\Content\\Paks";
+            var pakfolder = $"{Settings.Default.pakPath}\\FortniteGame\\Content\\Paks";
 
             if (vars.Swap1 == "") return;
             bool Swap1 = Researcher.Revert(vars.BdynHeadOffset, $"{pakfolder}\\{vars.BdynHeadFile}", vars.BdynHead, vars.Swap1, 0, 0, false, false);

@@ -32,7 +32,6 @@ namespace JuicySwapper.Main.GUI
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
             holder += 4;
             var adv = new List<string> { ".", "..", "..." };
             Random random = new Random();

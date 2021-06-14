@@ -34,5 +34,29 @@ namespace JuicySwapper_Default.Properties {
                 this["SkinSwapped"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string pakPath {
+            get {
+                return ((string)(this["pakPath"]));
+            }
+            set {
+                this["pakPath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string InstallationPath {
+            get {
+                return ((string)(this["InstallationPath"]));
+            }
+            set {
+                this["InstallationPath"] = value;
+            }
+        }
     }
 }

@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JuicySwapper_Launcher.Main
+namespace JuicySwapper_Default.Main
 {
     public static class vars
     {
-        public static String item = ""; 
+        public static String item = "";
 
         //swap 1
-        public static String Swap1 = ""; 
+        public static String Swap1 = "";
         public static String BdynHead = "";
         public static String BdynHeadFile = "";
         public static long BdynHeadOffset = 0;

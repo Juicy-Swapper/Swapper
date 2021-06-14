@@ -56,6 +56,7 @@
     <Compile Include="Main\Classes\JuicyUtilities.cs" />
     <Compile Include="Main\Classes\Configuration.cs" />
     <Compile Include="Main\Classes\Researcher.cs" />
+    <Compile Include="Main\Classes\Vars.cs" />
     <Compile Include="Main\GUI\SettingsTab.cs">
       <SubType>Form</SubType>
     </Compile>

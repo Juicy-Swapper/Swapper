@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\JuicySwapper\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="JuicySwapper_Encryption, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\JuicySwapper_Encryption\bin\Debug\JuicySwapper_Encryption.dll</HintPath>
@@ -50,19 +53,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main\Configuration.cs" />
-    <Compile Include="Main\Main.cs">
+    <Compile Include="Main\Classes\SwapperConfiguration.cs" />
+    <Compile Include="Main\GUI\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\Main.Designer.cs">
+    <Compile Include="Main\GUI\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main\Mongodb.cs" />
-    <Compile Include="Main\Program.cs" />
-    <Compile Include="Main\vars.cs" />
+    <Compile Include="Main\Classes\Mongodb.cs" />
+    <Compile Include="Main\Classes\Program.cs" />
+    <Compile Include="Main\GUI\Setup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Setup.designer.cs">
+      <DependentUpon>Setup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\SwappersTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\SwappersTab.Designer.cs">
+      <DependentUpon>SwappersTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Normal\Updater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Normal\Updater.designer.cs">
+      <DependentUpon>Updater.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Main\Main.resx">
+    <EmbeddedResource Include="Main\GUI\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Setup.resx">
+      <DependentUpon>Setup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\SwappersTab.resx">
+      <DependentUpon>SwappersTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Normal\Updater.resx">
+      <DependentUpon>Updater.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -72,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -86,9 +116,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Normal\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <PackageReference Include="Guna.UI2.WinForms">
       <Version>2.0.0.9</Version>
@@ -99,6 +127,24 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.1</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwapperIConLaunch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaunchSwapper-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaunchSwapperOFFLINE-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaunchSwapperUpdate-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaunchSwapperInstallDE-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaunchSwapperInstallNOW-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
