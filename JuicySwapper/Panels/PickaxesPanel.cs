@@ -58,20 +58,20 @@ namespace JuicySwapper.Panels
 
         private void bunifuImageButton5_Click(object sender, System.EventArgs e)
         {
-            new FNCS().ShowDialog();
-            //new Message(Resources.disabled).ShowDialog();
+            //new FNCS().ShowDialog();
+            new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton6_Click(object sender, System.EventArgs e)
         {
-            new Studded().ShowDialog();
-            //new Message(Resources.disabled).ShowDialog();
+            //new Studded().ShowDialog();
+            new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton9_Click(object sender, System.EventArgs e)
         {
-             new StarwandRS().ShowDialog();
-            //new Message(Resources.disabled).ShowDialog();
+            // new StarwandRS().ShowDialog();
+           new Message(Resources.disabled).ShowDialog();
         }
 
         private void bunifuImageButton7_Click(object sender, System.EventArgs e)

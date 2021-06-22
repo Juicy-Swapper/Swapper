@@ -16,10 +16,10 @@ namespace JuicySwapper.Main.GUI
     public partial class Loader : Form
     {
         public byte holder = 0;
-        public static long Num; 
+        public static long Num;
         public Loader()
         {
-            
+
             JuicyUtilities.SetRPCSTAT2($"Loading - 0%");
             InitializeComponent();
             JuicyUtilities.DiscordRPC.Initialize();
@@ -32,6 +32,7 @@ namespace JuicySwapper.Main.GUI
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+
             holder += 4;
             var adv = new List<string> { ".", "..", "..." };
             Random random = new Random();
@@ -103,6 +104,56 @@ namespace JuicySwapper.Main.GUI
         private void Loader_Load(object sender, EventArgs e)
         {
 
+            String pakPath = Settings.Default.pakPath;
+            String pak = pakPath + "\\pakchunk100_s3-WindowsClient.ucas";
+
+            if (!File.Exists(pak))
+            {
+                //ucas
+                File.Copy(pakPath + "\\pakchunk10_s3-WindowsClient.ucas", pakPath + "\\pakchunk100_s3-WindowsClient.ucas");
+
+                File.Copy(pakPath + "\\pakchunk10_s4-WindowsClient.ucas", pakPath + "\\pakchunk100_s4-WindowsClient.ucas");
+
+                File.Copy(pakPath + "\\pakchunk10_s5-WindowsClient.ucas", pakPath + "\\pakchunk100_s5-WindowsClient.ucas");
+
+                File.Copy(pakPath + "\\pakchunk10_s17-WindowsClient.ucas", pakPath + "\\pakchunk100_s17-WindowsClient.ucas");
+
+                File.Copy(pakPath + "\\pakchunk10_s22-WindowsClient.ucas", pakPath + "\\pakchunk100_s22-WindowsClient.ucas");
+
+                //utoc
+                File.Copy(pakPath + "\\pakchunk10_s3-WindowsClient.utoc", pakPath + "\\pakchunk100_s3-WindowsClient.utoc");
+
+                File.Copy(pakPath + "\\pakchunk10_s4-WindowsClient.utoc", pakPath + "\\pakchunk100_s4-WindowsClient.utoc");
+
+                File.Copy(pakPath + "\\pakchunk10_s5-WindowsClient.utoc", pakPath + "\\pakchunk100_s5-WindowsClient.utoc");
+
+                File.Copy(pakPath + "\\pakchunk10_s17-WindowsClient.utoc", pakPath + "\\pakchunk100_s17-WindowsClient.utoc");
+
+                File.Copy(pakPath + "\\pakchunk10_s22-WindowsClient.utoc", pakPath + "\\pakchunk100_s22-WindowsClient.utoc");
+
+                //pak
+                File.Copy(pakPath + "\\pakchunk10_s3-WindowsClient.pak", pakPath + "\\pakchunk100_s3-WindowsClient.pak");
+
+                File.Copy(pakPath + "\\pakchunk10_s4-WindowsClient.pak", pakPath + "\\pakchunk100_s4-WindowsClient.pak");
+
+                File.Copy(pakPath + "\\pakchunk10_s5-WindowsClient.pak", pakPath + "\\pakchunk100_s5-WindowsClient.pak");
+
+                File.Copy(pakPath + "\\pakchunk10_s17-WindowsClient.pak", pakPath + "\\pakchunk100_s17-WindowsClient.pak");
+
+                File.Copy(pakPath + "\\pakchunk10_s22-WindowsClient.pak", pakPath + "\\pakchunk100_s22-WindowsClient.pak");
+
+                //sig
+                File.Copy(pakPath + "\\pakchunk10_s3-WindowsClient.sig", pakPath + "\\pakchunk100_s3-WindowsClient.sig");
+
+                File.Copy(pakPath + "\\pakchunk10_s4-WindowsClient.sig", pakPath + "\\pakchunk100_s4-WindowsClient.sig");
+
+                File.Copy(pakPath + "\\pakchunk10_s5-WindowsClient.sig", pakPath + "\\pakchunk100_s5-WindowsClient.sig");
+
+                File.Copy(pakPath + "\\pakchunk10_s17-WindowsClient.sig", pakPath + "\\pakchunk100_s17-WindowsClient.sig");
+
+                File.Copy(pakPath + "\\pakchunk10_s22-WindowsClient.sig", pakPath + "\\pakchunk100_s22-WindowsClient.sig");
+
+            }
         }
     }
 }

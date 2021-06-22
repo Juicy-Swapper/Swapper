@@ -140,18 +140,6 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.BicycleEnabled,
 			Settings.Default.SocksEnabled
 		};
-		public List<bool> Jennifer = new List<bool>()
-		{
-			Settings.Default.YukiEnabled,
-			Settings.Default.ChigusaEnabled,
-			Settings.Default.MegumiEnabled,
-			Settings.Default.HarleyQuinnRebirthEnabled,
-			Settings.Default.EchoEnabled,
-			Settings.Default.PrincessFishEnabled,
-			Settings.Default.ChunLiEnabled,
-			Settings.Default.VictoriaSaintEnabled,
-			Settings.Default.TropicalZoeyEnabled
-		};
 		public List<bool> BlowingBubbles = new List<bool>()
 		{
 			Settings.Default.ChickenEnabled,
@@ -166,7 +154,8 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.EcoEnabled,
 			Settings.Default.KelsierEnabled,
 			Settings.Default.DeathStrokeEnabled,
-			Settings.Default.SpireImmortalEnabled
+			Settings.Default.SpireImmortalEnabled,
+			Settings.Default.ThanosEnabled
 		};
 
 		public List<bool> FrozenAxe = new List<bool>()
@@ -193,7 +182,8 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.StoneViperEnabled,
 			Settings.Default.ClipEnabled,
 			Settings.Default.MariusEnabled,
-			Settings.Default.DizzieEnabled
+			Settings.Default.DizzieEnabled,
+			Settings.Default.CelesteEnabled
 		};
 		public List<bool> TippyTap = new List<bool>()
 		{
@@ -208,7 +198,8 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.LokBotEnabled,
 			Settings.Default.SpaceCuddleEnabled,
 			Settings.Default.SpaceCuddleBlueEnabled,
-			Settings.Default.SpaceCuddleWhiteEnabled
+			Settings.Default.SpaceCuddleWhiteEnabled,
+			Settings.Default.ChunLiEnabled
 
 		};
 
@@ -296,13 +287,6 @@ namespace JuicySwapper.Main.Classes
 						return false;
 					else
 						MessageBox.Show("A Emote using Side Hustle is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
-					break;
-
-				case "Jennifer":
-					if (Jennifer.All(a => a) || Jennifer.All(a => !a))
-						return false;
-					else
-						MessageBox.Show("A Skin using Jennifer Walters (She Hulk) is already converted, if this is an error on our part, please reset the configuration from the Swapper settings.");
 					break;
 				case "BlowingBubbles":
 					if (BlowingBubbles.All(a => a) || BlowingBubbles.All(a => !a))
