@@ -16,11 +16,16 @@ namespace JuicySwapper_Launcher
 {
     public class SwapperConfiguration
     {
+        public static void GetEveryStatus()
+        {
+            GetStatus();
+            GetDefaultStatus();
+        }
 		//GetStatus
 		public static void GetStatus()
 		{
 			var StatusAPI = new WebClient().DownloadString($"{API.HOST}/{API.Status}");
-			Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
+			Swapper StatusResponse = JsonConvert.DeserializeObject<Swapper>(StatusAPI);
 
             var InstallFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Juicy Industries\\JuicySwapper.exe";
 
@@ -31,14 +36,14 @@ namespace JuicySwapper_Launcher
                 return;
             }
 
-            if (!StatusResponse.IsOnline == false)
+            if (!StatusResponse.JuicySwapper.IsOnline == false)
             {
                 Settings.Default.SwapperStatus = 1;
                 Settings.Default.Save();
                 return;
             }
 
-			if (StatusResponse.Version != GetFileVer())
+			if (StatusResponse.JuicySwapper.Version == GetFileVer(InstallFolder))
             {
                 Settings.Default.SwapperStatus = 2;
                 Settings.Default.Save();
@@ -49,51 +54,76 @@ namespace JuicySwapper_Launcher
             Settings.Default.Save();
         }
 
-        public static void closefo()
+        public static void GetDefaultStatus()
         {
-            Home Home = new Home();
-            Home.Hide();
+            var StatusAPI = new WebClient().DownloadString($"{API.HOST}/{API.Status}");
+            Swapper StatusResponse = JsonConvert.DeserializeObject<Swapper>(StatusAPI);
+
+            var InstallFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Juicy Industries\\JuicySwapper_Default.exe";
+
+            if (StatusResponse.JuicySwapper_Defualt.IsOnline == false)
+            {
+                Settings.Default.SwapperStatus_Default = 1;
+                Settings.Default.Save();
+                return;
+            }
+
+            if (!File.Exists(InstallFolder))
+            {
+                Settings.Default.SwapperStatus_Default = 3;
+                Settings.Default.Save();
+                return;
+            }
+
+
+            if (StatusResponse.JuicySwapper_Defualt.Version == GetFileVer(InstallFolder))
+            {
+                Settings.Default.SwapperStatus_Default = 2;
+                Settings.Default.Save();
+                return;
+            }
+
+            Settings.Default.SwapperStatus_Default = 0;
+            Settings.Default.Save();
         }
 
-        public static string GetFileVer()
+        public static string GetFileVer(string InstallFolder)
         {
-            FileVersionInfo fileVersionInfo = null;
-
-            var InstallFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Juicy Industries\\JuicySwapper.exe";
+            FileVersionInfo FileVersionInfo = null;
             try
             {
-                fileVersionInfo = FileVersionInfo.GetVersionInfo(InstallFolder);
+                FileVersionInfo = FileVersionInfo.GetVersionInfo(InstallFolder);
             }
             catch
             {
                 MessageBox.Show("ERROR: Unknown");
             }
-            return $"{fileVersionInfo.FileMajorPart}.{fileVersionInfo.FileMinorPart}.{fileVersionInfo.FileBuildPart}.{fileVersionInfo.FilePrivatePart}"; ;
+            return $"{FileVersionInfo.FileMajorPart}.{FileVersionInfo.FileMinorPart}.{FileVersionInfo.FileBuildPart}.{FileVersionInfo.FilePrivatePart}"; ;
         }
         
     }
 
     class SatusAPI
     {
+        public class Swapper
+        {
+            [JsonProperty("JuicySwapper")]
+            public Status JuicySwapper { get; set; }
+
+            [JsonProperty("JuicySwapper_Defualt")]
+            public Status JuicySwapper_Defualt { get; set; }
+        }
+
         public class Status
         {
             [JsonProperty("isOnline")]
             public bool IsOnline { get; set; }
-
-            [JsonProperty("offlineMessage")]
-            public string OfflineMessage { get; set; }
-
-            [JsonProperty("database")]
-            public string Database { get; set; }
 
             [JsonProperty("Encryption.dll")]
             public string Encryption { get; set; }
 
             [JsonProperty("version")]
             public string Version { get; set; }
-
-            [JsonProperty("updaterlink")]
-            public string updaterlink { get; set; }
 
             [JsonProperty("swapperlink")]
             public string Swapperlink { get; set; }
@@ -109,6 +139,13 @@ namespace JuicySwapper_Launcher
         public static string Discord = "discord";
         public static string Images = "api/images";
         public static string Paks = "api/paks.json";
-        public static string FortniteApiNews = "https://fortnite-api.com/v2/news";
+        public static string FortniteNews = "api/paks.json";
+        public static string DefaultPFP = "Accounts/PFP.PNG";
+    }
+
+    class FortniteAPI
+    {
+        public static string HOST = "https://fortnite-api.com";
+        public static string News = "v2/news/br";
     }
 }

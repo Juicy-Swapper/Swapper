@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace JuicySwapper_Encryption.Auth
 {
@@ -34,6 +35,12 @@ namespace JuicySwapper_Encryption.Auth
 
 		public static string Decrypt(string cipherText)
 		{
+			bool skid = Scan.Check("");
+			if (skid == true)
+			{
+				MessageBox.Show("Check = false", "Juicy Swapper - Encryption", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return "LOL";
+			}
 			string EncryptionKey = "abc123";
 			cipherText = cipherText.Replace(" ", "+");
 			byte[] cipherBytes = Convert.FromBase64String(cipherText);

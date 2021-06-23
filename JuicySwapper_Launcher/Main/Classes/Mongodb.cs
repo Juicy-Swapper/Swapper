@@ -4,15 +4,17 @@ using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 
 namespace JuicySwapper_Launcher.Main.Classes
 {
     public class MongoCRUD
     {
         public static IMongoDatabase db;
-        
+
         public MongoCRUD(string A)
         {
+
             var URL = JuicySwapper_Encryption.Auth.DataBase.dbURL;
 
             var client = new MongoClient(JuicySwapper_Encryption.Auth.DataBase.Decrypt(URL, "AdhUOWwOgFSNaNqD7QBuoYCJ3Y8hr91P"));
@@ -25,18 +27,20 @@ namespace JuicySwapper_Launcher.Main.Classes
             collection.InsertOne(record);
         }
 
-        public long Accounts<T>(string table, bool temp)
+        public long Accounts<T>()
         {
-            var filter = Builders<AccountInfo>.Filter.Eq("paid", temp);
-            var Count = db.GetCollection<AccountInfo>(table).CountDocuments(filter);
+            var filter = Builders<AccountInfo>.Filter.Eq("Online", true);
+            var Count = db.GetCollection<AccountInfo>("Users").CountDocuments(filter);
 
-            return Count;
+            var filter1 = Builders<AccountInfo>.Filter.Eq("Online", false);
+            var Count2 = db.GetCollection<AccountInfo>("Users").CountDocuments(filter1);
+
+            return Count + Count2;
         }
 
         public static List<T> LoadRecords<T>(string table)
         {
             var collection = db.GetCollection<T>(table);
-
             return collection.Find(new BsonDocument()).ToList();
         }
 
@@ -75,23 +79,6 @@ namespace JuicySwapper_Launcher.Main.Classes
         }
     }
 
-    public class Friends
-    {
-        [BsonId]
-        public Guid Id { get; set; }
-        public Array Incoming { get; set; }
-        public Array Outgoing { get; set; }
-        public Array Accepted { get; set; }
-    }
-
-    public class AccountCustomization
-    {
-        public string ProfilePicture { get; set; }
-        public string Bio { get; set; }
-        public string Discord { get; set; }
-        public string FortniteName { get; set; }
-    }
-
     public class AccountInfo
     {
         [BsonId]
@@ -100,10 +87,12 @@ namespace JuicySwapper_Launcher.Main.Classes
         public string password { get; set; }
         public string HWID { get; set; }
         public string CreatedAt { get; set; }
+
         public string ProfilePicture { get; set; }
         public string Bio { get; set; }
         public string Discord { get; set; }
         public string FortniteName { get; set; }
-        public string Status { get; set; }
+
+        public bool Online { get; set; }
     }
 }

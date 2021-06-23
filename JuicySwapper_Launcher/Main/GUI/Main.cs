@@ -1,6 +1,8 @@
 ﻿using JuicySwapper_Launcher.Main;
 using JuicySwapper_Launcher.Main.Classes;
+using JuicySwapper_Launcher.Main.GUI;
 using JuicySwapper_Launcher.Properties;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,9 +11,12 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static JuicySwapper_Launcher.SatusAPI;
 
 namespace JuicySwapper_Launcher
 {
@@ -21,7 +26,60 @@ namespace JuicySwapper_Launcher
         public Home()
         {
             InitializeComponent();
-            notifyIcon1.Visible = true;
+
+            pictureBox1.ImageLocation = vars.PFP;
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            //makes pfp round
+            System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
+            gp.AddEllipse(0, 0, pictureBox1.Width - 3, pictureBox1.Height - 3);
+            Region rg = new Region(gp);
+            pictureBox1.Region = rg;
+            //
+
+            if (!Wrapper.Controls.Contains(HomeTab.Instance))
+            {
+                Wrapper.Controls.Add(HomeTab.Instance);
+                HomeTab.Instance.Dock = DockStyle.Fill;
+                HomeTab.Instance.BringToFront();
+            }
+            else
+                HomeTab.Instance.BringToFront();
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Home_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            MongoCRUD db = new MongoCRUD("JuicySwapper");
+
+            var onerec = db.LoadRecordByUsername<AccountInfo>("Users", Settings.Default.Name);
+
+            onerec = db.LoadRecordByUsername<AccountInfo>("Users", Settings.Default.Name);
+
+            onerec.Online = false;
+            db.UpsertRecord("Users", onerec.username, onerec);
+        }
+
+        private void HometabBtn_Click(object sender, EventArgs e)
+        {
+            JuicyUtilities_RPC.SetRPCLocation("Home");
+            if (!Wrapper.Controls.Contains(HomeTab.Instance))
+            {
+                Wrapper.Controls.Add(HomeTab.Instance);
+                HomeTab.Instance.Dock = DockStyle.Fill;
+                HomeTab.Instance.BringToFront();
+            }
+            else
+                HomeTab.Instance.BringToFront();
+        }
+
+        private void SwappertabBtn_Click(object sender, EventArgs e)
+        {
+            JuicyUtilities_RPC.SetRPCLocation("Swappers");
             if (!Wrapper.Controls.Contains(SwappersTab.Instance))
             {
                 Wrapper.Controls.Add(SwappersTab.Instance);
@@ -30,128 +88,24 @@ namespace JuicySwapper_Launcher
             }
             else
                 SwappersTab.Instance.BringToFront();
-            //var SwappersTab = 1;
-
-            //if(test == 0)
-            //    NormalLaunch.Text = "Install";
-            //else if (test == 1)
-            //    NormalLaunch.Text = "Launch";
-            //else if (test == 2)
-            //{
-            //    NormalLaunch.Text = "Offline";
-            //    NormalLaunch.Enabled = false;
-            //}
-            //else if (test == 3)
-            //    NormalLaunch.Text = "Update";
-
-            //Configuration = new Configuration();
-            //Configuration.Open();
-
-            //string[] JuicyAccount = args.Split(' ');
-
-            //JuicyAccount[0] = Configuration.Username;
-            //JuicyAccount[1] = Configuration.Password;
-
         }
 
-        void create()
+        private void NewstabBtn_Click(object sender, EventArgs e)
         {
-            MongoCRUD db = new MongoCRUD("JuicySwapper");
-
-            db.InsertRecord("Users", new AccountInfo
+            JuicyUtilities_RPC.SetRPCLocation("News");
+            if (!Wrapper.Controls.Contains(NewsTab.Instance))
             {
-                username = "Test",
-                password = "Test",
-                HWID = "Test",
-                
-                
-            });
-        }
-
-        private void NormalLaunch_Click(object sender, EventArgs e)
-        {
-            var InstallFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Juicy Industries";
-            Process Swapper;
-
-            //if(NormalLaunch.Text == "Launch")
-            //{
-                
-            //    MessageBox.Show("Launching");
-
-            //    var arguments = $"OppyxPn89INV4HVH5z1x {Configuration.Username} {Configuration.Password}";
-
-            //    Swapper = new Process
-            //    {
-            //        StartInfo = new ProcessStartInfo($"{InstallFolder}\\JuicySwapper.exe", arguments)
-            //        {
-            //        }
-            //    };
-
-            //    Swapper.Start();
-
-            //}
-            //else if(NormalLaunch.Text == "Offline")
-            //{
-            //    MessageBox.Show("Offline");
-            //}
-            //else if (NormalLaunch.Text == "Update")
-            //{
-            //    MessageBox.Show("Updating");
-            //}
-        }
-
-        public void SetShow()
-        {
-            if (base.InvokeRequired)
-            {
-                Home.SetShowDelegate method = new Home.SetShowDelegate(this.SetShow);
-                base.Invoke(method);
-                return;
+                Wrapper.Controls.Add(NewsTab.Instance);
+                NewsTab.Instance.Dock = DockStyle.Fill;
+                NewsTab.Instance.BringToFront();
             }
-            base.Show();
+            else
+                NewsTab.Instance.BringToFront();
         }
 
-        // Token: 0x06000031 RID: 49 RVA: 0x00003B04 File Offset: 0x00001D04
-        public void SetHide()
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-            if (base.InvokeRequired)
-            {
-                Home.SetHideDelegate method = new Home.SetHideDelegate(this.SetHide);
-                base.Invoke(method);
-                return;
-            }
-            base.Hide();
-        }
-
-        private delegate void SetShowDelegate();
-
-        private delegate void SetHideDelegate();
-
-        public void startSwap()
-        {
-            timer1.Enabled = true;
-        }
-
-        public void timer1_Tick(object sender, EventArgs e)
-        {
-            if(Settings.Default.SwapperLaunched == true)
-            {
-                this.Hide();
-                timer1.Enabled = false;
-            }
-            if (Settings.Default.SwapperLaunched == false)
-            {
-                this.Show();
-                timer1.Enabled = false;
-            }
-        }
-
-        private void notifyIcon1_DoubleClick(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-
-            Settings.Default.SwapperLaunched = false;
-            Settings.Default.Save();
+            Application.Exit();
         }
     }
 }

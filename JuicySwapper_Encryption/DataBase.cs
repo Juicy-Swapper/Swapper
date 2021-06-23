@@ -14,7 +14,7 @@ namespace JuicySwapper_Encryption.Auth
 	{
 		private static readonly Encoding encoding = Encoding.UTF8;
 
-		public static string dbURL = "eyJpdiI6IlAzc0w0TlRHYUdUUVY4bDNER0dPSXc9PSIsInZhbHVlIjoiRDdVa3djVGYyUmlOZVJtNmFGbXJRaHJlcm8rVnl5L2FQNE1sbGw3eDV2WFZ5Q2RKdWpzUi9aNlZ4MXFWOHRVWlBJU0VHRFlKVDNGU0tmcUwzdHJhQktaeG9uellqVkFMNWxlakNBZy9jdC94TTErN0FiRUxxUmcxN3lIeklLY0JQZ2N6dXEvR0FyZDJLa0hhQSsya0h3PT0iLCJtYWMiOiJkODIxYzE3MjE1ZTlkYmU1NGQxYjliN2EzYTQ4NDc1NjUyNTAzYzk3ZmFkYzFlMjc3MjI0M2E5YzE4ZjVjMjQ4In0=";
+		public static string dbURL = "eyJpdiI6IlVsMFRpV2tyM1B1c2VvTjdmZDV2SEE9PSIsInZhbHVlIjoidzQ1T2I1VG1XUmpkTEIxbmxubXJlanRneGhSOVJDYzBmWlB0VG5JYWFVVDRVVGNIbnNFWldlTjMwcFlsOGRLNWc5NEM4UGdjOUVGN2NyMHQ5NUUxS0Y1U1dwdU5HYWJmSkxXS1lJUTVjV0NaVkJDbmdGdFB6VW1QdVV5M1V1Qzdyc20zMWRBck9CVnZxU3o3VklZcFB3PT0iLCJtYWMiOiIzYzQxNDM4NDcxZDczM2UzMWEzMjc1MzZlNGYzOTdhNTQ2YjI4OTViN2E2MzBjYmRmZTJkNGUyNDE5MGQyNjA1In0=";
 
 		public static string Encrypt(string plainText, string key)
 		{
@@ -74,7 +74,6 @@ namespace JuicySwapper_Encryption.Auth
 
 			try
 			{
-
 				var APIkey = new WebClient().DownloadString("https://0xkaede.xyz/Encryption/Key.Juicy");
 
 				var realkey = APIkey;

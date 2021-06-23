@@ -63,6 +63,166 @@ namespace JuicySwapper_Launcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Account_created {
+            get {
+                object obj = ResourceManager.GetObject("Account_created", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DataBaseInfoMesh {
+            get {
+                object obj = ResourceManager.GetObject("DataBaseInfoMesh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap freelogin {
+            get {
+                object obj = ResourceManager.GetObject("freelogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Guestlogin {
+            get {
+                object obj = ResourceManager.GetObject("Guestlogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HomePannel {
+            get {
+                object obj = ResourceManager.GetObject("HomePannel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HWIDfound {
+            get {
+                object obj = ResourceManager.GetObject("HWIDfound", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HWIDincorect {
+            get {
+                object obj = ResourceManager.GetObject("HWIDincorect", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hwidreset {
+            get {
+                object obj = ResourceManager.GetObject("hwidreset", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Juicylogin {
+            get {
+                object obj = ResourceManager.GetObject("Juicylogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Juicynoacc {
+            get {
+                object obj = ResourceManager.GetObject("Juicynoacc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Launcher_Home {
+            get {
+                object obj = ResourceManager.GetObject("Launcher_Home", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LaunchSwapper_Default_Install_icon {
+            get {
+                object obj = ResourceManager.GetObject("LaunchSwapper_Default_Install_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LaunchSwapper_Default_Install_popout_icon {
+            get {
+                object obj = ResourceManager.GetObject("LaunchSwapper_Default_Install_popout_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LaunchSwapper_Default_Launch_icon {
+            get {
+                object obj = ResourceManager.GetObject("LaunchSwapper_Default_Launch_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LaunchSwapper_Default_Offline_icon {
+            get {
+                object obj = ResourceManager.GetObject("LaunchSwapper_Default_Offline_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LaunchSwapper_Default_Update_icon {
+            get {
+                object obj = ResourceManager.GetObject("LaunchSwapper_Default_Update_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LaunchSwapper_icon {
             get {
                 object obj = ResourceManager.GetObject("LaunchSwapper_icon", resourceCulture);
@@ -73,9 +233,9 @@ namespace JuicySwapper_Launcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LaunchSwapperInstallDE_icon {
+        internal static System.Drawing.Bitmap LaunchSwapper_Install_icon {
             get {
-                object obj = ResourceManager.GetObject("LaunchSwapperInstallDE_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("LaunchSwapper_Install_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +243,9 @@ namespace JuicySwapper_Launcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LaunchSwapperInstallNOW_icon {
+        internal static System.Drawing.Bitmap LaunchSwapper_Install_PopOut_icon {
             get {
-                object obj = ResourceManager.GetObject("LaunchSwapperInstallNOW_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("LaunchSwapper_Install_PopOut_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +253,9 @@ namespace JuicySwapper_Launcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LaunchSwapperOFFLINE_icon {
+        internal static System.Drawing.Bitmap LaunchSwapper_OFFLINE_icon {
             get {
-                object obj = ResourceManager.GetObject("LaunchSwapperOFFLINE_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("LaunchSwapper_OFFLINE_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +263,9 @@ namespace JuicySwapper_Launcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LaunchSwapperUpdate_icon {
+        internal static System.Drawing.Bitmap LaunchSwapper_Update_icon {
             get {
-                object obj = ResourceManager.GetObject("LaunchSwapperUpdate_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("LaunchSwapper_Update_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +273,99 @@ namespace JuicySwapper_Launcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SwapperIConLaunch {
+        internal static System.Drawing.Bitmap LaunchSwapper_Update_Popout_icon {
             get {
-                object obj = ResourceManager.GetObject("SwapperIConLaunch", resourceCulture);
+                object obj = ResourceManager.GetObject("LaunchSwapper_Update_Popout_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LaunchSwapperDefault_icon {
+            get {
+                object obj = ResourceManager.GetObject("LaunchSwapperDefault_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap login {
+            get {
+                object obj = ResourceManager.GetObject("login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap paidlogin {
+            get {
+                object obj = ResourceManager.GetObject("paidlogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Passwordincorect {
+            get {
+                object obj = ResourceManager.GetObject("Passwordincorect", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap passwordinvalid {
+            get {
+                object obj = ResourceManager.GetObject("passwordinvalid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Signup {
+            get {
+                object obj = ResourceManager.GetObject("Signup", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Userfound {
+            get {
+                object obj = ResourceManager.GetObject("Userfound", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap userinvalid {
+            get {
+                object obj = ResourceManager.GetObject("userinvalid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Usernotfound {
+            get {
+                object obj = ResourceManager.GetObject("Usernotfound", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -36,12 +36,16 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\JuicySwapper\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="DiscordRPC">
+      <HintPath>..\JuicySwapper\DiscordRPC.dll</HintPath>
+    </Reference>
     <Reference Include="JuicySwapper_Encryption, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\JuicySwapper_Encryption\bin\Debug\JuicySwapper_Encryption.dll</HintPath>
+      <HintPath>bin\Debug\JuicySwapper_Encryption.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,7 +57,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Main\Classes\JuicyUtilities.cs.cs" />
     <Compile Include="Main\Classes\SwapperConfiguration.cs" />
+    <Compile Include="Main\Classes\vars.cs" />
+    <Compile Include="Main\GUI\HomeTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\HomeTab.Designer.cs">
+      <DependentUpon>HomeTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Loader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Loader.designer.cs">
+      <DependentUpon>Loader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\GUI\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,10 +86,34 @@
     </Compile>
     <Compile Include="Main\Classes\Mongodb.cs" />
     <Compile Include="Main\Classes\Program.cs" />
-    <Compile Include="Main\GUI\Setup.cs">
+    <Compile Include="Main\GUI\Message.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main\GUI\Setup.designer.cs">
+    <Compile Include="Main\GUI\Message.designer.cs">
+      <DependentUpon>Message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\NewsTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\NewsTab.Designer.cs">
+      <DependentUpon>NewsTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\Signup.designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\GUI\SwapperRightClick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\GUI\SwapperRightClick.Designer.cs">
+      <DependentUpon>SwapperRightClick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Normal\Setup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Normal\Setup.designer.cs">
       <DependentUpon>Setup.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\GUI\SwappersTab.cs">
@@ -81,10 +129,31 @@
       <DependentUpon>Updater.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Main\GUI\HomeTab.resx">
+      <DependentUpon>HomeTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Loader.resx">
+      <DependentUpon>Loader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main\GUI\Setup.resx">
+    <EmbeddedResource Include="Main\GUI\Message.resx">
+      <DependentUpon>Message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\NewsTab.resx">
+      <DependentUpon>NewsTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\GUI\SwapperRightClick.resx">
+      <DependentUpon>SwapperRightClick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Normal\Setup.resx">
       <DependentUpon>Setup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\GUI\SwappersTab.resx">
@@ -116,8 +185,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\LaunchSwapper_Default_Launch-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DiscordRichPresence">
+      <Version>1.0.175</Version>
+    </PackageReference>
     <PackageReference Include="Guna.UI2.WinForms">
       <Version>2.0.0.9</Version>
     </PackageReference>
@@ -145,6 +219,87 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LaunchSwapperInstallNOW-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaunchSwapper_Default_Update-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaunchSwapperDefault-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaunchSwapper_Default_Offline-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaunchSwapper_Default_Install-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaunchSwapper_Default_Install_popout-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Userfound1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userinvalid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usernotfound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Account created.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freelogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guestlogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HWIDfound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HWIDincorect1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hwidreset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Juicylogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Juicynoacc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paidlogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Passwordincorect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passwordinvalid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignUPPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Signup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Launcher-Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomePannel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datacolect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataBaseInfoMesh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

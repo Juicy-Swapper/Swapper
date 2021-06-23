@@ -118,22 +118,97 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="LaunchSwapperInstallDE_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LaunchSwapperInstallDE-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Account_created" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Account created.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LaunchSwapperInstallNOW_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LaunchSwapperInstallNOW-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DataBaseInfoMesh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DataBaseInfoMesh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LaunchSwapperOFFLINE_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LaunchSwapperOFFLINE-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="freelogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\freelogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LaunchSwapperUpdate_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LaunchSwapperUpdate-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Guestlogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Guestlogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomePannel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomePannel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HWIDfound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HWIDfound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HWIDincorect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HWIDincorect1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hwidreset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hwidreset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Juicylogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Juicylogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Juicynoacc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Juicynoacc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Launcher_Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Launcher-Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaunchSwapperDefault_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaunchSwapperDefault-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaunchSwapper_Default_Install_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaunchSwapper_Default_Install-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaunchSwapper_Default_Install_popout_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaunchSwapper_Default_Install_popout-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaunchSwapper_Default_Launch_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaunchSwapper_Default_Launch-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaunchSwapper_Default_Offline_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaunchSwapper_Default_Offline-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaunchSwapper_Default_Update_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaunchSwapper_Default_Update-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LaunchSwapper_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LaunchSwapper-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SwapperIConLaunch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="LaunchSwapper_Install_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaunchSwapperInstallDE-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaunchSwapper_Install_PopOut_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaunchSwapperInstallNOW-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaunchSwapper_OFFLINE_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaunchSwapperOFFLINE-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaunchSwapper_Update_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SwapperIConLaunch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LaunchSwapper_Update_Popout_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LaunchSwapperUpdate-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paidlogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paidlogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Passwordincorect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Passwordincorect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="passwordinvalid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\passwordinvalid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Signup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Signup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Userfound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Userfound1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="userinvalid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\userinvalid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Usernotfound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Usernotfound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

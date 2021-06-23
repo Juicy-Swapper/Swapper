@@ -15,30 +15,20 @@ namespace JuicySwapper_Encryption
 {
     public class Scan
     {
-        //Use uppercase letters
-        public static string[] windownames = { "DNSPY", "ILSPY", "DOTPEEK", "FIDDLER", "JUSTDECOMPILE" };
-        /// <summary>
-        /// Kills a programs just as C# Decompilers and Net Debuggers
-        /// </summary>
-        public static void KillSuspicious() => 
-            Process.GetProcesses().Where(x => windownames.Any(x.MainWindowTitle.ToUpper().Contains)).All(a => { a.Kill(); return true; });
-
         public static bool Check(string key)
         {
-            KillSuspicious();
-
-            if (File.Exists("JuicySwapper.exe"))
+            if (File.Exists("JuicySwapper_Launcher.exe"))
             {
                 using (WebClient webClient = new WebClient())
                 {
                     try
                     {
                         var StatusAPI = webClient.DownloadString("http://juicyswapper.xyz/api/status.json");
-                        Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
+                        Swapper StatusResponse = JsonConvert.DeserializeObject<Swapper>(StatusAPI);
                         webClient.Proxy = null;
 
-                        string text = StatusResponse.version;
-                        string fv = GetFileInfo("JuicySwapper.exe");
+                        string text = StatusResponse.Launcher.Version;
+                        string fv = GetFileInfo("JuicySwapper_Launcher.exe");
 
                         if (!text.Contains(fv))
                         {
@@ -47,9 +37,9 @@ namespace JuicySwapper_Encryption
                         }
                         else if (text.Contains(fv))
                         {
-                            string info = GetInfo("JuicySwapper.exe");
+                            string info = GetInfo("JuicySwapper_Launcher.exe");
 
-                            if (info.Contains("JuicySwapper Juicy Industries Copyright © Juicy Industries 2020"))
+                            if (info.Contains("JuicySwapper_Launcher Juicy Industries Copyright © Juicy Industries 2020"))
                             {
                                 return true;
                             }
@@ -61,7 +51,7 @@ namespace JuicySwapper_Encryption
                     }
                     catch
                     {
-                        MessageBox.Show("Couldnt download assets", "Juicy Swapper - Encryption", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Couldnt download assets", "Juicy Launcher - Encryption", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return false;
                     }
                 }
@@ -78,7 +68,7 @@ namespace JuicySwapper_Encryption
             }
             catch
             {
-                MessageBox.Show("Error number: 74832431", "Juicy Swapper - Encryption", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error number: 74832431", "Juicy Launcher - Encryption", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             string text = string.Format("{0}.{1}.{2}.{3}", new object[]
             {
@@ -99,7 +89,7 @@ namespace JuicySwapper_Encryption
             }
             catch
             {
-                MessageBox.Show("Error number: 74832434", "Juicy Swapper - Encryption", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error number: 74832434", "Juicy Launcher - Encryption", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             string text = string.Format("{0} {1} {2}", new object[]
             {
@@ -113,10 +103,17 @@ namespace JuicySwapper_Encryption
 
     class StatusAPI
     {
+        public class Swapper
+        {
+            [JsonProperty("JuicySwapper_Launcher")]
+            public Status Launcher { get; set; }
+        }
+
         public class Status
         {
             [JsonProperty("version")]
-            public string version { get; set; }
+            public string Version { get; set; }
+
         }
 
     }

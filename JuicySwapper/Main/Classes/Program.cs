@@ -3,6 +3,7 @@ using JuicySwapper.Main.GUI;
 using JuicySwapper.Properties;
 using Newtonsoft.Json;
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Threading;
@@ -20,12 +21,26 @@ namespace JuicySwapper
         [STAThread]
         static void Main(string[] args)
         {
-            
+            string Devinmg;
             if (Path.GetFileName(Path.GetDirectoryName(Environment.CurrentDirectory)) == "Temp")
             {
                 MessageBox.Show("Juicy Swapper cannot be run from WinRAR! Please extract to a folder and try again.", "Juicy Swapper", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Environment.Exit(0);
             }
+
+            try
+            {
+                var StatusAPI = new WebClient().DownloadString($"{API.HOST}/{API.Status}dsaddsa");
+                Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
+                Devinmg = StatusResponse.Version;
+            }
+            catch 
+            {
+                Process.Start($"{API.HOST}/{API.Discord}");
+                MessageBox.Show("Juicy Swapper now uses a new launcher please join our discord for more", "Juicy Swapper", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Environment.Exit(0);
+            }
+
 
             bool Debug = true; //true bypass //false release
 
