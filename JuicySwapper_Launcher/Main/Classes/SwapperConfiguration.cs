@@ -132,7 +132,7 @@ namespace JuicySwapper_Launcher
 
     class API
     {
-        public static string HOST = "http://juicyswapper.xyz";
+        public static string HOST = "https://juicyswapper.netlify.app";
         public static string Content = "api/content.json";
         public static string Status = "api/status.json";
         public static string Offsets = "api/offsets.json";

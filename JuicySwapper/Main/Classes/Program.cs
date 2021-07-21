@@ -30,7 +30,7 @@ namespace JuicySwapper
 
             try
             {
-                var StatusAPI = new WebClient().DownloadString($"{API.HOST}/{API.Status}dsaddsa");
+                var StatusAPI = new WebClient().DownloadString($"{API.HOST}/{API.Status}");
                 Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
                 Devinmg = StatusResponse.Version;
             }

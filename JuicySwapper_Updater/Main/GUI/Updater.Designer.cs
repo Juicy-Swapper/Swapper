@@ -35,6 +35,7 @@
             this.RoundForm = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.ProgressBar = new Bunifu.Framework.UI.BunifuProgressBar();
             this.InformationsLabel = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // UpdaterBG
@@ -77,6 +78,10 @@
             this.InformationsLabel.Size = new System.Drawing.Size(0, 12);
             this.InformationsLabel.TabIndex = 30;
             // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            // 
             // Updater
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -102,8 +107,9 @@
         private System.ComponentModel.BackgroundWorker UpdaterBG;
         private Bunifu.Framework.UI.BunifuDragControl DragControl;
         private Bunifu.Framework.UI.BunifuElipse RoundForm;
-        private Bunifu.Framework.UI.BunifuProgressBar ProgressBar;
         private System.Windows.Forms.Label InformationsLabel;
+        private Bunifu.Framework.UI.BunifuProgressBar ProgressBar;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

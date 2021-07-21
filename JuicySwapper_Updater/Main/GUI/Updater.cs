@@ -2,13 +2,16 @@
 using JuicySwapper_Updater.Main.Classes;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Threading;
 using System.Windows.Forms;
 using static JuicySwapper_Updater.Main.Classes.StatusAPI;
+using static System.Environment;
 
 namespace JuicySwapper_Updater.Main.GUI
 {
@@ -23,7 +26,10 @@ namespace JuicySwapper_Updater.Main.GUI
             Juicy.SetRPCAction("", "");
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
+
+   
             GetFileVer();
+            backgroundWorker1.RunWorkerAsync();
         }
 
         private void GetFileVer()
@@ -62,7 +68,7 @@ namespace JuicySwapper_Updater.Main.GUI
             {
                 try
                 {
-                    var StatusAPI = UpdaterClient.DownloadString("http://juicyswapper.xyz/api/status.json");
+                    var StatusAPI = UpdaterClient.DownloadString("http://juicyswapper.netlify.app/api/status.json");
                     Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
                     webClient.Proxy = null;
                     string text = StatusResponse.version;                  
@@ -94,7 +100,7 @@ namespace JuicySwapper_Updater.Main.GUI
                 {
                     File.Delete("JuicySwapper.exe");
                 }
-                var StatusAPI = UpdaterClient.DownloadString("http://juicyswapper.xyz/api/status.json");
+                var StatusAPI = UpdaterClient.DownloadString("http://juicyswapper.netlify.app/api/status.json");
                 Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
                 UpdaterClient.Proxy = null;
                 UpdaterClient.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed);
@@ -143,5 +149,48 @@ namespace JuicySwapper_Updater.Main.GUI
         {
 
         }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            var paks = $"{EpicGames.GetEpicInstallLocations().FirstOrDefault(x => x.AppName == "Fortnite")?.InstallLocation}\\FortniteGame\\Content\\Paks";
+            foreach (var pak in Directory.GetFiles(paks))
+            {
+                if (pak.Contains("100_s"))
+                {
+                    File.Delete(pak);
+                }
+            }
+        }
+    }
+}
+
+static class EpicGames
+{
+    public static List<Installation> GetEpicInstallLocations()
+    {
+        var path = Path.Combine(GetFolderPath(SpecialFolder.CommonApplicationData), "Epic\\UnrealEngineLauncher\\LauncherInstalled.dat");
+
+        if (!Directory.Exists(Path.GetDirectoryName(path)) || !File.Exists(path))
+            return null;
+
+        return JsonConvert.DeserializeObject<EpicInstallLocations>(File.ReadAllText(path)).InstallationList;
+    }
+
+    public class EpicInstallLocations
+    {
+        [JsonProperty("InstallationList")]
+        public List<Installation> InstallationList { get; set; }
+    }
+
+    public class Installation
+    {
+        [JsonProperty("InstallLocation")]
+        public string InstallLocation { get; set; }
+
+        [JsonProperty("AppVersion")]
+        public string AppVersion { get; set; }
+
+        [JsonProperty("AppName")]
+        public string AppName { get; set; }
     }
 }

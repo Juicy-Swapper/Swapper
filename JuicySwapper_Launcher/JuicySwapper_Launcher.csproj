@@ -41,7 +41,7 @@
     </Reference>
     <Reference Include="JuicySwapper_Encryption, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\JuicySwapper_Encryption.dll</HintPath>
+      <HintPath>..\..\..\..\..\JuicySwapper_Encryption.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -300,6 +300,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\DataBaseInfoMesh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PFP.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

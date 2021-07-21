@@ -27,7 +27,21 @@ namespace JuicySwapper_Launcher
         {
             InitializeComponent();
 
-            pictureBox1.ImageLocation = vars.PFP;
+            try
+            {
+                var request = WebRequest.Create(vars.PFP);
+                using (var response = request.GetResponse())
+                using (var stream = response.GetResponseStream())
+                {
+                    pictureBox1.Image = Bitmap.FromStream(stream);
+                }
+            }
+            catch
+            {
+                pictureBox1.Image = Resources.PFP;
+                MessageBox.Show("Looks like we couldnt find your pfp url/ get a connection please change it in your user settings");
+            }
+
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
             //makes pfp round

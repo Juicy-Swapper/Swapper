@@ -32,7 +32,7 @@
     <Setting Name="BlackShieldEnabled" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="MusicAct" Type="System.String" Scope="User">
+    <Setting Name="MusicAct" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="AccVerify" Type="System.String" Scope="User">

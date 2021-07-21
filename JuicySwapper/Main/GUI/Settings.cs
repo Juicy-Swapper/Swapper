@@ -4,6 +4,7 @@ using System;
 using System.Configuration;
 using System.IO;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace JuicySwapper.Main.GUI
@@ -14,7 +15,7 @@ namespace JuicySwapper.Main.GUI
         {
             InitializeComponent();
             ActiveControl = label1;
-            if (Settings.Default.MusicAct == "True")
+            if (Settings.Default.MusicAct == true)
                 MusicSwitch.Image = Resources.DesacMusic;
             else
                 MusicSwitch.Image = Resources.ActivMusic;
@@ -22,6 +23,39 @@ namespace JuicySwapper.Main.GUI
             var Pathtopaks = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
 
             label1.Text = Pathtopaks;
+        }
+
+        public static string swaptexts(string swap)
+        {
+            swap.ToLower();
+            if (swap.Contains("renegade"))
+            {
+                return "Renegade Raider";
+            }
+            if (swap.Contains("ghoulog"))
+            {
+                return "Ghoul Trooper";
+            }
+            if (swap.Contains("wildcat"))
+            {
+                return "Wild Cat";
+            }
+            return "Nothing";
+        }
+
+        string AddSpaces(string text)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+                return "";
+            StringBuilder newText = new StringBuilder(text.Length * 2);
+            newText.Append(text[0]);
+            for (int i = 1; i < text.Length; i++)
+            {
+                if (char.IsUpper(text[i]) && text[i - 1] != ' ')
+                    newText.Append(' ');
+                newText.Append(text[i]);
+            }
+            return newText.ToString();
         }
 
         private void ConvertitemsBtn_Click(object sender, EventArgs e)
@@ -35,6 +69,46 @@ namespace JuicySwapper.Main.GUI
 
             int num = 0;
             string text = "";
+
+            //foreach (SettingsProperty currentProperty in Settings.Default.Properties)
+            //{
+            //    if (!currentProperty.Name.Contains("MusicAct"))
+            //    {
+            //        if (currentProperty.PropertyType == typeof(bool))
+            //        {
+            //            if((bool)Settings.Default[currentProperty.Name] == true)
+            //            {
+            //                var name = currentProperty.Name.Replace("Enabled", ",");
+            //                var swaps = swaptexts(currentProperty.Name);
+            //                if (swaps != "Nothing")
+            //                {
+            //                    num++;
+            //                    text += $"{swaps} ";
+            //                }
+            //                else
+            //                {
+            //                    num++;
+            //                    text += AddSpaces($"{name} ");
+
+            //                }
+            //            }
+            //        }
+
+            //    }
+            //}
+
+            //switch (num)
+            //{
+            //    case 0:
+            //        MessageBox.Show("You don't have any converted items.", "Juicy Swapper - Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //        break;
+
+            //    default:
+            //        MessageBox.Show($"You currently have {num} item(s) converted: {text.Remove(text.Length - 1)}.", "Juicy Swapper - Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //        break;
+            //}
+
+            //return;
 
 
             if (Settings.Default.BlackShieldEnabled == true)
@@ -686,17 +760,17 @@ namespace JuicySwapper.Main.GUI
         private void MusicSwitch_Click(object sender, EventArgs e)
         {
             JuicyUtilities MusicController = new JuicyUtilities();
-            if (Settings.Default.MusicAct != "True")
+            if (Settings.Default.MusicAct != true)
             {
-                MusicController.MusicControl("True");
-                Settings.Default.MusicAct = "True";
+                MusicController.MusicControl(true);
+                Settings.Default.MusicAct = true;
                 Settings.Default.Save();
                 MusicSwitch.Image = Resources.DesacMusic;
             }
             else
             {
-                MusicController.MusicControl("False");
-                Settings.Default.MusicAct = "False";
+                MusicController.MusicControl(false);
+                Settings.Default.MusicAct = false;
                 Settings.Default.Save();
                 MusicSwitch.Image = Resources.ActivMusic;
             }

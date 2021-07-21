@@ -45,14 +45,20 @@ namespace JuicySwapper_Launcher.Main.GUI
 
                 Bunifu.Framework.UI.BunifuFlatButton user = new Bunifu.Framework.UI.BunifuFlatButton();
 
-                var request = WebRequest.Create(rec.ProfilePicture);
-                using (var response = request.GetResponse())
-                using (var stream = response.GetResponseStream())
+                try
                 {
-                    user.Iconimage = Bitmap.FromStream(stream);
+                    var request = WebRequest.Create(rec.ProfilePicture);
+                    using (var response = request.GetResponse())
+                    using (var stream = response.GetResponseStream())
+                    {
+                        user.Iconimage = Bitmap.FromStream(stream);
+                    }
                 }
-
-
+                catch
+                {
+                    user.Iconimage = Properties.Resources.PFP;
+                }
+                
                 user.Size = new Size(165, 45);
                 user.IconZoom = 100;
                 user.Text = $"    {rec.username}";

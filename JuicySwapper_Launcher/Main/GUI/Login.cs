@@ -119,6 +119,8 @@ namespace JuicySwapper_Launcher.Main.GUI
 
             vars.PFP = onerec.ProfilePicture;
 
+
+
             if (KeppSignedIn.Checked == true)
             {
                 Settings.Default.KeepSingedin = true;

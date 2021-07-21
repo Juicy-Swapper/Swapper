@@ -1,5 +1,6 @@
 ﻿using JuicySwapper_Updater.Main.GUI;
 using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace JuicySwapper_Updater.Main.Classes
@@ -10,11 +11,23 @@ namespace JuicySwapper_Updater.Main.Classes
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main(string[] args)
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Updater());
+            try
+            {
+
+                
+
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new Updater());
+            }
+            catch
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new Updater());
+            }
         }
     }
 }

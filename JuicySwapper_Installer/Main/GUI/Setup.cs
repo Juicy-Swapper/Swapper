@@ -89,7 +89,7 @@ namespace JuicySwapper_Installer.Main.GUI
         {
             string InstallFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Juicy Industries";
 
-            var StatusAPI = new WebClient().DownloadString("http://juicyswapper.xyz/api/status.json");
+            var StatusAPI = new WebClient().DownloadString("http://juicyswapper.netlify.app/api/status.json");
             Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
 
             WebClient ProgramClient = new WebClient();
@@ -108,7 +108,7 @@ namespace JuicySwapper_Installer.Main.GUI
             string InstallFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Juicy Industries";
             try
             {
-                var StatusAPI = SetupClient.DownloadString("http://juicyswapper.xyz/api/status.json");
+                var StatusAPI = SetupClient.DownloadString("http://juicyswapper.netlify.app/api/status.json");
                 Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
                 SetupClient.Proxy = null;
                 SetupClient.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed);
@@ -143,7 +143,7 @@ namespace JuicySwapper_Installer.Main.GUI
 
             try
             {
-                var StatusAPI = SetupClient.DownloadString("http://juicyswapper.xyz/api/status.json");
+                var StatusAPI = SetupClient.DownloadString("http://juicyswapper.netlify.app/api/status.json");
                 Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
                 SetupClient.Proxy = null;
                 SetupClient.DownloadFileCompleted += new AsyncCompletedEventHandler(CompletedUpdater);

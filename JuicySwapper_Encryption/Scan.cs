@@ -23,7 +23,7 @@ namespace JuicySwapper_Encryption
                 {
                     try
                     {
-                        var StatusAPI = webClient.DownloadString("http://juicyswapper.xyz/api/status.json");
+                        var StatusAPI = webClient.DownloadString("https://juicyswapper.netlify.app/api/status.json");
                         Swapper StatusResponse = JsonConvert.DeserializeObject<Swapper>(StatusAPI);
                         webClient.Proxy = null;
 

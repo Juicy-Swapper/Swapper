@@ -17,11 +17,6 @@ namespace JuicySwapper
         {
             InitializeComponent();
 
-            Settings.Default.InstallationPath = EpicGames.GetEpicInstallLocations().FirstOrDefault(x => x.AppName == "Fortnite")?.InstallLocation;
-
-            Settings.Default.pakPath = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
-            Settings.Default.Save();
-
             label1.Text = $"Welcome, {Settings.Default.Name}";
 
             JuicyUtilities.SetRPCAction("In Dashboard", "dashimg");

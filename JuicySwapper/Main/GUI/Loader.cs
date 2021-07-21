@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using static JuicySwapper.Api.SatusAPI;
 using System.Threading;
 using JuicySwapper.Api;
+using System.Linq;
 
 namespace JuicySwapper.Main.GUI
 {
@@ -21,6 +22,10 @@ namespace JuicySwapper.Main.GUI
         {
 
             JuicyUtilities.SetRPCSTAT2($"Loading - 0%");
+            Settings.Default.InstallationPath = EpicGames.GetEpicInstallLocations().FirstOrDefault(x => x.AppName == "Fortnite")?.InstallLocation;
+            CheckForIllegalCrossThreadCalls = false;
+            Settings.Default.pakPath = $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks";
+            Settings.Default.Save();
             InitializeComponent();
             JuicyUtilities.DiscordRPC.Initialize();
             JuicyUtilities.CloseEpicProcesses();
@@ -46,10 +51,10 @@ namespace JuicySwapper.Main.GUI
                 timer1.Enabled = false;
                 Hide();
 
-                if (Settings.Default.MusicAct == "True")
+                if (Settings.Default.MusicAct == true)
                 {
                     JuicyUtilities MusicController = new JuicyUtilities();
-                    MusicController.MusicControl("True");
+                    MusicController.MusicControl(true);
                 }
 
                 string[] args = Settings.Default.LauncherArgs.Split(' ');
@@ -68,20 +73,28 @@ namespace JuicySwapper.Main.GUI
 
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
-            //removed accounts as of some person deleted the whole thing
-
             if (!File.Exists("JuicySwapper_Encryption.dll"))
                 Encryption();
 
-            //MongoCRUD db = new MongoCRUD("JuicySwapper");
+            SwapUtilities SwapUtilities = new SwapUtilities();
 
-            //db.Accounts<UserModel>("Juicy", true); //
+            foreach (var file in SwapUtilities.GetSwapPath())
+            {
+                if (!File.Exists(file))
+                {
+                    var toc = file.Replace(".ucas", ".utoc");
+                    var pak = file.Replace(".ucas", ".pak");
+                    var sig = file.Replace(".ucas", ".sig");
 
-            //long temp = db.Accounts<UserModel>("Juicy", false);
+                    File.Copy(file.Replace("100", "10"), file);
+                    File.Copy(toc.Replace("100", "10"), toc);
+                    File.Copy(pak.Replace("100", "10"), pak);
+                    File.Copy(sig.Replace("100", "10"), sig);
+                }
+            }
 
-            //long temp1 = db.Accounts<UserModel>("Juicy", true);
 
-            //Num = temp + temp1;
+
         }
 
         public static void Encryption()
@@ -101,59 +114,14 @@ namespace JuicySwapper.Main.GUI
                 MessageBox.Show("Encryption did not downloaded!");
         }
 
-        private void Loader_Load(object sender, EventArgs e)
+        
+
+        void fortniteversion()
         {
-
-            String pakPath = Settings.Default.pakPath;
-            String pak = pakPath + "\\pakchunk100_s3-WindowsClient.ucas";
-
-            if (!File.Exists(pak))
-            {
-                //ucas
-                File.Copy(pakPath + "\\pakchunk10_s3-WindowsClient.ucas", pakPath + "\\pakchunk100_s3-WindowsClient.ucas");
-
-                File.Copy(pakPath + "\\pakchunk10_s4-WindowsClient.ucas", pakPath + "\\pakchunk100_s4-WindowsClient.ucas");
-
-                File.Copy(pakPath + "\\pakchunk10_s5-WindowsClient.ucas", pakPath + "\\pakchunk100_s5-WindowsClient.ucas");
-
-                File.Copy(pakPath + "\\pakchunk10_s17-WindowsClient.ucas", pakPath + "\\pakchunk100_s17-WindowsClient.ucas");
-
-                File.Copy(pakPath + "\\pakchunk10_s22-WindowsClient.ucas", pakPath + "\\pakchunk100_s22-WindowsClient.ucas");
-
-                //utoc
-                File.Copy(pakPath + "\\pakchunk10_s3-WindowsClient.utoc", pakPath + "\\pakchunk100_s3-WindowsClient.utoc");
-
-                File.Copy(pakPath + "\\pakchunk10_s4-WindowsClient.utoc", pakPath + "\\pakchunk100_s4-WindowsClient.utoc");
-
-                File.Copy(pakPath + "\\pakchunk10_s5-WindowsClient.utoc", pakPath + "\\pakchunk100_s5-WindowsClient.utoc");
-
-                File.Copy(pakPath + "\\pakchunk10_s17-WindowsClient.utoc", pakPath + "\\pakchunk100_s17-WindowsClient.utoc");
-
-                File.Copy(pakPath + "\\pakchunk10_s22-WindowsClient.utoc", pakPath + "\\pakchunk100_s22-WindowsClient.utoc");
-
-                //pak
-                File.Copy(pakPath + "\\pakchunk10_s3-WindowsClient.pak", pakPath + "\\pakchunk100_s3-WindowsClient.pak");
-
-                File.Copy(pakPath + "\\pakchunk10_s4-WindowsClient.pak", pakPath + "\\pakchunk100_s4-WindowsClient.pak");
-
-                File.Copy(pakPath + "\\pakchunk10_s5-WindowsClient.pak", pakPath + "\\pakchunk100_s5-WindowsClient.pak");
-
-                File.Copy(pakPath + "\\pakchunk10_s17-WindowsClient.pak", pakPath + "\\pakchunk100_s17-WindowsClient.pak");
-
-                File.Copy(pakPath + "\\pakchunk10_s22-WindowsClient.pak", pakPath + "\\pakchunk100_s22-WindowsClient.pak");
-
-                //sig
-                File.Copy(pakPath + "\\pakchunk10_s3-WindowsClient.sig", pakPath + "\\pakchunk100_s3-WindowsClient.sig");
-
-                File.Copy(pakPath + "\\pakchunk10_s4-WindowsClient.sig", pakPath + "\\pakchunk100_s4-WindowsClient.sig");
-
-                File.Copy(pakPath + "\\pakchunk10_s5-WindowsClient.sig", pakPath + "\\pakchunk100_s5-WindowsClient.sig");
-
-                File.Copy(pakPath + "\\pakchunk10_s17-WindowsClient.sig", pakPath + "\\pakchunk100_s17-WindowsClient.sig");
-
-                File.Copy(pakPath + "\\pakchunk10_s22-WindowsClient.sig", pakPath + "\\pakchunk100_s22-WindowsClient.sig");
-
-            }
+            var stringer = EpicGames.GetEpicInstallLocations().FirstOrDefault(x => x.AppName == "Fortnite")?.AppVersion;
+            MessageBox.Show(stringer);
+            Clipboard.SetText(stringer);
         }
+
     }
 }

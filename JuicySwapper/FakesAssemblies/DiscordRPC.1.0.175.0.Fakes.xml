@@ -1,0 +1,2936 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DiscordRPC.1.0.175.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:DiscordRPC.Exceptions.Fakes.ShimBadPresenceException">
+            <summary>Shim type of DiscordRPC.Exceptions.BadPresenceException</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimBadPresenceException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimBadPresenceException.#ctor(DiscordRPC.Exceptions.BadPresenceException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Exceptions.Fakes.ShimBadPresenceException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimBadPresenceException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimBadPresenceException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimBadPresenceException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimBadPresenceException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimBadPresenceException.ConstructorString">
+            <summary>Sets the Shim of BadPresenceException.BadPresenceException(String message)</summary>
+        </member>
+        <member name="T:DiscordRPC.Exceptions.Fakes.ShimInvalidConfigurationException">
+            <summary>Shim type of DiscordRPC.Exceptions.InvalidConfigurationException</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimInvalidConfigurationException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimInvalidConfigurationException.#ctor(DiscordRPC.Exceptions.InvalidConfigurationException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Exceptions.Fakes.ShimInvalidConfigurationException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimInvalidConfigurationException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimInvalidConfigurationException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimInvalidConfigurationException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimInvalidConfigurationException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimInvalidConfigurationException.ConstructorString">
+            <summary>Sets the Shim of InvalidConfigurationException.InvalidConfigurationException(String message)</summary>
+        </member>
+        <member name="T:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException">
+            <summary>Shim type of DiscordRPC.Exceptions.StringOutOfRangeException</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.#ctor(DiscordRPC.Exceptions.StringOutOfRangeException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.AllInstances.MaximumLengthGet">
+            <summary>Sets the Shim of StringOutOfRangeException.get_MaximumLength()</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.AllInstances.MaximumLengthSetInt32">
+            <summary>Sets the Shim of StringOutOfRangeException.set_MaximumLength(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.AllInstances.MinimumLengthGet">
+            <summary>Sets the Shim of StringOutOfRangeException.get_MinimumLength()</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.AllInstances.MinimumLengthSetInt32">
+            <summary>Sets the Shim of StringOutOfRangeException.set_MinimumLength(Int32 value)</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.ConstructorInt32">
+            <summary>Sets the Shim of StringOutOfRangeException.StringOutOfRangeException(Int32 max)</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.ConstructorInt32Int32">
+            <summary>Sets the Shim of StringOutOfRangeException.StringOutOfRangeException(Int32 minumum, Int32 max)</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.ConstructorStringInt32Int32">
+            <summary>Sets the Shim of StringOutOfRangeException.StringOutOfRangeException(String message, Int32 min, Int32 max)</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.MaximumLengthGet">
+            <summary>Sets the Shim of StringOutOfRangeException.get_MaximumLength()</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.MaximumLengthSetInt32">
+            <summary>Sets the Shim of StringOutOfRangeException.set_MaximumLength(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.MinimumLengthGet">
+            <summary>Sets the Shim of StringOutOfRangeException.get_MinimumLength()</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimStringOutOfRangeException.MinimumLengthSetInt32">
+            <summary>Sets the Shim of StringOutOfRangeException.set_MinimumLength(Int32 value)</summary>
+        </member>
+        <member name="T:DiscordRPC.Exceptions.Fakes.ShimUninitializedException">
+            <summary>Shim type of DiscordRPC.Exceptions.UninitializedException</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimUninitializedException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimUninitializedException.#ctor(DiscordRPC.Exceptions.UninitializedException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Exceptions.Fakes.ShimUninitializedException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimUninitializedException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimUninitializedException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimUninitializedException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Exceptions.Fakes.ShimUninitializedException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimUninitializedException.Constructor">
+            <summary>Sets the Shim of UninitializedException.UninitializedException()</summary>
+        </member>
+        <member name="P:DiscordRPC.Exceptions.Fakes.ShimUninitializedException.ConstructorString">
+            <summary>Sets the Shim of UninitializedException.UninitializedException(String message)</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimAssets">
+            <summary>Shim type of DiscordRPC.Assets</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimAssets.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimAssets.#ctor(DiscordRPC.Assets)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimAssets.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.AllInstances.LargeImageIDGet">
+            <summary>Sets the Shim of Assets.get_LargeImageID()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.AllInstances.LargeImageKeyGet">
+            <summary>Sets the Shim of Assets.get_LargeImageKey()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.AllInstances.LargeImageKeySetString">
+            <summary>Sets the Shim of Assets.set_LargeImageKey(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.AllInstances.LargeImageTextGet">
+            <summary>Sets the Shim of Assets.get_LargeImageText()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.AllInstances.LargeImageTextSetString">
+            <summary>Sets the Shim of Assets.set_LargeImageText(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.AllInstances.MergeAssets">
+            <summary>Sets the Shim of Assets.Merge(Assets other)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.AllInstances.SmallImageIDGet">
+            <summary>Sets the Shim of Assets.get_SmallImageID()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.AllInstances.SmallImageKeyGet">
+            <summary>Sets the Shim of Assets.get_SmallImageKey()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.AllInstances.SmallImageKeySetString">
+            <summary>Sets the Shim of Assets.set_SmallImageKey(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.AllInstances.SmallImageTextGet">
+            <summary>Sets the Shim of Assets.get_SmallImageText()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.AllInstances.SmallImageTextSetString">
+            <summary>Sets the Shim of Assets.set_SmallImageText(String value)</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimAssets.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimAssets.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.Constructor">
+            <summary>Sets the Shim of Assets.Assets()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.LargeImageIDGet">
+            <summary>Sets the Shim of Assets.get_LargeImageID()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.LargeImageKeyGet">
+            <summary>Sets the Shim of Assets.get_LargeImageKey()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.LargeImageKeySetString">
+            <summary>Sets the Shim of Assets.set_LargeImageKey(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.LargeImageTextGet">
+            <summary>Sets the Shim of Assets.get_LargeImageText()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.LargeImageTextSetString">
+            <summary>Sets the Shim of Assets.set_LargeImageText(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.MergeAssets">
+            <summary>Sets the Shim of Assets.Merge(Assets other)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.SmallImageIDGet">
+            <summary>Sets the Shim of Assets.get_SmallImageID()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.SmallImageKeyGet">
+            <summary>Sets the Shim of Assets.get_SmallImageKey()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.SmallImageKeySetString">
+            <summary>Sets the Shim of Assets.set_SmallImageKey(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.SmallImageTextGet">
+            <summary>Sets the Shim of Assets.get_SmallImageText()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimAssets.SmallImageTextSetString">
+            <summary>Sets the Shim of Assets.set_SmallImageText(String value)</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimBaseRichPresence">
+            <summary>Shim type of DiscordRPC.BaseRichPresence</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimBaseRichPresence.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimBaseRichPresence.#ctor(DiscordRPC.BaseRichPresence)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.AssetsGet">
+            <summary>Sets the Shim of BaseRichPresence.get_Assets()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.AssetsSetAssets">
+            <summary>Sets the Shim of BaseRichPresence.set_Assets(Assets value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.DetailsGet">
+            <summary>Sets the Shim of BaseRichPresence.get_Details()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.DetailsSetString">
+            <summary>Sets the Shim of BaseRichPresence.set_Details(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.HasAssets">
+            <summary>Sets the Shim of BaseRichPresence.HasAssets()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.HasParty">
+            <summary>Sets the Shim of BaseRichPresence.HasParty()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.HasSecrets">
+            <summary>Sets the Shim of BaseRichPresence.HasSecrets()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.HasTimestamps">
+            <summary>Sets the Shim of BaseRichPresence.HasTimestamps()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.InstanceGet">
+            <summary>Sets the Shim of BaseRichPresence.get_Instance()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.InstanceSetBoolean">
+            <summary>Sets the Shim of BaseRichPresence.set_Instance(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.MatchesRichPresence">
+            <summary>Sets the Shim of BaseRichPresence.Matches(RichPresence other)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.PartyGet">
+            <summary>Sets the Shim of BaseRichPresence.get_Party()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.PartySetParty">
+            <summary>Sets the Shim of BaseRichPresence.set_Party(Party value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.SecretsGet">
+            <summary>Sets the Shim of BaseRichPresence.get_Secrets()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.SecretsSetSecrets">
+            <summary>Sets the Shim of BaseRichPresence.set_Secrets(Secrets value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.StateGet">
+            <summary>Sets the Shim of BaseRichPresence.get_State()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.StateSetString">
+            <summary>Sets the Shim of BaseRichPresence.set_State(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.TimestampsGet">
+            <summary>Sets the Shim of BaseRichPresence.get_Timestamps()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AllInstances.TimestampsSetTimestamps">
+            <summary>Sets the Shim of BaseRichPresence.set_Timestamps(Timestamps value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AssetsGet">
+            <summary>Sets the Shim of BaseRichPresence.get_Assets()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.AssetsSetAssets">
+            <summary>Sets the Shim of BaseRichPresence.set_Assets(Assets value)</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimBaseRichPresence.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimBaseRichPresence.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.Constructor">
+            <summary>Sets the Shim of BaseRichPresence.BaseRichPresence()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.DetailsGet">
+            <summary>Sets the Shim of BaseRichPresence.get_Details()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.DetailsSetString">
+            <summary>Sets the Shim of BaseRichPresence.set_Details(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.HasAssets">
+            <summary>Sets the Shim of BaseRichPresence.HasAssets()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.HasParty">
+            <summary>Sets the Shim of BaseRichPresence.HasParty()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.HasSecrets">
+            <summary>Sets the Shim of BaseRichPresence.HasSecrets()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.HasTimestamps">
+            <summary>Sets the Shim of BaseRichPresence.HasTimestamps()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.ImplicitOpBaseRichPresenceBoolean">
+            <summary>Sets the Shim of BaseRichPresence.op_Implicit(BaseRichPresence presesnce)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.InstanceGet">
+            <summary>Sets the Shim of BaseRichPresence.get_Instance()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.InstanceSetBoolean">
+            <summary>Sets the Shim of BaseRichPresence.set_Instance(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.MatchesRichPresence">
+            <summary>Sets the Shim of BaseRichPresence.Matches(RichPresence other)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.PartyGet">
+            <summary>Sets the Shim of BaseRichPresence.get_Party()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.PartySetParty">
+            <summary>Sets the Shim of BaseRichPresence.set_Party(Party value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.SecretsGet">
+            <summary>Sets the Shim of BaseRichPresence.get_Secrets()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.SecretsSetSecrets">
+            <summary>Sets the Shim of BaseRichPresence.set_Secrets(Secrets value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.StateGet">
+            <summary>Sets the Shim of BaseRichPresence.get_State()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.StateSetString">
+            <summary>Sets the Shim of BaseRichPresence.set_State(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.TimestampsGet">
+            <summary>Sets the Shim of BaseRichPresence.get_Timestamps()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.TimestampsSetTimestamps">
+            <summary>Sets the Shim of BaseRichPresence.set_Timestamps(Timestamps value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimBaseRichPresence.ValidateStringStringStringOutInt32Encoding">
+            <summary>Sets the Shim of BaseRichPresence.ValidateString(String str, String&amp; result, Int32 bytes, Encoding encoding)</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimButton">
+            <summary>Shim type of DiscordRPC.Button</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimButton.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimButton.#ctor(DiscordRPC.Button)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimButton.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimButton.AllInstances.LabelGet">
+            <summary>Sets the Shim of Button.get_Label()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimButton.AllInstances.LabelSetString">
+            <summary>Sets the Shim of Button.set_Label(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimButton.AllInstances.UrlGet">
+            <summary>Sets the Shim of Button.get_Url()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimButton.AllInstances.UrlSetString">
+            <summary>Sets the Shim of Button.set_Url(String value)</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimButton.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimButton.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimButton.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimButton.Constructor">
+            <summary>Sets the Shim of Button.Button()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimButton.LabelGet">
+            <summary>Sets the Shim of Button.get_Label()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimButton.LabelSetString">
+            <summary>Sets the Shim of Button.set_Label(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimButton.UrlGet">
+            <summary>Sets the Shim of Button.get_Url()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimButton.UrlSetString">
+            <summary>Sets the Shim of Button.set_Url(String value)</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimConfiguration">
+            <summary>Shim type of DiscordRPC.Configuration</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimConfiguration.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimConfiguration.#ctor(DiscordRPC.Configuration)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimConfiguration.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimConfiguration.AllInstances.ApiEndpointGet">
+            <summary>Sets the Shim of Configuration.get_ApiEndpoint()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimConfiguration.AllInstances.ApiEndpointSetString">
+            <summary>Sets the Shim of Configuration.set_ApiEndpoint(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimConfiguration.AllInstances.CdnHostGet">
+            <summary>Sets the Shim of Configuration.get_CdnHost()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimConfiguration.AllInstances.CdnHostSetString">
+            <summary>Sets the Shim of Configuration.set_CdnHost(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimConfiguration.AllInstances.EnviromentGet">
+            <summary>Sets the Shim of Configuration.get_Enviroment()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimConfiguration.AllInstances.EnviromentSetString">
+            <summary>Sets the Shim of Configuration.set_Enviroment(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimConfiguration.ApiEndpointGet">
+            <summary>Sets the Shim of Configuration.get_ApiEndpoint()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimConfiguration.ApiEndpointSetString">
+            <summary>Sets the Shim of Configuration.set_ApiEndpoint(String value)</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimConfiguration.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimConfiguration.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimConfiguration.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimConfiguration.CdnHostGet">
+            <summary>Sets the Shim of Configuration.get_CdnHost()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimConfiguration.CdnHostSetString">
+            <summary>Sets the Shim of Configuration.set_CdnHost(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimConfiguration.Constructor">
+            <summary>Sets the Shim of Configuration.Configuration()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimConfiguration.EnviromentGet">
+            <summary>Sets the Shim of Configuration.get_Enviroment()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimConfiguration.EnviromentSetString">
+            <summary>Sets the Shim of Configuration.set_Enviroment(String value)</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimDiscordRpcClient">
+            <summary>Shim type of DiscordRPC.DiscordRpcClient</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimDiscordRpcClient.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimDiscordRpcClient.#ctor(DiscordRPC.DiscordRpcClient)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.ApplicationIDGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_ApplicationID()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.ApplicationIDSetString">
+            <summary>Sets the Shim of DiscordRpcClient.set_ApplicationID(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.AutoEventsGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_AutoEvents()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.AutoEventsSetBoolean">
+            <summary>Sets the Shim of DiscordRpcClient.set_AutoEvents(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.ClearPresence">
+            <summary>Sets the Shim of DiscordRpcClient.ClearPresence()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.ConfigurationGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_Configuration()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.ConfigurationSetConfiguration">
+            <summary>Sets the Shim of DiscordRpcClient.set_Configuration(Configuration value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.CurrentPresenceGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_CurrentPresence()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.CurrentPresenceSetRichPresence">
+            <summary>Sets the Shim of DiscordRpcClient.set_CurrentPresence(RichPresence value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.CurrentUserGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_CurrentUser()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.CurrentUserSetUser">
+            <summary>Sets the Shim of DiscordRpcClient.set_CurrentUser(User value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.Deinitialize">
+            <summary>Sets the Shim of DiscordRpcClient.Deinitialize()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.Dispose">
+            <summary>Sets the Shim of DiscordRpcClient.Dispose()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.HasRegisteredUriSchemeGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_HasRegisteredUriScheme()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.HasRegisteredUriSchemeSetBoolean">
+            <summary>Sets the Shim of DiscordRpcClient.set_HasRegisteredUriScheme(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.Initialize">
+            <summary>Sets the Shim of DiscordRpcClient.Initialize()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.Invoke">
+            <summary>Sets the Shim of DiscordRpcClient.Invoke()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.IsDisposedGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_IsDisposed()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.IsDisposedSetBoolean">
+            <summary>Sets the Shim of DiscordRpcClient.set_IsDisposed(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.IsInitializedGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_IsInitialized()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.IsInitializedSetBoolean">
+            <summary>Sets the Shim of DiscordRpcClient.set_IsInitialized(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.LoggerGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_Logger()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.LoggerSetILogger">
+            <summary>Sets the Shim of DiscordRpcClient.set_Logger(ILogger value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.MaxQueueSizeGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_MaxQueueSize()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.MaxQueueSizeSetInt32">
+            <summary>Sets the Shim of DiscordRpcClient.set_MaxQueueSize(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnCloseAddOnCloseEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnClose(OnCloseEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnCloseRemoveOnCloseEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnClose(OnCloseEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnConnectionEstablishedAddOnConnectionEstablishedEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnConnectionEstablished(OnConnectionEstablishedEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnConnectionEstablishedRemoveOnConnectionEstablishedEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnConnectionEstablished(OnConnectionEstablishedEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnConnectionFailedAddOnConnectionFailedEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnConnectionFailed(OnConnectionFailedEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnConnectionFailedRemoveOnConnectionFailedEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnConnectionFailed(OnConnectionFailedEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnErrorAddOnErrorEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnError(OnErrorEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnErrorRemoveOnErrorEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnError(OnErrorEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnJoinAddOnJoinEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnJoin(OnJoinEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnJoinRemoveOnJoinEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnJoin(OnJoinEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnJoinRequestedAddOnJoinRequestedEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnJoinRequested(OnJoinRequestedEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnJoinRequestedRemoveOnJoinRequestedEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnJoinRequested(OnJoinRequestedEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnPresenceUpdateAddOnPresenceUpdateEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnPresenceUpdate(OnPresenceUpdateEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnPresenceUpdateRemoveOnPresenceUpdateEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnPresenceUpdate(OnPresenceUpdateEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnReadyAddOnReadyEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnReady(OnReadyEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnReadyRemoveOnReadyEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnReady(OnReadyEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnRpcMessageAddOnRpcMessageEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnRpcMessage(OnRpcMessageEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnRpcMessageRemoveOnRpcMessageEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnRpcMessage(OnRpcMessageEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnSpectateAddOnSpectateEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnSpectate(OnSpectateEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnSpectateRemoveOnSpectateEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnSpectate(OnSpectateEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnSubscribeAddOnSubscribeEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnSubscribe(OnSubscribeEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnSubscribeRemoveOnSubscribeEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnSubscribe(OnSubscribeEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnUnsubscribeAddOnUnsubscribeEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnUnsubscribe(OnUnsubscribeEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.OnUnsubscribeRemoveOnUnsubscribeEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnUnsubscribe(OnUnsubscribeEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.ProcessIDGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_ProcessID()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.ProcessIDSetInt32">
+            <summary>Sets the Shim of DiscordRpcClient.set_ProcessID(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.ProcessMessageIMessage">
+            <summary>Sets the Shim of DiscordRpcClient.ProcessMessage(IMessage message)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.RegisterUriSchemeStringString">
+            <summary>Sets the Shim of DiscordRpcClient.RegisterUriScheme(String steamAppID, String executable)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.RespondJoinRequestMessageBoolean">
+            <summary>Sets the Shim of DiscordRpcClient.Respond(JoinRequestMessage request, Boolean acceptRequest)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.SetPresenceRichPresence">
+            <summary>Sets the Shim of DiscordRpcClient.SetPresence(RichPresence presence)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.SetSubscriptionEventType">
+            <summary>Sets the Shim of DiscordRpcClient.SetSubscription(EventType type)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.ShutdownOnlyGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_ShutdownOnly()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.ShutdownOnlySetBoolean">
+            <summary>Sets the Shim of DiscordRpcClient.set_ShutdownOnly(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.SkipIdenticalPresenceGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_SkipIdenticalPresence()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.SkipIdenticalPresenceSetBoolean">
+            <summary>Sets the Shim of DiscordRpcClient.set_SkipIdenticalPresence(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.SteamIDGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_SteamID()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.SteamIDSetString">
+            <summary>Sets the Shim of DiscordRpcClient.set_SteamID(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.SubscribeEventType">
+            <summary>Sets the Shim of DiscordRpcClient.Subscribe(EventType type)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.SubscribeToTypesEventTypeBoolean">
+            <summary>Sets the Shim of DiscordRpcClient.SubscribeToTypes(EventType type, Boolean isUnsubscribe)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.SubscriptionGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_Subscription()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.SubscriptionSetEventType">
+            <summary>Sets the Shim of DiscordRpcClient.set_Subscription(EventType value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.SynchronizeState">
+            <summary>Sets the Shim of DiscordRpcClient.SynchronizeState()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.TargetPipeGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_TargetPipe()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.TargetPipeSetInt32">
+            <summary>Sets the Shim of DiscordRpcClient.set_TargetPipe(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.UnsubscribeEventType">
+            <summary>Sets the Shim of DiscordRpcClient.Unsubscribe(EventType type)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.UnubscribeEventType">
+            <summary>Sets the Shim of DiscordRpcClient.Unubscribe(EventType type)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.UpdateClearTime">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateClearTime()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.UpdateDetailsString">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateDetails(String details)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.UpdateEndTime">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateEndTime()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.UpdateEndTimeDateTime">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateEndTime(DateTime time)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.UpdateLargeAssetStringString">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateLargeAsset(String key, String tooltip)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.UpdatePartyParty">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateParty(Party party)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.UpdatePartySizeInt32">
+            <summary>Sets the Shim of DiscordRpcClient.UpdatePartySize(Int32 size)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.UpdatePartySizeInt32Int32">
+            <summary>Sets the Shim of DiscordRpcClient.UpdatePartySize(Int32 size, Int32 max)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.UpdateSecretsSecrets">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateSecrets(Secrets secrets)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.UpdateSmallAssetStringString">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateSmallAsset(String key, String tooltip)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.UpdateStartTime">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateStartTime()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.UpdateStartTimeDateTime">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateStartTime(DateTime time)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances.UpdateStateString">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateState(String state)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AllInstances._ctorb__103_0ObjectIMessage">
+            <summary>Sets the Shim of DiscordRpcClient.&lt;.ctor&gt;b__103_0(Object sender, IMessage msg)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.ApplicationIDGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_ApplicationID()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.ApplicationIDSetString">
+            <summary>Sets the Shim of DiscordRpcClient.set_ApplicationID(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AutoEventsGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_AutoEvents()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.AutoEventsSetBoolean">
+            <summary>Sets the Shim of DiscordRpcClient.set_AutoEvents(Boolean value)</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimDiscordRpcClient.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimDiscordRpcClient.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimDiscordRpcClient.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.ClearPresence">
+            <summary>Sets the Shim of DiscordRpcClient.ClearPresence()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.ConfigurationGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_Configuration()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.ConfigurationSetConfiguration">
+            <summary>Sets the Shim of DiscordRpcClient.set_Configuration(Configuration value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.ConstructorString">
+            <summary>Sets the Shim of DiscordRpcClient.DiscordRpcClient(String applicationID)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.ConstructorStringInt32ILoggerBooleanINamedPipeClient">
+            <summary>Sets the Shim of DiscordRpcClient.DiscordRpcClient(String applicationID, Int32 pipe, ILogger logger, Boolean autoEvents, INamedPipeClient client)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.CurrentPresenceGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_CurrentPresence()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.CurrentPresenceSetRichPresence">
+            <summary>Sets the Shim of DiscordRpcClient.set_CurrentPresence(RichPresence value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.CurrentUserGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_CurrentUser()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.CurrentUserSetUser">
+            <summary>Sets the Shim of DiscordRpcClient.set_CurrentUser(User value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.Deinitialize">
+            <summary>Sets the Shim of DiscordRpcClient.Deinitialize()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.Dispose">
+            <summary>Sets the Shim of DiscordRpcClient.Dispose()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.HasRegisteredUriSchemeGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_HasRegisteredUriScheme()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.HasRegisteredUriSchemeSetBoolean">
+            <summary>Sets the Shim of DiscordRpcClient.set_HasRegisteredUriScheme(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.Initialize">
+            <summary>Sets the Shim of DiscordRpcClient.Initialize()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.Invoke">
+            <summary>Sets the Shim of DiscordRpcClient.Invoke()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.IsDisposedGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_IsDisposed()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.IsDisposedSetBoolean">
+            <summary>Sets the Shim of DiscordRpcClient.set_IsDisposed(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.IsInitializedGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_IsInitialized()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.IsInitializedSetBoolean">
+            <summary>Sets the Shim of DiscordRpcClient.set_IsInitialized(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.LoggerGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_Logger()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.LoggerSetILogger">
+            <summary>Sets the Shim of DiscordRpcClient.set_Logger(ILogger value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.MaxQueueSizeGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_MaxQueueSize()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.MaxQueueSizeSetInt32">
+            <summary>Sets the Shim of DiscordRpcClient.set_MaxQueueSize(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnCloseAddOnCloseEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnClose(OnCloseEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnCloseRemoveOnCloseEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnClose(OnCloseEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnConnectionEstablishedAddOnConnectionEstablishedEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnConnectionEstablished(OnConnectionEstablishedEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnConnectionEstablishedRemoveOnConnectionEstablishedEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnConnectionEstablished(OnConnectionEstablishedEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnConnectionFailedAddOnConnectionFailedEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnConnectionFailed(OnConnectionFailedEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnConnectionFailedRemoveOnConnectionFailedEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnConnectionFailed(OnConnectionFailedEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnErrorAddOnErrorEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnError(OnErrorEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnErrorRemoveOnErrorEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnError(OnErrorEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnJoinAddOnJoinEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnJoin(OnJoinEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnJoinRemoveOnJoinEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnJoin(OnJoinEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnJoinRequestedAddOnJoinRequestedEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnJoinRequested(OnJoinRequestedEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnJoinRequestedRemoveOnJoinRequestedEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnJoinRequested(OnJoinRequestedEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnPresenceUpdateAddOnPresenceUpdateEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnPresenceUpdate(OnPresenceUpdateEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnPresenceUpdateRemoveOnPresenceUpdateEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnPresenceUpdate(OnPresenceUpdateEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnReadyAddOnReadyEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnReady(OnReadyEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnReadyRemoveOnReadyEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnReady(OnReadyEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnRpcMessageAddOnRpcMessageEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnRpcMessage(OnRpcMessageEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnRpcMessageRemoveOnRpcMessageEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnRpcMessage(OnRpcMessageEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnSpectateAddOnSpectateEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnSpectate(OnSpectateEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnSpectateRemoveOnSpectateEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnSpectate(OnSpectateEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnSubscribeAddOnSubscribeEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnSubscribe(OnSubscribeEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnSubscribeRemoveOnSubscribeEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnSubscribe(OnSubscribeEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnUnsubscribeAddOnUnsubscribeEvent">
+            <summary>Sets the Shim of DiscordRpcClient.add_OnUnsubscribe(OnUnsubscribeEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.OnUnsubscribeRemoveOnUnsubscribeEvent">
+            <summary>Sets the Shim of DiscordRpcClient.remove_OnUnsubscribe(OnUnsubscribeEvent value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.ProcessIDGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_ProcessID()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.ProcessIDSetInt32">
+            <summary>Sets the Shim of DiscordRpcClient.set_ProcessID(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.ProcessMessageIMessage">
+            <summary>Sets the Shim of DiscordRpcClient.ProcessMessage(IMessage message)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.RegisterUriSchemeStringString">
+            <summary>Sets the Shim of DiscordRpcClient.RegisterUriScheme(String steamAppID, String executable)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.RespondJoinRequestMessageBoolean">
+            <summary>Sets the Shim of DiscordRpcClient.Respond(JoinRequestMessage request, Boolean acceptRequest)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.SetPresenceRichPresence">
+            <summary>Sets the Shim of DiscordRpcClient.SetPresence(RichPresence presence)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.SetSubscriptionEventType">
+            <summary>Sets the Shim of DiscordRpcClient.SetSubscription(EventType type)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.ShutdownOnlyGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_ShutdownOnly()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.ShutdownOnlySetBoolean">
+            <summary>Sets the Shim of DiscordRpcClient.set_ShutdownOnly(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.SkipIdenticalPresenceGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_SkipIdenticalPresence()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.SkipIdenticalPresenceSetBoolean">
+            <summary>Sets the Shim of DiscordRpcClient.set_SkipIdenticalPresence(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.SteamIDGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_SteamID()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.SteamIDSetString">
+            <summary>Sets the Shim of DiscordRpcClient.set_SteamID(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.SubscribeEventType">
+            <summary>Sets the Shim of DiscordRpcClient.Subscribe(EventType type)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.SubscribeToTypesEventTypeBoolean">
+            <summary>Sets the Shim of DiscordRpcClient.SubscribeToTypes(EventType type, Boolean isUnsubscribe)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.SubscriptionGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_Subscription()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.SubscriptionSetEventType">
+            <summary>Sets the Shim of DiscordRpcClient.set_Subscription(EventType value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.SynchronizeState">
+            <summary>Sets the Shim of DiscordRpcClient.SynchronizeState()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.TargetPipeGet">
+            <summary>Sets the Shim of DiscordRpcClient.get_TargetPipe()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.TargetPipeSetInt32">
+            <summary>Sets the Shim of DiscordRpcClient.set_TargetPipe(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.UnsubscribeEventType">
+            <summary>Sets the Shim of DiscordRpcClient.Unsubscribe(EventType type)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.UnubscribeEventType">
+            <summary>Sets the Shim of DiscordRpcClient.Unubscribe(EventType type)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.UpdateClearTime">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateClearTime()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.UpdateDetailsString">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateDetails(String details)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.UpdateEndTime">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateEndTime()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.UpdateEndTimeDateTime">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateEndTime(DateTime time)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.UpdateLargeAssetStringString">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateLargeAsset(String key, String tooltip)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.UpdatePartyParty">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateParty(Party party)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.UpdatePartySizeInt32">
+            <summary>Sets the Shim of DiscordRpcClient.UpdatePartySize(Int32 size)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.UpdatePartySizeInt32Int32">
+            <summary>Sets the Shim of DiscordRpcClient.UpdatePartySize(Int32 size, Int32 max)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.UpdateSecretsSecrets">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateSecrets(Secrets secrets)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.UpdateSmallAssetStringString">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateSmallAsset(String key, String tooltip)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.UpdateStartTime">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateStartTime()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.UpdateStartTimeDateTime">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateStartTime(DateTime time)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient.UpdateStateString">
+            <summary>Sets the Shim of DiscordRpcClient.UpdateState(String state)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimDiscordRpcClient._ctorb__103_0ObjectIMessage">
+            <summary>Sets the Shim of DiscordRpcClient.&lt;.ctor&gt;b__103_0(Object sender, IMessage msg)</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimParty">
+            <summary>Shim type of DiscordRPC.Party</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimParty.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimParty.#ctor(DiscordRPC.Party)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimParty.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.AllInstances.IDGet">
+            <summary>Sets the Shim of Party.get_ID()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.AllInstances.IDSetString">
+            <summary>Sets the Shim of Party.set_ID(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.AllInstances.MaxGet">
+            <summary>Sets the Shim of Party.get_Max()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.AllInstances.MaxSetInt32">
+            <summary>Sets the Shim of Party.set_Max(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.AllInstances.PrivacyGet">
+            <summary>Sets the Shim of Party.get_Privacy()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.AllInstances.PrivacySetPartyPrivacySetting">
+            <summary>Sets the Shim of Party.set_Privacy(PrivacySetting value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.AllInstances.SizeGet">
+            <summary>Sets the Shim of Party.get_Size()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.AllInstances.SizeSetInt32">
+            <summary>Sets the Shim of Party.set_Size(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.AllInstances._sizeGet">
+            <summary>Sets the Shim of Party.get__size()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.AllInstances._sizeSetInt32Array">
+            <summary>Sets the Shim of Party.set__size(Int32[] value)</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimParty.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimParty.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.Constructor">
+            <summary>Sets the Shim of Party.Party()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.IDGet">
+            <summary>Sets the Shim of Party.get_ID()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.IDSetString">
+            <summary>Sets the Shim of Party.set_ID(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.MaxGet">
+            <summary>Sets the Shim of Party.get_Max()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.MaxSetInt32">
+            <summary>Sets the Shim of Party.set_Max(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.PrivacyGet">
+            <summary>Sets the Shim of Party.get_Privacy()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.PrivacySetPartyPrivacySetting">
+            <summary>Sets the Shim of Party.set_Privacy(PrivacySetting value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.SizeGet">
+            <summary>Sets the Shim of Party.get_Size()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty.SizeSetInt32">
+            <summary>Sets the Shim of Party.set_Size(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty._sizeGet">
+            <summary>Sets the Shim of Party.get__size()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimParty._sizeSetInt32Array">
+            <summary>Sets the Shim of Party.set__size(Int32[] value)</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimRichPresence">
+            <summary>Shim type of DiscordRPC.RichPresence</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimRichPresence.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimRichPresence.#ctor(DiscordRPC.RichPresence)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimRichPresence.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.AllInstances.ButtonsGet">
+            <summary>Sets the Shim of RichPresence.get_Buttons()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.AllInstances.ButtonsSetButtonArray">
+            <summary>Sets the Shim of RichPresence.set_Buttons(Button[] value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.AllInstances.Clone">
+            <summary>Sets the Shim of RichPresence.Clone()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.AllInstances.HasButtons">
+            <summary>Sets the Shim of RichPresence.HasButtons()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.AllInstances.MatchesRichPresence">
+            <summary>Sets the Shim of RichPresence.Matches(RichPresence other)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.AllInstances.MergeBaseRichPresence">
+            <summary>Sets the Shim of RichPresence.Merge(BaseRichPresence presence)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.AllInstances.WithAssetsAssets">
+            <summary>Sets the Shim of RichPresence.WithAssets(Assets assets)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.AllInstances.WithDetailsString">
+            <summary>Sets the Shim of RichPresence.WithDetails(String details)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.AllInstances.WithPartyParty">
+            <summary>Sets the Shim of RichPresence.WithParty(Party party)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.AllInstances.WithSecretsSecrets">
+            <summary>Sets the Shim of RichPresence.WithSecrets(Secrets secrets)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.AllInstances.WithStateString">
+            <summary>Sets the Shim of RichPresence.WithState(String state)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.AllInstances.WithTimestampsTimestamps">
+            <summary>Sets the Shim of RichPresence.WithTimestamps(Timestamps timestamps)</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimRichPresence.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimRichPresence.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.ButtonsGet">
+            <summary>Sets the Shim of RichPresence.get_Buttons()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.ButtonsSetButtonArray">
+            <summary>Sets the Shim of RichPresence.set_Buttons(Button[] value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.Clone">
+            <summary>Sets the Shim of RichPresence.Clone()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.Constructor">
+            <summary>Sets the Shim of RichPresence.RichPresence()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.HasButtons">
+            <summary>Sets the Shim of RichPresence.HasButtons()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.ImplicitOpRichPresenceBoolean">
+            <summary>Sets the Shim of RichPresence.op_Implicit(RichPresence presesnce)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.MatchesRichPresence">
+            <summary>Sets the Shim of RichPresence.Matches(RichPresence other)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.MergeBaseRichPresence">
+            <summary>Sets the Shim of RichPresence.Merge(BaseRichPresence presence)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.WithAssetsAssets">
+            <summary>Sets the Shim of RichPresence.WithAssets(Assets assets)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.WithDetailsString">
+            <summary>Sets the Shim of RichPresence.WithDetails(String details)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.WithPartyParty">
+            <summary>Sets the Shim of RichPresence.WithParty(Party party)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.WithSecretsSecrets">
+            <summary>Sets the Shim of RichPresence.WithSecrets(Secrets secrets)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.WithStateString">
+            <summary>Sets the Shim of RichPresence.WithState(String state)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimRichPresence.WithTimestampsTimestamps">
+            <summary>Sets the Shim of RichPresence.WithTimestamps(Timestamps timestamps)</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimSecrets">
+            <summary>Shim type of DiscordRPC.Secrets</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimSecrets.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimSecrets.#ctor(DiscordRPC.Secrets)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimSecrets.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.AllInstances.JoinSecretGet">
+            <summary>Sets the Shim of Secrets.get_JoinSecret()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.AllInstances.JoinSecretSetString">
+            <summary>Sets the Shim of Secrets.set_JoinSecret(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.AllInstances.MatchSecretGet">
+            <summary>Sets the Shim of Secrets.get_MatchSecret()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.AllInstances.MatchSecretSetString">
+            <summary>Sets the Shim of Secrets.set_MatchSecret(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.AllInstances.SpectateSecretGet">
+            <summary>Sets the Shim of Secrets.get_SpectateSecret()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.AllInstances.SpectateSecretSetString">
+            <summary>Sets the Shim of Secrets.set_SpectateSecret(String value)</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimSecrets.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimSecrets.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.Constructor">
+            <summary>Sets the Shim of Secrets.Secrets()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.CreateFriendlySecretRandom">
+            <summary>Sets the Shim of Secrets.CreateFriendlySecret(Random random)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.CreateSecretRandom">
+            <summary>Sets the Shim of Secrets.CreateSecret(Random random)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.EncodingGet">
+            <summary>Sets the Shim of Secrets.get_Encoding()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.JoinSecretGet">
+            <summary>Sets the Shim of Secrets.get_JoinSecret()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.JoinSecretSetString">
+            <summary>Sets the Shim of Secrets.set_JoinSecret(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.MatchSecretGet">
+            <summary>Sets the Shim of Secrets.get_MatchSecret()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.MatchSecretSetString">
+            <summary>Sets the Shim of Secrets.set_MatchSecret(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.SecretLengthGet">
+            <summary>Sets the Shim of Secrets.get_SecretLength()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.SpectateSecretGet">
+            <summary>Sets the Shim of Secrets.get_SpectateSecret()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimSecrets.SpectateSecretSetString">
+            <summary>Sets the Shim of Secrets.set_SpectateSecret(String value)</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimTimestamps">
+            <summary>Shim type of DiscordRPC.Timestamps</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimTimestamps.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimTimestamps.#ctor(DiscordRPC.Timestamps)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimTimestamps.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.AllInstances.EndGet">
+            <summary>Sets the Shim of Timestamps.get_End()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.AllInstances.EndSetNullableOfDateTime">
+            <summary>Sets the Shim of Timestamps.set_End(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.AllInstances.EndUnixMillisecondsGet">
+            <summary>Sets the Shim of Timestamps.get_EndUnixMilliseconds()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.AllInstances.EndUnixMillisecondsSetNullableOfUInt64">
+            <summary>Sets the Shim of Timestamps.set_EndUnixMilliseconds(Nullable`1&lt;UInt64&gt; value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.AllInstances.StartGet">
+            <summary>Sets the Shim of Timestamps.get_Start()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.AllInstances.StartSetNullableOfDateTime">
+            <summary>Sets the Shim of Timestamps.set_Start(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.AllInstances.StartUnixMillisecondsGet">
+            <summary>Sets the Shim of Timestamps.get_StartUnixMilliseconds()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.AllInstances.StartUnixMillisecondsSetNullableOfUInt64">
+            <summary>Sets the Shim of Timestamps.set_StartUnixMilliseconds(Nullable`1&lt;UInt64&gt; value)</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimTimestamps.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimTimestamps.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.Constructor">
+            <summary>Sets the Shim of Timestamps.Timestamps()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.ConstructorDateTimeNullableOfDateTime">
+            <summary>Sets the Shim of Timestamps.Timestamps(DateTime start, Nullable`1&lt;DateTime&gt; end)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.EndGet">
+            <summary>Sets the Shim of Timestamps.get_End()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.EndSetNullableOfDateTime">
+            <summary>Sets the Shim of Timestamps.set_End(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.EndUnixMillisecondsGet">
+            <summary>Sets the Shim of Timestamps.get_EndUnixMilliseconds()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.EndUnixMillisecondsSetNullableOfUInt64">
+            <summary>Sets the Shim of Timestamps.set_EndUnixMilliseconds(Nullable`1&lt;UInt64&gt; value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.FromTimeSpanDouble">
+            <summary>Sets the Shim of Timestamps.FromTimeSpan(Double seconds)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.FromTimeSpanTimeSpan">
+            <summary>Sets the Shim of Timestamps.FromTimeSpan(TimeSpan timespan)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.FromUnixMillisecondsUInt64">
+            <summary>Sets the Shim of Timestamps.FromUnixMilliseconds(UInt64 unixTime)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.NowGet">
+            <summary>Sets the Shim of Timestamps.get_Now()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.StartGet">
+            <summary>Sets the Shim of Timestamps.get_Start()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.StartSetNullableOfDateTime">
+            <summary>Sets the Shim of Timestamps.set_Start(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.StartUnixMillisecondsGet">
+            <summary>Sets the Shim of Timestamps.get_StartUnixMilliseconds()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.StartUnixMillisecondsSetNullableOfUInt64">
+            <summary>Sets the Shim of Timestamps.set_StartUnixMilliseconds(Nullable`1&lt;UInt64&gt; value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimTimestamps.ToUnixMillisecondsDateTime">
+            <summary>Sets the Shim of Timestamps.ToUnixMilliseconds(DateTime date)</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimUser">
+            <summary>Shim type of DiscordRPC.User</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimUser.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimUser.#ctor(DiscordRPC.User)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.ShimUser.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.AvatarGet">
+            <summary>Sets the Shim of User.get_Avatar()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.AvatarSetString">
+            <summary>Sets the Shim of User.set_Avatar(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.CdnEndpointGet">
+            <summary>Sets the Shim of User.get_CdnEndpoint()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.CdnEndpointSetString">
+            <summary>Sets the Shim of User.set_CdnEndpoint(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.DiscriminatorGet">
+            <summary>Sets the Shim of User.get_Discriminator()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.DiscriminatorSetInt32">
+            <summary>Sets the Shim of User.set_Discriminator(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.FlagsGet">
+            <summary>Sets the Shim of User.get_Flags()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.FlagsSetUserFlag">
+            <summary>Sets the Shim of User.set_Flags(Flag value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.GetAvatarExtensionUserAvatarFormat">
+            <summary>Sets the Shim of User.GetAvatarExtension(AvatarFormat format)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.GetAvatarURLUserAvatarFormatUserAvatarSize">
+            <summary>Sets the Shim of User.GetAvatarURL(AvatarFormat format, AvatarSize size)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.IDGet">
+            <summary>Sets the Shim of User.get_ID()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.IDSetUInt64">
+            <summary>Sets the Shim of User.set_ID(UInt64 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.PremiumGet">
+            <summary>Sets the Shim of User.get_Premium()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.PremiumSetUserPremiumType">
+            <summary>Sets the Shim of User.set_Premium(PremiumType value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.SetConfigurationConfiguration">
+            <summary>Sets the Shim of User.SetConfiguration(Configuration configuration)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.ToString01">
+            <summary>Sets the Shim of User.ToString()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.UsernameGet">
+            <summary>Sets the Shim of User.get_Username()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AllInstances.UsernameSetString">
+            <summary>Sets the Shim of User.set_Username(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AvatarGet">
+            <summary>Sets the Shim of User.get_Avatar()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.AvatarSetString">
+            <summary>Sets the Shim of User.set_Avatar(String value)</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimUser.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.ShimUser.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.CdnEndpointGet">
+            <summary>Sets the Shim of User.get_CdnEndpoint()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.CdnEndpointSetString">
+            <summary>Sets the Shim of User.set_CdnEndpoint(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.Constructor">
+            <summary>Sets the Shim of User.User()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.DiscriminatorGet">
+            <summary>Sets the Shim of User.get_Discriminator()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.DiscriminatorSetInt32">
+            <summary>Sets the Shim of User.set_Discriminator(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.FlagsGet">
+            <summary>Sets the Shim of User.get_Flags()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.FlagsSetUserFlag">
+            <summary>Sets the Shim of User.set_Flags(Flag value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.GetAvatarExtensionUserAvatarFormat">
+            <summary>Sets the Shim of User.GetAvatarExtension(AvatarFormat format)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.GetAvatarURLUserAvatarFormatUserAvatarSize">
+            <summary>Sets the Shim of User.GetAvatarURL(AvatarFormat format, AvatarSize size)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.IDGet">
+            <summary>Sets the Shim of User.get_ID()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.IDSetUInt64">
+            <summary>Sets the Shim of User.set_ID(UInt64 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.PremiumGet">
+            <summary>Sets the Shim of User.get_Premium()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.PremiumSetUserPremiumType">
+            <summary>Sets the Shim of User.set_Premium(PremiumType value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.SetConfigurationConfiguration">
+            <summary>Sets the Shim of User.SetConfiguration(Configuration configuration)</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.ToString">
+            <summary>Sets the Shim of User.ToString()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.UsernameGet">
+            <summary>Sets the Shim of User.get_Username()</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.ShimUser.UsernameSetString">
+            <summary>Sets the Shim of User.set_Username(String value)</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.StubAssets">
+            <summary>Stub type of DiscordRPC.Assets</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.StubAssets.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubAssets.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.StubAssets.InitializeStub">
+            <summary>Initializes a new instance of type StubAssets</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubAssets.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubAssets.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.StubBaseRichPresence">
+            <summary>Stub type of DiscordRPC.BaseRichPresence</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.StubBaseRichPresence.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubBaseRichPresence.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.StubBaseRichPresence.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseRichPresence</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubBaseRichPresence.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubBaseRichPresence.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.StubButton">
+            <summary>Stub type of DiscordRPC.Button</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.StubButton.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubButton.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.StubButton.InitializeStub">
+            <summary>Initializes a new instance of type StubButton</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubButton.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubButton.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.StubConfiguration">
+            <summary>Stub type of DiscordRPC.Configuration</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.StubConfiguration.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubConfiguration.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.StubConfiguration.InitializeStub">
+            <summary>Initializes a new instance of type StubConfiguration</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubConfiguration.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubConfiguration.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.StubParty">
+            <summary>Stub type of DiscordRPC.Party</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.StubParty.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubParty.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.StubParty.InitializeStub">
+            <summary>Initializes a new instance of type StubParty</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubParty.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubParty.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.StubSecrets">
+            <summary>Stub type of DiscordRPC.Secrets</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.StubSecrets.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubSecrets.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.StubSecrets.InitializeStub">
+            <summary>Initializes a new instance of type StubSecrets</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubSecrets.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubSecrets.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DiscordRPC.Fakes.StubTimestamps">
+            <summary>Stub type of DiscordRPC.Timestamps</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.StubTimestamps.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.StubTimestamps.#ctor(System.DateTime,System.Nullable{System.DateTime})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubTimestamps.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Fakes.StubTimestamps.InitializeStub">
+            <summary>Initializes a new instance of type StubTimestamps</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubTimestamps.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Fakes.StubTimestamps.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DiscordRPC.Helper.Fakes.ShimStringTools">
+            <summary>Shim type of DiscordRPC.Helper.StringTools</summary>
+        </member>
+        <member name="M:DiscordRPC.Helper.Fakes.ShimStringTools.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Helper.Fakes.ShimStringTools.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Helper.Fakes.ShimStringTools.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Helper.Fakes.ShimStringTools.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Helper.Fakes.ShimStringTools.GetNullOrStringString">
+            <summary>Sets the Shim of StringTools.GetNullOrString(String str)</summary>
+        </member>
+        <member name="P:DiscordRPC.Helper.Fakes.ShimStringTools.ToCamelCaseString">
+            <summary>Sets the Shim of StringTools.ToCamelCase(String str)</summary>
+        </member>
+        <member name="P:DiscordRPC.Helper.Fakes.ShimStringTools.ToSnakeCaseString">
+            <summary>Sets the Shim of StringTools.ToSnakeCase(String str)</summary>
+        </member>
+        <member name="P:DiscordRPC.Helper.Fakes.ShimStringTools.WithinLengthStringInt32">
+            <summary>Sets the Shim of StringTools.WithinLength(String str, Int32 bytes)</summary>
+        </member>
+        <member name="P:DiscordRPC.Helper.Fakes.ShimStringTools.WithinLengthStringInt32Encoding">
+            <summary>Sets the Shim of StringTools.WithinLength(String str, Int32 bytes, Encoding encoding)</summary>
+        </member>
+        <member name="T:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient">
+            <summary>Shim type of DiscordRPC.IO.ManagedNamedPipeClient</summary>
+        </member>
+        <member name="M:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.#ctor(DiscordRPC.IO.ManagedNamedPipeClient)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.AllInstances.AttemptConnectionInt32Boolean">
+            <summary>Sets the Shim of ManagedNamedPipeClient.AttemptConnection(Int32 pipe, Boolean isSandbox)</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.AllInstances.BeginReadStream">
+            <summary>Sets the Shim of ManagedNamedPipeClient.BeginReadStream()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.AllInstances.Close">
+            <summary>Sets the Shim of ManagedNamedPipeClient.Close()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.AllInstances.ConnectInt32">
+            <summary>Sets the Shim of ManagedNamedPipeClient.Connect(Int32 pipe)</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.AllInstances.ConnectedPipeGet">
+            <summary>Sets the Shim of ManagedNamedPipeClient.get_ConnectedPipe()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.AllInstances.Dispose">
+            <summary>Sets the Shim of ManagedNamedPipeClient.Dispose()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.AllInstances.EndReadStreamIAsyncResult">
+            <summary>Sets the Shim of ManagedNamedPipeClient.EndReadStream(IAsyncResult callback)</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.AllInstances.IsConnectedGet">
+            <summary>Sets the Shim of ManagedNamedPipeClient.get_IsConnected()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.AllInstances.LoggerGet">
+            <summary>Sets the Shim of ManagedNamedPipeClient.get_Logger()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.AllInstances.LoggerSetILogger">
+            <summary>Sets the Shim of ManagedNamedPipeClient.set_Logger(ILogger value)</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.AllInstances.ReadFramePipeFrameOut">
+            <summary>Sets the Shim of ManagedNamedPipeClient.ReadFrame(PipeFrame&amp; frame)</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.AllInstances.WriteFramePipeFrame">
+            <summary>Sets the Shim of ManagedNamedPipeClient.WriteFrame(PipeFrame frame)</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.AttemptConnectionInt32Boolean">
+            <summary>Sets the Shim of ManagedNamedPipeClient.AttemptConnection(Int32 pipe, Boolean isSandbox)</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.BeginReadStream">
+            <summary>Sets the Shim of ManagedNamedPipeClient.BeginReadStream()</summary>
+        </member>
+        <member name="M:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.Bind(DiscordRPC.IO.INamedPipeClient)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.Close">
+            <summary>Sets the Shim of ManagedNamedPipeClient.Close()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.ConnectInt32">
+            <summary>Sets the Shim of ManagedNamedPipeClient.Connect(Int32 pipe)</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.ConnectedPipeGet">
+            <summary>Sets the Shim of ManagedNamedPipeClient.get_ConnectedPipe()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.Constructor">
+            <summary>Sets the Shim of ManagedNamedPipeClient.ManagedNamedPipeClient()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.Dispose">
+            <summary>Sets the Shim of ManagedNamedPipeClient.Dispose()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.EndReadStreamIAsyncResult">
+            <summary>Sets the Shim of ManagedNamedPipeClient.EndReadStream(IAsyncResult callback)</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.GetPipeNameInt32String">
+            <summary>Sets the Shim of ManagedNamedPipeClient.GetPipeName(Int32 pipe, String sandbox)</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.GetPipeSandbox">
+            <summary>Sets the Shim of ManagedNamedPipeClient.GetPipeSandbox()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.GetTemporaryDirectory">
+            <summary>Sets the Shim of ManagedNamedPipeClient.GetTemporaryDirectory()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.IsConnectedGet">
+            <summary>Sets the Shim of ManagedNamedPipeClient.get_IsConnected()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.IsUnix">
+            <summary>Sets the Shim of ManagedNamedPipeClient.IsUnix()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.LoggerGet">
+            <summary>Sets the Shim of ManagedNamedPipeClient.get_Logger()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.LoggerSetILogger">
+            <summary>Sets the Shim of ManagedNamedPipeClient.set_Logger(ILogger value)</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.ReadFramePipeFrameOut">
+            <summary>Sets the Shim of ManagedNamedPipeClient.ReadFrame(PipeFrame&amp; frame)</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimManagedNamedPipeClient.WriteFramePipeFrame">
+            <summary>Sets the Shim of ManagedNamedPipeClient.WriteFrame(PipeFrame frame)</summary>
+        </member>
+        <member name="T:DiscordRPC.IO.Fakes.ShimPipeFrame">
+            <summary>Shim type of DiscordRPC.IO.PipeFrame</summary>
+        </member>
+        <member name="M:DiscordRPC.IO.Fakes.ShimPipeFrame.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:DiscordRPC.IO.Fakes.ShimPipeFrame.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:DiscordRPC.IO.Fakes.ShimPipeFrame.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.IO.Fakes.ShimPipeFrame.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimPipeFrame.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.ShimPipeFrame.StaticConstructor">
+            <summary>Sets the Shim of PipeFrame.PipeFrame()</summary>
+        </member>
+        <member name="T:DiscordRPC.IO.Fakes.StubINamedPipeClient">
+            <summary>Stub type of DiscordRPC.IO.INamedPipeClient</summary>
+        </member>
+        <member name="M:DiscordRPC.IO.Fakes.StubINamedPipeClient.#ctor">
+            <summary>Initializes a new instance of type StubINamedPipeClient</summary>
+        </member>
+        <member name="M:DiscordRPC.IO.Fakes.StubINamedPipeClient.AttachBackingFieldToLogger">
+            <summary>Attaches delegates to emulate StubINamedPipeClient.Logger as a property with a backing field.</summary>
+        </member>
+        <member name="F:DiscordRPC.IO.Fakes.StubINamedPipeClient.Close">
+            <summary>Sets the stub of INamedPipeClient.Close()</summary>
+        </member>
+        <member name="F:DiscordRPC.IO.Fakes.StubINamedPipeClient.ConnectInt32">
+            <summary>Sets the stub of INamedPipeClient.Connect(Int32 pipe)</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.StubINamedPipeClient.DiscordRPC#IO#INamedPipeClient#ConnectedPipe">
+            <summary>Sets the stub of INamedPipeClient.get_ConnectedPipe()</summary>
+        </member>
+        <member name="F:DiscordRPC.IO.Fakes.StubINamedPipeClient.ConnectedPipeGet">
+            <summary>Sets the stub of INamedPipeClient.get_ConnectedPipe()</summary>
+        </member>
+        <member name="M:DiscordRPC.IO.Fakes.StubINamedPipeClient.DiscordRPC#IO#INamedPipeClient#Close">
+            <summary>Sets the Stub of INamedPipeClient.Close()</summary>
+        </member>
+        <member name="M:DiscordRPC.IO.Fakes.StubINamedPipeClient.DiscordRPC#IO#INamedPipeClient#Connect(System.Int32)">
+            <summary>Sets the Stub of INamedPipeClient.Connect(Int32 pipe)</summary>
+        </member>
+        <member name="M:DiscordRPC.IO.Fakes.StubINamedPipeClient.DiscordRPC#IO#INamedPipeClient#ReadFrame(DiscordRPC.IO.PipeFrame@)">
+            <summary>Sets the Stub of INamedPipeClient.ReadFrame(PipeFrame&amp; frame)</summary>
+        </member>
+        <member name="M:DiscordRPC.IO.Fakes.StubINamedPipeClient.DiscordRPC#IO#INamedPipeClient#WriteFrame(DiscordRPC.IO.PipeFrame)">
+            <summary>Sets the Stub of INamedPipeClient.WriteFrame(PipeFrame frame)</summary>
+        </member>
+        <member name="F:DiscordRPC.IO.Fakes.StubINamedPipeClient.Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.StubINamedPipeClient.DiscordRPC#IO#INamedPipeClient#IsConnected">
+            <summary>Sets the stub of INamedPipeClient.get_IsConnected()</summary>
+        </member>
+        <member name="F:DiscordRPC.IO.Fakes.StubINamedPipeClient.IsConnectedGet">
+            <summary>Sets the stub of INamedPipeClient.get_IsConnected()</summary>
+        </member>
+        <member name="P:DiscordRPC.IO.Fakes.StubINamedPipeClient.DiscordRPC#IO#INamedPipeClient#Logger">
+            <summary>Sets the stub of INamedPipeClient.get_Logger()</summary>
+        </member>
+        <member name="F:DiscordRPC.IO.Fakes.StubINamedPipeClient.LoggerGet">
+            <summary>Sets the stub of INamedPipeClient.get_Logger()</summary>
+        </member>
+        <member name="F:DiscordRPC.IO.Fakes.StubINamedPipeClient.LoggerSetILogger">
+            <summary>Sets the stub of INamedPipeClient.set_Logger(ILogger value)</summary>
+        </member>
+        <member name="F:DiscordRPC.IO.Fakes.StubINamedPipeClient.ReadFramePipeFrameOut">
+            <summary>Sets the stub of INamedPipeClient.ReadFrame(PipeFrame&amp; frame)</summary>
+        </member>
+        <member name="M:DiscordRPC.IO.Fakes.StubINamedPipeClient.System#IDisposable#Dispose">
+            <summary>Sets the Stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="F:DiscordRPC.IO.Fakes.StubINamedPipeClient.WriteFramePipeFrame">
+            <summary>Sets the stub of INamedPipeClient.WriteFrame(PipeFrame frame)</summary>
+        </member>
+        <member name="T:DiscordRPC.Logging.Fakes.ShimConsoleLogger">
+            <summary>Shim type of DiscordRPC.Logging.ConsoleLogger</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.ShimConsoleLogger.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.ShimConsoleLogger.#ctor(DiscordRPC.Logging.ConsoleLogger)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Logging.Fakes.ShimConsoleLogger.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.AllInstances.ColoredGet">
+            <summary>Sets the Shim of ConsoleLogger.get_Colored()</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.AllInstances.ColoredSetBoolean">
+            <summary>Sets the Shim of ConsoleLogger.set_Colored(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.AllInstances.ColouredGet">
+            <summary>Sets the Shim of ConsoleLogger.get_Coloured()</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.AllInstances.ColouredSetBoolean">
+            <summary>Sets the Shim of ConsoleLogger.set_Coloured(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.AllInstances.ErrorStringObjectArray">
+            <summary>Sets the Shim of ConsoleLogger.Error(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.AllInstances.InfoStringObjectArray">
+            <summary>Sets the Shim of ConsoleLogger.Info(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.AllInstances.LevelGet">
+            <summary>Sets the Shim of ConsoleLogger.get_Level()</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.AllInstances.LevelSetLogLevel">
+            <summary>Sets the Shim of ConsoleLogger.set_Level(LogLevel value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.AllInstances.TraceStringObjectArray">
+            <summary>Sets the Shim of ConsoleLogger.Trace(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.AllInstances.WarningStringObjectArray">
+            <summary>Sets the Shim of ConsoleLogger.Warning(String message, Object[] args)</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.ShimConsoleLogger.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.ShimConsoleLogger.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.ShimConsoleLogger.Bind(DiscordRPC.Logging.ILogger)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.ColoredGet">
+            <summary>Sets the Shim of ConsoleLogger.get_Colored()</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.ColoredSetBoolean">
+            <summary>Sets the Shim of ConsoleLogger.set_Colored(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.ColouredGet">
+            <summary>Sets the Shim of ConsoleLogger.get_Coloured()</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.ColouredSetBoolean">
+            <summary>Sets the Shim of ConsoleLogger.set_Coloured(Boolean value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.Constructor">
+            <summary>Sets the Shim of ConsoleLogger.ConsoleLogger()</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.ConstructorLogLevelBoolean">
+            <summary>Sets the Shim of ConsoleLogger.ConsoleLogger(LogLevel level, Boolean coloured)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.ErrorStringObjectArray">
+            <summary>Sets the Shim of ConsoleLogger.Error(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.InfoStringObjectArray">
+            <summary>Sets the Shim of ConsoleLogger.Info(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.LevelGet">
+            <summary>Sets the Shim of ConsoleLogger.get_Level()</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.LevelSetLogLevel">
+            <summary>Sets the Shim of ConsoleLogger.set_Level(LogLevel value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.TraceStringObjectArray">
+            <summary>Sets the Shim of ConsoleLogger.Trace(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimConsoleLogger.WarningStringObjectArray">
+            <summary>Sets the Shim of ConsoleLogger.Warning(String message, Object[] args)</summary>
+        </member>
+        <member name="T:DiscordRPC.Logging.Fakes.ShimFileLogger">
+            <summary>Shim type of DiscordRPC.Logging.FileLogger</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.ShimFileLogger.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.ShimFileLogger.#ctor(DiscordRPC.Logging.FileLogger)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Logging.Fakes.ShimFileLogger.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.AllInstances.ErrorStringObjectArray">
+            <summary>Sets the Shim of FileLogger.Error(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.AllInstances.FileGet">
+            <summary>Sets the Shim of FileLogger.get_File()</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.AllInstances.FileSetString">
+            <summary>Sets the Shim of FileLogger.set_File(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.AllInstances.InfoStringObjectArray">
+            <summary>Sets the Shim of FileLogger.Info(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.AllInstances.LevelGet">
+            <summary>Sets the Shim of FileLogger.get_Level()</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.AllInstances.LevelSetLogLevel">
+            <summary>Sets the Shim of FileLogger.set_Level(LogLevel value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.AllInstances.TraceStringObjectArray">
+            <summary>Sets the Shim of FileLogger.Trace(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.AllInstances.WarningStringObjectArray">
+            <summary>Sets the Shim of FileLogger.Warning(String message, Object[] args)</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.ShimFileLogger.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.ShimFileLogger.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.ShimFileLogger.Bind(DiscordRPC.Logging.ILogger)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.ConstructorString">
+            <summary>Sets the Shim of FileLogger.FileLogger(String path)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.ConstructorStringLogLevel">
+            <summary>Sets the Shim of FileLogger.FileLogger(String path, LogLevel level)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.ErrorStringObjectArray">
+            <summary>Sets the Shim of FileLogger.Error(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.FileGet">
+            <summary>Sets the Shim of FileLogger.get_File()</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.FileSetString">
+            <summary>Sets the Shim of FileLogger.set_File(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.InfoStringObjectArray">
+            <summary>Sets the Shim of FileLogger.Info(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.LevelGet">
+            <summary>Sets the Shim of FileLogger.get_Level()</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.LevelSetLogLevel">
+            <summary>Sets the Shim of FileLogger.set_Level(LogLevel value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.TraceStringObjectArray">
+            <summary>Sets the Shim of FileLogger.Trace(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimFileLogger.WarningStringObjectArray">
+            <summary>Sets the Shim of FileLogger.Warning(String message, Object[] args)</summary>
+        </member>
+        <member name="T:DiscordRPC.Logging.Fakes.ShimNullLogger">
+            <summary>Shim type of DiscordRPC.Logging.NullLogger</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.ShimNullLogger.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.ShimNullLogger.#ctor(DiscordRPC.Logging.NullLogger)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Logging.Fakes.ShimNullLogger.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimNullLogger.AllInstances.ErrorStringObjectArray">
+            <summary>Sets the Shim of NullLogger.Error(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimNullLogger.AllInstances.InfoStringObjectArray">
+            <summary>Sets the Shim of NullLogger.Info(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimNullLogger.AllInstances.LevelGet">
+            <summary>Sets the Shim of NullLogger.get_Level()</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimNullLogger.AllInstances.LevelSetLogLevel">
+            <summary>Sets the Shim of NullLogger.set_Level(LogLevel value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimNullLogger.AllInstances.TraceStringObjectArray">
+            <summary>Sets the Shim of NullLogger.Trace(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimNullLogger.AllInstances.WarningStringObjectArray">
+            <summary>Sets the Shim of NullLogger.Warning(String message, Object[] args)</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.ShimNullLogger.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.ShimNullLogger.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimNullLogger.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.ShimNullLogger.Bind(DiscordRPC.Logging.ILogger)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimNullLogger.Constructor">
+            <summary>Sets the Shim of NullLogger.NullLogger()</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimNullLogger.ErrorStringObjectArray">
+            <summary>Sets the Shim of NullLogger.Error(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimNullLogger.InfoStringObjectArray">
+            <summary>Sets the Shim of NullLogger.Info(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimNullLogger.LevelGet">
+            <summary>Sets the Shim of NullLogger.get_Level()</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimNullLogger.LevelSetLogLevel">
+            <summary>Sets the Shim of NullLogger.set_Level(LogLevel value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimNullLogger.TraceStringObjectArray">
+            <summary>Sets the Shim of NullLogger.Trace(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.ShimNullLogger.WarningStringObjectArray">
+            <summary>Sets the Shim of NullLogger.Warning(String message, Object[] args)</summary>
+        </member>
+        <member name="T:DiscordRPC.Logging.Fakes.StubConsoleLogger">
+            <summary>Stub type of DiscordRPC.Logging.ConsoleLogger</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.StubConsoleLogger.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.StubConsoleLogger.#ctor(DiscordRPC.Logging.LogLevel,System.Boolean)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.StubConsoleLogger.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.StubConsoleLogger.InitializeStub">
+            <summary>Initializes a new instance of type StubConsoleLogger</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.StubConsoleLogger.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.StubConsoleLogger.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DiscordRPC.Logging.Fakes.StubFileLogger">
+            <summary>Stub type of DiscordRPC.Logging.FileLogger</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.StubFileLogger.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.StubFileLogger.#ctor(System.String,DiscordRPC.Logging.LogLevel)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.StubFileLogger.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.StubFileLogger.InitializeStub">
+            <summary>Initializes a new instance of type StubFileLogger</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.StubFileLogger.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.StubFileLogger.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DiscordRPC.Logging.Fakes.StubILogger">
+            <summary>Stub type of DiscordRPC.Logging.ILogger</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.StubILogger.#ctor">
+            <summary>Initializes a new instance of type StubILogger</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.StubILogger.AttachBackingFieldToLevel">
+            <summary>Attaches delegates to emulate StubILogger.Level as a property with a backing field.</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.StubILogger.DiscordRPC#Logging#ILogger#Error(System.String,System.Object[])">
+            <summary>Sets the Stub of ILogger.Error(String message, Object[] args)</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.StubILogger.DiscordRPC#Logging#ILogger#Info(System.String,System.Object[])">
+            <summary>Sets the Stub of ILogger.Info(String message, Object[] args)</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.StubILogger.DiscordRPC#Logging#ILogger#Trace(System.String,System.Object[])">
+            <summary>Sets the Stub of ILogger.Trace(String message, Object[] args)</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.StubILogger.DiscordRPC#Logging#ILogger#Warning(System.String,System.Object[])">
+            <summary>Sets the Stub of ILogger.Warning(String message, Object[] args)</summary>
+        </member>
+        <member name="F:DiscordRPC.Logging.Fakes.StubILogger.ErrorStringObjectArray">
+            <summary>Sets the stub of ILogger.Error(String message, Object[] args)</summary>
+        </member>
+        <member name="F:DiscordRPC.Logging.Fakes.StubILogger.InfoStringObjectArray">
+            <summary>Sets the stub of ILogger.Info(String message, Object[] args)</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.StubILogger.DiscordRPC#Logging#ILogger#Level">
+            <summary>Sets the stub of ILogger.get_Level()</summary>
+        </member>
+        <member name="F:DiscordRPC.Logging.Fakes.StubILogger.LevelGet">
+            <summary>Sets the stub of ILogger.get_Level()</summary>
+        </member>
+        <member name="F:DiscordRPC.Logging.Fakes.StubILogger.LevelSetLogLevel">
+            <summary>Sets the stub of ILogger.set_Level(LogLevel value)</summary>
+        </member>
+        <member name="F:DiscordRPC.Logging.Fakes.StubILogger.TraceStringObjectArray">
+            <summary>Sets the stub of ILogger.Trace(String message, Object[] args)</summary>
+        </member>
+        <member name="F:DiscordRPC.Logging.Fakes.StubILogger.WarningStringObjectArray">
+            <summary>Sets the stub of ILogger.Warning(String message, Object[] args)</summary>
+        </member>
+        <member name="T:DiscordRPC.Logging.Fakes.StubNullLogger">
+            <summary>Stub type of DiscordRPC.Logging.NullLogger</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.StubNullLogger.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.StubNullLogger.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Logging.Fakes.StubNullLogger.InitializeStub">
+            <summary>Initializes a new instance of type StubNullLogger</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.StubNullLogger.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Logging.Fakes.StubNullLogger.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimCloseMessage">
+            <summary>Shim type of DiscordRPC.Message.CloseMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimCloseMessage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimCloseMessage.#ctor(DiscordRPC.Message.CloseMessage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimCloseMessage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimCloseMessage.AllInstances.CodeGet">
+            <summary>Sets the Shim of CloseMessage.get_Code()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimCloseMessage.AllInstances.CodeSetInt32">
+            <summary>Sets the Shim of CloseMessage.set_Code(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimCloseMessage.AllInstances.ReasonGet">
+            <summary>Sets the Shim of CloseMessage.get_Reason()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimCloseMessage.AllInstances.ReasonSetString">
+            <summary>Sets the Shim of CloseMessage.set_Reason(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimCloseMessage.AllInstances.TypeGet">
+            <summary>Sets the Shim of CloseMessage.get_Type()</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimCloseMessage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimCloseMessage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimCloseMessage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimCloseMessage.CodeGet">
+            <summary>Sets the Shim of CloseMessage.get_Code()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimCloseMessage.CodeSetInt32">
+            <summary>Sets the Shim of CloseMessage.set_Code(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimCloseMessage.Constructor">
+            <summary>Sets the Shim of CloseMessage.CloseMessage()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimCloseMessage.ConstructorString">
+            <summary>Sets the Shim of CloseMessage.CloseMessage(String reason)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimCloseMessage.ReasonGet">
+            <summary>Sets the Shim of CloseMessage.get_Reason()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimCloseMessage.ReasonSetString">
+            <summary>Sets the Shim of CloseMessage.set_Reason(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimCloseMessage.TypeGet">
+            <summary>Sets the Shim of CloseMessage.get_Type()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimConnectionEstablishedMessage">
+            <summary>Shim type of DiscordRPC.Message.ConnectionEstablishedMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimConnectionEstablishedMessage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimConnectionEstablishedMessage.#ctor(DiscordRPC.Message.ConnectionEstablishedMessage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimConnectionEstablishedMessage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimConnectionEstablishedMessage.AllInstances.ConnectedPipeGet">
+            <summary>Sets the Shim of ConnectionEstablishedMessage.get_ConnectedPipe()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimConnectionEstablishedMessage.AllInstances.ConnectedPipeSetInt32">
+            <summary>Sets the Shim of ConnectionEstablishedMessage.set_ConnectedPipe(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimConnectionEstablishedMessage.AllInstances.TypeGet">
+            <summary>Sets the Shim of ConnectionEstablishedMessage.get_Type()</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimConnectionEstablishedMessage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimConnectionEstablishedMessage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimConnectionEstablishedMessage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimConnectionEstablishedMessage.ConnectedPipeGet">
+            <summary>Sets the Shim of ConnectionEstablishedMessage.get_ConnectedPipe()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimConnectionEstablishedMessage.ConnectedPipeSetInt32">
+            <summary>Sets the Shim of ConnectionEstablishedMessage.set_ConnectedPipe(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimConnectionEstablishedMessage.Constructor">
+            <summary>Sets the Shim of ConnectionEstablishedMessage.ConnectionEstablishedMessage()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimConnectionEstablishedMessage.TypeGet">
+            <summary>Sets the Shim of ConnectionEstablishedMessage.get_Type()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimConnectionFailedMessage">
+            <summary>Shim type of DiscordRPC.Message.ConnectionFailedMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimConnectionFailedMessage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimConnectionFailedMessage.#ctor(DiscordRPC.Message.ConnectionFailedMessage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimConnectionFailedMessage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimConnectionFailedMessage.AllInstances.FailedPipeGet">
+            <summary>Sets the Shim of ConnectionFailedMessage.get_FailedPipe()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimConnectionFailedMessage.AllInstances.FailedPipeSetInt32">
+            <summary>Sets the Shim of ConnectionFailedMessage.set_FailedPipe(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimConnectionFailedMessage.AllInstances.TypeGet">
+            <summary>Sets the Shim of ConnectionFailedMessage.get_Type()</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimConnectionFailedMessage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimConnectionFailedMessage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimConnectionFailedMessage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimConnectionFailedMessage.Constructor">
+            <summary>Sets the Shim of ConnectionFailedMessage.ConnectionFailedMessage()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimConnectionFailedMessage.FailedPipeGet">
+            <summary>Sets the Shim of ConnectionFailedMessage.get_FailedPipe()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimConnectionFailedMessage.FailedPipeSetInt32">
+            <summary>Sets the Shim of ConnectionFailedMessage.set_FailedPipe(Int32 value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimConnectionFailedMessage.TypeGet">
+            <summary>Sets the Shim of ConnectionFailedMessage.get_Type()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimErrorMessage">
+            <summary>Shim type of DiscordRPC.Message.ErrorMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimErrorMessage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimErrorMessage.#ctor(DiscordRPC.Message.ErrorMessage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimErrorMessage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimErrorMessage.AllInstances.CodeGet">
+            <summary>Sets the Shim of ErrorMessage.get_Code()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimErrorMessage.AllInstances.CodeSetErrorCode">
+            <summary>Sets the Shim of ErrorMessage.set_Code(ErrorCode value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimErrorMessage.AllInstances.MessageGet">
+            <summary>Sets the Shim of ErrorMessage.get_Message()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimErrorMessage.AllInstances.MessageSetString">
+            <summary>Sets the Shim of ErrorMessage.set_Message(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimErrorMessage.AllInstances.TypeGet">
+            <summary>Sets the Shim of ErrorMessage.get_Type()</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimErrorMessage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimErrorMessage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimErrorMessage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimErrorMessage.CodeGet">
+            <summary>Sets the Shim of ErrorMessage.get_Code()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimErrorMessage.CodeSetErrorCode">
+            <summary>Sets the Shim of ErrorMessage.set_Code(ErrorCode value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimErrorMessage.Constructor">
+            <summary>Sets the Shim of ErrorMessage.ErrorMessage()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimErrorMessage.MessageGet">
+            <summary>Sets the Shim of ErrorMessage.get_Message()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimErrorMessage.MessageSetString">
+            <summary>Sets the Shim of ErrorMessage.set_Message(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimErrorMessage.TypeGet">
+            <summary>Sets the Shim of ErrorMessage.get_Type()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimIMessage">
+            <summary>Shim type of DiscordRPC.Message.IMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimIMessage.#ctor(DiscordRPC.Message.IMessage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimIMessage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimIMessage.AllInstances.TimeCreatedGet">
+            <summary>Sets the Shim of IMessage.get_TimeCreated()</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimIMessage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimIMessage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimIMessage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimIMessage.Constructor">
+            <summary>Sets the Shim of IMessage.IMessage()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimIMessage.TimeCreatedGet">
+            <summary>Sets the Shim of IMessage.get_TimeCreated()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimJoinMessage">
+            <summary>Shim type of DiscordRPC.Message.JoinMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimJoinMessage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimJoinMessage.#ctor(DiscordRPC.Message.JoinMessage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimJoinMessage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimJoinMessage.AllInstances.SecretGet">
+            <summary>Sets the Shim of JoinMessage.get_Secret()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimJoinMessage.AllInstances.SecretSetString">
+            <summary>Sets the Shim of JoinMessage.set_Secret(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimJoinMessage.AllInstances.TypeGet">
+            <summary>Sets the Shim of JoinMessage.get_Type()</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimJoinMessage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimJoinMessage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimJoinMessage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimJoinMessage.Constructor">
+            <summary>Sets the Shim of JoinMessage.JoinMessage()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimJoinMessage.SecretGet">
+            <summary>Sets the Shim of JoinMessage.get_Secret()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimJoinMessage.SecretSetString">
+            <summary>Sets the Shim of JoinMessage.set_Secret(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimJoinMessage.TypeGet">
+            <summary>Sets the Shim of JoinMessage.get_Type()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimJoinRequestMessage">
+            <summary>Shim type of DiscordRPC.Message.JoinRequestMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimJoinRequestMessage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimJoinRequestMessage.#ctor(DiscordRPC.Message.JoinRequestMessage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimJoinRequestMessage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimJoinRequestMessage.AllInstances.TypeGet">
+            <summary>Sets the Shim of JoinRequestMessage.get_Type()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimJoinRequestMessage.AllInstances.UserGet">
+            <summary>Sets the Shim of JoinRequestMessage.get_User()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimJoinRequestMessage.AllInstances.UserSetUser">
+            <summary>Sets the Shim of JoinRequestMessage.set_User(User value)</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimJoinRequestMessage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimJoinRequestMessage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimJoinRequestMessage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimJoinRequestMessage.Constructor">
+            <summary>Sets the Shim of JoinRequestMessage.JoinRequestMessage()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimJoinRequestMessage.TypeGet">
+            <summary>Sets the Shim of JoinRequestMessage.get_Type()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimJoinRequestMessage.UserGet">
+            <summary>Sets the Shim of JoinRequestMessage.get_User()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimJoinRequestMessage.UserSetUser">
+            <summary>Sets the Shim of JoinRequestMessage.set_User(User value)</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimPresenceMessage">
+            <summary>Shim type of DiscordRPC.Message.PresenceMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimPresenceMessage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimPresenceMessage.#ctor(DiscordRPC.Message.PresenceMessage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimPresenceMessage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimPresenceMessage.AllInstances.ApplicationIDGet">
+            <summary>Sets the Shim of PresenceMessage.get_ApplicationID()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimPresenceMessage.AllInstances.ApplicationIDSetString">
+            <summary>Sets the Shim of PresenceMessage.set_ApplicationID(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimPresenceMessage.AllInstances.NameGet">
+            <summary>Sets the Shim of PresenceMessage.get_Name()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimPresenceMessage.AllInstances.NameSetString">
+            <summary>Sets the Shim of PresenceMessage.set_Name(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimPresenceMessage.AllInstances.PresenceGet">
+            <summary>Sets the Shim of PresenceMessage.get_Presence()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimPresenceMessage.AllInstances.PresenceSetBaseRichPresence">
+            <summary>Sets the Shim of PresenceMessage.set_Presence(BaseRichPresence value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimPresenceMessage.AllInstances.TypeGet">
+            <summary>Sets the Shim of PresenceMessage.get_Type()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimPresenceMessage.ApplicationIDGet">
+            <summary>Sets the Shim of PresenceMessage.get_ApplicationID()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimPresenceMessage.ApplicationIDSetString">
+            <summary>Sets the Shim of PresenceMessage.set_ApplicationID(String value)</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimPresenceMessage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimPresenceMessage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimPresenceMessage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimPresenceMessage.Constructor">
+            <summary>Sets the Shim of PresenceMessage.PresenceMessage()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimPresenceMessage.NameGet">
+            <summary>Sets the Shim of PresenceMessage.get_Name()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimPresenceMessage.NameSetString">
+            <summary>Sets the Shim of PresenceMessage.set_Name(String value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimPresenceMessage.PresenceGet">
+            <summary>Sets the Shim of PresenceMessage.get_Presence()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimPresenceMessage.PresenceSetBaseRichPresence">
+            <summary>Sets the Shim of PresenceMessage.set_Presence(BaseRichPresence value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimPresenceMessage.TypeGet">
+            <summary>Sets the Shim of PresenceMessage.get_Type()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimReadyMessage">
+            <summary>Shim type of DiscordRPC.Message.ReadyMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimReadyMessage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimReadyMessage.#ctor(DiscordRPC.Message.ReadyMessage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimReadyMessage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimReadyMessage.AllInstances.ConfigurationGet">
+            <summary>Sets the Shim of ReadyMessage.get_Configuration()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimReadyMessage.AllInstances.ConfigurationSetConfiguration">
+            <summary>Sets the Shim of ReadyMessage.set_Configuration(Configuration value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimReadyMessage.AllInstances.TypeGet">
+            <summary>Sets the Shim of ReadyMessage.get_Type()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimReadyMessage.AllInstances.UserGet">
+            <summary>Sets the Shim of ReadyMessage.get_User()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimReadyMessage.AllInstances.UserSetUser">
+            <summary>Sets the Shim of ReadyMessage.set_User(User value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimReadyMessage.AllInstances.VersionGet">
+            <summary>Sets the Shim of ReadyMessage.get_Version()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimReadyMessage.AllInstances.VersionSetInt32">
+            <summary>Sets the Shim of ReadyMessage.set_Version(Int32 value)</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimReadyMessage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimReadyMessage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimReadyMessage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimReadyMessage.ConfigurationGet">
+            <summary>Sets the Shim of ReadyMessage.get_Configuration()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimReadyMessage.ConfigurationSetConfiguration">
+            <summary>Sets the Shim of ReadyMessage.set_Configuration(Configuration value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimReadyMessage.Constructor">
+            <summary>Sets the Shim of ReadyMessage.ReadyMessage()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimReadyMessage.TypeGet">
+            <summary>Sets the Shim of ReadyMessage.get_Type()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimReadyMessage.UserGet">
+            <summary>Sets the Shim of ReadyMessage.get_User()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimReadyMessage.UserSetUser">
+            <summary>Sets the Shim of ReadyMessage.set_User(User value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimReadyMessage.VersionGet">
+            <summary>Sets the Shim of ReadyMessage.get_Version()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimReadyMessage.VersionSetInt32">
+            <summary>Sets the Shim of ReadyMessage.set_Version(Int32 value)</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimSpectateMessage">
+            <summary>Shim type of DiscordRPC.Message.SpectateMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimSpectateMessage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimSpectateMessage.#ctor(DiscordRPC.Message.SpectateMessage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimSpectateMessage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimSpectateMessage.AllInstances.TypeGet">
+            <summary>Sets the Shim of SpectateMessage.get_Type()</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimSpectateMessage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimSpectateMessage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimSpectateMessage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimSpectateMessage.Constructor">
+            <summary>Sets the Shim of SpectateMessage.SpectateMessage()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimSpectateMessage.TypeGet">
+            <summary>Sets the Shim of SpectateMessage.get_Type()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimSubscribeMessage">
+            <summary>Shim type of DiscordRPC.Message.SubscribeMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimSubscribeMessage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimSubscribeMessage.#ctor(DiscordRPC.Message.SubscribeMessage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimSubscribeMessage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimSubscribeMessage.AllInstances.EventGet">
+            <summary>Sets the Shim of SubscribeMessage.get_Event()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimSubscribeMessage.AllInstances.EventSetEventType">
+            <summary>Sets the Shim of SubscribeMessage.set_Event(EventType value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimSubscribeMessage.AllInstances.TypeGet">
+            <summary>Sets the Shim of SubscribeMessage.get_Type()</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimSubscribeMessage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimSubscribeMessage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimSubscribeMessage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimSubscribeMessage.EventGet">
+            <summary>Sets the Shim of SubscribeMessage.get_Event()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimSubscribeMessage.EventSetEventType">
+            <summary>Sets the Shim of SubscribeMessage.set_Event(EventType value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimSubscribeMessage.TypeGet">
+            <summary>Sets the Shim of SubscribeMessage.get_Type()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimUnsubscribeMessage">
+            <summary>Shim type of DiscordRPC.Message.UnsubscribeMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimUnsubscribeMessage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimUnsubscribeMessage.#ctor(DiscordRPC.Message.UnsubscribeMessage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.ShimUnsubscribeMessage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimUnsubscribeMessage.AllInstances.EventGet">
+            <summary>Sets the Shim of UnsubscribeMessage.get_Event()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimUnsubscribeMessage.AllInstances.EventSetEventType">
+            <summary>Sets the Shim of UnsubscribeMessage.set_Event(EventType value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimUnsubscribeMessage.AllInstances.TypeGet">
+            <summary>Sets the Shim of UnsubscribeMessage.get_Type()</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimUnsubscribeMessage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.ShimUnsubscribeMessage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimUnsubscribeMessage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimUnsubscribeMessage.EventGet">
+            <summary>Sets the Shim of UnsubscribeMessage.get_Event()</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimUnsubscribeMessage.EventSetEventType">
+            <summary>Sets the Shim of UnsubscribeMessage.set_Event(EventType value)</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.ShimUnsubscribeMessage.TypeGet">
+            <summary>Sets the Shim of UnsubscribeMessage.get_Type()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.StubConnectionEstablishedMessage">
+            <summary>Stub type of DiscordRPC.Message.ConnectionEstablishedMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.StubConnectionEstablishedMessage.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubConnectionEstablishedMessage.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.StubConnectionEstablishedMessage.InitializeStub">
+            <summary>Initializes a new instance of type StubConnectionEstablishedMessage</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubConnectionEstablishedMessage.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubConnectionEstablishedMessage.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubConnectionEstablishedMessage.Type">
+            <summary>Sets the stub of ConnectionEstablishedMessage.get_Type()</summary>
+        </member>
+        <member name="F:DiscordRPC.Message.Fakes.StubConnectionEstablishedMessage.TypeGet">
+            <summary>Sets the stub of ConnectionEstablishedMessage.get_Type()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.StubConnectionFailedMessage">
+            <summary>Stub type of DiscordRPC.Message.ConnectionFailedMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.StubConnectionFailedMessage.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubConnectionFailedMessage.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.StubConnectionFailedMessage.InitializeStub">
+            <summary>Initializes a new instance of type StubConnectionFailedMessage</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubConnectionFailedMessage.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubConnectionFailedMessage.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubConnectionFailedMessage.Type">
+            <summary>Sets the stub of ConnectionFailedMessage.get_Type()</summary>
+        </member>
+        <member name="F:DiscordRPC.Message.Fakes.StubConnectionFailedMessage.TypeGet">
+            <summary>Sets the stub of ConnectionFailedMessage.get_Type()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.StubErrorMessage">
+            <summary>Stub type of DiscordRPC.Message.ErrorMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.StubErrorMessage.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubErrorMessage.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.StubErrorMessage.InitializeStub">
+            <summary>Initializes a new instance of type StubErrorMessage</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubErrorMessage.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubErrorMessage.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubErrorMessage.Type">
+            <summary>Sets the stub of ErrorMessage.get_Type()</summary>
+        </member>
+        <member name="F:DiscordRPC.Message.Fakes.StubErrorMessage.TypeGet">
+            <summary>Sets the stub of ErrorMessage.get_Type()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.StubIMessage">
+            <summary>Stub type of DiscordRPC.Message.IMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.StubIMessage.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubIMessage.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.StubIMessage.InitializeStub">
+            <summary>Initializes a new instance of type StubIMessage</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubIMessage.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubIMessage.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubIMessage.Type">
+            <summary>Sets the stub of IMessage.get_Type()</summary>
+        </member>
+        <member name="F:DiscordRPC.Message.Fakes.StubIMessage.TypeGet">
+            <summary>Sets the stub of IMessage.get_Type()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.StubJoinMessage">
+            <summary>Stub type of DiscordRPC.Message.JoinMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.StubJoinMessage.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubJoinMessage.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.StubJoinMessage.InitializeStub">
+            <summary>Initializes a new instance of type StubJoinMessage</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubJoinMessage.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubJoinMessage.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubJoinMessage.Type">
+            <summary>Sets the stub of JoinMessage.get_Type()</summary>
+        </member>
+        <member name="F:DiscordRPC.Message.Fakes.StubJoinMessage.TypeGet">
+            <summary>Sets the stub of JoinMessage.get_Type()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.StubJoinRequestMessage">
+            <summary>Stub type of DiscordRPC.Message.JoinRequestMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.StubJoinRequestMessage.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubJoinRequestMessage.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.StubJoinRequestMessage.InitializeStub">
+            <summary>Initializes a new instance of type StubJoinRequestMessage</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubJoinRequestMessage.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubJoinRequestMessage.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubJoinRequestMessage.Type">
+            <summary>Sets the stub of JoinRequestMessage.get_Type()</summary>
+        </member>
+        <member name="F:DiscordRPC.Message.Fakes.StubJoinRequestMessage.TypeGet">
+            <summary>Sets the stub of JoinRequestMessage.get_Type()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.StubReadyMessage">
+            <summary>Stub type of DiscordRPC.Message.ReadyMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.StubReadyMessage.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubReadyMessage.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.StubReadyMessage.InitializeStub">
+            <summary>Initializes a new instance of type StubReadyMessage</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubReadyMessage.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubReadyMessage.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubReadyMessage.Type">
+            <summary>Sets the stub of ReadyMessage.get_Type()</summary>
+        </member>
+        <member name="F:DiscordRPC.Message.Fakes.StubReadyMessage.TypeGet">
+            <summary>Sets the stub of ReadyMessage.get_Type()</summary>
+        </member>
+        <member name="T:DiscordRPC.Message.Fakes.StubSpectateMessage">
+            <summary>Stub type of DiscordRPC.Message.SpectateMessage</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.StubSpectateMessage.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubSpectateMessage.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DiscordRPC.Message.Fakes.StubSpectateMessage.InitializeStub">
+            <summary>Initializes a new instance of type StubSpectateMessage</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubSpectateMessage.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubSpectateMessage.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:DiscordRPC.Message.Fakes.StubSpectateMessage.Type">
+            <summary>Sets the stub of SpectateMessage.get_Type()</summary>
+        </member>
+        <member name="F:DiscordRPC.Message.Fakes.StubSpectateMessage.TypeGet">
+            <summary>Sets the stub of SpectateMessage.get_Type()</summary>
+        </member>
+        <member name="T:Microsoft.QualityTools.Testing.Fakes.Delegates.DiscordRPCDelegates">
+            <summary>Contains custom delegates used for the stubs and shims of DiscordRPC</summary>
+        </member>
+    </members>
+</doc>

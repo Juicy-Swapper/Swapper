@@ -89,7 +89,7 @@ namespace JuicySwapper_Launcher.Main.GUI
             string InstallFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Juicy Industries";
             try
             {
-                var StatusAPI = SetupClient.DownloadString("http://juicyswapper.xyz/api/status.json");
+                var StatusAPI = SetupClient.DownloadString("https://juicyswapper.netlify.app/api/status.json");
                 Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
                 SetupClient.Proxy = null;
                 SetupClient.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed);

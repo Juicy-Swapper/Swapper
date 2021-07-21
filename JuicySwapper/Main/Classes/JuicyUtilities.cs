@@ -18,6 +18,7 @@ using System.Security.Cryptography;
 using System.Media;
 using System.Threading;
 using System.Collections.Generic;
+using System.Configuration;
 
 namespace JuicySwapper
 {
@@ -106,7 +107,7 @@ namespace JuicySwapper
 			Status StatusResponse = JsonConvert.DeserializeObject<Status>(StatusAPI);
 
 
-			if (!StatusResponse.IsOnline == false)
+			if (StatusResponse.IsOnline == false)
 				new OfflineMode().ShowDialog();
 
 			if (StatusResponse.Version != $"{Application.ProductVersion}")
@@ -121,8 +122,8 @@ namespace JuicySwapper
 					Thread.Sleep(1000);
 				if (File.Exists("JuicySwapper_Updater.exe"))
 				{
-					Process.Start("JuicySwapper_Updater.exe");
-					Environment.Exit(0);
+					Process.Start("JuicySwapper_Updater.exe", $"{Settings.Default.InstallationPath}\\FortniteGame\\Content\\Paks");
+					Exit(0);
 				}
 				else
 					MessageBox.Show("Updater did not downloaded!");
@@ -192,11 +193,13 @@ namespace JuicySwapper
 			}
 		}
 
-		public void MusicControl(string Activated)
+		public void MusicControl(bool Activated)
 		{
+			
+
 			Stream str = Resources.ReliefMusic;
 			SoundPlayer snd = new SoundPlayer(str);
-			if (Activated == "True")
+			if (Activated == true)
 				snd.PlayLooping();
 			else
 				snd.Stop();
@@ -226,6 +229,9 @@ static class EpicGames
 	{
 		[JsonProperty("InstallLocation")]
 		public string InstallLocation { get; set; }
+
+		[JsonProperty("AppVersion")]
+		public string AppVersion { get; set; }
 
 		[JsonProperty("AppName")]
 		public string AppName { get; set; }

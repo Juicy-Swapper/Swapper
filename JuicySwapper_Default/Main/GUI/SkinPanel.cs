@@ -46,7 +46,7 @@ namespace JuicySwapper_Default.Main.GUI
 
             dynamic parsed = JObject.Parse(ProgramClient.DownloadString("https://juicyswapper.xyz/api/Defualt/Content.json"));
 
-            foreach (var Cosmetic in parsed.Items)
+            foreach (var Cosmetic in parsed.name)
             {
                 //PictureBox newPic = new PictureBox();
                 Bunifu.Framework.UI.BunifuImageButton newPic = new Bunifu.Framework.UI.BunifuImageButton();

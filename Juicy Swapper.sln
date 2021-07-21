@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuicySwapper_Default", "Jui
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuicySwapper_Launcher", "JuicySwapper_Launcher\JuicySwapper_Launcher.csproj", "{4191D7A6-C17C-476B-A7CC-F4953273F15E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuicySwapper_PakFixer", "JuicySwapper_PakFixer\JuicySwapper_PakFixer.csproj", "{334FF9B9-FAC0-4046-BAD2-D42A5B9B10AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,6 +110,16 @@ Global
 		{4191D7A6-C17C-476B-A7CC-F4953273F15E}.Swapper [Prod]|Any CPU.Build.0 = Debug|Any CPU
 		{4191D7A6-C17C-476B-A7CC-F4953273F15E}.Swapper|Any CPU.ActiveCfg = Debug|Any CPU
 		{4191D7A6-C17C-476B-A7CC-F4953273F15E}.Swapper|Any CPU.Build.0 = Debug|Any CPU
+		{334FF9B9-FAC0-4046-BAD2-D42A5B9B10AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{334FF9B9-FAC0-4046-BAD2-D42A5B9B10AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{334FF9B9-FAC0-4046-BAD2-D42A5B9B10AA}.kaede|Any CPU.ActiveCfg = Debug|Any CPU
+		{334FF9B9-FAC0-4046-BAD2-D42A5B9B10AA}.kaede|Any CPU.Build.0 = Debug|Any CPU
+		{334FF9B9-FAC0-4046-BAD2-D42A5B9B10AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{334FF9B9-FAC0-4046-BAD2-D42A5B9B10AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{334FF9B9-FAC0-4046-BAD2-D42A5B9B10AA}.Swapper [Prod]|Any CPU.ActiveCfg = Debug|Any CPU
+		{334FF9B9-FAC0-4046-BAD2-D42A5B9B10AA}.Swapper [Prod]|Any CPU.Build.0 = Debug|Any CPU
+		{334FF9B9-FAC0-4046-BAD2-D42A5B9B10AA}.Swapper|Any CPU.ActiveCfg = Debug|Any CPU
+		{334FF9B9-FAC0-4046-BAD2-D42A5B9B10AA}.Swapper|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
