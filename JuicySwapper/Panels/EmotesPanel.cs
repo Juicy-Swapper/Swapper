@@ -38,101 +38,19 @@ namespace JuicySwapper.Panels
                 SidebarPanel.Instance.BringToFront();
         }
 
-        private void bunifuImageButton13_Click(object sender, EventArgs e)
+        private void bunifuImageButton2_Click_1(object sender, EventArgs e)
         {
-            new Freemix().ShowDialog();
-            //new Message(Resources.disabled).ShowDialog();
+            new Floss().ShowDialog();
         }
 
-        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        private void bunifuImageButton1_Click_1(object sender, EventArgs e)
         {
-              new Chicken().ShowDialog();
-            //new Message(Resources.disabled).ShowDialog();
-        }
-
-        private void bunifuImageButton4_Click(object sender, EventArgs e)
-        {
-             new TakeTL().ShowDialog();
-            //new Message(Resources.disabled).ShowDialog();
+            new Scenario().ShowDialog();
         }
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
-            new FlossOption().ShowDialog();
-            //new Message(Resources.disabled).ShowDialog();
-        }
-
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
-        {
-            new Scenario().ShowDialog();
-            //new Message(Resources.disabled).ShowDialog();
-        }
-
-        private void bunifuImageButton5_Click(object sender, EventArgs e)
-        {
-            new Jitterbug().ShowDialog();
-            //new Message(Resources.disabled).ShowDialog();
-        }
-
-        private void bunifuImageButton8_Click(object sender, EventArgs e)
-        {
-             new Octane().ShowDialog();
-            //new Message(Resources.disabled).ShowDialog();
-        }
-
-        private void bunifuImageButton7_Click(object sender, EventArgs e)
-        {
-             new Savage().ShowDialog();
-            //new Message(Resources.disabled).ShowDialog();
-        }
-
-        private void bunifuImageButton6_Click(object sender, EventArgs e)
-        {
-              new SaySo().ShowDialog();
-            //new Message(Resources.disabled).ShowDialog();
-        }
-
-        private void bunifuImageButton9_Click(object sender, EventArgs e)
-        {
-            new LeaveTheDoorOpen().ShowDialog();
-            //new Message(Resources.disabled).ShowDialog();
-        }
-
-        private void bunifuImageButton10_Click(object sender, EventArgs e)
-        {
-           new HitIt().ShowDialog();
-           // new Message(Resources.disabled).ShowDialog();
-        }
-
-        private void bunifuImageButton11_Click(object sender, EventArgs e)
-        {
-             new PullUp().ShowDialog();
-            //new Message(Resources.disabled).ShowDialog();
-        }
-
-        private void bunifuImageButton12_Click(object sender, EventArgs e)
-        {
-            new CatComic().ShowDialog();
-        }
-
-        private void bunifuImageButton15_Click(object sender, EventArgs e)
-        {
-            new Bicycle().ShowDialog();
-        }
-
-        private void bunifuImageButton14_Click(object sender, EventArgs e)
-        {
-            new WakeUp().ShowDialog();
-        }
-
-        private void bunifuImageButton16_Click(object sender, EventArgs e)
-        {
-            new BasketBall().ShowDialog();
-        }
-
-        private void bunifuImageButton17_Click(object sender, EventArgs e)
-        {
-            new Socks().ShowDialog();
+            new BughaDance().ShowDialog();
         }
     }
 }

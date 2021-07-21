@@ -36,7 +36,7 @@ namespace JuicySwapper.Main.GUI
                 return;
             }
 
-            new FlossArmWave().ShowDialog();
+          //  new FlossArmWave().ShowDialog();
         }
     }
 }

@@ -96,6 +96,7 @@
             this.Name = "Setup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "JuicySwapper - Installer";
+            this.Load += new System.EventHandler(this.Setup_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

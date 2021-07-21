@@ -30,10 +30,10 @@ namespace JuicySwapper
 			DiscordRPC.RegisterUriScheme();
 			DiscordRPC.SetPresence(new RichPresence
 			{
-				Details = "juicyswapper.xyz",
+				Details = "juicyswapper.netifly.app",
 				State = "Browsing Home Page",
 				Timestamps = Timestamps.Now,
-				Buttons = new DiscordRPC.Button[] { new DiscordRPC.Button() { Label = "Discord", Url = "http://juicyswapper.xyz/discord" } },
+				Buttons = new DiscordRPC.Button[] { new DiscordRPC.Button() { Label = "Discord", Url = "http://juicyswapper.netifly.app/discord" } },
 				Assets = new Assets { LargeImageKey = "mainrpcimg", SmallImageKey = ImageKey, LargeImageText = $"🧃 • Version v{Application.ProductVersion}", SmallImageText = $"In {Location} Tab" }
 			});
 		}
@@ -43,10 +43,10 @@ namespace JuicySwapper
 			DiscordRPC.RegisterUriScheme();
 			DiscordRPC.SetPresence(new RichPresence
 			{
-				Details = "juicyswapper.xyz",
+				Details = "juicyswapper.netifly.app",
 				State = "Browsing Home Page",
 				Timestamps = Timestamps.Now,
-				Buttons = new DiscordRPC.Button[] { new DiscordRPC.Button() { Label = "Discord", Url = "http://juicyswapper.xyz/discord" } },
+				Buttons = new DiscordRPC.Button[] { new DiscordRPC.Button() { Label = "Discord", Url = "http://juicyswapper.netifly.app/discord" } },
 				Assets = new Assets { LargeImageKey = "mainrpcimg", SmallImageKey = ImageKey, LargeImageText = $"🧃 • Version v{Application.ProductVersion}", SmallImageText = $"{Action}" }
 			});
 		}
@@ -56,10 +56,10 @@ namespace JuicySwapper
 			DiscordRPC.RegisterUriScheme();
 			DiscordRPC.SetPresence(new RichPresence
 			{
-				Details = "juicyswapper.xyz",
+				Details = "juicyswapper.netifly.app",
 				State = STAT,
 				Timestamps = Timestamps.Now,
-				Buttons = new DiscordRPC.Button[] { new DiscordRPC.Button() { Label = "Discord", Url = "http://juicyswapper.xyz/discord" } },
+				Buttons = new DiscordRPC.Button[] { new DiscordRPC.Button() { Label = "Discord", Url = "http://juicyswapper.netifly.app/discord" } },
 				Assets = new Assets { LargeImageKey = "mainrpcimg", LargeImageText = $"🧃 • Version v{Application.ProductVersion}", }
 			});; 
 		}
@@ -69,9 +69,9 @@ namespace JuicySwapper
 			DiscordRPC.RegisterUriScheme();
 			DiscordRPC.SetPresence(new RichPresence
 			{
-				Details = "juicyswapper.xyz",
+				Details = "juicyswapper.netifly.app",
 				State = STAT,
-				Buttons = new DiscordRPC.Button[] { new DiscordRPC.Button() { Label = "Discord", Url = "http://juicyswapper.xyz/discord" } },
+				Buttons = new DiscordRPC.Button[] { new DiscordRPC.Button() { Label = "Discord", Url = "http://juicyswapper.netifly.app" } },
 				Assets = new Assets { LargeImageKey = "mainrpcimg", LargeImageText = $"🧃 • Version v{Application.ProductVersion}", }
 			});
 		}
@@ -129,7 +129,7 @@ namespace JuicySwapper
 					MessageBox.Show("Updater did not downloaded!");
 			}
 		}
-
+		
 		public static string GET_HARDWAREID => ReturnHardwareID().Result;
 		private static async Task<string> ReturnHardwareID()
 		{

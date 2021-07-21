@@ -463,24 +463,6 @@ namespace JuicySwapper.Main.GUI
                 text += "Elite Agent," + " ";
 
             }
-            if (Settings.Default.TigeressEnabled == true)
-            {
-                num++;
-                text += "Tigeress," + " ";
-
-            }
-            if (Settings.Default.PullUpEnabled == true)
-            {
-                num++;
-                text += "Pull Up," + " ";
-
-            }
-            if (Settings.Default.CatComicEnabled == true)
-            {
-                num++;
-                text += "Squash & Stretch," + " ";
-
-            }
             if (Settings.Default.CatwomenEnabled == true)
             {
                 num++;
@@ -493,18 +475,6 @@ namespace JuicySwapper.Main.GUI
                 text += "Lyra," + " ";
 
             }
-            if (Settings.Default.WakeUpEnabled == true)
-            {
-                num++;
-                text += "Wake Up," + " ";
-
-            }
-            if (Settings.Default.WakeUpEnabled == true)
-            {
-                num++;
-                text += "Wake Up," + " ";
-
-            }
             if (Settings.Default.BicycleEnabled == true)
             {
                 num++;
@@ -515,18 +485,6 @@ namespace JuicySwapper.Main.GUI
             {
                 num++;
                 text += "Clip," + " ";
-
-            }
-            if (Settings.Default.MariusEnabled == true)
-            {
-                num++;
-                text += "Marius," + " ";
-
-            }
-            if (Settings.Default.BasketBallEnabled == true)
-            {
-                num++;
-                text += "Dribblin'," + " ";
 
             }
             if (Settings.Default.DizzieEnabled == true)
@@ -565,25 +523,14 @@ namespace JuicySwapper.Main.GUI
                 text += "Mecha Cuddle Master'," + " ";
 
             }
-            if (Settings.Default.KelsierEnabled == true)
+            if (Settings.Default.BughaDanceEnabled == true)
             {
                 num++;
-                text += "Kelsier'," + " ";
+                text += "Bring it around'," + " ";
 
             }
-            if (Settings.Default.DeathStrokeEnabled == true)
-            {
-                num++;
-                text += "Deathstroke Zero'," + " ";
 
-            }
-            if (Settings.Default.SpireImmortalEnabled == true)
-            {
-                num++;
-                text += "Spire Immortal'," + " ";
 
-            }
-            
 
 
 
