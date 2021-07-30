@@ -619,7 +619,4 @@
   <metadata name="DownloaderUpdater.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>367, 19</value>
   </metadata>
-  <metadata name="Downloaderdll.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>531, 19</value>
-  </metadata>
 </root>

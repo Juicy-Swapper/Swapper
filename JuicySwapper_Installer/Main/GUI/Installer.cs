@@ -37,5 +37,6 @@ namespace JuicySwapper_Installer.Main.GUI
         {
             Process.Start($"juicyswapper.xyz/discord");
         }
+
     }
 }

@@ -144,9 +144,7 @@ namespace JuicySwapper.Main.Classes
 		{
 			Settings.Default.ChickenEnabled,
 			Settings.Default.LeaveTheDoorOpenEnabled,
-			Settings.Default.PullUpEnabled,
 			Settings.Default.CatComicEnabled,
-			Settings.Default.WakeUpEnabled
 		};
 		public List<bool> TonyStark = new List<bool>()
 		{
@@ -181,13 +179,11 @@ namespace JuicySwapper.Main.Classes
 			Settings.Default.TigeressEnabled,
 			Settings.Default.StoneViperEnabled,
 			Settings.Default.ClipEnabled,
-			Settings.Default.MariusEnabled,
 			Settings.Default.DizzieEnabled,
 			Settings.Default.CelesteEnabled
 		};
 		public List<bool> TippyTap = new List<bool>()
 		{
-			Settings.Default.BasketBallEnabled
 
 		};
 		public List<bool> ShadowRuby = new List<bool>()

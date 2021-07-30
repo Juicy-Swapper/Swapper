@@ -250,6 +250,7 @@ namespace JuicySwapper_Installer.Main.GUI
         {
             InformationsLabel.Text = "Installation completed. Launching JuicySwapper!";
             ProgressBar.Value = 100;            
-        }     
+        }
+
     }
 }

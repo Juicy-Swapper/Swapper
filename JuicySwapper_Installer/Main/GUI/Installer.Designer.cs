@@ -100,6 +100,7 @@
             this.Name = "Installer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "JuicySwapper - Installer";
+            this.Load += new System.EventHandler(this.Installer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Discordinvite)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

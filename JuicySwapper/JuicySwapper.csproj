@@ -236,95 +236,11 @@
     <Compile Include="Items\Backblings\BlackShield.designer.cs">
       <DependentUpon>BlackShield.cs</DependentUpon>
     </Compile>
-    <Compile Include="Items\Emotes\Socks.cs">
+    <Compile Include="Items\Emotes\BughaDance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Items\Emotes\Socks.designer.cs">
-      <DependentUpon>Socks.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Emotes\BasketBall.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Emotes\BasketBall.designer.cs">
-      <DependentUpon>BasketBall.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Emotes\CatComic.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Emotes\CatComic.designer.cs">
-      <DependentUpon>CatComic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Emotes\Bicycle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Emotes\Bicycle.designer.cs">
-      <DependentUpon>Bicycle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Emotes\WakeUp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Emotes\WakeUp.designer.cs">
-      <DependentUpon>WakeUp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Emotes\PullUp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Emotes\PullUp.designer.cs">
-      <DependentUpon>PullUp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Emotes\HitIt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Emotes\HitIt.designer.cs">
-      <DependentUpon>HitIt.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Emotes\LeaveTheDoorOpen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Emotes\LeaveTheDoorOpen.designer.cs">
-      <DependentUpon>LeaveTheDoorOpen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Emotes\SaySo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Emotes\SaySo.designer.cs">
-      <DependentUpon>SaySo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Emotes\Savage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Emotes\Savage.designer.cs">
-      <DependentUpon>Savage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Emotes\Octane.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Emotes\Octane.designer.cs">
-      <DependentUpon>Octane.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Emotes\FlossArmWave.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Emotes\FlossArmWave.designer.cs">
-      <DependentUpon>FlossArmWave.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Emotes\Jitterbug.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Emotes\Jitterbug.designer.cs">
-      <DependentUpon>Jitterbug.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Emotes\TakeTL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Emotes\TakeTL.designer.cs">
-      <DependentUpon>TakeTL.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Emotes\Chicken.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Emotes\Chicken.designer.cs">
-      <DependentUpon>Chicken.cs</DependentUpon>
+    <Compile Include="Items\Emotes\BughaDance.designer.cs">
+      <DependentUpon>BughaDance.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Emotes\Floss.cs">
       <SubType>Form</SubType>
@@ -337,12 +253,6 @@
     </Compile>
     <Compile Include="Items\Emotes\Scenario.designer.cs">
       <DependentUpon>Scenario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Items\Emotes\Freemix.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Items\Emotes\Freemix.designer.cs">
-      <DependentUpon>Freemix.cs</DependentUpon>
     </Compile>
     <Compile Include="Items\Backblings\Insignia.cs">
       <SubType>Form</SubType>
@@ -840,59 +750,14 @@
     <EmbeddedResource Include="Items\Backblings\BlackShield.resx">
       <DependentUpon>BlackShield.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Items\Emotes\Socks.resx">
-      <DependentUpon>Socks.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Emotes\BasketBall.resx">
-      <DependentUpon>BasketBall.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Emotes\CatComic.resx">
-      <DependentUpon>CatComic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Emotes\Bicycle.resx">
-      <DependentUpon>Bicycle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Emotes\WakeUp.resx">
-      <DependentUpon>WakeUp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Emotes\PullUp.resx">
-      <DependentUpon>PullUp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Emotes\HitIt.resx">
-      <DependentUpon>HitIt.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Emotes\LeaveTheDoorOpen.resx">
-      <DependentUpon>LeaveTheDoorOpen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Emotes\SaySo.resx">
-      <DependentUpon>SaySo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Emotes\Savage.resx">
-      <DependentUpon>Savage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Emotes\Octane.resx">
-      <DependentUpon>Octane.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Emotes\FlossArmWave.resx">
-      <DependentUpon>FlossArmWave.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Emotes\Jitterbug.resx">
-      <DependentUpon>Jitterbug.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Emotes\TakeTL.resx">
-      <DependentUpon>TakeTL.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Emotes\Chicken.resx">
-      <DependentUpon>Chicken.cs</DependentUpon>
+    <EmbeddedResource Include="Items\Emotes\BughaDance.resx">
+      <DependentUpon>BughaDance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Emotes\Floss.resx">
       <DependentUpon>Floss.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Emotes\Scenario.resx">
       <DependentUpon>Scenario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Items\Emotes\Freemix.resx">
-      <DependentUpon>Freemix.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Items\Backblings\Insignia.resx">
       <DependentUpon>Insignia.cs</DependentUpon>

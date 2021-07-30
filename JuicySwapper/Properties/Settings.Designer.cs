@@ -12,7 +12,7 @@ namespace JuicySwapper.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -1298,18 +1298,6 @@ namespace JuicySwapper.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool PullUpEnabled {
-            get {
-                return ((bool)(this["PullUpEnabled"]));
-            }
-            set {
-                this["PullUpEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool CatComicEnabled {
             get {
                 return ((bool)(this["CatComicEnabled"]));
@@ -1346,18 +1334,6 @@ namespace JuicySwapper.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool WakeUpEnabled {
-            get {
-                return ((bool)(this["WakeUpEnabled"]));
-            }
-            set {
-                this["WakeUpEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool BicycleEnabled {
             get {
                 return ((bool)(this["BicycleEnabled"]));
@@ -1376,30 +1352,6 @@ namespace JuicySwapper.Properties {
             }
             set {
                 this["ClipEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool MariusEnabled {
-            get {
-                return ((bool)(this["MariusEnabled"]));
-            }
-            set {
-                this["MariusEnabled"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool BasketBallEnabled {
-            get {
-                return ((bool)(this["BasketBallEnabled"]));
-            }
-            set {
-                this["BasketBallEnabled"] = value;
             }
         }
         
@@ -1616,6 +1568,18 @@ namespace JuicySwapper.Properties {
             }
             set {
                 this["CelesteEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BughaDanceEnabled {
+            get {
+                return ((bool)(this["BughaDanceEnabled"]));
+            }
+            set {
+                this["BughaDanceEnabled"] = value;
             }
         }
     }

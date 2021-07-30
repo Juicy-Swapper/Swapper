@@ -123,5 +123,9 @@ namespace JuicySwapper.Main.GUI
             Clipboard.SetText(stringer);
         }
 
+        private void Loader_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
