@@ -57,26 +57,6 @@ namespace JuicySwapper_V2.IO
             }
         }
 
-        public static byte[] ExportCompress(string assetDir, string dir)
-        {
-            MessageBox.Show(assetDir);
-            var _Provider = new DefaultFileProvider($"D:\\Games\\Fortnite\\FortniteGame\\Content\\Paks", SearchOption.TopDirectoryOnly);
-
-            _Provider.Initialize();
-
-            _Provider.SubmitKey(new FGuid("00000000000000000000000000000000"), new FAesKey(AES()));
-
-            _Provider.LoadLocalization();
-
-            Directory.CreateDirectory($"{dir}\\{assetDir.Replace(Path.GetFileName(assetDir), "")}");
-
-            MessageBox.Show(CUE4Parse.Kaede.PakFile);
-
-            byte[] asset = _Provider.SaveAsset(assetDir);
-            _Provider.Dispose();
-            return asset;
-        }
-
         private static string AES()
         {
             dynamic parse = JObject.Parse(new WebClient().DownloadString("https://benbot.app/api/v1/aes"));
