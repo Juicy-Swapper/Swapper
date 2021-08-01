@@ -3,8 +3,6 @@ using System.Windows.Forms;
 using MaterialSkin;
 using JuicySwapper_V2.IO;
 using System.IO;
-using System.Threading;
-using System.Linq;
 using JuicySwapper_V2.Main.Classes;
 
 namespace JuicySwapper_V2
@@ -36,8 +34,24 @@ namespace JuicySwapper_V2
         private void button1_Click(object sender, System.EventArgs e)
         {
             var uassetpath = "FortniteGame/Content/Athena/Heroes/Meshes/Bodies/CP_124_Body_F_AuroraGlow.uasset";
+            var uassetpath1 = "FortniteGame/Content/Characters/CharacterParts/Female/Medium/Heads/CP_Head_F_AuroraGlow.uasset";
+            var uassetpath11 = "FortniteGame/Content/Characters/CharacterParts/Hats/CP_Hat_F_Commando_AuroraGlow.uasset";
 
-            Engine.ExportCompressed(uassetpath, Directory.GetCurrentDirectory());
+            byte[] hi = Engine.ExportCompress(uassetpath, Directory.GetCurrentDirectory());
+            File.WriteAllBytes(uassetpath, hi);
+
+            Directory.CreateDirectory($"{Directory.GetCurrentDirectory()}\\{uassetpath1.Replace(Path.GetFileName(uassetpath1), "")}");
+
+            byte[] hii = Engine.ExportCompress(uassetpath1, Directory.GetCurrentDirectory());
+            File.WriteAllBytes(uassetpath1, hii);
+
+            //Engine.ExportCompresse(uassetpath, Directory.GetCurrentDirectory());
+            //Engine.ExportCompresse(uassetpath1, Directory.GetCurrentDirectory());
+            //Engine.ExportCompresse(uassetpath11, Directory.GetCurrentDirectory());
+
+
+            return;
+            
 
             Engine.disope();
 

@@ -9,7 +9,22 @@ namespace JuicySwapper_V2.IO
 {
     class Researcher
     {
+        public static bool SwapUasset(string a, long b, byte[] c)
+        {
+            try 
+            {
+                BinaryWriter binaryWriter = new BinaryWriter(File.Open(a, FileMode.Open, FileAccess.ReadWrite));
+                binaryWriter.BaseStream.Seek(b, SeekOrigin.Begin);
+                binaryWriter.Write(c);
+                binaryWriter.Close();
 
+                return true;
+            }
+            catch
+            {
+                return false;
+            }   
+        }
 
         public static bool ConvertInUasset(string file, string convert, string revert)
         {

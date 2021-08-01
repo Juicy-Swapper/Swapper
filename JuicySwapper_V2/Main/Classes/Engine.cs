@@ -24,7 +24,7 @@ namespace JuicySwapper_V2.IO
             _Provider.Dispose();
         }
 
-        public static void ExportCompressed(string assetDir, string dir)
+        public static bool ExportCompressed(string assetDir, string dir)
         {
             _Provider = new DefaultFileProvider(Directory.GetCurrentDirectory() + "\\PakTemps", SearchOption.TopDirectoryOnly);
 
@@ -34,18 +34,47 @@ namespace JuicySwapper_V2.IO
 
             _Provider.LoadLocalization();
 
+            try
+            {
+                Directory.CreateDirectory($"{dir}\\{assetDir.Replace(Path.GetFileName(assetDir), "")}");
+
+                if (!_Provider.TrySavePackage(assetDir, out var assets))
+                    return false;
+
+                foreach (var kvp in assets)
+                {
+                    File.WriteAllBytes(Path.Combine(dir, kvp.Key), kvp.Value);
+                }
+
+                _Provider.Dispose();
+
+                return true;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return false;
+            }
+        }
+
+        public static byte[] ExportCompress(string assetDir, string dir)
+        {
+            MessageBox.Show(assetDir);
+            var _Provider = new DefaultFileProvider($"D:\\Games\\Fortnite\\FortniteGame\\Content\\Paks", SearchOption.TopDirectoryOnly);
+
+            _Provider.Initialize();
+
+            _Provider.SubmitKey(new FGuid("00000000000000000000000000000000"), new FAesKey(AES()));
+
+            _Provider.LoadLocalization();
+
             Directory.CreateDirectory($"{dir}\\{assetDir.Replace(Path.GetFileName(assetDir), "")}");
 
-            if (!_Provider.TrySavePackage(assetDir, out var assets))
-                return;
+            MessageBox.Show(CUE4Parse.Kaede.PakFile);
 
-            foreach (var kvp in assets)
-            {
-                File.WriteAllBytes(Path.Combine(dir, kvp.Key), kvp.Value);
-            }
-
-            MessageBox.Show(CUE4Parse.Kaede.PakFile.Replace("utoc", "ucas"));
-            MessageBox.Show(CUE4Parse.Kaede.offset.ToString());
+            byte[] asset = _Provider.SaveAsset(assetDir);
+            _Provider.Dispose();
+            return asset;
         }
 
         private static string AES()
