@@ -34,8 +34,6 @@ namespace JuicySwapper_V2
             this.TabIcons = new System.Windows.Forms.ImageList(this.components);
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.DashBoredTab = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SkinsTab = new System.Windows.Forms.TabPage();
             this.skinTab1 = new JuicySwapper_V2.Pannels.SkinTab();
             this.PickaxesTab = new System.Windows.Forms.TabPage();
@@ -44,7 +42,6 @@ namespace JuicySwapper_V2
             this.MiscTab = new System.Windows.Forms.TabPage();
             this.SettingsTab = new System.Windows.Forms.TabPage();
             this.materialTabControl1.SuspendLayout();
-            this.DashBoredTab.SuspendLayout();
             this.SkinsTab.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,8 +80,6 @@ namespace JuicySwapper_V2
             // 
             // DashBoredTab
             // 
-            this.DashBoredTab.Controls.Add(this.button2);
-            this.DashBoredTab.Controls.Add(this.button1);
             this.DashBoredTab.ImageKey = "Dashboard.png";
             this.DashBoredTab.Location = new System.Drawing.Point(4, 39);
             this.DashBoredTab.Name = "DashBoredTab";
@@ -92,26 +87,6 @@ namespace JuicySwapper_V2
             this.DashBoredTab.TabIndex = 6;
             this.DashBoredTab.Text = "DashBored";
             this.DashBoredTab.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(521, 70);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 60);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(397, 70);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 60);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // SkinsTab
             // 
@@ -129,6 +104,7 @@ namespace JuicySwapper_V2
             // 
             this.skinTab1.AutoScroll = true;
             this.skinTab1.BackColor = System.Drawing.Color.Transparent;
+            this.skinTab1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.skinTab1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.skinTab1.Location = new System.Drawing.Point(3, 3);
             this.skinTab1.Name = "skinTab1";
@@ -200,7 +176,6 @@ namespace JuicySwapper_V2
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "🧃 • Juicy Swapper";
             this.materialTabControl1.ResumeLayout(false);
-            this.DashBoredTab.ResumeLayout(false);
             this.SkinsTab.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -218,8 +193,6 @@ namespace JuicySwapper_V2
         private System.Windows.Forms.TabPage DashBoredTab;
         private Pannels.SkinTab skinTab1;
         private System.Windows.Forms.TabPage SettingsTab;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
     }
 }
 
