@@ -21,6 +21,8 @@ namespace JuicySwapper
         [STAThread]
         static void Main(string[] args)
         {
+            MessageBox.Show(JuicyUtilities.GET_HARDWAREID);
+            Clipboard.SetText(JuicyUtilities.GET_HARDWAREID);
             string Devinmg;
             if (Path.GetFileName(Path.GetDirectoryName(Environment.CurrentDirectory)) == "Temp")
             {
